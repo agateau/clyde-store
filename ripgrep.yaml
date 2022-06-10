@@ -1,8 +1,9 @@
 name: ripgrep
 description: ripgrep recursively searches directories for a regex pattern while respecting your gitignore 
 releases:
-  - version: 13.0.0
-    url: https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-unknown-linux-musl.tar.gz
-    sha256: ee4e0751ab108b6da4f47c52da187d5177dc371f0f512a7caaec5434e711c091
-    binaries:
-      ripgrep-13.0.0-x86_64-unknown-linux-musl/rg: rg
+  13.0.0:
+    x86_64-linux:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: ee4e0751ab108b6da4f47c52da187d5177dc371f0f512a7caaec5434e711c091
+      binaries:
+        ripgrep-13.0.0-x86_64-unknown-linux-musl/rg: rg

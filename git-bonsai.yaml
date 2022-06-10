@@ -1,8 +1,9 @@
 name: git-bonsai
 description: Tend the branches of your git garden
 releases:
-  - version: 0.2.1
-    url: https://github.com/agateau/git-bonsai/releases/download/0.2.1/git-bonsai-0.2.1-linux.tar.bz2
-    sha256: ff7aa2118ecdf7357f90054bba8d45e15105666d41a7b9da53744b59d2f107eb
-    binaries:
-      git-bonsai-0.2.1+20212505T222601-ba6456d/git-bonsai: git-bonsai
+  0.2.1:
+    x86_64-linux:
+      url: https://github.com/agateau/git-bonsai/releases/download/0.2.1/git-bonsai-0.2.1-linux.tar.bz2
+      sha256: ff7aa2118ecdf7357f90054bba8d45e15105666d41a7b9da53744b59d2f107eb
+      binaries:
+        git-bonsai-0.2.1+20212505T222601-ba6456d/git-bonsai: git-bonsai

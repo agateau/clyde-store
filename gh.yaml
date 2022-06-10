@@ -1,14 +1,16 @@
 name: gh
 description: GitHub command-line client
 releases:
-  - version: 2.12.0
-    url: https://github.com/cli/cli/releases/download/v2.12.0/gh_2.12.0_linux_amd64.tar.gz
-    sha256: 6cf8eb6368754ff4787219de35ec8c6761c6eb65a7d6243e02c044ca3da51b94
-    binaries:
-      gh_2.12.0_linux_amd64/bin/gh: gh
+  2.12.0:
+    x86_64-linux:
+      url: https://github.com/cli/cli/releases/download/v2.12.0/gh_2.12.0_linux_amd64.tar.gz
+      sha256: 6cf8eb6368754ff4787219de35ec8c6761c6eb65a7d6243e02c044ca3da51b94
+      binaries:
+        gh_2.12.0_linux_amd64/bin/gh: gh
 
-  - version: 2.11.3
-    url: https://github.com/cli/cli/releases/download/v2.11.3/gh_2.11.3_linux_amd64.tar.gz
-    sha256: 51311dc3d2e48d02655fe4943ea4f156171f5baaeb49ecb7284802b62cacf924
-    binaries:
-      gh_2.11.3_linux_amd64/bin/gh: gh
+  2.11.3:
+    x86_64-linux:
+      url: https://github.com/cli/cli/releases/download/v2.11.3/gh_2.11.3_linux_amd64.tar.gz
+      sha256: 51311dc3d2e48d02655fe4943ea4f156171f5baaeb49ecb7284802b62cacf924
+      binaries:
+        gh_2.11.3_linux_amd64/bin/gh: gh
