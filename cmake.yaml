@@ -1,13 +1,20 @@
 name: cmake
 description: CMake is an open-source, cross-platform family of tools designed to build, test and package software
 releases:
-  8.4.0:
+  3.23.2:
     x86_64-linux:
       url: https://github.com/Kitware/CMake/releases/download/v3.23.2/cmake-3.23.2-linux-x86_64.tar.gz
       sha256: aaced6f745b86ce853661a595bdac6c5314a60f8181b6912a0a4920acfa32708
-      binaries:
-        cmake-3.23.2-linux-x86_64/bin/ccmake: ccmake
-        cmake-3.23.2-linux-x86_64/bin/cmake: cmake
-        cmake-3.23.2-linux-x86_64/bin/cpack: cpack
-        cmake-3.23.2-linux-x86_64/bin/ctest: ctest
-        cmake-3.23.2-linux-x86_64/bin/cmake-gui: cmake-gui
+
+installs:
+  3.23.0:
+    any:
+      strip: 1
+      files:
+        bin/ccmake:
+        bin/cmake:
+        bin/cpack:
+        bin/ctest:
+        bin/cmake-gui:
+        share:
+        man: share/man

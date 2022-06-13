@@ -5,5 +5,15 @@ releases:
     x86_64-linux:
       url: https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-unknown-linux-musl.tar.gz
       sha256: ee4e0751ab108b6da4f47c52da187d5177dc371f0f512a7caaec5434e711c091
-      binaries:
-        ripgrep-13.0.0-x86_64-unknown-linux-musl/rg: rg
+
+installs:
+  13.0.0:
+    any:
+      strip: 1
+      files:
+        rg: bin/rg
+        doc/rg.1: share/man/man1/rg.1
+        doc/CHANGELOG.md: share/doc/ripgrep/CHANGELOG.md
+        doc/FAQ.md: share/doc/ripgrep/FAQ.md
+        doc/GUIDE.md: share/doc/ripgrep/GUIDE.md
+        README.md: share/doc/ripgrep/README.md
