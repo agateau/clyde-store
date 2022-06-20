@@ -1,0 +1,14 @@
+name: difft
+description: GitHub command-line client
+releases:
+  0.29.1:
+    x86_64-linux:
+      url: https://github.com/Wilfred/difftastic/releases/download/0.29.1/difft-x86_64-unknown-linux-gnu.tar.gz
+      sha256: 5ca9be3f084ab4372019f4c2246dccc7ad4c8cbce6fcba4cfe0bb7f324d9db7a
+
+installs:
+  0.29.0:
+    any:
+      strip: 0
+      files:
+        difft: bin/difft
