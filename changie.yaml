@@ -1,0 +1,17 @@
+name: changie
+description: Automated changelog tool for preparing releases with lots of customization options
+releases:
+  1.8.0:
+    x86_64-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_amd64.tar.gz
+      sha256: 7945e0a04ddf076a2a13f2082c4bce543576955a6101002a4b57c34b415a6837
+
+installs:
+  1.8.0:
+    any:
+      strip: 0
+      files:
+        CHANGELOG.md: share/doc/changie/CHANGELOG.md
+        LICENSE: share/doc/changie/LICENSE
+        README.md: share/doc/changie/README.md
+        changie: bin/changie
