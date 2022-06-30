@@ -1,0 +1,20 @@
+---
+name: nushell
+description: A new type of shell
+releases:
+  0.64.0:
+    x86_64-linux:
+      url: "https://github.com/nushell/nushell/releases/download/0.64.0/nu-0.64.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256: e514f12d5b0a4167bb4812d1c2604182c016fe0f792f9508aa9ef3407f194827
+installs:
+  0.64.0:
+    any-any:
+      strip: 0
+      files:
+        LICENSE: share/doc/nushell/LICENSE
+        README.txt: share/doc/nushell/README.txt
+        nu: bin/nu
+        nu_plugin_example: bin/nu_plugin_example
+        nu_plugin_gstat: bin/nu_plugin_gstat
+        nu_plugin_inc: bin/nu_plugin_inc
+        nu_plugin_query: bin/nu_plugin_query
