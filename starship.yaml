@@ -1,0 +1,14 @@
+---
+name: starship
+description: "The minimal, blazing-fast, and infinitely customizable prompt for any shell!"
+releases:
+  1.9.1:
+    x86_64-linux:
+      url: "https://github.com/starship/starship/releases/download/v1.9.1/starship-x86_64-unknown-linux-gnu.tar.gz"
+      sha256: cd05b6390251128e723bbbcbf21099b975a43058fbe57721eb3597be9f089aca
+installs:
+  1.9.1:
+    any-any:
+      strip: 0
+      files:
+        starship: bin/starship
