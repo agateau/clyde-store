@@ -1,0 +1,21 @@
+name: icoutils
+homepage: https://sourceforge.net/projects/unix-utils/
+description: tools to manipulate .ico files
+releases:
+  0.32.3:
+    x86_64-windows:
+      url: "https://downloads.sourceforge.net/project/unix-utils/icoutils/icoutils-0.32.3-x86_64.zip"
+      sha256: 1773b553fed5565004606d8732d9980ecec82cdccf35103700d71a17b4059723
+installs:
+  0.32.3:
+    x86_64-windows:
+      strip: 1
+      files:
+        share/man: share/man
+        bin: opt/icoutils/bin
+        share/locale: opt/icoutils/share/locale
+      extra_files:
+        icotool.bat: bin/
+        icotool: bin/
+        wrestool.bat: bin/
+        wrestool: bin/
