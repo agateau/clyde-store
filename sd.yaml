@@ -1,0 +1,15 @@
+---
+name: sd
+description: Intuitive find & replace CLI (sed alternative)
+homepage: "https://github.com/chmln/sd"
+releases:
+  0.7.6:
+    x86_64-linux:
+      url: "https://github.com/chmln/sd/releases/download/v0.7.6/sd-v0.7.6-x86_64-unknown-linux-musl"
+      sha256: dc11c9c8c61fa582e587e4d65b8d93c73d032b5dd215b42580115711a8d66012
+installs:
+  0.7.6:
+    any-any:
+      strip: 0
+      files:
+        sd-v0.7.6-x86_64-unknown-linux-musl: bin/sd
