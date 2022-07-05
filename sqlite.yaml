@@ -1,0 +1,16 @@
+---
+name: sqlite
+description: "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine."
+homepage: "https://www.sqlite.org"
+releases:
+  3.37.0:
+    x86_64-linux:
+      # Does not use the official binaries because sqlite does not provide x86_64 binaries
+      url: "https://github.com/CompuRoot/static-sqlite3/releases/download/3.37.0/sqlite3"
+      sha256: cf040cd539f017b4eb5de26eb626247c92ba2a56086252a1cfd1efb14c0f79f9
+installs:
+  3.37.0:
+    any-any:
+      strip: 0
+      files:
+        sqlite3: bin/sqlite3
