@@ -1,0 +1,38 @@
+---
+name: xh
+description: Friendly and fast tool for sending HTTP requests
+homepage: "https://github.com/ducaale/xh"
+releases:
+  0.16.1:
+    aarch64-linux:
+      url: "https://github.com/ducaale/xh/releases/download/v0.16.1/xh-v0.16.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256: 36e3d9c164deb25b46b184f4cdbbb933a27711e6ff296c60f09b0e781db287c4
+    x86_64-linux:
+      url: "https://github.com/ducaale/xh/releases/download/v0.16.1/xh-v0.16.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256: e369cdd618da40418704e32df820831705a03c1b9a42e38e1dcb033d19a63cfe
+    x86_64-macos:
+      url: "https://github.com/ducaale/xh/releases/download/v0.16.1/xh-v0.16.1-x86_64-apple-darwin.tar.gz"
+      sha256: 6cb22d3baa90ceb75e8849d84f81c5e1431d5ec00daa83edbbba08967dd8e04e
+    x86_64-windows:
+      url: "https://github.com/ducaale/xh/releases/download/v0.16.1/xh-v0.16.1-x86_64-pc-windows-msvc.zip"
+      sha256: 7ec41e263e20ec620bb164166e08fbdffecdc59514e842e5ba497415e1bc6879
+installs:
+  0.16.1:
+    x86_64-windows:
+      strip: 1
+      files:
+        xh.exe: bin/xh.exe
+        doc/xh.1: share/man/man1/xh.1
+        doc/CHANGELOG.md: share/doc/xh/CHANGELOG.md
+        LICENSE: share/doc/xh/LICENSE
+        README.md: share/doc/xh/README.md
+        # TODO completions
+    any-any:
+      strip: 1
+      files:
+        xh: bin/xh
+        doc/xh.1: share/man/man1/xh.1
+        doc/CHANGELOG.md: share/doc/xh/CHANGELOG.md
+        LICENSE: share/doc/xh/LICENSE
+        README.md: share/doc/xh/README.md
+        # TODO completions
