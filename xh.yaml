@@ -18,21 +18,12 @@ releases:
       sha256: 7ec41e263e20ec620bb164166e08fbdffecdc59514e842e5ba497415e1bc6879
 installs:
   0.16.1:
-    x86_64-windows:
-      strip: 1
-      files:
-        xh.exe: bin/
-        doc/xh.1: share/man/man1/
-        doc/CHANGELOG.md: share/doc/xh/
-        LICENSE: share/doc/xh/
-        README.md: share/doc/xh/
-        # TODO completions
     any-any:
       strip: 1
       files:
-        xh: bin/
+        xh${exe_ext}: bin/
         doc/xh.1: share/man/man1/
-        doc/CHANGELOG.md: share/doc/xh/
-        LICENSE: share/doc/xh/
-        README.md: share/doc/xh/
+        doc/CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
         # TODO completions

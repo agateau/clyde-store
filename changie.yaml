@@ -12,7 +12,7 @@ installs:
     any:
       strip: 0
       files:
-        CHANGELOG.md: share/doc/changie/
-        LICENSE: share/doc/changie/
-        README.md: share/doc/changie/
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
         changie: bin/

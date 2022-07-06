@@ -33,6 +33,6 @@ installs:
     any-any:
       strip: 1
       files:
-        LICENSE: share/doc/gh/
-        bin/gh: bin/
+        LICENSE: ${doc_dir}
+        bin/gh${exe_ext}: bin/
         share: share

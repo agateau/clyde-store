@@ -15,5 +15,5 @@ installs:
       files:
         git-filter-repo: bin/
         Documentation/man1: share/man/man1
-        Documentation/git-filter-repo.txt: share/doc/git-filter-repo/
-        README.md: share/doc/git-filter-repo/
+        Documentation/git-filter-repo.txt: ${doc_dir}
+        README.md: ${doc_dir}

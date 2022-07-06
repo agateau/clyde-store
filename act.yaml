@@ -13,5 +13,5 @@ installs:
       strip: 0
       files:
         act: bin/
-        LICENSE: share/doc/act/
-        README.md: share/doc/act/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}

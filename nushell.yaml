@@ -12,8 +12,8 @@ installs:
     any-any:
       strip: 0
       files:
-        LICENSE: share/doc/nushell/
-        README.txt: share/doc/nushell/
+        LICENSE: ${doc_dir}
+        README.txt: ${doc_dir}
         nu: bin/
         nu_plugin_example: bin/
         nu_plugin_gstat: bin/

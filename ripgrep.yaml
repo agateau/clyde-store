@@ -15,9 +15,16 @@ installs:
     any-any:
       strip: 1
       files:
-        README.md: share/doc/ripgrep/
-        doc/CHANGELOG.md: share/doc/ripgrep/
-        doc/FAQ.md: share/doc/ripgrep/
-        doc/GUIDE.md: share/doc/ripgrep/
+        README.md: ${doc_dir}
+        doc/CHANGELOG.md: ${doc_dir}
+        doc/FAQ.md: ${doc_dir}
+        doc/GUIDE.md: ${doc_dir}
         doc/rg.1: share/man/man1/
-        rg: bin/
+        rg${exe_ext}: bin/
+    x86_64-windows:
+        # Man page does not exist on Windows
+        README.md: ${doc_dir}
+        doc/CHANGELOG.md: ${doc_dir}
+        doc/FAQ.md: ${doc_dir}
+        doc/GUIDE.md: ${doc_dir}
+        rg${exe_ext}: bin/
