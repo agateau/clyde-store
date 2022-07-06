@@ -7,9 +7,16 @@ releases:
     x86_64-linux:
       url: "https://github.com/svenstaro/miniserve/releases/download/v0.20.0/miniserve-v0.20.0-x86_64-unknown-linux-musl"
       sha256: 4570d04a205f2f8a074f00f7f4906cf1bb0e1f4f44754b7eef670a2c4cf105f2
+    x86_64-windows:
+      url: "https://github.com/svenstaro/miniserve/releases/download/v0.20.0/miniserve-v0.20.0-x86_64-pc-windows-msvc.exe"
+      sha256: df8ee53087168338da831df6d9c615173a6932d8e7b7824e531a01e2a32920ed
 installs:
   0.20.0:
-    any-any:
+    x86_64-windows:
+      strip: 0
+      files:
+        miniserve-v0.20.0-x86_64-pc-windows-msvc.exe: bin/miniserve.exe
+    x86_64-linux:
       strip: 0
       files:
         miniserve-v0.20.0-x86_64-unknown-linux-musl: bin/miniserve
