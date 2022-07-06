@@ -21,18 +21,18 @@ installs:
     x86_64-windows:
       strip: 1
       files:
-        xh.exe: bin/xh.exe
-        doc/xh.1: share/man/man1/xh.1
-        doc/CHANGELOG.md: share/doc/xh/CHANGELOG.md
-        LICENSE: share/doc/xh/LICENSE
-        README.md: share/doc/xh/README.md
+        xh.exe: bin/
+        doc/xh.1: share/man/man1/
+        doc/CHANGELOG.md: share/doc/xh/
+        LICENSE: share/doc/xh/
+        README.md: share/doc/xh/
         # TODO completions
     any-any:
       strip: 1
       files:
-        xh: bin/xh
-        doc/xh.1: share/man/man1/xh.1
-        doc/CHANGELOG.md: share/doc/xh/CHANGELOG.md
-        LICENSE: share/doc/xh/LICENSE
-        README.md: share/doc/xh/README.md
+        xh: bin/
+        doc/xh.1: share/man/man1/
+        doc/CHANGELOG.md: share/doc/xh/
+        LICENSE: share/doc/xh/
+        README.md: share/doc/xh/
         # TODO completions
