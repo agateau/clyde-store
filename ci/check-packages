@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd $(dirname $0)/..
+CI_DIR=$PWD/ci
+CLYDE_DIR=$CI_DIR/clyde
+
+CLYDE_BUILDS_BASE_URL=https://builds.agateau.com/clyde/
+
+download_clyde() {
+    echo "Looking for latest Clyde Linux archive"
+    local latest_archive_name=$(curl -s $CLYDE_BUILDS_BASE_URL \
+        | grep -o 'clyde-[-_a-zT0-9.+]*-linux\.tar\.gz' \
+        | head -1
+    )
+    echo "Latest archive is $latest_archive_name"
+
+    echo "Downloading and unpacking archive"
+    rm -rf $CLYDE_DIR
+    mkdir $CLYDE_DIR
+    curl -s $CLYDE_BUILDS_BASE_URL$latest_archive_name \
+        | tar -C $CLYDE_DIR -xz --strip-components=1
+}
+
+download_clyde
+for name in *.yaml ; do
+    echo "Checking $name"
+    $CLYDE_DIR/clydetools check $name
+done
