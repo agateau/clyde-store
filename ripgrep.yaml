@@ -22,6 +22,8 @@ installs:
         doc/rg.1: share/man/man1/
         rg${exe_ext}: bin/
     x86_64-windows:
+      strip: 1
+      files:
         # Man page does not exist on Windows
         README.md: ${doc_dir}
         doc/CHANGELOG.md: ${doc_dir}
