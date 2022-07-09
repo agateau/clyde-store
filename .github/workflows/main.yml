@@ -9,7 +9,21 @@ on:
 
 jobs:
   check-packages:
-    runs-on: ubuntu-18.04
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-18.04
+          - macos-10.15
+          # Disabled for now, because download fails on all packages
+          # - windows-2019
+
+    runs-on: ${{ matrix.os }}
+
+    defaults:
+      run:
+        shell: bash
+
     steps:
       - uses: actions/checkout@v2
 

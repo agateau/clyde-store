@@ -379,3 +379,12 @@ installs:
         bin/cmake-gui:
         share:
         man: share/man
+    any-macos:
+      strip: 3
+      files:
+        bin/ccmake:
+        bin/cmake:
+        bin/cpack:
+        bin/ctest:
+        share:
+        man: share/man

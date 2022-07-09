@@ -1,29 +1,66 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+. $(dirname $0)/functions.sh
+
 cd $(dirname $0)/..
 CI_DIR=$PWD/ci
 CLYDE_DIR=$CI_DIR/clyde
 
 CLYDE_BUILDS_BASE_URL=https://builds.agateau.com/clyde/
 
-download_clyde() {
-    echo "Looking for latest Clyde Linux archive"
-    local latest_archive_name=$(curl -s $CLYDE_BUILDS_BASE_URL \
-        | grep -o 'clyde-[-_a-zT0-9.+]*-linux\.tar\.gz' \
-        | head -1
-    )
-    echo "Latest archive is $latest_archive_name"
-
-    echo "Downloading and unpacking archive"
-    rm -rf $CLYDE_DIR
-    mkdir $CLYDE_DIR
-    curl -s $CLYDE_BUILDS_BASE_URL$latest_archive_name \
-        | tar -C $CLYDE_DIR -xz --strip-components=1
+progress() {
+    echo "=== $@ ==="
 }
 
+download_clyde() {
+    if [ "$OS_NAME" = "windows" ] ; then
+        local archive_ext_rx="\.zip"
+    else
+        local archive_ext_rx="\.tar\.gz"
+    fi
+
+    progress "Looking for latest Clyde archive on $CLYDE_BUILDS_BASE_URL"
+    local latest_archive_name=$(curl -s $CLYDE_BUILDS_BASE_URL \
+        | grep -o "clyde-[-_a-zT0-9.+]*-$OS_NAME$archive_ext_rx" \
+        | head -1
+    )
+    if [ -z "$latest_archive_name" ] ; then
+        die "Not found"
+    fi
+
+    echo "Latest archive is $latest_archive_name"
+
+    rm -rf $CLYDE_DIR
+    mkdir $CLYDE_DIR
+    (
+        cd $CLYDE_DIR
+        progress "Downloading archive"
+        curl -s $CLYDE_BUILDS_BASE_URL$latest_archive_name -O
+
+        progress "Unpacking archive"
+        if [ "$OS_NAME" = "windows" ] ; then
+            7z e -bb0 $latest_archive_name
+        else
+            tar --strip-components=1 -xzf $latest_archive_name
+        fi
+    )
+}
+
+init_system_vars
 download_clyde
+
+export PATH=$CLYDE_DIR:$PATH
+fails=""
+
 for name in *.yaml ; do
-    echo "Checking $name"
-    $CLYDE_DIR/clydetools check $name
+    progress "Checking $name"
+    if ! $CLYDE_DIR/clydetools check $name ; then
+        fails="$fails $name"
+    fi
 done
+
+progress "Finished"
+if [ -n "$fails" ] ; then
+    die "Some packages failed to install:$fails"
+fi
