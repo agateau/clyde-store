@@ -1,0 +1,18 @@
+---
+name: jless.yaml
+description: "Command-line JSON viewer designed for reading, exploring, and searching through JSON data."
+homepage: "https://jless.io/"
+releases:
+  0.8.0:
+    x86_64-linux:
+      url: "https://github.com/PaulJuliusMartinez/jless/releases/download/v0.8.0/jless-v0.8.0-x86_64-unknown-linux-gnu.zip"
+      sha256: 54e0a3db4d95adb2e12fb4c2d696592c31880e6eda391ab6ce5023868d716939
+    x86_64-macos:
+      url: "https://github.com/PaulJuliusMartinez/jless/releases/download/v0.8.0/jless-v0.8.0-x86_64-apple-darwin.zip"
+      sha256: 5fdd41584c8c08e811d32b80d5998740fc5235484dd0ce84ad989965f0833968
+installs:
+  0.8.0:
+    any-any:
+      strip: 0
+      files:
+        jless: bin/
