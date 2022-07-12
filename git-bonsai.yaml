@@ -1,16 +1,22 @@
+---
 name: git-bonsai
 description: Tend the branches of your git garden
-homepage: https://github.com/agateau/git-bonsai
+homepage: "https://github.com/agateau/git-bonsai"
 releases:
   0.2.1:
     x86_64-linux:
-      url: https://github.com/agateau/git-bonsai/releases/download/0.2.1/git-bonsai-0.2.1-linux.tar.bz2
+      url: "https://github.com/agateau/git-bonsai/releases/download/0.2.1/git-bonsai-0.2.1-linux.tar.bz2"
       sha256: ff7aa2118ecdf7357f90054bba8d45e15105666d41a7b9da53744b59d2f107eb
-
+    x86_64-macos:
+      url: "https://github.com/agateau/git-bonsai/releases/download/0.2.1/git-bonsai-0.2.1-macos.tar.bz2"
+      sha256: 7e1afe0789d2095efece044b37fe25a9aa4ae4bbb1ca9eac970497a4388c2e2e
+    x86_64-windows:
+      url: "https://github.com/agateau/git-bonsai/releases/download/0.2.1/git-bonsai-0.2.1-windows.tar.bz2"
+      sha256: 0cfa53ccf9e163ec1eadcbe704890bcfaaf6716317aa4d115ebe63062f7f3d24
 installs:
   0.2.0:
-    any:
+    any-any:
       strip: 1
       files:
-        git-bonsai: bin/
-        README.md: ${doc_dir}
+        README.md: "${doc_dir}"
+        git-bonsai${exe_ext}: bin/

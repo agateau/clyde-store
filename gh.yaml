@@ -28,16 +28,35 @@ releases:
     x86_64-windows:
       url: "https://github.com/cli/cli/releases/download/v2.13.0/gh_2.13.0_windows_amd64.zip"
       sha256: 8932b0c9ee45dfbee5a734095def57076f05cf9bae053978979ea74639611564
+  2.14.0:
+    aarch64-linux:
+      url: "https://github.com/cli/cli/releases/download/v2.14.0/gh_2.14.0_linux_arm64.tar.gz"
+      sha256: ddfe5cceb508faab19192f04b5d593a13bc6e00c978a5f543b00677d4f676c0c
+    x86-linux:
+      url: "https://github.com/cli/cli/releases/download/v2.14.0/gh_2.14.0_linux_386.tar.gz"
+      sha256: 38392031bb58c16093f5dc3bd48de339e089241416ff11a8da7cfccebaf1ca65
+    x86-windows:
+      url: "https://github.com/cli/cli/releases/download/v2.14.0/gh_2.14.0_windows_386.zip"
+      sha256: 39101f75060cf78f039485467834257d0f15293736ce955c99360298a80661a0
+    x86_64-linux:
+      url: "https://github.com/cli/cli/releases/download/v2.14.0/gh_2.14.0_linux_amd64.tar.gz"
+      sha256: 4f4b044c6583e66147acbfab412b4cd6b98b2559f30d2876b88a3755e26dcb44
+    x86_64-macos:
+      url: "https://github.com/cli/cli/releases/download/v2.14.0/gh_2.14.0_macOS_amd64.tar.gz"
+      sha256: 1f1da59eca2d59a44f53adfbe12d9d062ee9487e208eccb6799c42515be49854
+    x86_64-windows:
+      url: "https://github.com/cli/cli/releases/download/v2.14.0/gh_2.14.0_windows_amd64.zip"
+      sha256: cd38abaad1061318ec6d64a4b76325790b943f6368b3d3052477f925e7f3b374
 installs:
   2.11.3:
     any-any:
       strip: 1
       files:
-        LICENSE: ${doc_dir}
-        bin/gh${exe_ext}: bin/
+        LICENSE: "${doc_dir}"
+        "bin/gh${exe_ext}": bin/
         share: share
     any-windows:
       strip: 0
       files:
-        LICENSE: ${doc_dir}
-        bin/gh${exe_ext}: bin/
+        LICENSE: "${doc_dir}"
+        "bin/gh${exe_ext}": bin/
