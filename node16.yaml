@@ -10,18 +10,19 @@ releases:
     aarch64-macos:
       url: "https://nodejs.org/dist/v16.16.0/node-v16.16.0-darwin-arm64.tar.gz"
       sha256: 167721c2d72402e54adc0f8c87ca840796216c4d98946509d73221b771ad3e4c
-    x86-windows:
-      url: "https://nodejs.org/dist/v16.16.0/node-v16.16.0-win-x86.zip"
-      sha256: 7f1b750d324093b853f41c20cf4c3f502113064e7a42d45dceb98034209e773d
     x86_64-linux:
       url: "https://nodejs.org/dist/v16.16.0/node-v16.16.0-linux-x64.tar.xz"
       sha256: edcb6e9bb049ae365611aa209fc03c4bfc7e0295dbcc5b2f1e710ac70384a8ec
     x86_64-macos:
       url: "https://nodejs.org/dist/v16.16.0/node-v16.16.0-darwin-x64.tar.gz"
       sha256: 982edd0fad364ad6e2d72161671544ab9399bd0ca8c726bde3cd07775c4c709a
-    x86_64-windows:
-      url: "https://nodejs.org/dist/v16.16.0/node-v16.16.0-win-x64.zip"
-      sha256: c657acc98af55018c8fd6113c7e08d67c8083af75ba0306f9561b0117abc39d4
+    # Disable until https://github.com/agateau/clyde/issues/22 is fixed
+    # x86-windows:
+    #   url: "https://nodejs.org/dist/v16.16.0/node-v16.16.0-win-x86.zip"
+    #   sha256: 7f1b750d324093b853f41c20cf4c3f502113064e7a42d45dceb98034209e773d
+    # x86_64-windows:
+    #   url: "https://nodejs.org/dist/v16.16.0/node-v16.16.0-win-x64.zip"
+    #   sha256: c657acc98af55018c8fd6113c7e08d67c8083af75ba0306f9561b0117abc39d4
 installs:
   16.16.0:
     any-any:

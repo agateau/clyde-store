@@ -51,16 +51,8 @@ init_system_vars
 download_clyde
 
 export PATH=$CLYDE_DIR:$PATH
-fails=""
 
-for name in *.yaml ; do
-    progress "Checking $name"
-    if ! $CLYDE_DIR/clydetools check $name ; then
-        fails="$fails $name"
-    fi
-done
+progress "Checking packages"
+$CLYDE_DIR/clydetools check *.yaml
 
-progress "Finished"
-if [ -n "$fails" ] ; then
-    die "Some packages failed to install:$fails"
-fi
+progress "Success!"
