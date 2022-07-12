@@ -1,18 +1,39 @@
+---
 name: changie
 description: Automated changelog tool for preparing releases with lots of customization options
-homepage: https://github.com/miniscruff/changie
+homepage: "https://github.com/miniscruff/changie"
 releases:
   1.8.0:
+    aarch64-linux:
+      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_arm64.tar.gz"
+      sha256: 8e23c5afad0d2c34aa643bc89326b06be96c47da25210df262397c7dacbb6afd
+    aarch64-macos:
+      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_darwin_arm64.tar.gz"
+      sha256: b62795a78fe3edbf75fe0047f241e6813a1b67aef5596ca3e615ba29329a66c6
+    aarch64-windows:
+      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_windows_arm64.zip"
+      sha256: 6f024de02b8f20a8d25364431906298493a45b3f116dd4d6ab91afa9cfad1a68
+    x86-linux:
+      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_386.tar.gz"
+      sha256: 868d0c6fd33180c85232b134c1d2cb9204af02e3c7cf188b1334ba0973c77d63
+    x86-windows:
+      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_windows_386.zip"
+      sha256: 19df2ea540460ff90f0b0878f02a3a7caf68318fa05ef1b2919840ee69f7c984
     x86_64-linux:
-      url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_amd64.tar.gz
+      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_amd64.tar.gz"
       sha256: 7945e0a04ddf076a2a13f2082c4bce543576955a6101002a4b57c34b415a6837
-
+    x86_64-macos:
+      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_darwin_amd64.tar.gz"
+      sha256: a6caa4637ead9209dd78ce011ffa47049fab555ffe8e731fbaee542642103070
+    x86_64-windows:
+      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_windows_amd64.zip"
+      sha256: 2e7add7a82154b443597609910f579f733491c7133c9cff55b5bd731877f6108
 installs:
   1.8.0:
-    any:
+    any-any:
       strip: 0
       files:
-        CHANGELOG.md: ${doc_dir}
-        LICENSE: ${doc_dir}
-        README.md: ${doc_dir}
-        changie: bin/
+        CHANGELOG.md: "${doc_dir}"
+        LICENSE: "${doc_dir}"
+        README.md: "${doc_dir}"
+        changie${exe_ext}: bin/
