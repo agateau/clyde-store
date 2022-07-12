@@ -1,7 +1,7 @@
 ---
 name: fzf
 description: fzf is a general-purpose command-line fuzzy finder.
-homepage: https://github.com/junegunn/fzf
+homepage: "https://github.com/junegunn/fzf"
 releases:
   0.27.2:
     aarch64-linux:
@@ -62,16 +62,21 @@ releases:
     aarch64-macos:
       url: "https://github.com/junegunn/fzf/releases/download/0.30.0/fzf-0.30.0-darwin_arm64.zip"
       sha256: cc114b897876cf7118dac7b67bdfd62c88335299121a05df483e86fe6224096c
+    aarch64-windows:
+      url: "https://github.com/junegunn/fzf/releases/download/0.30.0/fzf-0.30.0-windows_arm64.zip"
+      sha256: 9db775d71374b08e2888114347542d4b0069764ed22f0413cf3af2b759904ecf
     x86_64-linux:
       url: "https://github.com/junegunn/fzf/releases/download/0.30.0/fzf-0.30.0-linux_amd64.tar.gz"
       sha256: 53b136e0566a1b3ab57c28dffadb3d0392ad0968a714e65862cf4497152674e5
     x86_64-macos:
       url: "https://github.com/junegunn/fzf/releases/download/0.30.0/fzf-0.30.0-darwin_amd64.zip"
       sha256: c33d186e38c5fe0ca444b7a8363e6ac7d05d6db050457965096a1f5d28ba3ab3
+    x86_64-windows:
+      url: "https://github.com/junegunn/fzf/releases/download/0.30.0/fzf-0.30.0-windows_amd64.zip"
+      sha256: ab0ed3255564df1a6643ff492ebc728c25f3df9eaa5c11ac7a28cf661667412f
 installs:
   0.27.2:
-    any:
+    any-any:
       strip: 0
       files:
-        fzf: bin/
-
+        fzf${exe_ext}: bin/
