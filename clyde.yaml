@@ -1,0 +1,25 @@
+---
+name: clyde
+description: A package manager for prebuilt applications
+homepage: "https://github.com/agateau/agateau"
+releases:
+  0.1.0:
+    x86_64-linux:
+      url: "https://github.com/agateau/clyde/releases/download/0.1.0/clyde-0.1.0%2B20220716T105940-303574d-x86_64-linux.tar.gz"
+      sha256: cbe4fa0776ac552c757dec3f0eb71e24cef5ec14cd4ef413c2629dcec50ea34c
+    x86_64-macos:
+      url: "https://github.com/agateau/clyde/releases/download/0.1.0/clyde-0.1.0%2B20220716T105940-303574d-x86_64-macos.tar.gz"
+      sha256: ab7a8cafe78dc23bd6db52fd6c518286d501ab49716c15f20c0dbdabffada117
+    x86_64-windows:
+      url: "https://github.com/agateau/clyde/releases/download/0.1.0/clyde-0.1.0%2B20220716T105940-303574d-x86_64-windows.zip"
+      sha256: 3eb200893511faff9227d68227ca1dcf1a6721fd7633ca55a47732fa41b1d339
+installs:
+  0.1.0:
+    any-any:
+      strip: 1
+      files:
+        clyde${exe_ext}: bin/
+        clydetools${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+        README.md: ${doc_dir}
