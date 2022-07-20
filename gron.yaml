@@ -1,0 +1,36 @@
+---
+name: gron
+description: Make JSON greppable!
+homepage: "https://github.com/tomnomnom/gron"
+releases:
+  0.7.1:
+    aarch64-linux:
+      url: "https://github.com/tomnomnom/gron/releases/download/v0.7.1/gron-linux-arm64-0.7.1.tgz"
+      sha256: 5d1d4764723a0f768d9ddef0685a052f564c8bbf5e475382342faf4224a07d80
+    aarch64-macos:
+      url: "https://github.com/tomnomnom/gron/releases/download/v0.7.1/gron-darwin-arm64-0.7.1.tgz"
+      sha256: 1b9b987c6ead684a992db91b7a32fd15ef946013dfabfe84d00b2fa6f55d7182
+    aarch64-windows:
+      url: "https://github.com/tomnomnom/gron/releases/download/v0.7.1/gron-windows-arm64-0.7.1.zip"
+      sha256: 9bd38a241f1afdbd3c8f952b92b7090e7a446cac5251bfed3fdf28f219c9dda8
+    x86-linux:
+      url: "https://github.com/tomnomnom/gron/releases/download/v0.7.1/gron-linux-386-0.7.1.tgz"
+      sha256: 62c2cc1b2444c818e5e410c9b4ea296b437b6dddc7366dff89977d17fc761d50
+    x86-windows:
+      url: "https://github.com/tomnomnom/gron/releases/download/v0.7.1/gron-windows-386-0.7.1.zip"
+      sha256: a532d5aa29395592f3725c336640f2cf9eb670c8ce25115aaee0082d5cdf5a0e
+    x86_64-linux:
+      url: "https://github.com/tomnomnom/gron/releases/download/v0.7.1/gron-linux-amd64-0.7.1.tgz"
+      sha256: ca0335826b02b044fa05d7e951521e45c6ced1c381a73ed5803450088e18bf22
+    x86_64-macos:
+      url: "https://github.com/tomnomnom/gron/releases/download/v0.7.1/gron-darwin-amd64-0.7.1.tgz"
+      sha256: 59034d4aa883c5815784b290567d104669a51f20eaf97f1d8baa4f74e22047d6
+    x86_64-windows:
+      url: "https://github.com/tomnomnom/gron/releases/download/v0.7.1/gron-windows-amd64-0.7.1.zip"
+      sha256: 5ed427a4a504d8e03a1770b71d4ad16a3764179e085b5ae84e51a57b299f300d
+installs:
+  0.7.1:
+    any-any:
+      strip: 0
+      files:
+        gron${exe_ext}: bin/
