@@ -1,0 +1,33 @@
+---
+name: croc
+description: Easily and securely send things from one computer to another
+homepage: "https://schollz.com/software/croc6"
+releases:
+  9.6.0:
+    aarch64-linux:
+      url: "https://github.com/schollz/croc/releases/download/v9.6.0/croc_9.6.0_Linux-ARM64.tar.gz"
+      sha256: 358b9e4d0c0132b54503757b2769b14b77fc91855ef1018cf4559293522e2038
+    x86-linux:
+      url: "https://github.com/schollz/croc/releases/download/v9.6.0/croc_9.6.0_Linux-32bit.tar.gz"
+      sha256: 9d4dbc63a04c038a0784583bad827822ecff1ed6b5a59df093d62f6fb6ad0a64
+    x86-windows:
+      url: "https://github.com/schollz/croc/releases/download/v9.6.0/croc_9.6.0_Windows-32bit.zip"
+      sha256: 0c7c16e2456c4a3f25e1146f129c5588c781d1a7ed5e5a65476409369eb58628
+    x86_64-linux:
+      url: "https://github.com/schollz/croc/releases/download/v9.6.0/croc_9.6.0_Linux-64bit.tar.gz"
+      sha256: a9dbb7e3b8e3c286b2fe51a9f4fdbc2c0404d9bb2439baf85133e5e1c22a26b5
+    x86_64-macos:
+      url: "https://github.com/schollz/croc/releases/download/v9.6.0/croc_9.6.0_macOS-64bit.tar.gz"
+      sha256: d9781d82f5a19c60ddb42d2ad82628a3b1dca67ee0ef04415f08bdb6572f9fef
+    x86_64-windows:
+      url: "https://github.com/schollz/croc/releases/download/v9.6.0/croc_9.6.0_Windows-64bit.zip"
+      sha256: 9b96a8891da7419abaf4a0d7dddc641da62c315147263f6c4a3e24d85a2eb7c1
+installs:
+  9.6.0:
+    any-any:
+      strip: 0
+      files:
+        croc${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+
