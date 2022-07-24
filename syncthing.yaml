@@ -1,0 +1,38 @@
+---
+name: syncthing
+description: "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes."
+homepage: "https://syncthing.net"
+releases:
+  1.20.3:
+    aarch64-linux:
+      url: "https://github.com/syncthing/syncthing/releases/download/v1.20.3/syncthing-linux-arm64-v1.20.3.tar.gz"
+      sha256: a7b04c907ff7c9eb8d5d3816ee20c35b658b1f857361a6effbf57f99215bf6f9
+    aarch64-windows:
+      url: "https://github.com/syncthing/syncthing/releases/download/v1.20.3/syncthing-windows-arm64-v1.20.3.zip"
+      sha256: bf03c184549d31c808988524495616cda35c29f4998ac469ad018c88b9c8e9d6
+    any-apple:
+      url: "https://github.com/syncthing/syncthing/releases/download/v1.20.3/syncthing-macos-universal-v1.20.3.zip"
+      sha256: 2c80db968d0cfbd610dcdecf4f8b8a6e067bf3b0537cd578a0782d94a68af74a
+    x86-linux:
+      url: "https://github.com/syncthing/syncthing/releases/download/v1.20.3/syncthing-linux-386-v1.20.3.tar.gz"
+      sha256: 537fc4069133fc19541c9f84e342ca3cf8d0bb9b8177045913d37879af80a81c
+    x86-windows:
+      url: "https://github.com/syncthing/syncthing/releases/download/v1.20.3/syncthing-windows-386-v1.20.3.zip"
+      sha256: 06dcf906b79abfe16972d3f2210942cf8b6dee63240ff7a52e401dc39013b810
+    x86_64-linux:
+      url: "https://github.com/syncthing/syncthing/releases/download/v1.20.3/syncthing-linux-amd64-v1.20.3.tar.gz"
+      sha256: 0f9b8ce12e24766de264d1c1f1664b51b8570bcf4dca3b33f1520c334ae19012
+    x86_64-windows:
+      url: "https://github.com/syncthing/syncthing/releases/download/v1.20.3/syncthing-windows-amd64-v1.20.3.zip"
+      sha256: 0cbca604d3028a447cc3f2cdf33245fff0c4cc6f9f6572a3c2c06bc543caf334
+installs:
+  1.20.3:
+    any-any:
+      strip: 1
+      files:
+        syncthing${exe_ext}: bin/
+        AUTHORS.txt: ${doc_dir}
+        LICENSE.txt: ${doc_dir}
+        README.txt: ${doc_dir}
+        extra/FAQ.pdf: ${doc_dir}
+        extra/Getting-Started.pdf: ${doc_dir}
