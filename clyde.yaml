@@ -13,13 +13,23 @@ releases:
     x86_64-windows:
       url: "https://github.com/agateau/clyde/releases/download/0.1.0/clyde-0.1.0%2B20220716T105940-303574d-x86_64-windows.zip"
       sha256: 3eb200893511faff9227d68227ca1dcf1a6721fd7633ca55a47732fa41b1d339
+  0.2.0:
+    x86_64-linux:
+      url: "https://github.com/agateau/clyde/releases/download/0.2.0/clyde-0.2.0-x86_64-linux.tar.gz"
+      sha256: b22a6417c17c649c76e119560099cb79e1316f01c70410b65982c6147630aa82
+    x86_64-macos:
+      url: "https://github.com/agateau/clyde/releases/download/0.2.0/clyde-0.2.0-x86_64-macos.tar.gz"
+      sha256: cc022647dfec27803c71294fd6bb253521fba7e4e70489fa33f94af66c2bfe32
+    x86_64-windows:
+      url: "https://github.com/agateau/clyde/releases/download/0.2.0/clyde-0.2.0-x86_64-windows.zip"
+      sha256: 716434dcdd53592596276566a1574386497de6ed8b7e53d824a96cd43d2e44af
 installs:
   0.1.0:
     any-any:
       strip: 1
       files:
-        clyde${exe_ext}: bin/
-        clydetools${exe_ext}: bin/
-        LICENSE: ${doc_dir}
-        CHANGELOG.md: ${doc_dir}
-        README.md: ${doc_dir}
+        CHANGELOG.md: "${doc_dir}"
+        LICENSE: "${doc_dir}"
+        README.md: "${doc_dir}"
+        "clyde${exe_ext}": bin/
+        "clydetools${exe_ext}": bin/
