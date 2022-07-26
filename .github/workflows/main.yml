@@ -1,8 +1,10 @@
 name: Main
 
 on:
-  push:
   pull_request:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
