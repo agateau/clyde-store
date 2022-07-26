@@ -1,21 +1,49 @@
 ---
 name: nushell
 description: A new type of shell
-homepage: https://www.nushell.sh
+homepage: "https://www.nushell.sh"
 releases:
   0.64.0:
     x86_64-linux:
       url: "https://github.com/nushell/nushell/releases/download/0.64.0/nu-0.64.0-x86_64-unknown-linux-gnu.tar.gz"
       sha256: e514f12d5b0a4167bb4812d1c2604182c016fe0f792f9508aa9ef3407f194827
+  0.65.0:
+    aarch64-linux:
+      url: "https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256: 7bba76e44f032f337e625ab5907766a4e3a4334fc42acc11bbe363d3bb868464
+    aarch64-macos:
+      url: "https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-aarch64-apple-darwin.tar.gz"
+      sha256: 52c4067b6a061b61a464963ec39dbabbeb03bc113169192c487a8a34692ac689
+    x86_64-linux:
+      url: "https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256: 1289539a9eceeabbdb581043b8d201033395315f768075ced80c689bce2d532b
+    x86_64-macos:
+      url: "https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-x86_64-apple-darwin.tar.gz"
+      sha256: 70f293b4f2d0a4ebf91cd22c20e8f9fd42ecb2698b7051eb787f06d2bb24f04d
+    x86_64-windows:
+      url: "https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-x86_64-pc-windows-msvc.zip"
+      sha256: 470e8b573bbe3010aac3867b88866b00978b976ca40a05cc267f7579c2a5c8eb
 installs:
   0.64.0:
     any-any:
       strip: 0
       files:
-        LICENSE: ${doc_dir}
-        README.txt: ${doc_dir}
-        nu: bin/
-        nu_plugin_example: bin/
-        nu_plugin_gstat: bin/
-        nu_plugin_inc: bin/
-        nu_plugin_query: bin/
+        LICENSE: "${doc_dir}"
+        README.txt: "${doc_dir}"
+        nu${exe_ext}: bin/
+        nu_plugin_example${exe_ext}: bin/
+        nu_plugin_gstat${exe_ext}: bin/
+        nu_plugin_inc${exe_ext}: bin/
+        nu_plugin_query${exe_ext}: bin/
+    any-windows:
+      strip: 0
+      files:
+        LICENSE: "${doc_dir}"
+        LICENSE-for-less.txt: "${doc_dir}"
+        README.txt: "${doc_dir}"
+        less${exe_ext}: bin/
+        nu${exe_ext}: bin/
+        nu_plugin_example${exe_ext}: bin/
+        nu_plugin_gstat${exe_ext}: bin/
+        nu_plugin_inc${exe_ext}: bin/
+        nu_plugin_query${exe_ext}: bin/
