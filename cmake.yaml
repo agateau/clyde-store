@@ -1,85 +1,60 @@
+---
 name: cmake
-description: CMake is an open-source, cross-platform family of tools designed to build, test and package software
-homepage: https://cmake.org
+description: "CMake is an open-source, cross-platform family of tools designed to build, test and package software"
+homepage: "https://cmake.org"
 releases:
-  3.22.5:
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.5/cmake-3.22.5-macos-universal.tar.gz"
-      sha256: 61bf37055959e75f8055fd4fc17ab458fddbf0b7278df26dc93cb835c57f3bf2
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.5/cmake-3.22.5-macos-universal.tar.gz"
-      sha256: 61bf37055959e75f8055fd4fc17ab458fddbf0b7278df26dc93cb835c57f3bf2
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.5/cmake-3.22.5-linux-x86_64.tar.gz"
-      sha256: 5a80198423f731ea12ade14b2e44613a4741a9485c8a056f1be93ab468dd1955
+  3.20.4:
     aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.5/cmake-3.22.5-linux-x86_64.tar.gz"
-      sha256: 5a80198423f731ea12ade14b2e44613a4741a9485c8a056f1be93ab468dd1955
-  3.22.2:
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2-linux-x86_64.tar.gz"
-      sha256: 38b3befdee8fd2bac06954e2a77cb3072e6833c69d8cc013c0a3b26f1cfdfe37
+      url: "https://github.com/Kitware/CMake/releases/download/v3.20.4/cmake-3.20.4-linux-x86_64.tar.gz"
+      sha256: 067feed25b76b3adf5863f5a5f7e2b8cafb2dcd6feeaac39a713372ef2c3584c
     aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2-macos-universal.tar.gz"
-      sha256: cc763f6110b4d49daf51d05689fe54526f84056c9418b0735d9058c803931e54
+      url: "https://github.com/Kitware/CMake/releases/download/v3.20.4/cmake-3.20.4-macos-universal.tar.gz"
+      sha256: df90016635e3183834143c6d94607f0804fe9762f7cc6032f6a4afd7c19cd43b
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.20.4/cmake-3.20.4-linux-x86_64.tar.gz"
+      sha256: 067feed25b76b3adf5863f5a5f7e2b8cafb2dcd6feeaac39a713372ef2c3584c
     x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2-macos-universal.tar.gz"
-      sha256: cc763f6110b4d49daf51d05689fe54526f84056c9418b0735d9058c803931e54
+      url: "https://github.com/Kitware/CMake/releases/download/v3.20.4/cmake-3.20.4-macos-universal.tar.gz"
+      sha256: df90016635e3183834143c6d94607f0804fe9762f7cc6032f6a4afd7c19cd43b
+  3.21.0:
     aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2-linux-x86_64.tar.gz"
-      sha256: 38b3befdee8fd2bac06954e2a77cb3072e6833c69d8cc013c0a3b26f1cfdfe37
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0/cmake-3.21.0-linux-x86_64.tar.gz"
+      sha256: d54ef6909f519740bc85cec07ff54574cd1e061f9f17357d9ace69f61c6291ce
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0/cmake-3.21.0-macos-universal.tar.gz"
+      sha256: c1c6f19dfc9c658a48b5aed22806595b2337bb3aedb71ab826552f74f568719f
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0/cmake-3.21.0-linux-x86_64.tar.gz"
+      sha256: d54ef6909f519740bc85cec07ff54574cd1e061f9f17357d9ace69f61c6291ce
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0/cmake-3.21.0-macos-universal.tar.gz"
+      sha256: c1c6f19dfc9c658a48b5aed22806595b2337bb3aedb71ab826552f74f568719f
   3.21.0-rc1:
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc1/cmake-3.21.0-rc1-macos-universal.tar.gz"
-      sha256: 6110ddf04e30a084f0637c0d1f57f84e13a91fddc199dcfdabd4b2f7581e305e
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc1/cmake-3.21.0-rc1-macos-universal.tar.gz"
-      sha256: 6110ddf04e30a084f0637c0d1f57f84e13a91fddc199dcfdabd4b2f7581e305e
     aarch64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc1/cmake-3.21.0-rc1-linux-x86_64.tar.gz"
       sha256: 7fb481813cf7f24700219e09fb53bf2794f06622c67b4b1261d22b69ab57fc58
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc1/cmake-3.21.0-rc1-macos-universal.tar.gz"
+      sha256: 6110ddf04e30a084f0637c0d1f57f84e13a91fddc199dcfdabd4b2f7581e305e
     x86_64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc1/cmake-3.21.0-rc1-linux-x86_64.tar.gz"
       sha256: 7fb481813cf7f24700219e09fb53bf2794f06622c67b4b1261d22b69ab57fc58
-  3.22.0-rc3:
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc3/cmake-3.22.0-rc3-linux-x86_64.tar.gz"
-      sha256: 9fb6f972a5e7c2bea67287ba1fd235d0966bb7c7f37386fa5e58b3c29f2c4d4d
     x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc3/cmake-3.22.0-rc3-macos-universal.tar.gz"
-      sha256: 9448048ed5898f2e75d4ae91e71ccefc6fb7e56801d912ecb24a1d1387db0247
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc3/cmake-3.22.0-rc3-linux-x86_64.tar.gz"
-      sha256: 9fb6f972a5e7c2bea67287ba1fd235d0966bb7c7f37386fa5e58b3c29f2c4d4d
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc3/cmake-3.22.0-rc3-macos-universal.tar.gz"
-      sha256: 9448048ed5898f2e75d4ae91e71ccefc6fb7e56801d912ecb24a1d1387db0247
-  3.21.3:
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.3/cmake-3.21.3-linux-x86_64.tar.gz"
-      sha256: a19aa9fcf368e9d923cdb29189528f0fe00a0d08e752ba4e547af91817518696
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.3/cmake-3.21.3-macos-universal.tar.gz"
-      sha256: a86c6d4ffb829e46cf4ea6c14558917b0a15eb42019c5c6b55a25e2610e8c8da
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc1/cmake-3.21.0-rc1-macos-universal.tar.gz"
+      sha256: 6110ddf04e30a084f0637c0d1f57f84e13a91fddc199dcfdabd4b2f7581e305e
+  3.21.0-rc2:
     aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.3/cmake-3.21.3-linux-x86_64.tar.gz"
-      sha256: a19aa9fcf368e9d923cdb29189528f0fe00a0d08e752ba4e547af91817518696
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.3/cmake-3.21.3-macos-universal.tar.gz"
-      sha256: a86c6d4ffb829e46cf4ea6c14558917b0a15eb42019c5c6b55a25e2610e8c8da
-  3.21.5:
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.5/cmake-3.21.5-linux-x86_64.tar.gz"
-      sha256: cdee65fe61fdc10db9cc695022924faaa35fb6334a3620cb1b563a9335367756
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.5/cmake-3.21.5-macos-universal.tar.gz"
-      sha256: 1eeaaeb59f1bb032f9572a1673d44ccee1091691de82aadb9a94af0ba6975547
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.5/cmake-3.21.5-linux-x86_64.tar.gz"
-      sha256: cdee65fe61fdc10db9cc695022924faaa35fb6334a3620cb1b563a9335367756
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc2/cmake-3.21.0-rc2-linux-x86_64.tar.gz"
+      sha256: 31d4f5f4bb8793127eb441c8311fd4baad4d2a86c26fd37b43d4ef23887c332e
     aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.5/cmake-3.21.5-macos-universal.tar.gz"
-      sha256: 1eeaaeb59f1bb032f9572a1673d44ccee1091691de82aadb9a94af0ba6975547
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc2/cmake-3.21.0-rc2-macos-universal.tar.gz"
+      sha256: 5ab0ee4edb45de33080f571cf69300b2abd92dc02a9c624b3c289a4a14cab160
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc2/cmake-3.21.0-rc2-linux-x86_64.tar.gz"
+      sha256: 31d4f5f4bb8793127eb441c8311fd4baad4d2a86c26fd37b43d4ef23887c332e
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc2/cmake-3.21.0-rc2-macos-universal.tar.gz"
+      sha256: 5ab0ee4edb45de33080f571cf69300b2abd92dc02a9c624b3c289a4a14cab160
   3.21.0-rc3:
     aarch64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc3/cmake-3.21.0-rc3-linux-x86_64.tar.gz"
@@ -87,220 +62,51 @@ releases:
     aarch64-macos:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc3/cmake-3.21.0-rc3-macos-universal.tar.gz"
       sha256: 9ad960b0c7679f7d54539713d92fc9448387eb5d1b6e92927d1a7d2841398a3b
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc3/cmake-3.21.0-rc3-macos-universal.tar.gz"
-      sha256: 9ad960b0c7679f7d54539713d92fc9448387eb5d1b6e92927d1a7d2841398a3b
     x86_64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc3/cmake-3.21.0-rc3-linux-x86_64.tar.gz"
       sha256: 09944d811e9d1a205a819f0b05fc95425a78a07f866354fe8f3ac63e346c2600
-  3.21.0:
     x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0/cmake-3.21.0-macos-universal.tar.gz"
-      sha256: c1c6f19dfc9c658a48b5aed22806595b2337bb3aedb71ab826552f74f568719f
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0/cmake-3.21.0-linux-x86_64.tar.gz"
-      sha256: d54ef6909f519740bc85cec07ff54574cd1e061f9f17357d9ace69f61c6291ce
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0/cmake-3.21.0-linux-x86_64.tar.gz"
-      sha256: d54ef6909f519740bc85cec07ff54574cd1e061f9f17357d9ace69f61c6291ce
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0/cmake-3.21.0-macos-universal.tar.gz"
-      sha256: c1c6f19dfc9c658a48b5aed22806595b2337bb3aedb71ab826552f74f568719f
-  3.23.0-rc4:
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc4/cmake-3.23.0-rc4-macos-universal.tar.gz"
-      sha256: 195edf4bea1ca6a84d146d17f215acd8937cb6f50f0f35e17258be5ada247281
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc4/cmake-3.23.0-rc4-linux-x86_64.tar.gz"
-      sha256: 1b616dd01f0ac64dd5e140d1d139ecb5a77288624befe4ee4661ba5d782f0838
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc4/cmake-3.23.0-rc4-macos-universal.tar.gz"
-      sha256: 195edf4bea1ca6a84d146d17f215acd8937cb6f50f0f35e17258be5ada247281
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc4/cmake-3.23.0-rc4-linux-x86_64.tar.gz"
-      sha256: 1b616dd01f0ac64dd5e140d1d139ecb5a77288624befe4ee4661ba5d782f0838
-  3.23.0:
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-macos-universal.tar.gz"
-      sha256: db09be78c97721d3b26947f90ac0411ae6cbe7406705cedcc72df9f04b3f79c8
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-linux-x86_64.tar.gz"
-      sha256: 83f58ab96af19282cf19deaab942fe7990646ff798e6059d217a1a805d1ecf1b
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-linux-x86_64.tar.gz"
-      sha256: 83f58ab96af19282cf19deaab942fe7990646ff798e6059d217a1a805d1ecf1b
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-macos-universal.tar.gz"
-      sha256: db09be78c97721d3b26947f90ac0411ae6cbe7406705cedcc72df9f04b3f79c8
-  3.22.1:
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.1/cmake-3.22.1-linux-x86_64.tar.gz"
-      sha256: 73565c72355c6652e9db149249af36bcab44d9d478c5546fd926e69ad6b43640
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.1/cmake-3.22.1-linux-x86_64.tar.gz"
-      sha256: 73565c72355c6652e9db149249af36bcab44d9d478c5546fd926e69ad6b43640
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.1/cmake-3.22.1-macos-universal.tar.gz"
-      sha256: 9ba46ce69d524f5bcdf98076a6b01f727604fb31cf9005ec03dea1cf16da9514
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.1/cmake-3.22.1-macos-universal.tar.gz"
-      sha256: 9ba46ce69d524f5bcdf98076a6b01f727604fb31cf9005ec03dea1cf16da9514
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc3/cmake-3.21.0-rc3-macos-universal.tar.gz"
+      sha256: 9ad960b0c7679f7d54539713d92fc9448387eb5d1b6e92927d1a7d2841398a3b
   3.21.1:
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.1/cmake-3.21.1-linux-x86_64.tar.gz"
-      sha256: bf496ce869d0aa8c1f57e4d1a2e50c8f2fb12a6cd7ccb37ad743bb88f6b76a1e
     aarch64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.1/cmake-3.21.1-linux-x86_64.tar.gz"
       sha256: bf496ce869d0aa8c1f57e4d1a2e50c8f2fb12a6cd7ccb37ad743bb88f6b76a1e
     aarch64-macos:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.1/cmake-3.21.1-macos-universal.tar.gz"
       sha256: 9dc2978c4d94a44f71336fa88c15bb0eee47cf44b6ece51b10d1dfae95f82279
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.1/cmake-3.21.1-linux-x86_64.tar.gz"
+      sha256: bf496ce869d0aa8c1f57e4d1a2e50c8f2fb12a6cd7ccb37ad743bb88f6b76a1e
     x86_64-macos:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.1/cmake-3.21.1-macos-universal.tar.gz"
       sha256: 9dc2978c4d94a44f71336fa88c15bb0eee47cf44b6ece51b10d1dfae95f82279
-  3.23.0-rc2:
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc2/cmake-3.23.0-rc2-linux-x86_64.tar.gz"
-      sha256: 7c433959787ec2dfaec23f7b2834580942b48dfbd445ec180813729825c8cfcf
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc2/cmake-3.23.0-rc2-macos-universal.tar.gz"
-      sha256: 1f81854828d93d47fd0915890d65216d862b3104ceb3584140ddde3926873ad1
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc2/cmake-3.23.0-rc2-macos-universal.tar.gz"
-      sha256: 1f81854828d93d47fd0915890d65216d862b3104ceb3584140ddde3926873ad1
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc2/cmake-3.23.0-rc2-linux-x86_64.tar.gz"
-      sha256: 7c433959787ec2dfaec23f7b2834580942b48dfbd445ec180813729825c8cfcf
-  3.23.0-rc5:
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc5/cmake-3.23.0-rc5-macos-universal.tar.gz"
-      sha256: c905170088e2c8fdd67a42f60b1fda294722b300019d2ecf0d13ce1978a38c82
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc5/cmake-3.23.0-rc5-linux-x86_64.tar.gz"
-      sha256: d3d056f9e799d658337a8f79493a8fdebc734ec0ad215d142b9428c22564b47f
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc5/cmake-3.23.0-rc5-macos-universal.tar.gz"
-      sha256: c905170088e2c8fdd67a42f60b1fda294722b300019d2ecf0d13ce1978a38c82
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc5/cmake-3.23.0-rc5-linux-x86_64.tar.gz"
-      sha256: d3d056f9e799d658337a8f79493a8fdebc734ec0ad215d142b9428c22564b47f
-  3.23.1:
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.1/cmake-3.23.1-linux-x86_64.tar.gz"
-      sha256: f3c654b2e226b9d43369e0bd8487c51618d4dbe5a1af929dd32af7e6ca432d60
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.1/cmake-3.23.1-linux-x86_64.tar.gz"
-      sha256: f3c654b2e226b9d43369e0bd8487c51618d4dbe5a1af929dd32af7e6ca432d60
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.1/cmake-3.23.1-macos-universal.tar.gz"
-      sha256: f794ed92ccb4e9b6619a77328f313497d7decf8fb7e047ba35a348b838e0e1e2
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.1/cmake-3.23.1-macos-universal.tar.gz"
-      sha256: f794ed92ccb4e9b6619a77328f313497d7decf8fb7e047ba35a348b838e0e1e2
-  3.22.3:
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3-linux-x86_64.tar.gz"
-      sha256: 96ace92dfe42b1c6c9c116fdb1c7adc42cb90cbaa87adcebc1a8de7ea129865c
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3-macos-universal.tar.gz"
-      sha256: 92b0d5711e13a6a88f0970403edd9b60f2468aebb7e77fb8f3d680b1913dffad
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3-linux-x86_64.tar.gz"
-      sha256: 96ace92dfe42b1c6c9c116fdb1c7adc42cb90cbaa87adcebc1a8de7ea129865c
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3-macos-universal.tar.gz"
-      sha256: 92b0d5711e13a6a88f0970403edd9b60f2468aebb7e77fb8f3d680b1913dffad
-  3.21.0-rc2:
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc2/cmake-3.21.0-rc2-linux-x86_64.tar.gz"
-      sha256: 31d4f5f4bb8793127eb441c8311fd4baad4d2a86c26fd37b43d4ef23887c332e
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc2/cmake-3.21.0-rc2-macos-universal.tar.gz"
-      sha256: 5ab0ee4edb45de33080f571cf69300b2abd92dc02a9c624b3c289a4a14cab160
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc2/cmake-3.21.0-rc2-macos-universal.tar.gz"
-      sha256: 5ab0ee4edb45de33080f571cf69300b2abd92dc02a9c624b3c289a4a14cab160
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc2/cmake-3.21.0-rc2-linux-x86_64.tar.gz"
-      sha256: 31d4f5f4bb8793127eb441c8311fd4baad4d2a86c26fd37b43d4ef23887c332e
-  3.24.0-rc1:
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc1/cmake-3.24.0-rc1-linux-x86_64.tar.gz"
-      sha256: 183ff011a2177d0a683e81d645d02c0ed8ff790449158522928ef069775091cc
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc1/cmake-3.24.0-rc1-macos-universal.tar.gz"
-      sha256: 417fde30f2cf96f53eaf27b1e510924ce441f0449e53974f2156cb19d32978b9
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc1/cmake-3.24.0-rc1-macos-universal.tar.gz"
-      sha256: 417fde30f2cf96f53eaf27b1e510924ce441f0449e53974f2156cb19d32978b9
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc1/cmake-3.24.0-rc1-linux-x86_64.tar.gz"
-      sha256: 183ff011a2177d0a683e81d645d02c0ed8ff790449158522928ef069775091cc
-  3.22.0:
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-linux-x86_64.tar.gz"
-      sha256: dc73115520d13bb64202383d3df52bc3d6bbb8422ecc5b2c05f803491cb215b0
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-macos-universal.tar.gz"
-      sha256: 84526401d8cc0a0b0551f2f899164e2fbc2c69cbc8573b67bfa7441bae7ad051
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-linux-x86_64.tar.gz"
-      sha256: dc73115520d13bb64202383d3df52bc3d6bbb8422ecc5b2c05f803491cb215b0
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-macos-universal.tar.gz"
-      sha256: 84526401d8cc0a0b0551f2f899164e2fbc2c69cbc8573b67bfa7441bae7ad051
   3.21.2:
-    x86_64-linux:
+    aarch64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2-linux-x86_64.tar.gz"
       sha256: d5517d949eaa8f10a149ca250e811e1473ee3f6f10935f1f69596a1e184eafc1
-    aarch64-linux:
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2-macos-universal.tar.gz"
+      sha256: 25e3f439c19185f51136126a06e14b4873243ea1b4a37678881adde05433ae9b
+    x86_64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2-linux-x86_64.tar.gz"
       sha256: d5517d949eaa8f10a149ca250e811e1473ee3f6f10935f1f69596a1e184eafc1
     x86_64-macos:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2-macos-universal.tar.gz"
       sha256: 25e3f439c19185f51136126a06e14b4873243ea1b4a37678881adde05433ae9b
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2-macos-universal.tar.gz"
-      sha256: 25e3f439c19185f51136126a06e14b4873243ea1b4a37678881adde05433ae9b
-  3.23.0-rc1:
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc1/cmake-3.23.0-rc1-linux-x86_64.tar.gz"
-      sha256: 150da8c50343da510e8be7bf28e1a23f42b72ebfa75e4755a05d09805443a039
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc1/cmake-3.23.0-rc1-macos-universal.tar.gz"
-      sha256: ceecde09d4c4434bdf6e2fa2c773c3e15a1f03283f46ff5d0c63766ec4136da1
+  3.21.3:
     aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc1/cmake-3.23.0-rc1-linux-x86_64.tar.gz"
-      sha256: 150da8c50343da510e8be7bf28e1a23f42b72ebfa75e4755a05d09805443a039
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc1/cmake-3.23.0-rc1-macos-universal.tar.gz"
-      sha256: ceecde09d4c4434bdf6e2fa2c773c3e15a1f03283f46ff5d0c63766ec4136da1
-  3.24.0-rc2:
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc2/cmake-3.24.0-rc2-macos-universal.tar.gz"
-      sha256: 362b165f7bd2d8481d03743a21b7abd9cea9ebc0405438352db6c448b66648e4
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc2/cmake-3.24.0-rc2-linux-x86_64.tar.gz"
-      sha256: 7b45b65f98df5fd9a68a36b054873ef35dd3dd50db3495ba54f3bb0f455cc798
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.3/cmake-3.21.3-linux-x86_64.tar.gz"
+      sha256: a19aa9fcf368e9d923cdb29189528f0fe00a0d08e752ba4e547af91817518696
     aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc2/cmake-3.24.0-rc2-macos-universal.tar.gz"
-      sha256: 362b165f7bd2d8481d03743a21b7abd9cea9ebc0405438352db6c448b66648e4
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.3/cmake-3.21.3-macos-universal.tar.gz"
+      sha256: a86c6d4ffb829e46cf4ea6c14558917b0a15eb42019c5c6b55a25e2610e8c8da
     x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc2/cmake-3.24.0-rc2-linux-x86_64.tar.gz"
-      sha256: 7b45b65f98df5fd9a68a36b054873ef35dd3dd50db3495ba54f3bb0f455cc798
-  3.23.2:
-    x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.2/cmake-3.23.2-linux-x86_64.tar.gz"
-      sha256: aaced6f745b86ce853661a595bdac6c5314a60f8181b6912a0a4920acfa32708
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.2/cmake-3.23.2-macos-universal.tar.gz"
-      sha256: 853a0f9af148c5ef47282ffffee06c4c9f257be2635936755f39ca13c3286c88
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.3/cmake-3.21.3-linux-x86_64.tar.gz"
+      sha256: a19aa9fcf368e9d923cdb29189528f0fe00a0d08e752ba4e547af91817518696
     x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.2/cmake-3.23.2-macos-universal.tar.gz"
-      sha256: 853a0f9af148c5ef47282ffffee06c4c9f257be2635936755f39ca13c3286c88
-    aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.2/cmake-3.23.2-linux-x86_64.tar.gz"
-      sha256: aaced6f745b86ce853661a595bdac6c5314a60f8181b6912a0a4920acfa32708
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.3/cmake-3.21.3-macos-universal.tar.gz"
+      sha256: a86c6d4ffb829e46cf4ea6c14558917b0a15eb42019c5c6b55a25e2610e8c8da
   3.21.4:
     aarch64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.4/cmake-3.21.4-linux-x86_64.tar.gz"
@@ -314,20 +120,49 @@ releases:
     x86_64-macos:
       url: "https://github.com/Kitware/CMake/releases/download/v3.21.4/cmake-3.21.4-macos-universal.tar.gz"
       sha256: f818a10fe625b215e31d0c29c19a6563fb5f51ed7cc7727e5011626c11ea321a
-  3.22.0-rc1:
+  3.21.5:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.5/cmake-3.21.5-linux-x86_64.tar.gz"
+      sha256: cdee65fe61fdc10db9cc695022924faaa35fb6334a3620cb1b563a9335367756
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.5/cmake-3.21.5-macos-universal.tar.gz"
+      sha256: 1eeaaeb59f1bb032f9572a1673d44ccee1091691de82aadb9a94af0ba6975547
     x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.5/cmake-3.21.5-linux-x86_64.tar.gz"
+      sha256: cdee65fe61fdc10db9cc695022924faaa35fb6334a3620cb1b563a9335367756
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.21.5/cmake-3.21.5-macos-universal.tar.gz"
+      sha256: 1eeaaeb59f1bb032f9572a1673d44ccee1091691de82aadb9a94af0ba6975547
+  3.22.0:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-linux-x86_64.tar.gz"
+      sha256: dc73115520d13bb64202383d3df52bc3d6bbb8422ecc5b2c05f803491cb215b0
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-macos-universal.tar.gz"
+      sha256: 84526401d8cc0a0b0551f2f899164e2fbc2c69cbc8573b67bfa7441bae7ad051
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-linux-x86_64.tar.gz"
+      sha256: dc73115520d13bb64202383d3df52bc3d6bbb8422ecc5b2c05f803491cb215b0
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-macos-universal.tar.gz"
+      sha256: 84526401d8cc0a0b0551f2f899164e2fbc2c69cbc8573b67bfa7441bae7ad051
+  3.22.0-rc1:
+    aarch64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc1/cmake-3.22.0-rc1-linux-x86_64.tar.gz"
       sha256: ed7e5254714e490d0064fe55fc947ca15da322a9b8ca792e7f217411e45c3773
     aarch64-macos:
       url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc1/cmake-3.22.0-rc1-macos-universal.tar.gz"
       sha256: 7d023c6b832082112882eb5bf4c49c72017dfa52eb5394965c420dd832961e91
-    aarch64-linux:
+    x86_64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc1/cmake-3.22.0-rc1-linux-x86_64.tar.gz"
       sha256: ed7e5254714e490d0064fe55fc947ca15da322a9b8ca792e7f217411e45c3773
     x86_64-macos:
       url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc1/cmake-3.22.0-rc1-macos-universal.tar.gz"
       sha256: 7d023c6b832082112882eb5bf4c49c72017dfa52eb5394965c420dd832961e91
   3.22.0-rc2:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc2/cmake-3.22.0-rc2-linux-x86_64.tar.gz"
+      sha256: c1649f92fa4b1c1127f48f179a112dbbdca7d546b7e3b09205b93207812628e3
     aarch64-macos:
       url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc2/cmake-3.22.0-rc2-macos-universal.tar.gz"
       sha256: 26573204ec826b3e2e1e16efec8fb924c8003aeeec55b224ec351356d23599cb
@@ -337,54 +172,244 @@ releases:
     x86_64-macos:
       url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc2/cmake-3.22.0-rc2-macos-universal.tar.gz"
       sha256: 26573204ec826b3e2e1e16efec8fb924c8003aeeec55b224ec351356d23599cb
+  3.22.0-rc3:
     aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc2/cmake-3.22.0-rc2-linux-x86_64.tar.gz"
-      sha256: c1649f92fa4b1c1127f48f179a112dbbdca7d546b7e3b09205b93207812628e3
-  3.20.4:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc3/cmake-3.22.0-rc3-linux-x86_64.tar.gz"
+      sha256: 9fb6f972a5e7c2bea67287ba1fd235d0966bb7c7f37386fa5e58b3c29f2c4d4d
     aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.20.4/cmake-3.20.4-macos-universal.tar.gz"
-      sha256: df90016635e3183834143c6d94607f0804fe9762f7cc6032f6a4afd7c19cd43b
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc3/cmake-3.22.0-rc3-macos-universal.tar.gz"
+      sha256: 9448048ed5898f2e75d4ae91e71ccefc6fb7e56801d912ecb24a1d1387db0247
     x86_64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.20.4/cmake-3.20.4-linux-x86_64.tar.gz"
-      sha256: 067feed25b76b3adf5863f5a5f7e2b8cafb2dcd6feeaac39a713372ef2c3584c
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc3/cmake-3.22.0-rc3-linux-x86_64.tar.gz"
+      sha256: 9fb6f972a5e7c2bea67287ba1fd235d0966bb7c7f37386fa5e58b3c29f2c4d4d
     x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.20.4/cmake-3.20.4-macos-universal.tar.gz"
-      sha256: df90016635e3183834143c6d94607f0804fe9762f7cc6032f6a4afd7c19cd43b
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc3/cmake-3.22.0-rc3-macos-universal.tar.gz"
+      sha256: 9448048ed5898f2e75d4ae91e71ccefc6fb7e56801d912ecb24a1d1387db0247
+  3.22.1:
     aarch64-linux:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.20.4/cmake-3.20.4-linux-x86_64.tar.gz"
-      sha256: 067feed25b76b3adf5863f5a5f7e2b8cafb2dcd6feeaac39a713372ef2c3584c
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.1/cmake-3.22.1-linux-x86_64.tar.gz"
+      sha256: 73565c72355c6652e9db149249af36bcab44d9d478c5546fd926e69ad6b43640
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.1/cmake-3.22.1-macos-universal.tar.gz"
+      sha256: 9ba46ce69d524f5bcdf98076a6b01f727604fb31cf9005ec03dea1cf16da9514
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.1/cmake-3.22.1-linux-x86_64.tar.gz"
+      sha256: 73565c72355c6652e9db149249af36bcab44d9d478c5546fd926e69ad6b43640
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.1/cmake-3.22.1-macos-universal.tar.gz"
+      sha256: 9ba46ce69d524f5bcdf98076a6b01f727604fb31cf9005ec03dea1cf16da9514
+  3.22.2:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2-linux-x86_64.tar.gz"
+      sha256: 38b3befdee8fd2bac06954e2a77cb3072e6833c69d8cc013c0a3b26f1cfdfe37
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2-macos-universal.tar.gz"
+      sha256: cc763f6110b4d49daf51d05689fe54526f84056c9418b0735d9058c803931e54
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2-linux-x86_64.tar.gz"
+      sha256: 38b3befdee8fd2bac06954e2a77cb3072e6833c69d8cc013c0a3b26f1cfdfe37
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2-macos-universal.tar.gz"
+      sha256: cc763f6110b4d49daf51d05689fe54526f84056c9418b0735d9058c803931e54
+  3.22.3:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3-linux-x86_64.tar.gz"
+      sha256: 96ace92dfe42b1c6c9c116fdb1c7adc42cb90cbaa87adcebc1a8de7ea129865c
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3-macos-universal.tar.gz"
+      sha256: 92b0d5711e13a6a88f0970403edd9b60f2468aebb7e77fb8f3d680b1913dffad
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3-linux-x86_64.tar.gz"
+      sha256: 96ace92dfe42b1c6c9c116fdb1c7adc42cb90cbaa87adcebc1a8de7ea129865c
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3-macos-universal.tar.gz"
+      sha256: 92b0d5711e13a6a88f0970403edd9b60f2468aebb7e77fb8f3d680b1913dffad
+  3.22.5:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.5/cmake-3.22.5-linux-x86_64.tar.gz"
+      sha256: 5a80198423f731ea12ade14b2e44613a4741a9485c8a056f1be93ab468dd1955
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.5/cmake-3.22.5-macos-universal.tar.gz"
+      sha256: 61bf37055959e75f8055fd4fc17ab458fddbf0b7278df26dc93cb835c57f3bf2
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.5/cmake-3.22.5-linux-x86_64.tar.gz"
+      sha256: 5a80198423f731ea12ade14b2e44613a4741a9485c8a056f1be93ab468dd1955
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.22.5/cmake-3.22.5-macos-universal.tar.gz"
+      sha256: 61bf37055959e75f8055fd4fc17ab458fddbf0b7278df26dc93cb835c57f3bf2
+  3.23.0:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-linux-x86_64.tar.gz"
+      sha256: 83f58ab96af19282cf19deaab942fe7990646ff798e6059d217a1a805d1ecf1b
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-macos-universal.tar.gz"
+      sha256: db09be78c97721d3b26947f90ac0411ae6cbe7406705cedcc72df9f04b3f79c8
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-linux-x86_64.tar.gz"
+      sha256: 83f58ab96af19282cf19deaab942fe7990646ff798e6059d217a1a805d1ecf1b
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-macos-universal.tar.gz"
+      sha256: db09be78c97721d3b26947f90ac0411ae6cbe7406705cedcc72df9f04b3f79c8
+  3.23.0-rc1:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc1/cmake-3.23.0-rc1-linux-x86_64.tar.gz"
+      sha256: 150da8c50343da510e8be7bf28e1a23f42b72ebfa75e4755a05d09805443a039
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc1/cmake-3.23.0-rc1-macos-universal.tar.gz"
+      sha256: ceecde09d4c4434bdf6e2fa2c773c3e15a1f03283f46ff5d0c63766ec4136da1
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc1/cmake-3.23.0-rc1-linux-x86_64.tar.gz"
+      sha256: 150da8c50343da510e8be7bf28e1a23f42b72ebfa75e4755a05d09805443a039
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc1/cmake-3.23.0-rc1-macos-universal.tar.gz"
+      sha256: ceecde09d4c4434bdf6e2fa2c773c3e15a1f03283f46ff5d0c63766ec4136da1
+  3.23.0-rc2:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc2/cmake-3.23.0-rc2-linux-x86_64.tar.gz"
+      sha256: 7c433959787ec2dfaec23f7b2834580942b48dfbd445ec180813729825c8cfcf
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc2/cmake-3.23.0-rc2-macos-universal.tar.gz"
+      sha256: 1f81854828d93d47fd0915890d65216d862b3104ceb3584140ddde3926873ad1
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc2/cmake-3.23.0-rc2-linux-x86_64.tar.gz"
+      sha256: 7c433959787ec2dfaec23f7b2834580942b48dfbd445ec180813729825c8cfcf
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc2/cmake-3.23.0-rc2-macos-universal.tar.gz"
+      sha256: 1f81854828d93d47fd0915890d65216d862b3104ceb3584140ddde3926873ad1
   3.23.0-rc3:
-    x86_64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc3/cmake-3.23.0-rc3-macos-universal.tar.gz"
-      sha256: af63eaaa38677ca5effd1dcca7297f8ec59fd84f09639332e4af7d82274585ce
-    aarch64-macos:
-      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc3/cmake-3.23.0-rc3-macos-universal.tar.gz"
-      sha256: af63eaaa38677ca5effd1dcca7297f8ec59fd84f09639332e4af7d82274585ce
     aarch64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc3/cmake-3.23.0-rc3-linux-x86_64.tar.gz"
       sha256: 8830331418562ff55730c56e3905ed502c24f167229fb56950911613a84b8058
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc3/cmake-3.23.0-rc3-macos-universal.tar.gz"
+      sha256: af63eaaa38677ca5effd1dcca7297f8ec59fd84f09639332e4af7d82274585ce
     x86_64-linux:
       url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc3/cmake-3.23.0-rc3-linux-x86_64.tar.gz"
       sha256: 8830331418562ff55730c56e3905ed502c24f167229fb56950911613a84b8058
-
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc3/cmake-3.23.0-rc3-macos-universal.tar.gz"
+      sha256: af63eaaa38677ca5effd1dcca7297f8ec59fd84f09639332e4af7d82274585ce
+  3.23.0-rc4:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc4/cmake-3.23.0-rc4-linux-x86_64.tar.gz"
+      sha256: 1b616dd01f0ac64dd5e140d1d139ecb5a77288624befe4ee4661ba5d782f0838
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc4/cmake-3.23.0-rc4-macos-universal.tar.gz"
+      sha256: 195edf4bea1ca6a84d146d17f215acd8937cb6f50f0f35e17258be5ada247281
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc4/cmake-3.23.0-rc4-linux-x86_64.tar.gz"
+      sha256: 1b616dd01f0ac64dd5e140d1d139ecb5a77288624befe4ee4661ba5d782f0838
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc4/cmake-3.23.0-rc4-macos-universal.tar.gz"
+      sha256: 195edf4bea1ca6a84d146d17f215acd8937cb6f50f0f35e17258be5ada247281
+  3.23.0-rc5:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc5/cmake-3.23.0-rc5-linux-x86_64.tar.gz"
+      sha256: d3d056f9e799d658337a8f79493a8fdebc734ec0ad215d142b9428c22564b47f
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc5/cmake-3.23.0-rc5-macos-universal.tar.gz"
+      sha256: c905170088e2c8fdd67a42f60b1fda294722b300019d2ecf0d13ce1978a38c82
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc5/cmake-3.23.0-rc5-linux-x86_64.tar.gz"
+      sha256: d3d056f9e799d658337a8f79493a8fdebc734ec0ad215d142b9428c22564b47f
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc5/cmake-3.23.0-rc5-macos-universal.tar.gz"
+      sha256: c905170088e2c8fdd67a42f60b1fda294722b300019d2ecf0d13ce1978a38c82
+  3.23.1:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.1/cmake-3.23.1-linux-x86_64.tar.gz"
+      sha256: f3c654b2e226b9d43369e0bd8487c51618d4dbe5a1af929dd32af7e6ca432d60
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.1/cmake-3.23.1-macos-universal.tar.gz"
+      sha256: f794ed92ccb4e9b6619a77328f313497d7decf8fb7e047ba35a348b838e0e1e2
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.1/cmake-3.23.1-linux-x86_64.tar.gz"
+      sha256: f3c654b2e226b9d43369e0bd8487c51618d4dbe5a1af929dd32af7e6ca432d60
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.1/cmake-3.23.1-macos-universal.tar.gz"
+      sha256: f794ed92ccb4e9b6619a77328f313497d7decf8fb7e047ba35a348b838e0e1e2
+  3.23.2:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.2/cmake-3.23.2-linux-x86_64.tar.gz"
+      sha256: aaced6f745b86ce853661a595bdac6c5314a60f8181b6912a0a4920acfa32708
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.2/cmake-3.23.2-macos-universal.tar.gz"
+      sha256: 853a0f9af148c5ef47282ffffee06c4c9f257be2635936755f39ca13c3286c88
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.2/cmake-3.23.2-linux-x86_64.tar.gz"
+      sha256: aaced6f745b86ce853661a595bdac6c5314a60f8181b6912a0a4920acfa32708
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.23.2/cmake-3.23.2-macos-universal.tar.gz"
+      sha256: 853a0f9af148c5ef47282ffffee06c4c9f257be2635936755f39ca13c3286c88
+  3.24.0-rc1:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc1/cmake-3.24.0-rc1-linux-x86_64.tar.gz"
+      sha256: 183ff011a2177d0a683e81d645d02c0ed8ff790449158522928ef069775091cc
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc1/cmake-3.24.0-rc1-macos-universal.tar.gz"
+      sha256: 417fde30f2cf96f53eaf27b1e510924ce441f0449e53974f2156cb19d32978b9
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc1/cmake-3.24.0-rc1-linux-x86_64.tar.gz"
+      sha256: 183ff011a2177d0a683e81d645d02c0ed8ff790449158522928ef069775091cc
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc1/cmake-3.24.0-rc1-macos-universal.tar.gz"
+      sha256: 417fde30f2cf96f53eaf27b1e510924ce441f0449e53974f2156cb19d32978b9
+  3.24.0-rc2:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc2/cmake-3.24.0-rc2-linux-x86_64.tar.gz"
+      sha256: 7b45b65f98df5fd9a68a36b054873ef35dd3dd50db3495ba54f3bb0f455cc798
+    aarch64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc2/cmake-3.24.0-rc2-macos-universal.tar.gz"
+      sha256: 362b165f7bd2d8481d03743a21b7abd9cea9ebc0405438352db6c448b66648e4
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc2/cmake-3.24.0-rc2-linux-x86_64.tar.gz"
+      sha256: 7b45b65f98df5fd9a68a36b054873ef35dd3dd50db3495ba54f3bb0f455cc798
+    x86_64-macos:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc2/cmake-3.24.0-rc2-macos-universal.tar.gz"
+      sha256: 362b165f7bd2d8481d03743a21b7abd9cea9ebc0405438352db6c448b66648e4
+  3.24.0-rc4:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc4/cmake-3.24.0-rc4-linux-aarch64.tar.gz"
+      sha256: d63b49eaac891fe9912b5dada2c9cbfc9ec5c86c030ac651afc6741ea52e2576
+    aarch64-windows:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc4/cmake-3.24.0-rc4-windows-arm64.zip"
+      sha256: 9302ee6277e6b9e59a5018a1b4816061032362a24bc8af525ed3a1e8d887ec23
+    x86-windows:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc4/cmake-3.24.0-rc4-windows-i386.zip"
+      sha256: f067047948d6d0c793b84898f2633dd273e2a939fcc53177c162414faf57eb58
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc4/cmake-3.24.0-rc4-linux-x86_64.tar.gz"
+      sha256: 5e32c78d093615d209897a4f1513cafe642fb6c9080241617a037c31ad4a19f4
+    x86_64-windows:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc4/cmake-3.24.0-rc4-windows-x86_64.zip"
+      sha256: 0eabaafdb27e53a9318ec635ce03a32f5a532ba8a74f74c756428e09d43f2d58
 installs:
   3.20.0:
-    any:
+    any-any:
       strip: 1
       files:
-        bin/ccmake:
-        bin/cmake:
-        bin/cpack:
-        bin/ctest:
-        bin/cmake-gui:
-        share:
+        bin/ccmake: bin/
+        bin/cmake: bin/
+        bin/cmake-gui: bin/
+        bin/cpack: bin/
+        bin/ctest: bin/
         man: share/man
+        share: share
+    any-windows:
+      strip: 1
+      files:
+        bin/cmake.exe: bin/
+        bin/cmake-gui.exe: bin/
+        bin/cpack.exe: bin/
+        bin/ctest.exe: bin/
+        man: share/man
+        share: share
     any-macos:
       strip: 3
       files:
-        bin/ccmake:
-        bin/cmake:
-        bin/cpack:
-        bin/ctest:
-        share:
+        bin/ccmake: bin/
+        bin/cmake: bin/
+        bin/cpack: bin/
+        bin/ctest: bin/
         man: share/man
+        share: share
