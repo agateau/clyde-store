@@ -383,6 +383,22 @@ releases:
     x86_64-windows:
       url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc4/cmake-3.24.0-rc4-windows-x86_64.zip"
       sha256: 0eabaafdb27e53a9318ec635ce03a32f5a532ba8a74f74c756428e09d43f2d58
+  3.24.0-rc5:
+    aarch64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc5/cmake-3.24.0-rc5-linux-aarch64.tar.gz"
+      sha256: 8806eeb47a1afaea8c817a9c882befc79da03461e2bcf2860bea6ef7071f2ed8
+    aarch64-windows:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc5/cmake-3.24.0-rc5-windows-arm64.zip"
+      sha256: d290edeb6f2c0454aa8b1950cd9f7f5a11768cc782eb9972533f8466f8b3f33c
+    x86-windows:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc5/cmake-3.24.0-rc5-windows-i386.zip"
+      sha256: 6f43fa99e416c047da3efedcc26f7ad311d0a30304e61c1479e51a4e1729342d
+    x86_64-linux:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc5/cmake-3.24.0-rc5-linux-x86_64.tar.gz"
+      sha256: 0d4e10b7213342fd23b3dd3cf163a839d1261936d57aee017ce3d09fe913499f
+    x86_64-windows:
+      url: "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc5/cmake-3.24.0-rc5-windows-x86_64.zip"
+      sha256: e56b91afab88daa86990675ef65bc1cd3b697c469710507d22ac045594f3f967
 installs:
   3.20.0:
     any-any:
@@ -395,15 +411,6 @@ installs:
         bin/ctest: bin/
         man: share/man
         share: share
-    any-windows:
-      strip: 1
-      files:
-        bin/cmake.exe: bin/
-        bin/cmake-gui.exe: bin/
-        bin/cpack.exe: bin/
-        bin/ctest.exe: bin/
-        man: share/man
-        share: share
     any-macos:
       strip: 3
       files:
@@ -411,5 +418,14 @@ installs:
         bin/cmake: bin/
         bin/cpack: bin/
         bin/ctest: bin/
+        man: share/man
+        share: share
+    any-windows:
+      strip: 1
+      files:
+        bin/cmake-gui.exe: bin/
+        bin/cmake.exe: bin/
+        bin/cpack.exe: bin/
+        bin/ctest.exe: bin/
         man: share/man
         share: share
