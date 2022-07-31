@@ -1,0 +1,61 @@
+---
+name: gitea
+description: "Git with a cup of tea, painless self-hosted git service"
+homepage: "https://gitea.io/"
+releases:
+  1.16.0:
+    any-any:
+      url: "https://github.com/go-gitea/gitea/coin"
+      sha256: "12"
+  1.17.0:
+    aarch64-linux:
+      url: "https://github.com/go-gitea/gitea/releases/download/v1.17.0/gitea-1.17.0-linux-arm64"
+      sha256: 5683c80149e9f3ecb77e0e02c40e94b9e31ef8a4be7a507b473231c92fe64a78
+    aarch64-macos:
+      url: "https://github.com/go-gitea/gitea/releases/download/v1.17.0/gitea-1.17.0-darwin-10.12-arm64"
+      sha256: 4f35adc2d2c04fe3f88bc58908766a7e0cae0d708e3715587e64ce3522bbba4d
+    x86-linux:
+      url: "https://github.com/go-gitea/gitea/releases/download/v1.17.0/gitea-1.17.0-linux-386"
+      sha256: 3ef97b5a4b5b555d1a614fd3eb49e629e68c66aa400ef71f6fc27ed392eab61f
+    x86-windows:
+      url: "https://github.com/go-gitea/gitea/releases/download/v1.17.0/gitea-1.17.0-windows-4.0-386.exe"
+      sha256: 3a4d7756d03a48904f3a4a2956df1c68828c896a22cd0517e9a34d4e6b1b1ab1
+    x86_64-linux:
+      url: "https://github.com/go-gitea/gitea/releases/download/v1.17.0/gitea-1.17.0-linux-amd64"
+      sha256: bc4a8e1f5d5f64d4be2e50c387de08d07c062aecdba2f742c2f61c20accfcc46
+    x86_64-macos:
+      url: "https://github.com/go-gitea/gitea/releases/download/v1.17.0/gitea-1.17.0-darwin-10.12-amd64"
+      sha256: 5d4d64680315b2c8ee8b03d196481984eb2caf16c676e2f6cb425fecfbd2e2fe
+    x86_64-windows:
+      url: "https://github.com/go-gitea/gitea/releases/download/v1.17.0/gitea-1.17.0-windows-4.0-amd64.exe"
+      sha256: 36982fead73961c9d4b06d99e1f3c6de6b1e70ab5ce6d89da40096be5798975d
+installs:
+  1.17.0:
+    aarch64-linux:
+      strip: 0
+      files:
+        gitea-1.17.0-linux-arm64: bin/gitea
+    aarch64-macos:
+      strip: 0
+      files:
+        gitea-1.17.0-darwin-10.12-arm64: bin/gitea
+    x86-linux:
+      strip: 0
+      files:
+        gitea-1.17.0-linux-386: bin/gitea
+    x86-windows:
+      strip: 0
+      files:
+        gitea-1.17.0-windows-4.0-386.exe: bin/gitea.exe
+    x86_64-linux:
+      strip: 0
+      files:
+        gitea-1.17.0-linux-amd64: bin/gitea
+    x86_64-macos:
+      strip: 0
+      files:
+        gitea-1.17.0-darwin-10.12-amd64: bin/gitea
+    x86_64-windows:
+      strip: 0
+      files:
+        gitea-1.17.0-windows-4.0-amd64.exe: bin/gitea.exe
