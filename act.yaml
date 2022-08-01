@@ -29,6 +29,31 @@ releases:
     x86_64-windows:
       url: "https://github.com/nektos/act/releases/download/v0.2.29/act_Windows_x86_64.zip"
       sha256: 0623fe89f6845cf94eaa916dab31ccde61c78ed551f90ce4897d24755a502297
+  0.2.30:
+    aarch64-linux:
+      url: "https://github.com/nektos/act/releases/download/v0.2.30/act_Linux_arm64.tar.gz"
+      sha256: d1ec4ec87447a31f5087b509cdb24fe632ef964b373a4f1408ae410f301fcb00
+    aarch64-macos:
+      url: "https://github.com/nektos/act/releases/download/v0.2.30/act_Darwin_arm64.tar.gz"
+      sha256: 4d48c78f00d2ee264b4eac3c4e4c139d48c50fe4216c0dab0cadc1fd4db6d0fc
+    aarch64-windows:
+      url: "https://github.com/nektos/act/releases/download/v0.2.30/act_Windows_arm64.zip"
+      sha256: 68120c7a746c59c5ede39784819ac93e03b0259eaad1a4239cac4627f1f0d7d3
+    x86-linux:
+      url: "https://github.com/nektos/act/releases/download/v0.2.30/act_Linux_i386.tar.gz"
+      sha256: 8308293d81f586e128f9cc22f3e5f3a1b43f502dbfba3bad452dd5e0e27ea3db
+    x86-windows:
+      url: "https://github.com/nektos/act/releases/download/v0.2.30/act_Windows_i386.zip"
+      sha256: e3ae380a5da4b6ef997a0b170a636e8cf85057a08d2907c76b7ad56cfb4646eb
+    x86_64-linux:
+      url: "https://github.com/nektos/act/releases/download/v0.2.30/act_Linux_x86_64.tar.gz"
+      sha256: 8ae69bd249b75fe58e50f118be6871eb9ff788a011720ac143848ed812706257
+    x86_64-macos:
+      url: "https://github.com/nektos/act/releases/download/v0.2.30/act_Darwin_x86_64.tar.gz"
+      sha256: f34c697e08232e28d8a6f968c89deecff36694ebd2d70ed448da6066935bc609
+    x86_64-windows:
+      url: "https://github.com/nektos/act/releases/download/v0.2.30/act_Windows_x86_64.zip"
+      sha256: 653246dff2b52358cac1e2a890731ddc666113099be09901af981d24d60649f0
 installs:
   0.2.28:
     any-any:
@@ -36,4 +61,4 @@ installs:
       files:
         LICENSE: "${doc_dir}"
         README.md: "${doc_dir}"
-        act${exe_ext}: bin/
+        "act${exe_ext}": bin/
