@@ -13,17 +13,27 @@ releases:
     x86_64-windows:
       url: "https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-windows-x86_64.zip"
       sha256: 769a7b2544da87274d585de5f9e03f268d35a8121b44e45637e607d7aeb78ece
+  2.19.0:
+    aarch64-linux:
+      url: "https://github.com/jgm/pandoc/releases/download/2.19/pandoc-2.19-linux-arm64.tar.gz"
+      sha256: 6c2daebcab7f8d6e7c8b91682be047286d9518f2bcb32515aea5206557fb67d1
+    x86_64-linux:
+      url: "https://github.com/jgm/pandoc/releases/download/2.19/pandoc-2.19-linux-amd64.tar.gz"
+      sha256: 2afd7c0c385a5817003330a2359c2b6e04e0a7e167addd41dda51e523e807426
+    x86_64-windows:
+      url: "https://github.com/jgm/pandoc/releases/download/2.19/pandoc-2.19-windows-x86_64.zip"
+      sha256: d5c51dd722ae4c562f9bff8148942630942490ef5bfe5695507c81c2c75a99de
 installs:
   2.18.0:
     any-any:
       strip: 1
       files:
-        bin:
-        share:
+        bin: bin
+        share: share
     any-windows:
       strip: 1
       files:
-        pandoc${exe_ext}: bin/
-        COPYING.rtf: ${doc_dir}
-        COPYRIGHT.txt: ${doc_dir}
-        MANUAL.html: ${doc_dir}
+        COPYING.rtf: "${doc_dir}"
+        COPYRIGHT.txt: "${doc_dir}"
+        MANUAL.html: "${doc_dir}"
+        "pandoc${exe_ext}": bin/
