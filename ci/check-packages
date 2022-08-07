@@ -7,47 +7,94 @@ cd $(dirname $0)/..
 CI_DIR=$PWD/ci
 CLYDE_DIR=$CI_DIR/clyde
 
-CLYDE_BUILDS_BASE_URL=https://builds.agateau.com/clyde/
+CLYDE_SNAPSHOT_LIST_URL=https://builds.agateau.com/clyde/
+CLYDE_RELEASE_LIST_URL=https://api.github.com/repos/agateau/clyde/releases/latest
 
 progress() {
     echo "=== $@ ==="
 }
 
-download_clyde() {
+init_local_system_vars() {
     if [ "$OS_NAME" = "windows" ] ; then
         local archive_ext_rx="\.zip"
+        CLYDE_ARCHIVE_NAME="clyde.zip"
     else
         local archive_ext_rx="\.tar\.gz"
+        CLYDE_ARCHIVE_NAME="clyde.tar.gz"
     fi
+    CLYDE_ARCHIVE_RX="clyde-[-_a-zT0-9.+]*-$OS_NAME$archive_ext_rx"
+}
 
-    progress "Looking for latest Clyde archive on $CLYDE_BUILDS_BASE_URL"
-    local latest_archive_name=$(curl -s $CLYDE_BUILDS_BASE_URL \
-        | grep -o "clyde-[-_a-zT0-9.+]*-$OS_NAME$archive_ext_rx" \
+find_clyde_release_url() {
+    progress "Looking for archive of latest Clyde release"
+    CLYDE_URL=$(curl -s "$CLYDE_RELEASE_LIST_URL" \
+        | grep -o "https://github.com/.*$CLYDE_ARCHIVE_RX" \
         | head -1
     )
-    if [ -z "$latest_archive_name" ] ; then
+    if [ -z "$CLYDE_URL" ] ; then
         die "Not found"
     fi
+}
 
-    echo "Latest archive is $latest_archive_name"
+find_clyde_snapshot_url() {
+    progress "Looking for snapshot Clyde archive on $CLYDE_SNAPSHOT_LIST_URL"
+    local archive_name=$(curl -s "$CLYDE_SNAPSHOT_LIST_URL" \
+        | grep -o "$CLYDE_ARCHIVE_RX" \
+        | head -1
+    )
+    if [ -z "$archive_name" ] ; then
+        die "Not found"
+    fi
+    CLYDE_URL=$CLYDE_SNAPSHOT_LIST_URL$archive_name
+}
 
+download_clyde() {
     rm -rf $CLYDE_DIR
     mkdir $CLYDE_DIR
     (
         cd $CLYDE_DIR
-        progress "Downloading archive"
-        curl -s $CLYDE_BUILDS_BASE_URL$latest_archive_name -O
+        progress "Downloading archive from $CLYDE_URL"
+        curl -L $CLYDE_URL -o $CLYDE_ARCHIVE_NAME
 
         progress "Unpacking archive"
         if [ "$OS_NAME" = "windows" ] ; then
-            7z e -bb0 $latest_archive_name
+            7z e -bb0 $CLYDE_ARCHIVE_NAME
         else
-            tar --strip-components=1 -xzf $latest_archive_name
+            tar --strip-components=1 -xzf $CLYDE_ARCHIVE_NAME
         fi
     )
 }
 
+usage() {
+    die "Usage: $(basename $0) (main|next)"
+}
+
+parse_args() {
+    if [ $# != 1 ] ; then
+        usage
+    fi
+    case "$1" in
+        main)
+            clyde_version=release
+            ;;
+        next)
+            clyde_version=snapshot
+            ;;
+        *)
+            usage
+            ;;
+    esac
+}
+
+parse_args $@
 init_system_vars
+init_local_system_vars
+
+if [ "$clyde_version" = "snapshot" ] ; then
+    find_clyde_snapshot_url
+else
+    find_clyde_release_url
+fi
 download_clyde
 
 export PATH=$CLYDE_DIR:$PATH
