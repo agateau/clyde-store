@@ -31,31 +31,7 @@ releases:
       sha256: 36982fead73961c9d4b06d99e1f3c6de6b1e70ab5ce6d89da40096be5798975d
 installs:
   1.17.0:
-    aarch64-linux:
+    any-any:
       strip: 0
       files:
-        gitea-1.17.0-linux-arm64: bin/gitea
-    aarch64-macos:
-      strip: 0
-      files:
-        gitea-1.17.0-darwin-10.12-arm64: bin/gitea
-    x86-linux:
-      strip: 0
-      files:
-        gitea-1.17.0-linux-386: bin/gitea
-    x86-windows:
-      strip: 0
-      files:
-        gitea-1.17.0-windows-4.0-386.exe: bin/gitea.exe
-    x86_64-linux:
-      strip: 0
-      files:
-        gitea-1.17.0-linux-amd64: bin/gitea
-    x86_64-macos:
-      strip: 0
-      files:
-        gitea-1.17.0-darwin-10.12-amd64: bin/gitea
-    x86_64-windows:
-      strip: 0
-      files:
-        gitea-1.17.0-windows-4.0-amd64.exe: bin/gitea.exe
+        ${archive_name}: bin/gitea${exe_ext}

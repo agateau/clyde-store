@@ -12,11 +12,7 @@ releases:
       sha256: df8ee53087168338da831df6d9c615173a6932d8e7b7824e531a01e2a32920ed
 installs:
   0.20.0:
-    x86_64-windows:
+    any-any:
       strip: 0
       files:
-        miniserve-v0.20.0-x86_64-pc-windows-msvc.exe: bin/miniserve.exe
-    x86_64-linux:
-      strip: 0
-      files:
-        miniserve-v0.20.0-x86_64-unknown-linux-musl: bin/miniserve
+        ${archive_name}: bin/miniserve${exe_ext}
