@@ -1,22 +1,31 @@
----
 name: difftastic
 description: A structural diff that understands syntax
-homepage: "https://github.com/Wilfred/difftastic"
+homepage: https://github.com/Wilfred/difftastic
 releases:
   0.29.1:
     x86_64-linux:
-      url: "https://github.com/Wilfred/difftastic/releases/download/0.29.1/difft-x86_64-unknown-linux-gnu.tar.gz"
+      url: https://github.com/Wilfred/difftastic/releases/download/0.29.1/difft-x86_64-unknown-linux-gnu.tar.gz
       sha256: 5ca9be3f084ab4372019f4c2246dccc7ad4c8cbce6fcba4cfe0bb7f324d9db7a
   0.31.0:
     x86_64-linux:
-      url: "https://github.com/Wilfred/difftastic/releases/download/0.31.0/difft-x86_64-unknown-linux-gnu.tar.gz"
+      url: https://github.com/Wilfred/difftastic/releases/download/0.31.0/difft-x86_64-unknown-linux-gnu.tar.gz
       sha256: 675f372a48b254e37d94f7baf5ae5658d4143881fccc491860aee0287ecbb031
     x86_64-macos:
-      url: "https://github.com/Wilfred/difftastic/releases/download/0.31.0/difft-x86_64-apple-darwin.tar.gz"
+      url: https://github.com/Wilfred/difftastic/releases/download/0.31.0/difft-x86_64-apple-darwin.tar.gz
       sha256: 6db4863ebad551cbf85594a8bae35b6a97daaec049bece0911384ec3a26ce3ed
     x86_64-windows:
-      url: "https://github.com/Wilfred/difftastic/releases/download/0.31.0/difft-x86_64-pc-windows-msvc.zip"
+      url: https://github.com/Wilfred/difftastic/releases/download/0.31.0/difft-x86_64-pc-windows-msvc.zip
       sha256: cddb48d4a43f37e931a86fbd14432f827cdd29e9abeb845a52f42754095d40da
+  0.32.0:
+    x86_64-linux:
+      url: https://github.com/Wilfred/difftastic/releases/download/0.32.0/difft-x86_64-unknown-linux-gnu.tar.gz
+      sha256: d5a84f10b9e107048c1bafeab4f7320dd57948ffbd9cd13ff6b7c68bb986371f
+    x86_64-macos:
+      url: https://github.com/Wilfred/difftastic/releases/download/0.32.0/difft-x86_64-apple-darwin.tar.gz
+      sha256: ddcbb07bf3f563d37312456ac9fdae38d3d7499ab7dbda6923d9b242c37f2d6c
+    x86_64-windows:
+      url: https://github.com/Wilfred/difftastic/releases/download/0.32.0/difft-x86_64-pc-windows-msvc.zip
+      sha256: 5b5f1ce93cf967faceed645a721e89340cdce9b176bd2fe899ad170f73d5f649
 installs:
   0.29.0:
     any-any:

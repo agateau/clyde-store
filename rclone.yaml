@@ -1,34 +1,53 @@
----
 name: rclone
-description: "\"rsync for cloud storage\" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Yandex Files"
-homepage: "https://rclone.org"
+description: '"rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2,
+  One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Yandex Files'
+homepage: https://rclone.org
 releases:
   1.59.0:
     aarch64-linux:
-      url: "https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-linux-arm64.zip"
+      url: https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-linux-arm64.zip
       sha256: c95ebf48bcef81e9ee296a803ca77244d111e35a55db9680c78b407ed99bb054
     aarch64-windows:
-      url: "https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-windows-arm64.zip"
+      url: https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-windows-arm64.zip
       sha256: 3f50d0a422df063a5b331f49f2255d8180e851f963f54857b722ae1c2eb89bd0
     x86-linux:
-      url: "https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-linux-386.zip"
+      url: https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-linux-386.zip
       sha256: e7fa900d838ef4f60b8ca8f7cdb1090aa1a490ee381ce25b687ef11625425db7
     x86-windows:
-      url: "https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-windows-386.zip"
+      url: https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-windows-386.zip
       sha256: 84f1ec6bd03bb770c9efe79a396dbd41ad417d691522638a331a493dfc42f0f2
     x86_64-linux:
-      url: "https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-linux-amd64.zip"
+      url: https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-linux-amd64.zip
       sha256: cb7edcda37ef188dd5461a626f7b66d4c76676bc4cf05cba3bb4850dff3d8a2b
     x86_64-windows:
-      url: "https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-windows-amd64.zip"
+      url: https://github.com/rclone/rclone/releases/download/v1.59.0/rclone-v1.59.0-windows-amd64.zip
       sha256: 82aa8a39e1cc14668a60048c7375ebd45f1bb5734863ad2cac1309c63f05c57f
+  1.59.1:
+    aarch64-linux:
+      url: https://github.com/rclone/rclone/releases/download/v1.59.1/rclone-v1.59.1-linux-arm64.zip
+      sha256: 4b237151154d322c14c5075688d9553c99b5076db50eaa114cf04e302d07b4a7
+    aarch64-windows:
+      url: https://github.com/rclone/rclone/releases/download/v1.59.1/rclone-v1.59.1-windows-arm64.zip
+      sha256: 699ce703e508d2d05acfcc4317816741e2a393c8a3d7bdc0aa93c85f98dd6972
+    x86-linux:
+      url: https://github.com/rclone/rclone/releases/download/v1.59.1/rclone-v1.59.1-linux-386.zip
+      sha256: c0e6ec85df01f0b0b0824e13fe01c8b2fb5684f582b68df6f13a88f285a3cca4
+    x86-windows:
+      url: https://github.com/rclone/rclone/releases/download/v1.59.1/rclone-v1.59.1-windows-386.zip
+      sha256: 7957e636a8a5a50b4c91c2927483a1c6034a74c722c3a79ea4c8387f01e9810c
+    x86_64-linux:
+      url: https://github.com/rclone/rclone/releases/download/v1.59.1/rclone-v1.59.1-linux-amd64.zip
+      sha256: 4aa58ab0200ea5d75c2256933eeb1da1939fe741ded667c97809a2f64e3dd545
+    x86_64-windows:
+      url: https://github.com/rclone/rclone/releases/download/v1.59.1/rclone-v1.59.1-windows-amd64.zip
+      sha256: 54bcac89bc7735d425b3b86f8fee042566e6f02ab69feba29bafcffeec072b20
 installs:
   1.59.0:
     any-any:
       strip: 1
       files:
-        rclone${exe_ext}: bin/
-        rclone.1: share/man/man1/
         README.html: ${doc_dir}
         README.txt: ${doc_dir}
         git-log.txt: ${doc_dir}
+        rclone${exe_ext}: bin/
+        rclone.1: share/man/man1/
