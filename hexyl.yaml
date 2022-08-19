@@ -1,0 +1,38 @@
+name: hexyl
+description: A command-line hex viewer
+homepage: https://github.com/sharkdp/hexyl
+releases:
+  0.10.0:
+    aarch64-linux:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.10.0/hexyl-v0.10.0-aarch64-unknown-linux-gnu.tar.gz
+      sha256: ad7625692cd7d196be8f9a7d020d81fdb0d3fd1012da1b6884aca868a92bd702
+    x86-linux:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.10.0/hexyl-v0.10.0-i686-unknown-linux-musl.tar.gz
+      sha256: 2d39ad964a7d29340f71c449b5ab3032ce9edd812a40e136e409e4cda3c7de7f
+    x86-windows:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.10.0/hexyl-v0.10.0-i686-pc-windows-msvc.zip
+      sha256: 52e01ee41268350a36e15ce6de683221f2382c5b38763c806de2e436635709ed
+    x86_64-linux:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.10.0/hexyl-v0.10.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: cd932438e955b6ce721b984c948a1d7d61462714f5f01f97d2df93317b63f1a8
+    x86_64-macos:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.10.0/hexyl-v0.10.0-x86_64-apple-darwin.tar.gz
+      sha256: b0aabfd43d8033ad124957240f2cdfb43464d215d3fa84a8e14e81c1d970b092
+    x86_64-windows:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.10.0/hexyl-v0.10.0-x86_64-pc-windows-msvc.zip
+      sha256: cff955c53eb622f500ce1cde29e15ab62456315c2ad2edf4eb06fd1604ae3113
+  0.4.0:
+    aarch64-linux:
+      url: https://github.com/sharkdp/hexyl/foo
+      sha256: 0282dc9aed1028029c14ac96be88fb83dc49f1b9415353d2c7b1110065e9178f
+installs:
+  0.10.0:
+    any-any:
+      strip: 1
+      files:
+        README.md: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+        LICENSE-APACHE: ${doc_dir}
+        LICENSE-MIT: ${doc_dir}
+        hexyl${exe_ext}: bin/
+        hexyl.1: share/man/man1/
