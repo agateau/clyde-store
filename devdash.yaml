@@ -1,0 +1,32 @@
+name: devdash
+description: Highly Configurable Terminal Dashboard for Developers and Creators
+homepage: https://thedevdash.com
+releases:
+  0.5.0:
+    aarch64-linux:
+      url: https://github.com/Phantas0s/devdash/releases/download/v0.5.0/devdash_0.5.0_Linux_arm64.tar.gz
+      sha256: ba32e13f2618a7c571720a37bafe5712c9c344466d0be5602aecdcaa07e5127a
+    x86-linux:
+      url: https://github.com/Phantas0s/devdash/releases/download/v0.5.0/devdash_0.5.0_Linux_x86.tar.gz
+      sha256: dda1c201a30e2453386ebd54e1036d05a9eb19a1961ab4fa068071a367d081f9
+    x86-windows:
+      url: https://github.com/Phantas0s/devdash/releases/download/v0.5.0/devdash_0.5.0_Windows_x86.zip
+      sha256: 538299f1f034bba4e825c063f03b9afffdb95f02addadae6133e87de2f4abca3
+    x86_64-linux:
+      url: https://github.com/Phantas0s/devdash/releases/download/v0.5.0/devdash_0.5.0_Linux_x86_64.tar.gz
+      sha256: 355af24005512d6b3571a3e4facd3363d9d8023f09bfcea429cadf8707b64697
+    x86_64-macos:
+      url: https://github.com/Phantas0s/devdash/releases/download/v0.5.0/devdash_0.5.0_Darwin_x86_64.tar.gz
+      sha256: b21c088907ccfe615ad8e62a7ec87017198764caae498fb318428988e23af39e
+    x86_64-windows:
+      url: https://github.com/Phantas0s/devdash/releases/download/v0.5.0/devdash_0.5.0_Windows_x86_64.zip
+      sha256: 87521c5931e4ec8ef3137aaeb9ff4cf3cad6c4726eddc2fa5e7762f0859179c9
+installs:
+  0.5.0:
+    any:
+      strip: 0
+      files:
+        CHANGELOG.md: ${doc_dir}
+        LICENCE: ${doc_dir}
+        README.md: ${doc_dir}
+        devdash${exe_ext}: bin/

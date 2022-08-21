@@ -1,0 +1,26 @@
+name: wtfutil
+description: The personal information dashboard for your terminal
+homepage: https://wtfutil.com
+releases:
+  0.41.0:
+    aarch64-linux:
+      url: https://github.com/wtfutil/wtf/releases/download/v0.41.0/wtf_0.41.0_linux_arm64.tar.gz
+      sha256: 49731fd061645ee6be0b7ae8b6207a2ef2213add10dcb410ff7c770cca02163b
+    aarch64-macos:
+      url: https://github.com/wtfutil/wtf/releases/download/v0.41.0/wtf_0.41.0_darwin_arm64.tar.gz
+      sha256: 2d0f58606a1fadcc6444bf98a2573bbcc3f5686f0bbf26ed10635defecba2f60
+    x86_64-linux:
+      url: https://github.com/wtfutil/wtf/releases/download/v0.41.0/wtf_0.41.0_linux_amd64.tar.gz
+      sha256: 409f686cd151ba416ea3bb9c9d45ba39d62b3a1a70c706a17734175edbef63fb
+    x86_64-macos:
+      url: https://github.com/wtfutil/wtf/releases/download/v0.41.0/wtf_0.41.0_darwin_amd64.tar.gz
+      sha256: 04916a746c3fa77f5b9d153e62b0db79334501747b8d3476e3e61cfcf32a723b
+installs:
+  0.41.0:
+    any:
+      strip: 1
+      files:
+        wtfutil${exe_ext}: bin/
+        README.md: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+        LICENSE.md: ${doc_dir}
