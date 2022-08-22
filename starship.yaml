@@ -1,15 +1,40 @@
----
 name: starship
-description: "The minimal, blazing-fast, and infinitely customizable prompt for any shell!"
+description: The minimal, blazing-fast, and infinitely customizable prompt for any
+  shell!
 homepage: https://starship.rs
 releases:
+  1.10.2:
+    aarch64-linux:
+      url: https://github.com/starship/starship/releases/download/v1.10.2/starship-aarch64-unknown-linux-musl.tar.gz
+      sha256: ef5e6a61195ec8c03997365daf121af03667e01fe74ee48efb474d56cd065523
+    aarch64-macos:
+      url: https://github.com/starship/starship/releases/download/v1.10.2/starship-aarch64-apple-darwin.tar.gz
+      sha256: cbc65f33b3c46314ed1faa1518cd71e827aac6afe0b9167ed1e66966d04b5d82
+    aarch64-windows:
+      url: https://github.com/starship/starship/releases/download/v1.10.2/starship-aarch64-pc-windows-msvc.zip
+      sha256: 8758e311bda3c74ed2081bab800e718b919a2280a2289fa8ee2158fbc5419c6f
+    x86-linux:
+      url: https://github.com/starship/starship/releases/download/v1.10.2/starship-i686-unknown-linux-musl.tar.gz
+      sha256: 38afedc8bcfd97281eec4acee8895cfdddb07b004d3afe78f92af292e01b6a74
+    x86-windows:
+      url: https://github.com/starship/starship/releases/download/v1.10.2/starship-i686-pc-windows-msvc.zip
+      sha256: c68e8b2e52af4cb0914bd378d12a3c50706eeee72027a9acc6966af3ae647256
+    x86_64-linux:
+      url: https://github.com/starship/starship/releases/download/v1.10.2/starship-x86_64-unknown-linux-musl.tar.gz
+      sha256: a66e8c79b9bea929eae42146a2bf9e8ff34dda6136a6d8a2fe37fa4ba64698d4
+    x86_64-macos:
+      url: https://github.com/starship/starship/releases/download/v1.10.2/starship-x86_64-apple-darwin.tar.gz
+      sha256: 60febe06570cffd2cbd21c9ad98225e3bfa87e05b35cd4daa68a7a2c466f84f4
+    x86_64-windows:
+      url: https://github.com/starship/starship/releases/download/v1.10.2/starship-x86_64-pc-windows-msvc.zip
+      sha256: 968b14dc0bfd745acb5b716247b126cc2733799e5cb8648397c1b4329dd46cdd
   1.9.1:
     x86_64-linux:
-      url: "https://github.com/starship/starship/releases/download/v1.9.1/starship-x86_64-unknown-linux-gnu.tar.gz"
+      url: https://github.com/starship/starship/releases/download/v1.9.1/starship-x86_64-unknown-linux-gnu.tar.gz
       sha256: cd05b6390251128e723bbbcbf21099b975a43058fbe57721eb3597be9f089aca
 installs:
   1.9.1:
     any-any:
       strip: 0
       files:
-        starship: bin/
+        starship${exe_ext}: bin/

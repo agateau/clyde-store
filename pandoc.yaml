@@ -1,28 +1,37 @@
----
 name: pandoc
 description: a universal document converter
-homepage: "https://pandoc.org"
+homepage: https://pandoc.org
 releases:
   2.18.0:
     aarch64-linux:
-      url: "https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-linux-arm64.tar.gz"
+      url: https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-linux-arm64.tar.gz
       sha256: a48160539c27c6a35413667b064f9af154d59ad592563dcaab8a07d427bda594
     x86_64-linux:
-      url: "https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-linux-amd64.tar.gz"
+      url: https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-linux-amd64.tar.gz
       sha256: 103df36dc21081b7205d763ef7705e340eb0ea7e18694239b328a549892cc007
     x86_64-windows:
-      url: "https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-windows-x86_64.zip"
+      url: https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-windows-x86_64.zip
       sha256: 769a7b2544da87274d585de5f9e03f268d35a8121b44e45637e607d7aeb78ece
   2.19.0:
     aarch64-linux:
-      url: "https://github.com/jgm/pandoc/releases/download/2.19/pandoc-2.19-linux-arm64.tar.gz"
+      url: https://github.com/jgm/pandoc/releases/download/2.19/pandoc-2.19-linux-arm64.tar.gz
       sha256: 6c2daebcab7f8d6e7c8b91682be047286d9518f2bcb32515aea5206557fb67d1
     x86_64-linux:
-      url: "https://github.com/jgm/pandoc/releases/download/2.19/pandoc-2.19-linux-amd64.tar.gz"
+      url: https://github.com/jgm/pandoc/releases/download/2.19/pandoc-2.19-linux-amd64.tar.gz
       sha256: 2afd7c0c385a5817003330a2359c2b6e04e0a7e167addd41dda51e523e807426
     x86_64-windows:
-      url: "https://github.com/jgm/pandoc/releases/download/2.19/pandoc-2.19-windows-x86_64.zip"
+      url: https://github.com/jgm/pandoc/releases/download/2.19/pandoc-2.19-windows-x86_64.zip
       sha256: d5c51dd722ae4c562f9bff8148942630942490ef5bfe5695507c81c2c75a99de
+  2.19.1:
+    aarch64-linux:
+      url: https://github.com/jgm/pandoc/releases/download/2.19.1/pandoc-2.19.1-linux-arm64.tar.gz
+      sha256: 2c5d0953d6afd56b012d3e1c045b05cf482e12fb1bf677947798281d463aefdf
+    x86_64-linux:
+      url: https://github.com/jgm/pandoc/releases/download/2.19.1/pandoc-2.19.1-linux-amd64.tar.gz
+      sha256: e5dd4f533c616b246a979de1d3c16c87b460b28ff371e3993157301a18b2063f
+    x86_64-windows:
+      url: https://github.com/jgm/pandoc/releases/download/2.19.1/pandoc-2.19.1-windows-x86_64.zip
+      sha256: 40473339594f4837c8221d4f2a40dcd4c7714eab201b6f2e9a7a5194d5417a55
 installs:
   2.18.0:
     any-any:
@@ -33,7 +42,7 @@ installs:
     any-windows:
       strip: 1
       files:
-        COPYING.rtf: "${doc_dir}"
-        COPYRIGHT.txt: "${doc_dir}"
-        MANUAL.html: "${doc_dir}"
-        "pandoc${exe_ext}": bin/
+        COPYING.rtf: ${doc_dir}
+        COPYRIGHT.txt: ${doc_dir}
+        MANUAL.html: ${doc_dir}
+        pandoc${exe_ext}: bin/

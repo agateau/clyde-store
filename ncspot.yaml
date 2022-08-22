@@ -1,37 +1,50 @@
----
 name: ncspot
-description: "Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes."
-homepage: "https://github.com/hrkfdn/ncspot"
+description: Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc
+  and the likes.
+homepage: https://github.com/hrkfdn/ncspot
 releases:
   0.10.0:
     aarch64-linux:
-      url: "https://github.com/hrkfdn/ncspot/releases/download/v0.10.0/ncspot-v0.10.0-linux-arm64.tar.gz"
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.10.0/ncspot-v0.10.0-linux-arm64.tar.gz
       sha256: 1777b78aa42119b7a0874f7b9dc97e6c83981862b15fed9fbda0c5e4fa96bec0
     x86_64-linux:
-      url: "https://github.com/hrkfdn/ncspot/releases/download/v0.10.0/ncspot-v0.10.0-linux-x86_64.tar.gz"
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.10.0/ncspot-v0.10.0-linux-x86_64.tar.gz
       sha256: 48459070cbc1d98c3345222e63a6b85fc0a5831595789d1d557b7fb98680bec9
     x86_64-macos:
-      url: "https://github.com/hrkfdn/ncspot/releases/download/v0.10.0/ncspot-v0.10.0-macos-x86_64.tar.gz"
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.10.0/ncspot-v0.10.0-macos-x86_64.tar.gz
       sha256: de76c4447a63fcd7acb37b6f04a848ec99e817e4447527ea0ab0abed04b3de3f
     x86_64-windows:
-      url: "https://github.com/hrkfdn/ncspot/releases/download/v0.10.0/ncspot-v0.10.0-windows-x86_64.zip"
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.10.0/ncspot-v0.10.0-windows-x86_64.zip
       sha256: 53f588ca9c8ed5f4b6650bf1ae0ea09df7f9d0803e7405831af450006635e40a
   0.10.1:
     aarch64-linux:
-      url: "https://github.com/hrkfdn/ncspot/releases/download/v0.10.1/ncspot-v0.10.1-linux-arm64.tar.gz"
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.10.1/ncspot-v0.10.1-linux-arm64.tar.gz
       sha256: 2561feb748b5282d62fbfdaf92bcb47967b05286c192836f782c165319fdae0f
     x86_64-linux:
-      url: "https://github.com/hrkfdn/ncspot/releases/download/v0.10.1/ncspot-v0.10.1-linux-x86_64.tar.gz"
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.10.1/ncspot-v0.10.1-linux-x86_64.tar.gz
       sha256: 9cf31644eda9218fe3f98ca9e87aa6b55c6a4c000cd0f945679a8eeefa0f9651
     x86_64-macos:
-      url: "https://github.com/hrkfdn/ncspot/releases/download/v0.10.1/ncspot-v0.10.1-macos-x86_64.tar.gz"
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.10.1/ncspot-v0.10.1-macos-x86_64.tar.gz
       sha256: dfae457218328c8a99eecc3864b751c289e81463068d2d604dfaa2974ca1917b
     x86_64-windows:
-      url: "https://github.com/hrkfdn/ncspot/releases/download/v0.10.1/ncspot-v0.10.1-windows-x86_64.zip"
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.10.1/ncspot-v0.10.1-windows-x86_64.zip
       sha256: fa96ad9460cbcad01fb57c8e49bc44f827b4cce82bfb9106cc6c218584ffe478
+  0.11.0:
+    aarch64-linux:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.11.0/ncspot-v0.11.0-linux-arm64.tar.gz
+      sha256: bcd669f38949544fea251f9154d5394359f7b58ef89a76fecb7349ab0a108969
+    x86_64-linux:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.11.0/ncspot-v0.11.0-linux-x86_64.tar.gz
+      sha256: c43dc626999eac5766132d887276e739a3d9c7436e59198ef153bf597c48d408
+    x86_64-macos:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.11.0/ncspot-v0.11.0-macos-x86_64.tar.gz
+      sha256: 27d499e911ee0dc9cd9d7d73e3930f164a2f012c260fae9f45a442713031dfe9
+    x86_64-windows:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.11.0/ncspot-v0.11.0-windows-x86_64.zip
+      sha256: b72658bf06bbb64482e65f2c2fb5fe2528a84f8355097d08c787bc4169462336
 installs:
   0.10.0:
     any-any:
       strip: 0
       files:
-        "ncspot${exe_ext}": bin/
+        ncspot${exe_ext}: bin/
