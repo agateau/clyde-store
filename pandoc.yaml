@@ -32,6 +32,16 @@ releases:
     x86_64-windows:
       url: https://github.com/jgm/pandoc/releases/download/2.19.1/pandoc-2.19.1-windows-x86_64.zip
       sha256: 40473339594f4837c8221d4f2a40dcd4c7714eab201b6f2e9a7a5194d5417a55
+  2.19.2:
+    aarch64-linux:
+      url: https://github.com/jgm/pandoc/releases/download/2.19.2/pandoc-2.19.2-linux-arm64.tar.gz
+      sha256: 43f364915b9da64905fc3f6009f5542f224e54fb24f71043ef5154540f1a3983
+    x86_64-linux:
+      url: https://github.com/jgm/pandoc/releases/download/2.19.2/pandoc-2.19.2-linux-amd64.tar.gz
+      sha256: 9d55c7afb6a244e8a615451ed9cb02e6a6f187ad4d169c6d5a123fa74adb4830
+    x86_64-windows:
+      url: https://github.com/jgm/pandoc/releases/download/2.19.2/pandoc-2.19.2-windows-x86_64.zip
+      sha256: e7a0c92b4af6cad31d9899a8b92a3992e18634320349bbf56b729bbbcf71bb99
 installs:
   2.18.0:
     any-any:
