@@ -13,7 +13,7 @@ CLYDE_RELEASE_LIST_URL=https://api.github.com/repos/agateau/clyde/releases/lates
 CURL_RETRY=3
 
 progress() {
-    echo "=== $@ ==="
+    echo "=== $* ==="
 }
 
 init_local_system_vars() {
@@ -75,7 +75,8 @@ parse_args() {
     if [ $# != 1 ] ; then
         usage
     fi
-    case "$1" in
+    TARGET_BRANCH=$1
+    case "$TARGET_BRANCH" in
         main)
             clyde_version=release
             ;;
@@ -88,9 +89,27 @@ parse_args() {
     esac
 }
 
+list_modified_packages() {
+    # Last two columns are git status and file name
+    # Only print YAML files which have not been deleted
+    git diff --raw "origin/$TARGET_BRANCH" HEAD \
+        | grep -E -o '[A-Z]\s[^\s]+$' \
+        | awk '$1 != "D" && $2 ~ "\.yaml$" { print $2 }' \
+        || true
+}
+
 parse_args $@
 init_system_vars
 init_local_system_vars
+
+progress "Listing modified packages"
+PACKAGES=$(list_modified_packages)
+if [ -z "$PACKAGES" ] ; then
+    echo "No modified packages to check"
+    exit 0
+fi
+printf "Packages to check:\n%s\n" "$PACKAGES"
+echo
 
 if [ "$clyde_version" = "snapshot" ] ; then
     find_clyde_snapshot_url
@@ -102,6 +121,6 @@ download_clyde
 export PATH=$CLYDE_DIR:$PATH
 
 progress "Checking packages"
-$CLYDE_DIR/clydetools check *.yaml
+$CLYDE_DIR/clydetools check $PACKAGES
 
 progress "Success!"
