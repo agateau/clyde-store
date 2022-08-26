@@ -33,4 +33,4 @@ jobs:
           fetch-depth: 0
 
       - name: Check Packages
-        run: ci/check-packages main
+        run: PYTHONUNBUFFERED=1 ci/check-packages main
