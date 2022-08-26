@@ -1,0 +1,37 @@
+---
+name: glab
+description: A GitLab CLI tool bringing GitLab to your command line
+homepage: "https://glab.readthedocs.io/"
+releases:
+  1.21.0:
+    x86_64-linux:
+      url: "https://github.com/profclems/glab/releases/download/v1.21.0/glab_1.21.0_Linux_x86_64.tar.gz"
+      sha256: fc7a6af233797285348280e71c533574125aa52d72b73b65596d9934d70fcedd
+  1.22.0:
+    aarch64-linux:
+      url: "https://github.com/profclems/glab/releases/download/v1.22.0/glab_1.22.0_Linux_arm64.tar.gz"
+      sha256: 72b83d99c9fb99ed5ba04cc50f5acf90e1d4bedbc7c0d950eae7eb8375d0068b
+    x86-linux:
+      url: "https://github.com/profclems/glab/releases/download/v1.22.0/glab_1.22.0_Linux_i386.tar.gz"
+      sha256: 96c8983254eb0e6b517fce925b105e83c871759e28f4b46ff8335b6081d86fa9
+    x86-windows:
+      url: "https://github.com/profclems/glab/releases/download/v1.22.0/glab_1.22.0_Windows_i386.zip"
+      sha256: 43e86b78e919ec0a1947157c1eeaf62fa8bc03087f09affb28293af939ac4389
+    x86_64-linux:
+      url: "https://github.com/profclems/glab/releases/download/v1.22.0/glab_1.22.0_Linux_x86_64.tar.gz"
+      sha256: 7d70af94648cd7720899315ddd9efdf981769f636b3cf6976508a939d5248a5f
+    x86_64-macos:
+      url: "https://github.com/profclems/glab/releases/download/v1.22.0/glab_1.22.0_macOS_x86_64.tar.gz"
+      sha256: 050c6d54fb973fda1405a26aa9ccde9fe5a3e5cc3bb975ed430063e56504786f
+    x86_64-windows:
+      url: "https://github.com/profclems/glab/releases/download/v1.22.0/glab_1.22.0_Windows_x86_64.zip"
+      sha256: 1b07931cbd9547fdf33bc5c636a5e70bc01d7ef68768cff13f9655623ce411d8
+installs:
+  1.21.0:
+    any-any:
+      strip: 0
+      files:
+        CHANGELOG.md: "${doc_dir}"
+        LICENSE: "${doc_dir}"
+        README.md: "${doc_dir}"
+        "bin/glab${exe_ext}": bin/
