@@ -10,6 +10,8 @@ CLYDE_DIR=$CI_DIR/clyde
 CLYDE_SNAPSHOT_LIST_URL=https://builds.agateau.com/clyde/
 CLYDE_RELEASE_LIST_URL=https://api.github.com/repos/agateau/clyde/releases/latest
 
+CURL_RETRY=3
+
 progress() {
     echo "=== $@ ==="
 }
@@ -27,7 +29,7 @@ init_local_system_vars() {
 
 find_clyde_release_url() {
     progress "Looking for archive of latest Clyde release"
-    CLYDE_URL=$(curl -s "$CLYDE_RELEASE_LIST_URL" \
+    CLYDE_URL=$(curl --retry "$CURL_RETRY" "$CLYDE_RELEASE_LIST_URL" \
         | grep -o "https://github.com/.*$CLYDE_ARCHIVE_RX" \
         | head -1
     )
@@ -38,7 +40,7 @@ find_clyde_release_url() {
 
 find_clyde_snapshot_url() {
     progress "Looking for snapshot Clyde archive on $CLYDE_SNAPSHOT_LIST_URL"
-    local archive_name=$(curl -s "$CLYDE_SNAPSHOT_LIST_URL" \
+    local archive_name=$(curl --retry "$CURL_RETRY" "$CLYDE_SNAPSHOT_LIST_URL" \
         | grep -o "$CLYDE_ARCHIVE_RX" \
         | head -1
     )
@@ -54,7 +56,7 @@ download_clyde() {
     (
         cd $CLYDE_DIR
         progress "Downloading archive from $CLYDE_URL"
-        curl -L $CLYDE_URL -o $CLYDE_ARCHIVE_NAME
+        curl --retry "$CURL_RETRY" -L $CLYDE_URL -o $CLYDE_ARCHIVE_NAME
 
         progress "Unpacking archive"
         if [ "$OS_NAME" = "windows" ] ; then
