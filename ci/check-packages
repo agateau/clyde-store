@@ -109,7 +109,7 @@ def has_ci_changed(paths: List[Path]) -> bool:
 
 
 def list_all_packages() -> List[Path]:
-    return ROOT_DIR.glob("*.yaml")
+    return list(ROOT_DIR.glob("*.yaml"))
 
 
 def list_packages_to_check(target: str) -> List[Path]:
@@ -179,18 +179,23 @@ def main() -> int:
         description=__doc__)
 
     parser.add_argument("target", choices=["main", "next"])
+    parser.add_argument("-a", "--all", action="store_true")
 
     args = parser.parse_args()
 
     init_os_globals()
-    packages = sorted(list_packages_to_check(args.target))
+    if args.all:
+        packages = list_all_packages()
+    else:
+        packages = list_packages_to_check(args.target)
+    packages = sorted(packages)
 
     eprint("Packages to check:")
     if not packages:
         eprint("None")
         return 0
     for package in packages:
-        eprint(f"- {package}")
+        eprint(f"- {package.name}")
 
     if args.target == "main":
         clyde_url = find_clyde_release_url()
