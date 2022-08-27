@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+helix_dir="$(dirname $0)/../opt/helix"
+HELIX_RUNTIME="$helix_dir/runtime"
+exec "$helix_dir/hx" "$@"
