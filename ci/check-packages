@@ -6,6 +6,7 @@ import argparse
 import json
 import os
 import platform
+import random
 import re
 import shutil
 import subprocess
@@ -34,6 +35,8 @@ CLYDE_DIR = CI_DIR / "clyde"
 ROOT_DIR = CI_DIR.parent.resolve()
 
 CURL_RETRY = 3
+
+RANDOM_COUNT = 8
 
 
 def init_os_globals() -> None:
@@ -115,10 +118,15 @@ def list_all_packages() -> List[Path]:
 def list_packages_to_check(target: str) -> List[Path]:
     progress("Listing packages to check")
     paths = list_modified_files(target)
+    packages = [x for x in paths if x.suffix == ".yaml"]
     if has_ci_changed(paths):
-        eprint("CI files have changed: checking all packages!")
-        return list_all_packages()
-    return [x for x in paths if x.suffix == ".yaml"]
+        eprint(f"CI files have changed: adding a random selection of {RANDOM_COUNT} packages")
+        all_packages = list_all_packages()
+        candidates = list(set(all_packages) - set(packages))
+        if len(candidates) <= RANDOM_COUNT:
+            return all_packages
+        packages.extend(random.sample(candidates, RANDOM_COUNT))
+    return packages
 
 
 def find_clyde_release_url() -> str:
