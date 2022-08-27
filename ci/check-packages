@@ -1,126 +1,204 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/usr/bin/env python3
+"""
+Check packages are valid
+"""
+import argparse
+import json
+import os
+import platform
+import re
+import shutil
+import subprocess
+import sys
 
-. $(dirname $0)/functions.sh
+from pathlib import Path
+from typing import BinaryIO, Dict, List
+from urllib import request
 
-cd $(dirname $0)/..
-CI_DIR=$PWD/ci
-CLYDE_DIR=$CI_DIR/clyde
+if sys.stdout.isatty():
+    CYAN = "\033[36m"
+    RESET = "\033[0;0m"
+else:
+    CYAN = ""
+    RESET = ""
 
-CLYDE_SNAPSHOT_LIST_URL=https://builds.agateau.com/clyde/
-CLYDE_RELEASE_LIST_URL=https://api.github.com/repos/agateau/clyde/releases/latest
+CLYDE_SNAPSHOT_LIST_URL = "https://builds.agateau.com/clyde/"
+CLYDE_RELEASE_LIST_URL = "https://api.github.com/repos/agateau/clyde/releases/latest"
 
-CURL_RETRY=3
+CLYDE_ARCHIVE_NAME = ""
+CLYDE_ARCHIVE_RX = ""
+OS_NAME = ""
 
-progress() {
-    echo "=== $* ==="
-}
+CI_DIR = Path(__file__).parent.resolve()
+CLYDE_DIR = CI_DIR / "clyde"
+ROOT_DIR = CI_DIR.parent.resolve()
 
-init_local_system_vars() {
-    if [ "$OS_NAME" = "windows" ] ; then
-        local archive_ext_rx="\.zip"
-        CLYDE_ARCHIVE_NAME="clyde.zip"
-    else
-        local archive_ext_rx="\.tar\.gz"
-        CLYDE_ARCHIVE_NAME="clyde.tar.gz"
-    fi
-    CLYDE_ARCHIVE_RX="clyde-[-_a-zT0-9.+]*-$OS_NAME$archive_ext_rx"
-}
+CURL_RETRY = 3
 
-find_clyde_release_url() {
-    progress "Looking for archive of latest Clyde release"
-    CLYDE_URL=$(curl --retry "$CURL_RETRY" "$CLYDE_RELEASE_LIST_URL" \
-        | grep -o "https://github.com/.*$CLYDE_ARCHIVE_RX" \
-        | head -1
-    )
-    if [ -z "$CLYDE_URL" ] ; then
-        die "Not found"
-    fi
-}
 
-find_clyde_snapshot_url() {
-    progress "Looking for snapshot Clyde archive on $CLYDE_SNAPSHOT_LIST_URL"
-    local archive_name=$(curl --retry "$CURL_RETRY" "$CLYDE_SNAPSHOT_LIST_URL" \
-        | grep -o "$CLYDE_ARCHIVE_RX" \
-        | head -1
-    )
-    if [ -z "$archive_name" ] ; then
-        die "Not found"
-    fi
-    CLYDE_URL=$CLYDE_SNAPSHOT_LIST_URL$archive_name
-}
+def init_os_globals() -> None:
+    global CLYDE_ARCHIVE_NAME
+    global CLYDE_ARCHIVE_RX
+    global OS_NAME
+    system = platform.system()
 
-download_clyde() {
-    rm -rf $CLYDE_DIR
-    mkdir $CLYDE_DIR
-    (
-        cd $CLYDE_DIR
-        progress "Downloading archive from $CLYDE_URL"
-        curl --retry "$CURL_RETRY" -L $CLYDE_URL -o $CLYDE_ARCHIVE_NAME
+    if system == "Linux":
+        OS_NAME = "linux"
+    elif system == "Darwin":
+        OS_NAME = "macos"
+    elif system == "Windows":
+        OS_NAME = "windows"
+    else:
+        sys.exit(f"Unknown system {system}")
 
-        progress "Unpacking archive"
-        if [ "$OS_NAME" = "windows" ] ; then
-            7z e -bb0 $CLYDE_ARCHIVE_NAME
-        else
-            tar --strip-components=1 -xzf $CLYDE_ARCHIVE_NAME
-        fi
-    )
-}
+    if OS_NAME == "windows":
+        archive_ext_rx = r"\.zip"
+        CLYDE_ARCHIVE_NAME = "clyde.zip"
+    else:
+        archive_ext_rx = r"\.tar\.gz"
+        CLYDE_ARCHIVE_NAME = "clyde.tar.gz"
+    CLYDE_ARCHIVE_RX = f"clyde-[-_a-zT0-9.+]*-{OS_NAME}{archive_ext_rx}"
 
-usage() {
-    die "Usage: $(basename $0) (main|next)"
-}
 
-parse_args() {
-    if [ $# != 1 ] ; then
-        usage
-    fi
-    TARGET_BRANCH=$1
-    case "$TARGET_BRANCH" in
-        main)
-            clyde_version=release
-            ;;
-        next)
-            clyde_version=snapshot
-            ;;
-        *)
-            usage
-            ;;
-    esac
-}
+def create_request(url: str, headers: Dict[str, str]) -> request.Request:
+    req = request.Request(url)
+    for key, value in headers.items():
+        req.add_header(key, value)
 
-list_modified_packages() {
-    # Last two columns are git status and file name
-    # Only print YAML files which have not been deleted
-    git diff --raw "origin/$TARGET_BRANCH" HEAD \
-        | grep -E -o '[A-Z]\s[^\s]+$' \
-        | awk '$1 != "D" && $2 ~ "\.yaml$" { print $2 }' \
-        || true
-}
+    return req
 
-parse_args $@
-init_system_vars
-init_local_system_vars
 
-progress "Listing modified packages"
-PACKAGES=$(list_modified_packages)
-if [ -z "$PACKAGES" ] ; then
-    echo "No modified packages to check"
-    exit 0
-fi
-printf "Packages to check:\n%s\n" "$PACKAGES"
-echo
+def eprint(msg: str) -> None:
+    print(msg, file=sys.stderr)
 
-if [ "$clyde_version" = "snapshot" ] ; then
-    find_clyde_snapshot_url
-else
-    find_clyde_release_url
-fi
-download_clyde
 
-export PATH=$CLYDE_DIR:$PATH
+def http_get(url: str) -> BinaryIO:
+    eprint(f"http_get {url}")
+    req = create_request(url, {"User-Agent": "clyde-store-check-packages"})
+    return request.urlopen(req)  # type: ignore
 
-progress "Checking packages"
-$CLYDE_DIR/clydetools check $PACKAGES
 
-progress "Success!"
+def progress(msg: str) -> None:
+    eprint(f"{CYAN}{msg}{RESET}")
+
+
+def which(cmd: str) -> str:
+    cmd_path = shutil.which(cmd)
+    if cmd_path is None:
+        sys.exit(f"Can't find {cmd} in {os.environ['PATH']}")
+    return cmd_path
+
+
+def list_modified_files(target: str) -> List[Path]:
+    cmd = ["git", "diff", "--raw", f"origin/{target}", "HEAD"]
+    proc = subprocess.run(cmd, check=True, stdout=subprocess.PIPE)
+    out = str(proc.stdout, "utf-8")
+    lst = []
+    for line in out.split("\n"):
+        match = re.search("([A-Z]+)\\d*\t([^\\s]+)$", line)
+        if match:
+            status, path_str = match.groups()
+            if status != "R":
+                path = Path(path_str).resolve()
+                lst.append(path)
+    return lst
+
+
+def has_ci_changed(paths: List[Path]) -> bool:
+    return any(CI_DIR in x.parents for x in paths)
+
+
+def list_all_packages() -> List[Path]:
+    return sorted(ROOT_DIR.glob("*.yaml"))
+
+
+def find_clyde_release_url() -> str:
+    progress("Looking for archive of latest Clyde release")
+    response = http_get(CLYDE_RELEASE_LIST_URL)
+    dct = json.load(response)
+    archives_url = [x["browser_download_url"] for x in dct["assets"]]
+    for url in archives_url:
+        if re.search(CLYDE_ARCHIVE_RX, url):
+            assert isinstance(url, str)
+            return url
+    sys.exit(f"Can't find URL from\n{json.dumps(dct, indent=2)}")
+
+
+def find_clyde_snapshot_url() -> str:
+    progress(f"Looking for snapshot Clyde archive on {CLYDE_SNAPSHOT_LIST_URL}")
+    content = str(http_get(CLYDE_SNAPSHOT_LIST_URL).read())
+    match = re.search(CLYDE_ARCHIVE_RX, content)
+    if not match:
+        sys.exit("Could not find archive")
+    archive_name = match.group(0)
+
+    return f"{CLYDE_SNAPSHOT_LIST_URL}{archive_name}"
+
+
+def download_clyde(url: str) -> None:
+    if CLYDE_DIR.exists():
+        shutil.rmtree(CLYDE_DIR)
+    CLYDE_DIR.mkdir()
+
+    archive_path = CLYDE_DIR / CLYDE_ARCHIVE_NAME
+    progress(f"Downloading archive from {url}")
+    subprocess.run([which("curl"), "--retry", str(CURL_RETRY), "-L", url,
+                    "-o", str(archive_path)],
+                   check=True)
+
+    progress("Unpacking archive")
+    if OS_NAME == "windows":
+        cmd = [which("7z"), "e", "-bb0", str(archive_path)]
+    else:
+        cmd = [which("tar"), "--strip-components=1", "-xzf", str(archive_path)]
+    subprocess.run(cmd, check=True, cwd=CLYDE_DIR)
+
+    os.environ["PATH"] = str(CLYDE_DIR) + os.pathsep + os.environ["PATH"]
+
+
+def check_packages(packages: List[Path]) -> int:
+    # We must run the test in the current directory for now
+    package_names = [x.name for x in packages]
+    cmd = [which("clydetools"), "check"] + package_names
+    proc = subprocess.run(cmd, cwd=ROOT_DIR)
+    return proc.returncode
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        description=__doc__)
+
+    parser.add_argument("target", choices=["main", "next"])
+
+    args = parser.parse_args()
+
+    init_os_globals()
+    progress("Listing packages to check")
+    paths = list_modified_files(args.target)
+    if has_ci_changed(paths):
+        eprint("CI files have changed: checking all packages!")
+        packages = list_all_packages()
+    else:
+        packages = sorted(x for x in paths if x.suffix == ".yaml")
+        eprint("Packages to check:")
+        if not packages:
+            eprint("None")
+            return 0
+        for package in packages:
+            eprint(f"- {package}")
+
+    if args.target == "main":
+        clyde_url = find_clyde_release_url()
+    else:
+        clyde_url = find_clyde_snapshot_url()
+
+    download_clyde(clyde_url)
+    return check_packages(packages)
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+# vi: ts=4 sw=4 et
