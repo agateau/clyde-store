@@ -1,45 +1,54 @@
----
 name: clyde
 description: A package manager for prebuilt applications
-homepage: "https://github.com/agateau/agateau"
+homepage: https://github.com/agateau/agateau
 releases:
   0.1.0:
     x86_64-linux:
-      url: "https://github.com/agateau/clyde/releases/download/0.1.0/clyde-0.1.0%2B20220716T105940-303574d-x86_64-linux.tar.gz"
+      url: https://github.com/agateau/clyde/releases/download/0.1.0/clyde-0.1.0%2B20220716T105940-303574d-x86_64-linux.tar.gz
       sha256: cbe4fa0776ac552c757dec3f0eb71e24cef5ec14cd4ef413c2629dcec50ea34c
     x86_64-macos:
-      url: "https://github.com/agateau/clyde/releases/download/0.1.0/clyde-0.1.0%2B20220716T105940-303574d-x86_64-macos.tar.gz"
+      url: https://github.com/agateau/clyde/releases/download/0.1.0/clyde-0.1.0%2B20220716T105940-303574d-x86_64-macos.tar.gz
       sha256: ab7a8cafe78dc23bd6db52fd6c518286d501ab49716c15f20c0dbdabffada117
     x86_64-windows:
-      url: "https://github.com/agateau/clyde/releases/download/0.1.0/clyde-0.1.0%2B20220716T105940-303574d-x86_64-windows.zip"
+      url: https://github.com/agateau/clyde/releases/download/0.1.0/clyde-0.1.0%2B20220716T105940-303574d-x86_64-windows.zip
       sha256: 3eb200893511faff9227d68227ca1dcf1a6721fd7633ca55a47732fa41b1d339
   0.2.0:
     x86_64-linux:
-      url: "https://github.com/agateau/clyde/releases/download/0.2.0/clyde-0.2.0-x86_64-linux.tar.gz"
+      url: https://github.com/agateau/clyde/releases/download/0.2.0/clyde-0.2.0-x86_64-linux.tar.gz
       sha256: b22a6417c17c649c76e119560099cb79e1316f01c70410b65982c6147630aa82
     x86_64-macos:
-      url: "https://github.com/agateau/clyde/releases/download/0.2.0/clyde-0.2.0-x86_64-macos.tar.gz"
+      url: https://github.com/agateau/clyde/releases/download/0.2.0/clyde-0.2.0-x86_64-macos.tar.gz
       sha256: cc022647dfec27803c71294fd6bb253521fba7e4e70489fa33f94af66c2bfe32
     x86_64-windows:
-      url: "https://github.com/agateau/clyde/releases/download/0.2.0/clyde-0.2.0-x86_64-windows.zip"
+      url: https://github.com/agateau/clyde/releases/download/0.2.0/clyde-0.2.0-x86_64-windows.zip
       sha256: 716434dcdd53592596276566a1574386497de6ed8b7e53d824a96cd43d2e44af
   0.2.1:
     x86_64-linux:
-      url: "https://github.com/agateau/clyde/releases/download/0.2.1/clyde-0.2.1-x86_64-linux.tar.gz"
+      url: https://github.com/agateau/clyde/releases/download/0.2.1/clyde-0.2.1-x86_64-linux.tar.gz
       sha256: d2a6c69551cc1ef038422d82c7e687b8110cd4039ff377c3f88be9908da6f552
     x86_64-macos:
-      url: "https://github.com/agateau/clyde/releases/download/0.2.1/clyde-0.2.1-x86_64-macos.tar.gz"
+      url: https://github.com/agateau/clyde/releases/download/0.2.1/clyde-0.2.1-x86_64-macos.tar.gz
       sha256: b5d0356b779ad0062777897b523a5cd1f20bed9c4793d36f6d6b8c4868f27d22
     x86_64-windows:
-      url: "https://github.com/agateau/clyde/releases/download/0.2.1/clyde-0.2.1-x86_64-windows.zip"
+      url: https://github.com/agateau/clyde/releases/download/0.2.1/clyde-0.2.1-x86_64-windows.zip
       sha256: f0a1708ad756b456082fc687d99fce531dc96a19c62dd30a467c8f5d6d8dd7fd
+  0.3.0:
+    x86_64-linux:
+      url: https://github.com/agateau/clyde/releases/download/0.3.0/clyde-0.3.0-x86_64-linux.tar.gz
+      sha256: 092f23246f367fb84477e9995d6a8d4bcd12ca793b564a8456138c63229e76ab
+    x86_64-macos:
+      url: https://github.com/agateau/clyde/releases/download/0.3.0/clyde-0.3.0-x86_64-macos.tar.gz
+      sha256: 79ee6efc7c03604161a0b8061096c8d97fd501e2bf4f9f42e12c3f566a407184
+    x86_64-windows:
+      url: https://github.com/agateau/clyde/releases/download/0.3.0/clyde-0.3.0-x86_64-windows.zip
+      sha256: fff7fec72d2ced64a34b14d80ee3dda4e6ca30c52947914fb335bdeec10d2da7
 installs:
   0.1.0:
     any-any:
       strip: 1
       files:
-        CHANGELOG.md: "${doc_dir}"
-        LICENSE: "${doc_dir}"
-        README.md: "${doc_dir}"
-        "clyde${exe_ext}": bin/
-        "clydetools${exe_ext}": bin/
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        clyde${exe_ext}: bin/
+        clydetools${exe_ext}: bin/
