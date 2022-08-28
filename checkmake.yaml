@@ -1,0 +1,16 @@
+name: checkmake
+description: experimental linter/analyzer for Makefiles
+homepage: https://github.com/mrtazz/checkmake
+releases:
+  0.2.1:
+    x86_64-linux:
+      url: https://github.com/mrtazz/checkmake/releases/download/0.2.1/checkmake-0.2.1.linux.amd64
+      sha256: a89b4c5e84040439649bcbbcee9ab82306a7412a09020a7288d8bf9870b52a49
+    x86_64-macos:
+      url: https://github.com/mrtazz/checkmake/releases/download/0.2.1/checkmake-0.2.1.darwin.amd64
+      sha256: ca36ff252020115b186fff6dc28e1b3952e8a4147f62a8350833e82d6464ade9
+installs:
+  0.2.1:
+    any-any:
+      files:
+        ${asset_name}: bin/checkmake${exe_ext}
