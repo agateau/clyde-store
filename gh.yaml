@@ -1,6 +1,7 @@
 name: gh
 description: GitHub command-line client
 homepage: https://cli.github.com
+repository: ''
 releases:
   2.11.3:
     x86_64-linux:
@@ -122,6 +123,25 @@ releases:
     x86_64-windows:
       url: https://github.com/cli/cli/releases/download/v2.14.6/gh_2.14.6_windows_amd64.zip
       sha256: 6b117a719d0c977c71b37f8e03e857a22c04bd127f4da9dbc7de6a42c2060dad
+  2.14.7:
+    aarch64-linux:
+      url: https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_linux_arm64.tar.gz
+      sha256: ccb6e32c5830996abe8383531e3175c68bb895745bab7914ac5fe53c26b69c94
+    x86-linux:
+      url: https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_linux_386.tar.gz
+      sha256: b516d3239612e14681f31dbcc632704f9975b4b625906f23f1aff956835dd088
+    x86-windows:
+      url: https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_windows_386.zip
+      sha256: 9c55ebcd2388c8a83979dca4ebe0f4214e0a48ee405a03dd3b647378c273e8a3
+    x86_64-linux:
+      url: https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_linux_amd64.tar.gz
+      sha256: d174d0057b72ad0427d3225225d50d4dffaa61f3c000deeaf96248ae49deb2be
+    x86_64-macos:
+      url: https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_macOS_amd64.tar.gz
+      sha256: 0c74870d6d4844915d5fe6263322893e7e01eaf07cf3084f1630bedd36c62491
+    x86_64-windows:
+      url: https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_windows_amd64.zip
+      sha256: f28af85dce3319ef8049dee0953ec3421dc747731e4849d6c4de9d54c2e18d71
 installs:
   2.11.3:
     any-any:
