@@ -6,6 +6,7 @@ import argparse
 import json
 import os
 import platform
+import random
 import re
 import shutil
 import subprocess
@@ -34,6 +35,8 @@ CLYDE_DIR = CI_DIR / "clyde"
 ROOT_DIR = CI_DIR.parent.resolve()
 
 CURL_RETRY = 3
+
+RANDOM_COUNT = 8
 
 
 def init_os_globals() -> None:
@@ -109,7 +112,21 @@ def has_ci_changed(paths: List[Path]) -> bool:
 
 
 def list_all_packages() -> List[Path]:
-    return sorted(ROOT_DIR.glob("*.yaml"))
+    return list(ROOT_DIR.glob("*.yaml"))
+
+
+def list_packages_to_check(target: str) -> List[Path]:
+    progress("Listing packages to check")
+    paths = list_modified_files(target)
+    packages = [x for x in paths if x.suffix == ".yaml"]
+    if has_ci_changed(paths):
+        eprint(f"CI files have changed: adding a random selection of {RANDOM_COUNT} packages")
+        all_packages = list_all_packages()
+        candidates = list(set(all_packages) - set(packages))
+        if len(candidates) <= RANDOM_COUNT:
+            return all_packages
+        packages.extend(random.sample(candidates, RANDOM_COUNT))
+    return packages
 
 
 def find_clyde_release_url() -> str:
@@ -170,23 +187,23 @@ def main() -> int:
         description=__doc__)
 
     parser.add_argument("target", choices=["main", "next"])
+    parser.add_argument("-a", "--all", action="store_true")
 
     args = parser.parse_args()
 
     init_os_globals()
-    progress("Listing packages to check")
-    paths = list_modified_files(args.target)
-    if has_ci_changed(paths):
-        eprint("CI files have changed: checking all packages!")
+    if args.all:
         packages = list_all_packages()
     else:
-        packages = sorted(x for x in paths if x.suffix == ".yaml")
-        eprint("Packages to check:")
-        if not packages:
-            eprint("None")
-            return 0
-        for package in packages:
-            eprint(f"- {package}")
+        packages = list_packages_to_check(args.target)
+    packages = sorted(packages)
+
+    eprint("Packages to check:")
+    if not packages:
+        eprint("None")
+        return 0
+    for package in packages:
+        eprint(f"- {package.name}")
 
     if args.target == "main":
         clyde_url = find_clyde_release_url()

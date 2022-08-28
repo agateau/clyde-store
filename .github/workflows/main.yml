@@ -33,4 +33,11 @@ jobs:
           fetch-depth: 0
 
       - name: Check Packages
-        run: PYTHONUNBUFFERED=1 ci/check-packages main
+        run: |
+          if [ "$GITHUB_EVENT_NAME" != "pull_request" ] ; then
+            check_package_args="--all"
+          else
+            check_package_args=""
+          fi
+          export PYTHONUNBUFFERED=1
+          ci/check-packages main $check_package_args
