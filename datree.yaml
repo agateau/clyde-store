@@ -3,6 +3,7 @@ description: a CLI tool that supports Kubernetes admins in their roles, by preve
   developers from making errors in Kubernetes configurations that can cause clusters
   to fail in production.
 homepage: '~'
+repository: ''
 releases:
   0.11.0:
     aarch64-linux:
@@ -958,6 +959,28 @@ releases:
     x86_64-windows:
       url: https://github.com/datreeio/datree/releases/download/1.6.12/datree-cli_1.6.12_windows_x86_64.zip
       sha256: 8177c813e3f53b169d007464cd92221d4c5ee61793c8221dcbea558e531e44f2
+  1.6.13:
+    aarch64-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.6.13/datree-cli_1.6.13_Linux_arm64.zip
+      sha256: 607f228e7e4588221bc7f8ed73eb96187adf1302fe2916bfbc67c415609b3545
+    aarch64-macos:
+      url: https://github.com/datreeio/datree/releases/download/1.6.13/datree-cli_1.6.13_Darwin_arm64.zip
+      sha256: d8f02d07e41f65a3e48338466cd41070d26e4ec6b7d631ab49534b053290ce16
+    x86-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.6.13/datree-cli_1.6.13_Linux_386.zip
+      sha256: 002fb2314cfa30e96b7ab4e853df424fd4f558f2ef66cb71174ab42c6a1562d8
+    x86-windows:
+      url: https://github.com/datreeio/datree/releases/download/1.6.13/datree-cli_1.6.13_windows_386.zip
+      sha256: aff17286b1a8333ee7e7c9a7b5140f7cd1b72746d697fd03745f0416135f6928
+    x86_64-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.6.13/datree-cli_1.6.13_Linux_x86_64.zip
+      sha256: 1605a22bdb975690a313560dfe23efa5e8003a3821f6a08fe0cf478c940fcb44
+    x86_64-macos:
+      url: https://github.com/datreeio/datree/releases/download/1.6.13/datree-cli_1.6.13_Darwin_x86_64.zip
+      sha256: c66981c5a8fb15ade2de67f27062c7ae362d65ffdaa3f7d8b73e1ba2c23e8ea4
+    x86_64-windows:
+      url: https://github.com/datreeio/datree/releases/download/1.6.13/datree-cli_1.6.13_windows_x86_64.zip
+      sha256: 2cdc80294a481815b329556f2895376196424836379c0c714ef73d81d2cbedc8
   1.6.6:
     aarch64-linux:
       url: https://github.com/datreeio/datree/releases/download/1.6.6/datree-cli_1.6.6_Linux_arm64.zip

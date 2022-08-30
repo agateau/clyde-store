@@ -1,39 +1,65 @@
----
 name: changie
-description: Automated changelog tool for preparing releases with lots of customization options
-homepage: "https://github.com/miniscruff/changie"
+description: Automated changelog tool for preparing releases with lots of customization
+  options
+homepage: https://github.com/miniscruff/changie
+repository: ''
 releases:
   1.8.0:
     aarch64-linux:
-      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_arm64.tar.gz"
+      url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_arm64.tar.gz
       sha256: 8e23c5afad0d2c34aa643bc89326b06be96c47da25210df262397c7dacbb6afd
     aarch64-macos:
-      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_darwin_arm64.tar.gz"
+      url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_darwin_arm64.tar.gz
       sha256: b62795a78fe3edbf75fe0047f241e6813a1b67aef5596ca3e615ba29329a66c6
     aarch64-windows:
-      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_windows_arm64.zip"
+      url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_windows_arm64.zip
       sha256: 6f024de02b8f20a8d25364431906298493a45b3f116dd4d6ab91afa9cfad1a68
     x86-linux:
-      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_386.tar.gz"
+      url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_386.tar.gz
       sha256: 868d0c6fd33180c85232b134c1d2cb9204af02e3c7cf188b1334ba0973c77d63
     x86-windows:
-      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_windows_386.zip"
+      url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_windows_386.zip
       sha256: 19df2ea540460ff90f0b0878f02a3a7caf68318fa05ef1b2919840ee69f7c984
     x86_64-linux:
-      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_amd64.tar.gz"
+      url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_amd64.tar.gz
       sha256: 7945e0a04ddf076a2a13f2082c4bce543576955a6101002a4b57c34b415a6837
     x86_64-macos:
-      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_darwin_amd64.tar.gz"
+      url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_darwin_amd64.tar.gz
       sha256: a6caa4637ead9209dd78ce011ffa47049fab555ffe8e731fbaee542642103070
     x86_64-windows:
-      url: "https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_windows_amd64.zip"
+      url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_windows_amd64.zip
       sha256: 2e7add7a82154b443597609910f579f733491c7133c9cff55b5bd731877f6108
+  1.9.0:
+    aarch64-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.9.0/changie_1.9.0_linux_arm64.tar.gz
+      sha256: 9a63b0aef746d3de16d11f9bdfbedd4320b674548cc1326eb18cc401d93a0952
+    aarch64-macos:
+      url: https://github.com/miniscruff/changie/releases/download/v1.9.0/changie_1.9.0_darwin_arm64.tar.gz
+      sha256: 01755751d1745e4b128d732b4189d946fe947212790913238853e6ed03244030
+    aarch64-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.9.0/changie_1.9.0_windows_arm64.zip
+      sha256: 11cd0b1c0c79d1be97cea5b98257f4cf0edc8718973c39b14136e28c130a1d6c
+    x86-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.9.0/changie_1.9.0_linux_386.tar.gz
+      sha256: 047182ce7d4e0c6f322d63a08ec22651816570c3c75301d1e0d365cf62ac89e6
+    x86-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.9.0/changie_1.9.0_windows_386.zip
+      sha256: 013bf286e4485b85a48cff11d34eac5887cf154fac11ac481edb7fa5a8a945e5
+    x86_64-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.9.0/changie_1.9.0_linux_amd64.tar.gz
+      sha256: 33c711de9dd4bee7e4b37f2a99da367055f137c5ba623c7eb5f3aa0d940f7350
+    x86_64-macos:
+      url: https://github.com/miniscruff/changie/releases/download/v1.9.0/changie_1.9.0_darwin_amd64.tar.gz
+      sha256: 6d7159ca0dfab400d1ba62eab36406077ba721d33b1139220800a0b65092db6c
+    x86_64-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.9.0/changie_1.9.0_windows_amd64.zip
+      sha256: 881c82e4590f08851ec36f04844b48f0f04f192a50cb8026ba671e56e2a20751
 installs:
   1.8.0:
     any-any:
       strip: 0
       files:
-        CHANGELOG.md: "${doc_dir}"
-        LICENSE: "${doc_dir}"
-        README.md: "${doc_dir}"
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
         changie${exe_ext}: bin/
