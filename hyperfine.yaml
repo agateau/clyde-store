@@ -77,3 +77,8 @@ installs:
       strip: 1
       files:
         hyperfine${exe_ext}: bin/
+        CHANGELOG.md: ${doc_dir}
+        README.md: ${doc_dir}
+        LICENSE-APACHE: ${doc_dir}
+        LICENSE-MIT: ${doc_dir}
+        hyperfine.1: share/man/man1/
