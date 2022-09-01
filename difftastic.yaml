@@ -1,6 +1,7 @@
 name: difftastic
 description: A structural diff that understands syntax
 homepage: https://github.com/Wilfred/difftastic
+repository: ''
 releases:
   0.29.1:
     x86_64-linux:
@@ -36,6 +37,16 @@ releases:
     x86_64-windows:
       url: https://github.com/Wilfred/difftastic/releases/download/0.33.0/difft-x86_64-pc-windows-msvc.zip
       sha256: c5c0065e14412c9966df4cc845094e9496abd1f4a93242369707b05582bc98c1
+  0.34.0:
+    x86_64-linux:
+      url: https://github.com/Wilfred/difftastic/releases/download/0.34.0/difft-x86_64-unknown-linux-gnu.tar.gz
+      sha256: 551a00663c5e43dd64193ac269945d34175e7a7a7af09026b5a539dde09c2031
+    x86_64-macos:
+      url: https://github.com/Wilfred/difftastic/releases/download/0.34.0/difft-x86_64-apple-darwin.tar.gz
+      sha256: b9c9f290102c6dd7666ed3713e73b5ebda2c6a1dd4b3d1fd062168808c9089b3
+    x86_64-windows:
+      url: https://github.com/Wilfred/difftastic/releases/download/0.34.0/difft-x86_64-pc-windows-msvc.zip
+      sha256: 57d3314a477b1e9e558dadb8673405bb2df0cbeb79eb4c367cd19f0284112d0d
 installs:
   0.29.0:
     any-any:
