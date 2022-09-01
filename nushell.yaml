@@ -73,7 +73,6 @@ releases:
 installs:
   0.64.0:
     any-any:
-      strip: 0
       files:
         LICENSE: ${doc_dir}
         README.txt: ${doc_dir}
@@ -83,7 +82,6 @@ installs:
         nu_plugin_inc${exe_ext}: bin/
         nu_plugin_query${exe_ext}: bin/
     any-windows:
-      strip: 0
       files:
         LICENSE: ${doc_dir}
         LICENSE-for-less.txt: ${doc_dir}

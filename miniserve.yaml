@@ -13,6 +13,5 @@ releases:
 installs:
   0.20.0:
     any-any:
-      strip: 0
       files:
         ${asset_name}: bin/miniserve${exe_ext}
