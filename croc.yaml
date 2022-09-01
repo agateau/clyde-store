@@ -25,7 +25,6 @@ releases:
 installs:
   9.6.0:
     any-any:
-      strip: 0
       files:
         croc${exe_ext}: bin/
         LICENSE: ${doc_dir}

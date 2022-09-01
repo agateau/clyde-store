@@ -151,7 +151,6 @@ installs:
         bin/gh${exe_ext}: bin/
         share: share
     any-windows:
-      strip: 0
       files:
         LICENSE: ${doc_dir}
         bin/gh${exe_ext}: bin/
