@@ -1,35 +1,35 @@
----
 name: bat
 description: A cat(1) clone with wings.
-homepage: "https://github.com/sharkdp/bat"
+homepage: https://github.com/sharkdp/bat
+repository: https://github.com/sharkdp/bat
 releases:
   0.21.0:
     aarch64-linux:
-      url: "https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-aarch64-unknown-linux-gnu.tar.gz"
+      url: https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-aarch64-unknown-linux-gnu.tar.gz
       sha256: 697dc98cbe9727d78b7e62ef6274bd98b091a101f14e3b578b3d72ce78e89a42
     x86-linux:
-      url: "https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-i686-unknown-linux-musl.tar.gz"
+      url: https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-i686-unknown-linux-musl.tar.gz
       sha256: 59375b356e8eda04bde400f697cb3bee5d160a9bc0a1dbb3cf940ce02bd25182
     x86-windows:
-      url: "https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-i686-pc-windows-msvc.zip"
+      url: https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-i686-pc-windows-msvc.zip
       sha256: e2e1d001cc2a0d6acc3dad206983aaae7c930a04e40356d2d398f2ae469e90ce
     x86_64-linux:
-      url: "https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-x86_64-unknown-linux-musl.tar.gz"
+      url: https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-x86_64-unknown-linux-musl.tar.gz
       sha256: 5e6d199219578fed98483ad132f8207edc23bd072b36c22237edd51aed6b2af9
     x86_64-macos:
-      url: "https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-x86_64-apple-darwin.tar.gz"
+      url: https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-x86_64-apple-darwin.tar.gz
       sha256: 7b0bf052aff98dbe4b5f259b0d3a8b320b5ee03fbde6a31bb0b4a08ad0ce58aa
     x86_64-windows:
-      url: "https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-x86_64-pc-windows-msvc.zip"
+      url: https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-x86_64-pc-windows-msvc.zip
       sha256: 56ab9be6d52d66e77a5281b7df9f9e5f6df8aae37f4686402b221764e46cb197
 installs:
   0.21.0:
     any-any:
       strip: 1
       files:
-        bat${exe_ext}: bin/
-        bat.1: share/man/man1/
         CHANGELOG.md: ${doc_dir}
         LICENSE-APACHE: ${doc_dir}
         LICENSE-MIT: ${doc_dir}
         README.md: ${doc_dir}
+        bat${exe_ext}: bin/
+        bat.1: share/man/man1/
