@@ -1,6 +1,7 @@
 name: hexyl
 description: A command-line hex viewer
 homepage: https://github.com/sharkdp/hexyl
+repository: https://github.com/sharkdp/hexyl
 releases:
   0.10.0:
     aarch64-linux:
@@ -30,9 +31,9 @@ installs:
     any-any:
       strip: 1
       files:
-        README.md: ${doc_dir}
         CHANGELOG.md: ${doc_dir}
         LICENSE-APACHE: ${doc_dir}
         LICENSE-MIT: ${doc_dir}
+        README.md: ${doc_dir}
         hexyl${exe_ext}: bin/
         hexyl.1: share/man/man1/
