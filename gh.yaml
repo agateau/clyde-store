@@ -1,7 +1,7 @@
 name: gh
 description: GitHub command-line client
 homepage: https://cli.github.com
-repository: ''
+repository: https://github.com/cli/cli
 releases:
   2.11.3:
     x86_64-linux:
@@ -142,6 +142,25 @@ releases:
     x86_64-windows:
       url: https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_windows_amd64.zip
       sha256: f28af85dce3319ef8049dee0953ec3421dc747731e4849d6c4de9d54c2e18d71
+  2.15.0:
+    aarch64-linux:
+      url: https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_linux_arm64.tar.gz
+      sha256: 4d88daca01db5c9efb5815e297cd3f8ee55c928eda7fa0cfe3f1dfae6d1cc8e5
+    x86-linux:
+      url: https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_linux_386.tar.gz
+      sha256: 3505a547c402f4d079e9381cf0ceef096653d26f2e1388ab0628cf776c1cd6a1
+    x86-windows:
+      url: https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_windows_386.zip
+      sha256: fc6fcfe0f569ed35881a3ae45e756de02d85359309f32adea4d713d4b5030c9e
+    x86_64-linux:
+      url: https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_linux_amd64.tar.gz
+      sha256: c1ddab00cc406c34f17f40e3969e9d6690606dec0df564c5d533e5020598323d
+    x86_64-macos:
+      url: https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_macOS_amd64.tar.gz
+      sha256: 396972e1c340624879922cd0d7f553f9f9729a14febc56505ebea96713d89e34
+    x86_64-windows:
+      url: https://github.com/cli/cli/releases/download/v2.15.0/gh_2.15.0_windows_amd64.zip
+      sha256: a4a49ad59bdd79be00375ab7426d3cb15bdd7bcdc50b0df7ef1f4bdc96315dc2
 installs:
   2.11.3:
     any-any:
