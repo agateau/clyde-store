@@ -2,8 +2,8 @@ name: datree
 description: a CLI tool that supports Kubernetes admins in their roles, by preventing
   developers from making errors in Kubernetes configurations that can cause clusters
   to fail in production.
-homepage: '~'
-repository: ''
+homepage: https://github.com/datreeio/datree
+repository: https://github.com/datreeio/datree
 releases:
   0.11.0:
     aarch64-linux:
@@ -981,6 +981,28 @@ releases:
     x86_64-windows:
       url: https://github.com/datreeio/datree/releases/download/1.6.13/datree-cli_1.6.13_windows_x86_64.zip
       sha256: 2cdc80294a481815b329556f2895376196424836379c0c714ef73d81d2cbedc8
+  1.6.16:
+    aarch64-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.6.16/datree-cli_1.6.16_Linux_arm64.zip
+      sha256: 73b39e7e3fad8201e903ae98d5371c05b4e53681081455ebe44e4927c8b7494e
+    aarch64-macos:
+      url: https://github.com/datreeio/datree/releases/download/1.6.16/datree-cli_1.6.16_Darwin_arm64.zip
+      sha256: bbff53adba929bd3b4e172000caf210a6d4d50d46a88f139073b1e1ec1ee25bf
+    x86-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.6.16/datree-cli_1.6.16_Linux_386.zip
+      sha256: 3b0d2b639f0ede6417931d065553bfd49c8a7e4fe3c1d4d971bbfabe52fc9702
+    x86-windows:
+      url: https://github.com/datreeio/datree/releases/download/1.6.16/datree-cli_1.6.16_windows_386.zip
+      sha256: 5d7a4438362aca4974edbc33f741130da91bb608618b631270ba3bfb8f721230
+    x86_64-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.6.16/datree-cli_1.6.16_Linux_x86_64.zip
+      sha256: 5b48c852f04afff5b67da771d3aa420215818d23fbc57f33052cf2f2cb8a3698
+    x86_64-macos:
+      url: https://github.com/datreeio/datree/releases/download/1.6.16/datree-cli_1.6.16_Darwin_x86_64.zip
+      sha256: 9da027203ff198a33efb60084538473a911bdb93b4e0c0490d656f2cc7d8fa3a
+    x86_64-windows:
+      url: https://github.com/datreeio/datree/releases/download/1.6.16/datree-cli_1.6.16_windows_x86_64.zip
+      sha256: df77d59d90b0b0ea3e15b1ffa999c1cfdd546fae7522268af8084f82f947634c
   1.6.6:
     aarch64-linux:
       url: https://github.com/datreeio/datree/releases/download/1.6.6/datree-cli_1.6.6_Linux_arm64.zip
