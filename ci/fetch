@@ -31,7 +31,11 @@ def file_pr(package_file: str):
         name = path.parent.name
 
     branch_name = f"update-{name}"
-    run_git(["checkout", "-b", branch_name])
+    try:
+        run_git(["checkout", "-b", branch_name])
+    except subprocess.CalledProcessError:
+        print(f"Failed to create branch '{branch_name}', check it does not already exist")
+        return
     run_git(["add", package_file])
     run_git(["commit", "-m", f"Update {name}"])
     run_git(["push", "-u", "origin", branch_name])
