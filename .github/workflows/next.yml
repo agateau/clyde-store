@@ -41,4 +41,4 @@ jobs:
           fi
           export PYTHONUNBUFFERED=1
           export CLYDE_GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}"
-          ci/check-packages main $check_package_args
+          ci/check-packages next $check_package_args
