@@ -7,6 +7,9 @@ releases:
     x86_64-linux:
       url: https://github.com/chmln/sd/releases/download/v0.7.6/sd-v0.7.6-x86_64-unknown-linux-musl
       sha256: dc11c9c8c61fa582e587e4d65b8d93c73d032b5dd215b42580115711a8d66012
+    x86_64-macos:
+      url: https://github.com/chmln/sd/releases/download/v0.7.6/sd-v0.7.6-x86_64-apple-darwin
+      sha256: 33547bcd24515ff66081e9d4894aec81cb0cd073f9ddabf1df81ef6763a3d591
 installs:
   0.7.6:
     any-any:

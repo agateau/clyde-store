@@ -1,0 +1,14 @@
+name: tiled
+description: Flexible level editor
+homepage: Flexible level editor
+repository: https://github.com/mapeditor/tiled
+releases:
+  1.9.2:
+    x86_64-linux:
+      url: https://github.com/mapeditor/tiled/releases/download/v1.9.2/Tiled-1.9.2_Linux_x86_64.AppImage
+      sha256: bba1c87f137c204a875a2c876dd660d4377f5f7f04dfff050c9f2c3b6579100a
+installs:
+  1.9.2:
+    x86_64-linux:
+      files:
+        ${asset_name}: bin/tiled

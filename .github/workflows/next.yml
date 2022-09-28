@@ -40,4 +40,5 @@ jobs:
             check_package_args=""
           fi
           export PYTHONUNBUFFERED=1
+          export CLYDE_GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}"
           ci/check-packages main $check_package_args

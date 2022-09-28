@@ -1,0 +1,19 @@
+name: antidot
+description: Cleans up your $HOME from those pesky dotfiles
+homepage: https://github.com/doron-cohen/antidot
+repository: https://github.com/doron-cohen/antidot
+releases:
+  0.6.3:
+    x86_64-linux:
+      url: https://github.com/doron-cohen/antidot/releases/download/v0.6.3/antidot_0.6.3_Linux_x86_64.tar.gz
+      sha256: 69bf8e4de2da1fdada2be866d7ba0a0261cbc9e9e5410bd87c79791f2ce6dbdc
+    x86_64-macos:
+      url: https://github.com/doron-cohen/antidot/releases/download/v0.6.3/antidot_0.6.3_Darwin_x86_64.tar.gz
+      sha256: d50a762d79ce0ae641096669f9d2fee580a094c979bb1aa75ee36e7efb1a5b36
+installs:
+  0.6.3:
+    any:
+      files:
+        antidot: bin/antidot${exe_ext}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}

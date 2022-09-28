@@ -30,6 +30,8 @@ CLYDE_ARCHIVE_NAME = ""
 CLYDE_ARCHIVE_RX = ""
 OS_NAME = ""
 
+GITHUB_TOKEN = os.getenv("CLYDE_GITHUB_TOKEN", "")
+
 CI_DIR = Path(__file__).parent.resolve()
 CLYDE_DIR = CI_DIR / "clyde"
 ROOT_DIR = CI_DIR.parent.resolve()
@@ -63,6 +65,12 @@ def init_os_globals() -> None:
     CLYDE_ARCHIVE_RX = f"clyde-[-_a-zT0-9.+]*-{OS_NAME}{archive_ext_rx}"
 
 
+def check_github_token() -> None:
+    if not GITHUB_TOKEN:
+        eprint(f"CLYDE_GITHUB_TOKEN environment variable not set. Consider defining it"
+               " to avoid being rate-limited.")
+
+
 def create_request(url: str, headers: Dict[str, str]) -> request.Request:
     req = request.Request(url)
     for key, value in headers.items():
@@ -77,7 +85,12 @@ def eprint(msg: str) -> None:
 
 def http_get(url: str) -> BinaryIO:
     eprint(f"http_get {url}")
-    req = create_request(url, {"User-Agent": "clyde-store-check-packages"})
+    headers = {
+        "User-Agent": "clyde-store-check-packages",
+    }
+    if GITHUB_TOKEN:
+        headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
+    req = create_request(url, headers)
     return request.urlopen(req)  # type: ignore
 
 
@@ -192,6 +205,8 @@ def main() -> int:
     args = parser.parse_args()
 
     init_os_globals()
+    check_github_token()
+
     if args.all:
         packages = list_all_packages()
     else:
