@@ -82,6 +82,34 @@ releases:
     x86_64-windows:
       url: https://github.com/syncthing/syncthing/releases/download/v1.21.0/syncthing-windows-amd64-v1.21.0.zip
       sha256: 630c55e7220d96b3f45fab7c4c96530fc6c9a5074d347d7591169cd4dc966374
+  1.22.0:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.22.0/syncthing-linux-arm64-v1.22.0.tar.gz
+      sha256: f666d4f94558c7be743560217136794f62fbd8fb4f5ac9365cba95cc3d5a66a9
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.22.0/syncthing-macos-arm64-v1.22.0.zip
+      sha256: ddb789f852d2db644e97cc866a2d0c485579e7d5e35039d8df7a45c348e73383
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.22.0/syncthing-windows-arm64-v1.22.0.zip
+      sha256: 3b6bec1b0dfc66398a04d762220e7e0dc2adac2a7c372f032e8902ddf0d7a053
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.22.0/syncthing-macos-universal-v1.22.0.zip
+      sha256: 4f96c337e6d3cf997d58f9288877fb0fd93ea803a672233a81712ee0b882dc0c
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.22.0/syncthing-linux-386-v1.22.0.tar.gz
+      sha256: 1668f885bb73e56fa5b51177d794e61623a23a93d9cbe9efb49ad974ae25e214
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.22.0/syncthing-windows-386-v1.22.0.zip
+      sha256: d826da71c53820bf6fc298c504a6faf8105f6fffee9bfc2473742ff70e9c49a5
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.22.0/syncthing-linux-amd64-v1.22.0.tar.gz
+      sha256: 8b5d825d176d37484250fbb749305a4ba59cbe7ed3ed6492bc0d219e6bc445c2
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.22.0/syncthing-macos-amd64-v1.22.0.zip
+      sha256: d856b07a6990a3e0d81373f3cb022191667fd6a8154b09ff3451c3b881867346
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.22.0/syncthing-windows-amd64-v1.22.0.zip
+      sha256: 5889c01bbedec530841b71d61f6370c12888904a1893eb3443261918a7dd0f11
 installs:
   1.20.3:
     any-any:
