@@ -1,0 +1,17 @@
+name: battop
+description: Interactive batteries viewer
+homepage: https://crates.io/crates/battop
+repository: https://github.com/svartalf/rust-battop
+releases:
+  0.2.4:
+    x86_64-linux:
+      url: https://github.com/svartalf/rust-battop/releases/download/v0.2.4/battop-v0.2.4-x86_64-unknown-linux-gnu
+      sha256: 8b601903d550a2efe3825c57720cff17a89783828885d99d3b9519895cd10de5
+    x86_64-macos:
+      url: https://github.com/svartalf/rust-battop/releases/download/v0.2.4/battop-v0.2.4-x86_64-apple-darwin
+      sha256: 05d6290c641f46ad980e8b9d2c0d90a7a5490e4c891ef774c42adc3605953462
+installs:
+  0.2.4:
+    any:
+      files:
+        ${asset_name}: bin/battop
