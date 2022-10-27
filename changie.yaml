@@ -4,6 +4,31 @@ description: Automated changelog tool for preparing releases with lots of custom
 homepage: https://github.com/miniscruff/changie
 repository: https://github.com/miniscruff/changie
 releases:
+  1.10.0:
+    aarch64-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.0/changie_1.10.0_linux_arm64.tar.gz
+      sha256: b016bfbe8cbaefe60be6e434f665a163d0b6723b9c4a7a4385c6e99a3a27ba18
+    aarch64-macos:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.0/changie_1.10.0_darwin_arm64.tar.gz
+      sha256: 222f0747ac777242ba680e2551c6e880324e8bc3dafe00e6475c9c5901335b75
+    aarch64-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.0/changie_1.10.0_windows_arm64.zip
+      sha256: 0083c29c4017ff66c0763356e6d142a572c4ce1e2164e0d9043c043d3e507869
+    x86-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.0/changie_1.10.0_linux_386.tar.gz
+      sha256: 4a3c5e9f7fc74dbf1daa0a616f262ad3414f2a66830c6c341c50a2e78b42a7e3
+    x86-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.0/changie_1.10.0_windows_386.zip
+      sha256: 08de5fa61d0baf29f5ad5ebc304fe5afc008c552e201c4a72d0922ee0e9b3aae
+    x86_64-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.0/changie_1.10.0_linux_amd64.tar.gz
+      sha256: 2dc5743d567b00d31c0b37d0f2ada5808a5bdbbad887ae5771cdabfbd39ef90f
+    x86_64-macos:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.0/changie_1.10.0_darwin_amd64.tar.gz
+      sha256: b6666d28cb4514dc139dbbae983abddf63086d968f5137f05e967cac0ef3afdc
+    x86_64-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.0/changie_1.10.0_windows_amd64.zip
+      sha256: a55d1d8e13df37982a84e91a5717d6dff3e7536377b8952fc7a2a26e48d59e29
   1.8.0:
     aarch64-linux:
       url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_arm64.tar.gz
