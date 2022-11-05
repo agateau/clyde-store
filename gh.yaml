@@ -256,6 +256,25 @@ releases:
     x86_64-windows:
       url: https://github.com/cli/cli/releases/download/v2.18.1/gh_2.18.1_windows_amd64.zip
       sha256: 0b2dc1cab81277532a7b893697d571a51716b3b28fab5a5f46c14dca12638e89
+  2.19.0:
+    aarch64-linux:
+      url: https://github.com/cli/cli/releases/download/v2.19.0/gh_2.19.0_linux_arm64.tar.gz
+      sha256: a37ad60126cdee164a2ecbeb25f6c48615c37c7291c7e1fb815b145ae6198d74
+    x86-linux:
+      url: https://github.com/cli/cli/releases/download/v2.19.0/gh_2.19.0_linux_386.tar.gz
+      sha256: 45f8524fc46482f3056b40cd36b3c3aeea62917a8a26bd47f3781e515402c420
+    x86-windows:
+      url: https://github.com/cli/cli/releases/download/v2.19.0/gh_2.19.0_windows_386.zip
+      sha256: dcfe6cc60bcf57a8519a68b8362ecddaa51d82919cd8ed9394124847447f0e37
+    x86_64-linux:
+      url: https://github.com/cli/cli/releases/download/v2.19.0/gh_2.19.0_linux_amd64.tar.gz
+      sha256: b1d062f1c0d44465e4f9f12521e93e9b3b650d3876eb157acf875347b971f4d8
+    x86_64-macos:
+      url: https://github.com/cli/cli/releases/download/v2.19.0/gh_2.19.0_macOS_amd64.tar.gz
+      sha256: a37f1e522ba71c145d64a07ba116b88e8d72b3dbb4aea53549cd7dd1c2b129e7
+    x86_64-windows:
+      url: https://github.com/cli/cli/releases/download/v2.19.0/gh_2.19.0_windows_amd64.zip
+      sha256: a896463430e9d96dce3453871df50a87090d069b4f3578d1588a33690e0800f8
 installs:
   2.11.3:
     any-any:
@@ -264,7 +283,9 @@ installs:
         LICENSE: ${doc_dir}
         bin/gh${exe_ext}: bin/
         share: share
+      extra_files: {}
     any-windows:
       files:
         LICENSE: ${doc_dir}
         bin/gh${exe_ext}: bin/
+      extra_files: {}
