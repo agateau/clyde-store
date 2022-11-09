@@ -16,6 +16,19 @@ releases:
     x86_64-windows:
       url: https://github.com/ducaale/xh/releases/download/v0.16.1/xh-v0.16.1-x86_64-pc-windows-msvc.zip
       sha256: 7ec41e263e20ec620bb164166e08fbdffecdc59514e842e5ba497415e1bc6879
+  0.17.0:
+    aarch64-linux:
+      url: https://github.com/ducaale/xh/releases/download/v0.17.0/xh-v0.17.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: ff584f511248b50200d09fde0fc5d885bfcc875d4d22760ce09cdbc468fd855c
+    x86_64-linux:
+      url: https://github.com/ducaale/xh/releases/download/v0.17.0/xh-v0.17.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 682b063985a85df4c96a62df968132d70b9be32cc1b69fc3ac53e4d08dc99ead
+    x86_64-macos:
+      url: https://github.com/ducaale/xh/releases/download/v0.17.0/xh-v0.17.0-x86_64-apple-darwin.tar.gz
+      sha256: 5f5e6ce7c37a77668807b35c2e0f8b72d857ca35adcb5ebc3068d94b1ee22a96
+    x86_64-windows:
+      url: https://github.com/ducaale/xh/releases/download/v0.17.0/xh-v0.17.0-x86_64-pc-windows-msvc.zip
+      sha256: 4ff2e87ff1a029be07639d2b81a1d56c254e1b12f36e92558b729b640347047d
 installs:
   0.16.1:
     any-any:
@@ -26,3 +39,4 @@ installs:
         doc/CHANGELOG.md: ${doc_dir}
         doc/xh.1: share/man/man1/
         xh${exe_ext}: bin/
+      extra_files: {}
