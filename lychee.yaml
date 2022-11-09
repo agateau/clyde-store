@@ -1,6 +1,5 @@
 name: lychee
-description: Fast, async, stream-based link checker written in Rust. Finds broken
-  URLs and mail addresses inside Markdown, HTML, reStructuredText, websites and more!
+description: Fast, async, stream-based link checker written in Rust. Finds broken URLs and mail addresses inside Markdown, HTML, reStructuredText, websites and more!
 homepage: https://lychee.cli.rs/
 repository: https://github.com/lycheeverse/lychee
 releases:
@@ -14,11 +13,23 @@ releases:
     x86_64-windows:
       url: https://github.com/lycheeverse/lychee/releases/download/v0.10.1/lychee-v0.10.1-windows-x86_64.exe
       sha256: 8ac8b4ccbfb1e1aa218131be43be66a62e3a21c49277213a769ecaa42f96fba5
+  0.10.3:
+    aarch64-linux:
+      url: https://github.com/lycheeverse/lychee/releases/download/v0.10.3/lychee-v0.10.3-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 6ac6f22deec4047cd858067fbfd4e6403f0d65af9eb9fda5a46b93eb4a690406
+    x86_64-linux:
+      url: https://github.com/lycheeverse/lychee/releases/download/v0.10.3/lychee-v0.10.3-x86_64-unknown-linux-musl.tar.gz
+      sha256: bf6d20b14abc1c389b1531fa2c7aa1adfdfe0556ae45b6a486c8b8b4687fb699
+    x86_64-windows:
+      url: https://github.com/lycheeverse/lychee/releases/download/v0.10.3/lychee-v0.10.3-windows-x86_64.exe
+      sha256: a75cdac942dbe9af1faad2a494c748eb19cc365541c77329398692448ca0bc97
 installs:
   0.10.1:
-    any-windows:
-      files:
-        ${asset_name}: bin/lychee${exe_ext}
     any-any:
       files:
         lychee${exe_ext}: bin/
+      extra_files: {}
+    any-windows:
+      files:
+        ${asset_name}: bin/lychee${exe_ext}
+      extra_files: {}
