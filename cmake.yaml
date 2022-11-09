@@ -1,6 +1,5 @@
 name: cmake
-description: CMake is an open-source, cross-platform family of tools designed to build,
-  test and package software
+description: CMake is an open-source, cross-platform family of tools designed to build, test and package software
 homepage: https://cmake.org
 repository: https://github.com/Kitware/CMake
 releases:
@@ -514,6 +513,25 @@ releases:
     x86_64-windows:
       url: https://github.com/Kitware/CMake/releases/download/v3.25.0-rc3/cmake-3.25.0-rc3-windows-x86_64.zip
       sha256: d0de037a9081c2995bec5c403397b8503a0b3e973a40cbde0f44d05e5a71dd9d
+  3.25.0-rc4:
+    aarch64-linux:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0-rc4/cmake-3.25.0-rc4-linux-aarch64.tar.gz
+      sha256: ec844b0f16c4b9b9082e7e1fddd2ee70641919ced982ba954216d93c65c8bda0
+    aarch64-windows:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0-rc4/cmake-3.25.0-rc4-windows-arm64.zip
+      sha256: 0622e129aaf0fd547f571a54bffe276f177b37ad018ed79dd52ec90a21384b80
+    any-macos:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0-rc4/cmake-3.25.0-rc4-macos-universal.tar.gz
+      sha256: 72da249b92e5e614b3d894dc6d3aaf9141b7c09fd71b58ff7f4382e4055e7a35
+    x86-windows:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0-rc4/cmake-3.25.0-rc4-windows-i386.zip
+      sha256: 4e105e5ad5fe8a7ea15a1051e0ea6b494533b39b032ceeac7454fc330459fb27
+    x86_64-linux:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0-rc4/cmake-3.25.0-rc4-linux-x86_64.tar.gz
+      sha256: 9067fb21b04edb6995e83ef37b7b0188aa97c09165c245bb14f2b5b622fbd7d1
+    x86_64-windows:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0-rc4/cmake-3.25.0-rc4-windows-x86_64.zip
+      sha256: f9aea71b1f4728778c53142eb9a4565f2c442cef4eaf00d385f0a1c36d23609a
 installs:
   3.20.0:
     any-any:
@@ -526,6 +544,7 @@ installs:
         bin/ctest: bin/
         man: share/man
         share: share
+      extra_files: {}
     any-macos:
       strip: 3
       files:
@@ -535,6 +554,7 @@ installs:
         bin/ctest: bin/
         man: share/man
         share: share
+      extra_files: {}
     any-windows:
       strip: 1
       files:
@@ -544,3 +564,4 @@ installs:
         bin/ctest.exe: bin/
         man: share/man
         share: share
+      extra_files: {}
