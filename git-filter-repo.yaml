@@ -4,20 +4,32 @@ homepage: https://github.com/newren/git-filter-repo
 repository: https://github.com/newren/git-filter-repo
 releases:
   2.34.0:
-    x86_64-linux:
+    any-linux:
+      url: https://github.com/newren/git-filter-repo/releases/download/v2.34.0/git-filter-repo-2.34.0.tar.xz
+      sha256: b1bf46af1e6a91a54056d0254e480803db8e40f631336c559a1a94d2a08389c4
+    any-macos:
       url: https://github.com/newren/git-filter-repo/releases/download/v2.34.0/git-filter-repo-2.34.0.tar.xz
       sha256: b1bf46af1e6a91a54056d0254e480803db8e40f631336c559a1a94d2a08389c4
   2.38.0:
-    x86_64-linux:
+    any-linux:
+      url: https://github.com/newren/git-filter-repo/releases/download/v2.38.0/git-filter-repo-2.38.0.tar.xz
+      sha256: db954f4cae9e47c6be3bd3161bc80540d44f5379cb9cf9df498f4e019f0a41a9
+    any-macos:
       url: https://github.com/newren/git-filter-repo/releases/download/v2.38.0/git-filter-repo-2.38.0.tar.xz
       sha256: db954f4cae9e47c6be3bd3161bc80540d44f5379cb9cf9df498f4e019f0a41a9
 installs:
   2.34.0:
-    any-any:
+    any-linux:
       strip: 1
       files:
         Documentation/git-filter-repo.txt: ${doc_dir}
         Documentation/man1: share/man/man1
         README.md: ${doc_dir}
         git-filter-repo: bin/
-      extra_files: {}
+    any-macos:
+      strip: 1
+      files:
+        Documentation/git-filter-repo.txt: ${doc_dir}
+        Documentation/man1: share/man/man1
+        README.md: ${doc_dir}
+        git-filter-repo: bin/
