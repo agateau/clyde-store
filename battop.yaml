@@ -15,3 +15,5 @@ installs:
     any:
       files:
         ${asset_name}: bin/battop
+      tests:
+        - battop --version

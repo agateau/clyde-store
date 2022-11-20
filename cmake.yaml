@@ -544,7 +544,12 @@ installs:
         bin/ctest: bin/
         man: share/man
         share: share
-      extra_files: {}
+      tests:
+        - ccmake --version
+        - cmake --version
+        - cmake-gui --version
+        - cpack --version
+        - ctest --version
     any-macos:
       strip: 3
       files:
@@ -554,7 +559,11 @@ installs:
         bin/ctest: bin/
         man: share/man
         share: share
-      extra_files: {}
+      tests:
+        - ccmake --version
+        - cmake --version
+        - cpack --version
+        - ctest --version
     any-windows:
       strip: 1
       files:
@@ -564,4 +573,8 @@ installs:
         bin/ctest.exe: bin/
         man: share/man
         share: share
-      extra_files: {}
+      tests:
+        - cmake.exe --version
+        - cmake-gui.exe --version
+        - cpack.exe --version
+        - ctest.exe --version

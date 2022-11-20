@@ -17,3 +17,5 @@ installs:
         antidot: bin/antidot${exe_ext}
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
+      tests:
+        - antidot --version
