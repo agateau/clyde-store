@@ -1,0 +1,37 @@
+name: lazydocker
+description: The lazier way to manage everything docker
+homepage: https://github.com/jesseduffield/lazydocker
+repository: https://github.com/jesseduffield/lazydocker
+releases:
+  0.20.0:
+    aarch64-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.20.0/lazydocker_0.20.0_Linux_arm64.tar.gz
+      sha256: 1c318e22be15ef2ae44ed83782e441f1c47db63f97db0aebe46c5f608f1b0400
+    aarch64-macos:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.20.0/lazydocker_0.20.0_Darwin_arm64.tar.gz
+      sha256: 109ef95d21981950cd73250f05ad2487e7ddfb8c8b1439ce2a433a7061ad4589
+    aarch64-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.20.0/lazydocker_0.20.0_Windows_arm64.zip
+      sha256: a411e795f2a928997f5682915310bc27e3b5270f724aebef22dc91a0ded75894
+    x86-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.20.0/lazydocker_0.20.0_Linux_x86.tar.gz
+      sha256: c6d67239dded6cc420708e2378abe99b691a4c84812dfa5139dff25300af8bb7
+    x86-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.20.0/lazydocker_0.20.0_Windows_x86.zip
+      sha256: a3f5977ca1d356eb0277c324526bf426bcdf48b4640b99b856fcbfa47ffe8eed
+    x86_64-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.20.0/lazydocker_0.20.0_Linux_x86_64.tar.gz
+      sha256: b025ddbf607d97936382bd60d776fdf8bb2b42da4341e2a2022d821f314b79d3
+    x86_64-macos:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.20.0/lazydocker_0.20.0_Darwin_x86_64.tar.gz
+      sha256: 50255862d43d31d92a62de080c9fd01f031ec39206d63d42e9c70d2a4b24c3d9
+    x86_64-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.20.0/lazydocker_0.20.0_Windows_x86_64.zip
+      sha256: a7e09924ddce2a9053705cc57ded59aa39aad51d189d86c147d5d0433af01b60
+installs:
+  0.20.0:
+    any-any:
+      files:
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        lazydocker${exe_ext}: bin/
