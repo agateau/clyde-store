@@ -456,6 +456,25 @@ releases:
     x86_64-windows:
       url: https://github.com/Kitware/CMake/releases/download/v3.24.2/cmake-3.24.2-windows-x86_64.zip
       sha256: 6af30354eecbb7113b0f0142d13c03d21abbc9f4dbdcddaf88df1f9ca1bc4d6f
+  3.25.0:
+    aarch64-linux:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0/cmake-3.25.0-linux-aarch64.tar.gz
+      sha256: 27da36d6debe9b30f5c498554ae40cd621a55736f5f2ae2618ed95722a59965a
+    aarch64-windows:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0/cmake-3.25.0-windows-arm64.zip
+      sha256: 350e4a6361329cb6245b59a5eeb59ce96e2980ce5d149cd5384f6009eec04c9f
+    any-macos:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0/cmake-3.25.0-macos-universal.tar.gz
+      sha256: c088e761534a2078cd9d0581d39f02d3f9ed05302e33135b55c6d619b263b4c3
+    x86-windows:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0/cmake-3.25.0-windows-i386.zip
+      sha256: ddd115257a19ff3dd18fc63f32a00ae742f8b62d2e39bc354629903512f99783
+    x86_64-linux:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0/cmake-3.25.0-linux-x86_64.tar.gz
+      sha256: ac634d6f0a81d7089adc7be5acff66a6bee3b08615f9a947858ce92a9ef59c8b
+    x86_64-windows:
+      url: https://github.com/Kitware/CMake/releases/download/v3.25.0/cmake-3.25.0-windows-x86_64.zip
+      sha256: b46030c10cab1170355952f9ac59f7e6dabc248070fc53f15dff11d4ed2910f8
   3.25.0-rc1:
     aarch64-linux:
       url: https://github.com/Kitware/CMake/releases/download/v3.25.0-rc1/cmake-3.25.0-rc1-linux-aarch64.tar.gz
@@ -544,12 +563,13 @@ installs:
         bin/ctest: bin/
         man: share/man
         share: share
+      extra_files: {}
       tests:
-        - ccmake --version
-        - cmake --version
-        - cmake-gui --version
-        - cpack --version
-        - ctest --version
+      - ccmake --version
+      - cmake --version
+      - cmake-gui --version
+      - cpack --version
+      - ctest --version
     any-macos:
       strip: 3
       files:
@@ -559,11 +579,12 @@ installs:
         bin/ctest: bin/
         man: share/man
         share: share
+      extra_files: {}
       tests:
-        - ccmake --version
-        - cmake --version
-        - cpack --version
-        - ctest --version
+      - ccmake --version
+      - cmake --version
+      - cpack --version
+      - ctest --version
     any-windows:
       strip: 1
       files:
@@ -573,8 +594,9 @@ installs:
         bin/ctest.exe: bin/
         man: share/man
         share: share
+      extra_files: {}
       tests:
-        - cmake.exe --version
-        - cmake-gui.exe --version
-        - cpack.exe --version
-        - ctest.exe --version
+      - cmake.exe --version
+      - cmake-gui.exe --version
+      - cpack.exe --version
+      - ctest.exe --version
