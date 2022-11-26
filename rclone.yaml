@@ -1,6 +1,5 @@
 name: rclone
-description: '"rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2,
-  One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Yandex Files'
+description: '"rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Yandex Files'
 homepage: https://rclone.org
 repository: https://github.com/rclone/rclone
 releases:
@@ -80,6 +79,25 @@ releases:
     x86_64-windows:
       url: https://github.com/rclone/rclone/releases/download/v1.60.0/rclone-v1.60.0-windows-amd64.zip
       sha256: f6eec625f705a1e3715769770854ee3a7a746daf7c74f642fca3e5ac56cad624
+  1.60.1:
+    aarch64-linux:
+      url: https://github.com/rclone/rclone/releases/download/v1.60.1/rclone-v1.60.1-linux-arm64.zip
+      sha256: 34cb5687aff755ad7a3d1069b3cb0f5dd0b5b592b4d539ecd6c6a82599131ec7
+    aarch64-windows:
+      url: https://github.com/rclone/rclone/releases/download/v1.60.1/rclone-v1.60.1-windows-arm64.zip
+      sha256: 9fc2a410869d7c8ec6e01cccc1b5013b512a22982bc9675ff2f6443976f1b59b
+    x86-linux:
+      url: https://github.com/rclone/rclone/releases/download/v1.60.1/rclone-v1.60.1-linux-386.zip
+      sha256: 5490ece8bcd8e5f083b72bd48614d6945e460f8dc8c9aa8e9db0cac54f8568f0
+    x86-windows:
+      url: https://github.com/rclone/rclone/releases/download/v1.60.1/rclone-v1.60.1-windows-386.zip
+      sha256: 4ac568db513a2f768797b6e0567c6158c518badf907493a7567191ac7e5daff3
+    x86_64-linux:
+      url: https://github.com/rclone/rclone/releases/download/v1.60.1/rclone-v1.60.1-linux-amd64.zip
+      sha256: fd6bc19cc7fadb13538cc109128bf92ef47762a83a3eaf2ab699b03bb2a1fe32
+    x86_64-windows:
+      url: https://github.com/rclone/rclone/releases/download/v1.60.1/rclone-v1.60.1-windows-amd64.zip
+      sha256: e7edb375a27ed498dd02c9692a14138a00568436f6e954ec890302e7bdc735e9
 installs:
   1.59.0:
     any-any:
@@ -90,3 +108,5 @@ installs:
         git-log.txt: ${doc_dir}
         rclone${exe_ext}: bin/
         rclone.1: share/man/man1/
+      extra_files: {}
+      tests: []
