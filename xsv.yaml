@@ -1,0 +1,26 @@
+name: xsv
+description: A fast CSV command line toolkit written in Rust.
+homepage: https://github.com/BurntSushi/xsv
+repository: https://github.com/BurntSushi/xsv
+releases:
+  0.13.0:
+    x86-linux:
+      url: https://github.com/BurntSushi/xsv/releases/download/0.13.0/xsv-0.13.0-i686-unknown-linux-musl.tar.gz
+      sha256: 3667aa48387fd5bc658abfaf74880c57e55487199b11870fa79cb1d28e4c18c4
+    x86-windows:
+      url: https://github.com/BurntSushi/xsv/releases/download/0.13.0/xsv-0.13.0-i686-pc-windows-msvc.zip
+      sha256: c11ac9e996e54f9ef070e815c1cc95f744ecae217d815e310dee6ab3afee1ee4
+    x86_64-linux:
+      url: https://github.com/BurntSushi/xsv/releases/download/0.13.0/xsv-0.13.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: d36b1be0f008d6597c2437e764fbe720eb7557f8980e0b03ca709e1020b5c52b
+    x86_64-macos:
+      url: https://github.com/BurntSushi/xsv/releases/download/0.13.0/xsv-0.13.0-x86_64-apple-darwin.tar.gz
+      sha256: cbc1aa5f078ee3435ecb997e93afe6e3a03c5852393553cd2801000397cc269d
+    x86_64-windows:
+      url: https://github.com/BurntSushi/xsv/releases/download/0.13.0/xsv-0.13.0-x86_64-pc-windows-msvc.zip
+      sha256: 3e319c08456031a9683c19c998ac9f61756a2e456413db17c8e6819b17818a1a
+installs:
+  0.13.0:
+    any-any:
+      files:
+        xsv${exe_ext}: bin/
