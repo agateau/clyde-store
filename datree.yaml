@@ -1,7 +1,5 @@
 name: datree
-description: a CLI tool that supports Kubernetes admins in their roles, by preventing
-  developers from making errors in Kubernetes configurations that can cause clusters
-  to fail in production.
+description: a CLI tool that supports Kubernetes admins in their roles, by preventing developers from making errors in Kubernetes configurations that can cause clusters to fail in production.
 homepage: https://github.com/datreeio/datree
 repository: https://github.com/datreeio/datree
 releases:
@@ -1223,6 +1221,28 @@ releases:
     x86_64-windows:
       url: https://github.com/datreeio/datree/releases/download/1.7.3/datree-cli_1.7.3_windows_x86_64.zip
       sha256: 17c8c4fab46f2fc5212ad8036095993332aa9cde48e64b80a5edc4b191ef039c
+  1.8.1:
+    aarch64-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.8.1/datree-cli_1.8.1_Linux_arm64.zip
+      sha256: 9fe49178088c4c5069d253e9b8dca1e41165e488848c99e5e10b4f6c3bb023f2
+    aarch64-macos:
+      url: https://github.com/datreeio/datree/releases/download/1.8.1/datree-cli_1.8.1_Darwin_arm64.zip
+      sha256: a8c1f16468c6cfa4e57d3a66ea1caf5d0c76289f4b9b370e87da569adba517de
+    x86-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.8.1/datree-cli_1.8.1_Linux_386.zip
+      sha256: 497bdab3d68f55e1ac1dd2aa68f3260f2d09ab32bc25ad1c89fa2f3a931afdcb
+    x86-windows:
+      url: https://github.com/datreeio/datree/releases/download/1.8.1/datree-cli_1.8.1_windows_386.zip
+      sha256: cfc1b113bc934c808567179499d430054efe179ffec8c4cc5ae6c01793e2cd5f
+    x86_64-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.8.1/datree-cli_1.8.1_Linux_x86_64.zip
+      sha256: 7c9dd8621a31838eff696ab5c30363e2b4654a8174d0252ad8ca4aa434e7a9d0
+    x86_64-macos:
+      url: https://github.com/datreeio/datree/releases/download/1.8.1/datree-cli_1.8.1_Darwin_x86_64.zip
+      sha256: d0af39d04dec2ccb53f77e6301ce4e64edfc4854692bba2f2243b20ecf551448
+    x86_64-windows:
+      url: https://github.com/datreeio/datree/releases/download/1.8.1/datree-cli_1.8.1_windows_x86_64.zip
+      sha256: 25c2d5a17cd1bc7781da7e5976ccb541e217ecd2f8029fcf7438a9368562f32e
 installs:
   0.2.1:
     any-any:
@@ -1231,3 +1251,5 @@ installs:
         README.md: ${doc_dir}
         changelog.txt: ${doc_dir}
         datree${exe_ext}: bin/
+      extra_files: {}
+      tests: []

@@ -136,3 +136,5 @@ installs:
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
         act${exe_ext}: bin/
+      tests:
+        - act${exe_ext} --version
