@@ -151,6 +151,22 @@ releases:
     x86_64-windows:
       url: https://github.com/nushell/nushell/releases/download/0.71.0/nu-0.71.0-x86_64-pc-windows-msvc.zip
       sha256: c38826f5c6f5ad2a7241244ecff4bfa658cc72cf37fda0b1608d74bcf05ac376
+  0.72.0:
+    aarch64-linux:
+      url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-aarch64-unknown-linux-gnu.tar.gz
+      sha256: ffbd198ba7d6595579ed10948456215837c2f95d571980d3fdb591b0c7d83f99
+    aarch64-macos:
+      url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-aarch64-apple-darwin.tar.gz
+      sha256: 87e90fa8468f5919bd7dd6bed3b0f2339765e277451455b36617aacefb73c77d
+    x86_64-linux:
+      url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 75903cd41ebbf7f6c3fd84e30470b91ceb98911c61abad6557960f1fd4076a3a
+    x86_64-macos:
+      url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-x86_64-apple-darwin.tar.gz
+      sha256: 60bf835d6c9adafbee02e30d9a035a26cc0cd6fe001898281397b9d16b1de80d
+    x86_64-windows:
+      url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-x86_64-pc-windows-msvc.zip
+      sha256: bb51a43b10b0e5afc9d62b27d8d12d340d9c2add7df2467d46076cfd3d7d85c2
 installs:
   0.64.0:
     any-any:
@@ -163,6 +179,7 @@ installs:
         nu_plugin_inc${exe_ext}: bin/
         nu_plugin_query${exe_ext}: bin/
       extra_files: {}
+      tests: []
     any-windows:
       files:
         LICENSE: ${doc_dir}
@@ -175,6 +192,7 @@ installs:
         nu_plugin_inc${exe_ext}: bin/
         nu_plugin_query${exe_ext}: bin/
       extra_files: {}
+      tests: []
   0.71.0:
     any-any:
       strip: 1
@@ -182,11 +200,13 @@ installs:
         LICENSE: ${doc_dir}
         README.txt: ${doc_dir}
         nu${exe_ext}: bin/
-        nu_plugin_example${exe_ext}: bin/
         nu_plugin_custom_values${exe_ext}: bin/
+        nu_plugin_example${exe_ext}: bin/
         nu_plugin_gstat${exe_ext}: bin/
         nu_plugin_inc${exe_ext}: bin/
         nu_plugin_query${exe_ext}: bin/
+      extra_files: {}
+      tests: []
     any-windows:
       files:
         LICENSE: ${doc_dir}
@@ -194,8 +214,10 @@ installs:
         README.txt: ${doc_dir}
         less${exe_ext}: bin/
         nu${exe_ext}: bin/
-        nu_plugin_example${exe_ext}: bin/
         nu_plugin_custom_values${exe_ext}: bin/
+        nu_plugin_example${exe_ext}: bin/
         nu_plugin_gstat${exe_ext}: bin/
         nu_plugin_inc${exe_ext}: bin/
         nu_plugin_query${exe_ext}: bin/
+      extra_files: {}
+      tests: []
