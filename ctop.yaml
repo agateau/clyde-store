@@ -21,3 +21,5 @@ installs:
     any:
       files:
         ${asset_name}: bin/ctop${exe_ext}
+      tests:
+        - ctop${exe_ext} -v

@@ -112,3 +112,5 @@ installs:
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
         changie${exe_ext}: bin/
+      tests:
+        - changie${exe_ext} --version

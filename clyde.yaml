@@ -73,3 +73,6 @@ installs:
         README.md: ${doc_dir}
         clyde${exe_ext}: bin/
         clydetools${exe_ext}: bin/
+      tests:
+        - clyde${exe_ext} --version
+        - clydetools${exe_ext} --version
