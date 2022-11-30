@@ -54,3 +54,5 @@ installs:
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
         croc${exe_ext}: bin/
+      tests:
+        - croc${exe_ext} --version

@@ -71,3 +71,5 @@ installs:
         README.md: ${doc_dir}
         bat${exe_ext}: bin/
         bat.1: share/man/man1/
+      tests:
+        - bat${exe_ext} --version
