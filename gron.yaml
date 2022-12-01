@@ -33,3 +33,5 @@ installs:
     any-any:
       files:
         gron${exe_ext}: bin/
+      tests:
+        - gron${exe_ext} --version

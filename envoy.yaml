@@ -139,4 +139,5 @@ installs:
       strip: 2
       files:
         envoy: bin/
-
+      tests:
+        - envoy --version

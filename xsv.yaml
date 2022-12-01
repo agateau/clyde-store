@@ -24,3 +24,5 @@ installs:
     any-any:
       files:
         xsv${exe_ext}: bin/
+      tests:
+        - xsv${exe_ext} --version

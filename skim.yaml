@@ -15,4 +15,5 @@ installs:
     any-any:
       files:
         sk: bin/
-      extra_files: {}
+      tests:
+        - sk${exe_ext} --version

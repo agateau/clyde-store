@@ -39,4 +39,5 @@ installs:
         doc/CHANGELOG.md: ${doc_dir}
         doc/xh.1: share/man/man1/
         xh${exe_ext}: bin/
-      extra_files: {}
+      tests:
+        - xh${exe_ext} --version

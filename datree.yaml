@@ -1251,5 +1251,5 @@ installs:
         README.md: ${doc_dir}
         changelog.txt: ${doc_dir}
         datree${exe_ext}: bin/
-      extra_files: {}
-      tests: []
+      tests:
+        - datree${exe_ext} version

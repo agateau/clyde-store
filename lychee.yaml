@@ -28,8 +28,10 @@ installs:
     any-any:
       files:
         lychee${exe_ext}: bin/
-      extra_files: {}
+      tests:
+        - lychee${exe_ext} --help
     any-windows:
       files:
         ${asset_name}: bin/lychee${exe_ext}
-      extra_files: {}
+      tests:
+        - lychee${exe_ext} --help

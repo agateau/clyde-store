@@ -158,3 +158,5 @@ installs:
         README.txt: ${doc_dir}
         etc: ${doc_dir}
         syncthing${exe_ext}: bin/
+      tests:
+        - syncthing${exe_ext} --version

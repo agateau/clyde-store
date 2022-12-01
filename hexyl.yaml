@@ -37,3 +37,5 @@ installs:
         README.md: ${doc_dir}
         hexyl${exe_ext}: bin/
         hexyl.1: share/man/man1/
+      tests:
+        - hexyl${exe_ext} --version

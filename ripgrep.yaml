@@ -22,6 +22,8 @@ installs:
         doc/GUIDE.md: ${doc_dir}
         doc/rg.1: share/man/man1/
         rg${exe_ext}: bin/
+      tests:
+        - rg${exe_ext} --version
     x86_64-windows:
       strip: 1
       files:
@@ -31,3 +33,5 @@ installs:
         doc/FAQ.md: ${doc_dir}
         doc/GUIDE.md: ${doc_dir}
         rg${exe_ext}: bin/
+      tests:
+        - rg${exe_ext} --version

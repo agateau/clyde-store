@@ -15,3 +15,5 @@ installs:
     any-any:
       files:
         ${asset_name}: bin/sd
+      tests:
+        - sd${exe_ext} --version

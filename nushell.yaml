@@ -178,8 +178,6 @@ installs:
         nu_plugin_gstat${exe_ext}: bin/
         nu_plugin_inc${exe_ext}: bin/
         nu_plugin_query${exe_ext}: bin/
-      extra_files: {}
-      tests: []
     any-windows:
       files:
         LICENSE: ${doc_dir}
@@ -191,8 +189,6 @@ installs:
         nu_plugin_gstat${exe_ext}: bin/
         nu_plugin_inc${exe_ext}: bin/
         nu_plugin_query${exe_ext}: bin/
-      extra_files: {}
-      tests: []
   0.71.0:
     any-any:
       strip: 1
@@ -205,8 +201,8 @@ installs:
         nu_plugin_gstat${exe_ext}: bin/
         nu_plugin_inc${exe_ext}: bin/
         nu_plugin_query${exe_ext}: bin/
-      extra_files: {}
-      tests: []
+      tests:
+        - nu${exe_ext} --version
     any-windows:
       files:
         LICENSE: ${doc_dir}
@@ -219,5 +215,5 @@ installs:
         nu_plugin_gstat${exe_ext}: bin/
         nu_plugin_inc${exe_ext}: bin/
         nu_plugin_query${exe_ext}: bin/
-      extra_files: {}
-      tests: []
+      tests:
+        - nu${exe_ext} --version
