@@ -28,3 +28,5 @@ installs:
     any-any:
       files:
         ${asset_name}: bin/miniserve${exe_ext}
+      tests:
+        - miniserve${exe_ext} --version

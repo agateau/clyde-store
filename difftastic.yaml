@@ -92,5 +92,5 @@ installs:
     any-any:
       files:
         difft${exe_ext}: bin/
-      extra_files: {}
-      tests: []
+      tests:
+        - difft${exe_ext} --version

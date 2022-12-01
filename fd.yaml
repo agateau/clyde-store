@@ -62,5 +62,5 @@ installs:
         README.md: ${doc_dir}
         fd${exe_ext}: bin/
         fd.1: share/man/man1/
-      extra_files: {}
-      tests: []
+      tests:
+        - fd${exe_ext} --version

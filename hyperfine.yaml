@@ -101,3 +101,5 @@ installs:
         README.md: ${doc_dir}
         hyperfine${exe_ext}: bin/
         hyperfine.1: share/man/man1/
+      tests:
+        - hyperfine${exe_ext} --version

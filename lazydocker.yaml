@@ -35,3 +35,5 @@ installs:
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
         lazydocker${exe_ext}: bin/
+      tests:
+        - lazydocker${exe_ext} --version

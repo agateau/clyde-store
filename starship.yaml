@@ -88,3 +88,5 @@ installs:
     any-any:
       files:
         starship${exe_ext}: bin/
+      tests:
+        - starship${exe_ext} --version

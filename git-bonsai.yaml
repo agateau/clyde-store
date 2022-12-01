@@ -40,3 +40,5 @@ installs:
       files:
         README.md: ${doc_dir}
         git-bonsai${exe_ext}: bin/
+      tests:
+        - git-bonsai${exe_ext} --version
