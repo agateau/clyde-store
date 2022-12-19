@@ -201,6 +201,7 @@ def main() -> int:
 
     parser.add_argument("target", choices=["main", "next"])
     parser.add_argument("-a", "--all", action="store_true")
+    parser.add_argument("-d", "--dry-run", action="store_true")
 
     args = parser.parse_args()
 
@@ -219,6 +220,9 @@ def main() -> int:
         return 0
     for package in packages:
         eprint(f"- {package.name}")
+
+    if args.dry_run:
+        return 0
 
     if args.target == "main":
         clyde_url = find_clyde_release_url()
