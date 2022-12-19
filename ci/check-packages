@@ -125,7 +125,7 @@ def has_ci_changed(paths: List[Path]) -> bool:
 
 
 def list_all_packages() -> List[Path]:
-    return list(ROOT_DIR.glob("*.yaml"))
+    return list(ROOT_DIR.glob("*.yaml")) + list(ROOT_DIR.glob("*/index.yaml"))
 
 
 def list_packages_to_check(target: str) -> List[Path]:
@@ -188,7 +188,7 @@ def download_clyde(url: str) -> None:
 
 def check_packages(packages: List[Path]) -> int:
     # We must run the test in the current directory for now
-    package_names = [x.name for x in packages]
+    package_names = [x.relative_to(ROOT_DIR) for x in packages]
     cmd = [which("clydetools"), "check"] + package_names
     proc = subprocess.run(cmd, cwd=ROOT_DIR)
     return proc.returncode
@@ -219,7 +219,7 @@ def main() -> int:
         eprint("None")
         return 0
     for package in packages:
-        eprint(f"- {package.name}")
+        eprint(f"- {package.relative_to(ROOT_DIR)}")
 
     if args.dry_run:
         return 0
