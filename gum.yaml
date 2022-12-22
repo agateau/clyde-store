@@ -165,3 +165,5 @@ installs:
         README.md: ${doc_dir}
         gum${exe_ext}: bin/
         manpages/gum.1.gz: share/man/man1/
+      tests:
+        - gum${exe_ext} --version

@@ -35,4 +35,8 @@ installs:
         README.md: ${doc_dir}
         LICENSE: ${doc_dir}
         CHANGELOG.md: ${doc_dir}
-
+      tests:
+        - corepack${exe_ext} --version
+        - node${exe_ext} --version
+        - npm${exe_ext} --version
+        - npx${exe_ext} --version

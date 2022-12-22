@@ -26,6 +26,8 @@ installs:
         Documentation/man1: share/man/man1
         README.md: ${doc_dir}
         git-filter-repo: bin/
+      tests:
+        - git-filter-repo --version
     any-macos:
       strip: 1
       files:
@@ -33,3 +35,5 @@ installs:
         Documentation/man1: share/man/man1
         README.md: ${doc_dir}
         git-filter-repo: bin/
+      tests:
+        - git-filter-repo --version

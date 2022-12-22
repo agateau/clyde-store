@@ -38,3 +38,5 @@ installs:
         LICENSE.md: ${doc_dir}
         README.md: ${doc_dir}
         wtfutil${exe_ext}: bin/
+      tests:
+        - wtfutil${exe_ext} --version

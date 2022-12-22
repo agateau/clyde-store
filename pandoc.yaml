@@ -50,6 +50,8 @@ installs:
       files:
         bin: bin
         share: share
+      tests:
+        - pandoc${exe_ext} --version
     any-windows:
       strip: 1
       files:
@@ -57,3 +59,5 @@ installs:
         COPYRIGHT.txt: ${doc_dir}
         MANUAL.html: ${doc_dir}
         pandoc${exe_ext}: bin/
+      tests:
+        - pandoc${exe_ext} --version
