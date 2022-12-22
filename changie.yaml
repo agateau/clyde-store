@@ -1,6 +1,5 @@
 name: changie
-description: Automated changelog tool for preparing releases with lots of customization
-  options
+description: Automated changelog tool for preparing releases with lots of customization options
 homepage: https://github.com/miniscruff/changie
 repository: https://github.com/miniscruff/changie
 releases:
@@ -29,6 +28,31 @@ releases:
     x86_64-windows:
       url: https://github.com/miniscruff/changie/releases/download/v1.10.0/changie_1.10.0_windows_amd64.zip
       sha256: a55d1d8e13df37982a84e91a5717d6dff3e7536377b8952fc7a2a26e48d59e29
+  1.10.1:
+    aarch64-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.1/changie_1.10.1_linux_arm64.tar.gz
+      sha256: e9760c6871e2f025e16840b99250275e7effcd9c81bc0876eca4c2288108e483
+    aarch64-macos:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.1/changie_1.10.1_darwin_arm64.tar.gz
+      sha256: 26a65b871034cecadeae8e0a6ca1c721364595631dc5dc9b530786a1826fb33a
+    aarch64-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.1/changie_1.10.1_windows_arm64.zip
+      sha256: dd6326a8852644e66b8ca1704def3a0a546a5956d796e69493aa7037dd348d6c
+    x86-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.1/changie_1.10.1_linux_386.tar.gz
+      sha256: 58a1a94063915c0bbf3fcfa94c96aeeab0aafc86e68d202d02960d906fd3898f
+    x86-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.1/changie_1.10.1_windows_386.zip
+      sha256: ab571f6d83fca572750d462ef71b61253bc828938aabed84a0f15c2b40af251a
+    x86_64-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.1/changie_1.10.1_linux_amd64.tar.gz
+      sha256: 58f1b65322fc2f7e3153332fe521c3bc7d89da403b8367fe7666cb09cc0e66e9
+    x86_64-macos:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.1/changie_1.10.1_darwin_amd64.tar.gz
+      sha256: f5ae33fcc64bfe4a78e7353125ac9bf2408ae691c91e23a03df9864548e057ed
+    x86_64-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.1/changie_1.10.1_windows_amd64.zip
+      sha256: fd8bb56b68556d12bb8a064263d8fdf204cfa5dcbeb02bf68c561c03996762bf
   1.8.0:
     aarch64-linux:
       url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_arm64.tar.gz
@@ -113,4 +137,4 @@ installs:
         README.md: ${doc_dir}
         changie${exe_ext}: bin/
       tests:
-        - changie${exe_ext} --version
+      - changie${exe_ext} --version

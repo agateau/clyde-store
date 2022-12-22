@@ -108,5 +108,5 @@ installs:
         git-log.txt: ${doc_dir}
         rclone${exe_ext}: bin/
         rclone.1: share/man/man1/
-      extra_files: {}
-      tests: []
+      tests:
+        - rclone${exe_ext} --version

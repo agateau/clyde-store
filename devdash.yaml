@@ -30,3 +30,5 @@ installs:
         LICENCE: ${doc_dir}
         README.md: ${doc_dir}
         devdash${exe_ext}: bin/
+      tests:
+        - devdash${exe_ext} version

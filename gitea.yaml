@@ -96,3 +96,5 @@ installs:
     any-any:
       files:
         ${asset_name}: bin/gitea${exe_ext}
+      tests:
+        - gitea${exe_ext} --version

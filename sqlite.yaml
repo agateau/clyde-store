@@ -14,3 +14,5 @@ installs:
     any-any:
       files:
         sqlite3: bin/
+      tests:
+        - sqlite3${exe_ext} --version

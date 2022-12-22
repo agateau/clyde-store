@@ -124,5 +124,5 @@ installs:
         README.md: ${doc_dir}
         just${exe_ext}: bin/
         just.1: share/man/man1/
-      extra_files: {}
-      tests: []
+      tests:
+        - just${exe_ext} --version

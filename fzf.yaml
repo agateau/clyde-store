@@ -212,5 +212,5 @@ installs:
     any-any:
       files:
         fzf${exe_ext}: bin/
-      extra_files: {}
-      tests: []
+      tests:
+        - fzf${exe_ext} --version

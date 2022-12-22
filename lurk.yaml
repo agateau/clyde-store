@@ -12,3 +12,5 @@ installs:
     any-linux:
       files:
         lurk: bin/
+      tests:
+        - lurk --version

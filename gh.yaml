@@ -346,7 +346,11 @@ installs:
         LICENSE: ${doc_dir}
         bin/gh${exe_ext}: bin/
         share: share
+      tests:
+        - gh${exe_ext} --version
     any-windows:
       files:
         LICENSE: ${doc_dir}
         bin/gh${exe_ext}: bin/
+      tests:
+        - gh${exe_ext} --version
