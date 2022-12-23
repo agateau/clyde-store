@@ -53,6 +53,31 @@ releases:
     x86_64-windows:
       url: https://github.com/miniscruff/changie/releases/download/v1.10.1/changie_1.10.1_windows_amd64.zip
       sha256: fd8bb56b68556d12bb8a064263d8fdf204cfa5dcbeb02bf68c561c03996762bf
+  1.10.2:
+    aarch64-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.2/changie_1.10.2_linux_arm64.tar.gz
+      sha256: cb8ff2185a38132c9e736e773ce14232312bb235016dd96ab123cffbd51b774c
+    aarch64-macos:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.2/changie_1.10.2_darwin_arm64.tar.gz
+      sha256: ca63f446cf51a85b37a73b22a0830e488906bc5d367c8e1882ac784923662bb1
+    aarch64-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.2/changie_1.10.2_windows_arm64.zip
+      sha256: 9ec7d382d511bc7f21614e2bf2148cc493c1991d4efdb59a6a3086bcd61ace6d
+    x86-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.2/changie_1.10.2_linux_386.tar.gz
+      sha256: 5fad1f0c75698edf17d91eca7db67a4427383f359dde1e59d103d0fa1b32e526
+    x86-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.2/changie_1.10.2_windows_386.zip
+      sha256: 52945291db0155cab17060ed47019381e904afc255b2a1aed14ccb2c0c055ded
+    x86_64-linux:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.2/changie_1.10.2_linux_amd64.tar.gz
+      sha256: 2325efb1efb62287437d2aaac041362530cbe594d3b0f560d918366db872c0df
+    x86_64-macos:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.2/changie_1.10.2_darwin_amd64.tar.gz
+      sha256: 49dc68d6393a4e846f3534c2dd30882d7d2f74cc8097fea19af46f33606ef930
+    x86_64-windows:
+      url: https://github.com/miniscruff/changie/releases/download/v1.10.2/changie_1.10.2_windows_amd64.zip
+      sha256: 1ebbbb328e951e3600172e6ab9a687f3b5487e3af8e465580b287fa40cfb3ce6
   1.8.0:
     aarch64-linux:
       url: https://github.com/miniscruff/changie/releases/download/v1.8.0/changie_1.8.0_linux_arm64.tar.gz
@@ -138,3 +163,4 @@ installs:
         changie${exe_ext}: bin/
       tests:
       - changie${exe_ext} --version
+fetcher: Auto
