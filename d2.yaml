@@ -1,0 +1,33 @@
+name: d2
+description: D2 is a modern diagram scripting language that turns text to diagrams.
+homepage: https://d2lang.com/
+repository: https://github.com/terrastruct/d2
+releases:
+  0.1.2:
+    aarch64-linux:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-linux-arm64.tar.gz
+      sha256: d3c0f1faca2aebcef96c4e7340a5003da9e5ca2894cad6cb3f1cfda7efc49087
+    aarch64-macos:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-macos-arm64.tar.gz
+      sha256: 1bcacb31fce9c0b98866c65c825772fbaf570b4be69ddd8fca16afd23e72db26
+    aarch64-windows:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-windows-arm64.tar.gz
+      sha256: 69975748fce70253914400068a4db84a5b5533f07a610399c55c5aae7d605071
+    x86_64-linux:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-linux-amd64.tar.gz
+      sha256: a1601905c2ddc9736051e79cbc47076c5297883a38ce3ac51b41da9c1a4d7cff
+    x86_64-macos:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-macos-amd64.tar.gz
+      sha256: 2bbb6b146c777c143ec6482dd65a94a9436f0b20e42e593d51b89ee12af9f287
+    x86_64-windows:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-windows-amd64.tar.gz
+      sha256: da32ce711f3d81493129931837f9cde8baa59d49f62b3d71da535534b4acb5c1
+installs:
+  0.1.2:
+    any:
+      strip: 1
+      files:
+        bin/d2${exe_ext}: bin/
+        man/d2.1: share/man/man1/
+        LICENSE.txt: ${doc_dir}
+        README.md: ${doc_dir}
