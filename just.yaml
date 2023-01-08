@@ -3,6 +3,22 @@ description: Just a command runner
 homepage: https://github.com/casey/just
 repository: https://github.com/casey/just
 releases:
+  1.11.0:
+    aarch64-linux:
+      url: https://github.com/casey/just/releases/download/1.11.0/just-1.11.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: b8558bf44588bd21f144e179b4ca8d2afa6059227afbd03582c0715d54229deb
+    aarch64-macos:
+      url: https://github.com/casey/just/releases/download/1.11.0/just-1.11.0-aarch64-apple-darwin.tar.gz
+      sha256: 10344c6001955ed866e24e673c3781b2f1c06efc1d8cf629415b7a27c3781bff
+    x86_64-linux:
+      url: https://github.com/casey/just/releases/download/1.11.0/just-1.11.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: c8068fcd03b800492ad0e5da84761034cb412542d6ded0a234da2a9fc578d540
+    x86_64-macos:
+      url: https://github.com/casey/just/releases/download/1.11.0/just-1.11.0-x86_64-apple-darwin.tar.gz
+      sha256: e6e6b32115ce5ebf4f4d9ee7c8f5501c6a684eb874b7b3d68f7209cf40132b4e
+    x86_64-windows:
+      url: https://github.com/casey/just/releases/download/1.11.0/just-1.11.0-x86_64-pc-windows-msvc.zip
+      sha256: 43fdee33348907a3771341d5949ec78283bacc711c7aa7336a80fc938627ce68
   1.2.0:
     aarch64-linux:
       url: https://github.com/casey/just/releases/download/1.2.0/just-1.2.0-aarch64-unknown-linux-musl.tar.gz
@@ -125,4 +141,5 @@ installs:
         just${exe_ext}: bin/
         just.1: share/man/man1/
       tests:
-        - just${exe_ext} --version
+      - just${exe_ext} --version
+fetcher: Auto

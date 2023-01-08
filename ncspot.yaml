@@ -1,6 +1,5 @@
 name: ncspot
-description: Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc
-  and the likes.
+description: Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes.
 homepage: https://github.com/hrkfdn/ncspot
 repository: https://github.com/hrkfdn/ncspot
 releases:
@@ -69,8 +68,22 @@ releases:
     x86_64-windows:
       url: https://github.com/hrkfdn/ncspot/releases/download/v0.11.2/ncspot-v0.11.2-windows-x86_64.zip
       sha256: 9312372f28be02d193b42cd1538bc3d65c443d6491e2e605767a8e376b87bcf1
+  0.12.0:
+    aarch64-linux:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.12.0/ncspot-v0.12.0-linux-arm64.tar.gz
+      sha256: 031c1ebee4db363b6acf0d656dff2e6361cfb44bb2a7c17613008fd1b0aae82f
+    x86_64-linux:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.12.0/ncspot-v0.12.0-linux-x86_64.tar.gz
+      sha256: e0ec97c123ad8177e4f24033fe587b4a71e2ba44ccbd04055b1c69bebd4c8f5f
+    x86_64-macos:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.12.0/ncspot-v0.12.0-macos-x86_64.tar.gz
+      sha256: 025ebe9b576c12f2fd528c6eabd38c17455399021127f7d840187ff106e0cae6
+    x86_64-windows:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v0.12.0/ncspot-v0.12.0-windows-x86_64.zip
+      sha256: 2e8edd826d57b0dda69a5fe9e3e3d40add6b221c65d1fcfca406d77f103a5d2c
 installs:
   0.10.0:
     any-any:
       files:
         ncspot${exe_ext}: bin/
+fetcher: Auto

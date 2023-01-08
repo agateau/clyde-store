@@ -1,0 +1,72 @@
+name: d2
+description: D2 is a modern diagram scripting language that turns text to diagrams.
+homepage: https://d2lang.com/
+repository: https://github.com/terrastruct/d2
+releases:
+  0.1.2:
+    aarch64-linux:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-linux-arm64.tar.gz
+      sha256: d3c0f1faca2aebcef96c4e7340a5003da9e5ca2894cad6cb3f1cfda7efc49087
+    aarch64-macos:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-macos-arm64.tar.gz
+      sha256: 1bcacb31fce9c0b98866c65c825772fbaf570b4be69ddd8fca16afd23e72db26
+    aarch64-windows:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-windows-arm64.tar.gz
+      sha256: 69975748fce70253914400068a4db84a5b5533f07a610399c55c5aae7d605071
+    x86_64-linux:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-linux-amd64.tar.gz
+      sha256: a1601905c2ddc9736051e79cbc47076c5297883a38ce3ac51b41da9c1a4d7cff
+    x86_64-macos:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-macos-amd64.tar.gz
+      sha256: 2bbb6b146c777c143ec6482dd65a94a9436f0b20e42e593d51b89ee12af9f287
+    x86_64-windows:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.2/d2-v0.1.2-windows-amd64.tar.gz
+      sha256: da32ce711f3d81493129931837f9cde8baa59d49f62b3d71da535534b4acb5c1
+  0.1.3:
+    aarch64-linux:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.3/d2-v0.1.3-linux-arm64.tar.gz
+      sha256: 96829494fd0061dae2f842df068b6b0276924a97590e0773e56539e9afbdc3cb
+    aarch64-macos:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.3/d2-v0.1.3-macos-arm64.tar.gz
+      sha256: f00b5740cf60763fc343d9f315fa3b8059f781375638c88b6302cd62408ab15d
+    aarch64-windows:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.3/d2-v0.1.3-windows-arm64.tar.gz
+      sha256: e1cbec0167237b35217d0aa259b6c4808728046033429c88b3f574f8e56c44c6
+    x86_64-linux:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.3/d2-v0.1.3-linux-amd64.tar.gz
+      sha256: dfb612b3ec953867d3536b70f2ac85fe8c818377fe647b031911355dc05cbafe
+    x86_64-macos:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.3/d2-v0.1.3-macos-amd64.tar.gz
+      sha256: bb8566c04e5fa56d41300e21da13367faf9510d1948ab683e1ffe99093caeeec
+    x86_64-windows:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.3/d2-v0.1.3-windows-amd64.tar.gz
+      sha256: 0bb42b5367b53cf95c0e348be25857524edc6cde4ebcb3c20d415e3691f59428
+  0.1.4:
+    aarch64-linux:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.4/d2-v0.1.4-linux-arm64.tar.gz
+      sha256: 6c36c106d1cefff19c6f10f1c102b43c4aaf20733478d76b78d4ff758e24462a
+    aarch64-macos:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.4/d2-v0.1.4-macos-arm64.tar.gz
+      sha256: 45e90001737ff98e18b10eab557c895bab93719e1ca27dfb8bcc3e96ea65787d
+    aarch64-windows:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.4/d2-v0.1.4-windows-arm64.tar.gz
+      sha256: f7a074468b7814d0736492b48ba7d471a79a80c0fa3c4110cd388b74ee0bd209
+    x86_64-linux:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.4/d2-v0.1.4-linux-amd64.tar.gz
+      sha256: 4cfb1f5733ad9e260b12b9718370c1503956bdb440fdb95ca0de5d47bba0c81a
+    x86_64-macos:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.4/d2-v0.1.4-macos-amd64.tar.gz
+      sha256: 72f402e1974ce13eeb304ff0ff2799bdbc8546f9f030786b9be7832e3c6cc393
+    x86_64-windows:
+      url: https://github.com/terrastruct/d2/releases/download/v0.1.4/d2-v0.1.4-windows-amd64.tar.gz
+      sha256: e5265be1797b539b6c4bd2b5d78c59a1dcf5cecd860790979b9e8870a794f6f2
+installs:
+  0.1.2:
+    any-any:
+      strip: 1
+      files:
+        LICENSE.txt: ${doc_dir}
+        README.md: ${doc_dir}
+        bin/d2${exe_ext}: bin/
+        man/d2.1: share/man/man1/
+fetcher: Auto

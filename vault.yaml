@@ -1,0 +1,34 @@
+name: vault
+description: A tool for secrets management, encryption as a service, and privileged access management
+homepage: https://www.vaultproject.io
+repository: https://github.com/hashicorp/vault
+releases:
+  1.12.2:
+    aarch64-linux:
+      url: https://releases.hashicorp.com/vault/1.12.2/vault_1.12.2_linux_arm64.zip
+      sha256: 7b35d12518729cfe3efe2007a07862934b0a6df053146ea15243f89e6b0bfbf2
+    aarch64-macos:
+      url: https://releases.hashicorp.com/vault/1.12.2/vault_1.12.2_darwin_arm64.zip
+      sha256: f1fa420858eb8674416a2285cb48f9887c680eb3437235cc06c69a30178de708
+    x86-linux:
+      url: https://releases.hashicorp.com/vault/1.12.2/vault_1.12.2_linux_386.zip
+      sha256: a28e1093b1a289634280710dcaf11acba3aad4572bee9c4dd3a614fecee89a66
+    x86-windows:
+      url: https://releases.hashicorp.com/vault/1.12.2/vault_1.12.2_windows_386.zip
+      sha256: 749d285abbec5727c7a5b37ae5cac411c5c03f3685aae588890779749f89c8ee
+    x86_64-linux:
+      url: https://releases.hashicorp.com/vault/1.12.2/vault_1.12.2_linux_amd64.zip
+      sha256: 116c143de377a77a7ea455a367d5e9fe5290458e8a941a6e2dd85d92aaedba67
+    x86_64-macos:
+      url: https://releases.hashicorp.com/vault/1.12.2/vault_1.12.2_darwin_amd64.zip
+      sha256: 76d985c42a254bf16fa55fbf39092a34e27aba22942c2f829a6ce81ac5fdc40f
+    x86_64-windows:
+      url: https://releases.hashicorp.com/vault/1.12.2/vault_1.12.2_windows_amd64.zip
+      sha256: 0421531b5846a45a53547bc9a505de2b11d91d0a48fdb5aed1d77259720db5ab
+installs:
+  1.12.0:
+    any:
+      files:
+        vault${exe_ext}: bin/
+      tests:
+        - vault${exe_ext} --version
