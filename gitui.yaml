@@ -1,0 +1,25 @@
+name: gitui
+description: Blazing fast terminal-ui for git written in rust
+homepage: https://github.com/extrawurst/gitui
+repository: https://github.com/extrawurst/gitui
+releases:
+  0.22.1:
+    aarch64-linux:
+      url: https://github.com/extrawurst/gitui/releases/download/v0.22.1/gitui-linux-aarch64.tar.gz
+      sha256: 1a6562f1a7e4700545f6fdde614e6c2dcba8e2bc608bdc10d221fab51fd22edd
+    x86_64-linux:
+      url: https://github.com/extrawurst/gitui/releases/download/v0.22.1/gitui-linux-musl.tar.gz
+      sha256: 03877698f3dc2d8f332bd65d872fa7d88d79004feca703394bdb928bd13f1955
+    x86_64-macos:
+      url: https://github.com/extrawurst/gitui/releases/download/v0.22.1/gitui-mac.tar.gz
+      sha256: fc7cf26e8e35ee50519521a67dcb4782058931bdd6eaaaecd74379731042d7f1
+    x86_64-windows:
+      url: https://github.com/extrawurst/gitui/releases/download/v0.22.1/gitui-win.tar.gz
+      sha256: c50ee9ff2ab7b9a1f14f821abfd1f69decda619fa2b99932dcc5769f5049b29d
+installs:
+  0.22.1:
+    any:
+      files:
+        gitui${exe_ext}: bin/
+fetcher: !GitHub
+  arch: x86_64
