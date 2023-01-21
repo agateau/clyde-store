@@ -43,6 +43,16 @@ releases:
     x86_64-windows:
       url: https://github.com/jgm/pandoc/releases/download/2.19.2/pandoc-2.19.2-windows-x86_64.zip
       sha256: e7a0c92b4af6cad31d9899a8b92a3992e18634320349bbf56b729bbbcf71bb99
+  3.0.0:
+    aarch64-linux:
+      url: https://github.com/jgm/pandoc/releases/download/3.0/pandoc-3.0-linux-arm64.tar.gz
+      sha256: 6c093554bd75a3c4431aa9613d31162b2d1745f4f468af6eb6bffeff40ab0dd0
+    x86_64-linux:
+      url: https://github.com/jgm/pandoc/releases/download/3.0/pandoc-3.0-linux-amd64.tar.gz
+      sha256: 0fe2ef8366a61b9296ef4a8512b9a2d4acd056c7f92ce7e0cc82add960c2cc8f
+    x86_64-windows:
+      url: https://github.com/jgm/pandoc/releases/download/3.0/pandoc-3.0-windows-x86_64.zip
+      sha256: fdcec5ddec35f76fa5fe2ae742fc2ce71d694fdb17c577f0cf4e3f623a9d89ab
 installs:
   2.18.0:
     any-any:
@@ -51,7 +61,7 @@ installs:
         bin: bin
         share: share
       tests:
-        - pandoc${exe_ext} --version
+      - pandoc${exe_ext} --version
     any-windows:
       strip: 1
       files:
@@ -60,4 +70,5 @@ installs:
         MANUAL.html: ${doc_dir}
         pandoc${exe_ext}: bin/
       tests:
-        - pandoc${exe_ext} --version
+      - pandoc${exe_ext} --version
+fetcher: Auto
