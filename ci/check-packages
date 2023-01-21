@@ -3,106 +3,29 @@
 Check packages are valid
 """
 import argparse
-import json
-import os
-import platform
 import random
 import re
-import shutil
 import subprocess
 import sys
 
 from pathlib import Path
-from typing import BinaryIO, Dict, List
-from urllib import request
+from typing import List
 
-if sys.stdout.isatty():
-    CYAN = "\033[36m"
-    RESET = "\033[0;0m"
-else:
-    CYAN = ""
-    RESET = ""
-
-CLYDE_SNAPSHOT_LIST_URL = "https://builds.agateau.com/clyde/"
-CLYDE_RELEASE_LIST_URL = "https://api.github.com/repos/agateau/clyde/releases/latest"
-
-CLYDE_ARCHIVE_NAME = ""
-CLYDE_ARCHIVE_RX = ""
-OS_NAME = ""
-
-GITHUB_TOKEN = os.getenv("CLYDE_GITHUB_TOKEN", "")
+from get_clyde import find_clyde_snapshot_url, find_clyde_release_url, download_clyde, GITHUB_TOKEN
+from tui import eprint, progress
+from utils import which
 
 CI_DIR = Path(__file__).parent.resolve()
 CLYDE_DIR = CI_DIR / "clyde"
 ROOT_DIR = CI_DIR.parent.resolve()
 
-CURL_RETRY = 3
-
 RANDOM_COUNT = 8
-
-
-def init_os_globals() -> None:
-    global CLYDE_ARCHIVE_NAME
-    global CLYDE_ARCHIVE_RX
-    global OS_NAME
-    system = platform.system()
-
-    if system == "Linux":
-        OS_NAME = "linux"
-    elif system == "Darwin":
-        OS_NAME = "macos"
-    elif system == "Windows":
-        OS_NAME = "windows"
-    else:
-        sys.exit(f"Unknown system {system}")
-
-    if OS_NAME == "windows":
-        archive_ext_rx = r"\.zip"
-        CLYDE_ARCHIVE_NAME = "clyde.zip"
-    else:
-        archive_ext_rx = r"\.tar\.gz"
-        CLYDE_ARCHIVE_NAME = "clyde.tar.gz"
-    CLYDE_ARCHIVE_RX = f"clyde-[-_a-zT0-9.+]*-{OS_NAME}{archive_ext_rx}"
 
 
 def check_github_token() -> None:
     if not GITHUB_TOKEN:
-        eprint(f"CLYDE_GITHUB_TOKEN environment variable not set. Consider defining it"
+        eprint("CLYDE_GITHUB_TOKEN environment variable not set. Consider defining it"
                " to avoid being rate-limited.")
-
-
-def create_request(url: str, headers: Dict[str, str]) -> request.Request:
-    req = request.Request(url)
-    for key, value in headers.items():
-        req.add_header(key, value)
-
-    return req
-
-
-def eprint(msg: str) -> None:
-    print(msg, file=sys.stderr)
-
-
-def http_get(url: str) -> BinaryIO:
-    eprint(f"http_get {url}")
-    headers = {
-        "User-Agent": "clyde-store-check-packages",
-    }
-    if GITHUB_TOKEN:
-        headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
-    req = create_request(url, headers)
-    return request.urlopen(req)  # type: ignore
-
-
-def progress(msg: str) -> None:
-    eprint(f"{CYAN}{msg}{RESET}")
-
-
-def which(cmd: str) -> str:
-    cmd_path = shutil.which(cmd)
-    if cmd_path is None:
-        sys.exit(f"Can't find {cmd} in {os.environ['PATH']}")
-    return cmd_path
 
 
 def list_modified_files(target: str) -> List[Path]:
@@ -142,50 +65,6 @@ def list_packages_to_check(target: str) -> List[Path]:
     return packages
 
 
-def find_clyde_release_url() -> str:
-    progress("Looking for archive of latest Clyde release")
-    response = http_get(CLYDE_RELEASE_LIST_URL)
-    dct = json.load(response)
-    archives_url = [x["browser_download_url"] for x in dct["assets"]]
-    for url in archives_url:
-        if re.search(CLYDE_ARCHIVE_RX, url):
-            assert isinstance(url, str)
-            return url
-    sys.exit(f"Can't find URL from\n{json.dumps(dct, indent=2)}")
-
-
-def find_clyde_snapshot_url() -> str:
-    progress(f"Looking for snapshot Clyde archive on {CLYDE_SNAPSHOT_LIST_URL}")
-    content = str(http_get(CLYDE_SNAPSHOT_LIST_URL).read())
-    match = re.search(CLYDE_ARCHIVE_RX, content)
-    if not match:
-        sys.exit("Could not find archive")
-    archive_name = match.group(0)
-
-    return f"{CLYDE_SNAPSHOT_LIST_URL}{archive_name}"
-
-
-def download_clyde(url: str) -> None:
-    if CLYDE_DIR.exists():
-        shutil.rmtree(CLYDE_DIR)
-    CLYDE_DIR.mkdir()
-
-    archive_path = CLYDE_DIR / CLYDE_ARCHIVE_NAME
-    progress(f"Downloading archive from {url}")
-    subprocess.run([which("curl"), "--retry", str(CURL_RETRY), "-L", url,
-                    "-o", str(archive_path)],
-                   check=True)
-
-    progress("Unpacking archive")
-    if OS_NAME == "windows":
-        cmd = [which("7z"), "e", "-bb0", str(archive_path)]
-    else:
-        cmd = [which("tar"), "--strip-components=1", "-xzf", str(archive_path)]
-    subprocess.run(cmd, check=True, cwd=CLYDE_DIR)
-
-    os.environ["PATH"] = str(CLYDE_DIR) + os.pathsep + os.environ["PATH"]
-
-
 def check_packages(packages: List[Path]) -> int:
     # We must run the test in the current directory for now
     package_names = [x.relative_to(ROOT_DIR) for x in packages]
@@ -205,7 +84,6 @@ def main() -> int:
 
     args = parser.parse_args()
 
-    init_os_globals()
     check_github_token()
 
     if args.all:
@@ -229,7 +107,7 @@ def main() -> int:
     else:
         clyde_url = find_clyde_snapshot_url()
 
-    download_clyde(clyde_url)
+    download_clyde(clyde_url, CLYDE_DIR)
     return check_packages(packages)
 
     return 0

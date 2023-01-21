@@ -8,7 +8,10 @@ import subprocess
 import sys
 
 from pathlib import Path
+from tempfile import TemporaryDirectory
 from typing import Iterable, List
+
+from get_clyde import find_clyde_snapshot_url, download_clyde
 
 
 def run_git(args: List[str], capture_output: bool = False) -> subprocess.CompletedProcess:
@@ -70,12 +73,18 @@ def main():
 
     args = parser.parse_args()
 
-    if not args.only_pr:
-        subprocess.run(["clydetools", "fetch"] + args.package_files, check=True)
+    with TemporaryDirectory() as temp_dir:
+        clyde_dir = Path(temp_dir) / "clyde"
+        clyde_url = find_clyde_snapshot_url()
+        download_clyde(clyde_url, clyde_dir)
 
-    for package in get_modified_packages():
-        print(f"Filing PR for {package}")
-        file_pr(package)
+        if not args.only_pr:
+            package_files = [Path(x).absolute() for x in args.package_files]
+            subprocess.run(["clydetools", "fetch"] + package_files, check=True, cwd=temp_dir)
+
+        for package in get_modified_packages():
+            print(f"Filing PR for {package}")
+            file_pr(package)
 
     return 0
 
