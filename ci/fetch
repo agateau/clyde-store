@@ -12,6 +12,7 @@ from tempfile import TemporaryDirectory
 from typing import Iterable, List
 
 from get_clyde import find_clyde_snapshot_url, download_clyde
+from tui import progress, warning
 
 
 def run_git(args: List[str], capture_output: bool = False) -> subprocess.CompletedProcess:
@@ -27,7 +28,7 @@ def get_modified_packages() -> Iterable[str]:
                 yield path
 
 
-def file_pr(package_file: str):
+def file_pr(package_file: str, base_branch: str):
     path = Path(package_file)
     name = path.stem
     if name == "index":
@@ -35,14 +36,15 @@ def file_pr(package_file: str):
 
     branch_name = f"update-{name}"
     try:
+        run_git(["checkout", base_branch])
         run_git(["checkout", "-b", branch_name])
     except subprocess.CalledProcessError:
-        print(f"Failed to create branch '{branch_name}', check it does not already exist")
+        warning(f"Failed to create branch '{branch_name}', check it does not already exist.")
         return
     run_git(["add", package_file])
     run_git(["commit", "-m", f"Update {name}"])
     run_git(["push", "-u", "origin", branch_name])
-    subprocess.run(["gh", "pr", "create", "--fill"], check=True)
+    subprocess.run(["gh", "pr", "create", "--fill", "--base", base_branch], check=True)
     subprocess.run(["gh", "pr", "merge", "--auto", "-dm"], check=True)
     run_git(["checkout", "-"])
 
@@ -62,6 +64,12 @@ def main():
     )
 
     parser.add_argument(
+        "--next",
+        action="store_true",
+        help="Target 'next' instead of 'main'",
+    )
+
+    parser.add_argument(
         "--only-pr",
         action="store_true",
         help="Files PRs for modified packages, do not fetch updates",
@@ -73,18 +81,19 @@ def main():
 
     args = parser.parse_args()
 
-    with TemporaryDirectory() as temp_dir:
-        clyde_dir = Path(temp_dir) / "clyde"
-        clyde_url = find_clyde_snapshot_url()
-        download_clyde(clyde_url, clyde_dir)
+    if not args.only_pr:
+        with TemporaryDirectory() as temp_dir:
+            clyde_dir = Path(temp_dir) / "clyde"
+            clyde_url = find_clyde_snapshot_url()
+            download_clyde(clyde_url, clyde_dir)
 
-        if not args.only_pr:
             package_files = [Path(x).absolute() for x in args.package_files]
             subprocess.run(["clydetools", "fetch"] + package_files, check=True, cwd=temp_dir)
 
-        for package in get_modified_packages():
-            print(f"Filing PR for {package}")
-            file_pr(package)
+    base_branch = "next" if args.next else "main"
+    for package in get_modified_packages():
+        progress(f"Filing PR for {package}")
+        file_pr(package, base_branch)
 
     return 0
 
