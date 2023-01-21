@@ -28,7 +28,7 @@ def get_modified_packages() -> Iterable[str]:
                 yield path
 
 
-def file_pr(package_file: str):
+def file_pr(package_file: str, base_branch: str):
     path = Path(package_file)
     name = path.stem
     if name == "index":
@@ -36,14 +36,15 @@ def file_pr(package_file: str):
 
     branch_name = f"update-{name}"
     try:
+        run_git(["checkout", base_branch])
         run_git(["checkout", "-b", branch_name])
     except subprocess.CalledProcessError:
-        warning(f"Failed to create branch '{branch_name}', check it does not already exist")
+        warning(f"Failed to create branch '{branch_name}', check it does not already exist.")
         return
     run_git(["add", package_file])
     run_git(["commit", "-m", f"Update {name}"])
     run_git(["push", "-u", "origin", branch_name])
-    subprocess.run(["gh", "pr", "create", "--fill"], check=True)
+    subprocess.run(["gh", "pr", "create", "--fill", "--base", base_branch], check=True)
     subprocess.run(["gh", "pr", "merge", "--auto", "-dm"], check=True)
     run_git(["checkout", "-"])
 
@@ -60,6 +61,12 @@ def main():
         type=argparse.FileType("w", encoding="utf-8"),
         help="write report to FILE",
         metavar="FILE",
+    )
+
+    parser.add_argument(
+        "--next",
+        action="store_true",
+        help="Target 'next' instead of 'main'",
     )
 
     parser.add_argument(
@@ -83,9 +90,10 @@ def main():
             package_files = [Path(x).absolute() for x in args.package_files]
             subprocess.run(["clydetools", "fetch"] + package_files, check=True, cwd=temp_dir)
 
+    base_branch = "next" if args.next else "main"
     for package in get_modified_packages():
         progress(f"Filing PR for {package}")
-        file_pr(package)
+        file_pr(package, base_branch)
 
     return 0
 
