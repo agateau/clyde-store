@@ -1,0 +1,27 @@
+name: hadolint
+description: Dockerfile linter, validate inline bash, written in Haskell
+homepage: https://github.com/hadolint/hadolint
+repository: https://github.com/hadolint/hadolint
+releases:
+  2.12.0:
+    aarch64-linux:
+      url: https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-arm64
+      sha256: 5798551bf19f33951881f15eb238f90aef023f11e7ec7e9f4c37961cb87c5df6
+    x86_64-linux:
+      url: https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64
+      sha256: 56de6d5e5ec427e17b74fa48d51271c7fc0d61244bf5c90e828aab8362d55010
+    x86_64-macos:
+      url: https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Darwin-x86_64
+      sha256: 2a5b7afcab91645c39a7cebefcd835b865f7488e69be24567f433dfc3d41cd27
+    x86_64-windows:
+      url: https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Windows-x86_64.exe
+      sha256: ed89a156290e15452276b2b4c84efa688a5183d3b578bfaec7cfdf986f0632a8
+installs:
+  2.12.0:
+    any-any:
+      files:
+        ${asset_name}: bin/hadolint${exe_ext}
+tests:
+  2.12.0:
+    any:
+      - hadolint${exe_ext} --version
