@@ -1,0 +1,27 @@
+name: sylver-cli
+description: Language agnostic source code exploration and analysis.
+homepage: https://github.com/sylver-dev/sylver-cli
+repository: https://github.com/sylver-dev/sylver-cli
+releases:
+  0.2.4:
+    aarch64-macos:
+      url: https://github.com/sylver-dev/sylver-cli/releases/download/v0.2.4/sylver--aarch64-macos.tar.xz
+      sha256: 4a89d92c61856269cf6b91deb12b686d5b9bed702bff252fde312d47b74a1abf
+    x86_64-linux:
+      url: https://github.com/sylver-dev/sylver-cli/releases/download/v0.2.4/sylver--x86_64-linux.tar.xz
+      sha256: 7d14118dadb697fe6e0df2128c2e0756afb15a038343f7a8dc8953adf2eaa671
+    x86_64-macos:
+      url: https://github.com/sylver-dev/sylver-cli/releases/download/v0.2.4/sylver--x86_64-macos.tar.xz
+      sha256: 658b861201a45e85e062a1db5c4f891f495310bd1f3002224027c66424736945
+    x86_64-windows:
+      url: https://github.com/sylver-dev/sylver-cli/releases/download/v0.2.4/sylver--x86_64-windows.zip
+      sha256: ad125861ed3e4b55cd38192a98c74897629794f4b370f168b92d5ae46dc27f92
+installs:
+  0.2.4:
+    any-any:
+      files:
+        sylver${exe_ext}: bin/
+tests:
+  0.2.4:
+    any:
+      - sylver${exe_ext} --version
