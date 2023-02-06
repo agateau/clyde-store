@@ -1,0 +1,30 @@
+name: dive
+description: A tool for exploring each layer in a docker image
+homepage: https://github.com/wagoodman/dive
+repository: https://github.com/wagoodman/dive
+releases:
+  0.0.0:
+    any-any:
+      url: https://pkg.example.com/download/pkg
+      sha256: '0'
+  0.10.0:
+    x86_64-linux:
+      url: https://github.com/wagoodman/dive/releases/download/v0.10.0/dive_0.10.0_linux_amd64.tar.gz
+      sha256: 9541997876d4985de66d0fa5924dac72258a3094ef7d3f6ef5fa5dcf6f6a47ad
+    x86_64-macos:
+      url: https://github.com/wagoodman/dive/releases/download/v0.10.0/dive_0.10.0_darwin_amd64.tar.gz
+      sha256: b4cad081146defcb90b418215cdfdf835372abd4adf1b0f33aaf1ea5d9bb3244
+    x86_64-windows:
+      url: https://github.com/wagoodman/dive/releases/download/v0.10.0/dive_0.10.0_windows_amd64.zip
+      sha256: e88cf463b48d9edc22f71b63d43f076826f32f6777ac9a8d288dd3dd8f0599e3
+installs:
+  0.0.0:
+    any-any:
+      files:
+        dive${exe_ext}: bin/
+        README.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+tests:
+  0.0.0:
+    any:
+      - dive${exe_ext} --version

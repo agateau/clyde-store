@@ -1,0 +1,37 @@
+name: git-delta
+description: A syntax-highlighting pager for git, diff, and grep output
+homepage: https://github.com/dandavison/delta
+repository: https://github.com/dandavison/delta
+releases:
+  0.15.1:
+    aarch64-linux:
+      url: https://github.com/dandavison/delta/releases/download/0.15.1/delta-0.15.1-aarch64-unknown-linux-gnu.tar.gz
+      sha256: ab3b7d7b87c679a9cb464a6b8731f53d2e36b39268d63a4f8ed3e141efc3915d
+    aarch64-macos:
+      url: https://github.com/dandavison/delta/releases/download/0.15.1/delta-0.15.1-aarch64-apple-darwin.tar.gz
+      sha256: ba06f9709b3e8014210bf4461b60904805b1d06f09fca8df641e92cb8636cb17
+    x86-linux:
+      url: https://github.com/dandavison/delta/releases/download/0.15.1/delta-0.15.1-i686-unknown-linux-gnu.tar.gz
+      sha256: 6f37d14badc55454a7095793255b826d7f846c1b3fe263e40b1c1c2efdbf5918
+    x86_64-linux:
+      url: https://github.com/dandavison/delta/releases/download/0.15.1/delta-0.15.1-x86_64-unknown-linux-musl.tar.gz
+      sha256: f2499f34a4355a808c084764dcb37b613af4d45af28d8f8fb5a0739eeb2839f9
+    x86_64-macos:
+      url: https://github.com/dandavison/delta/releases/download/0.15.1/delta-0.15.1-x86_64-apple-darwin.tar.gz
+      sha256: a7abcdbf9977bbc8bf5bead8bef10b71d19719d52c6f0ebea6b5fb0deced2b2a
+    x86_64-windows:
+      url: https://github.com/dandavison/delta/releases/download/0.15.1/delta-0.15.1-x86_64-pc-windows-msvc.zip
+      sha256: 4ba69ba67eff330b5479873704a0ec86820671c735f06998697e7d0f3e7335fa
+installs:
+  0.15.1:
+    any-any:
+      strip: 1
+      files:
+        delta${exe_ext}: bin/
+        LICENSE: ${doc_dir}/
+        README.md: ${doc_dir}/
+fetcher: Auto
+tests:
+  0.15.1:
+    any-any:
+      - delta${exe_ext} --version
