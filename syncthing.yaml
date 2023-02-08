@@ -193,6 +193,34 @@ releases:
     x86_64-windows:
       url: https://github.com/syncthing/syncthing/releases/download/v1.23.0/syncthing-windows-amd64-v1.23.0.zip
       sha256: db08b87efb352410ac5cfe9ed492c018f8bef1a3addbf0e6fedacee0e845bd56
+  1.23.1:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.23.1/syncthing-linux-arm64-v1.23.1.tar.gz
+      sha256: a8a2f23300465bf233d0d5d0676cb9cc918d752efd605274d85252f8e1a0fe21
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.23.1/syncthing-macos-arm64-v1.23.1.zip
+      sha256: 1fafddb0da22767211d4569e350935d510ab7aa4d55fe6852aad523ba51fdb35
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.23.1/syncthing-windows-arm64-v1.23.1.zip
+      sha256: ece3a164853ba7fb33261fdc9d566aecf5c5acf1504d514a603093dc346f6252
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.23.1/syncthing-macos-universal-v1.23.1.zip
+      sha256: 598ce95767063fc570950ef7062273975470b3f1dbcd0efbc75eb484fc6ab598
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.23.1/syncthing-linux-386-v1.23.1.tar.gz
+      sha256: 57a99feb38f2f27bdad0ed5e9036986defbc9c34e2a81a3af5be0d5a361663c0
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.23.1/syncthing-windows-386-v1.23.1.zip
+      sha256: 4dd04919fe3ca2d30277efd32f479ac17278c1afc4321bf2a6e229b61a663b0f
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.23.1/syncthing-linux-amd64-v1.23.1.tar.gz
+      sha256: 5e124caa7ec9aa8689dad5425aa42f4044cc52066c7a17086356418a783e1ab3
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.23.1/syncthing-macos-amd64-v1.23.1.zip
+      sha256: a768056d4cb240b079718cc0171ba64a7685ad93e4f8413edc7a46b6090284cb
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.23.1/syncthing-windows-amd64-v1.23.1.zip
+      sha256: aec001f848491d4c058d2fbe5dd1ffdf0fdffe55e706a8494ac80cb97586aff1
 installs:
   1.20.3:
     any-any:
