@@ -48,6 +48,22 @@ releases:
     x86_64-windows:
       url: https://github.com/sylver-dev/sylver-cli/releases/download/v0.2.7/sylver--x86_64-windows.zip
       sha256: a39d822063204006900010a7ad4f7204b5ba2b9b48b5e30a343532934631c9f5
+  0.3.0:
+    aarch64-linux:
+      url: https://github.com/sylver-dev/sylver-cli/releases/download/v0.3.0/sylver--aarch64-linux.tar.xz
+      sha256: cac1915e3103ba7986faa19d63933d6a91e1f3658959d19e6886354039c8a2c2
+    aarch64-macos:
+      url: https://github.com/sylver-dev/sylver-cli/releases/download/v0.3.0/sylver--aarch64-macos.tar.xz
+      sha256: e50427351ae065a4b5ee52ccff6ebe39327bd4fab1f1c85f0519ef90c76d0ff2
+    x86_64-linux:
+      url: https://github.com/sylver-dev/sylver-cli/releases/download/v0.3.0/sylver--x86_64-linux.tar.xz
+      sha256: a1815935e4d1d4dc729c0b062e3ba55f4bba01ac288b2879b382ba1506a85245
+    x86_64-macos:
+      url: https://github.com/sylver-dev/sylver-cli/releases/download/v0.3.0/sylver--x86_64-macos.tar.xz
+      sha256: 642b2674ec97658fe85044782dd0dd246254f5368bc77dde90d2cd314b083326
+    x86_64-windows:
+      url: https://github.com/sylver-dev/sylver-cli/releases/download/v0.3.0/sylver--x86_64-windows.zip
+      sha256: 98b3ac4a4fd0d6c41ce0e2e500bb7f29ae0932c29542f8115feaf312ccbb7784
 installs:
   0.2.4:
     any-any:
