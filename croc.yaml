@@ -72,6 +72,31 @@ releases:
     x86_64-windows:
       url: https://github.com/schollz/croc/releases/download/v9.6.2/croc_9.6.2_Windows-64bit.zip
       sha256: c46c2d6d2b92cca3347fab2d63544819baae9611460c67baf78ffe399c7555ab
+  9.6.3:
+    aarch64-linux:
+      url: https://github.com/schollz/croc/releases/download/v9.6.3/croc_9.6.3_Linux-ARM64.tar.gz
+      sha256: 2ab681d8f9ccce852c4f3a564f36632352709cbfc817e9a866c3bbe2521eb9d2
+    aarch64-macos:
+      url: https://github.com/schollz/croc/releases/download/v9.6.3/croc_9.6.3_macOS-ARM64.tar.gz
+      sha256: b96e1f454b87be558bebcf6d825182f377e67647a7d1cdd2f210176db6fee4e9
+    aarch64-windows:
+      url: https://github.com/schollz/croc/releases/download/v9.6.3/croc_9.6.3_Windows-ARM64.zip
+      sha256: d39e7a70d40bc180c1e9dbcf47779d6f7e0e007f33ecb3b0316907d64f63b100
+    x86-linux:
+      url: https://github.com/schollz/croc/releases/download/v9.6.3/croc_9.6.3_Linux-32bit.tar.gz
+      sha256: b1373e97494ae9d083142569e2011050a3d09cb364894b7c6ed507cbcb210b36
+    x86-windows:
+      url: https://github.com/schollz/croc/releases/download/v9.6.3/croc_9.6.3_Windows-32bit.zip
+      sha256: b6d4eb0030bf16cb3735cbe3e9dbcf19abc87ff20c2936e072092e242e7a8f3a
+    x86_64-linux:
+      url: https://github.com/schollz/croc/releases/download/v9.6.3/croc_9.6.3_Linux-64bit.tar.gz
+      sha256: c6b89ae37437a7d58cd8040efb4a5f145f21804fc125443a80c74bf416bf5710
+    x86_64-macos:
+      url: https://github.com/schollz/croc/releases/download/v9.6.3/croc_9.6.3_macOS-64bit.tar.gz
+      sha256: 7b199b648527798bb3d449cf3df170ef9d2a151b0e7e208c5212af7f42ea1ebc
+    x86_64-windows:
+      url: https://github.com/schollz/croc/releases/download/v9.6.3/croc_9.6.3_Windows-64bit.zip
+      sha256: 4d2685978567fe9a6c89f820e7d5ca19ee8194824bd255f3c218a66a0cc5b753
 installs:
   9.6.0:
     any-any:
@@ -81,3 +106,4 @@ installs:
         croc${exe_ext}: bin/
       tests:
       - croc${exe_ext} --version
+fetcher: Auto
