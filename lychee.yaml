@@ -23,15 +23,26 @@ releases:
     x86_64-windows:
       url: https://github.com/lycheeverse/lychee/releases/download/v0.10.3/lychee-v0.10.3-windows-x86_64.exe
       sha256: a75cdac942dbe9af1faad2a494c748eb19cc365541c77329398692448ca0bc97
+  0.11.1:
+    aarch64-linux:
+      url: https://github.com/lycheeverse/lychee/releases/download/v0.11.1/lychee-v0.11.1-aarch64-unknown-linux-gnu.tar.gz
+      sha256: a597906e50e2632b99606e02d0d9f988fd36be3a3e4c2a0a14588a39f47989ab
+    x86_64-linux:
+      url: https://github.com/lycheeverse/lychee/releases/download/v0.11.1/lychee-v0.11.1-x86_64-unknown-linux-musl.tar.gz
+      sha256: 30019fc0976e31d14eaeecefd0a22639ec89c049735afc71681560e14a074e4f
+    x86_64-windows:
+      url: https://github.com/lycheeverse/lychee/releases/download/v0.11.1/lychee-v0.11.1-windows-x86_64.exe
+      sha256: f3fb2b968e1ee2ee1f938f4f5534e71c78428a56c520453c6fe727596c87b382
 installs:
   0.10.1:
     any-any:
       files:
         lychee${exe_ext}: bin/
       tests:
-        - lychee${exe_ext} --help
+      - lychee${exe_ext} --help
     any-windows:
       files:
         ${asset_name}: bin/lychee${exe_ext}
       tests:
-        - lychee${exe_ext} --help
+      - lychee${exe_ext} --help
+fetcher: Auto
