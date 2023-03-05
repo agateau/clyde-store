@@ -137,6 +137,16 @@ releases:
     x86_64-windows:
       url: https://github.com/Wilfred/difftastic/releases/download/0.43.1/difft-x86_64-pc-windows-msvc.zip
       sha256: ffc9cf544cff273d56e68d8c2a7760c646e659bfb5096c99a1265a226f602dec
+  0.45.0:
+    x86_64-linux:
+      url: https://github.com/Wilfred/difftastic/releases/download/0.45.0/difft-x86_64-unknown-linux-gnu.tar.gz
+      sha256: 8ae5f04faba95c868d3f878da7b96d23d6e6943e8b100d0041d4ed8778f83a07
+    x86_64-macos:
+      url: https://github.com/Wilfred/difftastic/releases/download/0.45.0/difft-x86_64-apple-darwin.tar.gz
+      sha256: 963dd3d01f08bbef8644a04b498cbbec90930e0eb1972d38b4a54186316f37ec
+    x86_64-windows:
+      url: https://github.com/Wilfred/difftastic/releases/download/0.45.0/difft-x86_64-pc-windows-msvc.zip
+      sha256: 13944c3b30fcec52939f8b107bf0d2629d6964a471adef4c5feb424a244950d3
 installs:
   0.29.0:
     any-any:
