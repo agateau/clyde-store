@@ -23,10 +23,24 @@ releases:
     x86_64-windows:
       url: https://github.com/svenstaro/miniserve/releases/download/v0.22.0/miniserve-0.22.0-x86_64-pc-windows-msvc.exe
       sha256: ada8690615e0f3aec3277d71679232f2d39e1869dbbd560bdd8a0936cd9b03b6
+  0.23.0:
+    aarch64-linux:
+      url: https://github.com/svenstaro/miniserve/releases/download/v0.23.0/miniserve-0.23.0-aarch64-unknown-linux-musl
+      sha256: 12285105074004c0ce94589e965c30feed37957d2deea9dc10b7faa3d67acf1f
+    x86_64-linux:
+      url: https://github.com/svenstaro/miniserve/releases/download/v0.23.0/miniserve-0.23.0-x86_64-unknown-linux-musl
+      sha256: 122576cc150d0487d349f19e0b02243823d5d8697ac4d6fdab7e0dfcd81dc34c
+    x86_64-macos:
+      url: https://github.com/svenstaro/miniserve/releases/download/v0.23.0/miniserve-0.23.0-x86_64-apple-darwin
+      sha256: 8628adb9b68dc522d3611b05e2f3de28eec6b7939e1a6539971dbe2db0199ac1
+    x86_64-windows:
+      url: https://github.com/svenstaro/miniserve/releases/download/v0.23.0/miniserve-0.23.0-x86_64-pc-windows-msvc.exe
+      sha256: ec67d44ebda88bdd44d98d4859cca3dfc533049d78a2b59c3a3aaf67d3724608
 installs:
   0.20.0:
     any-any:
       files:
         ${asset_name}: bin/miniserve${exe_ext}
       tests:
-        - miniserve${exe_ext} --version
+      - miniserve${exe_ext} --version
+fetcher: Auto
