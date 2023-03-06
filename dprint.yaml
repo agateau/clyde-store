@@ -1,0 +1,30 @@
+name: dprint
+description: Pluggable and configurable code formatting platform written in Rust.
+homepage: https://dprint.dev
+repository: https://github.com/dprint/dprint
+releases:
+  0.34.5:
+    aarch64-linux:
+      url: https://github.com/dprint/dprint/releases/download/0.34.5/dprint-aarch64-unknown-linux-gnu.zip
+      sha256: 21dd3aa277e35184fb6c4ebca899b7c4ddbb2a25035edee75d0c927443d5f7e3
+    aarch64-macos:
+      url: https://github.com/dprint/dprint/releases/download/0.34.5/dprint-aarch64-apple-darwin.zip
+      sha256: 42bd63c2436bbcd058d7fb38bb540a4cdc576e109ce90f607103159dc5bbe1bf
+    x86_64-linux:
+      url: https://github.com/dprint/dprint/releases/download/0.34.5/dprint-x86_64-unknown-linux-musl.zip
+      sha256: ad0296a8f4614a57e107df57e4f1f0f25ac32aeebdc201396160b5d046c26f55
+    x86_64-macos:
+      url: https://github.com/dprint/dprint/releases/download/0.34.5/dprint-x86_64-apple-darwin.zip
+      sha256: 1b23e31fe318115bfcecc4b8025b8146d2c1e160092629c930feeffd02d7e802
+    x86_64-windows:
+      url: https://github.com/dprint/dprint/releases/download/0.34.5/dprint-x86_64-pc-windows-msvc.zip
+      sha256: c98ecc413a40fd275d3d0aaaa245169926cdab27de17d732a9709dad9491fb3c
+installs:
+  0.34.5:
+    any-any:
+      files:
+        dprint${exe_ext}: bin/
+tests:
+  0.34.5:
+    any:
+      - dprint${exe_ext} --version
