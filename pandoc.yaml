@@ -73,6 +73,16 @@ releases:
     x86_64-windows:
       url: https://github.com/jgm/pandoc/releases/download/3.1/pandoc-3.1-windows-x86_64.zip
       sha256: 21ef9294c91fb9e6bd106126d3ee67139510ea0f56256bb8d0376d97c9ab3d23
+  3.1.1:
+    aarch64-linux:
+      url: https://github.com/jgm/pandoc/releases/download/3.1.1/pandoc-3.1.1-linux-arm64.tar.gz
+      sha256: d5d62bad35a98b5a6c742e413a148b5e28e62b7eb35ba0e08bc828b5cf1cbb54
+    x86_64-linux:
+      url: https://github.com/jgm/pandoc/releases/download/3.1.1/pandoc-3.1.1-linux-amd64.tar.gz
+      sha256: 52b25f0115517e32047a06d821e63729108027bd06d9605fe8eac0fa83e0bf81
+    x86_64-windows:
+      url: https://github.com/jgm/pandoc/releases/download/3.1.1/pandoc-3.1.1-windows-x86_64.zip
+      sha256: ab39e7d0780f0f4be650e82738bfaaafbbd571ee295e4c440bcf99efb5a07174
 installs:
   2.18.0:
     any-any:
