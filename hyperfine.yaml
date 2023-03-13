@@ -105,6 +105,8 @@ installs:
         README.md: ${doc_dir}
         hyperfine${exe_ext}: bin/
         hyperfine.1: share/man/man1/
+        autocomplete/hyperfine.bash: ${bash_comp_dir}
+        autocomplete/_hyperfine: ${zsh_comp_dir}
       tests:
       - hyperfine${exe_ext} --version
 fetcher: Auto
