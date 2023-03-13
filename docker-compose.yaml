@@ -1,0 +1,29 @@
+name: docker-compose
+description: Define and run multi-container applications with Docker
+homepage: https://docs.docker.com/compose/
+repository: https://github.com/docker/compose
+releases:
+  2.16.0:
+    aarch64-linux:
+      url: https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-aarch64
+      sha256: edaf196a0b9ebe749aa1a42a6ce4550d2c6c2620762aa98c36088a9b96fd22ef
+    aarch64-macos:
+      url: https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-darwin-aarch64
+      sha256: 975dfb3860e6777b9b383a1eb1f5cdbc5c3aba085149a8c9efbe74d9c50740d1
+    aarch64-windows:
+      url: https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-windows-aarch64.exe
+      sha256: 3be36960ef77ad89008bfd6b6e23cac6d7b803f34f03951949b7d773921f1b0e
+    x86_64-linux:
+      url: https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64
+      sha256: 54ab01967b05e392e6bf13afbc654146890b9fa40501b40aca83a2db18f10427
+    x86_64-macos:
+      url: https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-darwin-x86_64
+      sha256: 2bf40f35b107551486dc46c5c0dcd0027dfadd8f129cccc37a034848ef2288b9
+    x86_64-windows:
+      url: https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-windows-x86_64.exe
+      sha256: a35d1188e796dbda914ddb9677059c654b445aa2921066e0b556ca9906bb603c
+installs:
+  2.16.0:
+    any-any:
+      files:
+        ${asset_name}: bin/docker-compose${exe_ext}
