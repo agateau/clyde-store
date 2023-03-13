@@ -187,6 +187,8 @@ installs:
         README.md: ${doc_dir}
         gum${exe_ext}: bin/
         manpages/gum.1.gz: share/man/man1/
+        completions/gum.bash: ${bash_comp_dir}
+        completions/gum.zsh: ${zsh_comp_dir}
       tests:
       - gum${exe_ext} --version
 fetcher: Auto
