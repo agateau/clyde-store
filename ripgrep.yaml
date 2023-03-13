@@ -1,16 +1,21 @@
 name: ripgrep
-description: ripgrep recursively searches directories for a regex pattern while respecting
-  your gitignore
+description: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 homepage: https://github.com/BurntSushi/ripgrep
 repository: https://github.com/BurntSushi/ripgrep
 releases:
   13.0.0:
-    x86_64-linux:
-      url: https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: ee4e0751ab108b6da4f47c52da187d5177dc371f0f512a7caaec5434e711c091
     x86-windows:
       url: https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-i686-pc-windows-msvc.zip
       sha256: 725fab270e0c7419e0032b8dcf28cb399337be9d4867d4e527a1d9671efecffb
+    x86_64-linux:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: ee4e0751ab108b6da4f47c52da187d5177dc371f0f512a7caaec5434e711c091
+    x86_64-macos:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-apple-darwin.tar.gz
+      sha256: 585c18350cb8d4392461edd6c921e6edd5a97cbfc03b567d7bd440423e118082
+    x86_64-windows:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-pc-windows-msvc.zip
+      sha256: a47ace6f654c5ffa236792fc3ee3fefd9c7e88e026928b44da801acb72124aa8
 installs:
   13.0.0:
     any-any:
@@ -23,7 +28,7 @@ installs:
         doc/rg.1: share/man/man1/
         rg${exe_ext}: bin/
       tests:
-        - rg${exe_ext} --version
+      - rg${exe_ext} --version
     x86_64-windows:
       strip: 1
       files:
@@ -34,4 +39,4 @@ installs:
         doc/GUIDE.md: ${doc_dir}
         rg${exe_ext}: bin/
       tests:
-        - rg${exe_ext} --version
+      - rg${exe_ext} --version
