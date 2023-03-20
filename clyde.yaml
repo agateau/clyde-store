@@ -73,6 +73,16 @@ releases:
     x86_64-windows:
       url: https://github.com/agateau/clyde/releases/download/0.4.1/clyde-0.4.1-x86_64-windows.zip
       sha256: a8f70571d245d6ac6dda3861506cc7fddaf1d04265a739a27956ebdad02adb30
+  0.5.0:
+    x86_64-linux:
+      url: https://github.com/agateau/clyde/releases/download/0.5.0/clyde-0.5.0-x86_64-linux.tar.gz
+      sha256: 96b7feee1c9461660f984b401d2c21a1d263f7ec36ffa63ee41111004c4fef70
+    x86_64-macos:
+      url: https://github.com/agateau/clyde/releases/download/0.5.0/clyde-0.5.0-x86_64-macos.tar.gz
+      sha256: 18048bbc4ce5f3009c696f8c408e7a867bde8862ea9b99e190737a9c80f1e3d4
+    x86_64-windows:
+      url: https://github.com/agateau/clyde/releases/download/0.5.0/clyde-0.5.0-x86_64-windows.zip
+      sha256: 73e31ef27c811e998ee11831536a0fba8cd0529c68b7222c5711c0e586f76975
 installs:
   0.1.0:
     any-any:
@@ -84,5 +94,6 @@ installs:
         clyde${exe_ext}: bin/
         clydetools${exe_ext}: bin/
       tests:
-        - clyde${exe_ext} --version
-        - clydetools${exe_ext} --version
+      - clyde${exe_ext} --version
+      - clydetools${exe_ext} --version
+fetcher: Auto
