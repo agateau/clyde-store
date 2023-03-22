@@ -71,5 +71,7 @@ installs:
         README.md: ${doc_dir}
         bat${exe_ext}: bin/
         bat.1: share/man/man1/
+        autocomplete/bat.bash: ${bash_comp_dir}
+        autocomplete/bat.zsh: ${zsh_comp_dir}
       tests:
         - bat${exe_ext} --version

@@ -1,0 +1,31 @@
+name: clang-format-15
+description: Static-linked version of clang-format
+homepage: https://github.com/muttleyxd/clang-tools-static-binaries
+repository: https://github.com/muttleyxd/clang-tools-static-binaries
+
+# Disable fetcher because this package has an unusual way to publish releases:
+# each GitHub release contain builds of multiple versions of multiple binaries
+# (clang-format, clang-query, clang-tidy)
+fetcher: Off
+
+releases:
+  15.0.2:
+    x86_64-linux:
+      url: https://github.com/muttleyxd/clang-tools-static-binaries/releases/download/master-1d7ec53d/clang-format-15_linux-amd64
+      sha256: 37d9cc769a58146c481639ab297af446ca10a5dd4a6fecae2501e8b35e14b6c1
+    x86_64-macos:
+      url: https://github.com/muttleyxd/clang-tools-static-binaries/releases/download/master-1d7ec53d/clang-format-15_macosx-amd64
+      sha256: 0016504d1be1f62c5f7957d036bfeaa026273613f26d3e8fa2bb612f5b90d36d
+    x86_64-windows:
+      url: https://github.com/muttleyxd/clang-tools-static-binaries/releases/download/master-1d7ec53d/clang-format-15_windows-amd64.exe
+      sha256: 78cfcc5ce138bd2c42d513f38a4c5620c819dcd0fda5c69d15cf4d46957f0fe9
+installs:
+  6.0.0:
+    any:
+      files:
+        ${asset_name}: bin/clang-format-15${exe_ext}
+tests:
+  6.0.0:
+    any:
+      - clang-format-15${exe_ext} -version
+
