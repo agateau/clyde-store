@@ -94,6 +94,25 @@ releases:
     x86_64-windows:
       url: https://github.com/sharkdp/hyperfine/releases/download/v1.16.0/hyperfine-v1.16.0-x86_64-pc-windows-msvc.zip
       sha256: 299b68922f2ddaf8ff8d9a3006fb56d42ce978c71d188bf2b7f2bc690346c3eb
+  1.16.1:
+    aarch64-linux:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.16.1/hyperfine-v1.16.1-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 1f441fb7ea2b2f9f38230e56840f801d1b55e38b1f1c164ed24101b4cea740bf
+    x86-linux:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.16.1/hyperfine-v1.16.1-i686-unknown-linux-musl.tar.gz
+      sha256: 56abf3388323cffa1616fbc2adb15d28adb8b186f2df2166767420530d00d59d
+    x86-windows:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.16.1/hyperfine-v1.16.1-i686-pc-windows-msvc.zip
+      sha256: 06b656c96178213709b0fb943294bfa3f7a59f24e662ce9f903067a911c293e1
+    x86_64-linux:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.16.1/hyperfine-v1.16.1-x86_64-unknown-linux-musl.tar.gz
+      sha256: f5d26e69fd17200f6b32debe0603b0ff8b1c0cdf2f25463be6da9311f6910613
+    x86_64-macos:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.16.1/hyperfine-v1.16.1-x86_64-apple-darwin.tar.gz
+      sha256: f19d22147b5307138524eed5eff2265a116e5ecbaab886bbe0eb02e57cbb3f2c
+    x86_64-windows:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.16.1/hyperfine-v1.16.1-x86_64-pc-windows-msvc.zip
+      sha256: 12f5ddcc4fd587e3c1084e729a5d198bf6eacef5614a4cdfd557475ef5ef9e66
 installs:
   1.10.0:
     any-any:
@@ -103,10 +122,10 @@ installs:
         LICENSE-APACHE: ${doc_dir}
         LICENSE-MIT: ${doc_dir}
         README.md: ${doc_dir}
+        autocomplete/_hyperfine: ${zsh_comp_dir}
+        autocomplete/hyperfine.bash: ${bash_comp_dir}
         hyperfine${exe_ext}: bin/
         hyperfine.1: share/man/man1/
-        autocomplete/hyperfine.bash: ${bash_comp_dir}
-        autocomplete/_hyperfine: ${zsh_comp_dir}
       tests:
       - hyperfine${exe_ext} --version
 fetcher: Auto
