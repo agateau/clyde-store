@@ -60,6 +60,25 @@ releases:
     x86_64-windows:
       url: https://github.com/sharkdp/bat/releases/download/v0.22.1/bat-v0.22.1-x86_64-pc-windows-msvc.zip
       sha256: d14028b3579df7a5e1b85e5b565fffd33b5e4096df0c719f98f8381ce1dcce6d
+  0.23.0:
+    aarch64-linux:
+      url: https://github.com/sharkdp/bat/releases/download/v0.23.0/bat-v0.23.0-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 4c36b2ad3e0f96e42192b333e67d0186cb7518f6ef861c5aba3b7daaa716d863
+    x86-linux:
+      url: https://github.com/sharkdp/bat/releases/download/v0.23.0/bat-v0.23.0-i686-unknown-linux-musl.tar.gz
+      sha256: 35c8ca05926dba6638d4d003ef2db60289da88957ac25ec1cb83a6763ff84cda
+    x86-windows:
+      url: https://github.com/sharkdp/bat/releases/download/v0.23.0/bat-v0.23.0-i686-pc-windows-msvc.zip
+      sha256: f65adcc58cc66176dd1efc02eb7b0c7a26aebb4e0917ffcd66c185ca655eabd6
+    x86_64-linux:
+      url: https://github.com/sharkdp/bat/releases/download/v0.23.0/bat-v0.23.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: e7f97bc826878283775fdb02a53a871fab1be920b921057549b2bc7da81bb771
+    x86_64-macos:
+      url: https://github.com/sharkdp/bat/releases/download/v0.23.0/bat-v0.23.0-x86_64-apple-darwin.tar.gz
+      sha256: 88e83275358467b37ccb40aa6da6bd37b1650e7bd4743b47d7d27c89a9f91ff0
+    x86_64-windows:
+      url: https://github.com/sharkdp/bat/releases/download/v0.23.0/bat-v0.23.0-x86_64-pc-windows-msvc.zip
+      sha256: ff2079e76f59934aed16a8ca5f837e2d76126865fde3f9be9a155e93ac4dccc5
 installs:
   0.21.0:
     any-any:
@@ -69,9 +88,10 @@ installs:
         LICENSE-APACHE: ${doc_dir}
         LICENSE-MIT: ${doc_dir}
         README.md: ${doc_dir}
-        bat${exe_ext}: bin/
-        bat.1: share/man/man1/
         autocomplete/bat.bash: ${bash_comp_dir}
         autocomplete/bat.zsh: ${zsh_comp_dir}
+        bat${exe_ext}: bin/
+        bat.1: share/man/man1/
       tests:
-        - bat${exe_ext} --version
+      - bat${exe_ext} --version
+fetcher: Auto
