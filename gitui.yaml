@@ -21,9 +21,7 @@ installs:
     any:
       files:
         gitui${exe_ext}: bin/
+      tests:
+        - gitui${exe_ext} --version
 fetcher: !GitHub
   arch: x86_64
-tests:
-  0.22.1:
-    any:
-      - gitui${exe_ext} --version

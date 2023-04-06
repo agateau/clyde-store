@@ -21,7 +21,5 @@ installs:
     any-any:
       files:
         ${asset_name}: bin/hadolint${exe_ext}
-tests:
-  2.12.0:
-    any:
-      - hadolint${exe_ext} --version
+      tests:
+        - hadolint${exe_ext} --version
