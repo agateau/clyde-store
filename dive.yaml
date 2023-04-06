@@ -24,7 +24,5 @@ installs:
         dive${exe_ext}: bin/
         README.md: ${doc_dir}
         LICENSE: ${doc_dir}
-tests:
-  0.0.0:
-    any:
-      - dive${exe_ext} --version
+      tests:
+        - dive${exe_ext} --version

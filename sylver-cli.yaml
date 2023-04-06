@@ -66,7 +66,17 @@ releases:
       sha256: 98b3ac4a4fd0d6c41ce0e2e500bb7f29ae0932c29542f8115feaf312ccbb7784
 installs:
   0.2.4:
-    any-any:
+    any-windows:
+      files:
+        sylver${exe_ext}: bin/
+      tests:
+        - sylver${exe_ext} --version
+    any-macos:
+      files:
+        sylver${exe_ext}: bin/
+      tests:
+        - sylver${exe_ext} --version
+    any-linux:
       files:
         sylver${exe_ext}: bin/
 fetcher: Auto

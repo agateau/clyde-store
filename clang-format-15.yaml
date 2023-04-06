@@ -24,8 +24,6 @@ installs:
     any:
       files:
         ${asset_name}: bin/clang-format-15${exe_ext}
-tests:
-  6.0.0:
-    any:
-      - clang-format-15${exe_ext} -version
+      tests:
+        - clang-format-15${exe_ext} -version
 

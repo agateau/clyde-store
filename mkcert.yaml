@@ -27,8 +27,6 @@ installs:
     any-any:
       files:
         ${asset_name}: bin/mkcert${exe_ext}
+      tests:
+        - mkcert${exe_ext} --version
 fetcher: Auto
-tests:
-  0.0.0:
-    any:
-      - mkcert${exe_ext} --version
