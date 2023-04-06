@@ -1,0 +1,34 @@
+name: mkcert
+description: A simple zero-config tool to make locally trusted development certificates with any names you'd like
+homepage: https://mkcert.dev
+repository: https://github.com/FiloSottile/mkcert
+releases:
+  1.4.4:
+    aarch64-linux:
+      url: https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-linux-arm64
+      sha256: b98f2cc69fd9147fe4d405d859c57504571adec0d3611c3eefd04107c7ac00d0
+    aarch64-macos:
+      url: https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-darwin-arm64
+      sha256: c8af0df44bce04359794dad8ea28d750437411d632748049d08644ffb66a60c6
+    aarch64-windows:
+      url: https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-windows-arm64.exe
+      sha256: 793747256c562622d40127c8080df26add2fb44c50906ce9db63b42a5280582e
+    x86_64-linux:
+      url: https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-linux-amd64
+      sha256: 6d31c65b03972c6dc4a14ab429f2928300518b26503f58723e532d1b0a3bbb52
+    x86_64-macos:
+      url: https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-darwin-amd64
+      sha256: a32dfab51f1845d51e810db8e47dcf0e6b51ae3422426514bf5a2b8302e97d4e
+    x86_64-windows:
+      url: https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-windows-amd64.exe
+      sha256: d2660b50a9ed59eada480750561c96abc2ed4c9a38c6a24d93e30e0977631398
+installs:
+  0.0.0:
+    any-any:
+      files:
+        ${asset_name}: bin/mkcert${exe_ext}
+fetcher: Auto
+tests:
+  0.0.0:
+    any:
+      - mkcert${exe_ext} --version
