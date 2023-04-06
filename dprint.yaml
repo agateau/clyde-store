@@ -40,4 +40,6 @@ installs:
     any-any:
       files:
         dprint${exe_ext}: bin/
+      tests:
+        - dprint${exe_ext} --version
 fetcher: Auto
