@@ -1,0 +1,40 @@
+name: vhs
+description: Your CLI home video recorder
+homepage: https://github.com/charmbracelet/vhs
+repository: https://github.com/charmbracelet/vhs
+releases:
+  0.4.0:
+    aarch64-linux:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.4.0/vhs_0.4.0_Linux_arm64.tar.gz
+      sha256: d2fded12cf8d82fe43df2369d71127ec07982fb54b498eda85c06ff41c4ad0f7
+    aarch64-macos:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.4.0/vhs_0.4.0_Darwin_arm64.tar.gz
+      sha256: 5b94f427ba48c0525c7920ff4f179d7f2dc3ca353b6e21d7109b5e929166a920
+    x86-linux:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.4.0/vhs_0.4.0_Linux_i386.tar.gz
+      sha256: e3e497a6b00f49211e91cc6b3feb2698b789e915e29bca98336d0e7394a633d3
+    x86-windows:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.4.0/vhs_0.4.0_Windows_i386.zip
+      sha256: bb8256de18be69f68ed84b4323eecc03ae4bd3e753128d1254306a7ca4e15811
+    x86_64-linux:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.4.0/vhs_0.4.0_Linux_x86_64.tar.gz
+      sha256: 0b370eeb1099cea52dee30617b3105de0d7c807433c7b6248997e8b44cfa52c6
+    x86_64-macos:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.4.0/vhs_0.4.0_Darwin_x86_64.tar.gz
+      sha256: fe24c4ee8375ba053374846e4ac94ab8c900657f6a617b1dff45f8623bb22931
+    x86_64-windows:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.4.0/vhs_0.4.0_Windows_x86_64.zip
+      sha256: 0f2a4f4a5b3596f43895257e81067f9c7998c3f04856e4fc9f165c5d06f735bd
+installs:
+  0.4.0:
+    any-any:
+      files:
+        vhs${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        completions/vhs.bash: ${bash_comp_dir}
+        completions/vhs.zsh: ${zsh_comp_dir}/_vhs
+        manpages/vhs.1.gz: share/man/man1/
+      tests:
+      - vhs${exe_ext} --version
+fetcher: Auto
