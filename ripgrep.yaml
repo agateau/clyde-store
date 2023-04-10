@@ -28,6 +28,7 @@ installs:
         doc/rg.1: share/man/man1/
         rg${exe_ext}: bin/
         complete/rg.bash: ${bash_comp_dir}
+        complete/rg.fish: ${fish_comp_dir}
         complete/_rg: ${zsh_comp_dir}
       tests:
       - rg${exe_ext} --version
@@ -41,6 +42,7 @@ installs:
         doc/GUIDE.md: ${doc_dir}
         rg${exe_ext}: bin/
         complete/rg.bash: ${bash_comp_dir}
+        complete/rg.fish: ${fish_comp_dir}
         complete/_rg: ${zsh_comp_dir}
       tests:
       - rg${exe_ext} --version

@@ -208,6 +208,7 @@ installs:
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
         completions/gum.bash: ${bash_comp_dir}
+        completions/gum.fish: ${fish_comp_dir}
         completions/gum.zsh: ${zsh_comp_dir}/_gum
         gum${exe_ext}: bin/
         manpages/gum.1.gz: share/man/man1/
