@@ -53,6 +53,7 @@ installs:
         doc/xh.1: share/man/man1/
         xh${exe_ext}: bin/
         completions/xh.bash: ${bash_comp_dir}
+        completions/xh.fish: ${fish_comp_dir}
         completions/_xh: ${zsh_comp_dir}
       tests:
       - xh${exe_ext} --version

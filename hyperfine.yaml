@@ -124,6 +124,7 @@ installs:
         README.md: ${doc_dir}
         autocomplete/_hyperfine: ${zsh_comp_dir}
         autocomplete/hyperfine.bash: ${bash_comp_dir}
+        autocomplete/hyperfine.fish: ${fish_comp_dir}
         hyperfine${exe_ext}: bin/
         hyperfine.1: share/man/man1/
       tests:

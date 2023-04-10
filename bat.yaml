@@ -89,6 +89,7 @@ installs:
         LICENSE-MIT: ${doc_dir}
         README.md: ${doc_dir}
         autocomplete/bat.bash: ${bash_comp_dir}
+        autocomplete/bat.fish: ${fish_comp_dir}
         autocomplete/bat.zsh: ${zsh_comp_dir}/_bat
         bat${exe_ext}: bin/
         bat.1: share/man/man1/
