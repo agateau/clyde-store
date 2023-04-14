@@ -10,10 +10,17 @@ releases:
     x86_64-macos:
       url: https://github.com/mrtazz/checkmake/releases/download/0.2.1/checkmake-0.2.1.darwin.amd64
       sha256: ca36ff252020115b186fff6dc28e1b3952e8a4147f62a8350833e82d6464ade9
+  0.2.2:
+    x86_64-linux:
+      url: https://github.com/mrtazz/checkmake/releases/download/0.2.2/checkmake-0.2.2.linux.amd64
+      sha256: bedd033b06f2563809855ec2a9950c7a81acea6cd82937fd2f124e2c1c5fc3d5
+    x86_64-macos:
+      url: https://github.com/mrtazz/checkmake/releases/download/0.2.2/checkmake-0.2.2.darwin.amd64
+      sha256: afaa325d2348043f9a60d3d7ba7803a0a54b760095ea03837c4de357c75478ef
 installs:
   0.2.1:
     any-any:
       files:
         ${asset_name}: bin/checkmake${exe_ext}
       tests:
-        - checkmake --version
+      - checkmake --version
