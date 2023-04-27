@@ -1,0 +1,37 @@
+name: zoxide
+description: A smarter cd command. Supports all major shells.
+homepage: https://github.com/ajeetdsouza/zoxide
+repository: https://github.com/ajeetdsouza/zoxide
+releases:
+  0.9.0:
+    aarch64-linux:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.0/zoxide-0.9.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: 06d71264163f66d4102de51df279bf80128ac80adfab009cf760165b3d3eaac5
+    aarch64-macos:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.0/zoxide-0.9.0-aarch64-apple-darwin.tar.gz
+      sha256: 91429d02e97183cbaba47a93de909d85528c2d3258be392bb695158834fd32f9
+    aarch64-windows:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.0/zoxide-0.9.0-aarch64-pc-windows-msvc.zip
+      sha256: 674b98ef20400d02d1ce5950c83a0fdfa96ea9d720b39d86d828a2111f54e4c5
+    x86_64-linux:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.0/zoxide-0.9.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 291bfd218ee274812264cb5da6a67a00003b4b7637aed915356ec8fd92045e6a
+    x86_64-macos:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.0/zoxide-0.9.0-x86_64-apple-darwin.tar.gz
+      sha256: 5e91baccbb175e57ac4a248cc6146de352f7a229777bd34bb040c1e9fc862317
+    x86_64-windows:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.0/zoxide-0.9.0-x86_64-pc-windows-msvc.zip
+      sha256: 9fa4dd700ab964913034028bf97ddfbcdba00c401125440721d50db060e4050f
+installs:
+  0.9.0:
+    any-any:
+      files:
+        zoxide${exe_ext}: bin/
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        man: share/man
+        completions/zoxide.bash: ${bash_comp_dir}
+        completions/_zoxide: ${zsh_comp_dir}
+      tests:
+      - zoxide${exe_ext} --version
