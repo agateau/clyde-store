@@ -311,6 +311,22 @@ releases:
     x86_64-windows:
       url: https://github.com/nushell/nushell/releases/download/0.79.0/nu-0.79.0-x86_64-pc-windows-msvc.zip
       sha256: 6221e881e35535c1a22e1ca98f8ea00194887f416bfbe665e83392cef9eced4c
+  0.80.0:
+    aarch64-linux:
+      url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-aarch64-unknown-linux-gnu.tar.gz
+      sha256: b02d8a002926e12e5d0b0a04d4af887c7053deb2aaf11e49f6ed82b63ecc25b8
+    aarch64-macos:
+      url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-aarch64-apple-darwin.tar.gz
+      sha256: 9ac65e69b10df5bacaf8f51d96b1843c3a39429599d8f96345b847894de30cca
+    x86_64-linux:
+      url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 97a3ccd53bf4b102123aa93815f409a73515bb5f7bb8fd577a799c7555e8f84a
+    x86_64-macos:
+      url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-x86_64-apple-darwin.tar.gz
+      sha256: 5f1a5b60b402749215949426c9491c83677806c6747f283c05aab1a282d45635
+    x86_64-windows:
+      url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-x86_64-pc-windows-msvc.zip
+      sha256: 8d304b330b17363e3894bdcc0e6ed28c5b60678314c354a73008f1eb23b376ab
 installs:
   0.64.0:
     any-any:
