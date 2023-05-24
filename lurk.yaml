@@ -7,10 +7,14 @@ releases:
     x86_64-linux:
       url: https://github.com/JakWai01/lurk/releases/download/v0.2.9/lurk-x86_64-unknown-linux-gnu.tar.gz
       sha256: 78ce184f6c6ebbfe7a07271adbf2e28e5aeeff730844d148933a1836f744ba69
+  0.3.3:
+    x86_64-linux:
+      url: https://github.com/JakWai01/lurk/releases/download/v0.3.3/lurk-x86_64-unknown-linux-gnu.tar.gz
+      sha256: 90aea785ad12fd02906adc03a28c4472a98d6de27d4b7a91c0c73414869c2254
 installs:
   0.2.9:
     any-linux:
       files:
         lurk: bin/
       tests:
-        - lurk --version
+      - lurk --version
