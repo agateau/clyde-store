@@ -1263,6 +1263,28 @@ releases:
     x86_64-windows:
       url: https://github.com/datreeio/datree/releases/download/1.9.2/datree-cli_1.9.2_windows_x86_64.zip
       sha256: aca76e4aed2287831559df50450b9c6c8797357cdffd8eb67e7755cbb7c7fff5
+  1.9.3:
+    aarch64-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.9.3/datree-cli_1.9.3_Linux_arm64.zip
+      sha256: 78ce422a2f2e545e9b24130bf6c91ba31b1be4dedab103550bdf3689146b8366
+    aarch64-macos:
+      url: https://github.com/datreeio/datree/releases/download/1.9.3/datree-cli_1.9.3_Darwin_arm64.zip
+      sha256: 4a1a0266ba8749487c09ff3d77f964207fb398db30cc349a63ded042d44701b5
+    x86-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.9.3/datree-cli_1.9.3_Linux_386.zip
+      sha256: 875507418e2a1cdfa17469b695a5b38bd65ae1837f9dc486dfc9322019e9ae94
+    x86-windows:
+      url: https://github.com/datreeio/datree/releases/download/1.9.3/datree-cli_1.9.3_windows_386.zip
+      sha256: 0f38504b91c0954e0ab0d280735fb6fc25bb53ffa47e5b3a0f5d19e1ec0588b5
+    x86_64-linux:
+      url: https://github.com/datreeio/datree/releases/download/1.9.3/datree-cli_1.9.3_Linux_x86_64.zip
+      sha256: c971fc46914ef6b4b84f4da44d9de852c9843953eb68203a9f7c14898dbf1264
+    x86_64-macos:
+      url: https://github.com/datreeio/datree/releases/download/1.9.3/datree-cli_1.9.3_Darwin_x86_64.zip
+      sha256: 4afc1754d4b82de5d26663c822dcff3e1118e5d2281a0abe42da50eb0895bbaa
+    x86_64-windows:
+      url: https://github.com/datreeio/datree/releases/download/1.9.3/datree-cli_1.9.3_windows_x86_64.zip
+      sha256: 56dd1dfc8c4810fc0a0cc4c71cc785368c973f59b6b8d0842f96b9655e4aff24
 installs:
   0.2.1:
     any-any:
