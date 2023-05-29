@@ -1,0 +1,37 @@
+name: dufs
+description: A file server that supports static serving, uploading, searching, accessing control, webdav.
+homepage: https://github.com/sigoden/dufs
+repository: https://github.com/sigoden/dufs
+releases:
+  0.33.0:
+    aarch64-linux:
+      url: https://github.com/sigoden/dufs/releases/download/v0.33.0/dufs-v0.33.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: 534586d1ea15b8999032a53004258f2fd55f114ff856c98ffaa09c8d5f08ceec
+    aarch64-macos:
+      url: https://github.com/sigoden/dufs/releases/download/v0.33.0/dufs-v0.33.0-aarch64-apple-darwin.tar.gz
+      sha256: dd69254e59583064b9ef53b73a329eea9ee57ae752cff2c5bea84219cb65c572
+    aarch64-windows:
+      url: https://github.com/sigoden/dufs/releases/download/v0.33.0/dufs-v0.33.0-aarch64-pc-windows-msvc.zip
+      sha256: 7d0f7b233f3daadc2e72d3c7af0be4c8781304bb5959f44d56f455056c6a0bde
+    x86-linux:
+      url: https://github.com/sigoden/dufs/releases/download/v0.33.0/dufs-v0.33.0-i686-unknown-linux-musl.tar.gz
+      sha256: 88595d8f0f70ecfe2f6a4de58a90d0a1d71bbc2973279310dbc280efbe8d229c
+    x86-windows:
+      url: https://github.com/sigoden/dufs/releases/download/v0.33.0/dufs-v0.33.0-i686-pc-windows-msvc.zip
+      sha256: e6a136c087248b8beb9467ac2057c8629f37e93d6c93a19b1d7bf02dd40dc2a9
+    x86_64-linux:
+      url: https://github.com/sigoden/dufs/releases/download/v0.33.0/dufs-v0.33.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: e4162cc0ad78027167c5a4868e74427c88d17fb97c230a07ad60a743b72e52ed
+    x86_64-macos:
+      url: https://github.com/sigoden/dufs/releases/download/v0.33.0/dufs-v0.33.0-x86_64-apple-darwin.tar.gz
+      sha256: 5a276acf77e2be9d12c15c947d585255aece4ca9862e93f9a4fb1cc225f28c32
+    x86_64-windows:
+      url: https://github.com/sigoden/dufs/releases/download/v0.33.0/dufs-v0.33.0-x86_64-pc-windows-msvc.zip
+      sha256: 4d5b55d0f1e67ce759972e29cac97cef1c473cc3d4c21f909ef66bcd27769316
+installs:
+  0.33.0:
+    any-any:
+      files:
+        dufs${exe_ext}: bin/
+      tests:
+      - dufs${exe_ext} --version
