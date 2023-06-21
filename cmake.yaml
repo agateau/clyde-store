@@ -542,6 +542,25 @@ releases:
     x86_64-windows:
       url: https://github.com/Kitware/CMake/releases/download/v3.27.0-rc2/cmake-3.27.0-rc2-windows-x86_64.zip
       sha256: 8c0672c97e4eb4e4f1464582c8e96d23b3f9099fc7c7640cfbc0cceb1f69e38d
+  3.27.0-rc3:
+    aarch64-linux:
+      url: https://github.com/Kitware/CMake/releases/download/v3.27.0-rc3/cmake-3.27.0-rc3-linux-aarch64.tar.gz
+      sha256: d249653343e3ba8ea762471df4900800d843d99997a9a4c583cb69b209f872a8
+    aarch64-windows:
+      url: https://github.com/Kitware/CMake/releases/download/v3.27.0-rc3/cmake-3.27.0-rc3-windows-arm64.zip
+      sha256: 0c5e43ba10d2304c568f438b7a64b1f9c49f7390e196b468340e967705698a4f
+    any-macos:
+      url: https://github.com/Kitware/CMake/releases/download/v3.27.0-rc3/cmake-3.27.0-rc3-macos-universal.tar.gz
+      sha256: c7f53e8e7f5fbbccfdb7ea1009761f958e8853a48f9b0d9fee757cc375b15b9a
+    x86-windows:
+      url: https://github.com/Kitware/CMake/releases/download/v3.27.0-rc3/cmake-3.27.0-rc3-windows-i386.zip
+      sha256: 0aef37d8ac0156a01422369fd25643aad8ba50aeb3622265ac4a346edc490fc6
+    x86_64-linux:
+      url: https://github.com/Kitware/CMake/releases/download/v3.27.0-rc3/cmake-3.27.0-rc3-linux-x86_64.tar.gz
+      sha256: 22901396404f6784c0ee2c356b2ed68c03730dd5ab9af902ba7c41859f4df7cb
+    x86_64-windows:
+      url: https://github.com/Kitware/CMake/releases/download/v3.27.0-rc3/cmake-3.27.0-rc3-windows-x86_64.zip
+      sha256: 858a8533c5dc22ae694aa4f6ebd181f9f3c0f82566eecb197d9bcace3c0b3185
 installs:
   3.20.0:
     any-any:
