@@ -6,16 +6,17 @@ package
 import argparse
 import subprocess
 import sys
-
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import Iterable, List
 
-from get_clyde import find_clyde_snapshot_url, download_clyde
+from get_clyde import download_clyde, find_clyde_snapshot_url
 from tui import progress, warning
 
 
-def run_git(args: List[str], capture_output: bool = False) -> subprocess.CompletedProcess:
+def run_git(
+    args: List[str], capture_output: bool = False
+) -> subprocess.CompletedProcess:
     return subprocess.run(["git"] + args, check=True, capture_output=capture_output)
 
 
@@ -39,7 +40,9 @@ def file_pr(package_file: str, base_branch: str):
         run_git(["checkout", base_branch])
         run_git(["checkout", "-B", branch_name])
     except subprocess.CalledProcessError:
-        warning(f"Failed to create branch '{branch_name}', check it does not already exist.")
+        warning(
+            f"Failed to create branch '{branch_name}', check it does not already exist."
+        )
         return
     run_git(["add", package_file])
     run_git(["commit", "-m", f"Update {name}"])
@@ -88,7 +91,9 @@ def main():
             download_clyde(clyde_url, clyde_dir)
 
             package_files = [Path(x).absolute() for x in args.package_files]
-            subprocess.run(["clydetools", "fetch"] + package_files, check=True, cwd=temp_dir)
+            subprocess.run(
+                ["clydetools", "fetch"] + package_files, check=True, cwd=temp_dir
+            )
 
     base_branch = "next" if args.next else "main"
     for package in get_modified_packages():

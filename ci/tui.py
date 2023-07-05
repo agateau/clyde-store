@@ -1,6 +1,5 @@
 import sys
 
-
 if sys.stdout.isatty():
     ORANGE = "\033[33m"
     CYAN = "\033[36m"
