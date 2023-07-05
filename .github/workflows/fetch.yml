@@ -1,0 +1,23 @@
+name: Fetch
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Fetch
+        run: |
+          ci/fetch
+        env:
+          PYTHONUNBUFFERED: 1
+          CLYDE_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
