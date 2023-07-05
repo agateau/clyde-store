@@ -98,3 +98,6 @@ def download_clyde(url: str, clyde_dir: Path) -> None:
     subprocess.run(cmd, check=True, cwd=clyde_dir)
 
     os.environ["PATH"] = str(clyde_dir) + os.pathsep + os.environ["PATH"]
+
+    progress("Setup")
+    subprocess.run(["clyde", "setup"])
