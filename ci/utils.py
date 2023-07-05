@@ -3,7 +3,6 @@ import platform
 import shutil
 import sys
 
-
 IS_WINDOWS = platform.system() == "Windows"
 IS_LINUX = platform.system() == "Linux"
 IS_MACOS = platform.system() == "Darwin"

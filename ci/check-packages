@@ -7,11 +7,15 @@ import random
 import re
 import subprocess
 import sys
-
 from pathlib import Path
 from typing import List
 
-from get_clyde import find_clyde_snapshot_url, find_clyde_release_url, download_clyde, GITHUB_TOKEN
+from get_clyde import (
+    GITHUB_TOKEN,
+    download_clyde,
+    find_clyde_release_url,
+    find_clyde_snapshot_url,
+)
 from tui import eprint, progress
 from utils import which
 
@@ -24,8 +28,10 @@ RANDOM_COUNT = 8
 
 def check_github_token() -> None:
     if not GITHUB_TOKEN:
-        eprint("CLYDE_GITHUB_TOKEN environment variable not set. Consider defining it"
-               " to avoid being rate-limited.")
+        eprint(
+            "CLYDE_GITHUB_TOKEN environment variable not set. Consider defining it"
+            " to avoid being rate-limited."
+        )
 
 
 def list_modified_files(target: str) -> List[Path]:
@@ -54,9 +60,11 @@ def list_all_packages() -> List[Path]:
 def list_packages_to_check(target: str) -> List[Path]:
     progress("Listing packages to check")
     paths = list_modified_files(target)
-    packages = [x for x in paths if x.suffix == ".yaml"]
+    packages = [x for x in paths if x.suffix == ".yaml" and x.name[0] != "."]
     if has_ci_changed(paths):
-        eprint(f"CI files have changed: adding a random selection of {RANDOM_COUNT} packages")
+        eprint(
+            f"CI files have changed: adding a random selection of {RANDOM_COUNT} packages"
+        )
         all_packages = list_all_packages()
         candidates = list(set(all_packages) - set(packages))
         if len(candidates) <= RANDOM_COUNT:
@@ -75,8 +83,8 @@ def check_packages(packages: List[Path]) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        description=__doc__)
+        formatter_class=argparse.RawDescriptionHelpFormatter, description=__doc__
+    )
 
     parser.add_argument("target", choices=["main", "next"])
     parser.add_argument("-a", "--all", action="store_true")
