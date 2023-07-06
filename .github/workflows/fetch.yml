@@ -26,5 +26,7 @@ jobs:
           ci/fetch *.yaml */index.yaml
         env:
           PYTHONUNBUFFERED: 1
-          CLYDE_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # PR_GITHUB_TOKEN must be a PAT able to open PR, see
+          # https://github.com/peter-evans/create-pull-request/issues/48
+          CLYDE_GITHUB_TOKEN: ${{ secrets.PR_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PR_GITHUB_TOKEN }}
