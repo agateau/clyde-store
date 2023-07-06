@@ -1,6 +1,5 @@
 name: tv
-description: Tidy Viewer is a cross-platform CLI csv pretty printer that uses column
-  styling to maximize viewer enjoyment.
+description: Tidy Viewer is a cross-platform CLI csv pretty printer that uses column styling to maximize viewer enjoyment.
 homepage: https://github.com/alexhallam/tv
 repository: https://github.com/alexhallam/tv
 releases:
@@ -17,11 +16,21 @@ releases:
     x86_64-windows:
       url: https://github.com/alexhallam/tv/releases/download/1.4.30/tidy-viewer-1.4.30-x86_64-pc-windows-msvc.zip
       sha256: 1ea5b930eeae7e7d6b7599fc87fb208bc37c291cc5d55804ba2a1a8629b7ea9c
+  1.5.2:
+    x86-windows:
+      url: https://github.com/alexhallam/tv/releases/download/1.5.2/tidy-viewer-1.5.2-i686-pc-windows-msvc.zip
+      sha256: e827676950cabfc7a44438c39881fd41c89f0d6acd1665f373674aa281a45c02
+    x86_64-macos:
+      url: https://github.com/alexhallam/tv/releases/download/1.5.2/tidy-viewer-1.5.2-x86_64-apple-darwin.tar.gz
+      sha256: 8fcbfab8a7600e0f39cf45d04ef9874dd0767712c7dc037ea3f15c66da580fe6
+    x86_64-windows:
+      url: https://github.com/alexhallam/tv/releases/download/1.5.2/tidy-viewer-1.5.2-x86_64-pc-windows-msvc.zip
+      sha256: b20449ab006ea3c7c04df16da288740d6e1098e1a7d2f608c6b75494eff3ecbe
 installs:
   1.4.30:
-    any:
+    any-any:
       strip: 1
       files:
-        tidy-viewer${exe_ext}: bin/
         README.md: ${doc_dir}
         UNLICENSE: ${doc_dir}
+        tidy-viewer${exe_ext}: bin/
