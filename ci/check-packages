@@ -3,6 +3,7 @@
 Check packages changed between TARGET and HEAD are valid.
 """
 import argparse
+import itertools
 import random
 import re
 import subprocess
@@ -51,7 +52,11 @@ def has_ci_changed(paths: List[Path]) -> bool:
 
 
 def list_all_packages() -> List[Path]:
-    return list(ROOT_DIR.glob("*.yaml")) + list(ROOT_DIR.glob("*/index.yaml"))
+    return [
+        x
+        for x in itertools.chain(ROOT_DIR.glob("*.yaml"), ROOT_DIR.glob("*/index.yaml"))
+        if is_package(x)
+    ]
 
 
 def list_packages_to_check(revision: str) -> List[Path]:
