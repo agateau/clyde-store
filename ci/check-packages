@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Check packages are valid
+Check packages changed between TARGET and HEAD are valid.
 """
 import argparse
 import random
@@ -8,7 +8,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
-from typing import List
+from typing import Iterable, List
 
 from get_clyde import (
     GITHUB_TOKEN,
@@ -17,7 +17,7 @@ from get_clyde import (
     find_clyde_snapshot_url,
 )
 from tui import eprint, progress
-from utils import which
+from utils import is_package, which
 
 CI_DIR = Path(__file__).parent.resolve()
 CLYDE_DIR = CI_DIR / "clyde"
@@ -34,19 +34,16 @@ def check_github_token() -> None:
         )
 
 
-def list_modified_files(target: str) -> List[Path]:
-    cmd = ["git", "diff", "--raw", f"origin/{target}", "HEAD"]
+def list_modified_files(revision: str) -> Iterable[Path]:
+    cmd = ["git", "diff", "--raw", revision, "HEAD"]
     proc = subprocess.run(cmd, check=True, stdout=subprocess.PIPE)
     out = str(proc.stdout, "utf-8")
-    lst = []
     for line in out.split("\n"):
         match = re.search("([A-Z]+)\\d*\t([^\\s]+)$", line)
         if match:
             status, path_str = match.groups()
             if status != "R":
-                path = Path(path_str).resolve()
-                lst.append(path)
-    return lst
+                yield Path(path_str).resolve()
 
 
 def has_ci_changed(paths: List[Path]) -> bool:
@@ -57,10 +54,10 @@ def list_all_packages() -> List[Path]:
     return list(ROOT_DIR.glob("*.yaml")) + list(ROOT_DIR.glob("*/index.yaml"))
 
 
-def list_packages_to_check(target: str) -> List[Path]:
+def list_packages_to_check(revision: str) -> List[Path]:
     progress("Listing packages to check")
-    paths = list_modified_files(target)
-    packages = [x for x in paths if x.suffix == ".yaml" and x.name[0] != "."]
+    paths = list_modified_files(revision)
+    packages = [x for x in paths if is_package(x)]
     if has_ci_changed(paths):
         eprint(
             f"CI files have changed: adding a random selection of {RANDOM_COUNT} packages"
@@ -86,9 +83,19 @@ def main() -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter, description=__doc__
     )
 
-    parser.add_argument("target", choices=["main", "next"])
+    parser.add_argument(
+        "target",
+        metavar="TARGET",
+        choices=["main", "next"],
+        help="The target branch. Must be 'main' or 'next'",
+    )
     parser.add_argument("-a", "--all", action="store_true")
     parser.add_argument("-d", "--dry-run", action="store_true")
+    parser.add_argument(
+        "--rev",
+        metavar="REVISION",
+        help="Check packages changed in REVISION..HEAD instead of origin/TARGET..HEAD",
+    )
 
     args = parser.parse_args()
 
@@ -97,7 +104,8 @@ def main() -> int:
     if args.all:
         packages = list_all_packages()
     else:
-        packages = list_packages_to_check(args.target)
+        revision = args.rev if args.rev else f"origin/{args.target}"
+        packages = list_packages_to_check(revision)
     packages = sorted(packages)
 
     eprint("Packages to check:")

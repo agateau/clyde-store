@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Fetches updates for specified packages, files individual PRs for each modified
-package
+package.
 """
 import argparse
 import subprocess
@@ -12,6 +12,7 @@ from typing import Iterable, List
 
 from get_clyde import download_clyde, find_clyde_snapshot_url
 from tui import progress, warning
+from utils import is_package
 
 
 def run_git(
@@ -20,17 +21,16 @@ def run_git(
     return subprocess.run(["git"] + args, check=True, capture_output=capture_output)
 
 
-def get_modified_packages() -> Iterable[str]:
+def get_modified_packages() -> Iterable[Path]:
     proc = run_git(["status", "--porcelain"], capture_output=True)
     for line in proc.stdout.decode().splitlines():
         if line.startswith(" M "):
-            path = line[3:]
-            if path.endswith(".yaml"):
+            path = Path(line[3:])
+            if is_package(path):
                 yield path
 
 
-def file_pr(package_file: str, base_branch: str):
-    path = Path(package_file)
+def file_pr(path: Path, base_branch: str):
     name = path.stem
     if name == "index":
         name = path.parent.name
@@ -44,7 +44,7 @@ def file_pr(package_file: str, base_branch: str):
             f"Failed to create branch '{branch_name}', check it does not already exist."
         )
         return
-    run_git(["add", package_file])
+    run_git(["add", str(path)])
     run_git(["commit", "-m", f"Update {name}"])
     run_git(["push", "-u", "origin", branch_name])
     subprocess.run(["gh", "pr", "create", "--fill", "--base", base_branch], check=True)
