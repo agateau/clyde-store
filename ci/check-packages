@@ -17,7 +17,7 @@ from get_clyde import (
     find_clyde_snapshot_url,
 )
 from tui import eprint, progress
-from utils import which
+from utils import is_package, which
 
 CI_DIR = Path(__file__).parent.resolve()
 CLYDE_DIR = CI_DIR / "clyde"
@@ -60,7 +60,7 @@ def list_all_packages() -> List[Path]:
 def list_packages_to_check(target: str) -> List[Path]:
     progress("Listing packages to check")
     paths = list_modified_files(target)
-    packages = [x for x in paths if x.suffix == ".yaml" and x.name[0] != "."]
+    packages = [x for x in paths if is_package(x)]
     if has_ci_changed(paths):
         eprint(
             f"CI files have changed: adding a random selection of {RANDOM_COUNT} packages"

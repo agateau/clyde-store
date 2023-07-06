@@ -2,6 +2,7 @@ import os
 import platform
 import shutil
 import sys
+from pathlib import Path
 
 IS_WINDOWS = platform.system() == "Windows"
 IS_LINUX = platform.system() == "Linux"
@@ -13,3 +14,7 @@ def which(cmd: str) -> str:
     if cmd_path is None:
         sys.exit(f"Can't find {cmd} in {os.environ['PATH']}")
     return cmd_path
+
+
+def is_package(path: Path) -> bool:
+    return path.suffix == ".yaml" and path.name[0] != "."
