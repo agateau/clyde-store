@@ -1,16 +1,25 @@
----
 name: jless
-description: "Command-line JSON viewer designed for reading, exploring, and searching through JSON data."
-homepage: "https://jless.io/"
-repository: "https://github.com/PaulJuliusMartinez/jless"
+description: Command-line JSON viewer designed for reading, exploring, and searching through JSON data.
+homepage: https://jless.io/
+repository: https://github.com/PaulJuliusMartinez/jless
 releases:
   0.8.0:
     x86_64-linux:
-      url: "https://github.com/PaulJuliusMartinez/jless/releases/download/v0.8.0/jless-v0.8.0-x86_64-unknown-linux-gnu.zip"
+      url: https://github.com/PaulJuliusMartinez/jless/releases/download/v0.8.0/jless-v0.8.0-x86_64-unknown-linux-gnu.zip
       sha256: 54e0a3db4d95adb2e12fb4c2d696592c31880e6eda391ab6ce5023868d716939
     x86_64-macos:
-      url: "https://github.com/PaulJuliusMartinez/jless/releases/download/v0.8.0/jless-v0.8.0-x86_64-apple-darwin.zip"
+      url: https://github.com/PaulJuliusMartinez/jless/releases/download/v0.8.0/jless-v0.8.0-x86_64-apple-darwin.zip
       sha256: 5fdd41584c8c08e811d32b80d5998740fc5235484dd0ce84ad989965f0833968
+  0.9.0:
+    aarch64-macos:
+      url: https://github.com/PaulJuliusMartinez/jless/releases/download/v0.9.0/jless-v0.9.0-aarch64-apple-darwin.zip
+      sha256: 1967568762e44d3a5a7b09211c55ff9680419878a5a7045876d2cc6870e40390
+    x86_64-linux:
+      url: https://github.com/PaulJuliusMartinez/jless/releases/download/v0.9.0/jless-v0.9.0-x86_64-unknown-linux-gnu.zip
+      sha256: a1e0eb63ef347adc649989ac5c7d2dc896df6d494622b953c86e3a248e733a93
+    x86_64-macos:
+      url: https://github.com/PaulJuliusMartinez/jless/releases/download/v0.9.0/jless-v0.9.0-x86_64-apple-darwin.zip
+      sha256: 8228d44b918af7e904a75df10f85dabf29cdedac17156d870c80968e6836b04f
 installs:
   0.8.0:
     any-any:
