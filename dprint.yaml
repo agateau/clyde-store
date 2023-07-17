@@ -131,6 +131,22 @@ releases:
     x86_64-windows:
       url: https://github.com/dprint/dprint/releases/download/0.39.0/dprint-x86_64-pc-windows-msvc.zip
       sha256: 6e7726628ae1a656e9a889926c49b0d0dc213867e310112e550579512bedac40
+  0.39.1:
+    aarch64-linux:
+      url: https://github.com/dprint/dprint/releases/download/0.39.1/dprint-aarch64-unknown-linux-gnu.zip
+      sha256: 3a91d748c57d8510399d17eb14181c8f2803d9e67f7403ad7043a2c7a30c3568
+    aarch64-macos:
+      url: https://github.com/dprint/dprint/releases/download/0.39.1/dprint-aarch64-apple-darwin.zip
+      sha256: 63aa28e5ee984c029da74f51b53d4b3f979d9b70fce3800eb82486af389d3a99
+    x86_64-linux:
+      url: https://github.com/dprint/dprint/releases/download/0.39.1/dprint-x86_64-unknown-linux-musl.zip
+      sha256: 5e6ff56f68d31ff8411367fa021a15b29092d0d48bcd8b2741953927652da953
+    x86_64-macos:
+      url: https://github.com/dprint/dprint/releases/download/0.39.1/dprint-x86_64-apple-darwin.zip
+      sha256: f4fb55f4361d70a43fd6cefd25328accef0cc52790950261f1d21aabfe97132d
+    x86_64-windows:
+      url: https://github.com/dprint/dprint/releases/download/0.39.1/dprint-x86_64-pc-windows-msvc.zip
+      sha256: 6e7f87393fadd04bee062859c00f71bd7379960c15cebd673b35f3c810a0cee9
 installs:
   0.34.5:
     any-any:
