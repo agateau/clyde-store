@@ -242,6 +242,31 @@ releases:
     x86_64-windows:
       url: https://github.com/rclone/rclone/releases/download/v1.63.0/rclone-v1.63.0-windows-amd64.zip
       sha256: 9e54ead1385e23d4b5c663545001d13db7c653225fe997fcf7d6092ccd2a221a
+  1.63.1:
+    aarch64-linux:
+      url: https://github.com/rclone/rclone/releases/download/v1.63.1/rclone-v1.63.1-linux-arm64.zip
+      sha256: eab46bfb4e6567cd42bc14502cfd207582ed611746fa51a03542c8df619cf8f8
+    aarch64-macos:
+      url: https://github.com/rclone/rclone/releases/download/v1.63.1/rclone-v1.63.1-osx-arm64.zip
+      sha256: 45d5b7799b90d8d6cc2d926d7920383a606842162e41303f5044058f5848892c
+    aarch64-windows:
+      url: https://github.com/rclone/rclone/releases/download/v1.63.1/rclone-v1.63.1-windows-arm64.zip
+      sha256: bbb47c16882b6c5f2e8c1b04229378e28f68734c613321ef0ea2263760f74cd0
+    x86-linux:
+      url: https://github.com/rclone/rclone/releases/download/v1.63.1/rclone-v1.63.1-linux-386.zip
+      sha256: 021040edb489ec8c913d032ed729568d01089ecf2bf2e0ac57c062be9a61eb13
+    x86-windows:
+      url: https://github.com/rclone/rclone/releases/download/v1.63.1/rclone-v1.63.1-windows-386.zip
+      sha256: 895d847eec516f9d8eb2cf8a08408c92523d1430d9dc2e91c5ed5268eb424479
+    x86_64-linux:
+      url: https://github.com/rclone/rclone/releases/download/v1.63.1/rclone-v1.63.1-linux-amd64.zip
+      sha256: ca1cb4b1d9a3e45d0704aa77651b0497eacc3e415192936a5be7f7272f2c94c5
+    x86_64-macos:
+      url: https://github.com/rclone/rclone/releases/download/v1.63.1/rclone-v1.63.1-osx-amd64.zip
+      sha256: e6d749a36fc5258973fff424ebf1728d5c41a4482ea4a2b69a7b99ec837297e7
+    x86_64-windows:
+      url: https://github.com/rclone/rclone/releases/download/v1.63.1/rclone-v1.63.1-windows-amd64.zip
+      sha256: 66ca083757fb22198309b73879831ed2b42309892394bf193ff95c75dff69c73
 installs:
   1.59.0:
     any-any:
