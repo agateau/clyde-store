@@ -129,6 +129,13 @@ releases:
     x86_64-linux:
       url: https://github.com/envoyproxy/envoy/releases/download/v1.26.3/envoy-1.26.3-linux-x86_64
       sha256: 8fae8fdf92e548678396264c379fd1f9328ab8db148c1ba5273162625025efe4
+  1.27.0:
+    aarch64-linux:
+      url: https://github.com/envoyproxy/envoy/releases/download/v1.27.0/envoy-1.27.0-linux-aarch_64
+      sha256: 689ef9ccba53e14689e0cd9c12c661fc9202d4010bebff5b06c80727a53b5dfa
+    x86_64-linux:
+      url: https://github.com/envoyproxy/envoy/releases/download/v1.27.0/envoy-1.27.0-linux-x86_64
+      sha256: 471b610631c1a4629d5d39ea74622e82ea73735c8e968a9d3b76c63ecb69595a
 installs:
   1.13.7:
     any-any:
