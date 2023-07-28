@@ -79,6 +79,25 @@ releases:
     x86_64-windows:
       url: https://github.com/sharkdp/hexyl/releases/download/v0.13.0/hexyl-v0.13.0-x86_64-pc-windows-msvc.zip
       sha256: feef91710f9c400a767ac7e62077057a42eec7c81deac36398517bfb10437d5c
+  0.13.1:
+    aarch64-linux:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.13.1/hexyl-v0.13.1-aarch64-unknown-linux-gnu.tar.gz
+      sha256: bfe2d373cad504e906e4224424fa0dfba8209127b0967701da391f146eabbbd7
+    x86-linux:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.13.1/hexyl-v0.13.1-i686-unknown-linux-musl.tar.gz
+      sha256: 1dffdfc5ccb1a57b4ce2993fe8ca0ada7968faae169b7bf28dfb414c4e95d446
+    x86-windows:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.13.1/hexyl-v0.13.1-i686-pc-windows-msvc.zip
+      sha256: 8339ed3b7b223b1b78f48a4018bc251b7dbaeddc49c4ad42032a652cfb3de9f7
+    x86_64-linux:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.13.1/hexyl-v0.13.1-x86_64-unknown-linux-musl.tar.gz
+      sha256: 8233b278499803fcd22997da1a263ce182cdf9a41343bea772844effcfccb903
+    x86_64-macos:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.13.1/hexyl-v0.13.1-x86_64-apple-darwin.tar.gz
+      sha256: 0ca3defbd30a10fb7a02e91883d8fdfd1c96f2d083e55bec9fcd67d1f84abf06
+    x86_64-windows:
+      url: https://github.com/sharkdp/hexyl/releases/download/v0.13.1/hexyl-v0.13.1-x86_64-pc-windows-msvc.zip
+      sha256: 9bf642d7de65dd83d4431328f9a74282597b66781da58599ebc9a5cb591a32a8
 installs:
   0.10.0:
     any-any:
