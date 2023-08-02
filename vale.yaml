@@ -1,0 +1,39 @@
+name: vale
+description: A markup-aware linter for prose built with speed and extensibility in mind.
+homepage: https://vale.sh
+repository: https://github.com/errata-ai/vale
+releases:
+  2.28.1:
+    aarch64-linux:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.1/vale_2.28.1_Linux_arm64.tar.gz
+      sha256: 37f50a73820ef189065dacfaa3451086c34c27ad8887c09f722132ce1169e264
+    aarch64-macos:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.1/vale_2.28.1_macOS_arm64.tar.gz
+      sha256: ad871eb428398921ce116d9a151f63074535e4afe9fb8dc437dc8c175f87c47e
+    aarch64-windows:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.1/vale_2.28.1_Windows_arm64.zip
+      sha256: b0be55a9e8b2b668368949e399ac7d517223072d355d5072b54bf5244a39d5b2
+    x86-linux:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.1/vale_2.28.1_Linux_386.tar.gz
+      sha256: ebcf1b0d1f54634a2ebd4c771da1e466f4134c7ea2a967c6deb01a4bb6ff71db
+    x86-windows:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.1/vale_2.28.1_Windows_386.zip
+      sha256: 0ddaef14cea486593c5ceaa800b533056c2ac4d984bbd332e8cee9942b28ba7d
+    x86_64-linux:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.1/vale_2.28.1_Linux_64-bit.tar.gz
+      sha256: 006a7da034b359ec8389391fccf4015103f9b9af41d1da74ae6c808fa93a15c2
+    x86_64-macos:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.1/vale_2.28.1_macOS_64-bit.tar.gz
+      sha256: fe5860a11941b74ba6e680fd29942ef6bb8d36ca584bb93bc4a66cc6dfbce94f
+    x86_64-windows:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.1/vale_2.28.1_Windows_64-bit.zip
+      sha256: 181dbda57c6e97b37ecf6091f6c85d8f6d4a208efedc0892603263cea7fcd020
+installs:
+  0.0.0:
+    any-any:
+      files:
+        vale${exe_ext}: bin/
+        README.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+      tests:
+      - vale${exe_ext} --version
