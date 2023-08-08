@@ -11,6 +11,10 @@ releases:
     x86_64-linux:
       url: https://github.com/mapeditor/tiled/releases/download/v1.10.1/Tiled-1.10.1_Linux_Qt-5_x86_64.AppImage
       sha256: 8bd2f8f193f5f41be6f9796ce01866ed566b11e9d86ae41c750356ad30627e2d
+  1.10.2:
+    x86_64-linux:
+      url: https://github.com/mapeditor/tiled/releases/download/v1.10.2/Tiled-1.10.2_Linux_Qt-5_x86_64.AppImage
+      sha256: 9948bfc52c7a8d38568ac842793c56f41a64deaf91892198e10a6688fed22001
   1.9.2:
     x86_64-linux:
       url: https://github.com/mapeditor/tiled/releases/download/v1.9.2/Tiled-1.9.2_Linux_x86_64.AppImage
@@ -20,4 +24,3 @@ installs:
     x86_64-linux:
       files:
         ${asset_name}: bin/tiled
-fetcher: Auto
