@@ -28,12 +28,37 @@ releases:
     x86_64-windows:
       url: https://github.com/errata-ai/vale/releases/download/v2.28.1/vale_2.28.1_Windows_64-bit.zip
       sha256: 181dbda57c6e97b37ecf6091f6c85d8f6d4a208efedc0892603263cea7fcd020
+  2.28.2:
+    aarch64-linux:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.2/vale_2.28.2_Linux_arm64.tar.gz
+      sha256: 832f1a91ce56f1c5b3fbd09614796b40a1cb98a356a223002a63bc2f38431785
+    aarch64-macos:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.2/vale_2.28.2_macOS_arm64.tar.gz
+      sha256: d4b80924349b8111f97704029377458d8af49bed6c3fd7eb44e3184530c9d460
+    aarch64-windows:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.2/vale_2.28.2_Windows_arm64.zip
+      sha256: 172f227276510f187868c041238930127c9ecf157e03f2c2541a4d57b6a14e7b
+    x86-linux:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.2/vale_2.28.2_Linux_386.tar.gz
+      sha256: e2529e48752c76b8375f16c7fcd98a96bb34ee9e2d05591c777d7f8c9e7a1b89
+    x86-windows:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.2/vale_2.28.2_Windows_386.zip
+      sha256: 1e217a8e3ccdb04b63e9ae6408e23dbee7fcfe6b4e393702b68bb08066b6edd3
+    x86_64-linux:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.2/vale_2.28.2_Linux_64-bit.tar.gz
+      sha256: 33f059c8b00dd26fec8cbd9dd2781bbeacf4cd8722c2f984b8850986e3496b0b
+    x86_64-macos:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.2/vale_2.28.2_macOS_64-bit.tar.gz
+      sha256: 49042460e69546a70f00447749cb1b5d22a7bb4eea6001334d29cf098d5035e2
+    x86_64-windows:
+      url: https://github.com/errata-ai/vale/releases/download/v2.28.2/vale_2.28.2_Windows_64-bit.zip
+      sha256: d63478aca307bcc975c303fff086a9be752a0dbc4d7e8a6a34013881ce539054
 installs:
   0.0.0:
     any-any:
       files:
-        vale${exe_ext}: bin/
-        README.md: ${doc_dir}
         LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        vale${exe_ext}: bin/
       tests:
       - vale${exe_ext} --version
