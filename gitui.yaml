@@ -29,6 +29,19 @@ releases:
     x86_64-windows:
       url: https://github.com/extrawurst/gitui/releases/download/v0.23.0/gitui-win.tar.gz
       sha256: b07edf356b40e659ca1181b2a59a5f281adbebbb523a707e3b7b31934f0b8a1a
+  0.24.1:
+    aarch64-linux:
+      url: https://github.com/extrawurst/gitui/releases/download/v0.24.1/gitui-linux-aarch64.tar.gz
+      sha256: b3a6a8eb2aa11cab75d078c2880b71947eb670826ad1451829be6bf29aa58406
+    x86_64-linux:
+      url: https://github.com/extrawurst/gitui/releases/download/v0.24.1/gitui-linux-musl.tar.gz
+      sha256: 609bc0c3ba12c4647560318e5d8e514a2624dc38fb6a060c4b093c460316a522
+    x86_64-macos:
+      url: https://github.com/extrawurst/gitui/releases/download/v0.24.1/gitui-mac.tar.gz
+      sha256: c9690e9bf3b71e501bf19aedda9256ca08781b15a78520a8591e1c67d831e0ca
+    x86_64-windows:
+      url: https://github.com/extrawurst/gitui/releases/download/v0.24.1/gitui-win.tar.gz
+      sha256: 37bfa1881e3f5fc3742f2f2c31c5f5815870c3d50d8c1b0e5410df7ba95e8d15
 installs:
   0.22.1:
     any-any:
