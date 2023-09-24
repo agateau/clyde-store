@@ -32,3 +32,12 @@ installs:
         git-branchless${exe_ext}: bin/
       tests:
       - git-branchless${exe_ext} --version
+  0.8.0:
+    any-any:
+      files:
+        LICENSE-APACHE: ${doc_dir}
+        LICENSE-MIT: ${doc_dir}
+        README.md: ${doc_dir}
+        git-branchless${exe_ext}: bin/
+      tests:
+      - git-branchless${exe_ext} --version
