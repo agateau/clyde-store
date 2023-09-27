@@ -326,6 +326,25 @@ releases:
     x86_64-windows:
       url: https://github.com/terrastruct/d2/releases/download/v0.6.0/d2-v0.6.0-windows-amd64.tar.gz
       sha256: d809adcbdfb786b725f8e957c456f58a36e770df133319be1ea22b6defaab3a3
+  0.6.1:
+    aarch64-linux:
+      url: https://github.com/terrastruct/d2/releases/download/v0.6.1/d2-v0.6.1-linux-arm64.tar.gz
+      sha256: bd91d501630b25efbb597dab57940dbd11790e8e63abe3671521f15e9977e1e3
+    aarch64-macos:
+      url: https://github.com/terrastruct/d2/releases/download/v0.6.1/d2-v0.6.1-macos-arm64.tar.gz
+      sha256: e8fcda5a52cf2a12b0b838bb8cf010c7b05fc38040b320743e44f963ad83e034
+    aarch64-windows:
+      url: https://github.com/terrastruct/d2/releases/download/v0.6.1/d2-v0.6.1-windows-arm64.tar.gz
+      sha256: 134dc0038f09b7f57870bdc6b8d581f76a766c996313173b7c963afba1a92875
+    x86_64-linux:
+      url: https://github.com/terrastruct/d2/releases/download/v0.6.1/d2-v0.6.1-linux-amd64.tar.gz
+      sha256: 94461d374d08cce453a0156e4eaf2b7cc2db81949b9f1176798ea04e5aa7c638
+    x86_64-macos:
+      url: https://github.com/terrastruct/d2/releases/download/v0.6.1/d2-v0.6.1-macos-amd64.tar.gz
+      sha256: 24736421e8eee990cd2cba2ef61b3f91f8270bd00d28dd27cc0a30d88a8baa3d
+    x86_64-windows:
+      url: https://github.com/terrastruct/d2/releases/download/v0.6.1/d2-v0.6.1-windows-amd64.tar.gz
+      sha256: 328681621648f6712489b63a3a2491631f2d75b75dcc35fd6daf214203dbce26
 installs:
   0.1.2:
     any-any:
