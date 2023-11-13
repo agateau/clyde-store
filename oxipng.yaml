@@ -13,6 +13,25 @@ releases:
     x86_64-windows:
       url: https://github.com/shssoichiro/oxipng/releases/download/v8.0.0/oxipng-8.0.0-x86_64-pc-windows-msvc.zip
       sha256: 88e8d2211f9374de69c5701d2d5b74fa5148f7d05bac44a2ef40a4038d3783e3
+  9.0.0:
+    aarch64-linux:
+      url: https://github.com/shssoichiro/oxipng/releases/download/v9.0.0/oxipng-9.0.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: 75b8fb8773498cfe8ac977526658d19f6924d283e0be1ef1ddb954d3155b732a
+    aarch64-macos:
+      url: https://github.com/shssoichiro/oxipng/releases/download/v9.0.0/oxipng-9.0.0-aarch64-apple-darwin.tar.gz
+      sha256: 1a3b9b247425950da84a5455cae8b1ead85a60894331f02ac95b4465c1e59527
+    x86-windows:
+      url: https://github.com/shssoichiro/oxipng/releases/download/v9.0.0/oxipng-9.0.0-i686-pc-windows-msvc.zip
+      sha256: d71a5d82eb241939ebf3fbc9f24bf88037f86e44de868eb5597fb330f65a6fa1
+    x86_64-linux:
+      url: https://github.com/shssoichiro/oxipng/releases/download/v9.0.0/oxipng-9.0.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 77dcbf723cd462ee7592d251341521e5c55f1ccd8fd066274c7872eebb1a4c91
+    x86_64-macos:
+      url: https://github.com/shssoichiro/oxipng/releases/download/v9.0.0/oxipng-9.0.0-x86_64-apple-darwin.tar.gz
+      sha256: dac6e6130d11bd979f3e8f089ff9f712c8668a8f890c9b72082608f057c763ae
+    x86_64-windows:
+      url: https://github.com/shssoichiro/oxipng/releases/download/v9.0.0/oxipng-9.0.0-x86_64-pc-windows-msvc.zip
+      sha256: b6b3ab550424fe53f1618eeb7da2a453d368b5f5400ce8a5f323d6ef7820e861
 installs:
   0.0.0:
     any-any:
@@ -25,7 +44,6 @@ installs:
       tests:
       - oxipng${exe_ext} --version
     any-windows:
-      strip: 0
       files:
         CHANGELOG.md: ${doc_dir}
         LICENSE.txt: ${doc_dir}
@@ -33,4 +51,3 @@ installs:
         oxipng${exe_ext}: bin/
       tests:
       - oxipng${exe_ext} --version
-fetcher: Auto
