@@ -42,7 +42,7 @@ def file_pr(path: Path, base_branch: str):
     if name == "index":
         name = path.parent.name
 
-    branch_name = f"update-{name}"
+    branch_name = f"auto-update-{name}"
     already_exists = has_remote_branch(branch_name)
     if already_exists:
         warning(f"Branch {branch_name} already exists, overwriting it")
