@@ -33,3 +33,16 @@ installs:
         ${asset_name}: bin/sd
       tests:
       - sd${exe_ext} --version
+  1.0.0:
+    any-any:
+      strip: 1
+      files:
+        completions/sd.bash: ${bash_comp_dir}
+        completions/_sd: ${zsh_comp_dir}
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        sd${exe_ext}: bin/
+        sd.1: share/man/man1/
+      tests:
+      - sd${exe_ext} --version
