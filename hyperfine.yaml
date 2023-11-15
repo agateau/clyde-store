@@ -132,6 +132,25 @@ releases:
     x86_64-windows:
       url: https://github.com/sharkdp/hyperfine/releases/download/v1.17.0/hyperfine-v1.17.0-x86_64-pc-windows-msvc.zip
       sha256: 496a4ebad0f461e81aafd38bedc339442a1c569c7256ad43cecbff1617cafaa4
+  1.18.0:
+    aarch64-linux:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.18.0/hyperfine-v1.18.0-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 1174db3a55247a89d8f6161101e15455a2ebdca6948d42e9bc50b78c1d771e4a
+    x86-linux:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.18.0/hyperfine-v1.18.0-i686-unknown-linux-musl.tar.gz
+      sha256: 28dd350872cb0d7dbca3e94aab8109273ef0718275b44a6e834dd114ed8fb04d
+    x86-windows:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.18.0/hyperfine-v1.18.0-i686-pc-windows-msvc.zip
+      sha256: 8debc1af7a57abadb1e2dc886b1a4afd7b50c8297c24bd185c0b0f7b556bbb18
+    x86_64-linux:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.18.0/hyperfine-v1.18.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: ef3855ad6a1bf97055a90dc3dfc5d4a48494cb80344027db932a96341d415193
+    x86_64-macos:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.18.0/hyperfine-v1.18.0-x86_64-apple-darwin.tar.gz
+      sha256: f421263f160f4b4967d0a1420b06a48cb60e429c610096f99bb433dd719685c6
+    x86_64-windows:
+      url: https://github.com/sharkdp/hyperfine/releases/download/v1.18.0/hyperfine-v1.18.0-x86_64-pc-windows-msvc.zip
+      sha256: b43c22a9eb5f3b6e85bcf480e6adb986b2b0c27f52db762f017893bb1ad52794
 installs:
   1.10.0:
     any-any:
