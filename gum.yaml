@@ -91,6 +91,28 @@ releases:
     x86_64-windows:
       url: https://github.com/charmbracelet/gum/releases/download/v0.12.0/gum_0.12.0_Windows_x86_64.zip
       sha256: e109f16227589ef6d1dc02673660e17dffa643107a01f9d600cc6a80a67d42fd
+  0.13.0:
+    aarch64-linux:
+      url: https://github.com/charmbracelet/gum/releases/download/v0.13.0/gum_0.13.0_Linux_arm64.tar.gz
+      sha256: 7bc7b5e1b0efa2f1831c6981bf72262da4733e88116ff671c81faa20b7a94722
+    aarch64-macos:
+      url: https://github.com/charmbracelet/gum/releases/download/v0.13.0/gum_0.13.0_Darwin_arm64.tar.gz
+      sha256: 2374dd7d06707c3372e526f2e6c692f826e5bb83095c3d4af0b0e1b5f8aeb7fa
+    x86-linux:
+      url: https://github.com/charmbracelet/gum/releases/download/v0.13.0/gum_0.13.0_Linux_i386.tar.gz
+      sha256: 20e4a7470128f411d3e0bf936d6315e85f9243d1bb5ff4d081df482f87bb5229
+    x86-windows:
+      url: https://github.com/charmbracelet/gum/releases/download/v0.13.0/gum_0.13.0_Windows_i386.zip
+      sha256: abd256a07bd1298389961a10ff6e7e6060a2b12b22a8a19ba76d94c028edfb90
+    x86_64-linux:
+      url: https://github.com/charmbracelet/gum/releases/download/v0.13.0/gum_0.13.0_Linux_x86_64.tar.gz
+      sha256: d47eb446fdedb03779d74f7d9ac878d98ffd8ac16cf0449573d7f7c56c670e7f
+    x86_64-macos:
+      url: https://github.com/charmbracelet/gum/releases/download/v0.13.0/gum_0.13.0_Darwin_x86_64.tar.gz
+      sha256: 7dc9eb6027083d27bb10676ead0cdd7963368a315e505708e4390d159847ce53
+    x86_64-windows:
+      url: https://github.com/charmbracelet/gum/releases/download/v0.13.0/gum_0.13.0_Windows_x86_64.zip
+      sha256: f362019e494ccf0b21449a5166dfdc86bf7ce1883ff5e2499a3c75d10ca6e1fd
   0.2.0:
     aarch64-linux:
       url: https://github.com/charmbracelet/gum/releases/download/v0.2.0/gum_0.2.0_linux_arm64.tar.gz
