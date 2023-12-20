@@ -30,25 +30,39 @@ def get_modified_packages() -> Iterable[Path]:
                 yield path
 
 
+def has_remote_branch(branch: str) -> bool:
+    proc = run_git(
+        ["branch", "--remote", "--list", f"origin/{branch}"], capture_output=True
+    )
+    return proc.stdout.strip() != b""
+
+
 def file_pr(path: Path, base_branch: str):
     name = path.stem
     if name == "index":
         name = path.parent.name
 
-    branch_name = f"update-{name}"
-    try:
-        run_git(["checkout", base_branch])
-        run_git(["checkout", "-B", branch_name])
-    except subprocess.CalledProcessError:
-        warning(
-            f"Failed to create branch '{branch_name}', check it does not already exist."
-        )
-        return
+    branch_name = f"auto-update-{name}"
+    already_exists = has_remote_branch(branch_name)
+    if already_exists:
+        warning(f"Branch {branch_name} already exists, overwriting it")
+    run_git(["checkout", "-B", branch_name, base_branch])
+
     run_git(["add", str(path)])
     run_git(["commit", "-m", f"Update {name}"])
-    run_git(["push", "-u", "origin", branch_name])
-    subprocess.run(["gh", "pr", "create", "--fill", "--base", base_branch], check=True)
-    subprocess.run(["gh", "pr", "merge", "--auto", "-dm"], check=True)
+
+    # Push
+    push_cmd = ["push", "-u", "origin", branch_name]
+    if already_exists:
+        push_cmd.append("--force-with-lease")
+    run_git(push_cmd)
+
+    # Open PR
+    if not already_exists:
+        subprocess.run(
+            ["gh", "pr", "create", "--fill", "--base", base_branch], check=True
+        )
+        subprocess.run(["gh", "pr", "merge", "--auto", "-dm"], check=True)
     run_git(["checkout", "-"])
 
 
