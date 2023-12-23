@@ -1,0 +1,52 @@
+name: node16
+description: Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+homepage: https://nodejs.org/
+repository: ''
+releases:
+  16.16.0:
+    aarch64-linux:
+      url: https://nodejs.org/dist/v16.16.0/node-v16.16.0-linux-arm64.tar.xz
+      sha256: 6cb8f1353480646c1cd8ab9911995e5591e1a97811f43ea4ab3e946a57e7c80e
+    aarch64-macos:
+      url: https://nodejs.org/dist/v16.16.0/node-v16.16.0-darwin-arm64.tar.gz
+      sha256: 167721c2d72402e54adc0f8c87ca840796216c4d98946509d73221b771ad3e4c
+    x86_64-linux:
+      url: https://nodejs.org/dist/v16.16.0/node-v16.16.0-linux-x64.tar.xz
+      sha256: edcb6e9bb049ae365611aa209fc03c4bfc7e0295dbcc5b2f1e710ac70384a8ec
+    x86_64-macos:
+      url: https://nodejs.org/dist/v16.16.0/node-v16.16.0-darwin-x64.tar.gz
+      sha256: 982edd0fad364ad6e2d72161671544ab9399bd0ca8c726bde3cd07775c4c709a
+  16.20.2:
+    aarch64-linux:
+      url: https://nodejs.org/dist/v16.20.2/node-v16.20.2-linux-arm64.tar.xz
+      sha256: e88d86154d1ce53dc52fd74d79d4bfdf0b05f58c0bb2639adfa36e9378b770c4
+    aarch64-macos:
+      url: https://nodejs.org/dist/v16.20.2/node-v16.20.2-darwin-arm64.tar.xz
+      sha256: fb87e01f0b2c8545afb8dd0769f7eb2439fb4fc8731efa956744fb0e0bc98105
+    x86_64-linux:
+      url: https://nodejs.org/dist/v16.20.2/node-v16.20.2-linux-x64.tar.xz
+      sha256: 874463523f26ed528634580247f403d200ba17a31adf2de98a7b124c6eb33d87
+    x86_64-macos:
+      url: https://nodejs.org/dist/v16.20.2/node-v16.20.2-darwin-x64.tar.xz
+      sha256: 107ae8d56a9c0aa85c8952231ac44d5e6df7c1ea3e9a36e2ef022ae36c98ccec
+    x86_64-windows:
+      url: https://nodejs.org/dist/v16.20.2/node-v16.20.2-win-x64.zip
+      sha256: f8bb35f6c08dc7bf14ac753509c06ed1a7ebf5b390cd3fbdc8f8c1aedd020ec3
+installs:
+  16.16.0:
+    any-any:
+      strip: 1
+      files:
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        bin: ''
+        include: ''
+        lib: ''
+        share: ''
+      tests:
+      - corepack${exe_ext} --version
+      - node${exe_ext} --version
+      - npm${exe_ext} --version
+      - npx${exe_ext} --version
+fetcher: Script
