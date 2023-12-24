@@ -26,4 +26,3 @@ installs:
         ${asset_name}: bin/clang-format-6${exe_ext}
       tests:
         - clang-format-6${exe_ext} -version
-

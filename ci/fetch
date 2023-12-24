@@ -1,51 +1,68 @@
 #!/usr/bin/env python3
 """
 Fetches updates for specified packages, files individual PRs for each modified
-package
+package.
 """
 import argparse
 import subprocess
 import sys
-
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import Iterable, List
 
-from get_clyde import find_clyde_snapshot_url, download_clyde
+from get_clyde import download_clyde, find_clyde_snapshot_url
 from tui import progress, warning
+from utils import is_package
 
 
-def run_git(args: List[str], capture_output: bool = False) -> subprocess.CompletedProcess:
+def run_git(
+    args: List[str], capture_output: bool = False
+) -> subprocess.CompletedProcess:
     return subprocess.run(["git"] + args, check=True, capture_output=capture_output)
 
 
-def get_modified_packages() -> Iterable[str]:
+def get_modified_packages() -> Iterable[Path]:
     proc = run_git(["status", "--porcelain"], capture_output=True)
     for line in proc.stdout.decode().splitlines():
         if line.startswith(" M "):
-            path = line[3:]
-            if path.endswith(".yaml"):
+            path = Path(line[3:])
+            if is_package(path):
                 yield path
 
 
-def file_pr(package_file: str, base_branch: str):
-    path = Path(package_file)
+def has_remote_branch(branch: str) -> bool:
+    proc = run_git(
+        ["branch", "--remote", "--list", f"origin/{branch}"], capture_output=True
+    )
+    return proc.stdout.strip() != b""
+
+
+def file_pr(path: Path, base_branch: str):
     name = path.stem
     if name == "index":
         name = path.parent.name
 
     branch_name = f"update-{name}"
-    try:
-        run_git(["checkout", base_branch])
-        run_git(["checkout", "-b", branch_name])
-    except subprocess.CalledProcessError:
-        warning(f"Failed to create branch '{branch_name}', check it does not already exist.")
-        return
-    run_git(["add", package_file])
+    already_exists = has_remote_branch(branch_name)
+    if already_exists:
+        warning(f"Branch {branch_name} already exists, overwriting it")
+    run_git(["checkout", "-B", branch_name, base_branch])
+
+    run_git(["add", str(path)])
     run_git(["commit", "-m", f"Update {name}"])
-    run_git(["push", "-u", "origin", branch_name])
-    subprocess.run(["gh", "pr", "create", "--fill", "--base", base_branch], check=True)
-    subprocess.run(["gh", "pr", "merge", "--auto", "-dm"], check=True)
+
+    # Push
+    push_cmd = ["push", "-u", "origin", branch_name]
+    if already_exists:
+        push_cmd.append("--force-with-lease")
+    run_git(push_cmd)
+
+    # Open PR
+    if not already_exists:
+        subprocess.run(
+            ["gh", "pr", "create", "--fill", "--base", base_branch], check=True
+        )
+        subprocess.run(["gh", "pr", "merge", "--auto", "-dm"], check=True)
     run_git(["checkout", "-"])
 
 
@@ -88,7 +105,9 @@ def main():
             download_clyde(clyde_url, clyde_dir)
 
             package_files = [Path(x).absolute() for x in args.package_files]
-            subprocess.run(["clydetools", "fetch"] + package_files, check=True, cwd=temp_dir)
+            subprocess.run(
+                ["clydetools", "fetch"] + package_files, check=True, cwd=temp_dir
+            )
 
     base_branch = "next" if args.next else "main"
     for package in get_modified_packages():

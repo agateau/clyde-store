@@ -4,7 +4,6 @@ import re
 import shutil
 import subprocess
 import sys
-
 from pathlib import Path
 from typing import BinaryIO, Dict, Pattern
 from urllib import request
@@ -86,9 +85,10 @@ def download_clyde(url: str, clyde_dir: Path) -> None:
 
     archive_path = clyde_dir / ("clyde.zip" if IS_WINDOWS else "clyde.tar.gz")
     progress(f"Downloading archive from {url}")
-    subprocess.run([which("curl"), "--retry", str(CURL_RETRY), "-L", url,
-                    "-o", str(archive_path)],
-                   check=True)
+    subprocess.run(
+        [which("curl"), "--retry", str(CURL_RETRY), "-L", url, "-o", str(archive_path)],
+        check=True,
+    )
 
     progress("Unpacking archive")
     if IS_WINDOWS:
@@ -98,3 +98,6 @@ def download_clyde(url: str, clyde_dir: Path) -> None:
     subprocess.run(cmd, check=True, cwd=clyde_dir)
 
     os.environ["PATH"] = str(clyde_dir) + os.pathsep + os.environ["PATH"]
+
+    progress("Setup")
+    subprocess.run(["clyde", "setup"])

@@ -1,0 +1,38 @@
+name: dust
+description: A more intuitive version of du in rust
+homepage: https://github.com/bootandy/dust
+repository: https://github.com/bootandy/dust
+releases:
+  0.0.0:
+    any-any:
+      url: https://pkg.example.com/download/pkg
+      sha256: '0'
+  0.8.6:
+    aarch64-linux:
+      url: https://github.com/bootandy/dust/releases/download/v0.8.6/dust-v0.8.6-aarch64-unknown-linux-musl.tar.gz
+      sha256: dbf4d5d8828597ff06bc00f0480bef1efe736983f6c8373d384ffd05c88feac6
+    x86-linux:
+      url: https://github.com/bootandy/dust/releases/download/v0.8.6/dust-v0.8.6-i686-unknown-linux-musl.tar.gz
+      sha256: e0645a86082de475c53aa243b8c70ec26ff810e54cd76eca00851dd47cecb4d1
+    x86-windows:
+      url: https://github.com/bootandy/dust/releases/download/v0.8.6/dust-v0.8.6-i686-pc-windows-msvc.zip
+      sha256: f77f02c1dc2125bc389eb7e8fb04ea3dc511770eda4b20fad55908d45087d8f5
+    x86_64-linux:
+      url: https://github.com/bootandy/dust/releases/download/v0.8.6/dust-v0.8.6-x86_64-unknown-linux-musl.tar.gz
+      sha256: 06e9bcac22ba29e74395dde046cfd5b260cf6fabab48e1ed3dfc017b4e8bada7
+    x86_64-macos:
+      url: https://github.com/bootandy/dust/releases/download/v0.8.6/dust-v0.8.6-x86_64-apple-darwin.tar.gz
+      sha256: 82310ca3e4f4f9e4d8d0aad29116e5dde4cda39a571ccb157eaa5ff0441d907b
+    x86_64-windows:
+      url: https://github.com/bootandy/dust/releases/download/v0.8.6/dust-v0.8.6-x86_64-pc-windows-msvc.zip
+      sha256: 8eafe818ba2e2fe86ef02e9c67ccf7977d71f6614c3ca370429cd89b1bce83fc
+installs:
+  0.0.0:
+    any-any:
+      strip: 1
+      files:
+        dust${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+      tests:
+      - dust${exe_ext} --version
