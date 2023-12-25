@@ -3,10 +3,10 @@ name: Main
 on:
   pull_request:
     branches:
-      - main
+      - next
   push:
     branches:
-      - main
+      - next
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
@@ -17,7 +17,7 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - ubuntu-20.04
+          - ubuntu-22.04
           - macos-11
           - windows-2019
 
@@ -46,4 +46,4 @@ jobs:
           fi
           export PYTHONUNBUFFERED=1
           export CLYDE_GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}"
-          ci/check-packages main $check_package_args
+          ci/check-packages next $check_package_args

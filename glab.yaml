@@ -180,6 +180,182 @@ releases:
     x86_64-windows:
       url: https://gitlab.com/gitlab-org/cli/-/releases/v1.27.1/downloads/glab_1.27.1_Windows_x86_64.zip
       sha256: cb3606abafc083544f8dde08bdc2de4712c9677436c4cf4617f7ce60fdf8463b
+  1.28.0:
+    aarch64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.0/downloads/glab_1.28.0_Linux_arm64.tar.gz
+      sha256: 047797f7a29931e62e53852d4ac0335a45ee8469015decb2c0b86482f42aa81e
+    aarch64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.0/downloads/glab_1.28.0_macOS_arm64.tar.gz
+      sha256: 4d2ae650179f766773e678f10e2852541e7d95d49f337e5571799a46d5e73f7a
+    x86-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.0/downloads/glab_1.28.0_Linux_i386.tar.gz
+      sha256: 75962022a6af71e993c793c5927b5a8807367e3dc42de97a77cc48089e2ebfef
+    x86-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.0/downloads/glab_1.28.0_Windows_i386.zip
+      sha256: c1f76dea591688904dbb6bdb717a742e12e5cfa51ef757b89a728a744d99da7e
+    x86_64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.0/downloads/glab_1.28.0_Linux_x86_64.tar.gz
+      sha256: 6d208d9d9b5f363dc5e1c68e4d0718e42f130d61276264549ff35e56f3225eea
+    x86_64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.0/downloads/glab_1.28.0_macOS_x86_64.tar.gz
+      sha256: 63bc0e50a7331b36fed7679fdada55b75ca63b2cfedf71b9ab2db3f5b18e9239
+    x86_64-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.0/downloads/glab_1.28.0_Windows_x86_64.zip
+      sha256: c48adb8c81b976e479ff91e66c1e25cce3414bdd2d156e47ecb51eb57be92eac
+  1.28.1:
+    aarch64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.1/downloads/glab_1.28.1_Linux_arm64.tar.gz
+      sha256: d8446c27ced2f026e16fa91aba2c3214da3caeb7d1eed0febbc015e3ddd332ac
+    aarch64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.1/downloads/glab_1.28.1_macOS_arm64.tar.gz
+      sha256: 632709da48a71520dcb459c88d343c3a2df4b6ad7a6c88c5adf80b16031297c1
+    x86-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.1/downloads/glab_1.28.1_Linux_i386.tar.gz
+      sha256: fa4182053d29bc547445b26c178280be0228d6bb2bd3b959dc564bb0e01b5dd6
+    x86-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.1/downloads/glab_1.28.1_Windows_i386.zip
+      sha256: 37e4a3d325bf8ba0d0baedf56fd09cad883d6e627b88e8708655fa6f889b67d1
+    x86_64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.1/downloads/glab_1.28.1_Linux_x86_64.tar.gz
+      sha256: d6c1f7fb66ac17fb0d4e7f1ff383a772a62090ec863ef263af257a01fe4a7968
+    x86_64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.1/downloads/glab_1.28.1_macOS_x86_64.tar.gz
+      sha256: cece2e72f3adda9964b9c9d6d960d59a2ed9e80f41833408c27066a31591cb44
+    x86_64-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.28.1/downloads/glab_1.28.1_Windows_x86_64.zip
+      sha256: 09064f7408565af9a7faab988d67e29f478c95381ff695c7bdfd0eb974682ecf
+  1.29.4:
+    aarch64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.29.4/downloads/glab_1.29.4_Linux_arm64.tar.gz
+      sha256: adc569bfbd9735944490370c65626e9c3c41683a60de2c22affbe265ced3feb7
+    aarch64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.29.4/downloads/glab_1.29.4_macOS_arm64.tar.gz
+      sha256: db5352062150b47d746412c37a4323ca92b92e10d6304e076107f4ddcb7e9035
+    x86-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.29.4/downloads/glab_1.29.4_Linux_i386.tar.gz
+      sha256: f80a8ccd33ec3d5c9241e56e9d736896853e2e773dcef9a9a6fb963e95b26c27
+    x86-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.29.4/downloads/glab_1.29.4_Windows_i386.zip
+      sha256: f4ecc96c9934632ac74c099f75e544d5a95da7b24f13160fb6ae0635cac9f6f0
+    x86_64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.29.4/downloads/glab_1.29.4_Linux_x86_64.tar.gz
+      sha256: 84930d2bd7effaa348ec0455fa13e53b210cc7d1dd46f6e4341444505627204e
+    x86_64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.29.4/downloads/glab_1.29.4_macOS_x86_64.tar.gz
+      sha256: 033ae29bc29b3abeee061b7962da2c4f956421de752c1cf6b6b3e712a812f747
+    x86_64-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.29.4/downloads/glab_1.29.4_Windows_x86_64.zip
+      sha256: 868fdf53bee1a34ad7596f11c5cf84e462bf00eee8749ed54d39205af0ccb75d
+  1.30.0:
+    aarch64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.30.0/downloads/glab_1.30.0_Linux_arm64.tar.gz
+      sha256: 52c072f64290d33a5ea6602aae07f57d085b784b2d36af94d871aece4eb1f32e
+    aarch64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.30.0/downloads/glab_1.30.0_macOS_arm64.tar.gz
+      sha256: 8419d9c6389a6478ca4d255902211e3ae1bee7732b7b44c76f9ade1796b60635
+    x86-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.30.0/downloads/glab_1.30.0_Linux_i386.tar.gz
+      sha256: 61a9d0de87a59aedc0fa191f13afa875ffb9f67c07ef1781b06630063182cc81
+    x86-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.30.0/downloads/glab_1.30.0_Windows_i386.zip
+      sha256: 8a2f44e8738fc3b89192673c72eb29445eb50229ed3d58cbfe082d99a14697d6
+    x86_64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.30.0/downloads/glab_1.30.0_Linux_x86_64.tar.gz
+      sha256: e578cefe5d5c38d0ec0fed44da9a85fe9a8bdf055b0822aa1d0a89e5dd014614
+    x86_64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.30.0/downloads/glab_1.30.0_macOS_x86_64.tar.gz
+      sha256: b218e4278b1b6a50790ba24f7e401df508737b7de7d05921710ffa21c29c082d
+    x86_64-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.30.0/downloads/glab_1.30.0_Windows_x86_64.zip
+      sha256: c305bc83a3afa4d603b65439048e23050068fd49ce4f003c4723e1c94e6719df
+  1.31.0:
+    aarch64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.31.0/downloads/glab_1.31.0_Linux_arm64.tar.gz
+      sha256: b58cf560980ab82c66e87d862ac593adff48027f1bd2b723c2e2b677ec8582f4
+    aarch64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.31.0/downloads/glab_1.31.0_macOS_arm64.tar.gz
+      sha256: af41c65c65adc418939fd71f205ce2ec7727428de71aab79dc2b00aab4d69446
+    x86-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.31.0/downloads/glab_1.31.0_Linux_i386.tar.gz
+      sha256: 8b1e3c95e3f209775596469b75ea1b4e9947656d1f123bccb30f393e27fc983e
+    x86-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.31.0/downloads/glab_1.31.0_Windows_i386.zip
+      sha256: 8423f8be936a4b2db4e0269aa4d1ee5eea442e2493a10994e660bdd67d90f48e
+    x86_64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.31.0/downloads/glab_1.31.0_Linux_x86_64.tar.gz
+      sha256: 055b0747c399e6fac89b6f4ee179fd334d02504475235d579aa5a058d9b5d08c
+    x86_64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.31.0/downloads/glab_1.31.0_macOS_x86_64.tar.gz
+      sha256: eefe9a65a9df0eb7d1bd377fc5d2387dd002efdf7241e49aebd7e0088b636e85
+    x86_64-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.31.0/downloads/glab_1.31.0_Windows_x86_64.zip
+      sha256: 79aaf4714a09af23f00b116c6f41db04d185070813ea2cd8431e50e47794de59
+  1.32.0:
+    aarch64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.32.0/downloads/glab_1.32.0_Linux_arm64.tar.gz
+      sha256: 6aa948a07dfe2a790ee1613fcc4a4a939f49bf6f5702dd3c859e361a7443b4b4
+    aarch64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.32.0/downloads/glab_1.32.0_macOS_arm64.tar.gz
+      sha256: 6eb1c42fe7b154f92dfe1ff398ae777cca3e801facedde4db37355ff9eadbca4
+    x86-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.32.0/downloads/glab_1.32.0_Linux_i386.tar.gz
+      sha256: ddcf076d8c82c850863ca44c1da50da1aea7e356796754dc44048dbc3e01f111
+    x86-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.32.0/downloads/glab_1.32.0_Windows_i386.zip
+      sha256: 46ee446da3e40458411fccbfc2eddb12cd0d763ce0d94bfca1c4974d78aae87d
+    x86_64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.32.0/downloads/glab_1.32.0_Linux_x86_64.tar.gz
+      sha256: 80732fed6279b4c7618198d9b685765d5ff8135a3dfb5d678f0a953923a9c920
+    x86_64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.32.0/downloads/glab_1.32.0_macOS_x86_64.tar.gz
+      sha256: 598bb467d4cbf2abf4d343155fe0d46d90745808feb0029eec0f233d03cd484b
+    x86_64-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.32.0/downloads/glab_1.32.0_Windows_x86_64.zip
+      sha256: 01a93814e7a0f0dd0b7466edb9baba057eb0656f3559258c2fc6a38b86938552
+  1.33.0:
+    aarch64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.33.0/downloads/glab_1.33.0_Linux_arm64.tar.gz
+      sha256: ec2fac44bdf9644d51031b25e51f42ed3f4a5b98133729c163a09e9b44fb128f
+    aarch64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.33.0/downloads/glab_1.33.0_macOS_arm64.tar.gz
+      sha256: dc824524dd8033486e793a98dac399a26a07f933d8699c07a0a24dbe6326a8f5
+    x86-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.33.0/downloads/glab_1.33.0_Linux_i386.tar.gz
+      sha256: b92bb1acda5e10f2ce1e6338c8ac87098adf0c21e20a7146c31dcf900e7f4dbe
+    x86-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.33.0/downloads/glab_1.33.0_Windows_i386.zip
+      sha256: 60a3344319960646b8db818cf166ec14da8df4676e7652533fe7697a6cbf5d6e
+    x86_64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.33.0/downloads/glab_1.33.0_Linux_x86_64.tar.gz
+      sha256: 6dc80b78bfcc962ef024e12cf6c78d528c66900c86d3e267f5f9c56f032f667e
+    x86_64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.33.0/downloads/glab_1.33.0_macOS_x86_64.tar.gz
+      sha256: 62d7cd40e4b92d9e7947df3d3214870a1f540f40685bb65f713a01e2f87db3ba
+    x86_64-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.33.0/downloads/glab_1.33.0_Windows_x86_64.zip
+      sha256: 6544ffa47f299cb43b25e40cf6edf0312364d44942f83ec3c7c996daa3b5d57d
+  1.35.0:
+    aarch64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.35.0/downloads/glab_1.35.0_Linux_arm64.tar.gz
+      sha256: c8b68264fe225fcfd655e925e7c4f29ce3745dbbc8a0393455ae553e16412d42
+    aarch64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.35.0/downloads/glab_1.35.0_macOS_arm64.tar.gz
+      sha256: 7da20eb6e12a4d02e1ef2cbdc14a2c0247e15d423e247c44ff799841cff40957
+    x86-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.35.0/downloads/glab_1.35.0_Linux_i386.tar.gz
+      sha256: 89de3f7d0d7709bd5d58a83021ff3093fc946f32e338776cdf4c1ddf70aad333
+    x86-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.35.0/downloads/glab_1.35.0_Windows_i386.zip
+      sha256: 80bf5bbd907f2d5a5cb0e399737bbf161040a7c525c4d27b1c0a3bf07ccf69ab
+    x86_64-linux:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.35.0/downloads/glab_1.35.0_Linux_x86_64.tar.gz
+      sha256: c9ba11d0e8eb59e9f946fa2be5658c590c429be8536a3fa6eed13c89cbe3c0a6
+    x86_64-macos:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.35.0/downloads/glab_1.35.0_macOS_x86_64.tar.gz
+      sha256: 9c510546d071e7f6363af4b18da5364be476c9a5862fa5250f656d37ba53ddfe
+    x86_64-windows:
+      url: https://gitlab.com/gitlab-org/cli/-/releases/v1.35.0/downloads/glab_1.35.0_Windows_x86_64.zip
+      sha256: ed9e88f2cd60c99ebc2cda4c351f39bd291878100f9af4d5fade885e0abdb6da
 installs:
   1.21.0:
     any-any:
@@ -198,4 +374,3 @@ installs:
         bin/glab${exe_ext}: bin/
       tests:
       - glab${exe_ext} --version
-fetcher: Auto

@@ -28,6 +28,81 @@ releases:
     x86_64-windows:
       url: https://github.com/jesseduffield/lazydocker/releases/download/v0.20.0/lazydocker_0.20.0_Windows_x86_64.zip
       sha256: a7e09924ddce2a9053705cc57ded59aa39aad51d189d86c147d5d0433af01b60
+  0.21.0:
+    aarch64-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.0/lazydocker_0.21.0_Linux_arm64.tar.gz
+      sha256: a9ad42eed319ef1f958acd944b2044469a0210662084fc41d1df67b54c733f31
+    aarch64-macos:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.0/lazydocker_0.21.0_Darwin_arm64.tar.gz
+      sha256: 78dfcd7a0a0e0fec2ce092ee97d930483eb902f4284a5419fa0bc14f83c6bd7e
+    aarch64-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.0/lazydocker_0.21.0_Windows_arm64.zip
+      sha256: 51581c9f782260c5f3d7910b8df00072d5674bf61f5a26f7f49fe42369e7686c
+    x86-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.0/lazydocker_0.21.0_Linux_x86.tar.gz
+      sha256: ec701477c79f5aa8a92076d41f51218439d7d90d04c8f42ab9b3afe761520aec
+    x86-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.0/lazydocker_0.21.0_Windows_x86.zip
+      sha256: 3cd99e13924dd60902d3388b0592c5a2543be9161c7e895e1247d62172b4fb64
+    x86_64-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.0/lazydocker_0.21.0_Linux_x86_64.tar.gz
+      sha256: b81335d0584977b6853c9d671be957f886daa51819efeba2b0a8804ea21b34df
+    x86_64-macos:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.0/lazydocker_0.21.0_Darwin_x86_64.tar.gz
+      sha256: 0d00faef6cd4569e868bd21742187741fce4458f5b13c498702b2ecd3c1adc35
+    x86_64-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.0/lazydocker_0.21.0_Windows_x86_64.zip
+      sha256: 72d72663d5f92035f8e35237dc092805ebf55a6bac14186c70e55a5821579ecc
+  0.21.1:
+    aarch64-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.1/lazydocker_0.21.1_Linux_arm64.tar.gz
+      sha256: d17bf2a7706eb06dda9a5f8fdc16ef75c8fda428e6bd1d312a61f70ad588797d
+    aarch64-macos:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.1/lazydocker_0.21.1_Darwin_arm64.tar.gz
+      sha256: 6914274bcbe7e13a8a21fa938c84a62731b1164306e1d031ac4613a6cfebbe08
+    aarch64-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.1/lazydocker_0.21.1_Windows_arm64.zip
+      sha256: 8652dfc739e061514fb3a2c2a46db19ad6d6a43ab990cee47c18630d243392df
+    x86-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.1/lazydocker_0.21.1_Linux_x86.tar.gz
+      sha256: 0e77099bcd7bb515abf150a58a58c92e377073d0e5c4c8e60813cab56194c889
+    x86-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.1/lazydocker_0.21.1_Windows_x86.zip
+      sha256: 0899dd1baacf738f649fc95586fbab2427773975309407bb110ff8943f1819a6
+    x86_64-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.1/lazydocker_0.21.1_Linux_x86_64.tar.gz
+      sha256: 0dfad5e78701ea8e2a0ca68f38bb3d64b7e44698006aa1c9211ca47d2f567014
+    x86_64-macos:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.1/lazydocker_0.21.1_Darwin_x86_64.tar.gz
+      sha256: 787932bd7cf4e3dada2c01673e327441445f8e54c450a182c213dc5938f4c951
+    x86_64-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.21.1/lazydocker_0.21.1_Windows_x86_64.zip
+      sha256: 72eb4a92c82dc9e0aae503bc5a60dc69ef6a52b0f156d7d2ffff3cfc84bbc5b3
+  0.23.1:
+    aarch64-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.23.1/lazydocker_0.23.1_Linux_arm64.tar.gz
+      sha256: c9813ea54c6ffc7d16dd86979da8ac2dbc90e70875e8aea723a6e0f84bd928fd
+    aarch64-macos:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.23.1/lazydocker_0.23.1_Darwin_arm64.tar.gz
+      sha256: 50869eaa8c69c161924d849a6be91a06c3b4eb99e35d2c30b92ccde6ef688f81
+    aarch64-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.23.1/lazydocker_0.23.1_Windows_arm64.zip
+      sha256: 571b5d1cafa0785cdc20e3fadf0daeb5da0f7834a52de5505cfecc12cf1520e8
+    x86-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.23.1/lazydocker_0.23.1_Linux_x86.tar.gz
+      sha256: fdef4a058c68550c79062f668e958e354d5dbecd42def79ef1dd3abc936978de
+    x86-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.23.1/lazydocker_0.23.1_Windows_x86.zip
+      sha256: 855cc4815dd7a9672f1e8f3208762e0ea875cc08c16dea44dbeeff0bd0c047c0
+    x86_64-linux:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.23.1/lazydocker_0.23.1_Linux_x86_64.tar.gz
+      sha256: 9759f1350eb5e7a417bdd4df65d866a8175a137bbe5bc3ef611ecd70aaaa9d3a
+    x86_64-macos:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.23.1/lazydocker_0.23.1_Darwin_x86_64.tar.gz
+      sha256: 5b7c87ff5b7c47d364cb4091a480fe026ada92e07cf4199b221ff0c64766547e
+    x86_64-windows:
+      url: https://github.com/jesseduffield/lazydocker/releases/download/v0.23.1/lazydocker_0.23.1_Windows_x86_64.zip
+      sha256: 8456956b3b9ad01b64da2efc2e4191833cfb5a0e2984d9e1f0f9af2c4bce8947
 installs:
   0.20.0:
     any-any:
@@ -36,4 +111,4 @@ installs:
         README.md: ${doc_dir}
         lazydocker${exe_ext}: bin/
       tests:
-        - lazydocker${exe_ext} --version
+      - lazydocker${exe_ext} --version
