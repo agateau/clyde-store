@@ -22,11 +22,28 @@ releases:
     x86_64-windows:
       url: https://get.helm.sh/helm-v3.11.1-windows-amd64.zip
       sha256: bc37d5d283e57c5dfa94f92ff704c8e273599ff8df3f8132cef5ca73f6a23d0a
+  3.13.3:
+    aarch64-linux:
+      url: https://get.helm.sh/helm-v3.13.3-linux-arm64.tar.gz
+      sha256: 44aaa094ae24d01e8c36e327e1837fd3377a0f9152626da088384c5bc6d94562
+    aarch64-macos:
+      url: https://get.helm.sh/helm-v3.13.3-darwin-arm64.tar.gz
+      sha256: 61ba210cd65c53be5c0021c8fc8e0b94f4c122aff32f5ed0e4ea81728108ea20
+    x86_64-linux:
+      url: https://get.helm.sh/helm-v3.13.3-linux-amd64.tar.gz
+      sha256: bbb6e7c6201458b235f335280f35493950dcd856825ddcfd1d3b40ae757d5c7d
+    x86_64-macos:
+      url: https://get.helm.sh/helm-v3.13.3-darwin-amd64.tar.gz
+      sha256: da654c9e0fd4fcb50cc5dba051c1c9cf398e21ffa5064b47ac89a9697e139d39
+    x86_64-windows:
+      url: https://get.helm.sh/helm-v3.13.3-windows-amd64.zip
+      sha256: abb5e06a3587d8da7cca60c801cfbaa5178f4252c367b2469b3f123da2357cac
 installs:
   3.11.1:
     any-any:
       strip: 1
       files:
-        helm${exe_ext}: bin/
-        README.md: ${doc_dir}
         LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        helm${exe_ext}: bin/
+fetcher: Script
