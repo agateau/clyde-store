@@ -228,6 +228,31 @@ releases:
     x86_64-windows:
       url: https://github.com/starship/starship/releases/download/v1.16.0/starship-x86_64-pc-windows-msvc.zip
       sha256: 64aacf6ad851b60e18f31582b37022dbc0d37c7062d3d7dfd7bd2343051ce199
+  1.17.0:
+    aarch64-linux:
+      url: https://github.com/starship/starship/releases/download/v1.17.0/starship-aarch64-unknown-linux-musl.tar.gz
+      sha256: f2f768ba599b5df72bd9490599e20ba54b076e2b6f4ba4c58792a86ce391a78b
+    aarch64-macos:
+      url: https://github.com/starship/starship/releases/download/v1.17.0/starship-aarch64-apple-darwin.tar.gz
+      sha256: 48aeaf4a5cdd4a97a0a899b45a0e34c80a12f2e5ee7e10f858dbcad35bd094ba
+    aarch64-windows:
+      url: https://github.com/starship/starship/releases/download/v1.17.0/starship-aarch64-pc-windows-msvc.zip
+      sha256: 485bdaedccb0dcc49aea10db1c5574c4a4d35ef5776886f450d22febd38f2496
+    x86-linux:
+      url: https://github.com/starship/starship/releases/download/v1.17.0/starship-i686-unknown-linux-musl.tar.gz
+      sha256: 94a395984fe8f74d776a662f3f633f9d504f539aa9073d3c4259d903fbb27d45
+    x86-windows:
+      url: https://github.com/starship/starship/releases/download/v1.17.0/starship-i686-pc-windows-msvc.zip
+      sha256: 1e61baa8fb6ffd15184ba02c19efcd1857e4e366063e842df7708cb74dd832f4
+    x86_64-linux:
+      url: https://github.com/starship/starship/releases/download/v1.17.0/starship-x86_64-unknown-linux-musl.tar.gz
+      sha256: c859b2d8859a4790b8903d73847cb32cf39587634fd5c9246664e368c0cd535a
+    x86_64-macos:
+      url: https://github.com/starship/starship/releases/download/v1.17.0/starship-x86_64-apple-darwin.tar.gz
+      sha256: bdae707c3b00d254afee52d23c8d9435c381465b1a7df8a0389d1b937ee8a215
+    x86_64-windows:
+      url: https://github.com/starship/starship/releases/download/v1.17.0/starship-x86_64-pc-windows-msvc.zip
+      sha256: 24497a2cfd5ad61ad0df5cfd1e3800c5ccea7732dfe6d1f4b0cbfaeeb29721dc
   1.9.1:
     x86_64-linux:
       url: https://github.com/starship/starship/releases/download/v1.9.1/starship-x86_64-unknown-linux-gnu.tar.gz
