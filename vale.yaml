@@ -253,6 +253,31 @@ releases:
     x86_64-windows:
       url: https://github.com/errata-ai/vale/releases/download/v3.0.1/vale_3.0.1_Windows_64-bit.zip
       sha256: 40415d89b8ac4a148c23db589801560dea6a726a429547e2c3ea14806515d1bc
+  3.0.3:
+    aarch64-linux:
+      url: https://github.com/errata-ai/vale/releases/download/v3.0.3/vale_3.0.3_Linux_arm64.tar.gz
+      sha256: ffb2e3c6f106a97d59e9f9d66e3375279121efaae2a4468499d228bf65ca431d
+    aarch64-macos:
+      url: https://github.com/errata-ai/vale/releases/download/v3.0.3/vale_3.0.3_macOS_arm64.tar.gz
+      sha256: d3787561420776ef8f4fd6eb78c74369261f31073e11d8c8b88645a87c734a04
+    aarch64-windows:
+      url: https://github.com/errata-ai/vale/releases/download/v3.0.3/vale_3.0.3_Windows_arm64.zip
+      sha256: 789e59f1e3d4decb41bc12cd38fb740b961c3325d20d772a44095df85c9a3e3a
+    x86-linux:
+      url: https://github.com/errata-ai/vale/releases/download/v3.0.3/vale_3.0.3_Linux_386.tar.gz
+      sha256: 80da32cbb69468134ae6c075c7027ba94b2a4452b4d1a87224895ad8a667e557
+    x86-windows:
+      url: https://github.com/errata-ai/vale/releases/download/v3.0.3/vale_3.0.3_Windows_386.zip
+      sha256: 92c33bc2c8e9f1a747ed524a9f78574716b5388b8f1eed2181b31941ef11316c
+    x86_64-linux:
+      url: https://github.com/errata-ai/vale/releases/download/v3.0.3/vale_3.0.3_Linux_64-bit.tar.gz
+      sha256: bcfba104373a300f567c1d413711736ec0f5b6a9ea9cd6a51a6e67631005b376
+    x86_64-macos:
+      url: https://github.com/errata-ai/vale/releases/download/v3.0.3/vale_3.0.3_macOS_64-bit.tar.gz
+      sha256: 5b2d09e4283b3558277570888caebcb0164c78a4adcc86fdce646dbd369958c5
+    x86_64-windows:
+      url: https://github.com/errata-ai/vale/releases/download/v3.0.3/vale_3.0.3_Windows_64-bit.zip
+      sha256: a5636836cd46b19ebfca9a4a4327f7450560dd68d5a30948aa3ca3a637a72a97
 installs:
   0.0.0:
     any-any:
