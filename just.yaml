@@ -318,3 +318,16 @@ installs:
         just.1: share/man/man1/
       tests:
       - just${exe_ext} --version
+  1.23.0:
+    any-any:
+      files:
+        GRAMMAR.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        just${exe_ext}: bin/
+        just.1: share/man/man1/
+        completions/just.fish: ${fish_comp_dir}
+        completions/just.bash: ${bash_comp_dir}
+        completions/just.zsh: ${zsh_comp_dir}/_just
+      tests:
+      - just${exe_ext} --version
