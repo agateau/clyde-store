@@ -27,3 +27,12 @@ installs:
         CHANGELOG.md: ${doc_dir}
       tests:
       - csvlens${exe_ext} --version
+    any-windows:
+      strip: 0
+      files:
+        csvlens${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+      tests:
+      - csvlens${exe_ext} --version
