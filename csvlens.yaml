@@ -1,0 +1,38 @@
+name: csvlens
+description: Command-line CSV viewer
+homepage: https://github.com/YS-L/csvlens
+repository: https://github.com/YS-L/csvlens
+releases:
+  0.5.0:
+    aarch64-macos:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.5.0/csvlens-aarch64-apple-darwin.tar.xz
+      sha256: 6e58a9b91aa101aa451f99c90c3ac065ba5a2fa6f1a04733c758e9811995f496
+    x86_64-linux:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.5.0/csvlens-x86_64-unknown-linux-gnu.tar.xz
+      sha256: 92fb37bcbcacfd619e691b046862f1f5e54f79b2c8f870669df40bc1f30555bf
+    x86_64-macos:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.5.0/csvlens-x86_64-apple-darwin.tar.xz
+      sha256: 94e2f97389bea918a414d6c0b6d026bab5d53065a808306510f398b6fe29556d
+    x86_64-windows:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.5.0/csvlens-x86_64-pc-windows-msvc.zip
+      sha256: 5cb851ea063e3f6987ca65a5cda1c254911b36204d8dfad0d1dc770ed1fa0fb7
+installs:
+  0.5.0:
+    any-any:
+      strip: 1
+      files:
+        csvlens${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+      tests:
+      - csvlens${exe_ext} --version
+    any-windows:
+      strip: 0
+      files:
+        csvlens${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+      tests:
+      - csvlens${exe_ext} --version
