@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           # Needed to ensure `base_branch` is available in ci/fetch even if the
           # job is not started from it
