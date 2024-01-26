@@ -1,0 +1,22 @@
+name: git-workspace
+description: Sync personal and work git repositories from multiple providers
+homepage: https://github.com/orf/git-workspace
+repository: https://github.com/orf/git-workspace
+releases:
+  1.4.0:
+    x86_64-linux:
+      url: https://github.com/orf/git-workspace/releases/download/v1.4.0/git-workspace-Linux-x86_64.tar.gz
+      sha256: c5be8740ac59f1e7152511f91776a708f260cf49c2876541b1cd965b497c250b
+    x86_64-macos:
+      url: https://github.com/orf/git-workspace/releases/download/v1.4.0/git-workspace-Darwin-x86_64.tar.gz
+      sha256: d32ec0279cb4e98832f40d6c02f51dc7e3ae993e77c86908316418f2284b99df
+    x86_64-windows:
+      url: https://github.com/orf/git-workspace/releases/download/v1.4.0/git-workspace-Windows-x86_64.zip
+      sha256: 4e43d9bdeb323c066d94c6e7defc8b6e9cddb4cb543429ce388f6fe347b16e9d
+installs:
+  1.4.0:
+    any-any:
+      files:
+        git-workspace${exe_ext}: bin/
+      tests:
+      - git-workspace${exe_ext} --version
