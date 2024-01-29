@@ -68,6 +68,19 @@ releases:
     x86_64-windows:
       url: https://github.com/ducaale/xh/releases/download/v0.20.1/xh-v0.20.1-x86_64-pc-windows-msvc.zip
       sha256: 433a6fbc7dfde4e7e34b5896b70ac93a4b337f0b4c031e6a5baec761027b41c4
+  0.21.0:
+    aarch64-linux:
+      url: https://github.com/ducaale/xh/releases/download/v0.21.0/xh-v0.21.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: 027b25ff4044bccb80a0647bbf4e64ecf29dc18d827ec6f3389c164658322ab3
+    x86_64-linux:
+      url: https://github.com/ducaale/xh/releases/download/v0.21.0/xh-v0.21.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: d74ef5683eaef40073ce3c9051ab99f8c5537a978dd7c06f9eb9f315ce728f9f
+    x86_64-macos:
+      url: https://github.com/ducaale/xh/releases/download/v0.21.0/xh-v0.21.0-x86_64-apple-darwin.tar.gz
+      sha256: 37183d514a906b7183ddb854f3eff74927661d3bf23052c6f1604d9e49ad5594
+    x86_64-windows:
+      url: https://github.com/ducaale/xh/releases/download/v0.21.0/xh-v0.21.0-x86_64-pc-windows-msvc.zip
+      sha256: 323dcddc77ae8d68543598a25665d49bc93cf12cf50cc91540f20d273070bb94
 installs:
   0.16.1:
     any-any:
