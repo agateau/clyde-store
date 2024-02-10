@@ -203,3 +203,9 @@ installs:
         croc${exe_ext}: bin/
       tests:
       - croc${exe_ext} --version
+  9.6.9:
+    any-any:
+      files:
+        croc${exe_ext}: bin/
+      tests:
+      - croc${exe_ext} --version
