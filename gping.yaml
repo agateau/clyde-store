@@ -16,6 +16,19 @@ releases:
     x86_64-windows:
       url: https://github.com/orf/gping/releases/download/gping-v1.16.0/gping-Windows-x86_64.zip
       sha256: 7dfd6f0a19acbc5478c541921165922b8e6729837ea0d5f743d0938b69649730
+  1.16.1:
+    aarch64-linux:
+      url: https://github.com/orf/gping/releases/download/gping-v1.16.1/gping-aarch64-unknown-linux-musl.tar.gz
+      sha256: 09e81fd014153d612065225b088283f38f79635f62d5421dcf2745a71ee019fa
+    x86_64-linux:
+      url: https://github.com/orf/gping/releases/download/gping-v1.16.1/gping-x86_64-unknown-linux-musl.tar.gz
+      sha256: 68dfcf40f1c775b0cfcf9aa695418358f5f2e125fb8cd7dc7e9812fad50aec48
+    x86_64-macos:
+      url: https://github.com/orf/gping/releases/download/gping-v1.16.1/gping-Darwin-x86_64.tar.gz
+      sha256: 5185775340ca957db3500a1c52bfae3e14e55edd7ca85f8a1e03b2019daa3135
+    x86_64-windows:
+      url: https://github.com/orf/gping/releases/download/gping-v1.16.1/gping-Windows-x86_64.zip
+      sha256: c80bfc53b0be2a32f4ba0db0e96fc18d72c9a9271d3bbd49524428e32f08d3c5
 installs:
   0.0.0:
     any-any:
