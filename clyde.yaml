@@ -109,3 +109,18 @@ installs:
       tests:
       - clyde${exe_ext} --version
       - clydetools${exe_ext} --version
+  0.6.0:
+    any-any:
+      strip: 1
+      files:
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        clyde${exe_ext}: bin/
+        clydetools${exe_ext}: bin/
+        completions/clyde.bash: ${bash_comp_dir}
+        completions/_clyde: ${zsh_comp_dir}
+        completions/clyde.fish: ${fish_comp_dir}
+      tests:
+      - clyde${exe_ext} --version
+      - clydetools${exe_ext} --version
