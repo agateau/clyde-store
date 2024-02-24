@@ -9,7 +9,7 @@ from typing import BinaryIO, Dict, Pattern
 from urllib import request
 
 from tui import eprint, progress
-from utils import IS_MACOS, IS_WINDOWS, which
+from utils import IS_AARCH64, IS_MACOS, IS_WINDOWS, IS_X86_64, which
 
 GITHUB_TOKEN = os.getenv("CLYDE_GITHUB_TOKEN", "")
 
@@ -51,7 +51,14 @@ def _get_archive_rx() -> Pattern[str]:
     else:
         os_name = "linux"
 
-    return re.compile(f"clyde-[-_a-zT0-9.+]*-{os_name}{archive_ext_rx}")
+    if IS_AARCH64:
+        arch = "aarch64"
+    elif IS_X86_64:
+        arch = "x86_64"
+    else:
+        sys.exit("Unsupported architecture")
+
+    return re.compile(f"clyde-[-_a-zT0-9.+]*-{arch}-{os_name}{archive_ext_rx}")
 
 
 def find_clyde_release_url() -> str:
