@@ -16,16 +16,29 @@ releases:
     x86_64-macos:
       url: https://github.com/atuinsh/atuin/releases/download/v18.0.2/atuin-v18.0.2-x86_64-apple-darwin.tar.gz
       sha256: 4fb15d9d629549ebd9aec2eaacd54cee1148aafbe43289269162f55a77c5dc3f
+  18.1.0:
+    aarch64-linux:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.1.0/atuin-v18.1.0-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 3726542602f5eaa52b148eab8ddc4616cfce8bc138fdafb070b227ddadf27aa2
+    aarch64-macos:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.1.0/atuin-v18.1.0-aarch64-apple-darwin.tar.gz
+      sha256: 2f38656a2b575ba478e7eee175e55b8f2b7e46a4085d2b32b4db745eff81b5b3
+    x86_64-linux:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.1.0/atuin-v18.1.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 9d84f3f75575587d450b8e36999ddbce2a31bc59101e3e8771bcd2aa3530ec15
+    x86_64-macos:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.1.0/atuin-v18.1.0-x86_64-apple-darwin.tar.gz
+      sha256: ba6b8cf76f052f8a251b633acf626767d9253f5261c638106d408cb1dbf2bf8a
 installs:
   18.0.2:
     any-any:
       strip: 1
       files:
-        atuin${exe_ext}: bin/
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
-        completions/atuin.bash: ${bash_comp_dir}
+        atuin${exe_ext}: bin/
         completions/_atuin: ${zsh_comp_dir}
+        completions/atuin.bash: ${bash_comp_dir}
         completions/atuin.fish: ${fish_comp_dir}
       tests:
       - atuin${exe_ext} --version
