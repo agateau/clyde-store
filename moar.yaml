@@ -1,0 +1,22 @@
+name: moar
+description: Moar is a pager. It's designed to just do the right thing without any configuration.
+homepage: https://github.com/walles/moar
+repository: https://github.com/walles/moar
+releases:
+  1.23.7:
+    x86-linux:
+      url: https://github.com/walles/moar/releases/download/v1.23.7/moar-v1.23.7-linux-386
+      sha256: b4855d98c583901dae1116f51d423295ad7af387789244cdc8f961d01af6aa58
+    x86_64-macos:
+      url: https://github.com/walles/moar/releases/download/v1.23.7/moar-v1.23.7-darwin-amd64
+      sha256: 397b7382aa34cd8e37202b4ccd4272cd485304f4090ce8181ec92d425990f8a3
+    x86_64-windows:
+      url: https://github.com/walles/moar/releases/download/v1.23.7/moar-v1.23.7-windows-amd64.exe
+      sha256: 2ee54ae317a26a6b2ad0bb8b86d726cbeb02cde333a5e49322e90e8ce08a839f
+installs:
+  0.0.0:
+    any-any:
+      files:
+        ${asset_name}: bin/moar${exe_ext}
+      tests:
+      - moar${exe_ext} -version
