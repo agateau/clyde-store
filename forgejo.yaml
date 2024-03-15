@@ -1,0 +1,21 @@
+name: forgejo
+description: Self-hosted lightweight software forge.
+homepage: https://forgejo.org/
+repository: https://codeberg.org/forgejo/forgejo
+releases:
+  1.21.7:
+    aarch64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v1.21.7-0/forgejo-1.21.7-0-linux-arm64.xz
+      sha256: 638fcb42d18f3696c1cf2c65a81eb4b812756977f3b49a2b7dbc0442d23c0400
+    x86_64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v1.21.7-0/forgejo-1.21.7-0-linux-amd64.xz
+      sha256: 0acf17200e7b083c6e6d3152ad8e86c2e7a4fccb2d2ee90ed04fd1474a18ffe6
+installs:
+  1.21.7:
+    any-any:
+      files:
+        ${asset_name}: bin/forgejo${exe_ext}
+      tests:
+      - forgejo${exe_ext} --version
+fetcher: !Forgejo
+  base_url: https://codeberg.org
