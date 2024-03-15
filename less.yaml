@@ -1,0 +1,26 @@
+name: less
+description: GNU less compiled for Windows 10 & 11. Stand-alone version with no dependencies.
+homepage: https://github.com/jftuga/less-Windows
+repository: https://github.com/jftuga/less-Windows
+releases:
+  643.0.0:
+    aarch64-windows:
+      url: https://github.com/jftuga/less-Windows/releases/download/less-v643/less-arm64.zip
+      sha256: 43520dce3fc88944f47677af4a82fbd82ed53594c7e6d6db74aa0bee9844abea
+    x86-windows:
+      url: https://github.com/jftuga/less-Windows/releases/download/less-v643/less-x86.zip
+      sha256: 782d86fa52ad73109ea5823e7c12ae335165e180e804d8567e381e7e9ab284bf
+    x86_64-windows:
+      url: https://github.com/jftuga/less-Windows/releases/download/less-v643/less-x64.zip
+      sha256: 5eea8dac16352e0887ecb38a8a01e536faa02887c2538e0690f12c551364242f
+installs:
+  643.0.0:
+    any-any:
+      files:
+        less${exe_ext}: bin/
+        lesskey${exe_ext}: bin/
+      tests:
+      - less${exe_ext} --version
+      - lesskey${exe_ext} --version
+fetcher: !GitHub
+  os: windows
