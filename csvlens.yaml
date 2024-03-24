@@ -42,6 +42,19 @@ releases:
     x86_64-windows:
       url: https://github.com/YS-L/csvlens/releases/download/v0.7.0/csvlens-x86_64-pc-windows-msvc.zip
       sha256: 254feee50d88281cd7b8eb8e27cd98676c8026d8aa7e77af3282b102b51b977b
+  0.8.0:
+    aarch64-macos:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.8.0/csvlens-aarch64-apple-darwin.tar.xz
+      sha256: fa9f96434b95b6c84d3cd3b6fae452df2a2f07bf075aab24a1e1cb2f9c95861c
+    x86_64-linux:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.8.0/csvlens-x86_64-unknown-linux-gnu.tar.xz
+      sha256: aa87c7cb4a07c93c3a14d386046bff9ec2493797d1ee6e8a424ec63eca8c4189
+    x86_64-macos:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.8.0/csvlens-x86_64-apple-darwin.tar.xz
+      sha256: 3afbb03f6eb7338f9a471b9499c34d15b460c367e0d4c3c17e1c76fb9588f37e
+    x86_64-windows:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.8.0/csvlens-x86_64-pc-windows-msvc.zip
+      sha256: 4087c18e35f37a2924cf83679c1343de3583dc18e8ce5a3b35eabf5e02d21060
 installs:
   0.5.0:
     any-any:
