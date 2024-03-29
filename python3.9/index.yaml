@@ -1,0 +1,34 @@
+name: python3.9
+description: Python 3.9, compiled by Gregory Szorc.
+homepage: https://github.com/indygreg/python-build-standalone
+repository: https://github.com/indygreg/python-build-standalone
+releases:
+  20240224.0.0:
+    aarch64-macos:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.9.18%2B20240224-aarch64-apple-darwin-install_only.tar.gz
+      sha256: 2548f911a6e316575c303ba42bb51540dc9b47a9f76a06a2a37460d93b177aa2
+    x86-windows:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.9.18%2B20240224-i686-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: 904ff5d2f6402640e2b7e2b12075af0bd75b3e8685cc5248fd2a3cda3105d2a8
+    x86_64-linux:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.9.18%2B20240224-x86_64_v3-unknown-linux-gnu-install_only.tar.gz
+      sha256: e85a752197d7c7529a19b83c17efa194c8743cbc4608d5cbca77da506ab30956
+    x86_64-macos:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.9.18%2B20240224-x86_64-apple-darwin-install_only.tar.gz
+      sha256: 171d8b472fce0295be0e28bb702c43d5a2a39feccb3e72efe620ac3843c3e402
+    x86_64-windows:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.9.18%2B20240224-x86_64-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: a9bdbd728ed4c353a4157ecf74386117fb2a2769a9353f491c528371cfe7f6cd
+installs:
+  0.0.0:
+    any-any:
+      files:
+        python: opt/python3.9
+      extra_files:
+        python3.9: bin/
+        pip3.9: bin/
+      tests:
+      - python3.9 -c 'import sys ; print(sys.version)'
+      - pip3.9 --version
+fetcher: !GitHub
+  include: ^cpython-3\.9\..*(v3-unknown-linux-gnu|windows-msvc-shared|apple-darwin)-install_only.tar.gz

@@ -1,0 +1,34 @@
+name: python3.11
+description: Python 3.11, compiled by Gregory Szorc.
+homepage: https://github.com/indygreg/python-build-standalone
+repository: https://github.com/indygreg/python-build-standalone
+releases:
+  20240224.0.0:
+    aarch64-macos:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.11.8%2B20240224-aarch64-apple-darwin-install_only.tar.gz
+      sha256: 389a51139f5abe071a0d70091ca5df3e7a3dfcfcbe3e0ba6ad85fb4c5638421e
+    x86-windows:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.11.8%2B20240224-i686-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: 75039951f8f94d7304bc17b674af1668b9e1ea6d6c9ba1da28e90c0ad8030e3c
+    x86_64-linux:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.11.8%2B20240224-x86_64_v3-unknown-linux-gnu-install_only.tar.gz
+      sha256: 52b3e24b08e53e5098561a13a61e28d241231331fd903dcb2a1e4161f3753dc1
+    x86_64-macos:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.11.8%2B20240224-x86_64-apple-darwin-install_only.tar.gz
+      sha256: 097f467b0c36706bfec13f199a2eaf924e668f70c6e2bd1f1366806962f7e86e
+    x86_64-windows:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.11.8%2B20240224-x86_64-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: b618f1f047349770ee1ef11d1b05899840abd53884b820fd25c7dfe2ec1664d4
+installs:
+  0.0.0:
+    any-any:
+      files:
+        python: opt/python3.11
+      extra_files:
+        python3.11: bin/
+        pip3.11: bin/
+      tests:
+      - python3.11 -c 'import sys ; print(sys.version)'
+      - pip3.11 --version
+fetcher: !GitHub
+  include: ^cpython-3\.11\..*(v3-unknown-linux-gnu|windows-msvc-shared|apple-darwin)-install_only.tar.gz
