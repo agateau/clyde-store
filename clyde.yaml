@@ -96,6 +96,19 @@ releases:
     x86_64-windows:
       url: https://github.com/agateau/clyde/releases/download/0.6.0/clyde-0.6.0-x86_64-windows.zip
       sha256: 90c5fdf0ebaf927d9dd32f700bd8795a0f649551c4350de53982896d5a926d91
+  0.7.0:
+    aarch64-macos:
+      url: https://github.com/agateau/clyde/releases/download/0.7.0/clyde-0.7.0-aarch64-macos.tar.gz
+      sha256: b2ef31412a0e8be8eacd9f847ee7f0f4ca7a9a0b85c9ec5fc1d4a472c8f3bd98
+    x86_64-linux:
+      url: https://github.com/agateau/clyde/releases/download/0.7.0/clyde-0.7.0-x86_64-linux.tar.gz
+      sha256: f59dca4753f27128188508f70a21dbc75d50ffc339cfcf513fdc312b0ce63d71
+    x86_64-macos:
+      url: https://github.com/agateau/clyde/releases/download/0.7.0/clyde-0.7.0-x86_64-macos.tar.gz
+      sha256: fa6db8915bc6bab8d855dd67cd97fcadbcf00e9ebc002d6ac82c4beb6fb5174e
+    x86_64-windows:
+      url: https://github.com/agateau/clyde/releases/download/0.7.0/clyde-0.7.0-x86_64-windows.zip
+      sha256: 1646815c1ed24d1757b569edd0393a0e2d0e209a1438c222b0c02d8c4a2d8831
 installs:
   0.1.0:
     any-any:
@@ -118,8 +131,8 @@ installs:
         README.md: ${doc_dir}
         clyde${exe_ext}: bin/
         clydetools${exe_ext}: bin/
-        completions/clyde.bash: ${bash_comp_dir}
         completions/_clyde: ${zsh_comp_dir}
+        completions/clyde.bash: ${bash_comp_dir}
         completions/clyde.fish: ${fish_comp_dir}
       tests:
       - clyde${exe_ext} --version
