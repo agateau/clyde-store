@@ -27,6 +27,8 @@ installs:
       extra_files:
         python3.12: bin/
         pip3.12: bin/
+        python3.12.bat: bin/
+        pip3.12.bat: bin/
       tests:
       - python3.12 -c 'import sys ; print(sys.version)'
       - pip3.12 --version

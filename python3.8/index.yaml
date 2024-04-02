@@ -30,6 +30,8 @@ installs:
       extra_files:
         python3.8: bin/
         pip3.8: bin/
+        python3.8.bat: bin/
+        pip3.8.bat: bin/
       tests:
       - python3.8 -c 'import sys ; print(sys.version)'
       - pip3.8 --version

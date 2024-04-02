@@ -27,6 +27,8 @@ installs:
       extra_files:
         python3.10: bin/
         pip3.10: bin/
+        python3.10.bat: bin/
+        pip3.10.bat: bin/
       tests:
       - python3.10 -c 'import sys ; print(sys.version)'
       - pip3.10 --version
