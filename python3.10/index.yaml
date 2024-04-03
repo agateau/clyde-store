@@ -21,16 +21,20 @@ releases:
       sha256: 086f7fe9156b897bb401273db8359017104168ac36f60f3af4e31ac7acd6634e
 installs:
   20240224.0.0:
+    any-windows:
+      files:
+        python: opt/python3.10
+      extra_files:
+        windows/python310: bin/
+        windows/python310.bat: bin/
+      tests:
+      - python310 -c 'import sys ; print(sys.version)'
     any-any:
       files:
         python: opt/python3.10
       extra_files:
-        python3.10: bin/
-        pip3.10: bin/
-        python3.10.bat: bin/
-        pip3.10.bat: bin/
+        any/python3.10: bin/
       tests:
       - python3.10 -c 'import sys ; print(sys.version)'
-      - pip3.10 --version
 fetcher: !GitHub
   include: ^cpython-3\.10\..*(v3-unknown-linux-gnu|windows-msvc-shared|apple-darwin)-install_only.tar.gz
