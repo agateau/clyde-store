@@ -86,6 +86,7 @@ def find_clyde_snapshot_url() -> str:
 
 
 def download_clyde(url: str, clyde_dir: Path) -> None:
+    clyde_dir = clyde_dir.absolute()
     if clyde_dir.exists():
         shutil.rmtree(clyde_dir)
     clyde_dir.mkdir()
@@ -108,3 +109,13 @@ def download_clyde(url: str, clyde_dir: Path) -> None:
 
     progress("Setup")
     subprocess.run(["clyde", "setup"])
+
+
+def main():
+    url = find_clyde_release_url()
+    clyde_dir = Path("clyde")
+    download_clyde(url, clyde_dir)
+
+
+if __name__ == "__main__":
+    main()
