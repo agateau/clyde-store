@@ -1,0 +1,27 @@
+name: duckdb
+description: In-process SQL OLAP Database Management System
+homepage: https://www.duckdb.org
+repository: https://github.com/duckdb/duckdb
+releases:
+  0.10.1:
+    aarch64-linux:
+      url: https://github.com/duckdb/duckdb/releases/download/v0.10.1/duckdb_cli-linux-aarch64.zip
+      sha256: 5cc87ba66ac86f205208c169975d308ec75c0f5b402dee80b57b5916456998fe
+    any-macos:
+      url: https://github.com/duckdb/duckdb/releases/download/v0.10.1/duckdb_cli-osx-universal.zip
+      sha256: f9ca9251be5357a7f5f0c33d844ab650d14ff15a13664d441bcaa785bb1ebcac
+    x86_64-linux:
+      url: https://github.com/duckdb/duckdb/releases/download/v0.10.1/duckdb_cli-linux-amd64.zip
+      sha256: be3cc6817ac35f4dec5a0ca329cde3046f8ef706fc484d175ee8994b9dfa60fb
+    x86_64-windows:
+      url: https://github.com/duckdb/duckdb/releases/download/v0.10.1/duckdb_cli-windows-amd64.zip
+      sha256: a5d84ea867eeaa81ae849e0fc0d9201a1ef167bd382fc68531a202682f8cf0c4
+installs:
+  0.10.1:
+    any-any:
+      files:
+        duckdb${exe_ext}: bin/
+      tests:
+      - duckdb${exe_ext} --version
+fetcher: !GitHub
+  include: ^duckdb_cli-

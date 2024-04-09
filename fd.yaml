@@ -111,6 +111,25 @@ releases:
     x86_64-windows:
       url: https://github.com/sharkdp/fd/releases/download/v8.7.1/fd-v8.7.1-x86_64-pc-windows-msvc.zip
       sha256: 3c0d6517ad5c9989d0e96d2d7a98a7bff444b0a3cf10a1b9cbae753c02f27477
+  9.0.0:
+    aarch64-linux:
+      url: https://github.com/sharkdp/fd/releases/download/v9.0.0/fd-v9.0.0-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 94844b8bdb8e7d48d4aa48574a6ba8bc404a88b1043e5b857602b91f6dfb188a
+    x86-linux:
+      url: https://github.com/sharkdp/fd/releases/download/v9.0.0/fd-v9.0.0-i686-unknown-linux-musl.tar.gz
+      sha256: dfeaa3440b73b5e3e9db42e480ca6ae2401bdb9f2af7c6c1b58b1aa201a2fb33
+    x86-windows:
+      url: https://github.com/sharkdp/fd/releases/download/v9.0.0/fd-v9.0.0-i686-pc-windows-msvc.zip
+      sha256: 84b37e3238de8d91e1501d9a317e53fd8d938380f9e7370c42ba1eed88f6440e
+    x86_64-linux:
+      url: https://github.com/sharkdp/fd/releases/download/v9.0.0/fd-v9.0.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 069e2d58127ddd944c03a2684ad79f72e3f9bd3e0d2642c36adc5b367c134592
+    x86_64-macos:
+      url: https://github.com/sharkdp/fd/releases/download/v9.0.0/fd-v9.0.0-x86_64-apple-darwin.tar.gz
+      sha256: 33abee4841ac6c68a818291c93fdb2599ef87069be288880bdfe46f58e5549a4
+    x86_64-windows:
+      url: https://github.com/sharkdp/fd/releases/download/v9.0.0/fd-v9.0.0-x86_64-pc-windows-msvc.zip
+      sha256: 8c5ff3fb24ef02f78d3e8e7ddf116456aceeeb3832f20bba56f21d8b373e5e1b
 installs:
   8.4.0:
     any-any:

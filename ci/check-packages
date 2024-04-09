@@ -43,7 +43,7 @@ def iter_modified_files(revision: str) -> Iterable[Path]:
         match = re.search("([A-Z]+)\\d*\t([^\\s]+)$", line)
         if match:
             status, path_str = match.groups()
-            if status != "R":
+            if status not in {"R", "D"}:
                 yield Path(path_str).resolve()
 
 

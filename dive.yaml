@@ -36,6 +36,25 @@ releases:
     x86_64-windows:
       url: https://github.com/wagoodman/dive/releases/download/v0.11.0/dive_0.11.0_windows_amd64.zip
       sha256: 6f8680c8d906cbd7ef4df3ec7cea90eece95bec45083b8ba6ea1d8a50d645667
+  0.12.0:
+    aarch64-linux:
+      url: https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_linux_arm64.tar.gz
+      sha256: a2a1470302cdfa367a48f80b67bbf11c0cd8039af9211e39515bd2bbbda58fea
+    aarch64-macos:
+      url: https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_darwin_arm64.tar.gz
+      sha256: 8ead7ce468f230ffce45b679dd1421945d6e4276654b0d90d389e357af2f4151
+    aarch64-windows:
+      url: https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_windows_arm64.zip
+      sha256: fd066066f4be5cd0e51773fbe1721587ee2ad70d258932b05c1cf654d9bb57ad
+    x86_64-linux:
+      url: https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_linux_amd64.tar.gz
+      sha256: 20a7966523a0905f950c4fbf26471734420d6788cfffcd4a8c4bc972fded3e96
+    x86_64-macos:
+      url: https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_darwin_amd64.tar.gz
+      sha256: 2f7d0a7f970e09618b87f286c6ccae6a7423331372c6ced15760a5c9d6f27704
+    x86_64-windows:
+      url: https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_windows_amd64.zip
+      sha256: b60d750852543e5a4b38c42590e2036aa2a8026cdb14d835090399f5e1312192
 installs:
   0.0.0:
     any-any:
