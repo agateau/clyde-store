@@ -13,6 +13,19 @@ releases:
     x86_64-windows:
       url: https://github.com/ninja-build/ninja/releases/download/v1.11.1/ninja-win.zip
       sha256: 524b344a1a9a55005eaf868d991e090ab8ce07fa109f1820d40e74642e289abc
+  1.12.0:
+    aarch64-linux:
+      url: https://github.com/ninja-build/ninja/releases/download/v1.12.0/ninja-linux-aarch64.zip
+      sha256: 375a49c79095334c88338ff15f90730e08a4d03997ef660f48f11ee7e450db7a
+    x86_64-linux:
+      url: https://github.com/ninja-build/ninja/releases/download/v1.12.0/ninja-linux.zip
+      sha256: ddc96efa3c7c9d41de733d15e2eda07a8a212555cb43f35d727e080d2ca687ab
+    x86_64-macos:
+      url: https://github.com/ninja-build/ninja/releases/download/v1.12.0/ninja-mac.zip
+      sha256: 19806019c9623a062c3d9fa0d5f45b633a3d150f88e73fbd6c0ff6ea5534df10
+    x86_64-windows:
+      url: https://github.com/ninja-build/ninja/releases/download/v1.12.0/ninja-win.zip
+      sha256: 51d99be9ceea8835edf536d52d47fa4c316aa332e57f71a08df5bd059da11417
 installs:
   1.11.1:
     any-any:
