@@ -95,6 +95,7 @@ installs:
         doc/GUIDE.md: ${doc_dir}
         doc/rg.1: share/man/man1/
         rg${exe_ext}: bin/
+        complete/rg.fish: ${fish_comp_dir}
       tests:
       - rg${exe_ext} --version
     x86_64-windows:
@@ -107,5 +108,6 @@ installs:
         doc/FAQ.md: ${doc_dir}
         doc/GUIDE.md: ${doc_dir}
         rg${exe_ext}: bin/
+        complete/rg.fish: ${fish_comp_dir}
       tests:
       - rg${exe_ext} --version

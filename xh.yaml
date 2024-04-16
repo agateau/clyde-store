@@ -109,5 +109,6 @@ installs:
         doc/CHANGELOG.md: ${doc_dir}
         doc/xh.1: share/man/man1/
         xh${exe_ext}: bin/
+        completions/xh.fish: ${fish_comp_dir}
       tests:
       - xh${exe_ext} --version
