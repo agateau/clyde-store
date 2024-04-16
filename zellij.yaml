@@ -1,0 +1,25 @@
+name: zellij
+description: A terminal workspace with batteries included
+homepage: https://zellij.dev
+repository: https://github.com/zellij-org/zellij
+releases:
+  0.40.0:
+    aarch64-linux:
+      url: https://github.com/zellij-org/zellij/releases/download/v0.40.0/zellij-aarch64-unknown-linux-musl.tar.gz
+      sha256: 3067fa34ceb765d58f11352a7fd8f9598eab757e01d0512550e3624f176681ea
+    aarch64-macos:
+      url: https://github.com/zellij-org/zellij/releases/download/v0.40.0/zellij-aarch64-apple-darwin.tar.gz
+      sha256: 2f0922f6cae6b3865c31212d194b6c0428f3569391e9c28ee8841beb72b1da08
+    x86_64-linux:
+      url: https://github.com/zellij-org/zellij/releases/download/v0.40.0/zellij-x86_64-unknown-linux-musl.tar.gz
+      sha256: d63f292a75e539a85a9ebc561b091a2d7bd3403e0807246087c63f12ab324a7f
+    x86_64-macos:
+      url: https://github.com/zellij-org/zellij/releases/download/v0.40.0/zellij-x86_64-apple-darwin.tar.gz
+      sha256: 24b5d82577fd4e93bc67a4727943f12742bd8a7cbfc70c48005b878f4d846786
+installs:
+  0.0.0:
+    any-any:
+      files:
+        zellij${exe_ext}: bin/
+      tests:
+      - zellij${exe_ext} --version
