@@ -3,6 +3,28 @@ description: A simple, fast and user-friendly alternative to 'find'
 homepage: https://github.com/sharkdp/fd
 repository: https://github.com/sharkdp/fd
 releases:
+  10.1.0:
+    aarch64-linux:
+      url: https://github.com/sharkdp/fd/releases/download/v10.1.0/fd-v10.1.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: eb21c4bccba79222da85115ca60963b238778e03a384b23e78b9c4bdd292b843
+    aarch64-macos:
+      url: https://github.com/sharkdp/fd/releases/download/v10.1.0/fd-v10.1.0-aarch64-apple-darwin.tar.gz
+      sha256: 8b5261c549bf3780a2bcbd860a0bc79a8ddf8ac7e7651f47e828c768ccaf511b
+    x86-linux:
+      url: https://github.com/sharkdp/fd/releases/download/v10.1.0/fd-v10.1.0-i686-unknown-linux-musl.tar.gz
+      sha256: bb1f458edbd5ff28197c8b7264ff0c65220facb9ecf20ffde607304dcccc11aa
+    x86-windows:
+      url: https://github.com/sharkdp/fd/releases/download/v10.1.0/fd-v10.1.0-i686-pc-windows-msvc.zip
+      sha256: 4abefca3287a7999bb9302dcd878de8d7463cb95b090413b06b6a74916f3b90c
+    x86_64-linux:
+      url: https://github.com/sharkdp/fd/releases/download/v10.1.0/fd-v10.1.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: f8fa73aa005e71598c1cdbb03ae6979fd016d5a8aaf92ee84ed6f8f186c58ead
+    x86_64-macos:
+      url: https://github.com/sharkdp/fd/releases/download/v10.1.0/fd-v10.1.0-x86_64-apple-darwin.tar.gz
+      sha256: 316cdaf5c6ec7e8b0664914df1da21c511aef2a023e13f8628354e60e0346dac
+    x86_64-windows:
+      url: https://github.com/sharkdp/fd/releases/download/v10.1.0/fd-v10.1.0-x86_64-pc-windows-msvc.zip
+      sha256: 25091fb18ab97134b1bcaa96413f0d0d253d0e85d51528affce4c5f7f1e129c2
   8.4.0:
     aarch64-linux:
       url: https://github.com/sharkdp/fd/releases/download/v8.4.0/fd-v8.4.0-aarch64-unknown-linux-gnu.tar.gz
