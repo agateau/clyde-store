@@ -212,6 +212,25 @@ releases:
     x86_64-windows:
       url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.75.0/trufflehog_3.75.0_windows_amd64.tar.gz
       sha256: 01f51ccebf45bf7dbcfdf323f9a662dc20f4798b90f5ac429fe9cde8fb7b3ad6
+  3.75.1:
+    aarch64-linux:
+      url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.75.1/trufflehog_3.75.1_linux_arm64.tar.gz
+      sha256: 3b702f213c65880895ab39c1a1f0401c24e515ba1e06ce7e60b875599c067b49
+    aarch64-macos:
+      url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.75.1/trufflehog_3.75.1_darwin_arm64.tar.gz
+      sha256: 94d3f8122aa16cfd7f26518a81c335601f7a9e6c2d4e7db30bdb8118b644eee0
+    aarch64-windows:
+      url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.75.1/trufflehog_3.75.1_windows_arm64.tar.gz
+      sha256: d716ccc8c5d5daf40c07ce9d1ec531e7f0705e11c76c394789caca97e83fc020
+    x86_64-linux:
+      url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.75.1/trufflehog_3.75.1_linux_amd64.tar.gz
+      sha256: 9759cf9dec172be9dd4745bb1504031a14fac7a9372a26f3b8614e650468c25e
+    x86_64-macos:
+      url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.75.1/trufflehog_3.75.1_darwin_amd64.tar.gz
+      sha256: 0f560acfc82893a3262d2fa8608b4b084b13f61076e8e2b16bb82f1d005135e6
+    x86_64-windows:
+      url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.75.1/trufflehog_3.75.1_windows_amd64.tar.gz
+      sha256: 56bd549518fa9920860be8247321774fd0c674e3b92de4ff1c2d81e6dc5f26c4
 installs:
   0.0.0:
     any-any:
