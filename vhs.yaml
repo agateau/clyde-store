@@ -125,3 +125,15 @@ installs:
         vhs${exe_ext}: bin/
       tests:
       - vhs${exe_ext} --version
+  0.7.2:
+    any-any:
+      strip: 1
+      files:
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        completions/vhs.bash: ${bash_comp_dir}
+        completions/vhs.zsh: ${zsh_comp_dir}/_vhs
+        manpages/vhs.1.gz: share/man/man1/
+        vhs${exe_ext}: bin/
+      tests:
+      - vhs${exe_ext} --version
