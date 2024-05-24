@@ -3,6 +3,31 @@ description: Easily and securely send things from one computer to another
 homepage: https://schollz.com/software/croc6
 repository: https://github.com/schollz/croc
 releases:
+  10.0.2:
+    aarch64-linux:
+      url: https://github.com/schollz/croc/releases/download/v10.0.2/croc_v10.0.2_Linux-ARM64.tar.gz
+      sha256: ab57c9a783e101efa66c3dd8487bf8432087b8a973fc44faf9e2ce8b430daa3b
+    aarch64-macos:
+      url: https://github.com/schollz/croc/releases/download/v10.0.2/croc_v10.0.2_macOS-ARM64.tar.gz
+      sha256: dc64dc952e2b34900e23345d5cb82be96e82d72f6dc8811fb74a7855b5270d93
+    aarch64-windows:
+      url: https://github.com/schollz/croc/releases/download/v10.0.2/croc_v10.0.2_Windows-ARM64.zip
+      sha256: e1951314c2d0aae9eb07bd544c8f0c32aab0867cb5d987ede1f789d53698ac99
+    x86-linux:
+      url: https://github.com/schollz/croc/releases/download/v10.0.2/croc_v10.0.2_Linux-32bit.tar.gz
+      sha256: 82c36b1082920d6661ff42c95c0fcc5ea67e7717d3d8c9ae5784ea4e0a3a1764
+    x86-windows:
+      url: https://github.com/schollz/croc/releases/download/v10.0.2/croc_v10.0.2_Windows-32bit.zip
+      sha256: 1ca787c9e37b52d8fdad2cc0bb6f2470d3ba25944cb8db6d6075c9c05ae46bcb
+    x86_64-linux:
+      url: https://github.com/schollz/croc/releases/download/v10.0.2/croc_v10.0.2_Linux-64bit.tar.gz
+      sha256: fd8d50c14ad34148abe4100ae8d29d8ab3a0090f47d22914781bf14b907c99a2
+    x86_64-macos:
+      url: https://github.com/schollz/croc/releases/download/v10.0.2/croc_v10.0.2_macOS-64bit.tar.gz
+      sha256: 0cb593c445265fcef6cf9366c100125332d9f335f61ad775dcca52ae0f28ccc9
+    x86_64-windows:
+      url: https://github.com/schollz/croc/releases/download/v10.0.2/croc_v10.0.2_Windows-64bit.zip
+      sha256: 297f7813cb2e145c5ee913f938cfb83008db00fe5aca43fc41a70641f3abeaeb
   9.6.0:
     aarch64-linux:
       url: https://github.com/schollz/croc/releases/download/v9.6.0/croc_9.6.0_Linux-ARM64.tar.gz
