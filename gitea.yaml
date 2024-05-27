@@ -729,6 +729,28 @@ releases:
     x86_64-windows:
       url: https://github.com/go-gitea/gitea/releases/download/v1.21.9/gitea-1.21.9-gogit-windows-4.0-amd64.exe.xz
       sha256: b161478275dc3b13c77f8b12d0c5ec0b4d070902de2cb19ec9cd3d05282a7aa2
+  1.22.0:
+    aarch64-linux:
+      url: https://github.com/go-gitea/gitea/releases/download/v1.22.0/gitea-1.22.0-linux-arm64.xz
+      sha256: 547cf69fe5ee273eb3d9ee84bb433778025ea6f7a259343cb5ec89b8b5fffc2f
+    aarch64-macos:
+      url: https://github.com/go-gitea/gitea/releases/download/v1.22.0/gitea-1.22.0-darwin-10.12-arm64.xz
+      sha256: 3bdf5ffef52b8ba23085a0c2195803f2cee517eb554497ffb91211938315691e
+    x86-linux:
+      url: https://github.com/go-gitea/gitea/releases/download/v1.22.0/gitea-1.22.0-linux-386.xz
+      sha256: 937bdd78a2b5b48cc485c36544523664740cd304f4dd57d4061574621ca4aad0
+    x86-windows:
+      url: https://github.com/go-gitea/gitea/releases/download/v1.22.0/gitea-1.22.0-gogit-windows-4.0-386.exe.xz
+      sha256: 3717c9170c6f2557f69a5cf9abbec1b1eb2434237b51cfc9feb77e3f3fd14f26
+    x86_64-linux:
+      url: https://github.com/go-gitea/gitea/releases/download/v1.22.0/gitea-1.22.0-linux-amd64.xz
+      sha256: b58e02e9e863a0191f26a26fbe6ef7e24c4c9917940c21957e6713cadcc5b9fd
+    x86_64-macos:
+      url: https://github.com/go-gitea/gitea/releases/download/v1.22.0/gitea-1.22.0-darwin-10.12-amd64.xz
+      sha256: d30034ecc6e424db794738689219b2c3e5195299f9af45ea0c6ad3bff1e3eef6
+    x86_64-windows:
+      url: https://github.com/go-gitea/gitea/releases/download/v1.22.0/gitea-1.22.0-gogit-windows-4.0-amd64.exe.xz
+      sha256: 82312e58c9123fe0383de03f3030c3d33e17d34403783d79e1c9c8d5c83c130a
 installs:
   1.17.0:
     any-any:
