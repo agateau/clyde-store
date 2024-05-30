@@ -22,7 +22,7 @@ jobs:
           - macos-13
           # ARM based
           - macos-14
-          - windows-2019
+          - windows-2022
 
     runs-on: ${{ matrix.os }}
 
