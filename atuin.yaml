@@ -68,3 +68,13 @@ installs:
         completions/atuin.fish: ${fish_comp_dir}
       tests:
       - atuin${exe_ext} --version
+  18.3.0:
+    any-any:
+      strip: 1
+      files:
+        atuin${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+      tests:
+      - atuin${exe_ext} --version
