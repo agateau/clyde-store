@@ -22,6 +22,25 @@ releases:
     x86_64-windows:
       url: https://github.com/antonmedv/walk/releases/download/v1.7.0/walk_windows_amd64.exe
       sha256: 19c1120dba37846f8d07a23b4bab3eadc14464706a377e2ef8ce2af071db02c5
+  1.9.0:
+    aarch64-linux:
+      url: https://github.com/antonmedv/walk/releases/download/v1.9.0/walk_linux_arm64
+      sha256: e8080b28cdde82b4957fa345279afb64756a397943d74e57c6ee5b2848f35943
+    aarch64-macos:
+      url: https://github.com/antonmedv/walk/releases/download/v1.9.0/walk_darwin_arm64
+      sha256: a4a4c0d7d14f4212b2c78bbda59603f5a6de814b3ee30757d749759266da73e8
+    aarch64-windows:
+      url: https://github.com/antonmedv/walk/releases/download/v1.9.0/walk_windows_arm64.exe
+      sha256: 7933d3388fe01bd415915248b044d1078d8653a44802c0004c281240c58b1083
+    x86_64-linux:
+      url: https://github.com/antonmedv/walk/releases/download/v1.9.0/walk_linux_amd64
+      sha256: 64a4186f93a268081e21bb3b8919780febe8517c9370f6320f12f6fb3a77d2f4
+    x86_64-macos:
+      url: https://github.com/antonmedv/walk/releases/download/v1.9.0/walk_darwin_amd64
+      sha256: 8202beeda064968f684b47e1fe0751612fc11a6c50de53eb903034ff49d1a8e3
+    x86_64-windows:
+      url: https://github.com/antonmedv/walk/releases/download/v1.9.0/walk_windows_amd64.exe
+      sha256: a63fc7ba98f7671ce516c26891fa701f3cc4a2f533d393e98ffb1a5e44909d2a
 installs:
   1.7.0:
     any-any:

@@ -1,0 +1,22 @@
+name: kbgrep
+description: A search tool optimized for knowledgebases. Requires Bash 4.
+homepage: https://github.com/pcrockett/kbgrep
+repository: https://github.com/pcrockett/kbgrep
+releases:
+  0.2.1:
+    any-any:
+      url: https://github.com/pcrockett/kbgrep/releases/download/v0.2.1/kbg
+      sha256: 64e47b5e214ec1d84296552c9069d769353f73a8d2b6e807e591c25ab50d6c5e
+installs:
+  0.2.1:
+    any-linux:
+      files:
+        ${asset_name}: bin/kbg
+      tests:
+      - kbg --version
+    any-any:
+      files:
+        ${asset_name}: bin/kbg
+fetcher: !GitHub
+  arch: any
+  os: any

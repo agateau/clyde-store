@@ -3,6 +3,20 @@ description: Self-hosted lightweight software forge.
 homepage: https://forgejo.org/
 repository: https://codeberg.org/forgejo/forgejo
 releases:
+  1.21.10:
+    aarch64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v1.21.10-0/forgejo-1.21.10-0-linux-arm64.xz
+      sha256: 7995f675d8044c970e1e938aa899e3cfb1d26b1a96faa5b465838f486f9a6fa4
+    x86_64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v1.21.10-0/forgejo-1.21.10-0-linux-amd64.xz
+      sha256: 974dc1665ffe29a060b125a07980763f8a359b7b23b4a8ebbe2b65c631785b8f
+  1.21.11:
+    aarch64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v1.21.11-0/forgejo-1.21.11-0-linux-arm64.xz
+      sha256: bd1c31a141591be3f76924fe4e00befdc8aa1e52e185329cc439cd6185b6f9a4
+    x86_64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v1.21.11-0/forgejo-1.21.11-0-linux-amd64.xz
+      sha256: 6135aaae780f8dda75a6d3ec0d0aacfd04926c4aedab45f4290f8365de95300e
   1.21.7:
     aarch64-linux:
       url: https://codeberg.org/forgejo/forgejo/releases/download/v1.21.7-0/forgejo-1.21.7-0-linux-arm64.xz
@@ -10,6 +24,41 @@ releases:
     x86_64-linux:
       url: https://codeberg.org/forgejo/forgejo/releases/download/v1.21.7-0/forgejo-1.21.7-0-linux-amd64.xz
       sha256: 0acf17200e7b083c6e6d3152ad8e86c2e7a4fccb2d2ee90ed04fd1474a18ffe6
+  7.0.0:
+    aarch64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v7.0.0/forgejo-7.0.0-linux-arm64.xz
+      sha256: 177141f278a0daa8ec03dbe632d074c20128aa09da4f33752ec14610ffd0938d
+    x86_64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v7.0.0/forgejo-7.0.0-linux-amd64.xz
+      sha256: 65e327b5db82d92acb9713f5e2a9f0935d68f2e1650d9813a69123e006c1e6e8
+  7.0.1:
+    aarch64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v7.0.1/forgejo-7.0.1-linux-arm64.xz
+      sha256: 6520742afe76215adf47e53f2f63883c7c0b21b7150c98b3d229ca475d300081
+    x86_64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v7.0.1/forgejo-7.0.1-linux-amd64.xz
+      sha256: 3e75caa270d43d537ea93fe9b00f090b84ce047904232d54109a97b9b2475bd9
+  7.0.2:
+    aarch64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v7.0.2/forgejo-7.0.2-linux-arm64.xz
+      sha256: 0db0be5827bac884e4a045a30a896d53d713e71ca49afdde214a4a7a8226d797
+    x86_64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v7.0.2/forgejo-7.0.2-linux-amd64.xz
+      sha256: f0424f424e670769ac5bf1fad57576585eb7630f44b9cfe620697a2b17fb159e
+  7.0.3:
+    aarch64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v7.0.3/forgejo-7.0.3-linux-arm64.xz
+      sha256: 6bd10b29c62b7a6b6544b49852e003c90fc1187a31a03c8837e543b66acef77d
+    x86_64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v7.0.3/forgejo-7.0.3-linux-amd64.xz
+      sha256: 989fea2973152cc3e566b26bd0d0bc9b4731e97c28d40942b379a03351d19a10
+  7.0.4:
+    aarch64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v7.0.4/forgejo-7.0.4-linux-arm64.xz
+      sha256: e9a7b098d03a0913b004014918b95b1970c58d65981822b3d6e2cea281b29582
+    x86_64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v7.0.4/forgejo-7.0.4-linux-amd64.xz
+      sha256: 55a1d3996c2d962f7def3ca7b6f3d4f95fec5c57fa521df500c9bac524a06fd4
 installs:
   1.21.7:
     any-any:
