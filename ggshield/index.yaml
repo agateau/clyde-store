@@ -1,0 +1,21 @@
+name: ggshield
+description: Find and fix secrets and infrastructure-as-code misconfigurations.
+homepage: https://gitguardian.com
+repository: https://github.com/GitGuardian/ggshield
+releases:
+  1.28.0:
+    x86_64-linux:
+      url: https://github.com/GitGuardian/ggshield/releases/download/v1.28.0/ggshield-1.28.0-x86_64-unknown-linux-gnu.tar.gz
+      sha256: 2d612b84abb08a98595437f93ade56851a4d83ce87c46738e7e64196f8fa0eb1
+installs:
+  0.0.0:
+    any-any:
+      strip: 1
+      files:
+        ggshield${exe_ext}: opt/ggshield/
+        _internal: opt/ggshield/_internal
+        README.md: ${doc_dir}
+      extra_files:
+        ggshield: bin/
+      tests:
+      - ggshield${exe_ext} --version
