@@ -3,6 +3,25 @@ description: Terminal file manager
 homepage: https://github.com/antonmedv/walk
 repository: https://github.com/antonmedv/walk
 releases:
+  1.10.0:
+    aarch64-linux:
+      url: https://github.com/antonmedv/walk/releases/download/v1.10.0/walk_linux_arm64
+      sha256: fe88b6f2fdbd8e7df6ed37f477b98ed1794785955f4e52564cf3d604cbc03a56
+    aarch64-macos:
+      url: https://github.com/antonmedv/walk/releases/download/v1.10.0/walk_darwin_arm64
+      sha256: 07686a29202861ecdfe96ca9850f8cb2403fb9d88911063a2aea4c76042b3c08
+    aarch64-windows:
+      url: https://github.com/antonmedv/walk/releases/download/v1.10.0/walk_windows_arm64.exe
+      sha256: f752fbcf1bf428ec1a2e97ab71233032f978d9cfe22d1317eb1ffcec7e49d873
+    x86_64-linux:
+      url: https://github.com/antonmedv/walk/releases/download/v1.10.0/walk_linux_amd64
+      sha256: 2ab9b53ff8c5541caba13eccb6e60e34ecc184914d59b90d5b137c93df2b39aa
+    x86_64-macos:
+      url: https://github.com/antonmedv/walk/releases/download/v1.10.0/walk_darwin_amd64
+      sha256: ae39da902d81bd5729a9fbdaecf60c45a907ff855977830d3fa32fdb383a688a
+    x86_64-windows:
+      url: https://github.com/antonmedv/walk/releases/download/v1.10.0/walk_windows_amd64.exe
+      sha256: 17c3c8bcb79ac3d766871de9bab0056b275347c7cab75fff53a229726693fea1
   1.7.0:
     aarch64-linux:
       url: https://github.com/antonmedv/walk/releases/download/v1.7.0/walk_linux_arm64
