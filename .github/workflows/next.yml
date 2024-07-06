@@ -18,7 +18,10 @@ jobs:
       matrix:
         os:
           - ubuntu-22.04
-          - macos-11
+          # Intel based
+          - macos-12
+          # ARM based
+          - macos-14
           - windows-2019
 
     runs-on: ${{ matrix.os }}
