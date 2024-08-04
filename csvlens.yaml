@@ -3,6 +3,19 @@ description: Command-line CSV viewer
 homepage: https://github.com/YS-L/csvlens
 repository: https://github.com/YS-L/csvlens
 releases:
+  0.10.0:
+    aarch64-macos:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.10.0/csvlens-aarch64-apple-darwin.tar.xz
+      sha256: 3641811ca5a751ab8287708ef4121ddd80423679f3d4c4a2a5abada125229ff1
+    x86_64-linux:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.10.0/csvlens-x86_64-unknown-linux-musl.tar.xz
+      sha256: 9a0e743d45f3796474fbdd683971488b6588b839c08735ee90c9d8c1e766705d
+    x86_64-macos:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.10.0/csvlens-x86_64-apple-darwin.tar.xz
+      sha256: 19077e9d6c16f255c3ad422b2a9ac3cd2b4cbbe65fad601498b7fb4e3fbbcea1
+    x86_64-windows:
+      url: https://github.com/YS-L/csvlens/releases/download/v0.10.0/csvlens-x86_64-pc-windows-msvc.zip
+      sha256: 3ccb8654021c32274b49e33ba09a7c5cb15d5039618d1c938f97b38c61648a02
   0.5.0:
     aarch64-macos:
       url: https://github.com/YS-L/csvlens/releases/download/v0.5.0/csvlens-aarch64-apple-darwin.tar.xz
