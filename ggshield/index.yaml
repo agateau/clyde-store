@@ -7,14 +7,21 @@ releases:
     x86_64-linux:
       url: https://github.com/GitGuardian/ggshield/releases/download/v1.28.0/ggshield-1.28.0-x86_64-unknown-linux-gnu.tar.gz
       sha256: 2d612b84abb08a98595437f93ade56851a4d83ce87c46738e7e64196f8fa0eb1
+  1.30.2:
+    x86_64-linux:
+      url: https://github.com/GitGuardian/ggshield/releases/download/v1.30.2/ggshield-1.30.2-x86_64-unknown-linux-gnu.tar.gz
+      sha256: ce5dd97b5637842ef21935a922ab71cf13f8f2454f4187ab29e677a0896fc361
+    x86_64-windows:
+      url: https://github.com/GitGuardian/ggshield/releases/download/v1.30.2/ggshield-1.30.2-x86_64-pc-windows-msvc.zip
+      sha256: 4db376d98d1a110e11d21b9ef1fefc814e6459c3bf42880022ad5cab1172e7e6
 installs:
   0.0.0:
     any-any:
       strip: 1
       files:
-        ggshield${exe_ext}: opt/ggshield/
-        _internal: opt/ggshield/_internal
         README.md: ${doc_dir}
+        _internal: opt/ggshield/_internal
+        ggshield${exe_ext}: opt/ggshield/
       extra_files:
         ggshield: bin/
       tests:
