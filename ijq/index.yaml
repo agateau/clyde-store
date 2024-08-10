@@ -23,6 +23,16 @@ releases:
     x86_64-macos:
       url: https://git.sr.ht/~gpanders/ijq/refs/download/v1.1.0/ijq-1.1.0-darwin-amd64.tar.gz
       sha256: 5b7d6af5ea2926fd4694e0e9309e9a382792bee694f537f09002953f6a47f96a
+  1.1.1:
+    aarch64-macos:
+      url: https://git.sr.ht/~gpanders/ijq/refs/download/v1.1.1/ijq-1.1.1-darwin-arm64.tar.gz
+      sha256: dedcf26a31a80db4eff2b60936a39d27157a28c41c48b60b5f564943b37901b9
+    x86_64-linux:
+      url: https://git.sr.ht/~gpanders/ijq/refs/download/v1.1.1/ijq-1.1.1-linux-amd64.tar.gz
+      sha256: 7bc4ee30e44448a7916885ff9d7068470b4496d130c39018b5eadec9118e8cfd
+    x86_64-macos:
+      url: https://git.sr.ht/~gpanders/ijq/refs/download/v1.1.1/ijq-1.1.1-darwin-amd64.tar.gz
+      sha256: 9132a673f32588db1a2b20f02666f76660daf293a9c7dc447bc1e8e7ea26829d
 installs:
   0.0.0:
     any-any:
