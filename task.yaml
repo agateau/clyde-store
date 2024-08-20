@@ -1,0 +1,42 @@
+name: task
+description: task is a wonderful tool.
+homepage: https://taskfile.dev
+repository: https://github.com/go-task/task
+releases:
+  3.38.0:
+    aarch64-linux:
+      url: https://github.com/go-task/task/releases/download/v3.38.0/task_linux_arm64.tar.gz
+      sha256: 30d3c727a434ee3bf69fb69e5d1aa84c3ab401fc2343a2760b4c7808acc689b8
+    aarch64-macos:
+      url: https://github.com/go-task/task/releases/download/v3.38.0/task_darwin_arm64.tar.gz
+      sha256: a575c9e10591bb35d1bb678bdde2fa221330d207a787b0a5979d4287ee7f4c0f
+    aarch64-windows:
+      url: https://github.com/go-task/task/releases/download/v3.38.0/task_windows_arm64.zip
+      sha256: 955e88bb22b3396bd95c9d8d25e8fd71a323364549e012d863287fd069d51ee7
+    x86-linux:
+      url: https://github.com/go-task/task/releases/download/v3.38.0/task_linux_386.tar.gz
+      sha256: 4ae95300c51d53f894cce9bc45f22b2347492772b21c3a6ddf3d47304c7bbefa
+    x86-windows:
+      url: https://github.com/go-task/task/releases/download/v3.38.0/task_windows_386.zip
+      sha256: 72962ea63388db41750e60cd0184e8c68ffd008ce277ba7502e974e40ee36bf2
+    x86_64-linux:
+      url: https://github.com/go-task/task/releases/download/v3.38.0/task_linux_amd64.tar.gz
+      sha256: a6241c9fbcc49bdffef907e4d6325adb074295fd094f2bfa6a2e32282c2ed06e
+    x86_64-macos:
+      url: https://github.com/go-task/task/releases/download/v3.38.0/task_darwin_amd64.tar.gz
+      sha256: a2aefff4f3cb2851ce133c13a20502f1dfa8a6bc34d3f4e01c67cf3278f4f73d
+    x86_64-windows:
+      url: https://github.com/go-task/task/releases/download/v3.38.0/task_windows_amd64.zip
+      sha256: 6586105949b4359b37f770b7604542c23f064e055c6521791cd8d5916ec287fb
+installs:
+  3.38.0:
+    any-any:
+      files:
+        task${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        completion/bash/task.bash: ${bash_comp_dir}
+        completion/fish/task.fish: ${fish_comp_dir}
+        completion/zsh/_task: ${zsh_comp_dir}
+      tests:
+      - task${exe_ext} --version
