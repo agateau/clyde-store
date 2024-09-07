@@ -113,6 +113,28 @@ releases:
     x86_64-windows:
       url: https://github.com/charmbracelet/vhs/releases/download/v0.7.2/vhs_0.7.2_Windows_x86_64.zip
       sha256: 96cfae9ccd2cfe2d17ff6ec6d462ea27ea8d07c1a7eb8ce3cb2e0f833e53666d
+  0.8.0:
+    aarch64-linux:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.8.0/vhs_0.8.0_Linux_arm64.tar.gz
+      sha256: 8625f2b02ba5a7626841e3045be767ca1da30920fb567b6488387c1a47853db9
+    aarch64-macos:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.8.0/vhs_0.8.0_Darwin_arm64.tar.gz
+      sha256: 5997b48752358954439ad6fc1f2da21b77e52d5412240c13b7d1ec73114a2188
+    x86-linux:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.8.0/vhs_0.8.0_Linux_i386.tar.gz
+      sha256: 24ba27621045aa54349308b6520dce30d7eb795d1795d652d54b2c84d6677b95
+    x86-windows:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.8.0/vhs_0.8.0_Windows_i386.zip
+      sha256: 1ad3f7ca28243461d4c72e32856849c265f580507a23dd405288677139ed55f1
+    x86_64-linux:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.8.0/vhs_0.8.0_Linux_x86_64.tar.gz
+      sha256: 0371e5b57b335330272aba6992656b6785e2e5d8538d6e4d85dcfd9f70400c5b
+    x86_64-macos:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.8.0/vhs_0.8.0_Darwin_x86_64.tar.gz
+      sha256: 0bf046291622fe4efc267fe5b429a0bf29116f40687f0525eaf9c845bf32b0df
+    x86_64-windows:
+      url: https://github.com/charmbracelet/vhs/releases/download/v0.8.0/vhs_0.8.0_Windows_x86_64.zip
+      sha256: 857058e28ef37742ff939457f69eb6b337c4599bad84d95fccfe30c2de6c0b62
 installs:
   0.4.0:
     any-any:
