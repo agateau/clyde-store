@@ -28,15 +28,40 @@ releases:
     x86_64-windows:
       url: https://github.com/go-task/task/releases/download/v3.38.0/task_windows_amd64.zip
       sha256: 6586105949b4359b37f770b7604542c23f064e055c6521791cd8d5916ec287fb
+  3.39.0:
+    aarch64-linux:
+      url: https://github.com/go-task/task/releases/download/v3.39.0/task_linux_arm64.tar.gz
+      sha256: 18be93736cb2ca3c38d3f9a145bd1bbf63da1d739313c6298d1361454f1f98f1
+    aarch64-macos:
+      url: https://github.com/go-task/task/releases/download/v3.39.0/task_darwin_arm64.tar.gz
+      sha256: 68b944be94a8344589c5dc73112a8680af3d6ff61fd37351b78601a4eeccd1e1
+    aarch64-windows:
+      url: https://github.com/go-task/task/releases/download/v3.39.0/task_windows_arm64.zip
+      sha256: 4b9fe7b65f5981b469f9240036c294bc56c3cc0d467d670edef4c1ec0204c11c
+    x86-linux:
+      url: https://github.com/go-task/task/releases/download/v3.39.0/task_linux_386.tar.gz
+      sha256: 95af49a2f3f9db727917aa912add01381f2a24e2e1f95de233bab38ea5ac7b6a
+    x86-windows:
+      url: https://github.com/go-task/task/releases/download/v3.39.0/task_windows_386.zip
+      sha256: 93373630a40ebe8f3c05b36486538836b8a298221106bedddab0b881834d1b5a
+    x86_64-linux:
+      url: https://github.com/go-task/task/releases/download/v3.39.0/task_linux_amd64.tar.gz
+      sha256: 5be311826daf2639023bd1998d835d519c778357885df0f8115142ec519af174
+    x86_64-macos:
+      url: https://github.com/go-task/task/releases/download/v3.39.0/task_darwin_amd64.tar.gz
+      sha256: 226d741fe52d750a41eee838e49f2bd3b97f5e7f17cb327ef133854f2aeef02c
+    x86_64-windows:
+      url: https://github.com/go-task/task/releases/download/v3.39.0/task_windows_amd64.zip
+      sha256: 40daad21c17d8fb7c90fcf99f787f2db5c08ae4aeaf0be1c0177fd77fc3296a1
 installs:
   3.38.0:
     any-any:
       files:
-        task${exe_ext}: bin/
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
         completion/bash/task.bash: ${bash_comp_dir}
         completion/fish/task.fish: ${fish_comp_dir}
         completion/zsh/_task: ${zsh_comp_dir}
+        task${exe_ext}: bin/
       tests:
       - task${exe_ext} --version
