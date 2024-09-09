@@ -82,6 +82,28 @@ releases:
     x86_64-windows:
       url: https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep-14.1.0-x86_64-pc-windows-msvc.zip
       sha256: fe4f75edfaa50f0d4fecbf47696b7629f3449c9c2c5a4da828753139e5a2e203
+  14.1.1:
+    aarch64-linux:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-aarch64-unknown-linux-gnu.tar.gz
+      sha256: c827481c4ff4ea10c9dc7a4022c8de5db34a5737cb74484d62eb94a95841ab2f
+    aarch64-macos:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-aarch64-apple-darwin.tar.gz
+      sha256: 24ad76777745fbff131c8fbc466742b011f925bfa4fffa2ded6def23b5b937be
+    x86-linux:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-i686-unknown-linux-gnu.tar.gz
+      sha256: 2ce1beccb27ce9ad8e26593be52b15e8da0ee7bf3e0e59d5553ab3333a087a4e
+    x86-windows:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-i686-pc-windows-msvc.zip
+      sha256: 1e5c99e4851c964152db07c79151982c7fa7a549b645b6b47daae07a9c185f8e
+    x86_64-linux:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz
+      sha256: 4cf9f2741e6c465ffdb7c26f38056a59e2a2544b51f7cc128ef28337eeae4d8e
+    x86_64-macos:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-apple-darwin.tar.gz
+      sha256: fc87e78f7cb3fea12d69072e7ef3b21509754717b746368fd40d88963630e2b3
+    x86_64-windows:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-pc-windows-msvc.zip
+      sha256: d0f534024c42afd6cb4d38907c25cd2b249b79bbe6cc1dbee8e3e37c2b6e25a1
 installs:
   13.0.0:
     any-any:
@@ -90,12 +112,12 @@ installs:
         README.md: ${doc_dir}
         complete/_rg: ${zsh_comp_dir}
         complete/rg.bash: ${bash_comp_dir}
+        complete/rg.fish: ${fish_comp_dir}
         doc/CHANGELOG.md: ${doc_dir}
         doc/FAQ.md: ${doc_dir}
         doc/GUIDE.md: ${doc_dir}
         doc/rg.1: share/man/man1/
         rg${exe_ext}: bin/
-        complete/rg.fish: ${fish_comp_dir}
       tests:
       - rg${exe_ext} --version
     x86_64-windows:
@@ -104,10 +126,10 @@ installs:
         README.md: ${doc_dir}
         complete/_rg: ${zsh_comp_dir}
         complete/rg.bash: ${bash_comp_dir}
+        complete/rg.fish: ${fish_comp_dir}
         doc/CHANGELOG.md: ${doc_dir}
         doc/FAQ.md: ${doc_dir}
         doc/GUIDE.md: ${doc_dir}
         rg${exe_ext}: bin/
-        complete/rg.fish: ${fish_comp_dir}
       tests:
       - rg${exe_ext} --version
