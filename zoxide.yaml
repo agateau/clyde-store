@@ -120,6 +120,28 @@ releases:
     x86_64-windows:
       url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.5/zoxide-0.9.5-x86_64-pc-windows-msvc.zip
       sha256: 57397eb20e0a3348ddba2631764b10e4248e160212522e9bbbba95f09fcc8124
+  0.9.6:
+    aarch64-linux:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide-0.9.6-aarch64-unknown-linux-musl.tar.gz
+      sha256: 7da16a093b2ac16d577dc53d1f74a8199fc824c963fa3aaf77a6d9f294a895d5
+    aarch64-macos:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide-0.9.6-aarch64-apple-darwin.tar.gz
+      sha256: b0b6ddb238dff0cd787c1210f69ab1179544f56c165cff112131db78625ea6c4
+    aarch64-windows:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide-0.9.6-aarch64-pc-windows-msvc.zip
+      sha256: c40bf1972d383e20e87a0dbd9a57eaafe52a30aa5a3d05be632c14a256415c2d
+    x86-linux:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide-0.9.6-i686-unknown-linux-musl.tar.gz
+      sha256: f76d2abf71fc7ebeb945e46f5344c092419df8a0104273fced5689d165cddd8a
+    x86_64-linux:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide-0.9.6-x86_64-unknown-linux-musl.tar.gz
+      sha256: eaa18f8aca1f02e1a132a9eac21b630918f96fa1cc7486ab87e7053dad37b004
+    x86_64-macos:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide-0.9.6-x86_64-apple-darwin.tar.gz
+      sha256: a0d49bb6f04e7a98b16f2869b813aa6ad131aa04bf6a8f13d2b6b199e4b07a8e
+    x86_64-windows:
+      url: https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide-0.9.6-x86_64-pc-windows-msvc.zip
+      sha256: 49cf729c1788570ce9c76e59f3aa77668ef1302444fdd16aeeb5748d2890f4ec
 installs:
   0.9.0:
     any-any:
