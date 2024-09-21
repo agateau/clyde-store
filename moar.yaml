@@ -234,6 +234,19 @@ releases:
     x86_64-windows:
       url: https://github.com/walles/moar/releases/download/v1.27.1/moar-v1.27.1-windows-amd64.exe
       sha256: 1e5fa05b99a468cce4de63b0a8c1ed3b371bda8efbdc1964562d43061dada947
+  1.27.2:
+    x86-linux:
+      url: https://github.com/walles/moar/releases/download/v1.27.2/moar-v1.27.2-linux-386
+      sha256: 6f91aefb004d99b08a35cdbed9af0dfa058ea729d3962eaba3e158f122203735
+    x86_64-linux:
+      url: https://github.com/walles/moar/releases/download/v1.27.2/moar-v1.27.2-linux-amd64
+      sha256: c0443a395a95988a1401ff4885bbba75098c69aa1320c49f835992d29f7ee171
+    x86_64-macos:
+      url: https://github.com/walles/moar/releases/download/v1.27.2/moar-v1.27.2-darwin-amd64
+      sha256: 0e033faf041863f501aac312c5a4ba15497e8548b6d942205cb4eff7670868cc
+    x86_64-windows:
+      url: https://github.com/walles/moar/releases/download/v1.27.2/moar-v1.27.2-windows-amd64.exe
+      sha256: 27909ad3573b2b6cc16a87bbba7d146c09b1e632b48dc3233b4f44fc2e961501
 installs:
   0.0.0:
     any-any:
