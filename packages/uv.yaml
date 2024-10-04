@@ -1,0 +1,37 @@
+name: uv
+description: An extremely fast Python package and project manager.
+homepage: https://docs.astral.sh/uv
+repository: https://github.com/astral-sh/uv
+releases:
+  0.4.18:
+    aarch64-linux:
+      url: https://github.com/astral-sh/uv/releases/download/0.4.18/uv-aarch64-unknown-linux-musl.tar.gz
+      sha256: 59d50976e32d18ea94210dcd8da4eea3306690e3edc1cb5a40342ca1f7db2c47
+    aarch64-macos:
+      url: https://github.com/astral-sh/uv/releases/download/0.4.18/uv-aarch64-apple-darwin.tar.gz
+      sha256: 49929e29bad25dfdb2f4ec49973c2265fbb538ddef3b1fa46fdb20245fa7a605
+    x86-linux:
+      url: https://github.com/astral-sh/uv/releases/download/0.4.18/uv-i686-unknown-linux-musl.tar.gz
+      sha256: 48aad5171df7e21d22438bf3af3fbe6cdae409e09cee3842d5782dfd11428003
+    x86-windows:
+      url: https://github.com/astral-sh/uv/releases/download/0.4.18/uv-i686-pc-windows-msvc.zip
+      sha256: acc6e07df1b96e42d8e3becea4aa70110c921e6f77f69b521f7477222651bc75
+    x86_64-linux:
+      url: https://github.com/astral-sh/uv/releases/download/0.4.18/uv-x86_64-unknown-linux-musl.tar.gz
+      sha256: f0cc269adcad633f06ad50755af38d8f5bf745fbe7e4edafa35cfbb286706397
+    x86_64-macos:
+      url: https://github.com/astral-sh/uv/releases/download/0.4.18/uv-x86_64-apple-darwin.tar.gz
+      sha256: a99d009f16b6681825ab8a672f83bcf838e851a8914c497ccf65f310b5be17b9
+    x86_64-windows:
+      url: https://github.com/astral-sh/uv/releases/download/0.4.18/uv-x86_64-pc-windows-msvc.zip
+      sha256: f6cffb80499da1e3ca0a3bb4710cb3601f6933315f5568ce4b785c664d65c644
+installs:
+  0.4.18:
+    any-any:
+      strip: 1
+      files:
+        uv${exe_ext}: bin/
+        uvx${exe_ext}: bin/
+      tests:
+      - uv${exe_ext} --version
+      - uvx${exe_ext} --version
