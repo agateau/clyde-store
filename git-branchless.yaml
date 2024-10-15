@@ -3,6 +3,13 @@ description: High-velocity, monorepo-scale workflow for Git
 homepage: https://github.com/arxanas/git-branchless
 repository: https://github.com/arxanas/git-branchless
 releases:
+  0.10.0:
+    x86_64-linux:
+      url: https://github.com/arxanas/git-branchless/releases/download/v0.10.0/git-branchless-v0.10.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: baa34041f4694cf95a67d4f2371965a7c63251e7d1604c8aea15da1caba2afff
+    x86_64-windows:
+      url: https://github.com/arxanas/git-branchless/releases/download/v0.10.0/git-branchless-v0.10.0-x86_64-pc-windows-msvc.zip
+      sha256: 60ebe87ed18dd1b2c93c5094c9e7c9960590a97e452fa3ec03720c9c71b29452
   0.7.1:
     x86_64-linux:
       url: https://github.com/arxanas/git-branchless/releases/download/v0.7.1/git-branchless-v0.7.1-x86_64-unknown-linux-musl.tar.gz
