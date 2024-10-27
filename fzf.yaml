@@ -644,6 +644,25 @@ releases:
     x86_64-windows:
       url: https://github.com/junegunn/fzf/releases/download/v0.55.0/fzf-0.55.0-windows_amd64.zip
       sha256: 48fea906ed9914e2e9482055b7e8bbb90cba23ef34c0473110b64ebd65352df1
+  0.56.0:
+    aarch64-linux:
+      url: https://github.com/junegunn/fzf/releases/download/v0.56.0/fzf-0.56.0-linux_arm64.tar.gz
+      sha256: 215f8c497179e121ffaa62940dc18ac24f10bd922568b5f6b5f5e776adea267b
+    aarch64-macos:
+      url: https://github.com/junegunn/fzf/releases/download/v0.56.0/fzf-0.56.0-darwin_arm64.tar.gz
+      sha256: 9516460d1111fd26111fab3dacabec86f05a2bd427b4cca0e3846777e4499e9c
+    aarch64-windows:
+      url: https://github.com/junegunn/fzf/releases/download/v0.56.0/fzf-0.56.0-windows_arm64.zip
+      sha256: 55696ee6632bb28efc812f636204c1e220eb72350f7ea033b10d507c55e36b33
+    x86_64-linux:
+      url: https://github.com/junegunn/fzf/releases/download/v0.56.0/fzf-0.56.0-linux_amd64.tar.gz
+      sha256: 7afad5dcc3e3a7cbaef577ec02c4dd90280e283bc16da99809498f75a5f18080
+    x86_64-macos:
+      url: https://github.com/junegunn/fzf/releases/download/v0.56.0/fzf-0.56.0-darwin_amd64.tar.gz
+      sha256: 29e54ebf67373a7e1305f833624c7cbce15a5d0d41bca1c80777ab7dd82c3dfe
+    x86_64-windows:
+      url: https://github.com/junegunn/fzf/releases/download/v0.56.0/fzf-0.56.0-windows_amd64.zip
+      sha256: 116cf92206ca23217cc75deacc61755a8ed926a37a3e24c1338f128dd9a8ba3d
 installs:
   0.27.2:
     any-any:
