@@ -1,0 +1,19 @@
+name: activitywatch
+description: activitywatch is a wonderful tool.
+homepage: https://activitywatch.net
+repository: https://github.com/ActivityWatch/activitywatch/
+releases:
+  0.13.2:
+    x86_64-linux:
+      url: https://github.com/ActivityWatch/activitywatch/releases/download/v0.13.2/activitywatch-v0.13.2-linux-x86_64.zip
+      sha256: 8f62b10babf8a8f108cbdf7267c02fbc1ce2a970fa9535f230b3416b803e3360
+fetcher: !GitHub
+  include: '.*-linux-.*'
+installs:
+  0.13.2:
+    any-linux:
+      files:
+        activitywatch: opt/activitywatch
+      extra_files:
+        aw-qt: bin/
+        aw-qt.desktop: share/applications/
