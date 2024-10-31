@@ -287,6 +287,22 @@ releases:
     x86_64-windows:
       url: https://releases.hashicorp.com/vault/1.18.0/vault_1.18.0_windows_amd64.zip
       sha256: fb673aeb50be55b7f5a68cded0162a68db2e271626958abfcad523760405298f
+  1.18.1:
+    aarch64-linux:
+      url: https://releases.hashicorp.com/vault/1.18.1/vault_1.18.1_linux_arm64.zip
+      sha256: c62ff127b9b1b6e984c0c3c88ee68d9348f8f3d5e9bbc1a639c09607827ebb0e
+    aarch64-macos:
+      url: https://releases.hashicorp.com/vault/1.18.1/vault_1.18.1_darwin_arm64.zip
+      sha256: ec8fc86f13ea153e2e2161e0d8bc30edea99e8e177aaa39b46c7f5a4f48b20ab
+    x86_64-linux:
+      url: https://releases.hashicorp.com/vault/1.18.1/vault_1.18.1_linux_amd64.zip
+      sha256: d6486e4644cbeefa841ff6a41e39b68a5129c329bd2e271b29368948ff9ddfc4
+    x86_64-macos:
+      url: https://releases.hashicorp.com/vault/1.18.1/vault_1.18.1_darwin_amd64.zip
+      sha256: 8767a3d63d432a8810efcb830c4ad713c72a396d1aff64fd5d7ebeeccf6f141c
+    x86_64-windows:
+      url: https://releases.hashicorp.com/vault/1.18.1/vault_1.18.1_windows_amd64.zip
+      sha256: 73935235e81da711f36b26560d8b47ee62a72d7c8122ada68cdf5fbc6ddacec0
 installs:
   1.12.0:
     any-any:
