@@ -108,6 +108,13 @@ releases:
     x86_64-linux:
       url: https://codeberg.org/forgejo/forgejo/releases/download/v9.0.1/forgejo-9.0.1-linux-amd64.xz
       sha256: e63399648a285ee4b384ae8cfcc2828dc765256de2418fc599d4972110e625c1
+  9.0.2:
+    aarch64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v9.0.2/forgejo-9.0.2-linux-arm64.xz
+      sha256: b2d21393c3393c621290821d1f061597b73edc84abd052e0782d43177cf1f3ca
+    x86_64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v9.0.2/forgejo-9.0.2-linux-amd64.xz
+      sha256: 11fe124ef5cabb9439bc88219b62fb9104941b79bb06d5b1300b1534313de4d3
 installs:
   1.21.7:
     any-any:
