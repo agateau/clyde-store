@@ -1,0 +1,19 @@
+name: regexnight
+description: Command-line tool to print syntax-highlighted versions of regular expressions and spot errors in them
+homepage: https://gitlab.com/agateau/regexnight
+repository: https://gitlab.com/agateau/regexnight
+releases:
+  0.1.1:
+    x86_64-linux:
+      url: https://gitlab.com/agateau/regexnight/-/releases/0.1.1/downloads/regexnight-0.1.1-x86_64-linux.tar.gz
+      sha256: 71a4421fc4cf95eeddc9ddf93a7224d13a891f744c46bb146300c06ff69640f5
+installs:
+  0.0.0:
+    any-any:
+      strip: 1
+      files:
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        regexnight${exe_ext}: bin/
+      tests:
+      - regexnight${exe_ext} --version
