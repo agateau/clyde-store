@@ -1,0 +1,39 @@
+name: python3.8
+description: Python 3.8, compiled by Gregory Szorc.
+homepage: https://github.com/indygreg/python-build-standalone
+repository: https://github.com/indygreg/python-build-standalone
+releases:
+  20240224.0.0:
+    aarch64-linux:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.8.18%2B20240224-aarch64-unknown-linux-gnu-install_only.tar.gz
+      sha256: 6588c9eed93833d9483d01fe40ac8935f691a1af8e583d404ec7666631b52487
+    aarch64-macos:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.8.18%2B20240224-aarch64-apple-darwin-install_only.tar.gz
+      sha256: 4d493a1792bf211f37f98404cc1468f09bd781adc2602dea0df82ad264c11abc
+    x86-windows:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.8.18%2B20240224-i686-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: c24f9c9e8638cff0ce6aa808a57cc5f22009bc33e3bcf410a726b79d7c5545fe
+    x86_64-linux:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.8.18%2B20240224-x86_64-unknown-linux-gnu-install_only.tar.gz
+      sha256: 5ae36825492372554c02708bdd26b8dcd57e3dbf34b3d6d599ad91d93540b2b7
+    x86_64-macos:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.8.18%2B20240224-x86_64-apple-darwin-install_only.tar.gz
+      sha256: 7d2cd8d289d5e3cdd0a8c06c028c7c621d3d00ce44b7e2f08c1724ae0471c626
+    x86_64-windows:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.8.18%2B20240224-x86_64-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: dba923ee5df8f99db04f599e826be92880746c02247c8d8e4d955d4bc711af11
+installs:
+  20240224.0.0:
+    any-any:
+      files:
+        python: opt/python3.8
+      extra_files:
+        python3.8: bin/
+        pip3.8: bin/
+        python3.8.bat: bin/
+        pip3.8.bat: bin/
+      tests:
+      - python3.8 -c 'import sys ; print(sys.version)'
+      - pip3.8 --version
+fetcher: !GitHub
+  include: ^cpython-3\.8\..*(unknown-linux-gnu|windows-msvc-shared|apple-darwin)-install_only.tar.gz
