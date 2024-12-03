@@ -1,0 +1,32 @@
+name: zed
+description: high-performance, multiplayer code editor.
+homepage: https://zed.dev
+repository: https://github.com/zed-industries/zed
+releases:
+  0.163.3:
+    aarch64-linux:
+      url: https://github.com/zed-industries/zed/releases/download/v0.163.3/zed-linux-aarch64.tar.gz
+      sha256: 806fdd7fd36a4cd6dbde2ff23d5ee633b6e62e04106b286f507cd4ffb84e1d7d
+    x86_64-linux:
+      url: https://github.com/zed-industries/zed/releases/download/v0.163.3/zed-linux-x86_64.tar.gz
+      sha256: 7b4fa77e8aa767114a1344cccab0a42340aeaca8d7ba27d656d68fb6497668f4
+  0.192.6:
+    aarch64-linux:
+      url: https://github.com/zed-industries/zed/releases/download/v0.192.6/zed-linux-aarch64.tar.gz
+      sha256: b9de09d543ef34741e60fa55c377fe99ebdf09e4a8dbb0dce16cc852df5fae68
+    x86_64-linux:
+      url: https://github.com/zed-industries/zed/releases/download/v0.192.6/zed-linux-x86_64.tar.gz
+      sha256: 351ce3a68d9b80cbc4cf40b487f178859b0dd4455bb97fd6e0e82a539684b537
+installs:
+  0.0.0:
+    any-any:
+      files:
+        zed.app/bin: opt/zed/bin/
+        zed.app/lib: opt/zed/lib/
+        zed.app/libexec: opt/zed/libexec/
+        zed.app/licenses.md: $doc_dir
+        zed.app/share: share/
+      extra_files:
+        zed: bin/
+fetcher: !GitHub
+  include: zed-linux-.*
