@@ -7,14 +7,27 @@ releases:
     x86_64-linux:
       url: https://github.com/GitGuardian/ggshield/releases/download/v1.28.0/ggshield-1.28.0-x86_64-unknown-linux-gnu.tar.gz
       sha256: 2d612b84abb08a98595437f93ade56851a4d83ce87c46738e7e64196f8fa0eb1
+  1.34.0:
+    aarch64-macos:
+      url: https://github.com/GitGuardian/ggshield/releases/download/v1.34.0/ggshield-1.34.0-arm64-apple-darwin.tar.gz
+      sha256: 959146246d42cefc252af116621eb6abf76590714ad1bf2d6ac3441c226648a8
+    x86_64-linux:
+      url: https://github.com/GitGuardian/ggshield/releases/download/v1.34.0/ggshield-1.34.0-x86_64-unknown-linux-gnu.tar.gz
+      sha256: 5eda4d5ae39b21a786cca7a08e0b984c0821a142f62145fc4c99340ba9579ade
+    x86_64-macos:
+      url: https://github.com/GitGuardian/ggshield/releases/download/v1.34.0/ggshield-1.34.0-x86_64-apple-darwin.tar.gz
+      sha256: 5be1d0acfaa7a785b34915d87dbaaaa5db135c460917879e1b6d39d3c14770fd
+    x86_64-windows:
+      url: https://github.com/GitGuardian/ggshield/releases/download/v1.34.0/ggshield-1.34.0-x86_64-pc-windows-msvc.zip
+      sha256: 904b3487934f1feb0d354d3aae7e5f72d43e4d71a595ef60d0fffb9df4d01f22
 installs:
   0.0.0:
     any-any:
       strip: 1
       files:
-        ggshield${exe_ext}: opt/ggshield/
-        _internal: opt/ggshield/_internal
         README.md: ${doc_dir}
+        _internal: opt/ggshield/_internal
+        ggshield${exe_ext}: opt/ggshield/
       extra_files:
         ggshield: bin/
       tests:
