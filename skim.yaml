@@ -3,6 +3,19 @@ description: Fuzzy Finder in rust!
 homepage: https://github.com/lotabout/skim
 repository: https://github.com/lotabout/skim
 releases:
+  0.15.5:
+    aarch64-linux:
+      url: https://github.com/skim-rs/skim/releases/download/v0.15.5/skim-aarch64-unknown-linux-musl.tgz
+      sha256: 5e60ecdc0eb9663a9a5e0bce280e89339a00ef59cc49f3403c3fdef8f3b28293
+    aarch64-macos:
+      url: https://github.com/skim-rs/skim/releases/download/v0.15.5/skim-aarch64-apple-darwin.tgz
+      sha256: 9445333a71e5d93a912ec27085e65bde92de833f43761c1db8e925ca99184ff2
+    x86_64-linux:
+      url: https://github.com/skim-rs/skim/releases/download/v0.15.5/skim-x86_64-unknown-linux-musl.tgz
+      sha256: f9629566150eb0dd1c8dfa4792a4383594be48b5400c992d129102d520ffffb3
+    x86_64-macos:
+      url: https://github.com/skim-rs/skim/releases/download/v0.15.5/skim-x86_64-apple-darwin.tgz
+      sha256: 2af429ae1c5ef7d71d698a97ba9ab822c4db9f26e8370e5b6f0fceeee01c88fd
   0.9.4:
     x86_64-linux:
       url: https://github.com/lotabout/skim/releases/download/v0.9.4/skim-v0.9.4-x86_64-unknown-linux-musl.tar.gz
@@ -16,4 +29,4 @@ installs:
       files:
         sk: bin/
       tests:
-        - sk${exe_ext} --version
+      - sk${exe_ext} --version
