@@ -839,6 +839,25 @@ releases:
     x86_64-windows:
       url: https://github.com/docker/compose/releases/download/v2.32.0/docker-compose-windows-x86_64.exe
       sha256: b18f79e01e22362faede43844a2131038c49b52692150deb8ea81f98ab286fe6
+  2.32.1:
+    aarch64-linux:
+      url: https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64
+      sha256: 7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd
+    aarch64-macos:
+      url: https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-darwin-aarch64
+      sha256: bc8864301641f9e301fc5efc0c44dfe5d4a4085bf9a564a7a151d8f91aa76f4c
+    aarch64-windows:
+      url: https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-aarch64.exe
+      sha256: ec2abd5a9fd34057adce68f824b45f2551f1f39ad0d9e6a3df7ab811c10a0b20
+    x86_64-linux:
+      url: https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64
+      sha256: ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9
+    x86_64-macos:
+      url: https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-darwin-x86_64
+      sha256: 371f0be73773cc7f3d076b69fb7d06ec8beb874cf937710cc12d0914ef1cd774
+    x86_64-windows:
+      url: https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
+      sha256: 5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
 installs:
   2.16.0:
     any-any:
