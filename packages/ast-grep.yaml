@@ -1,0 +1,36 @@
+name: ast-grep
+description: Fast and polyglot tool for code structural search, lint, rewriting at large scale.
+homepage: https://ast-grep.github.io
+repository: https://github.com/ast-grep/ast-grep
+releases:
+  0.33.0:
+    aarch64-linux:
+      url: https://github.com/ast-grep/ast-grep/releases/download/0.33.0/app-aarch64-unknown-linux-gnu.zip
+      sha256: f583d4fda9ccab2d875e8f3af0ad0682ebdd2ea1b1ef449081b65201967e34a6
+    aarch64-macos:
+      url: https://github.com/ast-grep/ast-grep/releases/download/0.33.0/app-aarch64-apple-darwin.zip
+      sha256: aba1e8c63d0a533d10622c968527cc8f12595d88aca8bb0d6919605a648ad4e3
+    aarch64-windows:
+      url: https://github.com/ast-grep/ast-grep/releases/download/0.33.0/app-aarch64-pc-windows-msvc.zip
+      sha256: 03fe6a70be5b558c8ebbd649c9d9afe2aafc70f2169159b9ab566d898cf8b3e4
+    x86-windows:
+      url: https://github.com/ast-grep/ast-grep/releases/download/0.33.0/app-i686-pc-windows-msvc.zip
+      sha256: 0b8fe3861388f0f9fa9b6833e1b1c3a8e879ac30eef5549ccc667334402565d7
+    x86_64-linux:
+      url: https://github.com/ast-grep/ast-grep/releases/download/0.33.0/app-x86_64-unknown-linux-gnu.zip
+      sha256: 02b1b09752c86dfb28db48fad779189723308ba694ad95045795c69358d1691a
+    x86_64-macos:
+      url: https://github.com/ast-grep/ast-grep/releases/download/0.33.0/app-x86_64-apple-darwin.zip
+      sha256: ea92af4481c3bfb8aea8293f1ca114256ec4929eef858f2e60220c93a8bcf67f
+    x86_64-windows:
+      url: https://github.com/ast-grep/ast-grep/releases/download/0.33.0/app-x86_64-pc-windows-msvc.zip
+      sha256: 02e8ec5f446a62af7603dd81da56d1bc3320f79e83909b1412ea7647685e36b2
+installs:
+  0.33.0:
+    any-any:
+      files:
+        sg${exe_ext}: bin/
+        ast-grep${exe_ext}: bin/
+      tests:
+      - sg${exe_ext} --version
+      - ast-grep${exe_ext} --version
