@@ -75,10 +75,12 @@ def list_packages_to_check(revision: str) -> List[Path]:
     return packages
 
 
-def check_packages(packages: List[Path]) -> int:
+def check_packages(packages: List[Path], report_path: str | None) -> int:
     # We must run the test in the current directory for now
     package_names = [x.relative_to(ROOT_DIR) for x in packages]
     cmd = [which("clydetools"), "check"] + package_names
+    if report_path:
+        cmd.extend(["--report", report_path])
     proc = subprocess.run(cmd, cwd=ROOT_DIR)
     return proc.returncode
 
@@ -100,6 +102,9 @@ def main() -> int:
         "--rev",
         metavar="REVISION",
         help="Check packages changed in REVISION..HEAD instead of origin/TARGET..HEAD",
+    )
+    parser.add_argument(
+        "-r", "--report", help="Path where to store a clydetools check report"
     )
 
     args = parser.parse_args()
@@ -129,9 +134,7 @@ def main() -> int:
         clyde_url = find_clyde_snapshot_url()
 
     download_clyde(clyde_url, CLYDE_DIR)
-    return check_packages(packages)
-
-    return 0
+    return check_packages(packages, args.report)
 
 
 if __name__ == "__main__":

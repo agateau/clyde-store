@@ -1,0 +1,77 @@
+name: Check proposed branch
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "*-proposed-*"
+
+jobs:
+  check_packages:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-22.04
+          # Intel based
+          - macos-13
+          # ARM based
+          - macos-14
+          - windows-2019
+
+    runs-on: ${{ matrix.os }}
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Set up Python
+        run: |
+          cd ci
+          uv python install
+
+      - name: Check Packages
+        run: |
+          cd ci
+          uv run check_packages.py --report check-${{ matrix.os }}.json
+        env:
+          PYTHONUNBUFFERED: 1
+
+      - name: Upload check report
+        uses: actions/upload-artifact@v3
+        with:
+          name: check
+          path: check-*.json
+
+  merge_valid_changes:
+    runs-on: ubuntu-22.04
+    needs:
+      - check_packages
+
+    steps:
+      - name: Download check reports
+        uses: actions/download-artifact@v3
+        with:
+          name: check
+          path: check-*.json
+
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Set up Python
+        run: |
+          cd ci
+          uv python install
+
+      - name: Merge valid changes
+        run: |
+          cd ci
+          uv run merge_valid_changes.py check/check-*.json

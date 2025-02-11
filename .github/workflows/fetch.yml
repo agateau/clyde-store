@@ -16,19 +16,18 @@ jobs:
           # job is not started from it
           fetch-depth: 0
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
       - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
+        run: |
+          cd ci
+          uv python install
 
       - name: Fetch
         run: |
-          git config user.name "ClydeStore bot"
-          git config user.email "clydestore@agateau.com"
-          ci/fetch *.yaml */index.yaml
+          cd ci
+          uv run fetch.py *.yaml */index.yaml
         env:
           PYTHONUNBUFFERED: 1
-          # PR_GITHUB_TOKEN must be a PAT able to open PR, see
-          # https://github.com/peter-evans/create-pull-request/issues/48
           CLYDE_GITHUB_TOKEN: ${{ secrets.PR_GITHUB_TOKEN }}
-          GH_TOKEN: ${{ secrets.PR_GITHUB_TOKEN }}
