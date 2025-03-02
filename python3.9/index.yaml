@@ -19,16 +19,32 @@ releases:
     x86_64-windows:
       url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.9.18%2B20240224-x86_64-pc-windows-msvc-shared-install_only.tar.gz
       sha256: a9bdbd728ed4c353a4157ecf74386117fb2a2769a9353f491c528371cfe7f6cd
+  20250212.0.0:
+    aarch64-macos:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.9.21%2B20250212-aarch64-apple-darwin-install_only.tar.gz
+      sha256: bbe3b179be32bb3e07f0e365b58f80cbe351909eaaac6e3b872a143ae6da8398
+    x86-windows:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.9.21%2B20250212-i686-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: 4200043d95d8ce02360af2f663057e75fd93e657179a9a49c48d10caf9876480
+    x86_64-linux:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.9.21%2B20250212-x86_64_v3-unknown-linux-gnu-install_only.tar.gz
+      sha256: ca4608ce413241aa2d0a2db93b27c752be1e84d1777df4113781e110f90cc3f5
+    x86_64-macos:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.9.21%2B20250212-x86_64-apple-darwin-install_only.tar.gz
+      sha256: 2d0e8c7482eed36fc038cf80871a7da43b2dde93334806d5f87a2f97cff7c78e
+    x86_64-windows:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.9.21%2B20250212-x86_64-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: 174d43461298953e34ead7c5c12f7510a89bebcbfdf782500543a7a209676f25
 installs:
   20240224.0.0:
     any-any:
       files:
         python: opt/python3.9
       extra_files:
-        python3.9: bin/
         pip3.9: bin/
-        python3.9.bat: bin/
         pip3.9.bat: bin/
+        python3.9: bin/
+        python3.9.bat: bin/
       tests:
       - python3.9 -c 'import sys ; print(sys.version)'
       - pip3.9 --version
