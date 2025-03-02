@@ -69,7 +69,7 @@ def main():
     branch_name = create_proposed_branch(repo, is_next=args.next)
 
     progress("Pushing proposed branch")
-    repo.run(["push", "-u", f"origin/{branch_name}"])
+    repo.git.push("-u", "origin", branch_name)
 
     return 0
 
