@@ -42,7 +42,7 @@ jobs:
           PYTHONUNBUFFERED: 1
 
       - name: Upload check report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: check
           path: check-*.json
@@ -54,10 +54,11 @@ jobs:
 
     steps:
       - name: Download check reports
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: check
-          path: check-*.json
+          path: .
+          merge-multiple: true
 
       - uses: actions/checkout@v4
 
