@@ -1,0 +1,40 @@
+name: python3.10
+description: Python 3.10, compiled by Gregory Szorc.
+homepage: https://github.com/indygreg/python-build-standalone
+repository: https://github.com/indygreg/python-build-standalone
+releases:
+  20240224.0.0:
+    aarch64-macos:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.10.13%2B20240224-aarch64-apple-darwin-install_only.tar.gz
+      sha256: 5fdc0f6a5b5a90fd3c528e8b1da8e3aac931ea8690126c2fdb4254c84a3ff04a
+    x86-windows:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.10.13%2B20240224-i686-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: 5365b90f9cba7186d12dd86516ece8b696db7311128e0b49c92234e01a74599f
+    x86_64-linux:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.10.13%2B20240224-x86_64_v3-unknown-linux-gnu-install_only.tar.gz
+      sha256: 325b708dccba08446658137517630c1a9fe38519780d516a760597e79a9d8d69
+    x86_64-macos:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.10.13%2B20240224-x86_64-apple-darwin-install_only.tar.gz
+      sha256: 6378dfd22f58bb553ddb02be28304d739cd730c1f95c15c74955c923a1bc3d6a
+    x86_64-windows:
+      url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.10.13%2B20240224-x86_64-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: 086f7fe9156b897bb401273db8359017104168ac36f60f3af4e31ac7acd6634e
+installs:
+  20240224.0.0:
+    any-windows:
+      files:
+        python: opt/python3.10
+      extra_files:
+        windows/python310: bin/
+        windows/python310.bat: bin/
+      tests:
+      - python310 -c 'import sys ; print(sys.version)'
+    any-any:
+      files:
+        python: opt/python3.10
+      extra_files:
+        any/python3.10: bin/
+      tests:
+      - python3.10 -c 'import sys ; print(sys.version)'
+fetcher: !GitHub
+  include: ^cpython-3\.10\..*(v3-unknown-linux-gnu|windows-msvc-shared|apple-darwin)-install_only.tar.gz
