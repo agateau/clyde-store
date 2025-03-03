@@ -35,3 +35,12 @@ def get_modified_packages(repo: Repo) -> Iterable[Path]:
         path = Path(diff.b_path)
         if is_package(path):
             yield path
+
+
+def get_target_branch(repo: Repo) -> str:
+    name = repo.head.reference.name
+    if name.startswith("main-proposed-"):
+        return "main"
+    if name.startswith("next-proposed-"):
+        return "next"
+    raise ValueError(f"Current branch ({name}) is not a proposed branch")

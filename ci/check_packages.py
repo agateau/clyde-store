@@ -17,8 +17,9 @@ from get_clyde import (
     find_clyde_release_url,
     find_clyde_snapshot_url,
 )
+from git import Repo
 from tui import eprint, progress
-from utils import is_package, which
+from utils import get_target_branch, is_package, which
 
 CI_DIR = Path(__file__).parent.resolve()
 CLYDE_DIR = CI_DIR / "clyde"
@@ -90,12 +91,6 @@ def main() -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter, description=__doc__
     )
 
-    parser.add_argument(
-        "target",
-        metavar="TARGET",
-        choices=["main", "next"],
-        help="The target branch. Must be 'main' or 'next'",
-    )
     parser.add_argument("-a", "--all", action="store_true")
     parser.add_argument("-d", "--dry-run", action="store_true")
     parser.add_argument(
@@ -111,10 +106,13 @@ def main() -> int:
 
     check_github_token()
 
+    repo = Repo(".")
+    target = get_target_branch(repo)
+
     if args.all:
         packages = list_all_packages()
     else:
-        revision = args.rev if args.rev else f"origin/{args.target}"
+        revision = args.rev if args.rev else f"origin/{target}"
         packages = list_packages_to_check(revision)
     packages = sorted(packages)
 
@@ -128,7 +126,7 @@ def main() -> int:
     if args.dry_run:
         return 0
 
-    if args.target == "main":
+    if target == "main":
         clyde_url = find_clyde_release_url()
     else:
         clyde_url = find_clyde_snapshot_url()

@@ -9,15 +9,7 @@ import sys
 from pathlib import Path
 
 from git import Repo
-
-
-def get_target_branch(repo: Repo) -> str:
-    name = repo.head.reference.name
-    if name.startswith("main-proposed-"):
-        return "main"
-    if name.startswith("next-proposed-"):
-        return "next"
-    raise ValueError(f"Current branch ({name}) is not a proposed branch")
+from utils import get_target_branch
 
 
 def revert_failed_changes(repo: Repo, report_paths: list[Path]) -> None:
