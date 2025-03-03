@@ -37,6 +37,7 @@ jobs:
 
       - name: Check Packages
         run: |
+          git fetch
           uv run ci/check_packages.py --report check-${{ matrix.os }}.json
         env:
           PYTHONUNBUFFERED: 1
