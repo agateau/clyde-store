@@ -5,7 +5,6 @@ Check packages changed between TARGET and HEAD are valid.
 import argparse
 import itertools
 import random
-import re
 import subprocess
 import sys
 from pathlib import Path
@@ -36,16 +35,12 @@ def check_github_token() -> None:
         )
 
 
-def iter_modified_files(revision: str) -> Iterable[Path]:
-    cmd = ["git", "diff", "--raw", revision, "HEAD"]
-    proc = subprocess.run(cmd, check=True, stdout=subprocess.PIPE)
-    out = str(proc.stdout, "utf-8")
-    for line in out.split("\n"):
-        match = re.search("([A-Z]+)\\d*\t([^\\s]+)$", line)
-        if match:
-            status, path_str = match.groups()
-            if status not in {"R", "D"}:
-                yield Path(path_str).resolve()
+def iter_modified_files(repo: Repo, revision: str) -> Iterable[Path]:
+    diff_index = repo.index.diff(revision)
+    for diff in diff_index.iter_change_type("M"):
+        yield Path(diff.b_path)
+    for diff in diff_index.iter_change_type("A"):
+        yield Path(diff.b_path)
 
 
 def has_ci_changed(paths: List[Path]) -> bool:
@@ -60,13 +55,14 @@ def list_all_packages() -> List[Path]:
     ]
 
 
-def list_packages_to_check(revision: str) -> List[Path]:
+def list_packages_to_check(repo: Repo, revision: str) -> List[Path]:
     progress("Listing packages to check")
-    paths = list(iter_modified_files(revision))
+    paths = list(iter_modified_files(repo, revision))
     packages = [x for x in paths if is_package(x)]
     if has_ci_changed(paths):
         eprint(
-            f"CI files have changed: adding a random selection of {RANDOM_COUNT} packages"
+            f"CI files have changed: adding a random selection of {RANDOM_COUNT}"
+            " packages"
         )
         all_packages = list_all_packages()
         candidates = list(set(all_packages) - set(packages))
@@ -113,7 +109,7 @@ def main() -> int:
         packages = list_all_packages()
     else:
         revision = args.rev if args.rev else f"origin/{target}"
-        packages = list_packages_to_check(revision)
+        packages = list_packages_to_check(repo, revision)
     packages = sorted(packages)
 
     eprint("Packages to check:")
