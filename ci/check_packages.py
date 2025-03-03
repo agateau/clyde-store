@@ -74,8 +74,7 @@ def list_packages_to_check(repo: Repo, revision: str) -> List[Path]:
 
 def check_packages(packages: List[Path], report_path: str | None) -> int:
     # We must run the test in the current directory for now
-    package_names = [x.relative_to(ROOT_DIR) for x in packages]
-    cmd = [which("clydetools"), "check"] + package_names
+    cmd = [which("clydetools"), "check"] + packages
     if report_path:
         cmd.extend(["--report", report_path])
     proc = subprocess.run(cmd, cwd=ROOT_DIR)
@@ -117,7 +116,7 @@ def main() -> int:
         eprint("None")
         return 0
     for package in packages:
-        eprint(f"- {package.relative_to(ROOT_DIR)}")
+        eprint(f"- {package}")
 
     if args.dry_run:
         return 0
