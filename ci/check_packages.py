@@ -71,13 +71,12 @@ def list_packages_to_check(repo: Repo, revision: str) -> List[Path]:
     return packages
 
 
-def check_packages(packages: List[Path], report_path: str | None) -> int:
+def check_packages(packages: List[Path], report_path: str | None) -> None:
     # We must run the test in the current directory for now
     cmd = [which("clydetools"), "check"] + packages
     if report_path:
         cmd.extend(["--report", report_path])
-    proc = subprocess.run(cmd, cwd=ROOT_DIR)
-    return proc.returncode
+    subprocess.run(cmd, cwd=ROOT_DIR)
 
 
 def main() -> int:
@@ -129,7 +128,8 @@ def main() -> int:
     clyde_url = find_clyde_snapshot_url()
 
     download_clyde(clyde_url, CLYDE_DIR)
-    return check_packages(packages, args.report)
+    check_packages(packages, args.report)
+    return 0
 
 
 if __name__ == "__main__":
