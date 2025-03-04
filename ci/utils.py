@@ -26,7 +26,9 @@ def which(cmd: str) -> str:
 
 
 def is_package(path: Path) -> bool:
-    return path.suffix == ".yaml" and path.name[0] != "."
+    return (
+        path.suffix == ".yaml" and path.name[0] != "." and not ".github" in path.parts
+    )
 
 
 def get_modified_packages(repo: Repo) -> Iterable[Path]:
