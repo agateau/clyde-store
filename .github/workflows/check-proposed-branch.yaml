@@ -45,7 +45,7 @@ jobs:
       - name: Upload check report
         uses: actions/upload-artifact@v4
         with:
-          name: check
+          name: check-${{ matrix.os }}
           path: check-*.json
 
   merge_valid_changes:
@@ -57,8 +57,8 @@ jobs:
       - name: Download check reports
         uses: actions/download-artifact@v4
         with:
-          name: check
           path: .
+          pattern: check-*.json
           merge-multiple: true
 
       - uses: actions/checkout@v4
