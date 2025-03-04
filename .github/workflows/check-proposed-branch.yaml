@@ -54,14 +54,14 @@ jobs:
       - check_packages
 
     steps:
+      - uses: actions/checkout@v4
+
       - name: Download check reports
         uses: actions/download-artifact@v4
         with:
           path: .
           pattern: check-*.json
           merge-multiple: true
-
-      - uses: actions/checkout@v4
 
       - name: Install uv
         uses: astral-sh/setup-uv@v5
