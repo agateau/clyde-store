@@ -45,7 +45,7 @@ jobs:
       - name: Upload check report
         uses: actions/upload-artifact@v4
         with:
-          name: check-${{ matrix.os }}
+          name: check-${{ matrix.os }}.json
           path: check-*.json
 
   merge_valid_changes:
@@ -72,4 +72,4 @@ jobs:
 
       - name: Merge valid changes
         run: |
-          uv run ci/merge_valid_changes.py check/check-*.json
+          uv run ci/merge_valid_changes.py check-*.json
