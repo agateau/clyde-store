@@ -10,10 +10,9 @@ import sys
 from pathlib import Path
 from typing import Iterable, List
 
-from get_clyde import (
+from get_clyde import (  # find_clyde_release_url,
     GITHUB_TOKEN,
     download_clyde,
-    find_clyde_release_url,
     find_clyde_snapshot_url,
 )
 from git import Repo
@@ -121,10 +120,13 @@ def main() -> int:
     if args.dry_run:
         return 0
 
-    if target == "main":
-        clyde_url = find_clyde_release_url()
-    else:
-        clyde_url = find_clyde_snapshot_url()
+    # Disable this because we need the --report option, which is not in 0.8.0.
+    # TODO: uncomment when 0.9.0 is out.
+    # if target == "main":
+    #     clyde_url = find_clyde_release_url()
+    # else:
+    #     clyde_url = find_clyde_snapshot_url()
+    clyde_url = find_clyde_snapshot_url()
 
     download_clyde(clyde_url, CLYDE_DIR)
     return check_packages(packages, args.report)
