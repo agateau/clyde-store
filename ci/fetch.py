@@ -41,7 +41,7 @@ def create_proposed_branch(repo: Repo, *, is_next: bool) -> str:
     branch.checkout()
     repo.index.add(get_modified_packages(repo))
     repo.index.commit(
-        "Proposed updates for {base_branch} - {timestamp}",
+        f"Proposed updates for {base_branch} - {timestamp}",
         author=GIT_AUTHOR,
         committer=GIT_AUTHOR,
     )
