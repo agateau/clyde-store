@@ -25,7 +25,7 @@ jobs:
 
       - name: Fetch
         run: |
-          uv run ci/fetch.py *.yaml */index.yaml
+          uv run ci/fetch.py
         env:
           PYTHONUNBUFFERED: 1
           CLYDE_GITHUB_TOKEN: ${{ secrets.PR_GITHUB_TOKEN }}

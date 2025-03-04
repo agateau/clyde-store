@@ -3,7 +3,6 @@
 Check packages changed between TARGET and HEAD are valid.
 """
 import argparse
-import itertools
 import random
 import subprocess
 import sys
@@ -17,11 +16,15 @@ from get_clyde import (  # find_clyde_release_url,
 )
 from git import Repo
 from tui import eprint, progress
-from utils import get_target_branch, is_package, which
-
-CI_DIR = Path(__file__).parent.resolve()
-CLYDE_DIR = CI_DIR / "clyde"
-ROOT_DIR = CI_DIR.parent.resolve()
+from utils import (
+    CI_DIR,
+    CLYDE_DIR,
+    ROOT_DIR,
+    get_target_branch,
+    is_package,
+    list_all_packages,
+    which,
+)
 
 RANDOM_COUNT = 8
 
@@ -44,14 +47,6 @@ def iter_modified_files(repo: Repo, revision: str) -> Iterable[Path]:
 
 def has_ci_changed(paths: List[Path]) -> bool:
     return any(CI_DIR in x.parents for x in paths)
-
-
-def list_all_packages() -> List[Path]:
-    return [
-        x
-        for x in itertools.chain(ROOT_DIR.glob("*.yaml"), ROOT_DIR.glob("*/index.yaml"))
-        if is_package(x)
-    ]
 
 
 def list_packages_to_check(repo: Repo, revision: str) -> List[Path]:
