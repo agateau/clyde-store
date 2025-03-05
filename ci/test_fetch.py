@@ -4,7 +4,7 @@ import yaml
 from fetch import create_proposed_branch, run_clydetools_fetch
 from git import Repo
 
-CURRENT_REPO_DIR = Path(__name__).absolute().parent.parent
+CURRENT_REPO_DIR = Path(__file__).absolute().parent.parent
 assert (CURRENT_REPO_DIR / ".git").exists()
 
 PACKAGES_DIR = CURRENT_REPO_DIR / "packages"

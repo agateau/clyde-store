@@ -33,20 +33,20 @@ jobs:
 
       - name: Set up Python
         run: |
-          cd ci
           uv python install
 
       - name: Check Packages
         run: |
-          cd ci
-          uv run check_packages.py --report check-${{ matrix.os }}.json
+          git fetch
+          uv run ci/check_packages.py --report check-${{ matrix.os }}.json
         env:
           PYTHONUNBUFFERED: 1
+          CLYDE_GITHUB_TOKEN: ${{ secrets.PR_GITHUB_TOKEN }}
 
       - name: Upload check report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: check
+          name: check-${{ matrix.os }}.json
           path: check-*.json
 
   merge_valid_changes:
@@ -55,23 +55,28 @@ jobs:
       - check_packages
 
     steps:
-      - name: Download check reports
-        uses: actions/download-artifact@v3
-        with:
-          name: check
-          path: check-*.json
-
       - uses: actions/checkout@v4
+        with:
+          # Needed to ensure `base_branch` is available in ci/fetch even if the
+          # job is not started from it
+          fetch-depth: 0
+
+      - name: Download check reports
+        uses: actions/download-artifact@v4
+        with:
+          path: .
+          pattern: check-*.json
+          merge-multiple: true
 
       - name: Install uv
         uses: astral-sh/setup-uv@v5
 
       - name: Set up Python
         run: |
-          cd ci
           uv python install
 
       - name: Merge valid changes
         run: |
-          cd ci
-          uv run merge_valid_changes.py check/check-*.json
+          git config --global user.name "ClydeStore bot"
+          git config --global user.email "clydestore@agateau.com"
+          uv run ci/merge_valid_changes.py check-*.json

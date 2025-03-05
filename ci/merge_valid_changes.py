@@ -9,15 +9,8 @@ import sys
 from pathlib import Path
 
 from git import Repo
-
-
-def get_target_branch(repo: Repo) -> str:
-    name = repo.head.reference.name
-    if name.startswith("main-proposed-"):
-        return "main"
-    if name.startswith("next-proposed-"):
-        return "next"
-    raise ValueError(f"Current branch ({name}) is not a proposed branch")
+from tui import eprint
+from utils import get_target_branch
 
 
 def revert_failed_changes(repo: Repo, report_paths: list[Path]) -> None:
@@ -37,6 +30,7 @@ def revert_failed_changes(repo: Repo, report_paths: list[Path]) -> None:
 
     # Revert changes locally
     for path in to_revert_paths:
+        eprint(f"Reverting changes in {path}")
         repo.git.checkout(previous, path)
         repo.index.add(path)
 
@@ -48,6 +42,7 @@ def merge_branch(repo: Repo, target_branch: str) -> None:
     source_branch = repo.head.reference.name
     repo.git.checkout(target_branch)
     repo.git.merge(source_branch)
+    repo.git.push()
 
 
 def main() -> int:

@@ -12,7 +12,7 @@ from tempfile import TemporaryDirectory
 from get_clyde import download_clyde, find_clyde_snapshot_url
 from git import Repo
 from tui import progress
-from utils import GIT_AUTHOR, get_modified_packages
+from utils import GIT_AUTHOR, get_modified_packages, list_all_packages
 
 
 def run_clydetools_fetch(package_files: list[Path]) -> None:
@@ -41,7 +41,7 @@ def create_proposed_branch(repo: Repo, *, is_next: bool) -> str:
     branch.checkout()
     repo.index.add(get_modified_packages(repo))
     repo.index.commit(
-        "Proposed updates for {base_branch} - {timestamp}",
+        f"Proposed updates for {base_branch} - {timestamp}",
         author=GIT_AUTHOR,
         committer=GIT_AUTHOR,
     )
@@ -60,16 +60,21 @@ def main():
         help="Target 'next' instead of 'main'",
     )
 
-    parser.add_argument("package_files", nargs="+")
+    parser.add_argument("package_files", nargs="*")
 
     args = parser.parse_args()
 
+    if args.package_files:
+        package_paths = [Path(x) for x in args.package_files]
+    else:
+        package_paths = list_all_packages()
+
     repo = Repo(Path("."))
-    run_clydetools_fetch([Path(x) for x in args.package_files])
+    run_clydetools_fetch(package_paths)
     branch_name = create_proposed_branch(repo, is_next=args.next)
 
     progress("Pushing proposed branch")
-    repo.run(["push", "-u", f"origin/{branch_name}"])
+    repo.git.push("-u", "origin", branch_name)
 
     return 0
 

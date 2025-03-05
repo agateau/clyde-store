@@ -21,13 +21,11 @@ jobs:
 
       - name: Set up Python
         run: |
-          cd ci
           uv python install
 
       - name: Fetch
         run: |
-          cd ci
-          uv run fetch.py *.yaml */index.yaml
+          uv run ci/fetch.py
         env:
           PYTHONUNBUFFERED: 1
           CLYDE_GITHUB_TOKEN: ${{ secrets.PR_GITHUB_TOKEN }}
