@@ -77,4 +77,6 @@ jobs:
 
       - name: Merge valid changes
         run: |
+          git config --global user.name "ClydeStore bot"
+          git config --global user.email "clydestore@agateau.com"
           uv run ci/merge_valid_changes.py check-*.json
