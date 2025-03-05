@@ -42,6 +42,7 @@ def merge_branch(repo: Repo, target_branch: str) -> None:
     source_branch = repo.head.reference.name
     repo.git.checkout(target_branch)
     repo.git.merge(source_branch)
+    repo.git.push()
 
 
 def main() -> int:
