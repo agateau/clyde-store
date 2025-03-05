@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 
 from git import Repo
+from tui import eprint
 from utils import get_target_branch
 
 
@@ -29,6 +30,7 @@ def revert_failed_changes(repo: Repo, report_paths: list[Path]) -> None:
 
     # Revert changes locally
     for path in to_revert_paths:
+        eprint(f"Reverting changes in {path}")
         repo.git.checkout(previous, path)
         repo.index.add(path)
 
