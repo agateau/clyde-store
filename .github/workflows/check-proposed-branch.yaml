@@ -41,6 +41,7 @@ jobs:
           uv run ci/check_packages.py --report check-${{ matrix.os }}.json
         env:
           PYTHONUNBUFFERED: 1
+          CLYDE_GITHUB_TOKEN: ${{ secrets.PR_GITHUB_TOKEN }}
 
       - name: Upload check report
         uses: actions/upload-artifact@v4
