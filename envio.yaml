@@ -22,38 +22,19 @@ releases:
     x86_64-windows:
       url: https://github.com/envio-cli/envio/releases/download/v0.5.1/envio-v0.5.1-x86_64-pc-windows-gnu.zip
       sha256: cc3c1c21a036f8f31250f1565a32e30d77abc9a67193a37c49465a5c60cdd30c
-  0.6.1:
-    aarch64-linux:
-      url: https://github.com/envio-cli/envio/releases/download/v0.6.1/envio-v0.6.1-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 63fc3b1256835870967ebbe5e124d95a565ec09b4ac4776dd53d7d4300935ad9
-    aarch64-macos:
-      url: https://github.com/envio-cli/envio/releases/download/v0.6.1/envio-v0.6.1-aarch64-apple-darwin.tar.gz
-      sha256: 039a0a54f7003899cd64dc3bfe885d7e87a32817d512fb54f324da64b3f3c094
-    x86-linux:
-      url: https://github.com/envio-cli/envio/releases/download/v0.6.1/envio-v0.6.1-i686-unknown-linux-gnu.tar.gz
-      sha256: 23cde12fc9b9ce3c6af9795dea645383e11aacbfefeb920d27946bad1db1aa6b
-    x86-windows:
-      url: https://github.com/envio-cli/envio/releases/download/v0.6.1/envio-v0.6.1-i686-pc-windows-msvc.zip
-      sha256: e88ac0b9c71f39ca0a3b66f4d0ab5257d85a11dd7a0cec09e68cd525d039e106
-    x86_64-linux:
-      url: https://github.com/envio-cli/envio/releases/download/v0.6.1/envio-v0.6.1-x86_64-unknown-linux-gnu.tar.gz
-      sha256: a66ce6dd0611f823ed8fc4ad8aa9aaed9ef90df9f01254dc812d75acb782b6a4
-    x86_64-windows:
-      url: https://github.com/envio-cli/envio/releases/download/v0.6.1/envio-v0.6.1-x86_64-pc-windows-gnu.zip
-      sha256: ed678cfdb1c638995e31daecb6355fc2c530b5076c0d50c5f7085654883bc957
 installs:
   0.5.1:
     any-any:
       strip: 1
       files:
+        envio${exe_ext}: bin/
         CHANGELOG.md: ${doc_dir}
         LICENSE-APACHE: ${doc_dir}
         LICENSE-MIT: ${doc_dir}
         README.md: ${doc_dir}
-        autocomplete/_envio: ${zsh_comp_dir}
-        autocomplete/envio.bash: ${bash_comp_dir}
-        autocomplete/envio.fish: ${fish_comp_dir}
-        envio${exe_ext}: bin/
         envio.1: share/man/man1/
+        autocomplete/envio.bash: ${bash_comp_dir}
+        autocomplete/_envio: ${zsh_comp_dir}
+        autocomplete/envio.fish: ${fish_comp_dir}
       tests:
       - envio${exe_ext} version
