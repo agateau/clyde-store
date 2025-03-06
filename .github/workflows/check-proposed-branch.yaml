@@ -54,6 +54,10 @@ jobs:
     needs:
       - check_packages
 
+    permissions:
+      # Required to be able to push the changes
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
         with:
