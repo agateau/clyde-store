@@ -157,6 +157,25 @@ releases:
     x86_64-windows:
       url: https://github.com/svenstaro/miniserve/releases/download/v0.28.0/miniserve-0.28.0-x86_64-pc-windows-msvc.exe
       sha256: 2fac631c0b6c10edb0135d5d862021699eac68c07e15fb0ecee1a9c8ea1a5c32
+  0.29.0:
+    aarch64-linux:
+      url: https://github.com/svenstaro/miniserve/releases/download/v0.29.0/miniserve-0.29.0-aarch64-unknown-linux-musl
+      sha256: a105d241f056266acf3230b6b3a977d0e2e00cfda7df6b6af2f0421e50e8fc12
+    aarch64-macos:
+      url: https://github.com/svenstaro/miniserve/releases/download/v0.29.0/miniserve-0.29.0-aarch64-apple-darwin
+      sha256: 6a58d63891bcac5542b298c4ed145c2bac641e0830b3d3aa10a4bf164ee094d0
+    x86-windows:
+      url: https://github.com/svenstaro/miniserve/releases/download/v0.29.0/miniserve-0.29.0-i686-pc-windows-msvc.exe
+      sha256: fbc90210439024f5f2d201d4fd5a81f8923cc5d7cca6a338ce336d611d3a31c4
+    x86_64-linux:
+      url: https://github.com/svenstaro/miniserve/releases/download/v0.29.0/miniserve-0.29.0-x86_64-unknown-linux-musl
+      sha256: 86f7332a1e3ab0c24f69ee1c80376275ea7fcf9183a6d38a4b1169b9766d1774
+    x86_64-macos:
+      url: https://github.com/svenstaro/miniserve/releases/download/v0.29.0/miniserve-0.29.0-x86_64-apple-darwin
+      sha256: b9123b6ef1b2ac841b411862e9b61d021ebbad7a81b1ddcc6f6e0a5126e4eb78
+    x86_64-windows:
+      url: https://github.com/svenstaro/miniserve/releases/download/v0.29.0/miniserve-0.29.0-x86_64-pc-windows-msvc.exe
+      sha256: 8a446e3cdad7a6d2dee7b8bac11f03f7c20309b184ee3391fc198ded9b306571
 installs:
   0.20.0:
     any-any:

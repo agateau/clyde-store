@@ -3,6 +3,25 @@ description: A new type of shell
 homepage: https://www.nushell.sh
 repository: https://github.com/nushell/nushell
 releases:
+  0.102.0:
+    aarch64-linux:
+      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: 338fbcd7281cf4ae293b29f85494af6170dd1700a94fe07e5afed3eb07b3a25a
+    aarch64-macos:
+      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-aarch64-apple-darwin.tar.gz
+      sha256: 8865530fff832cc05a8159a005da2aa2d876d9f6a03fc5d144a2ea1efcc5b6b7
+    aarch64-windows:
+      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-aarch64-pc-windows-msvc.zip
+      sha256: b9afcb97ce6ed4c95c3afbcff053f6807458f0bd1cd7818a6a2f30ce3f6e82fc
+    x86_64-linux:
+      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: c4d9a3388d893e8c923b1a5363dbb9c7f081b71a4a5867767d7907632ecc0929
+    x86_64-macos:
+      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-x86_64-apple-darwin.tar.gz
+      sha256: d49d5017a617e219037e1710003981c4e224375d76a1d5f3a2a0d9522ebefc2c
+    x86_64-windows:
+      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-x86_64-pc-windows-msvc.zip
+      sha256: 5fd557a25685705170329384e5782769edd44390c33f9225a9518618fc19ab8e
   0.64.0:
     x86_64-linux:
       url: https://github.com/nushell/nushell/releases/download/0.64.0/nu-0.64.0-x86_64-unknown-linux-gnu.tar.gz

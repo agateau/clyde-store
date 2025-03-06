@@ -7,16 +7,20 @@ releases:
     any-any:
       url: https://github.com/pcrockett/kbgrep/releases/download/v0.2.1/kbg
       sha256: 64e47b5e214ec1d84296552c9069d769353f73a8d2b6e807e591c25ab50d6c5e
+  0.2.3:
+    any-any:
+      url: https://github.com/pcrockett/kbgrep/releases/download/v0.2.3/kbg
+      sha256: 343148d8d5787c54c19c69b2a1f89c7a333022712e44aa01a3c377a8d949c993
 installs:
   0.2.1:
+    any-any:
+      files:
+        ${asset_name}: bin/kbg
     any-linux:
       files:
         ${asset_name}: bin/kbg
       tests:
       - kbg --version
-    any-any:
-      files:
-        ${asset_name}: bin/kbg
 fetcher: !GitHub
   arch: any
   os: any
