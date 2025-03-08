@@ -19,3 +19,14 @@ installs:
         ggshield: bin/
       tests:
       - ggshield${exe_ext} --version
+
+  1.37.0:
+    any-any:
+      strip: 1
+      files:
+        _internal: opt/ggshield/_internal
+        ggshield${exe_ext}: opt/ggshield/
+      extra_files:
+        ggshield: bin/
+      tests:
+      - ggshield${exe_ext} --version
