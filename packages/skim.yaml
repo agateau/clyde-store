@@ -55,6 +55,19 @@ releases:
     x86_64-macos:
       url: https://github.com/skim-rs/skim/releases/download/v0.16.0/skim-x86_64-apple-darwin.tgz
       sha256: 4afb1190211e5cf6ec3193ff68c944fbc6e587c37125e6ce6ebc458fc5c01fac
+  0.16.1:
+    aarch64-linux:
+      url: https://github.com/skim-rs/skim/releases/download/v0.16.1/skim-aarch64-unknown-linux-musl.tgz
+      sha256: 674db3989754f665ef2311c573507b76a13546a88b9878abb6f9f74163f63a65
+    aarch64-macos:
+      url: https://github.com/skim-rs/skim/releases/download/v0.16.1/skim-aarch64-apple-darwin.tgz
+      sha256: f8009de825b5d617605894d3394acfbfc820b0c81a3abbc9f9af0bc360885719
+    x86_64-linux:
+      url: https://github.com/skim-rs/skim/releases/download/v0.16.1/skim-x86_64-unknown-linux-musl.tgz
+      sha256: 58bd04b9c92eebb669d5b0d8f3310cedf76f13862cace3d5800ddbc54db6f4ca
+    x86_64-macos:
+      url: https://github.com/skim-rs/skim/releases/download/v0.16.1/skim-x86_64-apple-darwin.tgz
+      sha256: cf7879169f4b22d069c8bd9b03d300b1ad53a2084780f2709e74f6fe2d639fc6
   0.9.4:
     x86_64-linux:
       url: https://github.com/lotabout/skim/releases/download/v0.9.4/skim-v0.9.4-x86_64-unknown-linux-musl.tar.gz
