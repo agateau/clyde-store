@@ -1,4 +1,4 @@
-name: Fetch
+name: fetch
 
 on:
   workflow_dispatch:
@@ -25,7 +25,13 @@ jobs:
 
       - name: Fetch
         run: |
+          git config user.name "ClydeStore bot"
+          git config user.email "clydestore@agateau.com"
           uv run ci/fetch.py
+          uv run ci/open_prs.py
         env:
           PYTHONUNBUFFERED: 1
+          # PR_GITHUB_TOKEN must be a PAT able to open PR, see
+          # https://github.com/peter-evans/create-pull-request/issues/48
           CLYDE_GITHUB_TOKEN: ${{ secrets.PR_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PR_GITHUB_TOKEN }}
