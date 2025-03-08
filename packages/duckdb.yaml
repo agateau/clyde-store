@@ -126,5 +126,16 @@ installs:
         duckdb${exe_ext}: bin/
       tests:
       - duckdb${exe_ext} --version
+  1.2.0:
+    any-macos:
+      files:
+        duckdb${exe_ext}: bin/
+      tests:
+      - duckdb${exe_ext} --version
+    any-any:
+      files:
+        duckdb${exe_ext}: bin/
+      tests:
+      - duckdb${exe_ext} --version
 fetcher: !GitHub
   include: ^duckdb_cli-
