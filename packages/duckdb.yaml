@@ -145,12 +145,7 @@ installs:
   1.2.0:
     any-any:
       files:
-        duckdb${exe_ext}: bin/
-      tests:
-      - duckdb${exe_ext} --version
-    any-macos:
-      files:
-        duckdb${exe_ext}: bin/
+        ${asset_name}: bin/duckdb${exe_ext}
       tests:
       - duckdb${exe_ext} --version
 fetcher: !GitHub
