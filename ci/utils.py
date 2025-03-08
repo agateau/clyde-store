@@ -15,9 +15,8 @@ IS_MACOS = platform.system() == "Darwin"
 IS_AARCH64 = platform.machine() == "arm64"
 IS_X86_64 = platform.machine() in {"x86_64", "AMD64"}
 
-CI_DIR = Path(__file__).parent.resolve()
-CLYDE_DIR = CI_DIR / "clyde"
-ROOT_DIR = CI_DIR.parent.resolve()
+ROOT_DIR = Path(__file__).parent.parent.resolve()
+CLYDE_DIR = ROOT_DIR / "ci/clyde"
 
 GIT_AUTHOR = Actor("ClydeStore bot", "clydestore@agateau.com")
 
@@ -38,28 +37,21 @@ def is_package(path: Path) -> bool:
 def get_modified_packages(repo: Repo) -> Iterable[Path]:
     diff_index = repo.index.diff(None)
     for diff in diff_index.iter_change_type("M"):
+        assert diff.b_path
         path = Path(diff.b_path)
         if is_package(path):
             yield path
 
 
-def get_target_branch(repo: Repo) -> str:
-    name = repo.head.reference.name
-    if name.startswith("main-proposed-"):
-        return "main"
-    if name.startswith("next-proposed-"):
-        return "next"
-    raise ValueError(f"Current branch ({name}) is not a proposed branch")
-
-
-def list_all_packages() -> list[Path]:
+def list_all_packages(repo: Repo) -> list[Path]:
+    root_dir = Path(repo.working_tree_dir)
     return [
         x
         for x in itertools.chain(
-            ROOT_DIR.glob("*.yaml"),
-            ROOT_DIR.glob("*/index.yaml"),
-            ROOT_DIR.glob("packages/*.yaml"),
-            ROOT_DIR.glob("packages/*/index.yaml"),
+            root_dir.glob("*.yaml"),
+            root_dir.glob("*/index.yaml"),
+            root_dir.glob("packages/*.yaml"),
+            root_dir.glob("packages/*/index.yaml"),
         )
         if is_package(x)
     ]

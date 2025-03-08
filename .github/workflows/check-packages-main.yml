@@ -1,0 +1,54 @@
+name: check-packages-main
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  check-packages:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-22.04
+          # Intel based
+          - macos-13
+          # ARM based
+          - macos-14
+          - windows-2019
+
+    runs-on: ${{ matrix.os }}
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Set up Python
+        run: |
+          uv python install
+
+      - name: Check Packages
+        run: |
+          if [ "$GITHUB_EVENT_NAME" != "pull_request" ] ; then
+            check_package_args="--all"
+          else
+            check_package_args=""
+          fi
+          export PYTHONUNBUFFERED=1
+          export CLYDE_GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}"
+          uv run ci/check_packages.py main $check_package_args
