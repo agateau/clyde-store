@@ -1,0 +1,41 @@
+name: presenterm
+description: A markdown terminal slideshow tool
+homepage: https://mfontanini.github.io/presenterm
+repository: https://github.com/mfontanini/presenterm
+releases:
+  0.0.0:
+    any-any:
+      url: https://github.com/dummy
+      sha256: '0'
+  0.11.0:
+    aarch64-linux:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.11.0/presenterm-0.11.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: 2ab1998fa44b99ff7336586dd73226da2b461f455cc7078d7ea33bffda362e70
+    aarch64-macos:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.11.0/presenterm-0.11.0-aarch64-apple-darwin.tar.gz
+      sha256: e086e6a730d09e195e4594594733f1fb119e657dd30975e3b49cd7b71664cc43
+    x86-linux:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.11.0/presenterm-0.11.0-i686-unknown-linux-musl.tar.gz
+      sha256: 42dbae39c9849507508e38549576085a966fe366468aff7d6c147d98b3b87bd5
+    x86-windows:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.11.0/presenterm-0.11.0-i686-pc-windows-msvc.zip
+      sha256: 23bd79ffa285703fd13c97af1d75de9f1477875f98e2b981066910719092bf89
+    x86_64-linux:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.11.0/presenterm-0.11.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: c9c86d67f34bb16c150f77ef239ce5cbc547a477f65a0c9fd02c9f6fdd732310
+    x86_64-macos:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.11.0/presenterm-0.11.0-x86_64-apple-darwin.tar.gz
+      sha256: a3af76f44885f942e7588ec1f3543d0e5ac9a5ec8ebd1462e75b04594e2407e5
+    x86_64-windows:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.11.0/presenterm-0.11.0-x86_64-pc-windows-msvc.zip
+      sha256: 30d84626e0660b3325e80506257b9d49532c39230fa5acc127d1cd032e75efbd
+installs:
+  0.11.0:
+    any-any:
+      strip: 1
+      files:
+        presenterm${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+      tests:
+      - presenterm${exe_ext} --version
