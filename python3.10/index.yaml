@@ -19,8 +19,31 @@ releases:
     x86_64-windows:
       url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.10.13%2B20240224-x86_64-pc-windows-msvc-shared-install_only.tar.gz
       sha256: 086f7fe9156b897bb401273db8359017104168ac36f60f3af4e31ac7acd6634e
+  20250212.0.0:
+    aarch64-macos:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.10.16%2B20250212-aarch64-apple-darwin-install_only.tar.gz
+      sha256: 92a7c8d80e997cc7cac0e0bd2f8d2eb1f4235d6b467a7ce411b3a5b2ea77ba14
+    x86-windows:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.10.16%2B20250212-i686-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: fd4daa6ddae7a82428e359fafffd1690b24df66049851a87c594ae128483f60c
+    x86_64-linux:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.10.16%2B20250212-x86_64_v3-unknown-linux-gnu-install_only.tar.gz
+      sha256: b41e91973974e459dd5a4757474d751bc403bd2386c4250090aec5901c687b80
+    x86_64-macos:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.10.16%2B20250212-x86_64-apple-darwin-install_only.tar.gz
+      sha256: 2c8df84bafb06dec79b83b6de047cd16e69cb4c2de3dea46caab53bbd229eb74
+    x86_64-windows:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.10.16%2B20250212-x86_64-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: 07937dd953dcbc6de76ff6ccf38dccb224f9ead595a46596ebaf1c6d4b3a745c
 installs:
   20240224.0.0:
+    any-any:
+      files:
+        python: opt/python3.10
+      extra_files:
+        any/python3.10: bin/
+      tests:
+      - python3.10 -c 'import sys ; print(sys.version)'
     any-windows:
       files:
         python: opt/python3.10
@@ -29,12 +52,5 @@ installs:
         windows/python310.bat: bin/
       tests:
       - python310 -c 'import sys ; print(sys.version)'
-    any-any:
-      files:
-        python: opt/python3.10
-      extra_files:
-        any/python3.10: bin/
-      tests:
-      - python3.10 -c 'import sys ; print(sys.version)'
 fetcher: !GitHub
   include: ^cpython-3\.10\..*(v3-unknown-linux-gnu|windows-msvc-shared|apple-darwin)-install_only.tar.gz
