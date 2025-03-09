@@ -19,16 +19,32 @@ releases:
     x86_64-windows:
       url: https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.11.8%2B20240224-x86_64-pc-windows-msvc-shared-install_only.tar.gz
       sha256: b618f1f047349770ee1ef11d1b05899840abd53884b820fd25c7dfe2ec1664d4
+  20250212.0.0:
+    aarch64-macos:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.11.11%2B20250212-aarch64-apple-darwin-install_only.tar.gz
+      sha256: 6dd5603e5570b8c4e1abf1ef2a329f195dd052890b1fa3b01b7406552a4f45a1
+    x86-windows:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.11.11%2B20250212-i686-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: acde42eb3797265464f03f284c87fc8bd5f5b43ff44fd32f76b7a01e8b544d21
+    x86_64-linux:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.11.11%2B20250212-x86_64_v3-unknown-linux-gnu-install_only.tar.gz
+      sha256: dc453f7a02f03192c4252c7368461ec0cfa2719f92c348fad3a80f46e38aec69
+    x86_64-macos:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.11.11%2B20250212-x86_64-apple-darwin-install_only.tar.gz
+      sha256: 1f1afc064b523b67c06e6d4b024a8dbb8df5fa12f0f0018b218c855491833451
+    x86_64-windows:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.11.11%2B20250212-x86_64-pc-windows-msvc-shared-install_only.tar.gz
+      sha256: 0f7c63d3bd684419a9e16c746c6850cf30c16a7e263f533108eb5911e6d326c3
 installs:
   20240224.0.0:
     any-any:
       files:
         python: opt/python3.11
       extra_files:
-        python3.11: bin/
         pip3.11: bin/
-        python3.11.bat: bin/
         pip3.11.bat: bin/
+        python3.11: bin/
+        python3.11.bat: bin/
       tests:
       - python3.11 -c 'import sys ; print(sys.version)'
       - pip3.11 --version
