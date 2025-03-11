@@ -203,6 +203,31 @@ releases:
     x86_64-windows:
       url: https://github.com/go-task/task/releases/download/v3.42.0/task_windows_amd64.zip
       sha256: 669ee2c97af66aec4577bedf1b9f7a8cd3aeb083164d1eb5cc2b46872e360c92
+  3.42.1:
+    aarch64-linux:
+      url: https://github.com/go-task/task/releases/download/v3.42.1/task_linux_arm64.tar.gz
+      sha256: 3019dd489ec70a56498ceb919aca06ff46ccf8e7fdd0c99913c9bb27dbd7a44d
+    aarch64-macos:
+      url: https://github.com/go-task/task/releases/download/v3.42.1/task_darwin_arm64.tar.gz
+      sha256: 69aab5d044ff5a0de4ead58a565cd4953ede821dc5c56b9b868a3866f622eba0
+    aarch64-windows:
+      url: https://github.com/go-task/task/releases/download/v3.42.1/task_windows_arm64.zip
+      sha256: e24836e094966f78915a3432c36b2fc862fcf25bf7448298712afc777f088f74
+    x86-linux:
+      url: https://github.com/go-task/task/releases/download/v3.42.1/task_linux_386.tar.gz
+      sha256: 220bdf8dcbc07003a25bba5632803e78865914467a25336e448cd7721d191523
+    x86-windows:
+      url: https://github.com/go-task/task/releases/download/v3.42.1/task_windows_386.zip
+      sha256: 7d9eee18a802cbc60d1e496b56193737692f13196551bedc8288fc5a21b9b4d7
+    x86_64-linux:
+      url: https://github.com/go-task/task/releases/download/v3.42.1/task_linux_amd64.tar.gz
+      sha256: 05b41f97e655f56cc8a7617106622dbfb5f647d13ec6013ff7719bc80b52746c
+    x86_64-macos:
+      url: https://github.com/go-task/task/releases/download/v3.42.1/task_darwin_amd64.tar.gz
+      sha256: 07073067fc3312d5f6cb3a24a496ec49aaa978dbdcfa7b5cdb694840c78440bd
+    x86_64-windows:
+      url: https://github.com/go-task/task/releases/download/v3.42.1/task_windows_amd64.zip
+      sha256: f80050756ddedc08b13721f444e748eb9218c65a2ce300724d168a2afe9811c6
 installs:
   3.38.0:
     any-any:
