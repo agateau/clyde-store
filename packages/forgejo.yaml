@@ -45,6 +45,13 @@ releases:
     x86_64-linux:
       url: https://codeberg.org/forgejo/forgejo/releases/download/v10.0.2/forgejo-10.0.2-linux-amd64.xz
       sha256: f2f863c797235f3a6e23df63115613b077f6ded7d4c53d404611078f6b385f11
+  10.0.3:
+    aarch64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v10.0.3/forgejo-10.0.3-linux-arm64.xz
+      sha256: 8cd22675f5f66913ee83d9c52511403a6b3b81621a750d68261c999d8f74b9b4
+    x86_64-linux:
+      url: https://codeberg.org/forgejo/forgejo/releases/download/v10.0.3/forgejo-10.0.3-linux-amd64.xz
+      sha256: 4320e381f804ddfa0554c23953b382edcd24e6893539fca6825908759f222194
   7.0.0:
     aarch64-linux:
       url: https://codeberg.org/forgejo/forgejo/releases/download/v7.0.0/forgejo-7.0.0-linux-arm64.xz
