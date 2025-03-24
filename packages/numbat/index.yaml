@@ -1,0 +1,42 @@
+name: numbat
+description: A statically typed programming language for scientific computations with first class support for physical dimensions and units
+homepage: https://numbat.dev
+repository: https://github.com/sharkdp/numbat
+releases:
+  1.16.0:
+    aarch64-linux:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.16.0/numbat-v1.16.0-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 6ca87175070557b0cdb28d109ee534bca3b3309199286565cdf6990b44d9ca57
+    aarch64-macos:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.16.0/numbat-v1.16.0-aarch64-apple-darwin.tar.gz
+      sha256: 1c041567a42f7abaaf597e3575ba40d1e6b3fc29e2c34ede344a11078fb9685f
+    x86-linux:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.16.0/numbat-v1.16.0-i686-unknown-linux-musl.tar.gz
+      sha256: 620dbac00df3c8df4f42fd816ac4b28153b1269873d87a981d6f67f4de50698b
+    x86-windows:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.16.0/numbat-v1.16.0-i686-pc-windows-msvc.zip
+      sha256: 054103404c8b18f3cc9dfd2c2b0fb0b0af1019082bc94ad3d69f60b6b8880b11
+    x86_64-linux:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.16.0/numbat-v1.16.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 590055c6f59ec52578a693b75a9a8c13fa163a86cb9a37e02bc6e608c86d6189
+    x86_64-macos:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.16.0/numbat-v1.16.0-x86_64-apple-darwin.tar.gz
+      sha256: f88d4a05ea65bd3917bf62f14c9ad5b2d7cf274675d880c7a7f7879af8b37a62
+    x86_64-windows:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.16.0/numbat-v1.16.0-x86_64-pc-windows-msvc.zip
+      sha256: 1950d6aa4ca73d4fbf59c8ed9024d95f2234aa2b6822fd6c42f8cb6f3653ff8d
+installs:
+  1.16.0:
+    any-any:
+      strip: 1
+      files:
+        README.md: ${doc_dir}
+        LICENSE-APACHE: ${doc_dir}
+        LICENSE-MIT: ${doc_dir}
+        assets: opt/numbat/
+        modules: opt/numbat/
+        numbat${exe_ext}: opt/numbat/
+      extra_files:
+        numbat: bin/
+      tests:
+        - numbat --version
