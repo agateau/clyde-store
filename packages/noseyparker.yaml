@@ -1,0 +1,33 @@
+name: noseyparker
+description: command-line tool that finds secrets and sensitive information in textual data and Git history
+homepage: https://github.com/praetorian-inc/noseyparker
+repository: https://github.com/praetorian-inc/noseyparker
+releases:
+  0.23.0:
+    aarch64-linux:
+      url: https://github.com/praetorian-inc/noseyparker/releases/download/v0.23.0/noseyparker-v0.23.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: acda220c795e90c2e49757856c8d1d167023b95f239fb2d98aadf277e9759925
+    aarch64-macos:
+      url: https://github.com/praetorian-inc/noseyparker/releases/download/v0.23.0/noseyparker-v0.23.0-aarch64-apple-darwin.tar.gz
+      sha256: f9c60333f55e6b30bb2e72bc7d4c54a6d28cdc6fcce18c150c6bebd89349250b
+    x86_64-linux:
+      url: https://github.com/praetorian-inc/noseyparker/releases/download/v0.23.0/noseyparker-v0.23.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 1b02bf37cb844dc034200f0ce948be95b6f2fb65e2d705a1e3f10127be41e5a7
+    x86_64-macos:
+      url: https://github.com/praetorian-inc/noseyparker/releases/download/v0.23.0/noseyparker-v0.23.0-x86_64-apple-darwin.tar.gz
+      sha256: 84811ed0647fb8733a84f681368dd6ae88c406b67f5ffe7813298059c68ffcb6
+installs:
+  0.23.0:
+    any-any:
+      files:
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+        bin/noseyparker${exe_ext}: bin/
+        share/completions/noseyparker.zsh: ${zsh_comp_dir}/_noseyparker
+        share/completions/noseyparker.fish: ${fish_comp_dir}
+        share/completions/noseyparker.bash: ${bash_comp_dir}
+        share/man/man1: share/man/
+        share/noseyparker: share/
+      tests:
+        - noseyparker${exe_ext} --version
