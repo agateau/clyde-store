@@ -1,0 +1,35 @@
+name: gritql
+description: a query language for searching, linting, and modifying code.
+homepage: https://docs.grit.io
+repository: https://github.com/getgrit/gritql
+releases:
+  0.0.0:
+    any-any:
+      url: https://github.com/dummy
+      sha256: '0'
+  1743007075.0.0:
+    aarch64-linux:
+      url: https://github.com/getgrit/gritql/releases/download/v0.1.0-alpha.1743007075/grit-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 8e37415c45595716386d018f4d279a78f80261a7c7592c37632e7ce7d0934870
+    aarch64-macos:
+      url: https://github.com/getgrit/gritql/releases/download/v0.1.0-alpha.1743007075/grit-aarch64-apple-darwin.tar.gz
+      sha256: 7ab8c7eea90799ae35c86f2a9b7e48e56b91a62e6a459b910dde1a3daa066bf3
+    x86_64-linux:
+      url: https://github.com/getgrit/gritql/releases/download/v0.1.0-alpha.1743007075/grit-x86_64-unknown-linux-gnu.tar.gz
+      sha256: 94b34641a538ca0e85a92aa7f0ac94077fc6d663c996d0556c781d3d4c163149
+    x86_64-macos:
+      url: https://github.com/getgrit/gritql/releases/download/v0.1.0-alpha.1743007075/grit-x86_64-apple-darwin.tar.gz
+      sha256: b502f031cfe72b58e193282faf53531a5aac01c7bfa779421fc52652b652010e
+    x86_64-windows:
+      url: https://github.com/getgrit/gritql/releases/download/v0.1.0-alpha.1743007075/grit-x86_64-pc-windows-msvc.tar.gz
+      sha256: 5c44ee3336514ab8c3fa81c5301bd54fca82a9ddec43f87d7181be757fbab084
+installs:
+  0.0.0:
+    any-any:
+      strip: 1
+      files:
+        grit${exe_ext}: bin/
+      tests:
+      - grit${exe_ext} --version
+fetcher: !GitHub
+  include: ^grit-
