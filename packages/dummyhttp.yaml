@@ -38,6 +38,25 @@ releases:
     x86_64-windows:
       url: https://github.com/svenstaro/dummyhttp/releases/download/v1.1.0/dummyhttp-1.1.0-x86_64-pc-windows-msvc.exe
       sha256: 8961a78a2edf67d7513d3380a6c773112ae1a94ab3d60294b5a374884a440ade
+  1.1.1:
+    aarch64-linux:
+      url: https://github.com/svenstaro/dummyhttp/releases/download/v1.1.1/dummyhttp-1.1.1-aarch64-unknown-linux-musl
+      sha256: 2192d1219b610e582e1803279ebab553d405ab50c4fd1c6c52f26df21924bc6c
+    aarch64-macos:
+      url: https://github.com/svenstaro/dummyhttp/releases/download/v1.1.1/dummyhttp-1.1.1-aarch64-apple-darwin
+      sha256: e2ea9d9786cfb1735bff821f81feb5d43c99a1b35c6f5c932b3101e84df91fab
+    x86-windows:
+      url: https://github.com/svenstaro/dummyhttp/releases/download/v1.1.1/dummyhttp-1.1.1-i686-pc-windows-msvc.exe
+      sha256: 7143cf990ff5711023ddf68da37a2581c055e475215d672639ec39f3985117fa
+    x86_64-linux:
+      url: https://github.com/svenstaro/dummyhttp/releases/download/v1.1.1/dummyhttp-1.1.1-x86_64-unknown-linux-musl
+      sha256: 62ba8ecd987bf707557b23a256bce4daafdfab6a5e8c9b56998f624ce6e10a97
+    x86_64-macos:
+      url: https://github.com/svenstaro/dummyhttp/releases/download/v1.1.1/dummyhttp-1.1.1-x86_64-apple-darwin
+      sha256: 5eee0dc1c810bb538da5a8ff1114ddc3a4839dda96a20adf2cb5bd905065da51
+    x86_64-windows:
+      url: https://github.com/svenstaro/dummyhttp/releases/download/v1.1.1/dummyhttp-1.1.1-x86_64-pc-windows-msvc.exe
+      sha256: 15767418ce589ba08b0747a63e6f65c125d5e030e5b00ad8c25c514900e90275
 installs:
   0.0.0:
     any-any:
