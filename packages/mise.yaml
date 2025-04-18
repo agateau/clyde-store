@@ -193,6 +193,25 @@ releases:
     x86_64-windows:
       url: https://github.com/jdx/mise/releases/download/v2025.4.4/mise-v2025.4.4-windows-x64.zip
       sha256: 5e817f7fa1b403962233f16a04c215bb1a07fa80591dcbee6fe609799f4d7200
+  2025.4.5:
+    aarch64-linux:
+      url: https://github.com/jdx/mise/releases/download/v2025.4.5/mise-v2025.4.5-linux-arm64-musl.tar.xz
+      sha256: 3370f9ac0da5508c799e15df998b073c4ced48a26570e3fa28bc4954e1a7ac91
+    aarch64-macos:
+      url: https://github.com/jdx/mise/releases/download/v2025.4.5/mise-v2025.4.5-macos-arm64.tar.xz
+      sha256: cb3407a6094b637256f3a57e661b6e516737227029008a54e64f32b10d308276
+    aarch64-windows:
+      url: https://github.com/jdx/mise/releases/download/v2025.4.5/mise-v2025.4.5-windows-arm64.zip
+      sha256: b6f875aa04cc4a39f2f69ac17181198bcf64daf01d87b865adddfb668bbae730
+    x86_64-linux:
+      url: https://github.com/jdx/mise/releases/download/v2025.4.5/mise-v2025.4.5-linux-x64-musl.tar.xz
+      sha256: 1258674b00ae783e80455266999b584ba2ebea5782b6f8728db0a51d5645e77e
+    x86_64-macos:
+      url: https://github.com/jdx/mise/releases/download/v2025.4.5/mise-v2025.4.5-macos-x64.tar.xz
+      sha256: cce70aaa8f961165028ed187b509bb552d077edb6fd700609a9fadf9abe6b056
+    x86_64-windows:
+      url: https://github.com/jdx/mise/releases/download/v2025.4.5/mise-v2025.4.5-windows-x64.zip
+      sha256: 3987e9b8e57c1d9754eb0c23a23c75fbe07a94a06a278ff8c95a079e33085c7e
 installs:
   2025.3.2:
     any-any:
