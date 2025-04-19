@@ -2,6 +2,7 @@
 """
 Fetches updates for specified packages using `clydetools fetch`.
 """
+
 import argparse
 import subprocess
 import sys
