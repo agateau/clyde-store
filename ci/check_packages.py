@@ -2,6 +2,7 @@
 """
 Check packages changed between TARGET and HEAD are valid.
 """
+
 import argparse
 import random
 import subprocess
