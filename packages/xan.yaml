@@ -1,0 +1,26 @@
+name: xan
+description: The CSV magician
+homepage: https://github.com/medialab/xan
+repository: https://github.com/medialab/xan
+releases:
+  0.49.1:
+    x86_64-windows:
+      url: https://github.com/medialab/xan/releases/download/0.49.1/xan_0.49.1_x86_64-pc-windows-gnu.zip
+      sha256: 46c4ed34dec373e04f09c8d64e15bb03b409761516917725a8230a73a927cb32
+  0.49.2:
+    x86_64-linux:
+      url: https://github.com/medialab/xan/releases/download/0.49.2/xan-x86_64-unknown-linux-gnu.tar.gz
+      sha256: 433a7c382a9cad5a106a22fbe43ca4b392d5e02de6074e578eb405ccf19d0f83
+    x86_64-macos:
+      url: https://github.com/medialab/xan/releases/download/0.49.2/xan-x86_64-apple-darwin.tar.gz
+      sha256: 334e4d9d948367bbe619b35572b29fb5225cbd3e7b532cb78a367a9460862958
+    x86_64-windows:
+      url: https://github.com/medialab/xan/releases/download/0.49.2/xan-x86_64-pc-windows-msvc.zip
+      sha256: e09a54a11c0331662418f18f4e43e9d83f608bfef53300800952239bd08a862b
+installs:
+  0.49.1:
+    any-any:
+      files:
+        xan${exe_ext}: bin/
+      tests:
+        - xan${exe_ext} --version
