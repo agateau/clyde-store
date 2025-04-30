@@ -67,6 +67,22 @@ releases:
     x86_64-windows:
       url: https://github.com/gitleaks/gitleaks/releases/download/v8.24.3/gitleaks_8.24.3_windows_x64.zip
       sha256: 3f1a35578631dbfe633cc5b49e6c906e55ff14a4bfd7336a10fb27fe33b6dcd2
+  8.25.0:
+    aarch64-linux:
+      url: https://github.com/gitleaks/gitleaks/releases/download/v8.25.0/gitleaks_8.25.0_linux_arm64.tar.gz
+      sha256: 390f67bbc18b1bda3bb7e1c052fad7e1a9df1287037c28ace27e23d9c68a6923
+    aarch64-macos:
+      url: https://github.com/gitleaks/gitleaks/releases/download/v8.25.0/gitleaks_8.25.0_darwin_arm64.tar.gz
+      sha256: 35fdd4dbadbfc812a4a5928cd5e9323e15dfa2adbfa83574c5899cd2f5678a71
+    x86_64-linux:
+      url: https://github.com/gitleaks/gitleaks/releases/download/v8.25.0/gitleaks_8.25.0_linux_x64.tar.gz
+      sha256: ad50ede2cc7985a42240ffcad32c5f67e50446db8e6ed347d0eebc71d36c2f6d
+    x86_64-macos:
+      url: https://github.com/gitleaks/gitleaks/releases/download/v8.25.0/gitleaks_8.25.0_darwin_x64.tar.gz
+      sha256: 7f508fad8aab029c5c1662513cace5123c9cfc93b77a44508b05f0873d525020
+    x86_64-windows:
+      url: https://github.com/gitleaks/gitleaks/releases/download/v8.25.0/gitleaks_8.25.0_windows_x64.zip
+      sha256: 6e8fef04b39b228cdc4644d961711a02e86cea1329c8f956339621cf97d9a530
 installs:
   8.18.4:
     any-any:
