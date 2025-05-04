@@ -1,0 +1,30 @@
+name: neovim
+description: Vim-fork focused on extensibility and usability
+homepage: https://neovim.io
+repository: https://github.com/neovim/neovim
+releases:
+  0.10.0:
+    aarch64-macos:
+      url: https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-macos-arm64.tar.gz
+      sha256: e00452adbe1e90fb8c2d9bd41855b3f585bf6e2db31b9c35456d6253b0a152dd
+    x86_64-linux:
+      url: https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-linux64.tar.gz
+      sha256: be1f0988d0de71c375982b87b86cd28d2bab35ece8285abe3b0aac57604dfc5a
+    x86_64-macos:
+      url: https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-macos-x86_64.tar.gz
+      sha256: ac4dc050f83e8537cfad3cbaf61ca4e5870ed30a7d0187cdaa33f8fa421aca1f
+    x86_64-windows:
+      url: https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-win64.zip
+      sha256: e32390f8ed607c9a3749c2faba68e1dd9ecc6fa9a7cae544e4dadd810766d064
+installs:
+  0.10.0:
+    any-any:
+      strip: 1
+      files:
+        lib: lib
+        bin/nvim${exe_ext}: bin/
+        share: share
+      tests:
+      - nvim${exe_ext} --version
+fetcher: !GitHub
+  arch: x86_64
