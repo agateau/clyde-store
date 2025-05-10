@@ -16,18 +16,31 @@ releases:
     x86_64-macos:
       url: https://github.com/praetorian-inc/noseyparker/releases/download/v0.23.0/noseyparker-v0.23.0-x86_64-apple-darwin.tar.gz
       sha256: 84811ed0647fb8733a84f681368dd6ae88c406b67f5ffe7813298059c68ffcb6
+  0.24.0:
+    aarch64-linux:
+      url: https://github.com/praetorian-inc/noseyparker/releases/download/v0.24.0/noseyparker-v0.24.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: 24a4ce3d6817be11d60bb8095d607677f5939b3afb7e005ac7d64ac3cef5bc51
+    aarch64-macos:
+      url: https://github.com/praetorian-inc/noseyparker/releases/download/v0.24.0/noseyparker-v0.24.0-aarch64-apple-darwin.tar.gz
+      sha256: b19f983d586a738f127bc8c53ef1331055010db4926ac1789791f717fcc107b7
+    x86_64-linux:
+      url: https://github.com/praetorian-inc/noseyparker/releases/download/v0.24.0/noseyparker-v0.24.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 013b06f1f29271150585cb35d2a150929871126f51715744714ad5843179f57c
+    x86_64-macos:
+      url: https://github.com/praetorian-inc/noseyparker/releases/download/v0.24.0/noseyparker-v0.24.0-x86_64-apple-darwin.tar.gz
+      sha256: 459aaf3c1cc31e96516901e242205ca95090e6fe85193501a58980488a29ec82
 installs:
   0.23.0:
     any-any:
       files:
+        CHANGELOG.md: ${doc_dir}
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
-        CHANGELOG.md: ${doc_dir}
         bin/noseyparker${exe_ext}: bin/
-        share/completions/noseyparker.zsh: ${zsh_comp_dir}/_noseyparker
-        share/completions/noseyparker.fish: ${fish_comp_dir}
         share/completions/noseyparker.bash: ${bash_comp_dir}
+        share/completions/noseyparker.fish: ${fish_comp_dir}
+        share/completions/noseyparker.zsh: ${zsh_comp_dir}/_noseyparker
         share/man/man1: share/man/
         share/noseyparker: share/
       tests:
-        - noseyparker${exe_ext} --version
+      - noseyparker${exe_ext} --version
