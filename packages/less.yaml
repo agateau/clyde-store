@@ -33,6 +33,16 @@ releases:
     x86_64-windows:
       url: https://github.com/jftuga/less-Windows/releases/download/less-v668/less-x64.zip
       sha256: 71670eae81b4853ffa12f85c731c0bf56bf9e9be681a6062aac64e8ef50205a5
+  678.0.0:
+    aarch64-windows:
+      url: https://github.com/jftuga/less-Windows/releases/download/less-v678/less-arm64.zip
+      sha256: 973b13ac8e5cc9dcd633cee0893c524ca13005e2c241667044fc3f9718fc94bd
+    x86-windows:
+      url: https://github.com/jftuga/less-Windows/releases/download/less-v678/less-x86.zip
+      sha256: 22ab57279a3c38ec7c284b84d7bc61cf989af91dc7fd6ae4829a9852ad60c2d7
+    x86_64-windows:
+      url: https://github.com/jftuga/less-Windows/releases/download/less-v678/less-x64.zip
+      sha256: 0aaec25fcb1033f747d9901e0da8e13eb077c8f5206b5f5882c0bdbe53f77f27
 installs:
   643.0.0:
     any-any:
