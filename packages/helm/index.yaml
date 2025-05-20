@@ -369,6 +369,25 @@ releases:
     x86_64-windows:
       url: https://get.helm.sh/helm-v3.17.3-windows-amd64.zip
       sha256: 8ea93e2f6285e649dede583ac90ff8cdb938ca53ec6cf5fe909f2303fbc22d96
+  3.18.0:
+    aarch64-linux:
+      url: https://get.helm.sh/helm-v3.18.0-linux-arm64.tar.gz
+      sha256: 489c9d2d3ea4e095331249d74b4407fb5ac1d338c28429d70cdedccfe6e2b029
+    aarch64-macos:
+      url: https://get.helm.sh/helm-v3.18.0-darwin-arm64.tar.gz
+      sha256: 4ce30bd86a3fc4f31d297827a5bf5b10ced8c4da2ff810bf9f53f561dbed7d10
+    aarch64-windows:
+      url: https://get.helm.sh/helm-v3.18.0-windows-arm64.zip
+      sha256: f354f0bdf725a0530162754632bc54fed2c56ad11a899b031702ee1c70ecb5fc
+    x86_64-linux:
+      url: https://get.helm.sh/helm-v3.18.0-linux-amd64.tar.gz
+      sha256: 961e587fc2c03807f8a99ac25ef063fa9e6915f1894729399cbb95d2a79af931
+    x86_64-macos:
+      url: https://get.helm.sh/helm-v3.18.0-darwin-amd64.tar.gz
+      sha256: 2be99836549413c2f0212d644e8740abd8ba5d7f55484c29d3363cea339891d9
+    x86_64-windows:
+      url: https://get.helm.sh/helm-v3.18.0-windows-amd64.zip
+      sha256: ae6a1b832043e3433d2823fc42692057dbf007efad34292708130b412c169a94
 installs:
   3.11.1:
     any-any:
