@@ -1,0 +1,24 @@
+name: mergiraf
+description: Mergiraf can solve a wide range of Git merge conflicts.
+homepage: https://mergiraf.org
+repository: https://codeberg.org/mergiraf/mergiraf
+releases:
+  0.10.0:
+    aarch64-linux:
+      url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.10.0/mergiraf_aarch64-unknown-linux-musl.tar.gz
+      sha256: d1f9241f74350512b5d2373e2efd098f34e730aa45922125c42e8e8781123191
+    x86_64-linux:
+      url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.10.0/mergiraf_x86_64-unknown-linux-musl.tar.gz
+      sha256: c69a440cccb3c6cfde7290f66ba4902281fbb01ed1d3264c4c8ef00498b807e2
+    x86_64-windows:
+      url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.10.0/mergiraf_x86_64-pc-windows-gnu.zip
+      sha256: 081f67c704d55dce17853442dbfd9c478b9570d23ecfa089394b07514d6dacfc
+installs:
+  0.9.0:
+    any-any:
+      files:
+        mergiraf${exe_ext}: bin/
+      tests:
+        - mergiraf${exe_ext} --version
+fetcher: !Forgejo
+  base_url: https://codeberg.org
