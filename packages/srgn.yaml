@@ -1,0 +1,25 @@
+name: srgn
+description: grep-like tool which understands source code syntax and allows for manipulation in addition to search
+homepage: https://crates.io/crates/srgn/
+repository: https://github.com/alexpovel/srgn
+releases:
+  0.13.7:
+    aarch64-macos:
+      url: https://github.com/alexpovel/srgn/releases/download/srgn-v0.13.7/srgn-aarch64-apple-darwin.tgz
+      sha256: 07605a18599802c0c7b21995126d58a6235031896b9b67d2ac47537230dfd20e
+    x86_64-linux:
+      url: https://github.com/alexpovel/srgn/releases/download/srgn-v0.13.7/srgn-x86_64-unknown-linux-gnu.tgz
+      sha256: 0bb0c81bc3cd7d500189213b099f0bfb06454ceb6dc1176110b86583b08411fb
+    x86_64-macos:
+      url: https://github.com/alexpovel/srgn/releases/download/srgn-v0.13.7/srgn-x86_64-apple-darwin.tgz
+      sha256: 95e3d43235df6c7e315f3cfb0955a587545529772c4e29c071073859d72065f6
+    x86_64-windows:
+      url: https://github.com/alexpovel/srgn/releases/download/srgn-v0.13.7/srgn-x86_64-pc-windows-msvc.tgz
+      sha256: 20ae0516d016929c5e475e3b0bba6ab55245b209d30f0a55ac5f7d3fb1c23c49
+installs:
+  0.13.7:
+    any-any:
+      files:
+        srgn${exe_ext}: bin/
+      tests:
+        - srgn${exe_ext} --version
