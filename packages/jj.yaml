@@ -1,0 +1,28 @@
+name: jj
+description: Git-compatible VCS that is both simple and powerful
+homepage: https://jj-vcs.github.io/jj/
+repository: https://github.com/jj-vcs/jj
+releases:
+  0.30.0:
+    aarch64-linux:
+      url: https://github.com/jj-vcs/jj/releases/download/v0.30.0/jj-v0.30.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: 36001ee38b14d0241e8c061f3147e4c52754b02cc32c4e3f09ebf641cb28f6b9
+    aarch64-macos:
+      url: https://github.com/jj-vcs/jj/releases/download/v0.30.0/jj-v0.30.0-aarch64-apple-darwin.tar.gz
+      sha256: 160b9c575f279343b8cd9d2fcef74b03d16210d1457da328ceedc3a7a184c4c7
+    x86_64-linux:
+      url: https://github.com/jj-vcs/jj/releases/download/v0.30.0/jj-v0.30.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 5540b5438d71867ccde3339d041e57eecf60edf8b4ecc3dfcce2af106e08f70b
+    x86_64-macos:
+      url: https://github.com/jj-vcs/jj/releases/download/v0.30.0/jj-v0.30.0-x86_64-apple-darwin.tar.gz
+      sha256: dc25c6a340d27aa4292682ab9e3da925a8411a29b3ed9a156018b7cfd500ddb7
+    x86_64-windows:
+      url: https://github.com/jj-vcs/jj/releases/download/v0.30.0/jj-v0.30.0-x86_64-pc-windows-msvc.zip
+      sha256: 4b094838898bebd3970ef6c94b9cf5fef4368a0291e33ae884736195abce0671
+installs:
+  0.30.0:
+    any-any:
+      files:
+        jj${exe_ext}: bin/
+      tests:
+      - jj${exe_ext} --version
