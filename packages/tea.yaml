@@ -3,6 +3,22 @@ description: Command line tool to interact with Gitea servers
 homepage: https://gitea.com/gitea/tea
 repository: https://gitea.com/gitea/tea
 releases:
+  0.10.1:
+    aarch64-linux:
+      url: https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-linux-arm64.xz
+      sha256: 437452235910950db61d510e561f5f28171c5632ddfe64f01d895f2c9771259f
+    aarch64-macos:
+      url: https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-darwin-arm64.xz
+      sha256: e698a391ed042ceb965f253edbbe2cd8de9737535fd3e439beb69b83adf11f52
+    x86_64-linux:
+      url: https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-linux-amd64.xz
+      sha256: 17d6fedb079576ab299f00c0e83e6abc07bc21d08bae4b4eb42e50dc133636c2
+    x86_64-macos:
+      url: https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-darwin-amd64.xz
+      sha256: d59a5bd3b6dbbfe478691f73fcc53bbbac4b17475f3c21abb25f7030e230a886
+    x86_64-windows:
+      url: https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-windows-amd64.exe.xz
+      sha256: 629db62c343fcda355f602cce9cdf107426d0ee91b1935ab50ef834fa091f923
   0.9.2:
     aarch64-linux:
       url: https://gitea.com/gitea/tea/releases/download/v0.9.2/tea-0.9.2-linux-arm64.xz
