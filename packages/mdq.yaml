@@ -1,0 +1,22 @@
+name: mdq
+description: 'Like jq but for Markdown: find specific elements in a md doc'
+homepage: https://github.com/yshavit/mdq
+repository: https://github.com/yshavit/mdq
+releases:
+  0.7.2:
+    aarch64-macos:
+      url: https://github.com/yshavit/mdq/releases/download/v0.7.2/mdq-macos-arm64.tar.gz
+      sha256: 390ca7b789ef9c2a5ee4f451c63fc77b3b6f8cc5a8ef40940b33ac14a2a52432
+    x86_64-linux:
+      url: https://github.com/yshavit/mdq/releases/download/v0.7.2/mdq-linux-x64-musl.tar.gz
+      sha256: 44807069700644882cc740e6f6ded9a8020c6f9a9b4e8ad3c517efef04de600f
+    x86_64-windows:
+      url: https://github.com/yshavit/mdq/releases/download/v0.7.2/mdq-windows-x64.zip
+      sha256: 2d82c5a39fc9e2c39363d6f732d5baf4be2e769c4d619184340e6620425baf88
+installs:
+  0.7.2:
+    any-any:
+      files:
+        mdq${exe_ext}: bin/
+      tests:
+      - mdq${exe_ext} --version
