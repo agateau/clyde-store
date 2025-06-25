@@ -72,6 +72,19 @@ releases:
     x86_64-windows:
       url: https://github.com/GitGuardian/ggshield/releases/download/v1.40.0/ggshield-1.40.0-x86_64-pc-windows-msvc.zip
       sha256: 1da13553069a27d5cb83d55e6fd69422610120de3af57c74f769ee91c20c1056
+  1.41.0:
+    aarch64-macos:
+      url: https://github.com/GitGuardian/ggshield/releases/download/v1.41.0/ggshield-1.41.0-arm64-apple-darwin.tar.gz
+      sha256: 5ec977d57df7e2250b53e7b889e54a42fca79f42c2dfe024849558916d7287c9
+    x86_64-linux:
+      url: https://github.com/GitGuardian/ggshield/releases/download/v1.41.0/ggshield-1.41.0-x86_64-unknown-linux-gnu.tar.gz
+      sha256: 25a448967bd819613543f9563f0d70ad4e97f7a79fa277befbf6753800c9a805
+    x86_64-macos:
+      url: https://github.com/GitGuardian/ggshield/releases/download/v1.41.0/ggshield-1.41.0-x86_64-apple-darwin.tar.gz
+      sha256: 20fdb738ba03a6f12eb9b0e9b93011cb77453cde3ae784c0159a9c3ae6132b8f
+    x86_64-windows:
+      url: https://github.com/GitGuardian/ggshield/releases/download/v1.41.0/ggshield-1.41.0-x86_64-pc-windows-msvc.zip
+      sha256: 22e4740913a5c8056ccbfb136da158b10de5dad6b99c6682f1251fb4d62d16a4
 installs:
   0.0.0:
     any-any:
