@@ -13,12 +13,22 @@ releases:
     x86_64-windows:
       url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.10.0/mergiraf_x86_64-pc-windows-gnu.zip
       sha256: 081f67c704d55dce17853442dbfd9c478b9570d23ecfa089394b07514d6dacfc
+  0.11.0:
+    aarch64-linux:
+      url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.11.0/mergiraf_aarch64-unknown-linux-musl.tar.gz
+      sha256: 297c47a3f1eb103a26a4fd9b7af717e4d3a7b39d5e872ef5d5f4a3dfae2189d3
+    x86_64-linux:
+      url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.11.0/mergiraf_x86_64-unknown-linux-musl.tar.gz
+      sha256: 5656f805c55fb99a6b127227db6b1733af1b2127e12469f46095579415f0bcb0
+    x86_64-windows:
+      url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.11.0/mergiraf_x86_64-pc-windows-gnu.zip
+      sha256: fd8d9b26d20cb03f3ac35faa86c047dba499301b2e26f954f540c2e80aa2329d
 installs:
   0.9.0:
     any-any:
       files:
         mergiraf${exe_ext}: bin/
       tests:
-        - mergiraf${exe_ext} --version
+      - mergiraf${exe_ext} --version
 fetcher: !Forgejo
   base_url: https://codeberg.org
