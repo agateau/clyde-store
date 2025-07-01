@@ -125,6 +125,16 @@ releases:
     x86_64-macos:
       url: https://github.com/astral-sh/python-build-standalone/releases/download/20250626/cpython-3.12.11%2B20250626-x86_64-apple-darwin-install_only.tar.gz
       sha256: e1f19f8246d01e8e048c89fef8b739768db16dc15559256ce70c1a37ace7243f
+  20250630.0.0:
+    aarch64-macos:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250630/cpython-3.12.11%2B20250630-aarch64-apple-darwin-install_only.tar.gz
+      sha256: e1c4450b5a79534e2602789123a05f198bebd3b90d338cb4673bdfdeee4b0ca1
+    x86_64-linux:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250630/cpython-3.12.11%2B20250630-x86_64_v3-unknown-linux-gnu-install_only.tar.gz
+      sha256: 4b6a75953f1de017dfbba4fa620fc35d62bfa660ceaaf443b2012df19e7eb148
+    x86_64-macos:
+      url: https://github.com/astral-sh/python-build-standalone/releases/download/20250630/cpython-3.12.11%2B20250630-x86_64-apple-darwin-install_only.tar.gz
+      sha256: 3789ca51d0c7f7645320fbf64bc030522b1945274e6a443886c5947ac6735111
 installs:
   20240224.0.0:
     any-any:
