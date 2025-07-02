@@ -1005,6 +1005,34 @@ releases:
     x86_64-windows:
       url: https://github.com/syncthing/syncthing/releases/download/v1.29.7/syncthing-windows-amd64-v1.29.7.zip
       sha256: c013076619b9bfe451b3d600ba256ac4e6afee25cbfce244a68155e805be854f
+  1.30.0:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-linux-arm64-v1.30.0.tar.gz
+      sha256: 4655e260e94fa5e0110084040751bd0274acdeb74653933f909036e788a911a1
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-macos-arm64-v1.30.0.zip
+      sha256: dd42cc7a88d08779c305e5f6f2d8bc8dec2c97652c1380679c672d4febd63f8f
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-windows-arm64-v1.30.0.zip
+      sha256: e914c990a5f4b8ccdf6d8e7dbf058f5343330a3483423230cbc79c35afbc049c
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-macos-universal-v1.30.0.zip
+      sha256: 999d5e8d02209a8793fc13d2bc398568a1ac6907c3eaa9e26fd680cfa8fb882d
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-linux-386-v1.30.0.tar.gz
+      sha256: b2a2aa177f189c3a9c9a9c0d6dbac60053a7af8122be124b3e8dfbf0c028f268
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-windows-386-v1.30.0.zip
+      sha256: 0edfe104260af96fe9c59ed07a5e9d9f7095657858f93f46dc03311d73abdad8
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-linux-amd64-v1.30.0.tar.gz
+      sha256: a2edc833d6dd71a76b7c481dbcc81f8be37da9eb83993c512bf53eb096ba7a73
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-macos-amd64-v1.30.0.zip
+      sha256: eb375302c79b89b85f32f014e451430efe3a9723b37639698310344a9029799e
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-windows-amd64-v1.30.0.zip
+      sha256: c8e2713d949dc75afaa9e25ea06f4a84f843835662c52ba65e7316fcf4be4587
 installs:
   1.20.3:
     any-any:
