@@ -140,6 +140,25 @@ releases:
     x86_64-windows:
       url: https://github.com/bootandy/dust/releases/download/v1.2.1/dust-v1.2.1-x86_64-pc-windows-msvc.zip
       sha256: 01c7cf0f5b70318eb25bec9b76328915b0c4546671da642d9fe9b244ac349136
+  1.2.2:
+    aarch64-linux:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.2/dust-v1.2.2-aarch64-unknown-linux-musl.tar.gz
+      sha256: 704b5f229d525e4b18a716007637b382dec0ce3e81807188e77428325938cb2e
+    x86-linux:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.2/dust-v1.2.2-i686-unknown-linux-musl.tar.gz
+      sha256: 381bc63d7e3c60686911dd00c2f62c219233e96703e8901502b9e7c74fa817c0
+    x86-windows:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.2/dust-v1.2.2-i686-pc-windows-msvc.zip
+      sha256: d42002585f9bc50900bd09e9edd95274891961909c51f4057619ed35c3f2d647
+    x86_64-linux:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.2/dust-v1.2.2-x86_64-unknown-linux-musl.tar.gz
+      sha256: f170ecc426dd807018fc4155174070387af16435be7cabe4eed0b438a7cb7ca0
+    x86_64-macos:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.2/dust-v1.2.2-x86_64-apple-darwin.tar.gz
+      sha256: f13dcfcd06230a2ce95f39b15f42314934b7667ff573bd482a499d5a959c795d
+    x86_64-windows:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.2/dust-v1.2.2-x86_64-pc-windows-msvc.zip
+      sha256: ea3686dbc744327dadc3464c0b1d04001a8b729ca28d59f9009e31f21bcbaeac
 installs:
   0.0.0:
     any-any:
