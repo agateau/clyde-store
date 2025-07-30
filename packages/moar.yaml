@@ -582,6 +582,22 @@ releases:
     x86_64-windows:
       url: https://github.com/walles/moar/releases/download/v1.32.6/moar-v1.32.6-windows-amd64.exe
       sha256: cbb9ef6225260fcd6b36364911af146f4ff916178fac03c670ac0c85a8e36257
+  1.33.0:
+    aarch64-macos:
+      url: https://github.com/walles/moar/releases/download/v1.33.0/moar-v1.33.0-darwin-arm64
+      sha256: 68f15d72556fce2689dbcc1e0751567a9722a34c59057bdfe8db356d8d413a16
+    x86-linux:
+      url: https://github.com/walles/moar/releases/download/v1.33.0/moar-v1.33.0-linux-386
+      sha256: c9e2276638f370e9bd78dcf2508107a5fe14db22c5967fdcb8b3e7d0e16239c1
+    x86_64-linux:
+      url: https://github.com/walles/moar/releases/download/v1.33.0/moar-v1.33.0-linux-amd64
+      sha256: 7a5092601ffc7d6c4224ba5ac578e6c5752c7c107f9e3f5b3b4ae4ff546edf0b
+    x86_64-macos:
+      url: https://github.com/walles/moar/releases/download/v1.33.0/moar-v1.33.0-darwin-amd64
+      sha256: 11e52bd337ab385fef862b653002cf0574fa55bd2ef396b3b1a1df22ce204095
+    x86_64-windows:
+      url: https://github.com/walles/moar/releases/download/v1.33.0/moar-v1.33.0-windows-amd64.exe
+      sha256: d553c73fc247918b4c5bb02d3afdc06a90731a465c7e2022dcea37b67ee8bfaf
 installs:
   0.0.0:
     any-any:
