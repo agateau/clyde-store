@@ -73,6 +73,13 @@ releases:
     x86_64-linux:
       url: https://github.com/zed-industries/zed/releases/download/v0.196.6/zed-linux-x86_64.tar.gz
       sha256: 505317dfc9aa8627f1ac39e7a74d1bff53951cec3555b74ddc7be943a2dd8e94
+  0.196.7:
+    aarch64-linux:
+      url: https://github.com/zed-industries/zed/releases/download/v0.196.7/zed-linux-aarch64.tar.gz
+      sha256: d5e48140da627b08d8244c063da91a5985b42b3d22fe390c55c6eb37edcb5e01
+    x86_64-linux:
+      url: https://github.com/zed-industries/zed/releases/download/v0.196.7/zed-linux-x86_64.tar.gz
+      sha256: b265f6f318e6101631501e51be5dcb9eee3fe9efb83ccabde648d5f31f6c80a0
 installs:
   0.0.0:
     any-any:
