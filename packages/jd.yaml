@@ -117,6 +117,25 @@ releases:
     x86_64-windows:
       url: https://github.com/josephburnett/jd/releases/download/v2.2.5/jd-amd64-windows.exe
       sha256: 6d5a9dcdeb5e0efb141af034e7d7158a71a585b4019cc1f23093ccc6a59fff8c
+  2.2.7:
+    aarch64-linux:
+      url: https://github.com/josephburnett/jd/releases/download/v2.2.7/jd-arm64-linux
+      sha256: 952cb5923d0ffc6f20b80ade0004bdf0ad8c6ddf121cd9d85bb486c490a91d79
+    aarch64-macos:
+      url: https://github.com/josephburnett/jd/releases/download/v2.2.7/jd-arm64-darwin
+      sha256: 599a3184c6ef7beb2e3468f5743b5743676dec74cba2a3ae84102e23c5570920
+    aarch64-windows:
+      url: https://github.com/josephburnett/jd/releases/download/v2.2.7/jd-arm64-windows.exe
+      sha256: 70cdd019c646a29aec60f010df9969e33f427928f2a19359ecb31cda8227bb87
+    x86_64-linux:
+      url: https://github.com/josephburnett/jd/releases/download/v2.2.7/jd-amd64-linux
+      sha256: c85454e5c7268e0d4e9a30ba091a8cc349990e5be65116e74d112bcf28534663
+    x86_64-macos:
+      url: https://github.com/josephburnett/jd/releases/download/v2.2.7/jd-amd64-darwin
+      sha256: bcab1bee128483d57c7456c0f7c5c4adba8ca6e83e8eeb489598dc81092795c8
+    x86_64-windows:
+      url: https://github.com/josephburnett/jd/releases/download/v2.2.7/jd-amd64-windows.exe
+      sha256: 1e0cdf188590d0e272b82d73041b73a66499000ca6803eb18775930089e959bf
 installs:
   0.0.0:
     any-any:
