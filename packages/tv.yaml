@@ -26,6 +26,16 @@ releases:
     x86_64-windows:
       url: https://github.com/alexhallam/tv/releases/download/1.5.2/tidy-viewer-1.5.2-x86_64-pc-windows-msvc.zip
       sha256: b20449ab006ea3c7c04df16da288740d6e1098e1a7d2f608c6b75494eff3ecbe
+  1.8.93:
+    x86-windows:
+      url: https://github.com/alexhallam/tv/releases/download/1.8.93/tidy-viewer-1.8.93-i686-pc-windows-msvc.zip
+      sha256: bd60fd78bbd7711b8cf72ea5dd7ad8c65f339ae324b31e48f12b89ff6424005b
+    x86_64-macos:
+      url: https://github.com/alexhallam/tv/releases/download/1.8.93/tidy-viewer-1.8.93-x86_64-apple-darwin.tar.gz
+      sha256: ced78ae7c4fc7d4becb01a8212c0df86fbca27dea3302f92af809f9999ac7b1a
+    x86_64-windows:
+      url: https://github.com/alexhallam/tv/releases/download/1.8.93/tidy-viewer-1.8.93-x86_64-pc-windows-msvc.zip
+      sha256: afaad9e7bb169b1e4439f4521506614af963a1ed22bdae439ab08f3e7d0e3030
 installs:
   1.4.30:
     any-any:
