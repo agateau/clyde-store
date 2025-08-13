@@ -131,6 +131,22 @@ releases:
     x86_64-windows:
       url: https://github.com/crate-ci/typos/releases/download/v1.35.3/typos-v1.35.3-x86_64-pc-windows-msvc.zip
       sha256: d89e1f83eade58f4e3966fbed742c85df75768971c35368a116e1e03204148da
+  1.35.4:
+    aarch64-linux:
+      url: https://github.com/crate-ci/typos/releases/download/v1.35.4/typos-v1.35.4-aarch64-unknown-linux-musl.tar.gz
+      sha256: 5e56840cea93a3c9f151bc7ead95971edf44a47b8148c12cebcb13a1ed4baf3c
+    aarch64-macos:
+      url: https://github.com/crate-ci/typos/releases/download/v1.35.4/typos-v1.35.4-aarch64-apple-darwin.tar.gz
+      sha256: 388f0012cf1368cce8c371cfee5f7f8c3ffd986ebc2a9efc5e20e6273feb72ef
+    x86_64-linux:
+      url: https://github.com/crate-ci/typos/releases/download/v1.35.4/typos-v1.35.4-x86_64-unknown-linux-musl.tar.gz
+      sha256: ffc35804d3a83fd9e6402cf120f191804e6db5f6d828578188156a84dda00357
+    x86_64-macos:
+      url: https://github.com/crate-ci/typos/releases/download/v1.35.4/typos-v1.35.4-x86_64-apple-darwin.tar.gz
+      sha256: 42e6b30af845a8d4b334d5bff89432ae5ae0f30ea36eb72a6b43dc0f8c601108
+    x86_64-windows:
+      url: https://github.com/crate-ci/typos/releases/download/v1.35.4/typos-v1.35.4-x86_64-pc-windows-msvc.zip
+      sha256: 4b74b943123d885bbbc89ee66b1b9217e6898380a4e2191e0763a5b706b9d4d2
 installs:
   1.31.1:
     any-any:
