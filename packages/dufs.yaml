@@ -278,6 +278,31 @@ releases:
     x86_64-windows:
       url: https://github.com/sigoden/dufs/releases/download/v0.43.0/dufs-v0.43.0-x86_64-pc-windows-msvc.zip
       sha256: 98f53e3eaf193a3b7d5022f1abfaf3b3a016ab286e6a0cc318c0d596f9e34be0
+  0.44.0:
+    aarch64-linux:
+      url: https://github.com/sigoden/dufs/releases/download/v0.44.0/dufs-v0.44.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: 08c0907d728e0fb06671607fa2026f9a9daca0b5d10644a2051536328b9032cb
+    aarch64-macos:
+      url: https://github.com/sigoden/dufs/releases/download/v0.44.0/dufs-v0.44.0-aarch64-apple-darwin.tar.gz
+      sha256: a39c4b2184f82fc45594de2159a6703bca440d70cb34629027391487c6033eed
+    aarch64-windows:
+      url: https://github.com/sigoden/dufs/releases/download/v0.44.0/dufs-v0.44.0-aarch64-pc-windows-msvc.zip
+      sha256: a8789010ad0c91c2fbcfd16801162dcb6a78d447471e7a8a33d78b3b019fa5cf
+    x86-linux:
+      url: https://github.com/sigoden/dufs/releases/download/v0.44.0/dufs-v0.44.0-i686-unknown-linux-musl.tar.gz
+      sha256: c7e84305e71e26b933faab224fb05bf9488de0b8aa16aa5bd2e62756b40b890d
+    x86-windows:
+      url: https://github.com/sigoden/dufs/releases/download/v0.44.0/dufs-v0.44.0-i686-pc-windows-msvc.zip
+      sha256: 500065e7fc073c8429eece9ca4d3f99f8096eac49284bbeebb35d09982cec441
+    x86_64-linux:
+      url: https://github.com/sigoden/dufs/releases/download/v0.44.0/dufs-v0.44.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 8d06c07a0d40c90e5386837462640c89e409ef161d6342e453644ec1e888ad27
+    x86_64-macos:
+      url: https://github.com/sigoden/dufs/releases/download/v0.44.0/dufs-v0.44.0-x86_64-apple-darwin.tar.gz
+      sha256: aa385c691faa0d687875733ee79abb1871dd3e6af6bdebece2f918326d0b6b04
+    x86_64-windows:
+      url: https://github.com/sigoden/dufs/releases/download/v0.44.0/dufs-v0.44.0-x86_64-pc-windows-msvc.zip
+      sha256: a9b1a7c8189ae0820963a6a4509781220212b07252871fdfcdb1a0b5d538704a
 installs:
   0.33.0:
     any-any:
