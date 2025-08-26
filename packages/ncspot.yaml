@@ -265,6 +265,22 @@ releases:
     x86_64-windows:
       url: https://github.com/hrkfdn/ncspot/releases/download/v1.3.0/ncspot-v1.3.0-windows-x86_64.zip
       sha256: 652a7e67cb0123da1c98ce70b0f5a9189a5c7a25ba3532fbe558158684ccd9fb
+  1.3.1:
+    aarch64-linux:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v1.3.1/ncspot-v1.3.1-linux-arm64.tar.gz
+      sha256: a67a8743d183004326d0fba0e564fa627e66593166efc7f703539eb0e534b8d3
+    aarch64-macos:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v1.3.1/ncspot-v1.3.1-macos-aarch64.tar.gz
+      sha256: 34ecec9dadb49eae0ea38e9995da571fdadd849142843cfe179caabf0c82d655
+    x86_64-linux:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v1.3.1/ncspot-v1.3.1-linux-x86_64.tar.gz
+      sha256: 59ea415f2c7f96fdb18002b621fc6efebdc22d0fe5aae890820f055f4377889d
+    x86_64-macos:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v1.3.1/ncspot-v1.3.1-macos-x86_64.tar.gz
+      sha256: 2f7e6aa1e1c77a29e92a346ddd83e415d9d33f636c893814a130277f1ec62f15
+    x86_64-windows:
+      url: https://github.com/hrkfdn/ncspot/releases/download/v1.3.1/ncspot-v1.3.1-windows-x86_64.zip
+      sha256: 60b17f9e80f880bb9ba11463fad9ad5f623f5f356457169c0f7d793163f8a777
 installs:
   0.10.0:
     any-any:
