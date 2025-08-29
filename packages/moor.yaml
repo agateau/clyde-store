@@ -1,7 +1,7 @@
-name: moar
-description: Moar is a pager. It's designed to just do the right thing without any configuration.
-homepage: https://github.com/walles/moar
-repository: https://github.com/walles/moar
+name: moor
+description: Moor is a pager. It's designed to just do the right thing without any configuration.
+homepage: https://github.com/walles/moor
+repository: https://github.com/walles/moor
 releases:
   1.23.10:
     x86-linux:
@@ -669,3 +669,9 @@ installs:
         ${asset_name}: bin/moar${exe_ext}
       tests:
       - moar${exe_ext} -version
+  2.0.0:
+    any-any:
+      files:
+        ${asset_name}: bin/moor${exe_ext}
+      tests:
+      - moor${exe_ext} -version
