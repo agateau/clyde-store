@@ -451,6 +451,22 @@ releases:
     x86_64-windows:
       url: https://github.com/jgm/pandoc/releases/download/3.7/pandoc-3.7-windows-x86_64.zip
       sha256: d788b437670d369d8a034f4a791b788cb0bb9d92ce3cac35a27e938122ad0fbe
+  3.8.0:
+    aarch64-linux:
+      url: https://github.com/jgm/pandoc/releases/download/3.8/pandoc-3.8-linux-arm64.tar.gz
+      sha256: 87cac7b2b02495c0533f75193b40837c50c5c313d905b19829c721d617a073b9
+    aarch64-macos:
+      url: https://github.com/jgm/pandoc/releases/download/3.8/pandoc-3.8-arm64-macOS.zip
+      sha256: 7cfaa04a57816397dd6498fd50ada01bdeb04feefab737da37d493fb30131533
+    x86_64-linux:
+      url: https://github.com/jgm/pandoc/releases/download/3.8/pandoc-3.8-linux-amd64.tar.gz
+      sha256: 1a035c1f7d295c353f614461fa4bc13d703c0e865387d44341d1556d703de59a
+    x86_64-macos:
+      url: https://github.com/jgm/pandoc/releases/download/3.8/pandoc-3.8-x86_64-macOS.zip
+      sha256: 07a7fb7db6346710f3c9b06e6eb0ce49a66afa0d1969aa0158ecb14d9eaecb20
+    x86_64-windows:
+      url: https://github.com/jgm/pandoc/releases/download/3.8/pandoc-3.8-windows-x86_64.zip
+      sha256: 3c72ee9966d2a35ebb59873967e496f5fe745c15cf9e825947dc745d19b36bad
 installs:
   2.18.0:
     any-any:
