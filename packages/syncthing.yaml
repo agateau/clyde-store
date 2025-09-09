@@ -1257,6 +1257,34 @@ releases:
     x86_64-windows:
       url: https://github.com/syncthing/syncthing/releases/download/v2.0.7/syncthing-windows-amd64-v2.0.7.zip
       sha256: 85c89094130fed7b2a6ec58991048911241fbc70863058b2f566490e8cb024e6
+  2.0.8:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-linux-arm64-v2.0.8.tar.gz
+      sha256: 30c00ffd5a286d18d82ae262b02dac7f5a1592d3c5fa0c0c6986aa4621cc6ede
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-macos-arm64-v2.0.8.zip
+      sha256: 7fed6b0b60f7b15587c3f4c8b7300cc97f506b5e45ef146db667061732b9355c
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-windows-arm64-v2.0.8.zip
+      sha256: 352006edd8ea3f01dc2eab2dfcbb079a5828b60ebb55d4b89e5bf62148fb794c
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-macos-universal-v2.0.8.zip
+      sha256: 503f95b4a8a0a7d4a2519d7479f39fb061ce8e2278444fcb130076e92f44b3b6
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-linux-386-v2.0.8.tar.gz
+      sha256: ba00826078d795da5f41d7fc8c54f39d7b8a1284f244f27c7dcc904366a05b06
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-windows-386-v2.0.8.zip
+      sha256: a59c8b02534ebb34d562b117d9c46fc5f7cb56d641ec098d34e3fa3523642859
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-linux-amd64-v2.0.8.tar.gz
+      sha256: a516ff64a1bf52b867016ecb069886b9db8d3126d49e58865b4c64d638523dc5
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-macos-amd64-v2.0.8.zip
+      sha256: 3ffd53fee92b07249ce833e5a0730b37b2c6fd3b659635624bdcbaa1217a4610
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-windows-amd64-v2.0.8.zip
+      sha256: 56a1998aeeaccba310608292ec8b64b8cf660aeca6899fd548af116aefdf8d0c
 installs:
   1.20.3:
     any-any:
