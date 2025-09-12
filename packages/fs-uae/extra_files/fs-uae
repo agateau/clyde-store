@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+exe_path=$(ls $CLYDE_HOME/inst/opt/fs-uae/*/*/fs-uae)
+exec "$exe_path" "$@"
