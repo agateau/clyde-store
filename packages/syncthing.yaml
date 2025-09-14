@@ -1285,6 +1285,34 @@ releases:
     x86_64-windows:
       url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-windows-amd64-v2.0.8.zip
       sha256: 56a1998aeeaccba310608292ec8b64b8cf660aeca6899fd548af116aefdf8d0c
+  2.0.9:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-linux-arm64-v2.0.9.tar.gz
+      sha256: 41660299ad17f32367391367a7954df35f33017a5ad109a8a3323e15397411ff
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-macos-arm64-v2.0.9.zip
+      sha256: 2fc3dc1cb8ea690adf05ba5599788584bc084ff3e13a4486a0d3578c9ecaaf28
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-windows-arm64-v2.0.9.zip
+      sha256: c5c4db70029eed70f630628bd19a3856f881a67f0fbb07418171be672697f017
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-macos-universal-v2.0.9.zip
+      sha256: 0dc86d75cbb433aaa52abed9f60b909c2d430c24702a653f03cfe80fb54b98c1
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-linux-386-v2.0.9.tar.gz
+      sha256: 0004c6b4126702064f4adbcb4eac66eb5c75eaba19f3702ef3ce5025c1c2878c
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-windows-386-v2.0.9.zip
+      sha256: 3d1b994ef1fd17c7970355e9aeb06b8e03a6ff8b61444253a0ef045c2bc86726
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-linux-amd64-v2.0.9.tar.gz
+      sha256: 755ac045074cee707fc29915548d42bb9a58a444c61beb95f0d83f249cf9435b
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-macos-amd64-v2.0.9.zip
+      sha256: 1dd9dfb13564afc5f8349c1c159d6433cd86e3ace8e65dcd72d3222e569dc7e0
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-windows-amd64-v2.0.9.zip
+      sha256: 0b04c4154a94e91c4d24b6fbf7d517e5cc017c710684c0aaf59e1be33e90e269
 installs:
   1.20.3:
     any-any:
