@@ -1,0 +1,32 @@
+name: immich-go
+description: An alternative to the immich-CLI command that doesn't depend on nodejs installation. It tries its best for importing google photos takeout archives.
+homepage: https://github.com/simulot/immich-go
+repository: https://github.com/simulot/immich-go
+releases:
+  0.27.0:
+    aarch64-linux:
+      url: https://github.com/simulot/immich-go/releases/download/v0.27.0/immich-go_Linux_arm64.tar.gz
+      sha256: 47824e84aa74b8680f79be5bf837babecb4f966f4bfa5903159516b13bd56f44
+    aarch64-macos:
+      url: https://github.com/simulot/immich-go/releases/download/v0.27.0/immich-go_Darwin_arm64.tar.gz
+      sha256: d8353198bb127b39c5d9376c6422fffd0891e79cb390e9719a2cffb7d98bede6
+    aarch64-windows:
+      url: https://github.com/simulot/immich-go/releases/download/v0.27.0/immich-go_Windows_arm64.zip
+      sha256: efdc7aa3a503bbf7280c1e506373a52525dd96e610efb89509d06c724157df9b
+    x86_64-linux:
+      url: https://github.com/simulot/immich-go/releases/download/v0.27.0/immich-go_Linux_x86_64.tar.gz
+      sha256: 8661d4d8cadc50da17074d4d1aaba22de08a13248759dc6a30042837a6abb9fb
+    x86_64-macos:
+      url: https://github.com/simulot/immich-go/releases/download/v0.27.0/immich-go_Darwin_x86_64.tar.gz
+      sha256: 5cd9480aa2a4e9224263abf4f973333ff974c4b281af5ecbec377166719b42ce
+    x86_64-windows:
+      url: https://github.com/simulot/immich-go/releases/download/v0.27.0/immich-go_Windows_x86_64.zip
+      sha256: 924b641086bd605b06438132eac687b33b4ea4848e03d0dd45caff215cb2a8fc
+installs:
+  0.27.0:
+    any-any:
+      files:
+        LICENSE: ${doc_dir}
+        immich-go${exe_ext}: bin/
+      tests:
+      - immich-go${exe_ext} --version
