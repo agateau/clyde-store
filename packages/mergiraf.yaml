@@ -69,6 +69,22 @@ releases:
     x86_64-windows:
       url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.14.0/mergiraf_x86_64-pc-windows-gnu.zip
       sha256: 25bdb8545ae7d719be1cb7d4c6371accca515e15ce75d69c4c3f578278182b2a
+  0.15.0:
+    aarch64-linux:
+      url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.15.0/mergiraf_aarch64-unknown-linux-musl.tar.gz
+      sha256: aec54474309e9a74be5648bbf55e48d342dc8accaa1cdec37a7c7a4ee369f45a
+    aarch64-macos:
+      url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.15.0/mergiraf_aarch64-apple-darwin.tar.gz
+      sha256: f325a8c248f48320e070b22997e63edbce531c38f186ec6f3f9e3bcaf0ef621c
+    x86_64-linux:
+      url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.15.0/mergiraf_x86_64-unknown-linux-musl.tar.gz
+      sha256: 86c2080c8cd534d4a19b4de06aa63660ec97af2bd8d028b1f064d72e28b119cf
+    x86_64-macos:
+      url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.15.0/mergiraf_x86_64-apple-darwin.tar.gz
+      sha256: 102dc6ffdfda67a2415959eda10a6f27012896b401e7e6a4d78d27be5a833063
+    x86_64-windows:
+      url: https://codeberg.org/mergiraf/mergiraf/releases/download/v0.15.0/mergiraf_x86_64-pc-windows-gnu.zip
+      sha256: c69a498779f52ef2d0a8ffb5d0f157ae6a92ea7cd3b4be0acbbcb8d990f8a65d
 installs:
   0.9.0:
     any-any:
