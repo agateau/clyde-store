@@ -694,6 +694,22 @@ releases:
     x86_64-windows:
       url: https://github.com/walles/moor/releases/download/v2.1.1/moor-v2.1.1-windows-amd64.exe
       sha256: 5b73a512a15dca7e5a749fd25feafe02035c4f191655f815698e4faac3cd0103
+  2.2.0:
+    aarch64-macos:
+      url: https://github.com/walles/moor/releases/download/v2.2.0/moor-v2.2.0-darwin-arm64
+      sha256: 5349042e93e72dd77b1d098456e8238ce897814dca6161ebf25fa5d3de4df45a
+    x86-linux:
+      url: https://github.com/walles/moor/releases/download/v2.2.0/moor-v2.2.0-linux-386
+      sha256: 96af4c07a5bebd8cef462c610de3465e491f1887c9b88a8ba73b01536866fe55
+    x86_64-linux:
+      url: https://github.com/walles/moor/releases/download/v2.2.0/moor-v2.2.0-linux-amd64
+      sha256: 61b922fc070667f14907bdc7ace8cc599478a3b362fee0d87eca401121d66f8e
+    x86_64-macos:
+      url: https://github.com/walles/moor/releases/download/v2.2.0/moor-v2.2.0-darwin-amd64
+      sha256: c17080e7f722a14b77dc9d746c69931a3c9dce243175acfd1b9f5f73a954c28a
+    x86_64-windows:
+      url: https://github.com/walles/moor/releases/download/v2.2.0/moor-v2.2.0-windows-amd64.exe
+      sha256: 2539161f99d3e93a31eba9ce55a2b7df898261daed0debe342beea710e814fcb
 installs:
   0.0.0:
     any-any:
