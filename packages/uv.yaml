@@ -1425,6 +1425,31 @@ releases:
     x86_64-windows:
       url: https://github.com/astral-sh/uv/releases/download/0.9.0/uv-x86_64-pc-windows-msvc.zip
       sha256: 4bad2c47dafb52ad774072fb7a260e5c9f3dbf73441658db1128eb2aec5818eb
+  0.9.1:
+    aarch64-linux:
+      url: https://github.com/astral-sh/uv/releases/download/0.9.1/uv-aarch64-unknown-linux-musl.tar.gz
+      sha256: a171e7335fc2e05767fe0d151db5a6af7d1ba93debfc8c91721763eff457d0a3
+    aarch64-macos:
+      url: https://github.com/astral-sh/uv/releases/download/0.9.1/uv-aarch64-apple-darwin.tar.gz
+      sha256: cc84b5c86fbde176c0e1908abd65cec6e989ff755b6e68a912652beb1311de31
+    aarch64-windows:
+      url: https://github.com/astral-sh/uv/releases/download/0.9.1/uv-aarch64-pc-windows-msvc.zip
+      sha256: 862e0fef8e68f229c99ce05de70a712221bc552403f480379d03f5b05a6886fe
+    x86-linux:
+      url: https://github.com/astral-sh/uv/releases/download/0.9.1/uv-i686-unknown-linux-musl.tar.gz
+      sha256: 9763ef30957011ce61c56117ef3078c40960c7521c9ee7cbb3ce8aed5b6207a4
+    x86-windows:
+      url: https://github.com/astral-sh/uv/releases/download/0.9.1/uv-i686-pc-windows-msvc.zip
+      sha256: 8880c92097c5410c3bbad5e72cf7d38b57523ed374bcd7462d309b9a11b6df33
+    x86_64-linux:
+      url: https://github.com/astral-sh/uv/releases/download/0.9.1/uv-x86_64-unknown-linux-musl.tar.gz
+      sha256: 104bbd393104f09f84db474310b0fc0327c5f6566bd903c9a9cac00d137208b7
+    x86_64-macos:
+      url: https://github.com/astral-sh/uv/releases/download/0.9.1/uv-x86_64-apple-darwin.tar.gz
+      sha256: df530fc06d2fd51ed2efeb75b1ea5eeb77a631eb945efe5f9d90ef5969cd3672
+    x86_64-windows:
+      url: https://github.com/astral-sh/uv/releases/download/0.9.1/uv-x86_64-pc-windows-msvc.zip
+      sha256: 8dba20107ebcd38f3a8e4acfeb7b209d594e112a3be8d1cea69fe6d501a69fdf
 installs:
   0.4.18:
     any-any:
