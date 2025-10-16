@@ -104,6 +104,31 @@ releases:
     x86_64-windows:
       url: https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-pc-windows-msvc.zip
       sha256: d0f534024c42afd6cb4d38907c25cd2b249b79bbe6cc1dbee8e3e37c2b6e25a1
+  15.0.0:
+    aarch64-linux:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/15.0.0/ripgrep-15.0.0-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 15f8cc2fab12d88491c54d49f38589922a9d6a7353c29b0a0856727bcdf80754
+    aarch64-macos:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/15.0.0/ripgrep-15.0.0-aarch64-apple-darwin.tar.gz
+      sha256: 98bb2e61e7277ba0ea72d2ae2592497fd8d2940934a16b122448d302a6637e3b
+    aarch64-windows:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/15.0.0/ripgrep-15.0.0-aarch64-pc-windows-msvc.zip
+      sha256: 572709c8770cb7f9385d725cb06d2bcd9537ec24d4dd17b1be1d65a876f8b591
+    x86-linux:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/15.0.0/ripgrep-15.0.0-i686-unknown-linux-gnu.tar.gz
+      sha256: 9a614b1c5014a1e9aa67aa7639fc47ee39bba02714589f43411466f75def1d3b
+    x86-windows:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/15.0.0/ripgrep-15.0.0-i686-pc-windows-msvc.zip
+      sha256: acb9918e9f3a88bd171143d663ffb12e8ab765b48bb449f8e7d8f1c7c1bd8311
+    x86_64-linux:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/15.0.0/ripgrep-15.0.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 253ad0fd5fef0d64cba56c70dccdacc1916d4ed70ad057cc525fcdb0c3bbd2a7
+    x86_64-macos:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/15.0.0/ripgrep-15.0.0-x86_64-apple-darwin.tar.gz
+      sha256: 44128c733d127ddbda461e01225a68b5f9997cfe7635242a797f645ca674a71a
+    x86_64-windows:
+      url: https://github.com/BurntSushi/ripgrep/releases/download/15.0.0/ripgrep-15.0.0-x86_64-pc-windows-msvc.zip
+      sha256: 21a98bf42c4da97ca543c010e764cc6dec8b9b7538d05f8d21874016385e0860
 installs:
   13.0.0:
     any-any:
