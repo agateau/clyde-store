@@ -403,6 +403,31 @@ releases:
     x86_64-windows:
       url: https://github.com/schollz/croc/releases/download/v10.2.5/croc_v10.2.5_Windows-64bit.zip
       sha256: 1fdf10fddae2822cc4751b7c7b63c5e3143c4e59e6bd5e9af48216a65b992073
+  10.2.7:
+    aarch64-linux:
+      url: https://github.com/schollz/croc/releases/download/v10.2.7/croc_v10.2.7_Linux-ARM64.tar.gz
+      sha256: 52fda9abb79ba30600946a06e681b49e248da431cdf1c34bf3fe0e2c3771f165
+    aarch64-macos:
+      url: https://github.com/schollz/croc/releases/download/v10.2.7/croc_v10.2.7_macOS-ARM64.tar.gz
+      sha256: 18b029fff370cd97dfb67c450812f11c032080496ab47f58474a41ae834b3afa
+    aarch64-windows:
+      url: https://github.com/schollz/croc/releases/download/v10.2.7/croc_v10.2.7_Windows-ARM64.zip
+      sha256: 4d31bd74995b7758b8c9678173ade94f7c0ec680533d99b0388dfb3f21d7cf4c
+    x86-linux:
+      url: https://github.com/schollz/croc/releases/download/v10.2.7/croc_v10.2.7_Linux-32bit.tar.gz
+      sha256: d6d204585078b857bb50511aa61084c7349d38dcbb4233e183cdbe03b55a46e8
+    x86-windows:
+      url: https://github.com/schollz/croc/releases/download/v10.2.7/croc_v10.2.7_Windows-32bit.zip
+      sha256: a9c767785f16551aac6d1b92b042157890523f4500949867f0ad6748e9bc30a6
+    x86_64-linux:
+      url: https://github.com/schollz/croc/releases/download/v10.2.7/croc_v10.2.7_Linux-64bit.tar.gz
+      sha256: bcdc00ca1c35b0f03e68eda2d8addf631140a8b488ea370047fc48c5b790fb1a
+    x86_64-macos:
+      url: https://github.com/schollz/croc/releases/download/v10.2.7/croc_v10.2.7_macOS-64bit.tar.gz
+      sha256: 22deabd4444d0d197d12f3d7e9d6a3f276be0e0b66176583de677b2990530876
+    x86_64-windows:
+      url: https://github.com/schollz/croc/releases/download/v10.2.7/croc_v10.2.7_Windows-64bit.zip
+      sha256: ce6c73c280bf92b44f92c38417b0d0f7ffe62cd62b43cecba3d009a1befb3465
   9.6.0:
     aarch64-linux:
       url: https://github.com/schollz/croc/releases/download/v9.6.0/croc_9.6.0_Linux-ARM64.tar.gz
