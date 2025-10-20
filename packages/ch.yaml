@@ -1,0 +1,23 @@
+name: ch
+description: A fast, simple terminal tool to highlight specific words in your command output with colors
+homepage: https://github.com/dtonon/ch
+repository: https://github.com/dtonon/ch
+releases:
+  0.0.0:
+    any-any:
+      url: https://github.com/dummy
+      sha256: '0'
+  1.1.0:
+    aarch64-macos:
+      url: https://github.com/dtonon/ch/releases/download/v1.1.0/ch-macos-arm64
+      sha256: 11afcee9d882726f24db4fbba721094ba2de8171aec9507133db47a142d04c5f
+    x86_64-linux:
+      url: https://github.com/dtonon/ch/releases/download/v1.1.0/ch-linux-amd64
+      sha256: fd3c6c45aa238189c53c2254b9684b5a93634911e18cfe51ca22bf75464f44c9
+installs:
+  1.1.0:
+    any-any:
+      files:
+        ${asset_name}: bin/ch${exe_ext}
+      tests:
+        - ch${exe_ext} foo
