@@ -107,6 +107,19 @@ releases:
     x86_64-macos:
       url: https://github.com/wtfutil/wtf/releases/download/v0.46.1/wtf_0.46.1_darwin_amd64.tar.gz
       sha256: fb10b81bdd28b220e19227594b1c871e8cc8e64bfafc83565b8cfafbe65fd31e
+  0.47.0:
+    aarch64-linux:
+      url: https://github.com/wtfutil/wtf/releases/download/v0.47.0/wtf_0.47.0_linux_arm64.tar.gz
+      sha256: a34f7aeac2828a0103f41bac0208da14e98053f2b205176ec63dea1b36f0ae91
+    aarch64-macos:
+      url: https://github.com/wtfutil/wtf/releases/download/v0.47.0/wtf_0.47.0_darwin_arm64.tar.gz
+      sha256: 33f158537dc8d3f585a706ad79c4d5fb49a86b7e98f9a4cc4767ee648eda3d08
+    x86_64-linux:
+      url: https://github.com/wtfutil/wtf/releases/download/v0.47.0/wtf_0.47.0_linux_amd64.tar.gz
+      sha256: 80f37b3dad937b8b6284ccb2b79586d6f7808ec37856d839d065f97e5f13231b
+    x86_64-macos:
+      url: https://github.com/wtfutil/wtf/releases/download/v0.47.0/wtf_0.47.0_darwin_amd64.tar.gz
+      sha256: d634bb6ad9b04285584069b7f3eb6067b35498a2ce4f9fe1d0b507758ecc1598
 installs:
   0.41.0:
     any-any:
