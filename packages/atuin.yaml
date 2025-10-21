@@ -133,6 +133,19 @@ releases:
     x86_64-macos:
       url: https://github.com/atuinsh/atuin/releases/download/v18.8.0/atuin-x86_64-apple-darwin.tar.gz
       sha256: c60f6e40a9f874d4945f042707d086cd4915594638ad3a3a8094cd13d138db7d
+  18.9.0:
+    aarch64-linux:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.9.0/atuin-aarch64-unknown-linux-musl.tar.gz
+      sha256: 0580b31b2fb9de8cd1d1a7dc2694d9b657592ebfa70f09d530243e189c8b7ba6
+    aarch64-macos:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.9.0/atuin-aarch64-apple-darwin.tar.gz
+      sha256: e68b1e4dfae55bcb29512032638bc65fa2ef8119c02cd7d38e889f7d1a746fbe
+    x86_64-linux:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.9.0/atuin-x86_64-unknown-linux-musl.tar.gz
+      sha256: f4af2e14ad348c614d4b47f95d492a99b41b3cfde0f75e4ad8e339317fa6d51e
+    x86_64-macos:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.9.0/atuin-x86_64-apple-darwin.tar.gz
+      sha256: 5000c5ff6dae7c99bdffb634038d29f128fe71931cc01f4b47cc74de99ec0ee5
 installs:
   18.0.2:
     any-any:
