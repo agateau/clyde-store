@@ -288,6 +288,25 @@ releases:
     x86_64-windows:
       url: https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.2.6/biome-win32-x64.exe
       sha256: 157039ed9aa4817595be54c7d929acab354a3284fbd05e78218e69fa5773e92b
+  2.2.7:
+    aarch64-linux:
+      url: https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.2.7/biome-linux-arm64-musl
+      sha256: fc96fec65d16606cf800b57b2aec7865e4a5e2b69b61a2a53a8a55c3aa4ad5f1
+    aarch64-macos:
+      url: https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.2.7/biome-darwin-arm64
+      sha256: 0260db7e239bfaf9c48835e06747902453e8a5b38c1389fd16448ddce9b2b860
+    aarch64-windows:
+      url: https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.2.7/biome-win32-arm64.exe
+      sha256: fffee05bd89561d816fc258dce7b96bc57d07bc4a84db3b333eb69d06785acd0
+    x86_64-linux:
+      url: https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.2.7/biome-linux-x64-musl
+      sha256: 58000a14d2a41364524bb61fd7ffc72d29a46445b3dfd1cc09b8fabe2256da9c
+    x86_64-macos:
+      url: https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.2.7/biome-darwin-x64
+      sha256: eb8f42e687f86629de643640e90553c903a6c89d0bde8f340497e58313f0c969
+    x86_64-windows:
+      url: https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.2.7/biome-win32-x64.exe
+      sha256: 70ba623d193e71a1ad55174666cbd6dee828ac04be4b2df58c6084c91e733181
 installs:
   1.9.4:
     any-any:
