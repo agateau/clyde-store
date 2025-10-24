@@ -205,6 +205,22 @@ releases:
     x86_64-windows:
       url: https://github.com/lycheeverse/lychee/releases/download/lychee-v0.20.1/lychee-x86_64-windows.exe
       sha256: dbd2f1ba07ef1725b37aa5069121365a2a96fbaa84a9905d678add623ff021df
+  0.21.0:
+    aarch64-linux:
+      url: https://github.com/lycheeverse/lychee/releases/download/lychee-v0.21.0/lychee-aarch64-unknown-linux-musl.tar.gz
+      sha256: e3de08afeb4badb1b0c2764f05355bb6772747c5401ee37bdeebbc71312bf8aa
+    aarch64-macos:
+      url: https://github.com/lycheeverse/lychee/releases/download/lychee-v0.21.0/lychee-arm64-macos.tar.gz
+      sha256: 48c1c7f6c767e0f2947b452e7ed819d742d3bc23bcb7cc64aaaf9fe50a8c0b4a
+    x86-linux:
+      url: https://github.com/lycheeverse/lychee/releases/download/lychee-v0.21.0/lychee-i686-unknown-linux-gnu.tar.gz
+      sha256: c83ef925dd9994609599ae692c44b96f31b154751b168ca5bdf319363103ea05
+    x86_64-linux:
+      url: https://github.com/lycheeverse/lychee/releases/download/lychee-v0.21.0/lychee-x86_64-unknown-linux-musl.tar.gz
+      sha256: b9bd4daccdbcea33921a19b87d79e63a76e63c873ff2a66869bac088e24b4b7c
+    x86_64-windows:
+      url: https://github.com/lycheeverse/lychee/releases/download/lychee-v0.21.0/lychee-x86_64-windows.exe
+      sha256: a1784c32c63ba46dccef0698ddf6be82a83a7d0455b0fd772423d601e3c70ab4
 installs:
   0.10.1:
     any-any:
