@@ -131,3 +131,12 @@ installs:
         wtfutil${exe_ext}: bin/
       tests:
       - wtfutil${exe_ext} --version
+  0.47.0:
+    any-any:
+      files:
+        CHANGELOG.md: ${doc_dir}
+        LICENSE.md: ${doc_dir}
+        README.md: ${doc_dir}
+        wtfutil${exe_ext}: bin/
+      tests:
+      - wtfutil${exe_ext} --version
