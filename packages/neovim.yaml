@@ -80,6 +80,25 @@ releases:
     x86_64-windows:
       url: https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-win64.zip
       sha256: 77eee5936724b82e45b448e0370abe0911d75fad551c0a25415f4e51719faf34
+  0.11.5:
+    aarch64-linux:
+      url: https://github.com/neovim/neovim/releases/download/v0.11.5/nvim-linux-arm64.tar.gz
+      sha256: ea4f9a31b11cc1477ff014aebb7b207684e7280f94ffa97abdab6cacd9b98519
+    aarch64-macos:
+      url: https://github.com/neovim/neovim/releases/download/v0.11.5/nvim-macos-arm64.tar.gz
+      sha256: 79143d3b408f7034f90b7cf59af2276de09ef8a4c2f1a28e4c99581b249d3107
+    aarch64-windows:
+      url: https://github.com/neovim/neovim/releases/download/v0.11.5/nvim-win-arm64.zip
+      sha256: 3446d204a97ec83eb4af0fe530a09c6d6b7392c0f0c36706e2c7dac6e1feb0ff
+    x86_64-linux:
+      url: https://github.com/neovim/neovim/releases/download/v0.11.5/nvim-linux-x86_64.tar.gz
+      sha256: b2f91117be5b5ea39edd7297156dc2a4a8df4add6c95a90809a8df19e7ab6f52
+    x86_64-macos:
+      url: https://github.com/neovim/neovim/releases/download/v0.11.5/nvim-macos-x86_64.tar.gz
+      sha256: 6612760a7037ca2518e456908baf5e43101fa79819d18979fc4d4e8441d9dfa5
+    x86_64-windows:
+      url: https://github.com/neovim/neovim/releases/download/v0.11.5/nvim-win64.zip
+      sha256: 718e731326e7759cf17bbbb33f38975707a2ac85642614686b818ef5fde38f48
 installs:
   0.10.0:
     any-any:
