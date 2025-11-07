@@ -1,0 +1,58 @@
+name: helix
+description: A post-modern text editor
+homepage: https://helix-editor.com
+repository: https://github.com/helix-editor/helix
+releases:
+  22.5.0:
+    x86_64-linux:
+      url: https://github.com/helix-editor/helix/releases/download/22.05/helix-22.05-x86_64-linux.tar.xz
+      sha256: 73eb3fa54858d81dc7f393166044f30a0c04eeb9f88f49971146ef9ddfc043f9
+    x86_64-macos:
+      url: https://github.com/helix-editor/helix/releases/download/22.05/helix-22.05-x86_64-macos.tar.xz
+      sha256: b76fba41375794ba8be8f848a9c480604945f51ec171ce7dfd3327722c2b8d18
+    x86_64-windows:
+      url: https://github.com/helix-editor/helix/releases/download/22.05/helix-22.05-x86_64-windows.zip
+      sha256: 36c23bc5ffab85ecaf7c363cdc87b19502e302262729dd11e5dd15e956531497
+  22.8.1:
+    aarch64-macos:
+      url: https://github.com/helix-editor/helix/releases/download/22.08.1/helix-22.08.1-aarch64-macos.tar.xz
+      sha256: 63bd4378b526423941e34504eed9869ecfb2585cc323fc91fba354da5b89b561
+    x86_64-linux:
+      url: https://github.com/helix-editor/helix/releases/download/22.08.1/helix-22.08.1-x86_64-linux.tar.xz
+      sha256: d587b3ca727d531146a441e5dfd6eff35592966ea3eddcef6aaf6bb5879a1b36
+    x86_64-macos:
+      url: https://github.com/helix-editor/helix/releases/download/22.08.1/helix-22.08.1-x86_64-macos.tar.xz
+      sha256: 8036a688c0207163d9fd52a43f67ce8af5b88fc297834cbf44dbf4afd3b7c3f3
+    x86_64-windows:
+      url: https://github.com/helix-editor/helix/releases/download/22.08.1/helix-22.08.1-x86_64-windows.zip
+      sha256: ae2e1f534d2267b0de8cd53f6389dcce740d3f392c282e03768ba67db3f6003a
+  25.7.1:
+    aarch64-linux:
+      url: https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-aarch64-linux.tar.xz
+      sha256: ce23fa8d395e633e3e54c052012f11965d91d8d5c2bfa659685f50430b4f8175
+    aarch64-macos:
+      url: https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-aarch64-macos.tar.xz
+      sha256: 00b1651b4fdbbe0a2ae981c8e76b858bd26a7c33f5b3583f3b6bb9137d54f1ff
+    x86_64-linux:
+      url: https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz
+      sha256: 3f08e63ecd388fff657ad39722f88bb03dcf326f1f2da2700d99e1dc40ab2e8b
+    x86_64-macos:
+      url: https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-macos.tar.xz
+      sha256: 84dc32d617d28d32f4aa21e3aafac47bd715d1154aeb977697d4d60b887b7103
+    x86_64-windows:
+      url: https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-windows.zip
+      sha256: 5c8325ced8bacd8418d62706f669e96d9c3578a9237526e34d546900cbc049b6
+installs:
+  22.5.0:
+    any-any:
+      strip: 1
+      files:
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        contrib: opt/helix/contrib/
+        hx${exe_ext}: opt/helix/
+        runtime: opt/helix/runtime/
+      extra_files:
+        hx: bin/
+      tests:
+        - hx --version
