@@ -1,0 +1,37 @@
+name: television
+description: ''
+homepage: https://alexpasmantier.github.io/television
+repository: https://github.com/alexpasmantier/television
+releases:
+  0.13.9:
+    aarch64-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.9/tv-0.13.9-aarch64-unknown-linux-gnu.tar.gz
+      sha256: f1bc5080c18aaaab66750826096a7d868c2e7e5dddd0d1f582c03a65b54115ac
+    aarch64-macos:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.9/tv-0.13.9-aarch64-apple-darwin.tar.gz
+      sha256: ecb4bd76cbec21d70792a145c639f96d4b52b6ea81344c38516ee33dc2d5671f
+    x86-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.9/tv-0.13.9-i686-unknown-linux-gnu.tar.gz
+      sha256: 43db0b06b33a693eea929452ad6aba62835b88871992a862e538278385c5dd6f
+    x86_64-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.9/tv-0.13.9-x86_64-unknown-linux-musl.tar.gz
+      sha256: 1dada75d5cbf9b6bb75bce3c286269482a4d9a99707eaa3c1e2f7d2b2e5b5a60
+    x86_64-macos:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.9/tv-0.13.9-x86_64-apple-darwin.tar.gz
+      sha256: 406c718cb6daffd339932f9ab51e2f1839e2c990014a787941800ac44381e645
+    x86_64-windows:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.9/tv-0.13.9-x86_64-pc-windows-msvc.tar.gz
+      sha256: d313ed132455dcaa779db589903dba2d8840ca1c5055f12ed98d742c48f0d767
+installs:
+  0.13.9:
+    any:
+      strip: 1
+      files:
+        tv${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        doc/01-Users: ${doc_dir}
+        doc/02-Developers: ${doc_dir}
+        doc/tv.1: share/man/man1/
+      tests:
+        - tv${exe_ext} --version
