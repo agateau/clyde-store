@@ -1,0 +1,31 @@
+name: superhtml
+description: "HTML Validator, Formatter, LSP, and Templating Language Library"
+homepage: https://github.com/kristoff-it/superhtml
+repository: https://github.com/kristoff-it/superhtml
+releases:
+  0.6.2:
+    aarch64-linux:
+      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/aarch64-linux.tar.xz
+      sha256: 2d21672c0a9290f4e4e2003a41c1b5ec16fae0419a62810abe4ac65546a62896
+    aarch64-macos:
+      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/aarch64-macos.zip
+      sha256: 817b97fd8a7bc2a7b664adce45a3b6e54f2d9a8f6d5628b184f988ece3f2b55d
+    aarch64-windows:
+      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/aarch64-windows.zip
+      sha256: 224c3b66ca9e12421fd3fe927a0bb0c3f21b289e825363fba73aef65d0924eb2
+    x86_64-linux:
+      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/x86_64-linux-musl.tar.xz
+      sha256: e6dd0bd6223d6fb925843800086ece2fb11d8973e08a2d9ccc7a76ce7d0a36e3
+    x86_64-macos:
+      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/x86_64-macos.zip
+      sha256: a64c2aca5090a9c299765cda842e1878ae1a756e759727cbd7a21c634dd9c762
+    x86_64-windows:
+      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/x86_64-windows.zip
+      sha256: d5566c96355389bb86d0e98cdf5b3603ff816fc49db5bd42a0a88d4ee72586c6
+installs:
+  0.6.2:
+    any-any:
+      files:
+        superhtml${exe_ext}: bin/
+      tests:
+        - superhtml${exe_ext} version
