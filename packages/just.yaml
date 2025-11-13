@@ -646,6 +646,25 @@ releases:
     x86_64-windows:
       url: https://github.com/casey/just/releases/download/1.43.0/just-1.43.0-x86_64-pc-windows-msvc.zip
       sha256: 04be7b6d7f8419288ce75532f1962cee1756992e494e6c8063bb3ab8db21b52c
+  1.43.1:
+    aarch64-linux:
+      url: https://github.com/casey/just/releases/download/1.43.1/just-1.43.1-aarch64-unknown-linux-musl.tar.gz
+      sha256: e28e1f18cecd45d35f9fb39ef3651dd79c0623cb29a2f375ea7a1a185ac32dc9
+    aarch64-macos:
+      url: https://github.com/casey/just/releases/download/1.43.1/just-1.43.1-aarch64-apple-darwin.tar.gz
+      sha256: 96f4338e06966443b60666620ab3da0c2c6105ca1302275839c0f57fcbfa99d6
+    aarch64-windows:
+      url: https://github.com/casey/just/releases/download/1.43.1/just-1.43.1-aarch64-pc-windows-msvc.zip
+      sha256: e922a5645efbf3776b23be95cd05481d87d19e90727f4f196da8f4291fe4f817
+    x86_64-linux:
+      url: https://github.com/casey/just/releases/download/1.43.1/just-1.43.1-x86_64-unknown-linux-musl.tar.gz
+      sha256: 6a3003f68fa4d86ada8afe33830a88ffdb6c2fcaff4e5a840b1cb90eaf6f46fc
+    x86_64-macos:
+      url: https://github.com/casey/just/releases/download/1.43.1/just-1.43.1-x86_64-apple-darwin.tar.gz
+      sha256: e41d03872e28636b9c4461229e4e83771d7b4a0ef2bb6596dfc1e5e393c7ebe0
+    x86_64-windows:
+      url: https://github.com/casey/just/releases/download/1.43.1/just-1.43.1-x86_64-pc-windows-msvc.zip
+      sha256: 9109a5fa04f3428fea7fe4bc7898742a65f087c4da1f1b004fb3a23f3f4e6140
   1.5.0:
     aarch64-linux:
       url: https://github.com/casey/just/releases/download/1.5.0/just-1.5.0-aarch64-unknown-linux-musl.tar.gz
