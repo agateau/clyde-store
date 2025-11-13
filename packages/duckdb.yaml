@@ -231,6 +231,28 @@ releases:
     x86_64-windows:
       url: https://github.com/duckdb/duckdb/releases/download/v1.4.1/duckdb_cli-windows-amd64.zip
       sha256: 3fab5174658bf16189c80eaa047b3e7737847491c9e4433a985adf014618cbd9
+  1.4.2:
+    aarch64-linux:
+      url: https://github.com/duckdb/duckdb/releases/download/v1.4.2/duckdb_cli-linux-arm64.gz
+      sha256: 8aef6e820592aefb26bea10e9889e99dce54b1954668d66efe16fdb094053e5b
+    aarch64-macos:
+      url: https://github.com/duckdb/duckdb/releases/download/v1.4.2/duckdb_cli-osx-arm64.gz
+      sha256: e07fe91cb9f6d6c7b0caf270dc1165cce4edf47d1115e72e73866c1b02cb9db3
+    aarch64-windows:
+      url: https://github.com/duckdb/duckdb/releases/download/v1.4.2/duckdb_cli-windows-arm64.zip
+      sha256: 56965caa343d1c2914bf372e1fa2ed2a5842b081da2252ff93a9abc99744ab55
+    any-macos:
+      url: https://github.com/duckdb/duckdb/releases/download/v1.4.2/duckdb_cli-osx-universal.gz
+      sha256: 6278acad681ff068a1439f3cdec8da6b9401a6fc48332fb2454da64382c8da01
+    x86_64-linux:
+      url: https://github.com/duckdb/duckdb/releases/download/v1.4.2/duckdb_cli-linux-amd64.gz
+      sha256: 5da662bdc18b397276dd0898a5d20eabe72eb68797009f584a7818b9cd39210d
+    x86_64-macos:
+      url: https://github.com/duckdb/duckdb/releases/download/v1.4.2/duckdb_cli-osx-amd64.gz
+      sha256: 8ab53997e2e3e1cb2eec131b0f5d771ab6f1da77a43cac63d39c61fcac447e05
+    x86_64-windows:
+      url: https://github.com/duckdb/duckdb/releases/download/v1.4.2/duckdb_cli-windows-amd64.zip
+      sha256: 2a31d67cf54aec3494fb331147edddfee1cd7f3fadcb5b84056f9bc28cf76576
 installs:
   0.10.1:
     any-any:
