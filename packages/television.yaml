@@ -3,6 +3,25 @@ description: ''
 homepage: https://alexpasmantier.github.io/television
 repository: https://github.com/alexpasmantier/television
 releases:
+  0.13.10:
+    aarch64-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.10/tv-0.13.10-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 9f48391bae46a1748a3e897f5916cc26e40e9e194dd40b89afbea6b5ce77adb2
+    aarch64-macos:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.10/tv-0.13.10-aarch64-apple-darwin.tar.gz
+      sha256: f3fae9d1b36046875825c200bd11ea7f6c52be37e0894a514f2d0ef4b0143541
+    x86-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.10/tv-0.13.10-i686-unknown-linux-gnu.tar.gz
+      sha256: 9f045de76cc3ea29baf3908c7df8e6db5f5b8451a7914a21296858651fe412d8
+    x86_64-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.10/tv-0.13.10-x86_64-unknown-linux-musl.tar.gz
+      sha256: 4314b110773a093a2e1521f12ad669e870a2433972077947854faddaa626e51b
+    x86_64-macos:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.10/tv-0.13.10-x86_64-apple-darwin.tar.gz
+      sha256: d295b49579d5b5c1c1bcf226660947a274b88a32677f6dd090ae209b553379d9
+    x86_64-windows:
+      url: https://github.com/alexpasmantier/television/releases/download/0.13.10/tv-0.13.10-x86_64-pc-windows-msvc.tar.gz
+      sha256: f16e7e5a86380c884a480dc3e206d9f29f7ad27e46e4fb474ca56512a0eb541f
   0.13.9:
     aarch64-linux:
       url: https://github.com/alexpasmantier/television/releases/download/0.13.9/tv-0.13.9-aarch64-unknown-linux-gnu.tar.gz
@@ -24,14 +43,14 @@ releases:
       sha256: d313ed132455dcaa779db589903dba2d8840ca1c5055f12ed98d742c48f0d767
 installs:
   0.13.9:
-    any:
+    any-any:
       strip: 1
       files:
-        tv${exe_ext}: bin/
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
         doc/01-Users: ${doc_dir}
         doc/02-Developers: ${doc_dir}
         doc/tv.1: share/man/man1/
+        tv${exe_ext}: bin/
       tests:
-        - tv${exe_ext} --version
+      - tv${exe_ext} --version
