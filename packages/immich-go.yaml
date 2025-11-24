@@ -79,6 +79,25 @@ releases:
     x86_64-windows:
       url: https://github.com/simulot/immich-go/releases/download/v0.30.0/immich-go_Windows_x86_64.zip
       sha256: e4c6e51c6036cd017448566c72917b9b76f0c30331cdd9a63a4f5e698021febf
+  0.31.0:
+    aarch64-linux:
+      url: https://github.com/simulot/immich-go/releases/download/v0.31.0/immich-go_Linux_arm64.tar.gz
+      sha256: 74d297ca17144305ffaeb337a3484a478bc2b2f001eb60d2cbdfca12aed8f707
+    aarch64-macos:
+      url: https://github.com/simulot/immich-go/releases/download/v0.31.0/immich-go_Darwin_arm64.tar.gz
+      sha256: d49db9b9ffd0606f7072f44264de534269c2305f0ee02ca61481426e6700b491
+    aarch64-windows:
+      url: https://github.com/simulot/immich-go/releases/download/v0.31.0/immich-go_Windows_arm64.zip
+      sha256: 0f82c2649c3ebe01e84391efea8464de0fbb9d2a4815074154a057af04c8de3a
+    x86_64-linux:
+      url: https://github.com/simulot/immich-go/releases/download/v0.31.0/immich-go_Linux_x86_64.tar.gz
+      sha256: 66836e64db7ee5215bbc55d498f6d508a995be3f0bf804198ee92c37e73bb610
+    x86_64-macos:
+      url: https://github.com/simulot/immich-go/releases/download/v0.31.0/immich-go_Darwin_x86_64.tar.gz
+      sha256: 5b3f966da7c7bd9603d64b1774892acea4c3e69556a28240d916c12bb0533fa3
+    x86_64-windows:
+      url: https://github.com/simulot/immich-go/releases/download/v0.31.0/immich-go_Windows_x86_64.zip
+      sha256: a81dfb582d94b8901a75e57fc91778c837fa060540dd814f9f56695c91f9992a
 installs:
   0.27.0:
     any-any:
