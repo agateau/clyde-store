@@ -95,6 +95,22 @@ releases:
     x86_64-windows:
       url: https://github.com/medialab/xan/releases/download/0.54.0/xan-x86_64-pc-windows-msvc.zip
       sha256: 766b9be6224e7acd118196014c2562bbd8abaadd0a414a3fb5f83a32b0b068dc
+  0.54.1:
+    aarch64-linux:
+      url: https://github.com/medialab/xan/releases/download/0.54.1/xan-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 2079809b2b6c25126396f2719fac47dd387203f6e44eaf8436ccac7c2ae3e889
+    aarch64-macos:
+      url: https://github.com/medialab/xan/releases/download/0.54.1/xan-aarch64-apple-darwin.tar.gz
+      sha256: a85a6f5f69b9814b5f6f83dddcb60b0aa73597a4c39bbc408b72282ef6e70731
+    x86_64-linux:
+      url: https://github.com/medialab/xan/releases/download/0.54.1/xan-x86_64-unknown-linux-musl.tar.gz
+      sha256: a3385cb56e01e35d1d92fa1ee4c4450509927285b7251c63bb2d1d9ea0c0d90d
+    x86_64-macos:
+      url: https://github.com/medialab/xan/releases/download/0.54.1/xan-x86_64-apple-darwin.tar.gz
+      sha256: f54c16483a6d0842b212f2f28a8ceaf2de7424f647b6c5dc2235dafcf64bd460
+    x86_64-windows:
+      url: https://github.com/medialab/xan/releases/download/0.54.1/xan-x86_64-pc-windows-msvc.zip
+      sha256: 7259a235660ac837efcc848ae6a9e6394c767931d7e27e11621ae9f413db68e7
 installs:
   0.49.1:
     any-any:
