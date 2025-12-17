@@ -193,6 +193,22 @@ releases:
     x86_64-windows:
       url: https://github.com/ducaale/xh/releases/download/v0.25.0/xh-v0.25.0-x86_64-pc-windows-msvc.zip
       sha256: 00cf11e2dcc62d90db94cd31be6609a53ecfc786039d541ce938065132bedf01
+  0.25.3:
+    aarch64-linux:
+      url: https://github.com/ducaale/xh/releases/download/v0.25.3/xh-v0.25.3-aarch64-unknown-linux-musl.tar.gz
+      sha256: 042f504048281e0042d99230750ee0a314d0a7273c4398d62a66896478b53a86
+    aarch64-macos:
+      url: https://github.com/ducaale/xh/releases/download/v0.25.3/xh-v0.25.3-aarch64-apple-darwin.tar.gz
+      sha256: 3886af1df744a44f6f8da37d51e3f733c14b35aeb3f46828ee528970ad708951
+    x86_64-linux:
+      url: https://github.com/ducaale/xh/releases/download/v0.25.3/xh-v0.25.3-x86_64-unknown-linux-musl.tar.gz
+      sha256: fc738e616b327e7a10256e206c78073bfeed95d73af6ba9ced4c5eb20ac8d717
+    x86_64-macos:
+      url: https://github.com/ducaale/xh/releases/download/v0.25.3/xh-v0.25.3-x86_64-apple-darwin.tar.gz
+      sha256: ef0bd8fe2752abd84202d0b0ac5d4943712ce3c464d70a679b140ca2a0a475cf
+    x86_64-windows:
+      url: https://github.com/ducaale/xh/releases/download/v0.25.3/xh-v0.25.3-x86_64-pc-windows-msvc.zip
+      sha256: 49f60a01324ce42726ce1f8bcdff4b376b1e8533aed33d7a107a3cd70f040236
 installs:
   0.16.1:
     any-any:
