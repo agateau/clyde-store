@@ -1,0 +1,25 @@
+name: qjp
+description: Quick interactive TUI json picker/menu
+homepage: https://github.com/plainas/qjp
+repository: https://github.com/plainas/qjp
+releases:
+  0.2.1:
+    aarch64-linux:
+      url: https://github.com/plainas/qjp/releases/download/v0.2.1/qjp-linux-arm64
+      sha256: 65afb3fe07525e759f7536602641328fb8ad462f979c8eaaaffe0890fc13e36a
+    aarch64-macos:
+      url: https://github.com/plainas/qjp/releases/download/v0.2.1/qjp-darwin-arm64
+      sha256: 9581081c861c3dd467fce00336f627707b21e2ea59d99e0c4a0a7c851b56da6f
+    x86_64-linux:
+      url: https://github.com/plainas/qjp/releases/download/v0.2.1/qjp-linux-x86_64
+      sha256: 7d3c0cbcc165e634edb00ba35a77a5de6b62436fb820353227ad23050019f42f
+    x86_64-macos:
+      url: https://github.com/plainas/qjp/releases/download/v0.2.1/qjp-darwin-x86_64
+      sha256: 2924fb1c5be9056d70e061cd9bf9354214d3b3fcffdc35caf1f350429f545b60
+installs:
+  0.2.1:
+    any-any:
+      files:
+        ${asset_name}: bin/qjp${exe_ext}
+      tests:
+        - qjp${exe_ext} -h
