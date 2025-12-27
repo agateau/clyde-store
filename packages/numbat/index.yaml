@@ -25,18 +25,40 @@ releases:
     x86_64-windows:
       url: https://github.com/sharkdp/numbat/releases/download/v1.16.0/numbat-v1.16.0-x86_64-pc-windows-msvc.zip
       sha256: 1950d6aa4ca73d4fbf59c8ed9024d95f2234aa2b6822fd6c42f8cb6f3653ff8d
+  1.17.0:
+    aarch64-linux:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.17.0/numbat-v1.17.0-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 47f4bb1b6c3fc638b03810c919327bb2c8bdd0084ac207e01dede2bcf82f17f0
+    aarch64-macos:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.17.0/numbat-v1.17.0-aarch64-apple-darwin.tar.gz
+      sha256: 2c3455bbad1fb2133cd8cc061095973de91a13309fd98fe7a87064c95f54b56c
+    x86-linux:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.17.0/numbat-v1.17.0-i686-unknown-linux-musl.tar.gz
+      sha256: 74f1d4205c1cff91deec877ddf3f8e7d325de368efdd2b9c8a5ab3b8a0dc2f54
+    x86-windows:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.17.0/numbat-v1.17.0-i686-pc-windows-msvc.zip
+      sha256: e60e0cad5fc6ace8660fa8fb66cb8cf7f216f35ccacb18cdf06c16d880a0ae89
+    x86_64-linux:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.17.0/numbat-v1.17.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 8d02c66306cabb505fa8ada7aba9b1f60e6c40347758a2c016a42e3b162f1a34
+    x86_64-macos:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.17.0/numbat-v1.17.0-x86_64-apple-darwin.tar.gz
+      sha256: 118322a396efe2381953f1de916990f7854ea460973cac0f7d8171a86ac1ab71
+    x86_64-windows:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.17.0/numbat-v1.17.0-x86_64-pc-windows-msvc.zip
+      sha256: 3c23a24039ae75a8ac18b16e7762d241aa42cf1460f82da3f0d76bd126d349f2
 installs:
   1.16.0:
     any-any:
       strip: 1
       files:
-        README.md: ${doc_dir}
         LICENSE-APACHE: ${doc_dir}
         LICENSE-MIT: ${doc_dir}
+        README.md: ${doc_dir}
         assets: opt/numbat/
         modules: opt/numbat/
         numbat${exe_ext}: opt/numbat/
       extra_files:
         numbat: bin/
       tests:
-        - numbat --version
+      - numbat --version
