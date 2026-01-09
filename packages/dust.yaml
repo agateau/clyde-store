@@ -178,6 +178,25 @@ releases:
     x86_64-windows:
       url: https://github.com/bootandy/dust/releases/download/v1.2.3/dust-v1.2.3-x86_64-pc-windows-msvc.zip
       sha256: 3b02f46312b65e06dc9525ab35f02c0def26099712503f139fcb07ac69963927
+  1.2.4:
+    aarch64-linux:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.4/dust-v1.2.4-aarch64-unknown-linux-musl.tar.gz
+      sha256: e09b0d24b5da0fa06aecf1561849c13ae41ef055c1ce7077e35e9a46744b16af
+    x86-linux:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.4/dust-v1.2.4-i686-unknown-linux-musl.tar.gz
+      sha256: 37e54caf0346b3793c647a2898f26d8928ecdf491fd9ad503a3641361d9ce2ac
+    x86-windows:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.4/dust-v1.2.4-i686-pc-windows-msvc.zip
+      sha256: 34fc8c492d323b8bc396dbe3e32aa08464026be379f916e0fab78004bfc3b8b8
+    x86_64-linux:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.4/dust-v1.2.4-x86_64-unknown-linux-musl.tar.gz
+      sha256: 4e313f9f854017e58a2ada4c0d1774677b8cf53d63ab55a991d5871d5f504452
+    x86_64-macos:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.4/dust-v1.2.4-x86_64-apple-darwin.tar.gz
+      sha256: bf84d3ff7f58e325d3eb5bb7696df6b22ef1e01fec80c2d8f7c9d3e611be66f4
+    x86_64-windows:
+      url: https://github.com/bootandy/dust/releases/download/v1.2.4/dust-v1.2.4-x86_64-pc-windows-msvc.zip
+      sha256: eb08d642f016787bb9fc918a4dc5f34665463657fddf83a40f2441cbf020fb4c
 installs:
   0.0.0:
     any-any:
