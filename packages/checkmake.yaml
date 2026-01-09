@@ -17,6 +17,25 @@ releases:
     x86_64-macos:
       url: https://github.com/mrtazz/checkmake/releases/download/0.2.2/checkmake-0.2.2.darwin.amd64
       sha256: afaa325d2348043f9a60d3d7ba7803a0a54b760095ea03837c4de357c75478ef
+  0.3.0:
+    aarch64-linux:
+      url: https://github.com/checkmake/checkmake/releases/download/v0.3.0/checkmake-v0.3.0.linux.arm64
+      sha256: 44677603285afe2fc7d71183381ad949e401b1ff1523a9e94ff89253dd1b5704
+    aarch64-macos:
+      url: https://github.com/checkmake/checkmake/releases/download/v0.3.0/checkmake-v0.3.0.darwin.arm64
+      sha256: b1d850f95198c1ff3db60a4b4b919ab012c70dd6dc5e0d118358067d69df0f09
+    aarch64-windows:
+      url: https://github.com/checkmake/checkmake/releases/download/v0.3.0/checkmake-v0.3.0.windows.arm64.exe
+      sha256: d5eaaea0508185b0dd23b8f4b11eee61f46350baa8dd1d543d05d500e144a30a
+    x86_64-linux:
+      url: https://github.com/checkmake/checkmake/releases/download/v0.3.0/checkmake-v0.3.0.linux.amd64
+      sha256: 558e51ce92ebedb7cb1fab74d8bc3ed8a056a11d6cec70e20e208ca66eeb0ca8
+    x86_64-macos:
+      url: https://github.com/checkmake/checkmake/releases/download/v0.3.0/checkmake-v0.3.0.darwin.amd64
+      sha256: e647e231dce78c55d56b3858b8bd7add842b1ccf8178cd7f71cdd6abb86ec7e5
+    x86_64-windows:
+      url: https://github.com/checkmake/checkmake/releases/download/v0.3.0/checkmake-v0.3.0.windows.amd64.exe
+      sha256: 393bc4a4562e2a4adc870bbfce6657d95b038d2f7245205309a26fb216d89b88
 installs:
   0.2.1:
     any-any:
