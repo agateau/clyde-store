@@ -616,6 +616,25 @@ releases:
     x86_64-windows:
       url: https://get.helm.sh/helm-v4.0.4-windows-amd64.zip
       sha256: 135bffadd3c87aff8856e06efb366bea2a48ac4d1742d73af80250410246f14d
+  4.0.5:
+    aarch64-linux:
+      url: https://get.helm.sh/helm-v4.0.5-linux-arm64.tar.gz
+      sha256: 206a7747702d13994a93629eaed4259bd9d0aec6e23ca52d640f47f7edfdc863
+    aarch64-macos:
+      url: https://get.helm.sh/helm-v4.0.5-darwin-arm64.tar.gz
+      sha256: b4d04ccf68004604e13878fce4a893711490914512f8759879f848136a9f5fca
+    aarch64-windows:
+      url: https://get.helm.sh/helm-v4.0.5-windows-arm64.zip
+      sha256: 45efc334dd5a2e9cae4aed333e9d638baec80c4cedd11a7669fe215991a69eb2
+    x86_64-linux:
+      url: https://get.helm.sh/helm-v4.0.5-linux-amd64.tar.gz
+      sha256: 730e4e9fbff94168249ddd0b9b1b8c357b7f64815462dd88c6b39f09bf18b814
+    x86_64-macos:
+      url: https://get.helm.sh/helm-v4.0.5-darwin-amd64.tar.gz
+      sha256: 270d906140eadbe95584d2cebae1fa0e46950027d82de0c4db937dc936b564a6
+    x86_64-windows:
+      url: https://get.helm.sh/helm-v4.0.5-windows-amd64.zip
+      sha256: 44035d49d9e7d93c249cef0a056f464c05c8638d074e651d586481e4d4d0208b
 installs:
   3.11.1:
     any-any:
