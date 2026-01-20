@@ -69,6 +69,28 @@ releases:
     x86_64-windows:
       url: https://github.com/sharkdp/numbat/releases/download/v1.18.0/numbat-v1.18.0-x86_64-pc-windows-msvc.zip
       sha256: 38b32660ac07bcc97c55e1cdccf5f16f496027df879800748cc58f6c1befb825
+  1.19.0:
+    aarch64-linux:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.19.0/numbat-v1.19.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: 6dc1193b40e73c7b79a361106e2cc73b6e5b908b2253fb707d5d3a03994cb6fd
+    aarch64-macos:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.19.0/numbat-v1.19.0-aarch64-apple-darwin.tar.gz
+      sha256: 506894946a35ca15526c5fa895c335eae90021f48fea262f108defc627e24a66
+    x86-linux:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.19.0/numbat-v1.19.0-i686-unknown-linux-musl.tar.gz
+      sha256: 164848fde2e9ef13aa9ac6a9b11e9dda3e94f7577f813965ba57965ee8933983
+    x86-windows:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.19.0/numbat-v1.19.0-i686-pc-windows-msvc.zip
+      sha256: ebb039631e532c0d84d9e419260ce08108a6420a36411de6354f8d1a841f3469
+    x86_64-linux:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.19.0/numbat-v1.19.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 93a578b17c1d5d2cdc0dfc5b9c7e1426a512af86c9125e66c11fe8d3c53191fc
+    x86_64-macos:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.19.0/numbat-v1.19.0-x86_64-apple-darwin.tar.gz
+      sha256: 378b3e5cf1098eff7614cf4c9ad99f06e3c494421c2a1177148a01a7b3dc1295
+    x86_64-windows:
+      url: https://github.com/sharkdp/numbat/releases/download/v1.19.0/numbat-v1.19.0-x86_64-pc-windows-msvc.zip
+      sha256: 37f47b7439acc25309842bc5d6b11b997250c16406fe124d79e99208e7ab6945
 installs:
   1.16.0:
     any-any:
