@@ -257,9 +257,15 @@ installs:
       files:
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
-        doc/01-Users: ${doc_dir}
-        doc/02-Developers: ${doc_dir}
         doc/tv.1: share/man/man1/
         tv${exe_ext}: bin/
+        doc/community: ${doc_dir}/community/
+        doc/advanced: ${doc_dir}/advanced/
+        doc/reference: ${doc_dir}/reference/
+        doc/developers: ${doc_dir}/developers/
+        doc/getting-started: ${doc_dir}/getting-started/
+        doc/user-guide: ${doc_dir}/user-guide/
+        doc/CHANGELOG.md: ${doc_dir}
+        doc/intro.md: ${doc_dir}
       tests:
       - tv${exe_ext} --version
