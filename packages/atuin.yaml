@@ -55,6 +55,19 @@ releases:
     x86_64-windows:
       url: https://github.com/atuinsh/atuin/releases/download/v18.11.0/atuin-x86_64-pc-windows-msvc.zip
       sha256: 29ddb786f3e18964d3be7503d38293e60704e7e36e9a23b360311ee5fc092b1a
+  18.12.0:
+    aarch64-linux:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.12.0/atuin-aarch64-unknown-linux-musl.tar.gz
+      sha256: 5037a7b7bd49f77897a4807b42f5790ed60f208ad6471e8f1edbb93bd8eb6181
+    aarch64-macos:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.12.0/atuin-aarch64-apple-darwin.tar.gz
+      sha256: 1a27c5c30ad43bb7132f68df49d2c93549f16727693df7d9c5aa6d830fa6894a
+    x86_64-linux:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.12.0/atuin-server-x86_64-unknown-linux-musl.tar.gz
+      sha256: 0758ce978e7f4ec77eddb5da05647ec3d6d646eee87adc9304e70da7b568ddb7
+    x86_64-windows:
+      url: https://github.com/atuinsh/atuin/releases/download/v18.12.0/atuin-server-x86_64-pc-windows-msvc.zip
+      sha256: df0144b7cd9d802721a061f9ecdb0af2579f8999849031adb1bfdd73fe6f664b
   18.2.0:
     aarch64-linux:
       url: https://github.com/atuinsh/atuin/releases/download/v18.2.0/atuin-v18.2.0-aarch64-unknown-linux-gnu.tar.gz
