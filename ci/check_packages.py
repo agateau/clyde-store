@@ -66,10 +66,11 @@ def list_packages_to_check(
     return packages
 
 
-def check_packages(packages: list[Path]) -> None:
+def check_packages(packages: list[Path]) -> int:
     # We must run the test in the current directory for now
     cmd = [which("clydetools"), "check"] + packages
-    subprocess.run(cmd, cwd=ROOT_DIR)
+    proc = subprocess.run(cmd, cwd=ROOT_DIR)
+    return proc.returncode
 
 
 def main() -> int:
@@ -115,8 +116,7 @@ def main() -> int:
         clyde_url = find_clyde_snapshot_url()
 
     download_clyde(clyde_url, CLYDE_DIR)
-    check_packages(packages)
-    return 0
+    return check_packages(packages)
 
 
 if __name__ == "__main__":

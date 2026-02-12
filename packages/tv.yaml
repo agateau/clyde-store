@@ -44,3 +44,8 @@ installs:
         README.md: ${doc_dir}
         UNLICENSE: ${doc_dir}
         tidy-viewer${exe_ext}: bin/
+  1.8.93:
+    any-any:
+      strip: 0
+      files:
+        tidy-viewer${exe_ext}: bin/
