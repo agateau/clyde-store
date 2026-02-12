@@ -1,0 +1,32 @@
+name: prek
+description: Better `pre-commit`, re-engineered in Rust
+homepage: https://prek.j178.dev/
+repository: https://github.com/j178/prek
+releases:
+  0.3.1:
+    aarch64-linux:
+      url: https://github.com/j178/prek/releases/download/v0.3.1/prek-aarch64-unknown-linux-musl.tar.gz
+      sha256: 8c14e721fa283be03a582048255c1e6815163ad11d0b0608d03bfbdb69977dc2
+    aarch64-macos:
+      url: https://github.com/j178/prek/releases/download/v0.3.1/prek-aarch64-apple-darwin.tar.gz
+      sha256: a22c879109ba89c260b16602737ffb81c35eb493e988124a4c2875c549390ede
+    aarch64-windows:
+      url: https://github.com/j178/prek/releases/download/v0.3.1/prek-aarch64-pc-windows-msvc.zip
+      sha256: 7c79e4d6140105d50dcbf1ba0ae060db6c635f96443a1032c5ff4299bc9a3810
+    x86_64-linux:
+      url: https://github.com/j178/prek/releases/download/v0.3.1/prek-x86_64-unknown-linux-musl.tar.gz
+      sha256: dd04fb0c261528c5b00a49c70845d5eb32b09c50fff81f53f742e6a36b5299fe
+    x86_64-macos:
+      url: https://github.com/j178/prek/releases/download/v0.3.1/prek-x86_64-apple-darwin.tar.gz
+      sha256: cfd25f3b2ce65ad26274e3a20cc53308614d1b6f46d8c18429673aa4dcff6528
+    x86_64-windows:
+      url: https://github.com/j178/prek/releases/download/v0.3.1/prek-x86_64-pc-windows-msvc.zip
+      sha256: 1e7f41acb2ad26f691b2cabe2d8283539fb030d33885da537c4203099716b75f
+installs:
+  0.3.1:
+    any-any:
+      strip: 1
+      files:
+        prek${exe_ext}: bin/
+      tests:
+      - prek${exe_ext} --version
