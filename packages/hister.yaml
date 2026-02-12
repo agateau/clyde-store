@@ -1,0 +1,28 @@
+name: hister
+description: Web history on steroids
+homepage: https://hister.org
+repository: https://github.com/asciimoo/hister
+releases:
+  0.3.0:
+    aarch64-linux:
+      url: https://github.com/asciimoo/hister/releases/download/v0.3.0/hister_0.3.0_linux_arm64
+      sha256: 025a8229cab1dd4ca0b8bce37c2c41fbfaf4ada2006bdbb6023218c1c676cc0c
+    aarch64-macos:
+      url: https://github.com/asciimoo/hister/releases/download/v0.3.0/hister_0.3.0_darwin_arm64
+      sha256: 0ddb0ac521856c39e4de3c58d7a1f2d7fd13a14286f9e8b334268991575f2dc4
+    x86_64-linux:
+      url: https://github.com/asciimoo/hister/releases/download/v0.3.0/hister_0.3.0_linux_amd64
+      sha256: 9409ff95599ddc43f69acf000d27b51f16c4da83cb08513b0868ec4c6b6c1ec5
+    x86_64-macos:
+      url: https://github.com/asciimoo/hister/releases/download/v0.3.0/hister_0.3.0_darwin_amd64
+      sha256: 7219bded5b3eca99d94cf7d157d647cb4215d79c2e80bea1519c3bc65f671df9
+    x86_64-windows:
+      url: https://github.com/asciimoo/hister/releases/download/v0.3.0/hister_0.3.0_windows_amd64.exe
+      sha256: 5fe4b7669e0c015cb1d7b55bc746dd56080a64f41a046050511d8626aef6db37
+installs:
+  0.0.0:
+    any-any:
+      files:
+        ${asset_name}: bin/hister${exe_ext}
+      tests:
+      - hister${exe_ext} --version
