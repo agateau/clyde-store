@@ -195,3 +195,21 @@ installs:
         atuin${exe_ext}: bin/
       tests:
       - atuin${exe_ext} --version
+  18.11.0:
+    any-windows:
+      files:
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        atuin${exe_ext}: bin/
+      tests:
+      - atuin${exe_ext} --version
+    any-any:
+      strip: 1
+      files:
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        atuin${exe_ext}: bin/
+      tests:
+      - atuin${exe_ext} --version
