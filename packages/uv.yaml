@@ -2185,3 +2185,21 @@ installs:
       tests:
       - uv${exe_ext} --version
       - uvx${exe_ext} --version
+  0.9.9:
+    any-windows:
+      files:
+        uv${exe_ext}: bin/
+        uvw${exe_ext}: bin/
+        uvx${exe_ext}: bin/
+      tests:
+      - uv${exe_ext} --version
+      - uvw${exe_ext} --version
+      - uvx${exe_ext} --version
+    any-any:
+      strip: 1
+      files:
+        uv${exe_ext}: bin/
+        uvx${exe_ext}: bin/
+      tests:
+      - uv${exe_ext} --version
+      - uvx${exe_ext} --version
