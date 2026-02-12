@@ -49,3 +49,10 @@ installs:
         srgn${exe_ext}: bin/
       tests:
       - srgn${exe_ext} --version
+  0.14.0:
+    any-any:
+      strip: 1
+      files:
+        srgn${exe_ext}: bin/
+      tests:
+      - srgn${exe_ext} --version
