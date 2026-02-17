@@ -53,6 +53,31 @@ releases:
     x86_64-windows:
       url: https://github.com/astral-sh/uv/releases/download/0.10.2/uv-x86_64-pc-windows-msvc.zip
       sha256: 493ebbe0e06128d6ee4905e1ed5e2a433fb0f7cfc08b0eaca9fab4ca76778ae1
+  0.10.3:
+    aarch64-linux:
+      url: https://github.com/astral-sh/uv/releases/download/0.10.3/uv-aarch64-unknown-linux-musl.tar.gz
+      sha256: a98f8decf21204d40acb512b0e08a803ed718c640a97f3c095864967463d5b15
+    aarch64-macos:
+      url: https://github.com/astral-sh/uv/releases/download/0.10.3/uv-aarch64-apple-darwin.tar.gz
+      sha256: ed2a08079527dafae4943fee80162ed750286657901e642eba4c9de928706df8
+    aarch64-windows:
+      url: https://github.com/astral-sh/uv/releases/download/0.10.3/uv-aarch64-pc-windows-msvc.zip
+      sha256: 48243b8acbb31d0081e00878ee3b28535ed9f28ab8b27960b88aed8e1d6dd16a
+    x86-linux:
+      url: https://github.com/astral-sh/uv/releases/download/0.10.3/uv-i686-unknown-linux-musl.tar.gz
+      sha256: 0baca51f61729c6911d1d055c2e6dee5d11d88f6abbcd1ff801460f46880dc8d
+    x86-windows:
+      url: https://github.com/astral-sh/uv/releases/download/0.10.3/uv-i686-pc-windows-msvc.zip
+      sha256: 51f745bcab5f77fe75e6f221e3e55a4bddf54824e634ac6f229132880506ce7e
+    x86_64-linux:
+      url: https://github.com/astral-sh/uv/releases/download/0.10.3/uv-x86_64-unknown-linux-musl.tar.gz
+      sha256: 126496b606129eda426dac502af0d910d895f3db81da28efc49b18edf5557741
+    x86_64-macos:
+      url: https://github.com/astral-sh/uv/releases/download/0.10.3/uv-x86_64-apple-darwin.tar.gz
+      sha256: e8071cedb9986724ca3d70020b4460a85a274394b378c0e8eb1e8f9e33402ff9
+    x86_64-windows:
+      url: https://github.com/astral-sh/uv/releases/download/0.10.3/uv-x86_64-pc-windows-msvc.zip
+      sha256: d029201a3eebaa8a0001fa762ee44ca14a9cb3cae4d59fc3fd69857da03a6f8c
   0.4.18:
     aarch64-linux:
       url: https://github.com/astral-sh/uv/releases/download/0.4.18/uv-aarch64-unknown-linux-musl.tar.gz
@@ -2186,6 +2211,14 @@ installs:
       - uv${exe_ext} --version
       - uvx${exe_ext} --version
   0.9.9:
+    any-any:
+      strip: 1
+      files:
+        uv${exe_ext}: bin/
+        uvx${exe_ext}: bin/
+      tests:
+      - uv${exe_ext} --version
+      - uvx${exe_ext} --version
     any-windows:
       files:
         uv${exe_ext}: bin/
@@ -2194,12 +2227,4 @@ installs:
       tests:
       - uv${exe_ext} --version
       - uvw${exe_ext} --version
-      - uvx${exe_ext} --version
-    any-any:
-      strip: 1
-      files:
-        uv${exe_ext}: bin/
-        uvx${exe_ext}: bin/
-      tests:
-      - uv${exe_ext} --version
       - uvx${exe_ext} --version
