@@ -161,6 +161,28 @@ releases:
     x86_64-windows:
       url: https://github.com/mfontanini/presenterm/releases/download/v0.16.0/presenterm-0.16.0-x86_64-pc-windows-msvc.zip
       sha256: 6cbe5b97750673d625c6bc0f27752cb28ea3fd7a63f8bfae9eb67ab1fb8a6bf9
+  0.16.1:
+    aarch64-linux:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presenterm-0.16.1-aarch64-unknown-linux-musl.tar.gz
+      sha256: c03c3744609d61587aac9dda4f431912748bd70d88d4fa6c0440b079001c64c3
+    aarch64-macos:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presenterm-0.16.1-aarch64-apple-darwin.tar.gz
+      sha256: 56f8b25c24f9c37b06ac4b3004a2c70a2c03d81ddf7a8aa8766ae8997eeb4573
+    x86-linux:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presenterm-0.16.1-i686-unknown-linux-musl.tar.gz
+      sha256: 383f4c68149bdc050b5ad921ce2a98d30d1415db4a4c2acaf5b1c29aacf4dd9b
+    x86-windows:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presenterm-0.16.1-i686-pc-windows-msvc.zip
+      sha256: 7460daa070bf1cf74aae1cdf1aa2661ea3f31ec90b8014ff4ff3fee8573ec06f
+    x86_64-linux:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presenterm-0.16.1-x86_64-unknown-linux-musl.tar.gz
+      sha256: 87512d7c88c3d961c7687aca3519f83c2b7611a550cf769c67c6f7948e8b8f54
+    x86_64-macos:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presenterm-0.16.1-x86_64-apple-darwin.tar.gz
+      sha256: 7f923d83349654c560e64dc6d0a4b6ab31d885e8f07e1732d0f60fc9f606e895
+    x86_64-windows:
+      url: https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presenterm-0.16.1-x86_64-pc-windows-msvc.zip
+      sha256: 301bc9111db499cb79fb305048b1aad56d3fe91b2c713396fed60ec0c1d2c90c
 installs:
   0.11.0:
     any-any:
