@@ -42,6 +42,19 @@ releases:
     x86_64-windows:
       url: https://github.com/alexpovel/srgn/releases/download/srgn-v0.14.1/srgn-x86_64-pc-windows-msvc.tgz
       sha256: a737d236fe34b36130eced5b8f9ed2ce88fd3416b9733611caa34a8e9da1ce27
+  0.14.2:
+    aarch64-macos:
+      url: https://github.com/alexpovel/srgn/releases/download/srgn-v0.14.2/srgn-aarch64-apple-darwin.tgz
+      sha256: d89b50c446a672d8f8c0ee351dc6562e975c420e47d4d5cd8ca5993b53644d69
+    x86_64-linux:
+      url: https://github.com/alexpovel/srgn/releases/download/srgn-v0.14.2/srgn-x86_64-unknown-linux-gnu.tgz
+      sha256: 7cad2ac87390f49786e666cfcd48011ed7d68ec58569bd951395d9a802096ff5
+    x86_64-macos:
+      url: https://github.com/alexpovel/srgn/releases/download/srgn-v0.14.2/srgn-x86_64-apple-darwin.tgz
+      sha256: c4be1e52cfb29ef2284bc57a0dbf9a52da2e36767eabeb5d046150be7e1f5c83
+    x86_64-windows:
+      url: https://github.com/alexpovel/srgn/releases/download/srgn-v0.14.2/srgn-x86_64-pc-windows-msvc.tgz
+      sha256: b230d2e68392622d9c910843c9c24d363947d570d6ce32f56214a86885964d4d
 installs:
   0.13.7:
     any-any:
