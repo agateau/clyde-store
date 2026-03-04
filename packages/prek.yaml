@@ -55,3 +55,16 @@ installs:
         prek${exe_ext}: bin/
       tests:
       - prek${exe_ext} --version
+  0.3.4:
+    any-windows:
+      strip: 0
+      files:
+        prek${exe_ext}: bin/
+      tests:
+      - prek${exe_ext} --version
+    any-any:
+      strip: 1
+      files:
+        prek${exe_ext}: bin/
+      tests:
+      - prek${exe_ext} --version
