@@ -348,10 +348,37 @@ releases:
     x86_64-macos:
       url: https://github.com/skim-rs/skim/releases/download/v2.0.2/skim-x86_64-apple-darwin.tar.xz
       sha256: 55b242ef24801ee92e9b7c693bbd046600ab86ffe9c5d071cedfe7d83ef72cd8
+  3.6.1:
+    aarch64-linux:
+      url: https://github.com/skim-rs/skim/releases/download/v3.6.1/skim-aarch64-unknown-linux-gnu.tar.xz
+      sha256: 1df1236af28435c603739ad7b450e31425ffd6f9fc1c53a5051c8c70b8023669
+    aarch64-macos:
+      url: https://github.com/skim-rs/skim/releases/download/v3.6.1/skim-aarch64-apple-darwin.tar.xz
+      sha256: f810e514b4280028a1a2855cc5adea163e268672f1660c65650f68868da38270
+    x86_64-linux:
+      url: https://github.com/skim-rs/skim/releases/download/v3.6.1/skim-x86_64-unknown-linux-musl.tar.xz
+      sha256: 6c3fda820d96f504f30fb6c47ba0748093af402cc1ba103f1c5a92875c673d22
+    x86_64-macos:
+      url: https://github.com/skim-rs/skim/releases/download/v3.6.1/skim-x86_64-apple-darwin.tar.xz
+      sha256: 67165f4037fecb27b6702ddbe240636444cea1e751597e2435db7e22a8369519
 installs:
   0.9.4:
     any-any:
       files:
         sk: bin/
+      tests:
+      - sk${exe_ext} --version
+  3.6.1:
+    any-any:
+      strip: 1
+      files:
+        sk: bin/
+        man: share/man
+        README.md: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        shell/completion.bash: ${bash_comp_dir}
+        shell/completion.zsh: ${zsh_comp_dir}/_sk
+        shell/completion.fish: ${fish_comp_dir}
       tests:
       - sk${exe_ext} --version
