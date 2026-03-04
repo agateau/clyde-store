@@ -250,6 +250,25 @@ releases:
     x86_64-windows:
       url: https://github.com/alexpasmantier/television/releases/download/0.15.2/tv-0.15.2-x86_64-pc-windows-msvc.tar.gz
       sha256: a914dc3290cc7c0da3070f01876e6bc01a2307a8b986e9fa1b862229393973d9
+  0.15.3:
+    aarch64-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.3/tv-0.15.3-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 9a94cbc400940d8c4160724dcc32998033b608477e4a3c99d455dc12f6acd861
+    aarch64-macos:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.3/tv-0.15.3-aarch64-apple-darwin.tar.gz
+      sha256: 36e8f505ee8d5d502c74b9934269db1f2120dc1b7e1a59ac4c49d1f05e55ad7b
+    x86-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.3/tv-0.15.3-i686-unknown-linux-gnu.tar.gz
+      sha256: 5cc519d4d0bc5fe10854b6b0688b1d77bf09a4926e9bb889d1a61ca1d49a65cc
+    x86_64-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.3/tv-0.15.3-x86_64-unknown-linux-musl.tar.gz
+      sha256: 01894db9c61239e1b409c6d1b1d81d02d997ae8f0571d564c4beb9f759356204
+    x86_64-macos:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.3/tv-0.15.3-x86_64-apple-darwin.tar.gz
+      sha256: 17e5ec2cf18b9b1ff8da560399ff49011d1a98a23ec97692ce2f48c34e8c4ace
+    x86_64-windows:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.3/tv-0.15.3-x86_64-pc-windows-msvc.tar.gz
+      sha256: d7c3ece6851c9b272ed57835ac1d917ced84d79e76b4a3a49b83a92716c9778e
 installs:
   0.13.9:
     any-any:
@@ -257,15 +276,15 @@ installs:
       files:
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
-        doc/tv.1: share/man/man1/
-        tv${exe_ext}: bin/
-        doc/community: ${doc_dir}/community/
+        doc/CHANGELOG.md: ${doc_dir}
         doc/advanced: ${doc_dir}/advanced/
-        doc/reference: ${doc_dir}/reference/
+        doc/community: ${doc_dir}/community/
         doc/developers: ${doc_dir}/developers/
         doc/getting-started: ${doc_dir}/getting-started/
-        doc/user-guide: ${doc_dir}/user-guide/
-        doc/CHANGELOG.md: ${doc_dir}
         doc/intro.md: ${doc_dir}
+        doc/reference: ${doc_dir}/reference/
+        doc/tv.1: share/man/man1/
+        doc/user-guide: ${doc_dir}/user-guide/
+        tv${exe_ext}: bin/
       tests:
       - tv${exe_ext} --version
