@@ -2289,3 +2289,22 @@ installs:
         share/fish: share/fish
       tests:
       - mise${exe_ext} --version
+  2026.3.1:
+    any-windows:
+      strip: 1
+      files:
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        bin: bin
+      tests:
+      - mise${exe_ext} --version
+    any-any:
+      strip: 1
+      files:
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        bin: bin
+        man: share/man
+        share/fish: share/fish
+      tests:
+      - mise --version
