@@ -368,3 +368,17 @@ installs:
         sk: bin/
       tests:
       - sk${exe_ext} --version
+  3.6.1:
+    any-any:
+      strip: 1
+      files:
+        sk: bin/
+        man: share/man
+        README.md: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        shell/completion.bash: ${bash_comp_dir}
+        shell/completion.zsh: ${zsh_comp_dir}/_sk
+        shell/completion.fish: ${fish_comp_dir}
+      tests:
+      - sk${exe_ext} --version
