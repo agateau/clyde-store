@@ -1,0 +1,31 @@
+name: tabiew
+description: A lightweight, terminal-based application to view and query delimiter separated value formatted documents
+homepage: https://github.com/shshemi/tabiew
+repository: https://github.com/shshemi/tabiew
+releases:
+  0.12.0:
+    aarch64-linux:
+      url: https://github.com/shshemi/tabiew/releases/download/v0.12.0/tw-aarch64-unknown-linux-gnu
+      sha256: 694b1c2686cf7142c0ec26466b4e930f7c8cbdf63bc58edd57158798f0ddf5db
+    aarch64-macos:
+      url: https://github.com/shshemi/tabiew/releases/download/v0.12.0/tw-aarch64-apple-darwin
+      sha256: 2cdf6be36372629f85305fd525537c4de2cafa89ddcca5bb4b40ab5ccc64962d
+    aarch64-windows:
+      url: https://github.com/shshemi/tabiew/releases/download/v0.12.0/tw-aarch64-pc-windows-msvc.exe
+      sha256: 6572b618c6de5180b411ed2ee33a0a0d6fe5e516257f438bb74f81014facacf7
+    x86_64-linux:
+      url: https://github.com/shshemi/tabiew/releases/download/v0.12.0/tw-x86_64-unknown-linux-gnu
+      sha256: 90197f21478ef8ca3f4450c1d8b7964fad55747e426aed656264517c8d4877fe
+    x86_64-macos:
+      url: https://github.com/shshemi/tabiew/releases/download/v0.12.0/tw-x86_64-apple-darwin
+      sha256: 7613f506e870ed577a69daa10f93d4d42d2835a64b064d7a181ea46e2c47437e
+    x86_64-windows:
+      url: https://github.com/shshemi/tabiew/releases/download/v0.12.0/tw-x86_64-pc-windows-msvc.exe
+      sha256: 509bcd55cc4a3b4ded3a0c4e754c8902a5c5cfaf37206751815eb48552fa20c9
+installs:
+  "0.12.0":
+    any-any:
+      files:
+        ${asset_name}: bin/tw${exe_ext}
+      tests:
+        - tw${exe_ext} --version
