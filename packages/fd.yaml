@@ -72,6 +72,28 @@ releases:
     x86_64-windows:
       url: https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-pc-windows-msvc.zip
       sha256: 318aa2a6fa664325933e81fda60d523fff29444129e91ebf0726b5b3bcd8b059
+  10.4.1:
+    aarch64-linux:
+      url: https://github.com/sharkdp/fd/releases/download/v10.4.1/fd-v10.4.1-aarch64-unknown-linux-musl.tar.gz
+      sha256: 95d74ce371abb47a49ce72ca536ab1052adc445a2cbf47e7c1b4bf79d446baf6
+    aarch64-macos:
+      url: https://github.com/sharkdp/fd/releases/download/v10.4.1/fd-v10.4.1-aarch64-apple-darwin.tar.gz
+      sha256: 016f0fc9dd44b9c48703d742584f2d16c1144ef6a89048ec33e44646409a38cd
+    aarch64-windows:
+      url: https://github.com/sharkdp/fd/releases/download/v10.4.1/fd-v10.4.1-aarch64-pc-windows-msvc.zip
+      sha256: 4b24051a9d333d6b59d35c97512c3238f91850ac2f3f2fa8715e938665d00a0b
+    x86-linux:
+      url: https://github.com/sharkdp/fd/releases/download/v10.4.1/fd-v10.4.1-i686-unknown-linux-musl.tar.gz
+      sha256: edb5d1622480524c1035ba4ed0bc9b3e7637564e4478c980ab9048d9e3bdcf75
+    x86-windows:
+      url: https://github.com/sharkdp/fd/releases/download/v10.4.1/fd-v10.4.1-i686-pc-windows-msvc.zip
+      sha256: 8ddac10385d47fbdc1c66fb66501adcf9af462ae6a11c1e2941f0d5af62703ad
+    x86_64-linux:
+      url: https://github.com/sharkdp/fd/releases/download/v10.4.1/fd-v10.4.1-x86_64-unknown-linux-musl.tar.gz
+      sha256: d5b52cd765de7e7e15e6769eb21878bd48beec00a456b269766b297390da7047
+    x86_64-windows:
+      url: https://github.com/sharkdp/fd/releases/download/v10.4.1/fd-v10.4.1-x86_64-pc-windows-msvc.zip
+      sha256: 58240c89ab3388e08343efcebb89d148b9e5b92d36334eb139524c798b3d9303
   8.4.0:
     aarch64-linux:
       url: https://github.com/sharkdp/fd/releases/download/v8.4.0/fd-v8.4.0-aarch64-unknown-linux-gnu.tar.gz
