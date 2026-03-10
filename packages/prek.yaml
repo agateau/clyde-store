@@ -47,6 +47,31 @@ releases:
     x86_64-windows:
       url: https://github.com/j178/prek/releases/download/v0.3.4/prek-x86_64-pc-windows-msvc.zip
       sha256: 21c6e119d58443a696bd585946a6fac8fa0b918a2d975f623157c3f72994a2f3
+  0.3.5:
+    aarch64-linux:
+      url: https://github.com/j178/prek/releases/download/v0.3.5/prek-aarch64-unknown-linux-musl.tar.gz
+      sha256: 2534c3297c466814a0356121c9fe15934433ec3dd0343f0c8251ff348b08fa41
+    aarch64-macos:
+      url: https://github.com/j178/prek/releases/download/v0.3.5/prek-aarch64-apple-darwin.tar.gz
+      sha256: 652cc3f3907f732028366c1da60babfdd9236fc7bef1a686fa561b45e6f948de
+    aarch64-windows:
+      url: https://github.com/j178/prek/releases/download/v0.3.5/prek-aarch64-pc-windows-msvc.zip
+      sha256: d50973dfa1e4416f13f463aa29470ba830977707782bb5adb3da10fec0e66a52
+    x86-linux:
+      url: https://github.com/j178/prek/releases/download/v0.3.5/prek-i686-unknown-linux-musl.tar.gz
+      sha256: de3a8bfd425691cb375036b192af6257abb7cf9764d744348a88eb9b78250e96
+    x86-windows:
+      url: https://github.com/j178/prek/releases/download/v0.3.5/prek-i686-pc-windows-msvc.zip
+      sha256: b4edce3f363ec4227abecc30bb7ffc77cc4f18625b2e9049de0f5afa3a36bb8c
+    x86_64-linux:
+      url: https://github.com/j178/prek/releases/download/v0.3.5/prek-x86_64-unknown-linux-musl.tar.gz
+      sha256: b8a18b6da657e2a85cabaa699da191f0aaa55008109cf97d23ae0580962876dc
+    x86_64-macos:
+      url: https://github.com/j178/prek/releases/download/v0.3.5/prek-x86_64-apple-darwin.tar.gz
+      sha256: e4fdab89c5fcca22ea99c4582eb8186e088c8d5c10b10c4fa97e1cff45050c6d
+    x86_64-windows:
+      url: https://github.com/j178/prek/releases/download/v0.3.5/prek-x86_64-pc-windows-msvc.zip
+      sha256: d7f0877d54533376186b31455f3c23f226eaecaa4ff9e8169d5bd1670f594525
 installs:
   0.3.1:
     any-any:
@@ -56,14 +81,13 @@ installs:
       tests:
       - prek${exe_ext} --version
   0.3.4:
-    any-windows:
-      strip: 0
+    any-any:
+      strip: 1
       files:
         prek${exe_ext}: bin/
       tests:
       - prek${exe_ext} --version
-    any-any:
-      strip: 1
+    any-windows:
       files:
         prek${exe_ext}: bin/
       tests:
