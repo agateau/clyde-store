@@ -1,0 +1,29 @@
+name: usage
+description: A specification for CLIs
+homepage: https://github.com/jdx/usage
+repository: https://github.com/jdx/usage
+releases:
+  2.18.2:
+    aarch64-linux:
+      url: https://github.com/jdx/usage/releases/download/v2.18.2/usage-aarch64-unknown-linux-musl.tar.gz
+      sha256: 7476160b4ad9cc04885b3ffbe3500d0763acd0b20e49cc75142786f175e8c5f0
+    aarch64-windows:
+      url: https://github.com/jdx/usage/releases/download/v2.18.2/usage-aarch64-pc-windows-msvc.zip
+      sha256: 005f40158faed9734a2b426874794436db3e6aeda85fe6c85b2c5b964cf16696
+    any-macos:
+      url: https://github.com/jdx/usage/releases/download/v2.18.2/usage-universal-apple-darwin.tar.gz
+      sha256: 6e316f2f5d821e10a6c3dbe6c02dbacb1f0079474a308b9e854912b9cca29d3f
+    x86_64-linux:
+      url: https://github.com/jdx/usage/releases/download/v2.18.2/usage-x86_64-unknown-linux-musl.tar.gz
+      sha256: 0aee30563efbca157ec6cd8ae2c6f33c5caee6b51e0ddbf66b3b0c3fb9e4c17b
+    x86_64-windows:
+      url: https://github.com/jdx/usage/releases/download/v2.18.2/usage-x86_64-pc-windows-msvc.zip
+      sha256: a98a55a60d536758d6372e4813dc21698afb7c562eb3c78b0769f232b2bcc9b3
+installs:
+  2.18.2:
+    any-any:
+      files:
+        usage${exe_ext}: bin/
+        usage.1: share/man/man1/
+      tests:
+      - usage${exe_ext} --version
