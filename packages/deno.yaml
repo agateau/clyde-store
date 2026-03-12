@@ -2,8 +2,6 @@ name: deno
 description: A modern runtime for JavaScript and TypeScript
 homepage: https://github.com/denoland/deno
 repository: https://github.com/denoland/deno
-fetcher: !GitHub
-  include: ^deno-
 releases:
   2.7.4:
     aarch64-linux:
@@ -24,6 +22,25 @@ releases:
     x86_64-windows:
       url: https://github.com/denoland/deno/releases/download/v2.7.4/deno-x86_64-pc-windows-msvc.zip
       sha256: d2a0c8ea92ff852336a5e31293b2224fb75c22c68692c27ede5871ed88bc21fd
+  2.7.5:
+    aarch64-linux:
+      url: https://github.com/denoland/deno/releases/download/v2.7.5/deno-aarch64-unknown-linux-gnu.zip
+      sha256: 69259408777465378ad78ea97c3ec6722704a93caabdb8d272b36d93d8025101
+    aarch64-macos:
+      url: https://github.com/denoland/deno/releases/download/v2.7.5/deno-aarch64-apple-darwin.zip
+      sha256: cd4666cea151dc6b02df67a8a163fa33c53564a901bb47a535b3bedf6534093b
+    aarch64-windows:
+      url: https://github.com/denoland/deno/releases/download/v2.7.5/deno-aarch64-pc-windows-msvc.zip
+      sha256: 55612aad1d1a5bf96ab786a22a69e0f95e49cce09254b3aff3db169ab6b55cf3
+    x86_64-linux:
+      url: https://github.com/denoland/deno/releases/download/v2.7.5/deno-x86_64-unknown-linux-gnu.zip
+      sha256: fd0a9e6cf085acb861b67577a13bfd0b1829e1c6d6a6dcfd35bcb8f05c973a47
+    x86_64-macos:
+      url: https://github.com/denoland/deno/releases/download/v2.7.5/deno-x86_64-apple-darwin.zip
+      sha256: 5d70f1aef868a10dd537539f828abdfd6646614ef4ab83975f4d59341b0e2927
+    x86_64-windows:
+      url: https://github.com/denoland/deno/releases/download/v2.7.5/deno-x86_64-pc-windows-msvc.zip
+      sha256: 0bf523e2909da9bfc56100461cd70a1287ae247e6c63b390c52605941d370dd1
 installs:
   2.7.4:
     any-any:
@@ -31,3 +48,5 @@ installs:
         deno${exe_ext}: bin/
       tests:
       - deno${exe_ext} --version
+fetcher: !GitHub
+  include: ^deno-
