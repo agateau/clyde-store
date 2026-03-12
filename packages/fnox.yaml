@@ -1,0 +1,31 @@
+name: fnox
+description: Encrypted/remote secret manager
+homepage: https://github.com/jdx/fnox
+repository: https://github.com/jdx/fnox
+releases:
+  1.17.0:
+    aarch64-linux:
+      url: https://github.com/jdx/fnox/releases/download/v1.17.0/fnox-aarch64-unknown-linux-gnu.tar.gz
+      sha256: f45d73a6b9f56eeb32ebefe07eb9419cba88d54a75649dc34aa4ae85048a7621
+    aarch64-macos:
+      url: https://github.com/jdx/fnox/releases/download/v1.17.0/fnox-aarch64-apple-darwin.tar.gz
+      sha256: 623187eb62b15e46a76f1e47789bd626793cc8e40ccc221f023951274a0c8a3f
+    aarch64-windows:
+      url: https://github.com/jdx/fnox/releases/download/v1.17.0/fnox-aarch64-pc-windows-msvc.zip
+      sha256: 10e487b87a05db29db51b7f4db945bd96026717f1ce01b184dcdf032e997702e
+    x86_64-linux:
+      url: https://github.com/jdx/fnox/releases/download/v1.17.0/fnox-x86_64-unknown-linux-gnu.tar.gz
+      sha256: 91e94357c9a4554553f25855c96f32b3bc86cded724a7fd01dbbeb67f3cc8f4e
+    x86_64-macos:
+      url: https://github.com/jdx/fnox/releases/download/v1.17.0/fnox-x86_64-apple-darwin.tar.gz
+      sha256: 6747eaa1d9f6f35f31939691d8864ae76ff293f2a5827bc2dfd66099e5cbbb56
+    x86_64-windows:
+      url: https://github.com/jdx/fnox/releases/download/v1.17.0/fnox-x86_64-pc-windows-msvc.zip
+      sha256: eb14fe5095ba6cfeea4376c41457ea9a3f4ef62237f6a441fb7352a6022a344d
+installs:
+  1.17.0:
+    any-any:
+      files:
+        fnox${exe_ext}: bin/
+      tests:
+      - fnox${exe_ext} --version
