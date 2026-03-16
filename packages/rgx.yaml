@@ -1,0 +1,52 @@
+name: rgx
+description: regex101 for the terminal — real-time matching, 3 engines, capture groups, replace mode
+homepage: https://github.com/brevity1swos/rgx
+repository: https://github.com/brevity1swos/rgx
+releases:
+  0.7.0:
+    aarch64-linux:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.7.0/rgx-cli-aarch64-unknown-linux-gnu.tar.xz
+      sha256: cc978dccbd69493f75ee8831ec9957251c499a0bf9a83ad9684b96c8a0c2fbe4
+    aarch64-macos:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.7.0/rgx-cli-aarch64-apple-darwin.tar.xz
+      sha256: dd3f8cb24dc7fa6077ce0baeebb55144ad89ac4c24035cacaa4d73d8c0820c86
+    x86_64-linux:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.7.0/rgx-cli-x86_64-unknown-linux-gnu.tar.xz
+      sha256: ebe0e31bbfb454e4455dda2c330bf67a7e50336dce51af7ddfd033245cbc04cd
+    x86_64-macos:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.7.0/rgx-cli-x86_64-apple-darwin.tar.xz
+      sha256: d662f14d8a8f63c8ba13256c2ca7794240a2be6df4d23aa661e2639cabda3fb9
+    x86_64-windows:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.7.0/rgx-cli-x86_64-pc-windows-msvc.zip
+      sha256: 913eabb7fa74a612a379f95771d35f0702f98010e63b8228b1d7fc3861fd54d3
+installs:
+  0.7.0:
+    any-linux:
+      strip: 1
+      files:
+        rgx: bin/
+        README.md: ${doc_dir}
+        LICENSE-MIT: ${doc_dir}
+        LICENSE-APACHE: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+      tests:
+      - rgx --version
+    any-macos:
+      strip: 1
+      files:
+        rgx: bin/
+        README.md: ${doc_dir}
+        LICENSE-MIT: ${doc_dir}
+        LICENSE-APACHE: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+      tests:
+      - rgx --version
+    any-windows:
+      files:
+        rgx.exe: bin/
+        README.md: ${doc_dir}
+        LICENSE-MIT: ${doc_dir}
+        LICENSE-APACHE: ${doc_dir}
+        CHANGELOG.md: ${doc_dir}
+      tests:
+      - rgx.exe --version
