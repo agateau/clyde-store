@@ -117,6 +117,16 @@ releases:
     x86_64-windows:
       url: https://github.com/dandavison/delta/releases/download/0.18.2/delta-0.18.2-x86_64-pc-windows-msvc.zip
       sha256: 6ea59864091b4cfca89d9ee38388ff1a3ccdc8244b6e1cdd5201259de89b0b06
+  0.19.0:
+    aarch64-macos:
+      url: https://github.com/dandavison/delta/releases/download/0.19.0/delta-0.19.0-aarch64-apple-darwin.tar.gz
+      sha256: b7c04ef8ebac03096e995b11fcdd38664ea0866bde0ff095e0f23f18d2b99ba5
+    x86_64-linux:
+      url: https://github.com/dandavison/delta/releases/download/0.19.0/delta-0.19.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: b4096cf910255e64941e06f217b87bbfbdd9ab7c0a1a9e373d3220b98055170c
+    x86_64-windows:
+      url: https://github.com/dandavison/delta/releases/download/0.19.0/delta-0.19.0-x86_64-pc-windows-msvc.zip
+      sha256: c704699d76def630edfd65bf356e710c28acd147ca30a4f425762c934e8e107d
 installs:
   0.15.1:
     any-any:
