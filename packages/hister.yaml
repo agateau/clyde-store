@@ -3,6 +3,22 @@ description: Web history on steroids
 homepage: https://hister.org
 repository: https://github.com/asciimoo/hister
 releases:
+  0.10.0:
+    aarch64-linux:
+      url: https://github.com/asciimoo/hister/releases/download/v0.10.0/hister_0.10.0_linux_arm64
+      sha256: 3a6ba61fffb82c168003671b08485e1d16d80d98e245eef991688e3bdabc0796
+    aarch64-macos:
+      url: https://github.com/asciimoo/hister/releases/download/v0.10.0/hister_0.10.0_darwin_arm64
+      sha256: 1ac0ef3dd6c5fdb325562a92e98ac805b69d3d9bc120b0212b044533b6907c8c
+    x86_64-linux:
+      url: https://github.com/asciimoo/hister/releases/download/v0.10.0/hister_0.10.0_linux_amd64
+      sha256: 4ee16f069665fdf6cb05e68b069e9fbe55c572fdd514c183f979505b5cabbf70
+    x86_64-macos:
+      url: https://github.com/asciimoo/hister/releases/download/v0.10.0/hister_0.10.0_darwin_amd64
+      sha256: 4aba0c2c78c742a491e81aba7fd6e6781ba932ba9bee65065b235c01707cfcc9
+    x86_64-windows:
+      url: https://github.com/asciimoo/hister/releases/download/v0.10.0/hister_0.10.0_windows_amd64.exe
+      sha256: 43ed5afa272a60b2a4c9676fe6f5acc096ee04fc075cb5132579341c57ffb409
   0.3.0:
     aarch64-linux:
       url: https://github.com/asciimoo/hister/releases/download/v0.3.0/hister_0.3.0_linux_arm64
