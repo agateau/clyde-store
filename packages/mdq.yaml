@@ -3,6 +3,16 @@ description: 'Like jq but for Markdown: find specific elements in a md doc'
 homepage: https://github.com/yshavit/mdq
 repository: https://github.com/yshavit/mdq
 releases:
+  0.10.0:
+    aarch64-macos:
+      url: https://github.com/yshavit/mdq/releases/download/v0.10.0/mdq-macos-arm64.tar.gz
+      sha256: e5bcc6ec66c01b6cdda68e15dc8d4fcbc5d6c6d8cf417fb25b0d75d0a660360f
+    x86_64-linux:
+      url: https://github.com/yshavit/mdq/releases/download/v0.10.0/mdq-linux-x64-musl.tar.gz
+      sha256: 673ed676382f54a21e4381d845236c776b2b71ed8dc1cc3e92cf6d66a39edb07
+    x86_64-windows:
+      url: https://github.com/yshavit/mdq/releases/download/v0.10.0/mdq-windows-x64.zip
+      sha256: 5df1bb8b31be594faea2ecea8195c981800acd5753203a25bed332c3dbdf3811
   0.7.2:
     aarch64-macos:
       url: https://github.com/yshavit/mdq/releases/download/v0.7.2/mdq-macos-arm64.tar.gz
