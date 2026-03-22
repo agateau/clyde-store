@@ -269,6 +269,25 @@ releases:
     x86_64-windows:
       url: https://github.com/alexpasmantier/television/releases/download/0.15.3/tv-0.15.3-x86_64-pc-windows-msvc.tar.gz
       sha256: d7c3ece6851c9b272ed57835ac1d917ced84d79e76b4a3a49b83a92716c9778e
+  0.15.4:
+    aarch64-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.4/tv-0.15.4-aarch64-unknown-linux-gnu.tar.gz
+      sha256: 5ee2e051378cba739b4e308d6452701ad9a855042fe497cde24a0463a114ac06
+    aarch64-macos:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.4/tv-0.15.4-aarch64-apple-darwin.tar.gz
+      sha256: d097ec1e6cba73426b53e6e402febf8db1c908097ca4180584a44386c944352f
+    x86-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.4/tv-0.15.4-i686-unknown-linux-gnu.tar.gz
+      sha256: 4fb667c30dca5763c8714e541c0f84152431f322f4a5980ccbb5300508b4f362
+    x86_64-linux:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.4/tv-0.15.4-x86_64-unknown-linux-musl.tar.gz
+      sha256: 9cacf6baa4524db5ddab15695e41a09c105015fcf9f45aedbac26cdb10e3c946
+    x86_64-macos:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.4/tv-0.15.4-x86_64-apple-darwin.tar.gz
+      sha256: b9e854930d5ae8bbcf10bac1d4c3b8210600cf713e0e0c4c8b7b2eaedb29dce9
+    x86_64-windows:
+      url: https://github.com/alexpasmantier/television/releases/download/0.15.4/tv-0.15.4-x86_64-pc-windows-msvc.tar.gz
+      sha256: 4991ffe73aa91dfc720155416e0a27fd71cf1bc2c3507979cad3ec3e92dc36b0
 installs:
   0.13.9:
     any-any:
