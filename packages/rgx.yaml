@@ -19,34 +19,50 @@ releases:
     x86_64-windows:
       url: https://github.com/brevity1swos/rgx/releases/download/v0.7.0/rgx-cli-x86_64-pc-windows-msvc.zip
       sha256: 913eabb7fa74a612a379f95771d35f0702f98010e63b8228b1d7fc3861fd54d3
+  0.8.1:
+    aarch64-linux:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.8.1/rgx-cli-aarch64-unknown-linux-gnu.tar.xz
+      sha256: 1d1211e1b663f307e590b3d3a0f528869b82e9642922660e6dce2d8cd001cc7b
+    aarch64-macos:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.8.1/rgx-cli-aarch64-apple-darwin.tar.xz
+      sha256: 15a7a443a88196d49e02c20ab91653537d49a1749e5a82c02351891b16d04e58
+    x86_64-linux:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.8.1/rgx-cli-x86_64-unknown-linux-gnu.tar.xz
+      sha256: 1e0df17231ce179900d50f2829e017cfcf336f05d44eee4b69209fb6c59e787b
+    x86_64-macos:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.8.1/rgx-cli-x86_64-apple-darwin.tar.xz
+      sha256: 0f20e489aed013c161b7fe3ca75fd0fd1cd6dd13872ad42c39632ea944409c07
+    x86_64-windows:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.8.1/rgx-cli-x86_64-pc-windows-msvc.zip
+      sha256: b26fb8643daa6ff8b28534a0866572932609f8120609acf315d8a60040cd9e8b
 installs:
   0.7.0:
     any-linux:
       strip: 1
       files:
-        rgx: bin/
-        README.md: ${doc_dir}
-        LICENSE-MIT: ${doc_dir}
-        LICENSE-APACHE: ${doc_dir}
         CHANGELOG.md: ${doc_dir}
+        LICENSE-APACHE: ${doc_dir}
+        LICENSE-MIT: ${doc_dir}
+        README.md: ${doc_dir}
+        rgx: bin/
       tests:
       - rgx --version
     any-macos:
       strip: 1
       files:
-        rgx: bin/
-        README.md: ${doc_dir}
-        LICENSE-MIT: ${doc_dir}
-        LICENSE-APACHE: ${doc_dir}
         CHANGELOG.md: ${doc_dir}
+        LICENSE-APACHE: ${doc_dir}
+        LICENSE-MIT: ${doc_dir}
+        README.md: ${doc_dir}
+        rgx: bin/
       tests:
       - rgx --version
     any-windows:
       files:
-        rgx.exe: bin/
-        README.md: ${doc_dir}
-        LICENSE-MIT: ${doc_dir}
-        LICENSE-APACHE: ${doc_dir}
         CHANGELOG.md: ${doc_dir}
+        LICENSE-APACHE: ${doc_dir}
+        LICENSE-MIT: ${doc_dir}
+        README.md: ${doc_dir}
+        rgx.exe: bin/
       tests:
       - rgx.exe --version
