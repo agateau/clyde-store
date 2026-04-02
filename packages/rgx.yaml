@@ -35,6 +35,22 @@ releases:
     x86_64-windows:
       url: https://github.com/brevity1swos/rgx/releases/download/v0.8.1/rgx-cli-x86_64-pc-windows-msvc.zip
       sha256: b26fb8643daa6ff8b28534a0866572932609f8120609acf315d8a60040cd9e8b
+  0.9.0:
+    aarch64-linux:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.9.0/rgx-cli-aarch64-unknown-linux-gnu.tar.xz
+      sha256: 95441b251814110dd6bc6564107eac972f61bd9a56f0f4d383e557bd2100ca66
+    aarch64-macos:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.9.0/rgx-cli-aarch64-apple-darwin.tar.xz
+      sha256: 5a7fc28cdff2cdafe1a12f0337045681ca1e8e88b360293b830a1e93c3b38963
+    x86_64-linux:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.9.0/rgx-cli-x86_64-unknown-linux-gnu.tar.xz
+      sha256: 0addb2ff0f3ab13f973dc7846ce8cd90205023a55355b102c226fcbd9312484d
+    x86_64-macos:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.9.0/rgx-cli-x86_64-apple-darwin.tar.xz
+      sha256: 8ad00859d234ca224c27c0f02bd271e66dad5c15b2b2fd0bbc4d7d6e73313034
+    x86_64-windows:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.9.0/rgx-cli-x86_64-pc-windows-msvc.zip
+      sha256: 8afabda1496c93cbf9af793f565284aed644030971865881a01c4143a36f689d
 installs:
   0.7.0:
     any-linux:
