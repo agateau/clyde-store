@@ -3,6 +3,22 @@ description: regex101 for the terminal — real-time matching, 3 engines, captur
 homepage: https://github.com/brevity1swos/rgx
 repository: https://github.com/brevity1swos/rgx
 releases:
+  0.10.0:
+    aarch64-linux:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.10.0/rgx-cli-aarch64-unknown-linux-gnu.tar.xz
+      sha256: a1c9f197738ae1c9ef70876818346ef3d36bb0557deb9a46315582e2ddb79324
+    aarch64-macos:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.10.0/rgx-cli-aarch64-apple-darwin.tar.xz
+      sha256: cfc854417609ddc2bca4ea7d386e5ec8abb61c1067c4b3c8c9c201e92ca97c9c
+    x86_64-linux:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.10.0/rgx-cli-x86_64-unknown-linux-gnu.tar.xz
+      sha256: 2a656c3485b9c952ee05ea16f1e80feb4bb221eb918b6917db89376dd600dd43
+    x86_64-macos:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.10.0/rgx-cli-x86_64-apple-darwin.tar.xz
+      sha256: 579c8d42f7d3731510f733de0dce49aebd9fbfe859a8c5355143c8ec21b0c3be
+    x86_64-windows:
+      url: https://github.com/brevity1swos/rgx/releases/download/v0.10.0/rgx-cli-x86_64-pc-windows-msvc.zip
+      sha256: 657cb24719997bac323b9cb1c99f4c2feb38f8eeb9f6ecfbc9056f7a00b3ca99
   0.7.0:
     aarch64-linux:
       url: https://github.com/brevity1swos/rgx/releases/download/v0.7.0/rgx-cli-aarch64-unknown-linux-gnu.tar.xz
