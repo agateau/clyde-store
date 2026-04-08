@@ -1257,6 +1257,34 @@ releases:
     x86_64-windows:
       url: https://github.com/syncthing/syncthing/releases/download/v2.0.15/syncthing-windows-amd64-v2.0.15.zip
       sha256: f723d90cbdf90b158073ec6792f0037175d9eee47b41fe11bafe43b67b19106f
+  2.0.16:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-linux-arm64-v2.0.16.tar.gz
+      sha256: 0254442af9be1886a7b55f63ad3c24c32fc2e294a3a2efd75a3b8b00335e5bd7
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-macos-arm64-v2.0.16.zip
+      sha256: a90318e32ffab04561c7ececc3be79be3db478dabff3e3e3ee1183e38a4bfa3b
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-windows-arm64-v2.0.16.zip
+      sha256: 0d0ea5ced8d900ec861628ff8fa4d7ec529c8a662f5183d7c49d5333d0cae71e
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-macos-universal-v2.0.16.zip
+      sha256: a767bf73035af2cb7755abc23666778a7edbf6f42ef3f319f5804ff87159f8fa
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-linux-386-v2.0.16.tar.gz
+      sha256: 407076caead4eec3c1ecacb5e3466958784220b5d646c83f5e178ee85d62b4a7
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-windows-386-v2.0.16.zip
+      sha256: c8e17cb290290f78823e0900b46a3b6020a1afbf8760533534f3a6fc8a6e2538
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-linux-amd64-v2.0.16.tar.gz
+      sha256: d5ca379993844b0e6e4fced05e3ac4a6c4513dee916ab65516c6d07d5e53e317
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-macos-amd64-v2.0.16.zip
+      sha256: 2b5fe419de35c26354843ae567b2ae5c1bf82b151e3aea3dcfb620ca590999d4
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-windows-amd64-v2.0.16.zip
+      sha256: 5b519408c11e69e712702911caa399077e3fc602d8d70d6147f620e67bd83037
   2.0.2:
     aarch64-linux:
       url: https://github.com/syncthing/syncthing/releases/download/v2.0.2/syncthing-linux-arm64-v2.0.2.tar.gz
