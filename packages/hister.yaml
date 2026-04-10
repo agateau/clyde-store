@@ -35,6 +35,22 @@ releases:
     x86_64-windows:
       url: https://github.com/asciimoo/hister/releases/download/v0.11.0/hister_0.11.0_windows_amd64.exe
       sha256: 3086bd36eaee22bb4dafa4254f30789da92b608c2383b616615db1634a240c8f
+  0.12.0:
+    aarch64-linux:
+      url: https://github.com/asciimoo/hister/releases/download/v0.12.0/hister_0.12.0_linux_arm64
+      sha256: b9b30304d40a350344712bd2c7a447d3c25f071d2e71d73d2c0309c17c79cd8b
+    aarch64-macos:
+      url: https://github.com/asciimoo/hister/releases/download/v0.12.0/hister_0.12.0_darwin_arm64
+      sha256: f5ff78d2217ff678d6e227b4efaf0721f020e3535a9bcb7ee79e3f016ae2d334
+    x86_64-linux:
+      url: https://github.com/asciimoo/hister/releases/download/v0.12.0/hister_0.12.0_linux_amd64
+      sha256: 9bd855cdab2a8244c838f3f45c504ce793670c0f39aafca432cc7529327975ae
+    x86_64-macos:
+      url: https://github.com/asciimoo/hister/releases/download/v0.12.0/hister_0.12.0_darwin_amd64
+      sha256: 28b427d6bbd5036e45b662fa145ac5843117f8dd7515a436d134c4304d30c463
+    x86_64-windows:
+      url: https://github.com/asciimoo/hister/releases/download/v0.12.0/hister_0.12.0_windows_amd64.exe
+      sha256: ec7af0aa2d04912ba980bea302d585d85bda7947417d06e287f136023c667882
   0.3.0:
     aarch64-linux:
       url: https://github.com/asciimoo/hister/releases/download/v0.3.0/hister_0.3.0_linux_arm64
