@@ -108,3 +108,24 @@ installs:
         oxipng${exe_ext}: bin/
       tests:
       - oxipng${exe_ext} --version
+  9.1.4:
+    any-any:
+      strip: 1
+      files:
+        CHANGELOG.md: ${doc_dir}
+        MANUAL.txt: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        oxipng${exe_ext}: bin/
+      tests:
+      - oxipng${exe_ext} --version
+    any-windows:
+      strip: 1
+      files:
+        CHANGELOG.md: ${doc_dir}
+        MANUAL.txt: ${doc_dir}
+        LICENSE.txt: ${doc_dir}
+        README.md: ${doc_dir}
+        oxipng${exe_ext}: bin/
+      tests:
+      - oxipng${exe_ext} --version
