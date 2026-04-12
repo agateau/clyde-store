@@ -2,6 +2,7 @@ import itertools
 import os
 import platform
 import shutil
+import subprocess
 import sys
 from collections.abc import Iterable
 from pathlib import Path
@@ -55,3 +56,7 @@ def list_all_packages(repo: Repo) -> list[Path]:
         )
         if is_package(x)
     ]
+
+
+def mark_pr_as_automerge(*, cwd: str | None = None) -> None:
+    subprocess.run(["gh", "pr", "merge", "--auto", "-dm"], check=True, cwd=cwd)

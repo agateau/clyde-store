@@ -10,7 +10,7 @@ from pathlib import Path
 
 from git import Repo
 from tui import progress, warning
-from utils import get_modified_packages
+from utils import get_modified_packages, mark_pr_as_automerge
 
 
 def has_remote_branch(repo: Repo, branch: str) -> bool:
@@ -44,7 +44,7 @@ def file_pr(repo: Repo, path: Path, base_branch: str):
         subprocess.run(
             ["gh", "pr", "create", "--fill", "--base", base_branch], check=True
         )
-        subprocess.run(["gh", "pr", "merge", "--auto", "-dm"], check=True)
+        mark_pr_as_automerge()
     repo.git.checkout("-")
 
 
