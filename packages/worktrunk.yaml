@@ -19,24 +19,40 @@ releases:
     x86_64-windows:
       url: https://github.com/max-sixty/worktrunk/releases/download/v0.36.0/worktrunk-x86_64-pc-windows-msvc.zip
       sha256: 5434d445a68fcf2d5771c6dc5aa137f13e4cba1a6174c16a15029f4f51a9a9df
+  0.37.1:
+    aarch64-linux:
+      url: https://github.com/max-sixty/worktrunk/releases/download/v0.37.1/worktrunk-aarch64-unknown-linux-musl.tar.xz
+      sha256: d5054b742b403df7a84fb3e9309a20605b7e1a53db92f3a91eb846d8cc151c0e
+    aarch64-macos:
+      url: https://github.com/max-sixty/worktrunk/releases/download/v0.37.1/worktrunk-aarch64-apple-darwin.tar.xz
+      sha256: 47085f2cf462fbbf4106d70a62fa125ee94a561dc1caf1af3b354952ff65c9e8
+    x86_64-linux:
+      url: https://github.com/max-sixty/worktrunk/releases/download/v0.37.1/worktrunk-x86_64-unknown-linux-musl.tar.xz
+      sha256: 4badcdf4b2037787d11f821e5e28c9f22f1515ffe616b028154991c010aa98f7
+    x86_64-macos:
+      url: https://github.com/max-sixty/worktrunk/releases/download/v0.37.1/worktrunk-x86_64-apple-darwin.tar.xz
+      sha256: 026d450dcbbca518d9f108bada252f7092c734f089be8588886008fc4fc03a5f
+    x86_64-windows:
+      url: https://github.com/max-sixty/worktrunk/releases/download/v0.37.1/worktrunk-x86_64-pc-windows-msvc.zip
+      sha256: 2bc6ec34a03d76ad68512688e9ff44cfccd8fa124bc47373e453fda78baf16e8
 installs:
   0.36.0:
-    any:
+    any-any:
       strip: 1
       files:
-        wt: bin/
-        git-wt: bin/
-        README.md: ${doc_dir}
-        LICENSE: ${doc_dir}
         CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        git-wt: bin/
+        wt: bin/
       tests:
-        - wt --version
+      - wt --version
     any-windows:
       files:
-        wt.exe: bin/
-        git-wt.exe: bin/
-        README.md: ${doc_dir}
-        LICENSE: ${doc_dir}
         CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        git-wt.exe: bin/
+        wt.exe: bin/
       tests:
-        - wt.exe --version
+      - wt.exe --version
