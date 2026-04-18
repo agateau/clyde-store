@@ -89,6 +89,25 @@ releases:
     x86_64-windows:
       url: https://gitea.com/gitea/tea/releases/download/v0.13.0/tea-0.13.0-windows-amd64.exe.xz
       sha256: 672a4d24233e4ceb7d5093f23fef3546a2a66947e9e5d43b06ba841e0bb34f8a
+  0.14.0:
+    aarch64-linux:
+      url: https://gitea.com/gitea/tea/releases/download/v0.14.0/tea-0.14.0-linux-arm64.xz
+      sha256: 3049073344150754ebe2fb37a78dbd3e763ccadd85502cc96760bb216b59b02a
+    aarch64-macos:
+      url: https://gitea.com/gitea/tea/releases/download/v0.14.0/tea-0.14.0-darwin-arm64.xz
+      sha256: 28c8003e52ece220d4a197fb790b49b90104cb0779bb5c37a6d7b8ee66e99481
+    aarch64-windows:
+      url: https://gitea.com/gitea/tea/releases/download/v0.14.0/tea-0.14.0-windows-arm64.exe.xz
+      sha256: 65b7811749dc71112bc316af8e69a476094a9dfae46a817089853df453ae5113
+    x86_64-linux:
+      url: https://gitea.com/gitea/tea/releases/download/v0.14.0/tea-0.14.0-linux-amd64.xz
+      sha256: 7a1e08e4667aa25728001da3843ebf9b49a1c1da2d8455c646c0d6011535ee4f
+    x86_64-macos:
+      url: https://gitea.com/gitea/tea/releases/download/v0.14.0/tea-0.14.0-darwin-amd64.xz
+      sha256: e95f933d6155ed4c6e6e0b320557b468799b3f168341a704f3b14f387f9b1664
+    x86_64-windows:
+      url: https://gitea.com/gitea/tea/releases/download/v0.14.0/tea-0.14.0-windows-amd64.exe.xz
+      sha256: f9545b3a58fb2e9a89042906cf9618804d78920c04c7253715d18fcc7fa9baab
   0.9.2:
     aarch64-linux:
       url: https://gitea.com/gitea/tea/releases/download/v0.9.2/tea-0.9.2-linux-arm64.xz
