@@ -22,6 +22,31 @@ releases:
     x86_64-windows:
       url: https://github.com/j178/prek/releases/download/v0.3.1/prek-x86_64-pc-windows-msvc.zip
       sha256: 1e7f41acb2ad26f691b2cabe2d8283539fb030d33885da537c4203099716b75f
+  0.3.10:
+    aarch64-linux:
+      url: https://github.com/j178/prek/releases/download/v0.3.10/prek-aarch64-unknown-linux-musl.tar.gz
+      sha256: 50e585ce98988b70d79ec782b2cf6c787c2f0a97a448ba8594448b4a6a688943
+    aarch64-macos:
+      url: https://github.com/j178/prek/releases/download/v0.3.10/prek-aarch64-apple-darwin.tar.gz
+      sha256: e885e023ddb765ba31a2859bd4b9683f9b40fee3195c189a749bc4b28535ab5c
+    aarch64-windows:
+      url: https://github.com/j178/prek/releases/download/v0.3.10/prek-aarch64-pc-windows-msvc.zip
+      sha256: 4a6de3ff0fc2049ca72b8ab0ec567e195362a22c7efcca7ef0824b36b55d4193
+    x86-linux:
+      url: https://github.com/j178/prek/releases/download/v0.3.10/prek-i686-unknown-linux-musl.tar.gz
+      sha256: ae25138ea5ae6a2e7e0a833d338eaa59c8c3c0fb639234390db99fa744dd7f3f
+    x86-windows:
+      url: https://github.com/j178/prek/releases/download/v0.3.10/prek-i686-pc-windows-msvc.zip
+      sha256: 0a2bcb7fce05c5b1a88e09b6aad0144ac723e5e1c713f917ce84d1433a73fa8c
+    x86_64-linux:
+      url: https://github.com/j178/prek/releases/download/v0.3.10/prek-x86_64-unknown-linux-musl.tar.gz
+      sha256: 60a873474e2ff2f70a5ad524d1b51abb6fdf5991900001eb7c8979877d75dacd
+    x86_64-macos:
+      url: https://github.com/j178/prek/releases/download/v0.3.10/prek-x86_64-apple-darwin.tar.gz
+      sha256: 313882a8bfd76eb6930949ded36b23ce194ccb5431f474c62ae3fde12df100ae
+    x86_64-windows:
+      url: https://github.com/j178/prek/releases/download/v0.3.10/prek-x86_64-pc-windows-msvc.zip
+      sha256: 43b85e061bbcf6febb9973a7859d029f29f5ddeeb7722bd234422d8b6bee4406
   0.3.4:
     aarch64-linux:
       url: https://github.com/j178/prek/releases/download/v0.3.4/prek-aarch64-unknown-linux-musl.tar.gz
