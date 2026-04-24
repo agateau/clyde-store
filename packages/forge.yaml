@@ -1,0 +1,33 @@
+name: forge
+description: Go library and CLI for working with git forges
+homepage: https://github.com/git-pkgs/forge
+repository: https://github.com/git-pkgs/forge
+releases:
+  0.4.0:
+    aarch64-linux:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.0/forge_0.4.0_linux_arm64.tar.gz
+      sha256: 6f850b0825a9d8d5fa584cff5462b6eece18680215dc2e9c120b899c041a4e5d
+    aarch64-macos:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.0/forge_0.4.0_darwin_arm64.tar.gz
+      sha256: 2050b4570c5831f029c633c5ab67ead0c3e86829dd78abf54ba2f2bc8fb723a8
+    aarch64-windows:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.0/forge_0.4.0_windows_arm64.tar.gz
+      sha256: a9219fc66383097d761bbab06b1b6361658351e056c3ba5f39ed8abda4a7b9a4
+    x86_64-linux:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.0/forge_0.4.0_linux_amd64.tar.gz
+      sha256: 4c67b998d8e1ad3ee13155b0149ba2a65c02a061324470f6679bcb0ec94a9979
+    x86_64-macos:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.0/forge_0.4.0_darwin_amd64.tar.gz
+      sha256: 62b91cd4f03eea16d6c058cd7f90cd18bc54c0e28357e74aef56efa35cef95ff
+    x86_64-windows:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.0/forge_0.4.0_windows_amd64.tar.gz
+      sha256: 37cbaeb71f35efd50c952307899ed2359616851352d85ae59ebd7d09e089598a
+installs:
+  0.4.0:
+    any-any:
+      files:
+        forge${exe_ext}: bin/
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+      tests:
+      - forge${exe_ext} version
