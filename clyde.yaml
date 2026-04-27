@@ -122,6 +122,19 @@ releases:
     x86_64-windows:
       url: https://github.com/agateau/clyde/releases/download/0.8.0/clyde-0.8.0-x86_64-windows.zip
       sha256: 6cd5a738d668a31c46046348d6711f626a5daff76faccfcc4aa4d19b19823931
+  0.9.0:
+    aarch64-macos:
+      url: https://github.com/agateau/clyde/releases/download/0.9.0/clyde-0.9.0-aarch64-macos.tar.gz
+      sha256: 033175996d6d4372049d4020d3b921c82109529e4ab0c6b2b70a38b2148d618e
+    x86_64-linux:
+      url: https://github.com/agateau/clyde/releases/download/0.9.0/clyde-0.9.0-x86_64-linux.tar.gz
+      sha256: b13ad708aceeb9c08a5de9b16d4f4b7c57732baf2dee31d94445cb75c8014159
+    x86_64-macos:
+      url: https://github.com/agateau/clyde/releases/download/0.9.0/clyde-0.9.0-x86_64-macos.tar.gz
+      sha256: 04aad1f0e944142451c608a644fc4f9e33fff11527a747300d5ce75dc06858fd
+    x86_64-windows:
+      url: https://github.com/agateau/clyde/releases/download/0.9.0/clyde-0.9.0-x86_64-windows.zip
+      sha256: f59fcaa1dc4d003181a1247f89e70aceb982d273eec1f563485eb01b65f84308
 installs:
   0.1.0:
     any-any:
