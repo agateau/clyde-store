@@ -41,6 +41,28 @@ releases:
     x86_64-windows:
       url: https://github.com/envio-cli/envio/releases/download/v0.6.1/envio-v0.6.1-x86_64-pc-windows-gnu.zip
       sha256: ed678cfdb1c638995e31daecb6355fc2c530b5076c0d50c5f7085654883bc957
+  0.7.0:
+    aarch64-linux:
+      url: https://github.com/humblepenguinn/envio/releases/download/v0.7.0/envio-v0.7.0-aarch64-unknown-linux-gnu.tar.gz
+      sha256: e2a0c6d7ef28072da8a51cb9705fd0ee7b0714fe851708e724e09b000178b192
+    aarch64-macos:
+      url: https://github.com/humblepenguinn/envio/releases/download/v0.7.0/envio-v0.7.0-aarch64-apple-darwin.tar.gz
+      sha256: 112af37f640f5477ff0f7039f54fb874bb5d98823c32b4710ba3eb89ed135e58
+    x86-linux:
+      url: https://github.com/humblepenguinn/envio/releases/download/v0.7.0/envio-v0.7.0-i686-unknown-linux-gnu.tar.gz
+      sha256: db01aa6decbf75a8b57ac7705671b045a3a896117eba9a3b3d80bdce226ba2e7
+    x86-windows:
+      url: https://github.com/humblepenguinn/envio/releases/download/v0.7.0/envio-v0.7.0-i686-pc-windows-msvc.zip
+      sha256: 7a998b47c27f42f89a7dc917e0dd2ed87ce766ca95a7a70b988807779b60d50e
+    x86_64-linux:
+      url: https://github.com/humblepenguinn/envio/releases/download/v0.7.0/envio-v0.7.0-x86_64-unknown-linux-gnu.tar.gz
+      sha256: 51a2d7fe3706a6434ae87e26fdf6aa881b5c60391a90ccef581ba561e6a810da
+    x86_64-macos:
+      url: https://github.com/humblepenguinn/envio/releases/download/v0.7.0/envio-v0.7.0-x86_64-apple-darwin.tar.gz
+      sha256: 428498c5db780e33eab2cf657320ddb788c2aba95a8b01400347c206e2158a25
+    x86_64-windows:
+      url: https://github.com/humblepenguinn/envio/releases/download/v0.7.0/envio-v0.7.0-x86_64-pc-windows-gnu.zip
+      sha256: c8960e45d65487b7a4d8f598f5b03cd1b5ad03d47a7a3caf44f1af9ee9fbfd6d
 installs:
   0.5.1:
     any-any:
