@@ -22,12 +22,31 @@ releases:
     x86_64-windows:
       url: https://github.com/git-pkgs/forge/releases/download/v0.4.0/forge_0.4.0_windows_amd64.tar.gz
       sha256: 37cbaeb71f35efd50c952307899ed2359616851352d85ae59ebd7d09e089598a
+  0.4.1:
+    aarch64-linux:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.1/forge_0.4.1_linux_arm64.tar.gz
+      sha256: 2b5f060f6c466f004efd24320ade43fc96a20deff124178338f165200fd9040f
+    aarch64-macos:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.1/forge_0.4.1_darwin_arm64.tar.gz
+      sha256: 933bc25af2b74e058f2f1a46f34b61ec201ee5078d0fe0e983b5cde82e067ea4
+    aarch64-windows:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.1/forge_0.4.1_windows_arm64.tar.gz
+      sha256: a81b8f4b769c06a3f03bd99d046d36d36f1a96cb870e7a60a8346e676c030a17
+    x86_64-linux:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.1/forge_0.4.1_linux_amd64.tar.gz
+      sha256: 880d8792ba2debab57c121abeafe179c8598ea01726e6dcec599abe5edc2cc30
+    x86_64-macos:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.1/forge_0.4.1_darwin_amd64.tar.gz
+      sha256: 227e3b3c61c80785af833d9c5387181990d39265afb26c8f93ad41b3d57e0e10
+    x86_64-windows:
+      url: https://github.com/git-pkgs/forge/releases/download/v0.4.1/forge_0.4.1_windows_amd64.tar.gz
+      sha256: 363d50dbe427f65f484d063fdfca5dd05b78dcbcbf537a6582a51ec80429f3f4
 installs:
   0.4.0:
     any-any:
       files:
-        forge${exe_ext}: bin/
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
+        forge${exe_ext}: bin/
       tests:
       - forge${exe_ext} version
