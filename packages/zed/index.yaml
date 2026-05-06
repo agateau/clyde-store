@@ -910,7 +910,7 @@ installs:
         zed.app/bin: opt/zed/bin/
         zed.app/lib: opt/zed/lib/
         zed.app/libexec: opt/zed/libexec/
-        zed.app/licenses.md: $doc_dir
+        zed.app/licenses.md: ${doc_dir}
         zed.app/share: share/
       extra_files:
         zed: bin/
