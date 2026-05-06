@@ -1,0 +1,41 @@
+name: lazygit
+description: simple terminal UI for git commands
+homepage: https://github.com/jesseduffield/lazygit
+repository: https://github.com/jesseduffield/lazygit
+releases:
+  0.61.1:
+    published_at: 2026-05-06T17:06:08.757244271Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_linux_arm64.tar.gz
+        sha256: 20b1abb2bee5dfd46173b9047353eb678bc51a23839e821958d0b1863ab1655e
+      aarch64-macos:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_darwin_arm64.tar.gz
+        sha256: cb665faec92d1574d398296869c084d2b9686464a42806558b967bb87cd07bc9
+      aarch64-windows:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_windows_arm64.zip
+        sha256: 2a04e7123e06cbfa38b9276c901d12d4d3cd1976bfd53a11e0f7e1c9d0bf9817
+      x86-linux:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_linux_32-bit.tar.gz
+        sha256: e95dad3a5dd477050301f273c6de2fb801938bf0a7d52fd9de68eaeb1ea71377
+      x86-windows:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_windows_32-bit.zip
+        sha256: bb2ea2de64135e0364fbf446b6fbe0e01af51cc77240c7e95728bc2396843446
+      x86_64-linux:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_linux_x86_64.tar.gz
+        sha256: 1b91e660700f2332696726b635202576b543e2bc49b639830dccd26bc5160d5d
+      x86_64-macos:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_darwin_x86_64.tar.gz
+        sha256: 6efdb97b8ec24b5729156555d6bc05b340776f00084ddd78ab8bdc7f3dd9b727
+      x86_64-windows:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_windows_x86_64.zip
+        sha256: 6024f3094904caaf9b9672b801cba31a65ad36729a0d2c5a03c432f739c0678b
+installs:
+  0.61.1:
+    any-any:
+      files:
+        lazygit${exe_ext}: bin/
+        README.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+      tests:
+        - lazygit${exe_ext} --version
