@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           # Needed to ensure `base_branch` is available in ci/fetch even if the
           # job is not started from it
           fetch-depth: 0
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v8.1.0
 
       - name: Set up Python
         run: |
