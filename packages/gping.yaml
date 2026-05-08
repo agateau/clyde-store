@@ -45,6 +45,22 @@ releases:
     x86_64-windows:
       url: https://github.com/orf/gping/releases/download/gping-v1.19.0/gping-Windows-msvc-x86_64.zip
       sha256: 2cf968fb438c01bbca1f1096301d46cdb1632e18e0279ba3b809d05afabf924a
+  1.20.1:
+    aarch64-linux:
+      url: https://github.com/orf/gping/releases/download/gping-v1.20.1/gping-Linux-musl-arm64.tar.gz
+      sha256: 930988ae8d7089e31f58c5bd6484af2117f25493bbc0bee95b47f6ed7f2e7289
+    aarch64-macos:
+      url: https://github.com/orf/gping/releases/download/gping-v1.20.1/gping-macOS-arm64.tar.gz
+      sha256: 3cbfdd3653853cb4770542af7a9f259ddf93c08c507883320e4a00dfaaabca2b
+    x86_64-linux:
+      url: https://github.com/orf/gping/releases/download/gping-v1.20.1/gping-Linux-musl-x86_64.tar.gz
+      sha256: d39ce326e7b66765a9a60c85188e14f21b2809470fa3148e6eaac6c9b36600b3
+    x86_64-macos:
+      url: https://github.com/orf/gping/releases/download/gping-v1.20.1/gping-macOS-x86_64.tar.gz
+      sha256: 5c1a7273788f5c9e47650ade9181cd5fc3bcf1978269e0826132af3b9bc69fd0
+    x86_64-windows:
+      url: https://github.com/orf/gping/releases/download/gping-v1.20.1/gping-Windows-msvc-x86_64.zip
+      sha256: f08559444bcd7af8d629cbad6a972dea4033a116ff9aaf0b1b2bef2a3cabb0af
 installs:
   0.0.0:
     any-any:

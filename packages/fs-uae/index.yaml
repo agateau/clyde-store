@@ -1,0 +1,30 @@
+name: fs-uae
+description: Cross-platform Amiga emulator with a slight focus on gaming, but also with solid support for productivity apps including just-in-time (JIT) compilation.
+homepage: https://fs-uae.net
+repository: https://github.com/FrodeSolheim/fs-uae
+releases:
+  3.2.35:
+    aarch64-linux:
+      url: https://github.com/FrodeSolheim/fs-uae/releases/download/v3.2.35/FS-UAE_3.2.35_Linux_ARM64.tar.xz
+      sha256: 1c06913ac370d97cb102de8a9387172d82678b74668b1c1ff3f15333f691b90e
+    aarch64-macos:
+      url: https://github.com/FrodeSolheim/fs-uae/releases/download/v3.2.35/FS-UAE_3.2.35_macOS_ARM64.tar.xz
+      sha256: 852d96e870678020555ca5c7c622abcd34b8a7bc9429d29ff24caf10f0961fcb
+    x86_64-linux:
+      url: https://github.com/FrodeSolheim/fs-uae/releases/download/v3.2.35/FS-UAE_3.2.35_Linux_x86-64.tar.xz
+      sha256: dbecec21bba0d66c4b3d1e280c7dba472511c1c04ff07c34757c46d596cd07ca
+    x86_64-macos:
+      url: https://github.com/FrodeSolheim/fs-uae/releases/download/v3.2.35/FS-UAE_3.2.35_macOS_x86-64.tar.xz
+      sha256: 00ca0905bb20f499ccc710576bbb83788fa7eb05778a49537f1aac087f9bb8fb
+    x86_64-windows:
+      url: https://github.com/FrodeSolheim/fs-uae/releases/download/v3.2.35/FS-UAE_3.2.35_Windows_x86-64.tar.xz
+      sha256: 61c82fc8a9ea3348d5ee1f5e029984d261e56ada9cea7c35f1eb1bb1d05166a8
+installs:
+  3.2.35:
+    any-any:
+      files:
+        FS-UAE: opt/fs-uae
+      extra_files:
+        fs-uae: bin/
+      tests:
+        - fs-uae${exe_ext} --version

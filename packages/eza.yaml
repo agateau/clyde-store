@@ -1,0 +1,22 @@
+name: eza
+description: A modern replacement for ls
+homepage: https://github.com/eza-community/eza
+repository: https://github.com/eza-community/eza
+releases:
+  0.23.4:
+    aarch64-linux:
+      url: https://github.com/eza-community/eza/releases/download/v0.23.4/eza_aarch64-unknown-linux-gnu.tar.gz
+      sha256: 366e8430225f9955c3dc659b452150c169894833ccfef455e01765e265a3edda
+    x86_64-linux:
+      url: https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-musl.tar.gz
+      sha256: d231bb3ee33b08c76279b5888845dceb7034d055c42bb9be46dbe0dae39394df
+    x86_64-windows:
+      url: https://github.com/eza-community/eza/releases/download/v0.23.4/eza.exe_x86_64-pc-windows-gnu.tar.gz
+      sha256: 4d4f87f6bc8e6ee176789c28bee698234ce0275da013709eb16b0f14819c1688
+installs:
+  "0.23.4":
+    any-any:
+      files:
+        eza${exe_ext}: bin/
+      tests:
+      - eza${exe_ext} --version

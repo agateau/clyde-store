@@ -1005,6 +1005,510 @@ releases:
     x86_64-windows:
       url: https://github.com/syncthing/syncthing/releases/download/v1.29.7/syncthing-windows-amd64-v1.29.7.zip
       sha256: c013076619b9bfe451b3d600ba256ac4e6afee25cbfce244a68155e805be854f
+  1.30.0:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-linux-arm64-v1.30.0.tar.gz
+      sha256: 4655e260e94fa5e0110084040751bd0274acdeb74653933f909036e788a911a1
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-macos-arm64-v1.30.0.zip
+      sha256: dd42cc7a88d08779c305e5f6f2d8bc8dec2c97652c1380679c672d4febd63f8f
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-windows-arm64-v1.30.0.zip
+      sha256: e914c990a5f4b8ccdf6d8e7dbf058f5343330a3483423230cbc79c35afbc049c
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-macos-universal-v1.30.0.zip
+      sha256: 999d5e8d02209a8793fc13d2bc398568a1ac6907c3eaa9e26fd680cfa8fb882d
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-linux-386-v1.30.0.tar.gz
+      sha256: b2a2aa177f189c3a9c9a9c0d6dbac60053a7af8122be124b3e8dfbf0c028f268
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-windows-386-v1.30.0.zip
+      sha256: 0edfe104260af96fe9c59ed07a5e9d9f7095657858f93f46dc03311d73abdad8
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-linux-amd64-v1.30.0.tar.gz
+      sha256: a2edc833d6dd71a76b7c481dbcc81f8be37da9eb83993c512bf53eb096ba7a73
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-macos-amd64-v1.30.0.zip
+      sha256: eb375302c79b89b85f32f014e451430efe3a9723b37639698310344a9029799e
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v1.30.0/syncthing-windows-amd64-v1.30.0.zip
+      sha256: c8e2713d949dc75afaa9e25ea06f4a84f843835662c52ba65e7316fcf4be4587
+  2.0.0:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.0/syncthing-linux-arm64-v2.0.0.tar.gz
+      sha256: 039d001f2e178ff1495d6495e1ee16582ff1fcc27c016fed5272d19be8fe626d
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.0/syncthing-macos-arm64-v2.0.0.zip
+      sha256: 86a37897455f732a45b9ebea6a512fb329530191eeb7afe692ff05e7bcf96eb3
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.0/syncthing-windows-arm64-v2.0.0.zip
+      sha256: 93c94aa4ea3fb3e4d43afdffa505f899abe9deb8532ad7fb8c24acb16b64de83
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.0/syncthing-macos-universal-v2.0.0.zip
+      sha256: eebc830667bff8964c694706877ebe65a3fcbc5513e227acc88bd20f82e20e04
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.0/syncthing-linux-386-v2.0.0.tar.gz
+      sha256: 1a1a8c5b7ddcb5ac7664c8fae6700fec5a20febb352520e769ac030364660ca6
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.0/syncthing-windows-386-v2.0.0.zip
+      sha256: 6a3eec81b64d1d85afcefeeba23da86b3d33c4af571f18774141802f740597f1
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.0/syncthing-linux-amd64-v2.0.0.tar.gz
+      sha256: a30a4e92724607cb3f4efd9569a21c520eab16e8a3e7de4ce0fef49487f24640
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.0/syncthing-macos-amd64-v2.0.0.zip
+      sha256: f73ecef552efb497f6fe14dfcb55700816efddf3aea5782227815f89d9bbaefe
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.0/syncthing-windows-amd64-v2.0.0.zip
+      sha256: 431db53c30e9e0d721a8b25251cd0948bb59298f01bb652ed72a74f3a382e99f
+  2.0.1:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.1/syncthing-linux-arm64-v2.0.1.tar.gz
+      sha256: 1f5d2a462b43230c59b6ee94af2a776276f2a811c25b9691eee9890824588d00
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.1/syncthing-macos-arm64-v2.0.1.zip
+      sha256: 9ff2fdddd30a36791d71e86072fdb5b88198389a7ea9cd6b8134977b9f01ba0d
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.1/syncthing-windows-arm64-v2.0.1.zip
+      sha256: 6516c3b6aa9c7e8e9f9e4b4714b05f7a5ca9870c736285d634b8358f617b4250
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.1/syncthing-macos-universal-v2.0.1.zip
+      sha256: ae3216484e667889fcece4dbbac38d5ce523ce8448cd4b60dbb0132bd08fbc50
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.1/syncthing-linux-386-v2.0.1.tar.gz
+      sha256: c5a4e1e5aada435504fcd10617bfdfbbd27126f2b8cd17617119a2ed09567798
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.1/syncthing-windows-386-v2.0.1.zip
+      sha256: 72dabadaf1af5574909e974177e48e31326bb3a4b665c51d4087b2b02db0563a
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.1/syncthing-linux-amd64-v2.0.1.tar.gz
+      sha256: 9faef4cee847f9d7c9fc8c642a6fd77f758914e959b730413fb116efd1d05c54
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.1/syncthing-macos-amd64-v2.0.1.zip
+      sha256: 0acf6e203b9318fefa47792ffebc1fad9bfd1311ce763f95c56e06f3e88705ed
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.1/syncthing-windows-amd64-v2.0.1.zip
+      sha256: 68ccbef1ec230de8cd75ca4f7982128592db226df5059a9ada6c02ed7b91ddeb
+  2.0.10:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.10/syncthing-linux-arm64-v2.0.10.tar.gz
+      sha256: b91abba9595c3e37dade568d452d8d3195faab0d61dacff84bcc5d9948ad4da8
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.10/syncthing-macos-arm64-v2.0.10.zip
+      sha256: fe5a21d1862e30d0c64f28d8775f4b8f4ffc4a45dd0ae2241ba05c5869d4a147
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.10/syncthing-windows-arm64-v2.0.10.zip
+      sha256: 4e1d051dafa79746e69866e3057ecebbbc36c7833afbfe73ad79d46eb561855f
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.10/syncthing-macos-universal-v2.0.10.zip
+      sha256: 593c8f5cebedc9030324a02583e194f9d0bdf364f17aed2d04eb55c54a81d05b
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.10/syncthing-linux-386-v2.0.10.tar.gz
+      sha256: 895106cfe72c0bd6f441d8c2ecfe172f7143d74370e91730cc7a54624ef38bff
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.10/syncthing-windows-386-v2.0.10.zip
+      sha256: 8a7dbdf8dcf28602d6779c0ff22fe5d376d4a0d95c8fb9189c5505758d6e7306
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.10/syncthing-linux-amd64-v2.0.10.tar.gz
+      sha256: 3a7dcde0628bc0544121ff685fb4c39066a2d945c0080d9c69b47927347b253a
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.10/syncthing-macos-amd64-v2.0.10.zip
+      sha256: 8ae3bee21421011cd67ff5d1d1ce7ea6714b32623e9d9aaccf9ced51f9f45658
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.10/syncthing-windows-amd64-v2.0.10.zip
+      sha256: ae1ac8cc67ab112460ff30ebf48e4adbeb3b07fa5b7a7952eac9d39cf2f8d6eb
+  2.0.11:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.11/syncthing-linux-arm64-v2.0.11.tar.gz
+      sha256: 9a7eacb14ee453c794b60ac4c2a934d420b2e8d61e99ea8753a1146b170f5a36
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.11/syncthing-macos-arm64-v2.0.11.zip
+      sha256: 2669af325560fbe79b35979cdcbdd7ebcd33e6f693b59c236c1ac044557cfdeb
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.11/syncthing-windows-arm64-v2.0.11.zip
+      sha256: df232b617d3d8b446cce50e6b7712c82f306b2cf6425d4fd94a8805e453f13e5
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.11/syncthing-macos-universal-v2.0.11.zip
+      sha256: 75bcdbeca55c0fecf210cbda43c25a326489c94eafd263f85ea51427001a4b5a
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.11/syncthing-linux-386-v2.0.11.tar.gz
+      sha256: cef31b6d22fb0cab04f89157685ade684901886b407d70771b87276e438223f9
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.11/syncthing-windows-386-v2.0.11.zip
+      sha256: 0af747e9d055cc1ed6e3707f830c4a98f73548fc14208187beaaa6cd49691181
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.11/syncthing-linux-amd64-v2.0.11.tar.gz
+      sha256: b3390ff64518f19b55ff73eba113fad15e9dc5b394f76422f620f9c783ad44bb
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.11/syncthing-macos-amd64-v2.0.11.zip
+      sha256: 7fad2f497949c73812729f9ecbdd569a9b6785a75a64ed5d699107eb2d3f2ddb
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.11/syncthing-windows-amd64-v2.0.11.zip
+      sha256: fd238eb7700802f7dc860b5cee3851d0baf62a66cab87b05011027f148289ea6
+  2.0.12:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.12/syncthing-linux-arm64-v2.0.12.tar.gz
+      sha256: ca6d1c6432c081c374dd023e3e4c80008e8895ff284cd105ed8e5a1cb380ef4e
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.12/syncthing-macos-arm64-v2.0.12.zip
+      sha256: aa62bf0f2ee91d3da29454018e4daff2a8d48b65bd97088d64cd20ce2c6d942f
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.12/syncthing-windows-arm64-v2.0.12.zip
+      sha256: 462f9378eb274003e510379735329a7ab41322dc1cc4bb252d80fa0c5c33e9bc
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.12/syncthing-macos-universal-v2.0.12.zip
+      sha256: d8fc659f654440d2efb18df41532404a260b1b862429071a1430bc82b0ba410e
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.12/syncthing-linux-386-v2.0.12.tar.gz
+      sha256: 0998ebbba589ec56b455b55b71bf6493bbd1169a653b4a54dce1afbddc2db7b7
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.12/syncthing-windows-386-v2.0.12.zip
+      sha256: 4b3a057b5d3fcd7243dfd083418e432e459e9dbf9dd81e38b6fff6829dca267b
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.12/syncthing-linux-amd64-v2.0.12.tar.gz
+      sha256: a096082e9fff4c7b4884aab95b53afd0177316de544d517dd1fc7fe47d4ea4c3
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.12/syncthing-macos-amd64-v2.0.12.zip
+      sha256: ea2718707a4a3b41c89f9169fa8692a7aa8edbb2df4c501a6c5e04c75f451d54
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.12/syncthing-windows-amd64-v2.0.12.zip
+      sha256: 3dac565a6fabd2827f37c04a7aff06fde87deddb984a5d37da064e60b8a40e7d
+  2.0.13:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.13/syncthing-linux-arm64-v2.0.13.tar.gz
+      sha256: f62c7e85c081ea43c6e0c8a8bf428fb2f9c1be7f7d504fb214ddd4e1f056c36b
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.13/syncthing-macos-arm64-v2.0.13.zip
+      sha256: 8530c602bdc657812533842ae51a27ad1dfe225090f6998431ccc9e4309e2501
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.13/syncthing-windows-arm64-v2.0.13.zip
+      sha256: 9e8d805e30a8c99cd99b38ca62b7f1f4aa18bd826159d1e7e99a297e8865c3f2
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.13/syncthing-macos-universal-v2.0.13.zip
+      sha256: 5c78f32af9d761c5870f8ad85073b1dcf1eb89dba5a9cfa23da3706d7b8473e0
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.13/syncthing-linux-386-v2.0.13.tar.gz
+      sha256: b6b01e842a9b9e0e7d9daaf0738234bc4955632f18e8501164faf2195854e493
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.13/syncthing-windows-386-v2.0.13.zip
+      sha256: 947776603b946b7f2e2a9c62ba33e2512576180da4a954ccded09990fb6c7a72
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.13/syncthing-linux-amd64-v2.0.13.tar.gz
+      sha256: 55ffe8a5deefc373c95a760ab71c3cbe77da493bb9bf426525d33c2fe22ead88
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.13/syncthing-macos-amd64-v2.0.13.zip
+      sha256: 5e9abb8e3e59d8cdbc7db8eda5dfd9efc400184070ace25f53f7e535e9013c2f
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.13/syncthing-windows-amd64-v2.0.13.zip
+      sha256: eeb1ff8afb0bbbc1fbd0f640b0fd7c00cdf211b82d5be52ea30a5d76a34f6635
+  2.0.14:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.14/syncthing-linux-arm64-v2.0.14.tar.gz
+      sha256: 1825e1e0dd7813c83d2b8eeb6d17683394511056afd655752a0c2fb21f6ec29c
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.14/syncthing-macos-arm64-v2.0.14.zip
+      sha256: abfa71edbdcd736df5da83fcfea23147321c683af0067f3426418201b383451b
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.14/syncthing-windows-arm64-v2.0.14.zip
+      sha256: 204b4a515f58cabc67a2e90180591b3ab573e510102cd54167c361ac7e1045f0
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.14/syncthing-macos-universal-v2.0.14.zip
+      sha256: 237a51aeace6220ae57b5a99db5db733732ca2ba745074cd1453f7d234f4afaa
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.14/syncthing-linux-386-v2.0.14.tar.gz
+      sha256: 80fe4e9b89391ec65cf9894ed1f095a9547a481d0a34ccc3a4df7fdb83b1d0df
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.14/syncthing-windows-386-v2.0.14.zip
+      sha256: dbc4160e9daf49d4805cdf88b0a8e5140e8179429d936a4bcfc654ba26380a24
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.14/syncthing-linux-amd64-v2.0.14.tar.gz
+      sha256: 3d4ddb286d57ad4619b59948dbe0ba4dbcdb6bca66bbcf6702d178a8637431aa
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.14/syncthing-macos-amd64-v2.0.14.zip
+      sha256: 5f1bfd471bfd89f2acaec8586b1ecb56be06c6fce688ef8e393a9680dbaf2ab6
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.14/syncthing-windows-amd64-v2.0.14.zip
+      sha256: e4bbc264c340fbe22d87a137ab39eeefea6dade1d735c0a16c3d564aa998da38
+  2.0.15:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.15/syncthing-linux-arm64-v2.0.15.tar.gz
+      sha256: 93bc488b8a5e033566c536c77f134732d263e1e9ebd71dc7b4279fa9f211a72f
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.15/syncthing-macos-arm64-v2.0.15.zip
+      sha256: 1e113c3e144ab238dd844a338180ae7548092304e22a7fcd1bee0a4a2c1f14c7
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.15/syncthing-windows-arm64-v2.0.15.zip
+      sha256: e9409970e74d828f08debed34d8e5b41b20366ef846a129c02cac7d891d69827
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.15/syncthing-macos-universal-v2.0.15.zip
+      sha256: 2f65d1edd5e2e93d63b89087bc7bfc6ffaa3441e74117c3d44f732918033b421
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.15/syncthing-linux-386-v2.0.15.tar.gz
+      sha256: df38759d4179760600885877915316c6c02a2ccb66e251460c80ae81c10c7c33
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.15/syncthing-windows-386-v2.0.15.zip
+      sha256: f263fa24c4f0beb9fe516cbbacc36796b49d9b9b632a26694c7b0fcb91ddf1d5
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.15/syncthing-linux-amd64-v2.0.15.tar.gz
+      sha256: 2a530687901ce8151c32ee0ff23a5282644ae9f1bf5cd5ee020983008586f4fc
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.15/syncthing-macos-amd64-v2.0.15.zip
+      sha256: 03816cd9d689f61709b94467a96cb65d25c2b818390c0902c897b72b49c290cd
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.15/syncthing-windows-amd64-v2.0.15.zip
+      sha256: f723d90cbdf90b158073ec6792f0037175d9eee47b41fe11bafe43b67b19106f
+  2.0.16:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-linux-arm64-v2.0.16.tar.gz
+      sha256: 0254442af9be1886a7b55f63ad3c24c32fc2e294a3a2efd75a3b8b00335e5bd7
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-macos-arm64-v2.0.16.zip
+      sha256: a90318e32ffab04561c7ececc3be79be3db478dabff3e3e3ee1183e38a4bfa3b
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-windows-arm64-v2.0.16.zip
+      sha256: 0d0ea5ced8d900ec861628ff8fa4d7ec529c8a662f5183d7c49d5333d0cae71e
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-macos-universal-v2.0.16.zip
+      sha256: a767bf73035af2cb7755abc23666778a7edbf6f42ef3f319f5804ff87159f8fa
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-linux-386-v2.0.16.tar.gz
+      sha256: 407076caead4eec3c1ecacb5e3466958784220b5d646c83f5e178ee85d62b4a7
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-windows-386-v2.0.16.zip
+      sha256: c8e17cb290290f78823e0900b46a3b6020a1afbf8760533534f3a6fc8a6e2538
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-linux-amd64-v2.0.16.tar.gz
+      sha256: d5ca379993844b0e6e4fced05e3ac4a6c4513dee916ab65516c6d07d5e53e317
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-macos-amd64-v2.0.16.zip
+      sha256: 2b5fe419de35c26354843ae567b2ae5c1bf82b151e3aea3dcfb620ca590999d4
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.16/syncthing-windows-amd64-v2.0.16.zip
+      sha256: 5b519408c11e69e712702911caa399077e3fc602d8d70d6147f620e67bd83037
+  2.0.2:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.2/syncthing-linux-arm64-v2.0.2.tar.gz
+      sha256: f39727522af80c92866f596a0b2d68962fd3165cb4e92a603d094812912b6d0c
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.2/syncthing-macos-arm64-v2.0.2.zip
+      sha256: 3169292ee791b1f4e902f3f6e835b56e95c2d93cb299a364adf0f488c9d913d9
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.2/syncthing-windows-arm64-v2.0.2.zip
+      sha256: 948cc706f6c9071625922d11a52489a34e4d92c6c2ccd669af8f765410263d0f
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.2/syncthing-macos-universal-v2.0.2.zip
+      sha256: 9b449a34fce22ffced802456396e1ae14ccf9d872a915126ea6d738da7d4c4aa
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.2/syncthing-linux-386-v2.0.2.tar.gz
+      sha256: 62fc3475c287a008c3a93c2d48afb1751e38a1aa5becbffdb4b9af53f805c6f4
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.2/syncthing-windows-386-v2.0.2.zip
+      sha256: 079bcc5775bead3e969582989a46d99130981623395066006ddb483dddbf88d0
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.2/syncthing-linux-amd64-v2.0.2.tar.gz
+      sha256: db40ed92ab436d9634b4722bf1fa5f3112961c16dc03a256a47f5f621a514f8d
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.2/syncthing-macos-amd64-v2.0.2.zip
+      sha256: fc9d831c88f2181bd2a1df5d9154e80c0bd749553798d9f5a8449f7846b319a7
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.2/syncthing-windows-amd64-v2.0.2.zip
+      sha256: e1a2f3632d0c144b998d76791a3e109f650c4cfd473f578f6b57ca1d553391eb
+  2.0.3:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.3/syncthing-linux-arm64-v2.0.3.tar.gz
+      sha256: 2241b472f72509d8da9180a77a6d5473651e8e4ca95b3a301050ab855ec12dbb
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.3/syncthing-macos-arm64-v2.0.3.zip
+      sha256: a3748c4e7f7abab19a9ce06e8912772198a0089d7b4caea81a4604d52cb8bf90
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.3/syncthing-windows-arm64-v2.0.3.zip
+      sha256: 14be9306d4adec027457e7f3ba68da6b13b218f351cc3cfe8b8d9f8511b13825
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.3/syncthing-macos-universal-v2.0.3.zip
+      sha256: 44bcba0aff4030559a368e26c1ab290fcbd004be71145be1bc5821e6ef86c385
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.3/syncthing-linux-386-v2.0.3.tar.gz
+      sha256: 12cebcba62c225ff8f7e2b4ee7a1396f253b26f090612d78def2047e64735c9f
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.3/syncthing-windows-386-v2.0.3.zip
+      sha256: 2d4a8e9691b6d3546b49c151a0723d2012b6e1b9e54e124d95b6fe0a577ffbb3
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.3/syncthing-linux-amd64-v2.0.3.tar.gz
+      sha256: 55c251a9cc3a5ce713f36e8b917c550dcd83dcf6863cffe474db272d27748347
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.3/syncthing-macos-amd64-v2.0.3.zip
+      sha256: 27e5eaf1fe8a3a51ee1da23130b50b17fe8c721b297fbb0eb4b4aa3d1e2b7178
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.3/syncthing-windows-amd64-v2.0.3.zip
+      sha256: 53166f4f1bd1ac4c956f866f063f156d334940604de8fe254f9105ed595792d1
+  2.0.4:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.4/syncthing-linux-arm64-v2.0.4.tar.gz
+      sha256: 6247412b61266394436fbdf8cc5a180c54b881c0ea88b2df9ca07227f4ceea60
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.4/syncthing-macos-arm64-v2.0.4.zip
+      sha256: 5ae0cae303de70caa2a85596a870d45daf321c50ab54fe76d6e572c974bd4693
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.4/syncthing-windows-arm64-v2.0.4.zip
+      sha256: 17e9db66999f84b010e6ac3dfa5a1e4113ebe4a6833eeefa90071c8b02e45b69
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.4/syncthing-macos-universal-v2.0.4.zip
+      sha256: f365a69950822d4f775b0fcd74eff1c4eec6ef58db1d4722dca572e08f1f1fca
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.4/syncthing-linux-386-v2.0.4.tar.gz
+      sha256: 1f2076574aa8eb43ab29e4a708107866b05100e83396ea3d927bd9314fc8fb56
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.4/syncthing-windows-386-v2.0.4.zip
+      sha256: de159d664032773418bb83e5860bd82f25d88e83e5585f4b7dce24d534aa2418
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.4/syncthing-linux-amd64-v2.0.4.tar.gz
+      sha256: f8c33e8409f041af0663987214cd43e45908cf0792cfe9b0dd5352ae1d9e9895
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.4/syncthing-macos-amd64-v2.0.4.zip
+      sha256: 9c95ec7a4843c833fd1a423ae0a231f2232a102b2bf0da048de5f1a129402561
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.4/syncthing-windows-amd64-v2.0.4.zip
+      sha256: fe430e6d1509db6c77d44d14d9d329368bf46b21e4beceee0305afa31325e4fe
+  2.0.5:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.5/syncthing-linux-arm64-v2.0.5.tar.gz
+      sha256: f8e47cee47473e00793e1a465d86ac511a5af47d4d521438d14d24e9de19109f
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.5/syncthing-macos-arm64-v2.0.5.zip
+      sha256: 571786d9ac43fd5ce182a634c90e0e324461c8179a2e266b26df18c29277327f
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.5/syncthing-windows-arm64-v2.0.5.zip
+      sha256: 4a55b59c32dd851957cdd62edabb1fc28009c39e367031b76ff2d9d513290d76
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.5/syncthing-macos-universal-v2.0.5.zip
+      sha256: de4cce263e9be076aa9171096a9492e9fa11baa5d9c004d83150ffb3f949a380
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.5/syncthing-linux-386-v2.0.5.tar.gz
+      sha256: 196a66d00dcec1de0b5123a1cceb135c466f215ebb8d3c610cd803a337962a43
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.5/syncthing-windows-386-v2.0.5.zip
+      sha256: 61a2de21f9ad7237801de7f95c4d489f948ed4e9621a8937b094fad06b849205
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.5/syncthing-linux-amd64-v2.0.5.tar.gz
+      sha256: 6957a6b983643c54c451d8db0cc1e7fdbf6df18b746a70483cf37c2c6ef3a139
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.5/syncthing-macos-amd64-v2.0.5.zip
+      sha256: 9203e145b08247e178dfdc5d76ef44247e73b9ebb8b00218505cb5eff80fa2cb
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.5/syncthing-windows-amd64-v2.0.5.zip
+      sha256: e9bbcfaa193115197f0105f455a3708aefdf70cf64a8824f7c6b3d34d260a2e4
+  2.0.6:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.6/syncthing-linux-arm64-v2.0.6.tar.gz
+      sha256: ca9797b05f7f1f3c1c970619c8605778a3d1176ab8d6e6a0e25641e6e5012cef
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.6/syncthing-macos-arm64-v2.0.6.zip
+      sha256: 7f92b169a04421f29ea50b9e9dbd3ec97889f4266dbcaafae00101e6c3543880
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.6/syncthing-windows-arm64-v2.0.6.zip
+      sha256: ce107b94f34609180717e08186972a0d142e86daeb61d520b161189098510b82
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.6/syncthing-macos-universal-v2.0.6.zip
+      sha256: fb03a48f78a1de1fc4021b7036326fe13b7e2cdf8eefd3ce22481b0d8802d959
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.6/syncthing-linux-386-v2.0.6.tar.gz
+      sha256: 373bc366c44fa9874a0c59533b09f562429f738056235e99b2bd326b06781ba4
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.6/syncthing-windows-386-v2.0.6.zip
+      sha256: 59e259efccdd1424719aae35097aa8111611005f926bd311527a8b1144af86d8
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.6/syncthing-linux-amd64-v2.0.6.tar.gz
+      sha256: 07a5f15b34d902ff6b4323e5db7b1210fb00162fa845e890ecda6038fd5e4ff2
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.6/syncthing-macos-amd64-v2.0.6.zip
+      sha256: 6c8e437400eab1f10ba4e1db957c4bbe3ebdef5f44e6f7256d528f14fd83a5b3
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.6/syncthing-windows-amd64-v2.0.6.zip
+      sha256: 4635e5f2ac5fd684f1d8745add9e94b523a15f5ada103c5ae2e0a7c115011426
+  2.0.7:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.7/syncthing-linux-arm64-v2.0.7.tar.gz
+      sha256: 8e1d2e6f72edfbef504672a134759a6ebbd3a8f1c798f55e88e6d61a92f0d8bd
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.7/syncthing-macos-arm64-v2.0.7.zip
+      sha256: 8bff17d9b7f39e57b00080b06ead8feee69fda7d588e130186593706d0da78fb
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.7/syncthing-windows-arm64-v2.0.7.zip
+      sha256: e938a205cb77a949c1bdc33276e168d0b736ae3034d6d3bf5c5de0da35ae3d3e
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.7/syncthing-macos-universal-v2.0.7.zip
+      sha256: 66a8795da1569b6826e0a4f158745edb87713cdaa1793622b555b3be0cad3dbf
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.7/syncthing-linux-386-v2.0.7.tar.gz
+      sha256: 8d5fbd1dc06fdcf93ba28e7ab24901e065a3c8aeb0f4421615cf9022dd3ad179
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.7/syncthing-windows-386-v2.0.7.zip
+      sha256: 87a22405d18c47d87c70858f6e486516a07779120211b67270f0b4fdfb8a9c27
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.7/syncthing-linux-amd64-v2.0.7.tar.gz
+      sha256: febea947c0a07f5d225ff0a0ef956443a473b7e8f2c77fbb22d712db83e78eb3
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.7/syncthing-macos-amd64-v2.0.7.zip
+      sha256: cc50024559d964430604f6773cea0d6ac0d733228c11ab4d61d1dbe9a21378e5
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.7/syncthing-windows-amd64-v2.0.7.zip
+      sha256: 85c89094130fed7b2a6ec58991048911241fbc70863058b2f566490e8cb024e6
+  2.0.8:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-linux-arm64-v2.0.8.tar.gz
+      sha256: 30c00ffd5a286d18d82ae262b02dac7f5a1592d3c5fa0c0c6986aa4621cc6ede
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-macos-arm64-v2.0.8.zip
+      sha256: 7fed6b0b60f7b15587c3f4c8b7300cc97f506b5e45ef146db667061732b9355c
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-windows-arm64-v2.0.8.zip
+      sha256: 352006edd8ea3f01dc2eab2dfcbb079a5828b60ebb55d4b89e5bf62148fb794c
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-macos-universal-v2.0.8.zip
+      sha256: 503f95b4a8a0a7d4a2519d7479f39fb061ce8e2278444fcb130076e92f44b3b6
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-linux-386-v2.0.8.tar.gz
+      sha256: ba00826078d795da5f41d7fc8c54f39d7b8a1284f244f27c7dcc904366a05b06
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-windows-386-v2.0.8.zip
+      sha256: a59c8b02534ebb34d562b117d9c46fc5f7cb56d641ec098d34e3fa3523642859
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-linux-amd64-v2.0.8.tar.gz
+      sha256: a516ff64a1bf52b867016ecb069886b9db8d3126d49e58865b4c64d638523dc5
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-macos-amd64-v2.0.8.zip
+      sha256: 3ffd53fee92b07249ce833e5a0730b37b2c6fd3b659635624bdcbaa1217a4610
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.8/syncthing-windows-amd64-v2.0.8.zip
+      sha256: 56a1998aeeaccba310608292ec8b64b8cf660aeca6899fd548af116aefdf8d0c
+  2.0.9:
+    aarch64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-linux-arm64-v2.0.9.tar.gz
+      sha256: 41660299ad17f32367391367a7954df35f33017a5ad109a8a3323e15397411ff
+    aarch64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-macos-arm64-v2.0.9.zip
+      sha256: 2fc3dc1cb8ea690adf05ba5599788584bc084ff3e13a4486a0d3578c9ecaaf28
+    aarch64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-windows-arm64-v2.0.9.zip
+      sha256: c5c4db70029eed70f630628bd19a3856f881a67f0fbb07418171be672697f017
+    any-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-macos-universal-v2.0.9.zip
+      sha256: 0dc86d75cbb433aaa52abed9f60b909c2d430c24702a653f03cfe80fb54b98c1
+    x86-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-linux-386-v2.0.9.tar.gz
+      sha256: 0004c6b4126702064f4adbcb4eac66eb5c75eaba19f3702ef3ce5025c1c2878c
+    x86-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-windows-386-v2.0.9.zip
+      sha256: 3d1b994ef1fd17c7970355e9aeb06b8e03a6ff8b61444253a0ef045c2bc86726
+    x86_64-linux:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-linux-amd64-v2.0.9.tar.gz
+      sha256: 755ac045074cee707fc29915548d42bb9a58a444c61beb95f0d83f249cf9435b
+    x86_64-macos:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-macos-amd64-v2.0.9.zip
+      sha256: 1dd9dfb13564afc5f8349c1c159d6433cd86e3ace8e65dcd72d3222e569dc7e0
+    x86_64-windows:
+      url: https://github.com/syncthing/syncthing/releases/download/v2.0.9/syncthing-windows-amd64-v2.0.9.zip
+      sha256: 0b04c4154a94e91c4d24b6fbf7d517e5cc017c710684c0aaf59e1be33e90e269
 installs:
   1.20.3:
     any-any:

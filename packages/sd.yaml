@@ -26,6 +26,22 @@ releases:
     x86_64-windows:
       url: https://github.com/chmln/sd/releases/download/v1.0.0/sd-v1.0.0-x86_64-pc-windows-msvc.zip
       sha256: b7cc9937ebc1f736c87d5929b9ea2280053af10f8e320d9c20ca90c3af46a5d5
+  1.1.0:
+    aarch64-linux:
+      url: https://github.com/chmln/sd/releases/download/v1.1.0/sd-v1.1.0-aarch64-unknown-linux-musl.tar.gz
+      sha256: ec8c93c0533ff21f4851d11566808d4082544baf063d9b96ea77c27e98b7cd99
+    aarch64-macos:
+      url: https://github.com/chmln/sd/releases/download/v1.1.0/sd-v1.1.0-aarch64-apple-darwin.tar.gz
+      sha256: 4bd3c09226376ca0a1d69589c91e86276fae36c5fbaaee669afce583f6682030
+    x86_64-linux:
+      url: https://github.com/chmln/sd/releases/download/v1.1.0/sd-v1.1.0-x86_64-unknown-linux-musl.tar.gz
+      sha256: 02f00f4777d43e8e95b7b8d49e1a0d6e502fed4b8e79c1c8b8063857a30caa2e
+    x86_64-macos:
+      url: https://github.com/chmln/sd/releases/download/v1.1.0/sd-v1.1.0-x86_64-apple-darwin.tar.gz
+      sha256: 1fca1e9c91813a8aac6821063c923107ba0f66a83309e095edcd3b202f67f97e
+    x86_64-windows:
+      url: https://github.com/chmln/sd/releases/download/v1.1.0/sd-v1.1.0-x86_64-pc-windows-msvc.zip
+      sha256: 59837c2e7c911099aca1cc46b663bcdc5a949fd3e9fbbaf34fc73e5d5d71007c
 installs:
   0.7.6:
     any-any:
@@ -37,11 +53,11 @@ installs:
     any-any:
       strip: 1
       files:
-        completions/sd.bash: ${bash_comp_dir}
-        completions/_sd: ${zsh_comp_dir}
         CHANGELOG.md: ${doc_dir}
         LICENSE: ${doc_dir}
         README.md: ${doc_dir}
+        completions/_sd: ${zsh_comp_dir}
+        completions/sd.bash: ${bash_comp_dir}
         sd${exe_ext}: bin/
         sd.1: share/man/man1/
       tests:
