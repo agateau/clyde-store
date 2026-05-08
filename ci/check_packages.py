@@ -34,7 +34,10 @@ def check_github_token() -> None:
 
 
 def iter_modified_files(repo: Repo, revision: str) -> Iterable[Path]:
-    diff_index = repo.index.diff(revision)
+    target_commit = repo.commit(revision)
+    current_commit = repo.head.commit
+
+    diff_index = target_commit.diff(current_commit)
     for diff in diff_index.iter_change_type("M"):
         assert diff.b_path
         yield Path(diff.b_path)
