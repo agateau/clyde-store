@@ -67,7 +67,9 @@ def main() -> int:
         if args.all:
             refs = list_wanted_refs(repo)
         else:
-            refs = list_wanted_refs(repo, names=args.branches)
+            refs = list(list_wanted_refs(repo, names=args.branches))
+            if not refs:
+                sys.exit(f"Error: no branches found matching {args.branches}")
         refs = sorted(refs, key=lambda x: x.name)
 
         for ref in refs:
