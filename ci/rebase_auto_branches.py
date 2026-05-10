@@ -32,7 +32,7 @@ def update_ref(repo: Repo, ref: RemoteReference) -> None:
     name = ref.name.split("/")[-1]
     repo.git.checkout(name)
     eprint("- Rebase")
-    repo.git.rebase("main")
+    repo.git.rebase("origin/main")
     eprint("- Push")
     repo.git.push(force_with_lease=True)
     eprint("- Mark as automerge")
@@ -67,7 +67,9 @@ def main() -> int:
         if args.all:
             refs = list_wanted_refs(repo)
         else:
-            refs = list_wanted_refs(repo, names=args.branches)
+            refs = list(list_wanted_refs(repo, names=args.branches))
+            if not refs:
+                sys.exit(f"Error: no branches found matching {args.branches}")
         refs = sorted(refs, key=lambda x: x.name)
 
         for ref in refs:
