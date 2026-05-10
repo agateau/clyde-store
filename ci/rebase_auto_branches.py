@@ -32,7 +32,7 @@ def update_ref(repo: Repo, ref: RemoteReference) -> None:
     name = ref.name.split("/")[-1]
     repo.git.checkout(name)
     eprint("- Rebase")
-    repo.git.rebase("main")
+    repo.git.rebase("origin/main")
     eprint("- Push")
     repo.git.push(force_with_lease=True)
     eprint("- Mark as automerge")
