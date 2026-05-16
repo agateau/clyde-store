@@ -3,11 +3,7 @@ description: a query language for searching, linting, and modifying code.
 homepage: https://docs.grit.io
 repository: https://github.com/getgrit/gritql
 releases:
-  0.0.0:
-    any-any:
-      url: https://github.com/dummy
-      sha256: '0'
-  1743007075.0.0:
+  0.1.0-alpha.1743007075:
     aarch64-linux:
       url: https://github.com/getgrit/gritql/releases/download/v0.1.0-alpha.1743007075/grit-aarch64-unknown-linux-gnu.tar.gz
       sha256: 8e37415c45595716386d018f4d279a78f80261a7c7592c37632e7ce7d0934870
@@ -23,6 +19,30 @@ releases:
     x86_64-windows:
       url: https://github.com/getgrit/gritql/releases/download/v0.1.0-alpha.1743007075/grit-x86_64-pc-windows-msvc.tar.gz
       sha256: 5c44ee3336514ab8c3fa81c5301bd54fca82a9ddec43f87d7181be757fbab084
+  0.0.3:
+    added_at: 2026-03-30T22:02:38.407700240Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/biomejs/gritql/releases/download/v0.0.3/gritql.linux-arm64-musl.node
+        sha256: 04b3903c492d52816cfe836f46612914da03de9913b62defef84f21b6316c962
+      aarch64-macos:
+        url: https://github.com/biomejs/gritql/releases/download/v0.0.3/gritql.darwin-arm64.node
+        sha256: 8a8a1c4f979c7a3698b392e54ffb76fe9d02e2c924ef19f89575ac41d5a3e2eb
+      aarch64-windows:
+        url: https://github.com/biomejs/gritql/releases/download/v0.0.3/gritql.win32-arm64-msvc.node
+        sha256: 00697abb551b7c7ef73e91dfbd6c6a901983ed97e7b73d316fe5527a70341dc6
+      any-macos:
+        url: https://github.com/biomejs/gritql/releases/download/v0.0.3/gritql.darwin-universal.node
+        sha256: 60edffb13be6b72d8fde3670a4563f90aa567e5cd6da5d7150263bafb8d044b2
+      x86_64-linux:
+        url: https://github.com/biomejs/gritql/releases/download/v0.0.3/gritql.linux-x64-musl.node
+        sha256: 0f3207aa8f68b8bbaaa10b8d60362b4b03188ea6524ebd7ccfb5a7d33c4eb73b
+      x86_64-macos:
+        url: https://github.com/biomejs/gritql/releases/download/v0.0.3/gritql.darwin-x64.node
+        sha256: 8d298d50f9d5ef2a233ac92e581a1fe0813acc2faf3ed8849be5bad74fd5c51f
+      x86_64-windows:
+        url: https://github.com/biomejs/gritql/releases/download/v0.0.3/gritql.win32-x64-msvc.node
+        sha256: 35a731f773e8c6f0bd20768d17ffe5943eeab0c9db215339f331561b8082cda7
 installs:
   0.0.0:
     any-any:
@@ -31,5 +51,3 @@ installs:
         grit${exe_ext}: bin/
       tests:
       - grit${exe_ext} --version
-fetcher: !GitHub
-  include: ^grit-
