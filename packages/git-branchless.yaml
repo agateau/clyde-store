@@ -4,42 +4,65 @@ homepage: https://github.com/arxanas/git-branchless
 repository: https://github.com/arxanas/git-branchless
 releases:
   0.10.0:
-    x86_64-linux:
-      url: https://github.com/arxanas/git-branchless/releases/download/v0.10.0/git-branchless-v0.10.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: baa34041f4694cf95a67d4f2371965a7c63251e7d1604c8aea15da1caba2afff
-    x86_64-windows:
-      url: https://github.com/arxanas/git-branchless/releases/download/v0.10.0/git-branchless-v0.10.0-x86_64-pc-windows-msvc.zip
-      sha256: 60ebe87ed18dd1b2c93c5094c9e7c9960590a97e452fa3ec03720c9c71b29452
+    added_at: null
+    assets:
+      x86_64-linux:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.10.0/git-branchless-v0.10.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: baa34041f4694cf95a67d4f2371965a7c63251e7d1604c8aea15da1caba2afff
+      x86_64-windows:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.10.0/git-branchless-v0.10.0-x86_64-pc-windows-msvc.zip
+        sha256: 60ebe87ed18dd1b2c93c5094c9e7c9960590a97e452fa3ec03720c9c71b29452
+  0.11.1:
+    added_at: 2026-05-22T10:24:13.402573671Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.11.1/git-branchless-v0.11.1-aarch64-unknown-linux-musl.tar.gz
+        sha256: acb104bb91b69acd10ea0c8f9c1281ecce07c1346bee762317147d0fdf8e7463
+      aarch64-macos:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.11.1/git-branchless-v0.11.1-aarch64-apple-darwin.tar.gz
+        sha256: 1150c869de3e68d670eea82d1622b8d3add1bc086750e89a9343adc44944f1f1
+      x86_64-linux:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.11.1/git-branchless-v0.11.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: 18e924fba1862ae234651b2b2de40ccf6ee2dd9b068279705a0d242f5d413e00
+      x86_64-windows:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.11.1/git-branchless-v0.11.1-x86_64-pc-windows-msvc.zip
+        sha256: 94b3497fa98f0ca3a2bf0a2d089349843bc2a2103096cc008d8b397576bb5325
   0.7.1:
-    x86_64-linux:
-      url: https://github.com/arxanas/git-branchless/releases/download/v0.7.1/git-branchless-v0.7.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: 90ebebd0f6e743d386d1142b6295072ca7bb8dae427cfcf1b4b588b04777d8a9
-    x86_64-macos:
-      url: https://github.com/arxanas/git-branchless/releases/download/v0.7.1/git-branchless-v0.7.1-x86_64-apple-darwin.tar.gz
-      sha256: 0b8812c558625a65f4420faa73b71a6a59b47bc2440ef56a9d769462ec4df5b2
-    x86_64-windows:
-      url: https://github.com/arxanas/git-branchless/releases/download/v0.7.1/git-branchless-v0.7.1-x86_64-pc-windows-msvc.zip
-      sha256: 20fb54db58e46201befc23d03f95bdf2b3f5570733474e4f658466984b9833bb
+    added_at: null
+    assets:
+      x86_64-linux:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.7.1/git-branchless-v0.7.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: 90ebebd0f6e743d386d1142b6295072ca7bb8dae427cfcf1b4b588b04777d8a9
+      x86_64-macos:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.7.1/git-branchless-v0.7.1-x86_64-apple-darwin.tar.gz
+        sha256: 0b8812c558625a65f4420faa73b71a6a59b47bc2440ef56a9d769462ec4df5b2
+      x86_64-windows:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.7.1/git-branchless-v0.7.1-x86_64-pc-windows-msvc.zip
+        sha256: 20fb54db58e46201befc23d03f95bdf2b3f5570733474e4f658466984b9833bb
   0.8.0:
-    x86_64-linux:
-      url: https://github.com/arxanas/git-branchless/releases/download/v0.8.0/git-branchless-v0.8.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 9250450b9a38d3a86f13c53f68f9cb469fbb2f5e70aa2bb67dbc9dd286f9049a
-    x86_64-macos:
-      url: https://github.com/arxanas/git-branchless/releases/download/v0.8.0/git-branchless-v0.8.0-x86_64-apple-darwin.tar.gz
-      sha256: 757e17cd19d657e6a39641919169cc743cdcb5f927e24a075e046753abe97c88
-    x86_64-windows:
-      url: https://github.com/arxanas/git-branchless/releases/download/v0.8.0/git-branchless-v0.8.0-x86_64-pc-windows-msvc.zip
-      sha256: 6c3abc939f22191e51aa767e9fecd1caac1fc4f6f53d9b4de83e8b9fae22bcba
+    added_at: null
+    assets:
+      x86_64-linux:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.8.0/git-branchless-v0.8.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 9250450b9a38d3a86f13c53f68f9cb469fbb2f5e70aa2bb67dbc9dd286f9049a
+      x86_64-macos:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.8.0/git-branchless-v0.8.0-x86_64-apple-darwin.tar.gz
+        sha256: 757e17cd19d657e6a39641919169cc743cdcb5f927e24a075e046753abe97c88
+      x86_64-windows:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.8.0/git-branchless-v0.8.0-x86_64-pc-windows-msvc.zip
+        sha256: 6c3abc939f22191e51aa767e9fecd1caac1fc4f6f53d9b4de83e8b9fae22bcba
   0.9.0:
-    x86_64-linux:
-      url: https://github.com/arxanas/git-branchless/releases/download/v0.9.0/git-branchless-v0.9.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 48f53ca1747fcc3604ca59a96cffe7e405408492956782073a8d5a381b0c43a7
-    x86_64-macos:
-      url: https://github.com/arxanas/git-branchless/releases/download/v0.9.0/git-branchless-v0.9.0-x86_64-apple-darwin.tar.gz
-      sha256: 4808dce611703d8196bd006844b481ebfa3850f6771b4e2d2de2ae4d286f94bc
-    x86_64-windows:
-      url: https://github.com/arxanas/git-branchless/releases/download/v0.9.0/git-branchless-v0.9.0-x86_64-pc-windows-msvc.zip
-      sha256: 90b4514274d59a602483253f788eaa25096ebe9b416f78227fd3d46468e2cd2b
+    added_at: null
+    assets:
+      x86_64-linux:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.9.0/git-branchless-v0.9.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 48f53ca1747fcc3604ca59a96cffe7e405408492956782073a8d5a381b0c43a7
+      x86_64-macos:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.9.0/git-branchless-v0.9.0-x86_64-apple-darwin.tar.gz
+        sha256: 4808dce611703d8196bd006844b481ebfa3850f6771b4e2d2de2ae4d286f94bc
+      x86_64-windows:
+        url: https://github.com/arxanas/git-branchless/releases/download/v0.9.0/git-branchless-v0.9.0-x86_64-pc-windows-msvc.zip
+        sha256: 90b4514274d59a602483253f788eaa25096ebe9b416f78227fd3d46468e2cd2b
 installs:
   0.7.1:
     any-any:
