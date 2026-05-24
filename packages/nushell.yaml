@@ -4,1013 +4,1148 @@ homepage: https://www.nushell.sh
 repository: https://github.com/nushell/nushell
 releases:
   0.102.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-aarch64-unknown-linux-musl.tar.gz
-      sha256: 338fbcd7281cf4ae293b29f85494af6170dd1700a94fe07e5afed3eb07b3a25a
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-aarch64-apple-darwin.tar.gz
-      sha256: 8865530fff832cc05a8159a005da2aa2d876d9f6a03fc5d144a2ea1efcc5b6b7
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-aarch64-pc-windows-msvc.zip
-      sha256: b9afcb97ce6ed4c95c3afbcff053f6807458f0bd1cd7818a6a2f30ce3f6e82fc
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: c4d9a3388d893e8c923b1a5363dbb9c7f081b71a4a5867767d7907632ecc0929
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-x86_64-apple-darwin.tar.gz
-      sha256: d49d5017a617e219037e1710003981c4e224375d76a1d5f3a2a0d9522ebefc2c
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-x86_64-pc-windows-msvc.zip
-      sha256: 5fd557a25685705170329384e5782769edd44390c33f9225a9518618fc19ab8e
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: 338fbcd7281cf4ae293b29f85494af6170dd1700a94fe07e5afed3eb07b3a25a
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-aarch64-apple-darwin.tar.gz
+        sha256: 8865530fff832cc05a8159a005da2aa2d876d9f6a03fc5d144a2ea1efcc5b6b7
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-aarch64-pc-windows-msvc.zip
+        sha256: b9afcb97ce6ed4c95c3afbcff053f6807458f0bd1cd7818a6a2f30ce3f6e82fc
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: c4d9a3388d893e8c923b1a5363dbb9c7f081b71a4a5867767d7907632ecc0929
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-x86_64-apple-darwin.tar.gz
+        sha256: d49d5017a617e219037e1710003981c4e224375d76a1d5f3a2a0d9522ebefc2c
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-x86_64-pc-windows-msvc.zip
+        sha256: 5fd557a25685705170329384e5782769edd44390c33f9225a9518618fc19ab8e
   0.103.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-aarch64-unknown-linux-musl.tar.gz
-      sha256: df0ef0cd87556997346936d65e7d1962675a13bd605d9a5920622b3f433b3dab
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-aarch64-apple-darwin.tar.gz
-      sha256: b0655aa88eee68523c7c227beeb644ad3b4605a8a8c7465dd99ce9889626e5e8
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-aarch64-pc-windows-msvc.zip
-      sha256: 79ee46ad702e4f422b180d9930f9dbda506d285ad673104445c80c68a6705cd4
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 4e717dbdebd95579a842fa832f73cc197d6ae3eb1b9bb47649a1d0b0ab2f9c87
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-x86_64-apple-darwin.tar.gz
-      sha256: d0ec1befefdb306d0ae640b5d06feafe761fa63c1ef72d552dafc06256fcf2ad
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-x86_64-pc-windows-msvc.zip
-      sha256: 6036d0279566b7160ddbfca1ca013d080399858d91cbc505fe88651c669f2eea
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: df0ef0cd87556997346936d65e7d1962675a13bd605d9a5920622b3f433b3dab
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-aarch64-apple-darwin.tar.gz
+        sha256: b0655aa88eee68523c7c227beeb644ad3b4605a8a8c7465dd99ce9889626e5e8
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-aarch64-pc-windows-msvc.zip
+        sha256: 79ee46ad702e4f422b180d9930f9dbda506d285ad673104445c80c68a6705cd4
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 4e717dbdebd95579a842fa832f73cc197d6ae3eb1b9bb47649a1d0b0ab2f9c87
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-x86_64-apple-darwin.tar.gz
+        sha256: d0ec1befefdb306d0ae640b5d06feafe761fa63c1ef72d552dafc06256fcf2ad
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-x86_64-pc-windows-msvc.zip
+        sha256: 6036d0279566b7160ddbfca1ca013d080399858d91cbc505fe88651c669f2eea
   0.104.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-aarch64-unknown-linux-musl.tar.gz
-      sha256: 64bd6727c6af92da90be8424ecb51eb7aca04b3c7e08452c6622afe4282c0fbf
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-aarch64-apple-darwin.tar.gz
-      sha256: aeb937b4821fb116b5cf4efecce2a3ca20a2405bd7d10396db71fa9a340178be
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-aarch64-pc-windows-msvc.zip
-      sha256: 5e6b560b1ce8ada88228745b0ced480afec4e3fdec780666e4d8a880ed398f90
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 90372b5a48b048b9e91637b44b4a060646b5617b5e82d22d6ba5b5d63eaeb602
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-x86_64-apple-darwin.tar.gz
-      sha256: fdc8178331679565ea785c200ea343e9481c1fde5021a7c4e5d5d8ede05bdd0d
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-x86_64-pc-windows-msvc.zip
-      sha256: bbbbe04f7115cd22bd3be23755e248bee2902964fc51c5a1ad5436539217b104
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: 64bd6727c6af92da90be8424ecb51eb7aca04b3c7e08452c6622afe4282c0fbf
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-aarch64-apple-darwin.tar.gz
+        sha256: aeb937b4821fb116b5cf4efecce2a3ca20a2405bd7d10396db71fa9a340178be
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-aarch64-pc-windows-msvc.zip
+        sha256: 5e6b560b1ce8ada88228745b0ced480afec4e3fdec780666e4d8a880ed398f90
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 90372b5a48b048b9e91637b44b4a060646b5617b5e82d22d6ba5b5d63eaeb602
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-x86_64-apple-darwin.tar.gz
+        sha256: fdc8178331679565ea785c200ea343e9481c1fde5021a7c4e5d5d8ede05bdd0d
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-x86_64-pc-windows-msvc.zip
+        sha256: bbbbe04f7115cd22bd3be23755e248bee2902964fc51c5a1ad5436539217b104
   0.104.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-aarch64-unknown-linux-musl.tar.gz
-      sha256: 80567134a772eb554e0d9d39fe1f66eb765b8a612eeffc7a69b875aa8954c11c
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-aarch64-apple-darwin.tar.gz
-      sha256: 75bb89a1c7c7adb78c65fe006eb6eaa39f6b5515533c1e5e80ef905fc02111c3
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-aarch64-pc-windows-msvc.zip
-      sha256: 7c078a0efc0caf8a9f6e67b79c9ba9af38925a411edbc952f3cae7a40d1b5824
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: 633204d95e3cc39c5b8fa2d275343b39802c4389f06079456c567f6bcdd297f7
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-x86_64-apple-darwin.tar.gz
-      sha256: e62add945ff11064515f1b3aa5d07d72b27593b155a078e1525b01a1f9e7383f
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-x86_64-pc-windows-msvc.zip
-      sha256: d98ecf68ccb2b0a7a233f72bb5ed01c1c80a39724e57a8ed05837d7d50a5a060
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-aarch64-unknown-linux-musl.tar.gz
+        sha256: 80567134a772eb554e0d9d39fe1f66eb765b8a612eeffc7a69b875aa8954c11c
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-aarch64-apple-darwin.tar.gz
+        sha256: 75bb89a1c7c7adb78c65fe006eb6eaa39f6b5515533c1e5e80ef905fc02111c3
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-aarch64-pc-windows-msvc.zip
+        sha256: 7c078a0efc0caf8a9f6e67b79c9ba9af38925a411edbc952f3cae7a40d1b5824
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: 633204d95e3cc39c5b8fa2d275343b39802c4389f06079456c567f6bcdd297f7
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-x86_64-apple-darwin.tar.gz
+        sha256: e62add945ff11064515f1b3aa5d07d72b27593b155a078e1525b01a1f9e7383f
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.104.1/nu-0.104.1-x86_64-pc-windows-msvc.zip
+        sha256: d98ecf68ccb2b0a7a233f72bb5ed01c1c80a39724e57a8ed05837d7d50a5a060
   0.105.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-aarch64-unknown-linux-musl.tar.gz
-      sha256: 3686cb9eb71d75505bf089140ac72fa6d33c2bef413676dafc464795c857c6b3
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-aarch64-apple-darwin.tar.gz
-      sha256: 1a4a6d85c7d82644d49d36684f01255e60484193325c649b2548f3c11fa39c1e
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-aarch64-pc-windows-msvc.zip
-      sha256: d1a9e394b2e75ea35665c064bbe27a3c3c59d51f064a1451da37e1f9e9c211e3
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: ed26ae2708b1b74e8d84cda001ebd4b3b6b17b3292c123aef523a22bff463338
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-x86_64-apple-darwin.tar.gz
-      sha256: 6e45abc4b4a7533e8d64ce57eebbc55a380948ed60fe3597c26763e67ae82493
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-x86_64-pc-windows-msvc.zip
-      sha256: 92dad600dc684da77a413e29732f2abb2fd15ccacc1d4059ad230ba0380c52a7
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-aarch64-unknown-linux-musl.tar.gz
+        sha256: 3686cb9eb71d75505bf089140ac72fa6d33c2bef413676dafc464795c857c6b3
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-aarch64-apple-darwin.tar.gz
+        sha256: 1a4a6d85c7d82644d49d36684f01255e60484193325c649b2548f3c11fa39c1e
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-aarch64-pc-windows-msvc.zip
+        sha256: d1a9e394b2e75ea35665c064bbe27a3c3c59d51f064a1451da37e1f9e9c211e3
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: ed26ae2708b1b74e8d84cda001ebd4b3b6b17b3292c123aef523a22bff463338
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-x86_64-apple-darwin.tar.gz
+        sha256: 6e45abc4b4a7533e8d64ce57eebbc55a380948ed60fe3597c26763e67ae82493
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.105.1/nu-0.105.1-x86_64-pc-windows-msvc.zip
+        sha256: 92dad600dc684da77a413e29732f2abb2fd15ccacc1d4059ad230ba0380c52a7
   0.106.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-aarch64-unknown-linux-musl.tar.gz
-      sha256: 4b0360c8d644c0e6e6a1422960637101fd2a5ec6251df77597ee926d8a4eaff6
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-aarch64-apple-darwin.tar.gz
-      sha256: d21ac5b96b2a9c31372ec3aca5438632e995ddb3784e55da05a3c7664b88eee2
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-aarch64-pc-windows-msvc.zip
-      sha256: b9a75f17ba24230d0ac2c4f9cb78ff802a890b715f0ac6a924d57f9d5dcbaff4
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 7a10a46d7000d0817abfc18562d0e6e53a8f6ed9b73c8a1877082ff7bb31ffe8
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-x86_64-apple-darwin.tar.gz
-      sha256: b15449f6d55b0b692ec46d4aea4b6961d1bb2afd8e4e48780cdc02929b372f12
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-x86_64-pc-windows-msvc.zip
-      sha256: 95c061956b2074eea31632a7033f9492606e1254313697bdc659b7dbdb9a5083
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: 4b0360c8d644c0e6e6a1422960637101fd2a5ec6251df77597ee926d8a4eaff6
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-aarch64-apple-darwin.tar.gz
+        sha256: d21ac5b96b2a9c31372ec3aca5438632e995ddb3784e55da05a3c7664b88eee2
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-aarch64-pc-windows-msvc.zip
+        sha256: b9a75f17ba24230d0ac2c4f9cb78ff802a890b715f0ac6a924d57f9d5dcbaff4
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 7a10a46d7000d0817abfc18562d0e6e53a8f6ed9b73c8a1877082ff7bb31ffe8
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-x86_64-apple-darwin.tar.gz
+        sha256: b15449f6d55b0b692ec46d4aea4b6961d1bb2afd8e4e48780cdc02929b372f12
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-x86_64-pc-windows-msvc.zip
+        sha256: 95c061956b2074eea31632a7033f9492606e1254313697bdc659b7dbdb9a5083
   0.106.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-aarch64-unknown-linux-musl.tar.gz
-      sha256: ed85dfbba1cd5675f52a56b2bc9031ae81a98c0f6cb969f4c34a190926a77994
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-aarch64-apple-darwin.tar.gz
-      sha256: 9cd9e2ca38de0db558dfb443964e3e70c643725a03b1cc949e9489e151be0333
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-aarch64-pc-windows-msvc.zip
-      sha256: 2660040c8c99507adf7831cf4443e68dfa0fad2453081f9bbc252f898c871e1d
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: e4cf2553355ad507fe6fc0e927cdc649a8c60dcb23ef6b0a9809094dd918f3d5
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-x86_64-apple-darwin.tar.gz
-      sha256: 9215b6a58c74f3267a6a0d2dd08bb961ed48a15401572fb21ca56eb2a0636e99
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-x86_64-pc-windows-msvc.zip
-      sha256: 720964e9257f2ff78a26f172e7119fb92d82b8f602a6d59b86c4d8f84dc7c14f
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-aarch64-unknown-linux-musl.tar.gz
+        sha256: ed85dfbba1cd5675f52a56b2bc9031ae81a98c0f6cb969f4c34a190926a77994
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-aarch64-apple-darwin.tar.gz
+        sha256: 9cd9e2ca38de0db558dfb443964e3e70c643725a03b1cc949e9489e151be0333
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-aarch64-pc-windows-msvc.zip
+        sha256: 2660040c8c99507adf7831cf4443e68dfa0fad2453081f9bbc252f898c871e1d
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: e4cf2553355ad507fe6fc0e927cdc649a8c60dcb23ef6b0a9809094dd918f3d5
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-x86_64-apple-darwin.tar.gz
+        sha256: 9215b6a58c74f3267a6a0d2dd08bb961ed48a15401572fb21ca56eb2a0636e99
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.106.1/nu-0.106.1-x86_64-pc-windows-msvc.zip
+        sha256: 720964e9257f2ff78a26f172e7119fb92d82b8f602a6d59b86c4d8f84dc7c14f
   0.107.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-aarch64-unknown-linux-musl.tar.gz
-      sha256: 6b1699ca3eb6f762f5fe9c401dda6a03611631bb19d707b9c45fa621e3bf2f36
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-aarch64-apple-darwin.tar.gz
-      sha256: 3bc70d98ab2fd94ad8244d233c92aa6e768ca2c91dd860a209ae6ba6d15f1051
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-aarch64-pc-windows-msvc.zip
-      sha256: e78539a8638c8f470c6458421ae4ca046a842b8852df3d329c46891d7e25aba0
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: dd369b7fedeed3add745bce2dc50e3fe71a7cb48f529456e8887d66f2cde585f
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-x86_64-apple-darwin.tar.gz
-      sha256: e69c2e4f3b68444e17186f289a9a2ed7ec88b57da930892b1a7a3544d68a91d1
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-x86_64-pc-windows-msvc.zip
-      sha256: 6f62ab495b5166239512429886f944eab9153f734a27703516d5eabb5d370e4d
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: 6b1699ca3eb6f762f5fe9c401dda6a03611631bb19d707b9c45fa621e3bf2f36
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-aarch64-apple-darwin.tar.gz
+        sha256: 3bc70d98ab2fd94ad8244d233c92aa6e768ca2c91dd860a209ae6ba6d15f1051
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-aarch64-pc-windows-msvc.zip
+        sha256: e78539a8638c8f470c6458421ae4ca046a842b8852df3d329c46891d7e25aba0
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: dd369b7fedeed3add745bce2dc50e3fe71a7cb48f529456e8887d66f2cde585f
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-x86_64-apple-darwin.tar.gz
+        sha256: e69c2e4f3b68444e17186f289a9a2ed7ec88b57da930892b1a7a3544d68a91d1
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-x86_64-pc-windows-msvc.zip
+        sha256: 6f62ab495b5166239512429886f944eab9153f734a27703516d5eabb5d370e4d
   0.108.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-aarch64-unknown-linux-musl.tar.gz
-      sha256: c9805f2f3115ca867368e67cce0dc3b5a13ca165a25372627d31c8bc7dee777a
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-aarch64-apple-darwin.tar.gz
-      sha256: 21a11b4eb804f4bb7ce67bb18d90d227824d271e19e9f88da15733691888b916
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-aarch64-pc-windows-msvc.zip
-      sha256: becc2946a6f548571d20e167365fc456c382db2aec632b49218fb2ebfc4775dd
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 3a3695d3fbaae1553229e263143ee02359f703efbc982bb1b475d2769d4ff6d9
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-x86_64-apple-darwin.tar.gz
-      sha256: 7f5fb53a5208b36b8b0276f53ab78ca61e7f5fa4f122d0efd8a94f8db83bccb4
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-x86_64-pc-windows-msvc.zip
-      sha256: 425a423950bbbec95f1e879fe036fd861cbbcbba9bef03398a4057f9febe7de8
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: c9805f2f3115ca867368e67cce0dc3b5a13ca165a25372627d31c8bc7dee777a
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-aarch64-apple-darwin.tar.gz
+        sha256: 21a11b4eb804f4bb7ce67bb18d90d227824d271e19e9f88da15733691888b916
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-aarch64-pc-windows-msvc.zip
+        sha256: becc2946a6f548571d20e167365fc456c382db2aec632b49218fb2ebfc4775dd
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 3a3695d3fbaae1553229e263143ee02359f703efbc982bb1b475d2769d4ff6d9
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-x86_64-apple-darwin.tar.gz
+        sha256: 7f5fb53a5208b36b8b0276f53ab78ca61e7f5fa4f122d0efd8a94f8db83bccb4
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.108.0/nu-0.108.0-x86_64-pc-windows-msvc.zip
+        sha256: 425a423950bbbec95f1e879fe036fd861cbbcbba9bef03398a4057f9febe7de8
   0.109.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-aarch64-unknown-linux-musl.tar.gz
-      sha256: 74ce65b51041c33dbcb0ff9bbde065cd32abbeff9b6297f65923f5ba7ba03aee
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-aarch64-apple-darwin.tar.gz
-      sha256: 1b0382594df29b9b8447f83ebfc26b7ee963cdbf831bd9351bfe410a4b8638c4
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-aarch64-pc-windows-msvc.zip
-      sha256: c531e2d561557b7c26d1f0b172854f203444b6a9b9f5e91c5616167cf8d94db1
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 9e501389397a03c1e5de4253f41ecbd0803e10f2637d6374e17b4f18e477ec50
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-x86_64-apple-darwin.tar.gz
-      sha256: 0a51eb5441e68a609297e9a4c772876ac43cecb8197c0b3a0420aa05b5a3f405
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-x86_64-pc-windows-msvc.zip
-      sha256: ed16a4c037ab607c4a81fd3a435e189f1bb872d3aab20e32a1c68f6bdffe442b
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: 74ce65b51041c33dbcb0ff9bbde065cd32abbeff9b6297f65923f5ba7ba03aee
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-aarch64-apple-darwin.tar.gz
+        sha256: 1b0382594df29b9b8447f83ebfc26b7ee963cdbf831bd9351bfe410a4b8638c4
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-aarch64-pc-windows-msvc.zip
+        sha256: c531e2d561557b7c26d1f0b172854f203444b6a9b9f5e91c5616167cf8d94db1
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 9e501389397a03c1e5de4253f41ecbd0803e10f2637d6374e17b4f18e477ec50
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-x86_64-apple-darwin.tar.gz
+        sha256: 0a51eb5441e68a609297e9a4c772876ac43cecb8197c0b3a0420aa05b5a3f405
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.109.0/nu-0.109.0-x86_64-pc-windows-msvc.zip
+        sha256: ed16a4c037ab607c4a81fd3a435e189f1bb872d3aab20e32a1c68f6bdffe442b
   0.109.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-aarch64-unknown-linux-musl.tar.gz
-      sha256: 284678b79647d7b96ee689839c509f922ec5eda4f7cd16efbe46608dc875be26
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-aarch64-apple-darwin.tar.gz
-      sha256: c55436575f6168e718ab6cd53953f5c5559260ffb24797c669b267775eaf3683
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-aarch64-pc-windows-msvc.zip
-      sha256: 8fb893b38f3df74fe3f0d0035076aeacbc58f8fec0fd705c07f28d3573f3d4c3
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: 0822ed54621fc22c0e9c446df6e709f89d07f5e50a00a025c9a0ec0cc3e7d4ee
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-x86_64-apple-darwin.tar.gz
-      sha256: 770554b4bbe56ca844efbb47f4f86570d8f154ef1a253f34117f90a2835faee1
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-x86_64-pc-windows-msvc.zip
-      sha256: 9e349288ce5b17ca514e0b3aeab64f50919a1a713c27c9e28c902c2cc7df50cf
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-aarch64-unknown-linux-musl.tar.gz
+        sha256: 284678b79647d7b96ee689839c509f922ec5eda4f7cd16efbe46608dc875be26
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-aarch64-apple-darwin.tar.gz
+        sha256: c55436575f6168e718ab6cd53953f5c5559260ffb24797c669b267775eaf3683
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-aarch64-pc-windows-msvc.zip
+        sha256: 8fb893b38f3df74fe3f0d0035076aeacbc58f8fec0fd705c07f28d3573f3d4c3
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: 0822ed54621fc22c0e9c446df6e709f89d07f5e50a00a025c9a0ec0cc3e7d4ee
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-x86_64-apple-darwin.tar.gz
+        sha256: 770554b4bbe56ca844efbb47f4f86570d8f154ef1a253f34117f90a2835faee1
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.109.1/nu-0.109.1-x86_64-pc-windows-msvc.zip
+        sha256: 9e349288ce5b17ca514e0b3aeab64f50919a1a713c27c9e28c902c2cc7df50cf
   0.110.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-aarch64-unknown-linux-musl.tar.gz
-      sha256: 596ce2cc836eb5ca9f710c69995dd9bfac26135cf0cd67ff13ce98e528e7f9f4
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-aarch64-apple-darwin.tar.gz
-      sha256: 6d587b1daf7cb9a8ae4d4e265db4d4ed52ea8b69cdc5a42a02142dda300781ac
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-aarch64-pc-windows-msvc.zip
-      sha256: 1e1739fc04183755c87c17ceab7730b88252b8f9e5f872cfba7c09c3e739f288
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 82b0f24646ad1dc5f1a2f2112b8a25178fb62e085c26b1a00eb2e0be091ce055
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-x86_64-apple-darwin.tar.gz
-      sha256: d31bc17870c85d75b040c82b507071eea79001306cadc64a30917f7c9711b3d5
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-x86_64-pc-windows-msvc.zip
-      sha256: 70ad9dbc5e6f82fc5bb1fafe6bc39ddd4e50c8fa1eb5450d5c4a1dc5456161be
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: 596ce2cc836eb5ca9f710c69995dd9bfac26135cf0cd67ff13ce98e528e7f9f4
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-aarch64-apple-darwin.tar.gz
+        sha256: 6d587b1daf7cb9a8ae4d4e265db4d4ed52ea8b69cdc5a42a02142dda300781ac
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-aarch64-pc-windows-msvc.zip
+        sha256: 1e1739fc04183755c87c17ceab7730b88252b8f9e5f872cfba7c09c3e739f288
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 82b0f24646ad1dc5f1a2f2112b8a25178fb62e085c26b1a00eb2e0be091ce055
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-x86_64-apple-darwin.tar.gz
+        sha256: d31bc17870c85d75b040c82b507071eea79001306cadc64a30917f7c9711b3d5
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.110.0/nu-0.110.0-x86_64-pc-windows-msvc.zip
+        sha256: 70ad9dbc5e6f82fc5bb1fafe6bc39ddd4e50c8fa1eb5450d5c4a1dc5456161be
   0.111.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-aarch64-unknown-linux-musl.tar.gz
-      sha256: fe8c4e1d8efd5333425b53d0502b43f7e78bebc5e9e44f27a49870ea65394d74
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-aarch64-apple-darwin.tar.gz
-      sha256: 260e59f7f9ac65cad4624cd45c11e38ac8aed7d0d7d027ad2d39f50d2373b274
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-aarch64-pc-windows-msvc.zip
-      sha256: e4fe1309d3f001d6d05f6ee2a8e25bee25d2dd03ba33db1bca4367a69d7891b8
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: aaf0cce45be9f3b30b3e297b9b5026f91b48df088b3c110ac5db79a7a7d957e5
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-x86_64-apple-darwin.tar.gz
-      sha256: 20dae71461c4d432531f78e5dfcd1f3cf5919ebbbafd10a95e8a2925532b721a
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-x86_64-pc-windows-msvc.zip
-      sha256: 4efd0a72ce26052961183aa3ecb8dce17bb6c43903392bc3521a9fda4e6127b2
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: fe8c4e1d8efd5333425b53d0502b43f7e78bebc5e9e44f27a49870ea65394d74
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-aarch64-apple-darwin.tar.gz
+        sha256: 260e59f7f9ac65cad4624cd45c11e38ac8aed7d0d7d027ad2d39f50d2373b274
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-aarch64-pc-windows-msvc.zip
+        sha256: e4fe1309d3f001d6d05f6ee2a8e25bee25d2dd03ba33db1bca4367a69d7891b8
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: aaf0cce45be9f3b30b3e297b9b5026f91b48df088b3c110ac5db79a7a7d957e5
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-x86_64-apple-darwin.tar.gz
+        sha256: 20dae71461c4d432531f78e5dfcd1f3cf5919ebbbafd10a95e8a2925532b721a
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-x86_64-pc-windows-msvc.zip
+        sha256: 4efd0a72ce26052961183aa3ecb8dce17bb6c43903392bc3521a9fda4e6127b2
   0.112.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-aarch64-unknown-linux-musl.tar.gz
-      sha256: 23ad0dfc9e572d61891f5c7202af03b7df1226c9a357683213a225d572d17906
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-aarch64-apple-darwin.tar.gz
-      sha256: dd35a132ec239d6a964af4c3cefc23c89897fd75f4d843d14df1a759284299ce
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-aarch64-pc-windows-msvc.zip
-      sha256: 5f43d27d44cfed724b873e198ab594534d84380b8d4c339c145faa6f2ae5a205
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: 2de687b5030d9a615956517412402ddc80f3779434ab434a960a7fe6ff2283db
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-x86_64-apple-darwin.tar.gz
-      sha256: 4e51f3104d80060aea9428cedd98a00b34695fa76617c871f498263ab10d574d
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-x86_64-pc-windows-msvc.zip
-      sha256: e5f909b4168ec225c761f2a29f86473c1152197f6aeea139469933d1e48eeb9d
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-aarch64-unknown-linux-musl.tar.gz
+        sha256: 23ad0dfc9e572d61891f5c7202af03b7df1226c9a357683213a225d572d17906
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-aarch64-apple-darwin.tar.gz
+        sha256: dd35a132ec239d6a964af4c3cefc23c89897fd75f4d843d14df1a759284299ce
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-aarch64-pc-windows-msvc.zip
+        sha256: 5f43d27d44cfed724b873e198ab594534d84380b8d4c339c145faa6f2ae5a205
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: 2de687b5030d9a615956517412402ddc80f3779434ab434a960a7fe6ff2283db
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-x86_64-apple-darwin.tar.gz
+        sha256: 4e51f3104d80060aea9428cedd98a00b34695fa76617c871f498263ab10d574d
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.112.1/nu-0.112.1-x86_64-pc-windows-msvc.zip
+        sha256: e5f909b4168ec225c761f2a29f86473c1152197f6aeea139469933d1e48eeb9d
   0.112.2:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-aarch64-unknown-linux-musl.tar.gz
-      sha256: ab32bb605cd11a7d9cfd45c3cb19f6141a724e204b20531802bacd9eb659879b
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-aarch64-apple-darwin.tar.gz
-      sha256: a61806761db7bc2eddfc313d5ec496c92776a37124bc64a3036374bd55e8c881
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-aarch64-pc-windows-msvc.zip
-      sha256: badc7536bf502b3d46c5abf6dc84d394641f407617e6be99cc8346fe946c5550
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-x86_64-unknown-linux-musl.tar.gz
-      sha256: d9c0ba0938beed6148c8a354c45612c0979d7a787794b8dd13e866ca3b571375
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-x86_64-apple-darwin.tar.gz
-      sha256: 8de1dc4a918a1af29fce75d263a8f673f16d35c04ebaa5e3c3ac4ce1eb154f3f
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-x86_64-pc-windows-msvc.zip
-      sha256: db57750ec878365135e7baebee9f5ec74b84c80158ed0168f1ccbe15d6ec251d
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-aarch64-unknown-linux-musl.tar.gz
+        sha256: ab32bb605cd11a7d9cfd45c3cb19f6141a724e204b20531802bacd9eb659879b
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-aarch64-apple-darwin.tar.gz
+        sha256: a61806761db7bc2eddfc313d5ec496c92776a37124bc64a3036374bd55e8c881
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-aarch64-pc-windows-msvc.zip
+        sha256: badc7536bf502b3d46c5abf6dc84d394641f407617e6be99cc8346fe946c5550
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-x86_64-unknown-linux-musl.tar.gz
+        sha256: d9c0ba0938beed6148c8a354c45612c0979d7a787794b8dd13e866ca3b571375
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-x86_64-apple-darwin.tar.gz
+        sha256: 8de1dc4a918a1af29fce75d263a8f673f16d35c04ebaa5e3c3ac4ce1eb154f3f
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.112.2/nu-0.112.2-x86_64-pc-windows-msvc.zip
+        sha256: db57750ec878365135e7baebee9f5ec74b84c80158ed0168f1ccbe15d6ec251d
+  0.113.0:
+    added_at: 2026-05-24T09:20:58.914334669Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.113.0/nu-0.113.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: 7152537c097f26039fe1919406bbe357565fcf1c9c87196e36418c6de4ef79ab
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.113.0/nu-0.113.0-aarch64-apple-darwin.tar.gz
+        sha256: 704cf28881fa6f18a555a12bb1955ee8d509011570a9d03b190ecf849538a3ec
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.113.0/nu-0.113.0-aarch64-pc-windows-msvc.zip
+        sha256: fea1193e8c46c662b6dbf577f2aeea3fcf971fcab0e79783cfd38d36898f3b62
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.113.0/nu-0.113.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 6e94ee0035367c471b34dada57a735e55f5613d97ac3fa58c0ef241f22a12ede
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.113.0/nu-0.113.0-x86_64-apple-darwin.tar.gz
+        sha256: 12424e50fb612c3e2b341a6104fb562f32b031135c4200927a74ea5fa90b6429
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.113.0/nu-0.113.0-x86_64-pc-windows-msvc.zip
+        sha256: 40101c6399b7987526ed8b9ee57b2f8d3627b3aab079f2b9c4d983d77435e2e0
   0.64.0:
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.64.0/nu-0.64.0-x86_64-unknown-linux-gnu.tar.gz
-      sha256: e514f12d5b0a4167bb4812d1c2604182c016fe0f792f9508aa9ef3407f194827
+    added_at: null
+    assets:
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.64.0/nu-0.64.0-x86_64-unknown-linux-gnu.tar.gz
+        sha256: e514f12d5b0a4167bb4812d1c2604182c016fe0f792f9508aa9ef3407f194827
   0.65.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 7bba76e44f032f337e625ab5907766a4e3a4334fc42acc11bbe363d3bb868464
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-aarch64-apple-darwin.tar.gz
-      sha256: 52c4067b6a061b61a464963ec39dbabbeb03bc113169192c487a8a34692ac689
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 1289539a9eceeabbdb581043b8d201033395315f768075ced80c689bce2d532b
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-x86_64-apple-darwin.tar.gz
-      sha256: 70f293b4f2d0a4ebf91cd22c20e8f9fd42ecb2698b7051eb787f06d2bb24f04d
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-x86_64-pc-windows-msvc.zip
-      sha256: 470e8b573bbe3010aac3867b88866b00978b976ca40a05cc267f7579c2a5c8eb
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 7bba76e44f032f337e625ab5907766a4e3a4334fc42acc11bbe363d3bb868464
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-aarch64-apple-darwin.tar.gz
+        sha256: 52c4067b6a061b61a464963ec39dbabbeb03bc113169192c487a8a34692ac689
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 1289539a9eceeabbdb581043b8d201033395315f768075ced80c689bce2d532b
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-x86_64-apple-darwin.tar.gz
+        sha256: 70f293b4f2d0a4ebf91cd22c20e8f9fd42ecb2698b7051eb787f06d2bb24f04d
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.65.0/nu-0.65.0-x86_64-pc-windows-msvc.zip
+        sha256: 470e8b573bbe3010aac3867b88866b00978b976ca40a05cc267f7579c2a5c8eb
   0.66.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.66.1/nu-0.66.1-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 3fb56cd53bf27955db6502aa03b81bccad93f901292d038cff88068336a2b273
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.66.1/nu-0.66.1-aarch64-apple-darwin.tar.gz
-      sha256: 2522e8cf2c31658c42302516ebb289bd38f02f4cb90eb9ea13680ee81d41e564
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.66.1/nu-0.66.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: 0b7783790dfcdfdd94ddcb8da392a19e02585b2bc697c2159e8543a3e0d5ab9d
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.66.1/nu-0.66.1-x86_64-apple-darwin.tar.gz
-      sha256: 4c63260a5b6a811e9b2934942957f399e86f5234e8e3e51689436d4558294697
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.66.1/nu-0.66.1-x86_64-pc-windows-msvc.zip
-      sha256: b052599263e5241d7c512880c8c6df28f80be2bb552e5445919e0b2365ddd14d
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.66.1/nu-0.66.1-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 3fb56cd53bf27955db6502aa03b81bccad93f901292d038cff88068336a2b273
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.66.1/nu-0.66.1-aarch64-apple-darwin.tar.gz
+        sha256: 2522e8cf2c31658c42302516ebb289bd38f02f4cb90eb9ea13680ee81d41e564
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.66.1/nu-0.66.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: 0b7783790dfcdfdd94ddcb8da392a19e02585b2bc697c2159e8543a3e0d5ab9d
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.66.1/nu-0.66.1-x86_64-apple-darwin.tar.gz
+        sha256: 4c63260a5b6a811e9b2934942957f399e86f5234e8e3e51689436d4558294697
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.66.1/nu-0.66.1-x86_64-pc-windows-msvc.zip
+        sha256: b052599263e5241d7c512880c8c6df28f80be2bb552e5445919e0b2365ddd14d
   0.66.2:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.66.2/nu-0.66.2-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 3d3284052903a11c1af4324db345a8e34fa776f918570355fa44d2ac8133fd9b
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.66.2/nu-0.66.2-aarch64-apple-darwin.tar.gz
-      sha256: f86bf8cdd3a7af8ec683c5b0c4c248364eeb2e8b4d0e482a00565ec5f1ef975d
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.66.2/nu-0.66.2-x86_64-unknown-linux-musl.tar.gz
-      sha256: 1a4abfb5ebbc9c149046515f2adb5e904578ece6753eb122ba8f5bfdc2c3b5ad
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.66.2/nu-0.66.2-x86_64-apple-darwin.tar.gz
-      sha256: 7b1662892486301c3eb8dac9cf92483aaf930f60bd1524152f96e42be4886e66
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.66.2/nu-0.66.2-x86_64-pc-windows-msvc.zip
-      sha256: 3dfb9216ae8f49afd0ff6f4a3153e827cdcd65c76e5ff4aadfa52f6ccf0e01d8
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.66.2/nu-0.66.2-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 3d3284052903a11c1af4324db345a8e34fa776f918570355fa44d2ac8133fd9b
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.66.2/nu-0.66.2-aarch64-apple-darwin.tar.gz
+        sha256: f86bf8cdd3a7af8ec683c5b0c4c248364eeb2e8b4d0e482a00565ec5f1ef975d
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.66.2/nu-0.66.2-x86_64-unknown-linux-musl.tar.gz
+        sha256: 1a4abfb5ebbc9c149046515f2adb5e904578ece6753eb122ba8f5bfdc2c3b5ad
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.66.2/nu-0.66.2-x86_64-apple-darwin.tar.gz
+        sha256: 7b1662892486301c3eb8dac9cf92483aaf930f60bd1524152f96e42be4886e66
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.66.2/nu-0.66.2-x86_64-pc-windows-msvc.zip
+        sha256: 3dfb9216ae8f49afd0ff6f4a3153e827cdcd65c76e5ff4aadfa52f6ccf0e01d8
   0.67.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.67.0/nu-0.67.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 73413e6ac8a833868701670e98e2e240ac59c29d4e4c53f0bcc253a5ff488fa4
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.67.0/nu-0.67.0-aarch64-apple-darwin.tar.gz
-      sha256: c41f66c0c03eb3979a176b08a2dbc8751a578186a04d4cd7fbd02499cbe849ba
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.67.0/nu-0.67.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 32247e17e77a806d50599ef3e681d00f3d5dc66f1b50ccba0c914109fafd5c8c
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.67.0/nu-0.67.0-x86_64-apple-darwin.tar.gz
-      sha256: 072e9994297be70bc8304f4191eba8a0c5229471a3c42e4841182184e0916388
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.67.0/nu-0.67.0-x86_64-pc-windows-msvc.zip
-      sha256: 683b604024eb1f81b3eefe3a8ad844d9d778711526342e47101ef1246c1e95ba
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.67.0/nu-0.67.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 73413e6ac8a833868701670e98e2e240ac59c29d4e4c53f0bcc253a5ff488fa4
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.67.0/nu-0.67.0-aarch64-apple-darwin.tar.gz
+        sha256: c41f66c0c03eb3979a176b08a2dbc8751a578186a04d4cd7fbd02499cbe849ba
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.67.0/nu-0.67.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 32247e17e77a806d50599ef3e681d00f3d5dc66f1b50ccba0c914109fafd5c8c
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.67.0/nu-0.67.0-x86_64-apple-darwin.tar.gz
+        sha256: 072e9994297be70bc8304f4191eba8a0c5229471a3c42e4841182184e0916388
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.67.0/nu-0.67.0-x86_64-pc-windows-msvc.zip
+        sha256: 683b604024eb1f81b3eefe3a8ad844d9d778711526342e47101ef1246c1e95ba
   0.68.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.68.0/nu-0.68.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: ab670066c8d468ad34e7fe2175ae2967aafba155da673d8a671a2ed75be7ce58
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.68.0/nu-0.68.0-aarch64-apple-darwin.tar.gz
-      sha256: 9837ef1dd242560b34e457b608e43e1b487cced6e72a0ffd6edd33df1408fff2
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.68.0/nu-0.68.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: de921521ddd77c35eb13d8d23d8611b834e8ffbeec52eef42e023b2fc49b04cd
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.68.0/nu-0.68.0-x86_64-apple-darwin.tar.gz
-      sha256: a835e050cc77269397cb1457d014185926d5aa3b29d78d65e376bdb0da8c93c1
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.68.0/nu-0.68.0-x86_64-pc-windows-msvc.zip
-      sha256: 5f517eee68a62f11f63eb3244c2fab316ba5e3ed7359e9ca02fd7ed6ffccb0ae
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.68.0/nu-0.68.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: ab670066c8d468ad34e7fe2175ae2967aafba155da673d8a671a2ed75be7ce58
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.68.0/nu-0.68.0-aarch64-apple-darwin.tar.gz
+        sha256: 9837ef1dd242560b34e457b608e43e1b487cced6e72a0ffd6edd33df1408fff2
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.68.0/nu-0.68.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: de921521ddd77c35eb13d8d23d8611b834e8ffbeec52eef42e023b2fc49b04cd
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.68.0/nu-0.68.0-x86_64-apple-darwin.tar.gz
+        sha256: a835e050cc77269397cb1457d014185926d5aa3b29d78d65e376bdb0da8c93c1
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.68.0/nu-0.68.0-x86_64-pc-windows-msvc.zip
+        sha256: 5f517eee68a62f11f63eb3244c2fab316ba5e3ed7359e9ca02fd7ed6ffccb0ae
   0.68.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.68.1/nu-0.68.1-aarch64-unknown-linux-gnu.tar.gz
-      sha256: f57fd88bda2c447e5b8ea8f769039132779317d03adda1c985a57b4308c8cf79
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.68.1/nu-0.68.1-aarch64-apple-darwin.tar.gz
-      sha256: 818feddace62530d400f3e1ec9f5169ae84d635900248f839c27126fbdc17936
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.68.1/nu-0.68.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: 3f09371c13cff33c6969e68c29d6c5996004e5511f281b5a69e58b4a3f7ffba9
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.68.1/nu-0.68.1-x86_64-apple-darwin.tar.gz
-      sha256: e7aa7a9c6b0d82cf82db49f2ea71ab5059da39e80d8957b1a462a4ec8549e9ce
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.68.1/nu-0.68.1-x86_64-pc-windows-msvc.zip
-      sha256: f013c2c7b59533d56411f6e4ff195a48e6a1c8fc77836499801ca981f47582b3
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.68.1/nu-0.68.1-aarch64-unknown-linux-gnu.tar.gz
+        sha256: f57fd88bda2c447e5b8ea8f769039132779317d03adda1c985a57b4308c8cf79
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.68.1/nu-0.68.1-aarch64-apple-darwin.tar.gz
+        sha256: 818feddace62530d400f3e1ec9f5169ae84d635900248f839c27126fbdc17936
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.68.1/nu-0.68.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: 3f09371c13cff33c6969e68c29d6c5996004e5511f281b5a69e58b4a3f7ffba9
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.68.1/nu-0.68.1-x86_64-apple-darwin.tar.gz
+        sha256: e7aa7a9c6b0d82cf82db49f2ea71ab5059da39e80d8957b1a462a4ec8549e9ce
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.68.1/nu-0.68.1-x86_64-pc-windows-msvc.zip
+        sha256: f013c2c7b59533d56411f6e4ff195a48e6a1c8fc77836499801ca981f47582b3
   0.69.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.69.1/nu-0.69.1-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 5c05575291905ede3958ce03430a6ca0ebd2f1435528ddaee1783406570e1c5f
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.69.1/nu-0.69.1-aarch64-apple-darwin.tar.gz
-      sha256: 630401234d97df03e64d00094f43c172d6a1f994eb9134506d5bb8559b8dc260
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.69.1/nu-0.69.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: 81aa80cc024317c7b5f5a3c0d6eee3246a7f5bbebd3ac519b1f9bcef03ae67ce
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.69.1/nu-0.69.1-x86_64-apple-darwin.tar.gz
-      sha256: beec7ef69fd93be9b3ca8961f0c1ee84d3d2f6b930bf019590eff4acc5349678
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.69.1/nu-0.69.1-x86_64-pc-windows-msvc.zip
-      sha256: 4e180b888ee5395a208ead1b6a332c0c4bbf840702dd89e9e431ac0794c9da6a
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.69.1/nu-0.69.1-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 5c05575291905ede3958ce03430a6ca0ebd2f1435528ddaee1783406570e1c5f
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.69.1/nu-0.69.1-aarch64-apple-darwin.tar.gz
+        sha256: 630401234d97df03e64d00094f43c172d6a1f994eb9134506d5bb8559b8dc260
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.69.1/nu-0.69.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: 81aa80cc024317c7b5f5a3c0d6eee3246a7f5bbebd3ac519b1f9bcef03ae67ce
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.69.1/nu-0.69.1-x86_64-apple-darwin.tar.gz
+        sha256: beec7ef69fd93be9b3ca8961f0c1ee84d3d2f6b930bf019590eff4acc5349678
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.69.1/nu-0.69.1-x86_64-pc-windows-msvc.zip
+        sha256: 4e180b888ee5395a208ead1b6a332c0c4bbf840702dd89e9e431ac0794c9da6a
   0.70.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.70.0/nu-0.70.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: d71b8eadc8ddf441c834751b568a0d0918681be54c88910f1590c81d09b89162
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.70.0/nu-0.70.0-aarch64-apple-darwin.tar.gz
-      sha256: 606c9f4d750cfe2d0f7f6cc6dd94bcff599ad3b62a91567a8f2a7bc590c6dc88
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.70.0/nu-0.70.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 40ba6ca04d19be072eec28499ce8b83711ef7bd8aa213c2d6ecf611b2e6da81e
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.70.0/nu-0.70.0-x86_64-apple-darwin.tar.gz
-      sha256: 07c170efdb742c9e170c65bf6d528dcd0168f0f24306902beebe09a6ed098e56
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.70.0/nu-0.70.0-x86_64-pc-windows-msvc.zip
-      sha256: 113cf47509b06391547c41ee196b93ac83b5bcca37aa953798d988925c97cca7
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.70.0/nu-0.70.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: d71b8eadc8ddf441c834751b568a0d0918681be54c88910f1590c81d09b89162
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.70.0/nu-0.70.0-aarch64-apple-darwin.tar.gz
+        sha256: 606c9f4d750cfe2d0f7f6cc6dd94bcff599ad3b62a91567a8f2a7bc590c6dc88
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.70.0/nu-0.70.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 40ba6ca04d19be072eec28499ce8b83711ef7bd8aa213c2d6ecf611b2e6da81e
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.70.0/nu-0.70.0-x86_64-apple-darwin.tar.gz
+        sha256: 07c170efdb742c9e170c65bf6d528dcd0168f0f24306902beebe09a6ed098e56
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.70.0/nu-0.70.0-x86_64-pc-windows-msvc.zip
+        sha256: 113cf47509b06391547c41ee196b93ac83b5bcca37aa953798d988925c97cca7
   0.71.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.71.0/nu-0.71.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: cd02a5402c812a76803e2a0a94e0726b3e72f8f9cd30208c8ef7b2f6ac7c676e
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.71.0/nu-0.71.0-aarch64-apple-darwin.tar.gz
-      sha256: 682a7c61950775480b857844dbc0b9abd0978cd0dbd9b4c6640c231a7cd613b3
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.71.0/nu-0.71.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: f49569d1e6da433a90939220377f947641e61384a3d51f040a10286494f9357e
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.71.0/nu-0.71.0-x86_64-apple-darwin.tar.gz
-      sha256: 3dc24bea73c2c3d0742e2ed6a66b9704ff5ba99fe9459ea416c11332b3787d0d
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.71.0/nu-0.71.0-x86_64-pc-windows-msvc.zip
-      sha256: c38826f5c6f5ad2a7241244ecff4bfa658cc72cf37fda0b1608d74bcf05ac376
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.71.0/nu-0.71.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: cd02a5402c812a76803e2a0a94e0726b3e72f8f9cd30208c8ef7b2f6ac7c676e
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.71.0/nu-0.71.0-aarch64-apple-darwin.tar.gz
+        sha256: 682a7c61950775480b857844dbc0b9abd0978cd0dbd9b4c6640c231a7cd613b3
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.71.0/nu-0.71.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: f49569d1e6da433a90939220377f947641e61384a3d51f040a10286494f9357e
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.71.0/nu-0.71.0-x86_64-apple-darwin.tar.gz
+        sha256: 3dc24bea73c2c3d0742e2ed6a66b9704ff5ba99fe9459ea416c11332b3787d0d
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.71.0/nu-0.71.0-x86_64-pc-windows-msvc.zip
+        sha256: c38826f5c6f5ad2a7241244ecff4bfa658cc72cf37fda0b1608d74bcf05ac376
   0.72.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: ffbd198ba7d6595579ed10948456215837c2f95d571980d3fdb591b0c7d83f99
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-aarch64-apple-darwin.tar.gz
-      sha256: 87e90fa8468f5919bd7dd6bed3b0f2339765e277451455b36617aacefb73c77d
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 75903cd41ebbf7f6c3fd84e30470b91ceb98911c61abad6557960f1fd4076a3a
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-x86_64-apple-darwin.tar.gz
-      sha256: 60bf835d6c9adafbee02e30d9a035a26cc0cd6fe001898281397b9d16b1de80d
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-x86_64-pc-windows-msvc.zip
-      sha256: bb51a43b10b0e5afc9d62b27d8d12d340d9c2add7df2467d46076cfd3d7d85c2
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: ffbd198ba7d6595579ed10948456215837c2f95d571980d3fdb591b0c7d83f99
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-aarch64-apple-darwin.tar.gz
+        sha256: 87e90fa8468f5919bd7dd6bed3b0f2339765e277451455b36617aacefb73c77d
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 75903cd41ebbf7f6c3fd84e30470b91ceb98911c61abad6557960f1fd4076a3a
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-x86_64-apple-darwin.tar.gz
+        sha256: 60bf835d6c9adafbee02e30d9a035a26cc0cd6fe001898281397b9d16b1de80d
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.72.0/nu-0.72.0-x86_64-pc-windows-msvc.zip
+        sha256: bb51a43b10b0e5afc9d62b27d8d12d340d9c2add7df2467d46076cfd3d7d85c2
   0.72.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.72.1/nu-0.72.1-aarch64-unknown-linux-gnu.tar.gz
-      sha256: a683926e7fc6acf0d88a2a2f7dc4707d4d299fcaa001131a058c696a63af8d72
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.72.1/nu-0.72.1-aarch64-apple-darwin.tar.gz
-      sha256: 99d4d7344f5d632c8691d111ecee22faa851b7444074770515091ee543bc77ec
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.72.1/nu-0.72.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: 4bf42995b23c2b2e6aacbf06f49a6f66830c568a969c1e5e8d875e33164b5ff7
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.72.1/nu-0.72.1-x86_64-apple-darwin.tar.gz
-      sha256: f4a601b46b0ba7cbaf120c2dd3f95536b365563bfddc244edadc794a30b238dd
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.72.1/nu-0.72.1-x86_64-pc-windows-msvc.zip
-      sha256: 665190278a4cd5c8bfe3cd9ba8f010cbd032847612a2d2b03017a985e531474a
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.72.1/nu-0.72.1-aarch64-unknown-linux-gnu.tar.gz
+        sha256: a683926e7fc6acf0d88a2a2f7dc4707d4d299fcaa001131a058c696a63af8d72
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.72.1/nu-0.72.1-aarch64-apple-darwin.tar.gz
+        sha256: 99d4d7344f5d632c8691d111ecee22faa851b7444074770515091ee543bc77ec
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.72.1/nu-0.72.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: 4bf42995b23c2b2e6aacbf06f49a6f66830c568a969c1e5e8d875e33164b5ff7
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.72.1/nu-0.72.1-x86_64-apple-darwin.tar.gz
+        sha256: f4a601b46b0ba7cbaf120c2dd3f95536b365563bfddc244edadc794a30b238dd
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.72.1/nu-0.72.1-x86_64-pc-windows-msvc.zip
+        sha256: 665190278a4cd5c8bfe3cd9ba8f010cbd032847612a2d2b03017a985e531474a
   0.73.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.73.0/nu-0.73.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 68f12ecef8bab8ae571b472a2eedd955e8e4b2660499eab25e9c1be5d12dd1ce
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.73.0/nu-0.73.0-aarch64-apple-darwin.tar.gz
-      sha256: 4edbf03e69fda202964c0fe32ab97a3a71ffd1152e7dd184c443d188b6452613
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.73.0/nu-0.73.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: aae67aab03db25625b1c3fe30fe309ac1a0d5d97e4be27f1d1882c47fbd99ec2
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.73.0/nu-0.73.0-x86_64-apple-darwin.tar.gz
-      sha256: 62bbfe89e6e4a631ded97837d9b29d8d8f795047029d918fd88bb4fc63cd81b0
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.73.0/nu-0.73.0-x86_64-pc-windows-msvc.zip
-      sha256: 328120fa2752814e60ceae5416ec5544f92af8865c5d7e638a6e0e82ba16af9f
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.73.0/nu-0.73.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 68f12ecef8bab8ae571b472a2eedd955e8e4b2660499eab25e9c1be5d12dd1ce
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.73.0/nu-0.73.0-aarch64-apple-darwin.tar.gz
+        sha256: 4edbf03e69fda202964c0fe32ab97a3a71ffd1152e7dd184c443d188b6452613
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.73.0/nu-0.73.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: aae67aab03db25625b1c3fe30fe309ac1a0d5d97e4be27f1d1882c47fbd99ec2
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.73.0/nu-0.73.0-x86_64-apple-darwin.tar.gz
+        sha256: 62bbfe89e6e4a631ded97837d9b29d8d8f795047029d918fd88bb4fc63cd81b0
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.73.0/nu-0.73.0-x86_64-pc-windows-msvc.zip
+        sha256: 328120fa2752814e60ceae5416ec5544f92af8865c5d7e638a6e0e82ba16af9f
   0.74.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.74.0/nu-0.74.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 4e2d216d731e07c4232ae4f455c3eb779bb9a056c3d05b181e2164098c6a02db
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.74.0/nu-0.74.0-aarch64-apple-darwin.tar.gz
-      sha256: 145a831e1652390f67540e4fc7651b78b572634fea952c22942d10034b4288b5
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.74.0/nu-0.74.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 32b5b88124b498161159513fee293bfb0e8a93238f52f78e013941d578732bfe
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.74.0/nu-0.74.0-x86_64-apple-darwin.tar.gz
-      sha256: c2adb8067d5792bbd05213ee26fe4595c5229ba5792bec3488d1cdb06dc94683
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.74.0/nu-0.74.0-x86_64-pc-windows-msvc.zip
-      sha256: 49c97a7a31ed51a20d1ae00e4fa9b9076c96b017315cda4451e87a3db51698d4
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.74.0/nu-0.74.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 4e2d216d731e07c4232ae4f455c3eb779bb9a056c3d05b181e2164098c6a02db
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.74.0/nu-0.74.0-aarch64-apple-darwin.tar.gz
+        sha256: 145a831e1652390f67540e4fc7651b78b572634fea952c22942d10034b4288b5
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.74.0/nu-0.74.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 32b5b88124b498161159513fee293bfb0e8a93238f52f78e013941d578732bfe
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.74.0/nu-0.74.0-x86_64-apple-darwin.tar.gz
+        sha256: c2adb8067d5792bbd05213ee26fe4595c5229ba5792bec3488d1cdb06dc94683
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.74.0/nu-0.74.0-x86_64-pc-windows-msvc.zip
+        sha256: 49c97a7a31ed51a20d1ae00e4fa9b9076c96b017315cda4451e87a3db51698d4
   0.75.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.75.0/nu-0.75.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 5d952fe49ed3641375201161e04fc0015737aa5c93755ab8ae903811a7ce0247
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.75.0/nu-0.75.0-aarch64-apple-darwin.tar.gz
-      sha256: d7ac819a75cce9d4b3eb3dc9d90e6ae51bd383530b58bf03264f1f194345d968
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.75.0/nu-0.75.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 3598dd0319bcb9aaa82005fa3beacbd3cb24c0199951057a7a2cf5072784d570
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.75.0/nu-0.75.0-x86_64-apple-darwin.tar.gz
-      sha256: c39f36b41bdb584347af440bfeb6ec2715975635f43f2e07f685ea1107748a33
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.75.0/nu-0.75.0-x86_64-pc-windows-msvc.zip
-      sha256: b6c2035a7fee3d354b60de3c271f96d19c839cc56ffa95588d5bb6793903413d
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.75.0/nu-0.75.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 5d952fe49ed3641375201161e04fc0015737aa5c93755ab8ae903811a7ce0247
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.75.0/nu-0.75.0-aarch64-apple-darwin.tar.gz
+        sha256: d7ac819a75cce9d4b3eb3dc9d90e6ae51bd383530b58bf03264f1f194345d968
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.75.0/nu-0.75.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 3598dd0319bcb9aaa82005fa3beacbd3cb24c0199951057a7a2cf5072784d570
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.75.0/nu-0.75.0-x86_64-apple-darwin.tar.gz
+        sha256: c39f36b41bdb584347af440bfeb6ec2715975635f43f2e07f685ea1107748a33
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.75.0/nu-0.75.0-x86_64-pc-windows-msvc.zip
+        sha256: b6c2035a7fee3d354b60de3c271f96d19c839cc56ffa95588d5bb6793903413d
   0.76.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.76.0/nu-0.76.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: d27c5b550982cd083d633f703a31f5292d3892cc65361efc2ef085ed0fd34d1a
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.76.0/nu-0.76.0-aarch64-apple-darwin.tar.gz
-      sha256: 1e7d5ec0bc8ba4c641c70edc84301e1f8d057b3f322e803c4de856a11928c9b2
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.76.0/nu-0.76.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 9281e2873ee6b04b7c2101662a24d88efd091c5fb3665f67e782993e40ffe136
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.76.0/nu-0.76.0-x86_64-apple-darwin.tar.gz
-      sha256: e09f12e14ecba9577518fad0974e5074e67c38c61ac1bf5c528b2a02633657de
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.76.0/nu-0.76.0-x86_64-pc-windows-msvc.zip
-      sha256: 6534c66eee3b939b2f93056cc54b26c577b24836ebf9ef2f9e70d50a0491e0e6
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.76.0/nu-0.76.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: d27c5b550982cd083d633f703a31f5292d3892cc65361efc2ef085ed0fd34d1a
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.76.0/nu-0.76.0-aarch64-apple-darwin.tar.gz
+        sha256: 1e7d5ec0bc8ba4c641c70edc84301e1f8d057b3f322e803c4de856a11928c9b2
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.76.0/nu-0.76.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 9281e2873ee6b04b7c2101662a24d88efd091c5fb3665f67e782993e40ffe136
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.76.0/nu-0.76.0-x86_64-apple-darwin.tar.gz
+        sha256: e09f12e14ecba9577518fad0974e5074e67c38c61ac1bf5c528b2a02633657de
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.76.0/nu-0.76.0-x86_64-pc-windows-msvc.zip
+        sha256: 6534c66eee3b939b2f93056cc54b26c577b24836ebf9ef2f9e70d50a0491e0e6
   0.77.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.77.0/nu-0.77.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 47acfa96cc35155ace70a8b14bf3074a138cc43a1ecdc1543a233d638b095bca
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.77.0/nu-0.77.0-aarch64-apple-darwin.tar.gz
-      sha256: a79a65df2c645d5e4c1238788e5fdc984400bd91cda4d014fe8cdf97ccb59622
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.77.0/nu-0.77.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 7acb62b163e55be028e1acb1c6302c89be6783afd2446fbc3a559ad136db40d7
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.77.0/nu-0.77.0-x86_64-apple-darwin.tar.gz
-      sha256: b55a65572efe03ecdcc5003a1ddab3660f7cc6f244bfc20e032f4828cc84e053
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.77.0/nu-0.77.0-x86_64-pc-windows-msvc.zip
-      sha256: 44da37e59767482ad0d978441268f95554e505651ef06979103c6cdb13168bbc
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.77.0/nu-0.77.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 47acfa96cc35155ace70a8b14bf3074a138cc43a1ecdc1543a233d638b095bca
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.77.0/nu-0.77.0-aarch64-apple-darwin.tar.gz
+        sha256: a79a65df2c645d5e4c1238788e5fdc984400bd91cda4d014fe8cdf97ccb59622
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.77.0/nu-0.77.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 7acb62b163e55be028e1acb1c6302c89be6783afd2446fbc3a559ad136db40d7
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.77.0/nu-0.77.0-x86_64-apple-darwin.tar.gz
+        sha256: b55a65572efe03ecdcc5003a1ddab3660f7cc6f244bfc20e032f4828cc84e053
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.77.0/nu-0.77.0-x86_64-pc-windows-msvc.zip
+        sha256: 44da37e59767482ad0d978441268f95554e505651ef06979103c6cdb13168bbc
   0.77.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.77.1/nu-0.77.1-aarch64-unknown-linux-gnu.tar.gz
-      sha256: e00e09f8d6dea839ca835fae930fa6ecd0446e04536a313322f0bf5311213011
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.77.1/nu-0.77.1-aarch64-apple-darwin.tar.gz
-      sha256: fbc63ce24c6f8d352d51e2b5c9c381cb116ce5a4789352eab88decb70cc747f0
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.77.1/nu-0.77.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: f5d2a2aba2442498a71aaa3e73164f81cbdda43f4265bd55846f702fae41ebfb
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.77.1/nu-0.77.1-x86_64-apple-darwin.tar.gz
-      sha256: 3134cae7b824b3ded4b1928560f186a330bf6ffcbd1b3a5058887a1f2e57f509
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.77.1/nu-0.77.1-x86_64-pc-windows-msvc.zip
-      sha256: 97d5e28ae9266ecf77c0422aa0cddf8acd7221ddf58d0e4063a8abbf5a91599f
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.77.1/nu-0.77.1-aarch64-unknown-linux-gnu.tar.gz
+        sha256: e00e09f8d6dea839ca835fae930fa6ecd0446e04536a313322f0bf5311213011
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.77.1/nu-0.77.1-aarch64-apple-darwin.tar.gz
+        sha256: fbc63ce24c6f8d352d51e2b5c9c381cb116ce5a4789352eab88decb70cc747f0
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.77.1/nu-0.77.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: f5d2a2aba2442498a71aaa3e73164f81cbdda43f4265bd55846f702fae41ebfb
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.77.1/nu-0.77.1-x86_64-apple-darwin.tar.gz
+        sha256: 3134cae7b824b3ded4b1928560f186a330bf6ffcbd1b3a5058887a1f2e57f509
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.77.1/nu-0.77.1-x86_64-pc-windows-msvc.zip
+        sha256: 97d5e28ae9266ecf77c0422aa0cddf8acd7221ddf58d0e4063a8abbf5a91599f
   0.78.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.78.0/nu-0.78.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 4fc6d6143612b496c88b5a42ce09caad8c47f241a479ee15444f6d539b28f587
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.78.0/nu-0.78.0-aarch64-apple-darwin.tar.gz
-      sha256: 86522ad949aa967dfeec7a1f9c69b3fb7bb5cee38073ed2c4cb930a44e37d766
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.78.0/nu-0.78.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 42925f0b697c1d1010953753df30f0d6cdb87b181d48c5736e12ac18dad5f372
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.78.0/nu-0.78.0-x86_64-apple-darwin.tar.gz
-      sha256: 399ff4a8f69dd27ed3ab2e2f6018e465813254f5d01b5961e38d5e60c5d40c19
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.78.0/nu-0.78.0-x86_64-pc-windows-msvc.zip
-      sha256: ae450d75b0bd17b299c317b551142fe341e8f80d2deda39475754345824dedac
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.78.0/nu-0.78.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 4fc6d6143612b496c88b5a42ce09caad8c47f241a479ee15444f6d539b28f587
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.78.0/nu-0.78.0-aarch64-apple-darwin.tar.gz
+        sha256: 86522ad949aa967dfeec7a1f9c69b3fb7bb5cee38073ed2c4cb930a44e37d766
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.78.0/nu-0.78.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 42925f0b697c1d1010953753df30f0d6cdb87b181d48c5736e12ac18dad5f372
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.78.0/nu-0.78.0-x86_64-apple-darwin.tar.gz
+        sha256: 399ff4a8f69dd27ed3ab2e2f6018e465813254f5d01b5961e38d5e60c5d40c19
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.78.0/nu-0.78.0-x86_64-pc-windows-msvc.zip
+        sha256: ae450d75b0bd17b299c317b551142fe341e8f80d2deda39475754345824dedac
   0.79.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.79.0/nu-0.79.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: db65aa46b74720cd0aa73c313ccda8a359a34b8a07a45996b04c234a9f25efad
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.79.0/nu-0.79.0-aarch64-apple-darwin.tar.gz
-      sha256: 50082cfc84dcfdc5cd79a7aa703d4fd5af15805032adb08d5dff3bc0b7efb570
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.79.0/nu-0.79.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: d326bf1143dddb51a8e0a3d9d2774c4874b93eaa62ca154a2cf88403b2ff3fa6
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.79.0/nu-0.79.0-x86_64-apple-darwin.tar.gz
-      sha256: 00bf36baec370ddf2106795c21f5ab2bba4860048ef2fadfe913e77b89dba5f8
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.79.0/nu-0.79.0-x86_64-pc-windows-msvc.zip
-      sha256: 6221e881e35535c1a22e1ca98f8ea00194887f416bfbe665e83392cef9eced4c
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.79.0/nu-0.79.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: db65aa46b74720cd0aa73c313ccda8a359a34b8a07a45996b04c234a9f25efad
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.79.0/nu-0.79.0-aarch64-apple-darwin.tar.gz
+        sha256: 50082cfc84dcfdc5cd79a7aa703d4fd5af15805032adb08d5dff3bc0b7efb570
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.79.0/nu-0.79.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: d326bf1143dddb51a8e0a3d9d2774c4874b93eaa62ca154a2cf88403b2ff3fa6
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.79.0/nu-0.79.0-x86_64-apple-darwin.tar.gz
+        sha256: 00bf36baec370ddf2106795c21f5ab2bba4860048ef2fadfe913e77b89dba5f8
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.79.0/nu-0.79.0-x86_64-pc-windows-msvc.zip
+        sha256: 6221e881e35535c1a22e1ca98f8ea00194887f416bfbe665e83392cef9eced4c
   0.80.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: b02d8a002926e12e5d0b0a04d4af887c7053deb2aaf11e49f6ed82b63ecc25b8
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-aarch64-apple-darwin.tar.gz
-      sha256: 9ac65e69b10df5bacaf8f51d96b1843c3a39429599d8f96345b847894de30cca
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 97a3ccd53bf4b102123aa93815f409a73515bb5f7bb8fd577a799c7555e8f84a
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-x86_64-apple-darwin.tar.gz
-      sha256: 5f1a5b60b402749215949426c9491c83677806c6747f283c05aab1a282d45635
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-x86_64-pc-windows-msvc.zip
-      sha256: 8d304b330b17363e3894bdcc0e6ed28c5b60678314c354a73008f1eb23b376ab
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: b02d8a002926e12e5d0b0a04d4af887c7053deb2aaf11e49f6ed82b63ecc25b8
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-aarch64-apple-darwin.tar.gz
+        sha256: 9ac65e69b10df5bacaf8f51d96b1843c3a39429599d8f96345b847894de30cca
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 97a3ccd53bf4b102123aa93815f409a73515bb5f7bb8fd577a799c7555e8f84a
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-x86_64-apple-darwin.tar.gz
+        sha256: 5f1a5b60b402749215949426c9491c83677806c6747f283c05aab1a282d45635
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.80.0/nu-0.80.0-x86_64-pc-windows-msvc.zip
+        sha256: 8d304b330b17363e3894bdcc0e6ed28c5b60678314c354a73008f1eb23b376ab
   0.81.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 83b2aab926973221ccca20136c365a26d6f5adc851b3e2a986f1c11b232cbfae
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-aarch64-apple-darwin.tar.gz
-      sha256: 8b4d30b9fbe8117fa6f53e0e758a42282a4d1b7b5620c02bb9ec1d5181ab2544
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-aarch64-pc-windows-msvc.zip
-      sha256: 49cb95f6bd3ca378e0519dd12bb3e3d0791b3b8a430b88f5e97480562f2365fa
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 225decb68629c2d6d754288e148aeb367cb14a21255c2ad692fa9b00db6ddff2
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-x86_64-apple-darwin.tar.gz
-      sha256: b412ae02d83a18ae24d81f92f7e60f22dca4ad4726d42d53f71ac0c7b546cd62
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-x86_64-pc-windows-msvc.zip
-      sha256: bbf7e0245980828bbf0fce2049a70948259e7cb2e1a4322b58c04e5bb6e91e55
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 83b2aab926973221ccca20136c365a26d6f5adc851b3e2a986f1c11b232cbfae
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-aarch64-apple-darwin.tar.gz
+        sha256: 8b4d30b9fbe8117fa6f53e0e758a42282a4d1b7b5620c02bb9ec1d5181ab2544
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-aarch64-pc-windows-msvc.zip
+        sha256: 49cb95f6bd3ca378e0519dd12bb3e3d0791b3b8a430b88f5e97480562f2365fa
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 225decb68629c2d6d754288e148aeb367cb14a21255c2ad692fa9b00db6ddff2
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-x86_64-apple-darwin.tar.gz
+        sha256: b412ae02d83a18ae24d81f92f7e60f22dca4ad4726d42d53f71ac0c7b546cd62
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.81.0/nu-0.81.0-x86_64-pc-windows-msvc.zip
+        sha256: bbf7e0245980828bbf0fce2049a70948259e7cb2e1a4322b58c04e5bb6e91e55
   0.82.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: f22791ab0e5041dec972cccbb4e7c13eb8af760d0021738c228b14ad8eebd99c
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-aarch64-apple-darwin.tar.gz
-      sha256: d2f3c5e2f6f80d60c98f7632177c7e15df7bdfeac0b20581c86a8fee10a937bf
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-aarch64-pc-windows-msvc.zip
-      sha256: a0c5b6b409c5be44b9d84c6466656406d8cd3796008caa0a1d8fcbe7408a6566
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 08239aa266f69b65153238cb3ed94c1de126a063f520b5f3471390737fed5b6b
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-x86_64-apple-darwin.tar.gz
-      sha256: 30535a1b61026311b267d937e5b4fda1ab9fd51ea5aa1ca62b61b65ab27eff48
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-x86_64-pc-windows-msvc.zip
-      sha256: a79e2875604db6eb4ed8886dcdbdea680914b9a0d2d3e7d8d6e1b745183b4577
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: f22791ab0e5041dec972cccbb4e7c13eb8af760d0021738c228b14ad8eebd99c
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-aarch64-apple-darwin.tar.gz
+        sha256: d2f3c5e2f6f80d60c98f7632177c7e15df7bdfeac0b20581c86a8fee10a937bf
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-aarch64-pc-windows-msvc.zip
+        sha256: a0c5b6b409c5be44b9d84c6466656406d8cd3796008caa0a1d8fcbe7408a6566
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 08239aa266f69b65153238cb3ed94c1de126a063f520b5f3471390737fed5b6b
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-x86_64-apple-darwin.tar.gz
+        sha256: 30535a1b61026311b267d937e5b4fda1ab9fd51ea5aa1ca62b61b65ab27eff48
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.82.0/nu-0.82.0-x86_64-pc-windows-msvc.zip
+        sha256: a79e2875604db6eb4ed8886dcdbdea680914b9a0d2d3e7d8d6e1b745183b4577
   0.83.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 450a7dd0029aed05789168b63c33746ed284270d77970fbde7f097a10bcb34c8
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-aarch64-apple-darwin.tar.gz
-      sha256: 1b7960ce5e87599ea96b04fead26e338a6a95478f93954974aa2ce118026d425
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-aarch64-pc-windows-msvc.zip
-      sha256: 0aa215166ccfcdd4ea15629f6a34719318b9238740f478064a8181ed88fe4208
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: b3202df782a1d17c6f50dae7a9eb7b9742ea840fb63c8611b6b6e5d7f195a46e
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-x86_64-apple-darwin.tar.gz
-      sha256: aee19fe2579c42bb058b0178df7131a89d4ecd1ed08471dfd74b5a6432e39191
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-x86_64-pc-windows-msvc.zip
-      sha256: b59b8f58372d886ccfd4f43ecde96ce4f09054a832aca774d7278df04d57ae5c
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 450a7dd0029aed05789168b63c33746ed284270d77970fbde7f097a10bcb34c8
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-aarch64-apple-darwin.tar.gz
+        sha256: 1b7960ce5e87599ea96b04fead26e338a6a95478f93954974aa2ce118026d425
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-aarch64-pc-windows-msvc.zip
+        sha256: 0aa215166ccfcdd4ea15629f6a34719318b9238740f478064a8181ed88fe4208
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: b3202df782a1d17c6f50dae7a9eb7b9742ea840fb63c8611b6b6e5d7f195a46e
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-x86_64-apple-darwin.tar.gz
+        sha256: aee19fe2579c42bb058b0178df7131a89d4ecd1ed08471dfd74b5a6432e39191
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.83.0/nu-0.83.0-x86_64-pc-windows-msvc.zip
+        sha256: b59b8f58372d886ccfd4f43ecde96ce4f09054a832aca774d7278df04d57ae5c
   0.83.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 510754cfa66371699971bc3ddfd89eb473026f6c2241b914f5dc05f29de7426c
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-aarch64-apple-darwin.tar.gz
-      sha256: 2a23b95bfcde3546cf7ccdf1bd112aea123c699d45edd7ba2f40599067a20af1
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-aarch64-pc-windows-msvc.zip
-      sha256: 0807b08291158bed3271101ed63c40ef7acca2586679428ccae299901286c2f1
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: 712295d1ec98aa530251ca57e5ac4ae1d6ca18d96f444e6d93aca9ae23cc585b
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-x86_64-apple-darwin.tar.gz
-      sha256: 60edd43f2fb29485cfc54292dafff678592955c3e1112ad792fa3397ea476d68
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-x86_64-pc-windows-msvc.zip
-      sha256: 1bc3dfd01f3e607c81b63cc7353ac6947a92d97d863b08c0602fecc63f050094
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 510754cfa66371699971bc3ddfd89eb473026f6c2241b914f5dc05f29de7426c
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-aarch64-apple-darwin.tar.gz
+        sha256: 2a23b95bfcde3546cf7ccdf1bd112aea123c699d45edd7ba2f40599067a20af1
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-aarch64-pc-windows-msvc.zip
+        sha256: 0807b08291158bed3271101ed63c40ef7acca2586679428ccae299901286c2f1
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: 712295d1ec98aa530251ca57e5ac4ae1d6ca18d96f444e6d93aca9ae23cc585b
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-x86_64-apple-darwin.tar.gz
+        sha256: 60edd43f2fb29485cfc54292dafff678592955c3e1112ad792fa3397ea476d68
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.83.1/nu-0.83.1-x86_64-pc-windows-msvc.zip
+        sha256: 1bc3dfd01f3e607c81b63cc7353ac6947a92d97d863b08c0602fecc63f050094
   0.84.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 47c7af24ba2f27ffec5b4c5d70832789f6a5474e0f3e7753c5f801e21761d446
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-aarch64-apple-darwin.tar.gz
-      sha256: 488fed29525b22e6fbf66df7de2c5d7d17b0e7c4b647f8209b59cc4a75558331
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-aarch64-pc-windows-msvc.zip
-      sha256: 31652f6fdb61addc506444ee8d03f50ef8074c91308184fe453b59a5c8d3b63e
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 541f63384fe88535bcb0b2d78ee9deba23d93a9061eb534160d1fc15ed4d4c80
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-x86_64-apple-darwin.tar.gz
-      sha256: 33d58888e6cfd6e5db084728d8c26dc1e5ecc885261ef8d89a63f8d8a075c87e
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-x86_64-pc-windows-msvc.zip
-      sha256: e738af6d8fb9e29dc43417ed6645bc2b774c5c2dda8d24ace5565eb030f79903
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 47c7af24ba2f27ffec5b4c5d70832789f6a5474e0f3e7753c5f801e21761d446
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-aarch64-apple-darwin.tar.gz
+        sha256: 488fed29525b22e6fbf66df7de2c5d7d17b0e7c4b647f8209b59cc4a75558331
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-aarch64-pc-windows-msvc.zip
+        sha256: 31652f6fdb61addc506444ee8d03f50ef8074c91308184fe453b59a5c8d3b63e
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 541f63384fe88535bcb0b2d78ee9deba23d93a9061eb534160d1fc15ed4d4c80
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-x86_64-apple-darwin.tar.gz
+        sha256: 33d58888e6cfd6e5db084728d8c26dc1e5ecc885261ef8d89a63f8d8a075c87e
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.84.0/nu-0.84.0-x86_64-pc-windows-msvc.zip
+        sha256: e738af6d8fb9e29dc43417ed6645bc2b774c5c2dda8d24ace5565eb030f79903
   0.85.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 6a49b6bf3f431e654a1af797442cf468fc45816a75ce0cb27faf1750bcccbba9
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-aarch64-apple-darwin.tar.gz
-      sha256: bbd9e6b4b2895e949d9b67f4659b0fe9d3af0941ec3575f7a123cd6ef74f5293
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-aarch64-pc-windows-msvc.zip
-      sha256: cb94c33f389261e6ac6aec2ffed15a9228ebbc4b6dc670cffc47b22cb03a8263
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 49641bc52962336f18be71dd7ec12a38269eae884fb932cffe952a796f9b9bf7
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-x86_64-apple-darwin.tar.gz
-      sha256: 9bc00f522138babddd2683b007a1aae093ce9b2ba4f223241228cf19cbd9f55d
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-x86_64-pc-windows-msvc.zip
-      sha256: 737f0906a2033d381999bb31a89678d33999d9dbf5c703354252a80a64f5d9ca
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 6a49b6bf3f431e654a1af797442cf468fc45816a75ce0cb27faf1750bcccbba9
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-aarch64-apple-darwin.tar.gz
+        sha256: bbd9e6b4b2895e949d9b67f4659b0fe9d3af0941ec3575f7a123cd6ef74f5293
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-aarch64-pc-windows-msvc.zip
+        sha256: cb94c33f389261e6ac6aec2ffed15a9228ebbc4b6dc670cffc47b22cb03a8263
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 49641bc52962336f18be71dd7ec12a38269eae884fb932cffe952a796f9b9bf7
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-x86_64-apple-darwin.tar.gz
+        sha256: 9bc00f522138babddd2683b007a1aae093ce9b2ba4f223241228cf19cbd9f55d
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.85.0/nu-0.85.0-x86_64-pc-windows-msvc.zip
+        sha256: 737f0906a2033d381999bb31a89678d33999d9dbf5c703354252a80a64f5d9ca
   0.86.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-aarch64-linux-gnu-full.tar.gz
-      sha256: d352e04d719babaf75626c7899e0b88833d554ddfa6d35eedb7710fdf4907a36
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-aarch64-apple-darwin.tar.gz
-      sha256: 4070f41a3e0c6b1fda7dc0e5634ebb93895bdab81d7de78d3aa876dec70bc064
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-aarch64-pc-windows-msvc.zip
-      sha256: aaf873f5ce503e20820bbcec4d3aa224d73d2405788753abaa3330e281222fba
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-x86_64-linux-musl-full.tar.gz
-      sha256: 3aa63c3310a9f7a203bab0b82b318d6083cc7e38cc703b9ec2a002ebc7c2b285
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-x86_64-apple-darwin.tar.gz
-      sha256: d4f9b22869f84581b54cb9730be857d2c156514110ba44abf703bac69a557020
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-x86_64-pc-windows-msvc.zip
-      sha256: 64e381a82289594e5cc2053cdd3c34e597affd2419acdd1645a983f9953aaba5
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-aarch64-linux-gnu-full.tar.gz
+        sha256: d352e04d719babaf75626c7899e0b88833d554ddfa6d35eedb7710fdf4907a36
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-aarch64-apple-darwin.tar.gz
+        sha256: 4070f41a3e0c6b1fda7dc0e5634ebb93895bdab81d7de78d3aa876dec70bc064
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-aarch64-pc-windows-msvc.zip
+        sha256: aaf873f5ce503e20820bbcec4d3aa224d73d2405788753abaa3330e281222fba
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-x86_64-linux-musl-full.tar.gz
+        sha256: 3aa63c3310a9f7a203bab0b82b318d6083cc7e38cc703b9ec2a002ebc7c2b285
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-x86_64-apple-darwin.tar.gz
+        sha256: d4f9b22869f84581b54cb9730be857d2c156514110ba44abf703bac69a557020
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.86.0/nu-0.86.0-x86_64-pc-windows-msvc.zip
+        sha256: 64e381a82289594e5cc2053cdd3c34e597affd2419acdd1645a983f9953aaba5
   0.87.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-aarch64-linux-gnu-full.tar.gz
-      sha256: da9545fc46e31cdc7954d0014c542ddceb84068798733f98147880d5e412ebb0
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-aarch64-apple-darwin.tar.gz
-      sha256: caa236fc81847be8c5f0c2b331328d4c7060882aec726480f88f17830fe1dd7e
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-aarch64-pc-windows-msvc.zip
-      sha256: 035ea25e5b506dbad57054f9e2aed2dfc3e85f9c84eb6fcd1f027c5093794e24
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-x86_64-linux-musl-full.tar.gz
-      sha256: e050ca4c299787a4804664dcbb6d1729441e0625fb5675e05e3d34ce8a84228e
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-x86_64-apple-darwin.tar.gz
-      sha256: c8811f682ee4f426e0b77d87ebdb50663803735228eca0a0f53166bb88d513ff
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-x86_64-pc-windows-msvc.zip
-      sha256: 484f51f3aa62f30f2f61ad5fbe3655a1553d1ac23f40bceb0a62aeca6418b96d
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-aarch64-linux-gnu-full.tar.gz
+        sha256: da9545fc46e31cdc7954d0014c542ddceb84068798733f98147880d5e412ebb0
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-aarch64-apple-darwin.tar.gz
+        sha256: caa236fc81847be8c5f0c2b331328d4c7060882aec726480f88f17830fe1dd7e
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-aarch64-pc-windows-msvc.zip
+        sha256: 035ea25e5b506dbad57054f9e2aed2dfc3e85f9c84eb6fcd1f027c5093794e24
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-x86_64-linux-musl-full.tar.gz
+        sha256: e050ca4c299787a4804664dcbb6d1729441e0625fb5675e05e3d34ce8a84228e
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-x86_64-apple-darwin.tar.gz
+        sha256: c8811f682ee4f426e0b77d87ebdb50663803735228eca0a0f53166bb88d513ff
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.87.0/nu-0.87.0-x86_64-pc-windows-msvc.zip
+        sha256: 484f51f3aa62f30f2f61ad5fbe3655a1553d1ac23f40bceb0a62aeca6418b96d
   0.87.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-aarch64-linux-gnu-full.tar.gz
-      sha256: 32b5f6503d0e17ba67a496ca2e99824db748816cedd1e89ee29b657ec79f3fc5
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-aarch64-apple-darwin.tar.gz
-      sha256: 47ee1e9c34e457242d018cec9a92c502b0d363566263624088e149ad0a34c45d
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-aarch64-pc-windows-msvc.zip
-      sha256: a9000d9a541b71449f12b58c55edbdc3aa4ea17777a52eeba9a7111b742e1d66
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-x86_64-linux-musl-full.tar.gz
-      sha256: 87f5bf4fb7a7f07d2574567293087569ded6fef27ad77aa2322354cd73e9f816
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-x86_64-apple-darwin.tar.gz
-      sha256: 5158938a54b1003ce5b0fc8f95d11e15cc3a98b9e7f0fecbf3ebb3838b683fcc
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-x86_64-pc-windows-msvc.zip
-      sha256: 21756831c0c735a809cd4451254242dcc18d315ebee10a4ee2e16c8be14ee5f7
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-aarch64-linux-gnu-full.tar.gz
+        sha256: 32b5f6503d0e17ba67a496ca2e99824db748816cedd1e89ee29b657ec79f3fc5
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-aarch64-apple-darwin.tar.gz
+        sha256: 47ee1e9c34e457242d018cec9a92c502b0d363566263624088e149ad0a34c45d
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-aarch64-pc-windows-msvc.zip
+        sha256: a9000d9a541b71449f12b58c55edbdc3aa4ea17777a52eeba9a7111b742e1d66
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-x86_64-linux-musl-full.tar.gz
+        sha256: 87f5bf4fb7a7f07d2574567293087569ded6fef27ad77aa2322354cd73e9f816
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-x86_64-apple-darwin.tar.gz
+        sha256: 5158938a54b1003ce5b0fc8f95d11e15cc3a98b9e7f0fecbf3ebb3838b683fcc
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.87.1/nu-0.87.1-x86_64-pc-windows-msvc.zip
+        sha256: 21756831c0c735a809cd4451254242dcc18d315ebee10a4ee2e16c8be14ee5f7
   0.88.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-aarch64-linux-gnu-full.tar.gz
-      sha256: b1e713ff2bf8b33d4e0efeb55a0756be1ce9bb1f9003108ff262278ebd8ca862
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-aarch64-apple-darwin.tar.gz
-      sha256: e496fb0526ee6a7dd5b2ab670e344bee70666bd29be4d3c406845f20dd4e8924
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-aarch64-pc-windows-msvc.zip
-      sha256: a4e0e1a7bf472a6dda5db8384c927c94267441d3e77fe2237bea099452101d0b
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-x86_64-linux-musl-full.tar.gz
-      sha256: a1a0178d3d16183b66590b795a97576a8b62f4712deea77b56fb1cf86957581e
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-x86_64-apple-darwin.tar.gz
-      sha256: 7f130973e267b4bf94088f419618f245312fca255c7101e0244e228719f69389
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-x86_64-pc-windows-msvc.zip
-      sha256: 1b2ed303601c6fd1499a0b7904d665187a893d507114f6357157933949ec975c
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-aarch64-linux-gnu-full.tar.gz
+        sha256: b1e713ff2bf8b33d4e0efeb55a0756be1ce9bb1f9003108ff262278ebd8ca862
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-aarch64-apple-darwin.tar.gz
+        sha256: e496fb0526ee6a7dd5b2ab670e344bee70666bd29be4d3c406845f20dd4e8924
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-aarch64-pc-windows-msvc.zip
+        sha256: a4e0e1a7bf472a6dda5db8384c927c94267441d3e77fe2237bea099452101d0b
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-x86_64-linux-musl-full.tar.gz
+        sha256: a1a0178d3d16183b66590b795a97576a8b62f4712deea77b56fb1cf86957581e
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-x86_64-apple-darwin.tar.gz
+        sha256: 7f130973e267b4bf94088f419618f245312fca255c7101e0244e228719f69389
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.88.0/nu-0.88.0-x86_64-pc-windows-msvc.zip
+        sha256: 1b2ed303601c6fd1499a0b7904d665187a893d507114f6357157933949ec975c
   0.88.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-aarch64-linux-gnu-full.tar.gz
-      sha256: f57685a46cbda4f5fc18acebba749d023cc97627efefaae8c1d35bb11afccc46
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-aarch64-apple-darwin.tar.gz
-      sha256: 478874586981e02035098cd7e36bbc97f4db3fac50084f624eef4c2140462bb5
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-aarch64-pc-windows-msvc.zip
-      sha256: 3f8c279367b801545335e4555cd1df9592fe4e43e42bd14c3cd0b48734d2896c
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-x86_64-linux-musl-full.tar.gz
-      sha256: 1065efb577f6d6d034944f88a73a69747569a8897ce79813657583f6e59d22ce
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-x86_64-apple-darwin.tar.gz
-      sha256: 865d42dbc3976b3df81405d07e48457b2c9b3a0daaace24993c3d6215ae310f9
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-x86_64-pc-windows-msvc.zip
-      sha256: 477805fe1bae27fddac11fc112136f82e6633ba80258a5a8e2ae4756e7513971
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-aarch64-linux-gnu-full.tar.gz
+        sha256: f57685a46cbda4f5fc18acebba749d023cc97627efefaae8c1d35bb11afccc46
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-aarch64-apple-darwin.tar.gz
+        sha256: 478874586981e02035098cd7e36bbc97f4db3fac50084f624eef4c2140462bb5
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-aarch64-pc-windows-msvc.zip
+        sha256: 3f8c279367b801545335e4555cd1df9592fe4e43e42bd14c3cd0b48734d2896c
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-x86_64-linux-musl-full.tar.gz
+        sha256: 1065efb577f6d6d034944f88a73a69747569a8897ce79813657583f6e59d22ce
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-x86_64-apple-darwin.tar.gz
+        sha256: 865d42dbc3976b3df81405d07e48457b2c9b3a0daaace24993c3d6215ae310f9
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.88.1/nu-0.88.1-x86_64-pc-windows-msvc.zip
+        sha256: 477805fe1bae27fddac11fc112136f82e6633ba80258a5a8e2ae4756e7513971
   0.89.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-aarch64-linux-gnu-full.tar.gz
-      sha256: b826be7f850a9da76a069aa028863396c2c1f9e29ea21d5628b73d733fca3fb1
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-aarch64-apple-darwin.tar.gz
-      sha256: 4ffa1c7296bdcae98a0de7c0ffdd5d51e198535783be8f6da495cf94b31d51ce
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-aarch64-pc-windows-msvc.zip
-      sha256: e303378fd05958c777f9d74cf5d3ff34de7bb9ca399bf6d2d4986581daaf3ba7
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-x86_64-linux-musl-full.tar.gz
-      sha256: 8de91119248de11fdbccd8bc9aac8d719e9997f2843e5d347535714a91014ea3
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-x86_64-apple-darwin.tar.gz
-      sha256: 0c3e839c6b3ef194ac24e59a1cf4e685d185cc655ab7c73d3f9bb34be982ec15
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-x86_64-pc-windows-msvc.zip
-      sha256: 285c9d2962ca003480015e61bf70b1f48783092b8daf143ddffce13ef98bf052
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-aarch64-linux-gnu-full.tar.gz
+        sha256: b826be7f850a9da76a069aa028863396c2c1f9e29ea21d5628b73d733fca3fb1
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-aarch64-apple-darwin.tar.gz
+        sha256: 4ffa1c7296bdcae98a0de7c0ffdd5d51e198535783be8f6da495cf94b31d51ce
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-aarch64-pc-windows-msvc.zip
+        sha256: e303378fd05958c777f9d74cf5d3ff34de7bb9ca399bf6d2d4986581daaf3ba7
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-x86_64-linux-musl-full.tar.gz
+        sha256: 8de91119248de11fdbccd8bc9aac8d719e9997f2843e5d347535714a91014ea3
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-x86_64-apple-darwin.tar.gz
+        sha256: 0c3e839c6b3ef194ac24e59a1cf4e685d185cc655ab7c73d3f9bb34be982ec15
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.89.0/nu-0.89.0-x86_64-pc-windows-msvc.zip
+        sha256: 285c9d2962ca003480015e61bf70b1f48783092b8daf143ddffce13ef98bf052
   0.90.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-aarch64-linux-gnu-full.tar.gz
-      sha256: ba87a4fabd45d43675af1b13510e783b53f42d9ce2ba4c2849e85db8ca170f85
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-aarch64-apple-darwin.tar.gz
-      sha256: 5193aa927db26fefbc3fdd4a3f3f033993a40a1ca2fbc7d02116a1ba45c89114
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-aarch64-pc-windows-msvc.zip
-      sha256: 5444199a2ac9f3ab384c3b57f986874e128e5684fa7ce9761a4d4eb356cdc387
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-x86_64-linux-musl-full.tar.gz
-      sha256: ba16d94c4ba1a06d95c8e6d71793332ed35389213170bfc9b30c54b5d93986a4
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-x86_64-apple-darwin.tar.gz
-      sha256: 8daae87477e3d9cdef42638e044e2536efa7329e78a799d6f3d7bf50203b2095
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-x86_64-pc-windows-msvc.zip
-      sha256: a94f04ee39f2aaaa612c012d8ba441aa30b0b7166706de070233292ef126bac7
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-aarch64-linux-gnu-full.tar.gz
+        sha256: ba87a4fabd45d43675af1b13510e783b53f42d9ce2ba4c2849e85db8ca170f85
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-aarch64-apple-darwin.tar.gz
+        sha256: 5193aa927db26fefbc3fdd4a3f3f033993a40a1ca2fbc7d02116a1ba45c89114
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-aarch64-pc-windows-msvc.zip
+        sha256: 5444199a2ac9f3ab384c3b57f986874e128e5684fa7ce9761a4d4eb356cdc387
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-x86_64-linux-musl-full.tar.gz
+        sha256: ba16d94c4ba1a06d95c8e6d71793332ed35389213170bfc9b30c54b5d93986a4
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-x86_64-apple-darwin.tar.gz
+        sha256: 8daae87477e3d9cdef42638e044e2536efa7329e78a799d6f3d7bf50203b2095
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.90.1/nu-0.90.1-x86_64-pc-windows-msvc.zip
+        sha256: a94f04ee39f2aaaa612c012d8ba441aa30b0b7166706de070233292ef126bac7
   0.91.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-aarch64-linux-gnu-full.tar.gz
-      sha256: 678d60d9877d3eaa29f936f9548125cb5636a2a7108e79864d4f00290fa12c18
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-aarch64-apple-darwin.tar.gz
-      sha256: 002664aad77d28a164a6f52516a9a72a43f054ebad395260ba54de68e74406e0
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-aarch64-pc-windows-msvc.zip
-      sha256: a56381bba889e58dfd08c6b251296b2f85034f608da4f425bdf34501b26e8a12
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-x86_64-linux-musl-full.tar.gz
-      sha256: 0146c48bb92a04ad5d72110f6fe85e571ea68102db1ab099c4ee152602bdaf4f
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-x86_64-apple-darwin.tar.gz
-      sha256: 92bd0af97ea6400ac23d498f06af120e530127e6d68adf6d16c7ae39df903623
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-x86_64-pc-windows-msvc.zip
-      sha256: 5b07f751cf5e75d857ff2e5d6f2da607b532e7ac0e508452369ad1b467a58569
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-aarch64-linux-gnu-full.tar.gz
+        sha256: 678d60d9877d3eaa29f936f9548125cb5636a2a7108e79864d4f00290fa12c18
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-aarch64-apple-darwin.tar.gz
+        sha256: 002664aad77d28a164a6f52516a9a72a43f054ebad395260ba54de68e74406e0
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-aarch64-pc-windows-msvc.zip
+        sha256: a56381bba889e58dfd08c6b251296b2f85034f608da4f425bdf34501b26e8a12
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-x86_64-linux-musl-full.tar.gz
+        sha256: 0146c48bb92a04ad5d72110f6fe85e571ea68102db1ab099c4ee152602bdaf4f
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-x86_64-apple-darwin.tar.gz
+        sha256: 92bd0af97ea6400ac23d498f06af120e530127e6d68adf6d16c7ae39df903623
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-x86_64-pc-windows-msvc.zip
+        sha256: 5b07f751cf5e75d857ff2e5d6f2da607b532e7ac0e508452369ad1b467a58569
   0.92.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-aarch64-linux-gnu-full.tar.gz
-      sha256: eb6430f854567e1673d709741410df8e8792541c93d362b64046046b88c94e29
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-aarch64-apple-darwin.tar.gz
-      sha256: 52e0431e98e2b5ce2d27abdbaa8a38c8d4ba63bd2d6f41f4918b6bd52745fc4b
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-aarch64-pc-windows-msvc.zip
-      sha256: 6b1f2486214a94ce6f3391e6144118a3f9a8dbe20312ee31880fcff939001f54
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-x86_64-linux-musl-full.tar.gz
-      sha256: 4a5abb4c00383996888c14d4d9c9e02a8819181efeff550c9a3ee9499a6e9242
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-x86_64-apple-darwin.tar.gz
-      sha256: 2678dbf4f1d3324d1b40211dda23f7d51af6092959b05f902b39025b94d99512
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-x86_64-pc-windows-msvc.zip
-      sha256: 6626dcc65d8a1da20fcb84f3b523f66fef6cb03c8186a09a5d919da2045b38e5
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-aarch64-linux-gnu-full.tar.gz
+        sha256: eb6430f854567e1673d709741410df8e8792541c93d362b64046046b88c94e29
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-aarch64-apple-darwin.tar.gz
+        sha256: 52e0431e98e2b5ce2d27abdbaa8a38c8d4ba63bd2d6f41f4918b6bd52745fc4b
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-aarch64-pc-windows-msvc.zip
+        sha256: 6b1f2486214a94ce6f3391e6144118a3f9a8dbe20312ee31880fcff939001f54
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-x86_64-linux-musl-full.tar.gz
+        sha256: 4a5abb4c00383996888c14d4d9c9e02a8819181efeff550c9a3ee9499a6e9242
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-x86_64-apple-darwin.tar.gz
+        sha256: 2678dbf4f1d3324d1b40211dda23f7d51af6092959b05f902b39025b94d99512
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.92.1/nu-0.92.1-x86_64-pc-windows-msvc.zip
+        sha256: 6626dcc65d8a1da20fcb84f3b523f66fef6cb03c8186a09a5d919da2045b38e5
   0.92.2:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-aarch64-linux-gnu-full.tar.gz
-      sha256: 935eac97dfc81220604b80a5049a3c2f2cc88e9aba5b33401066ec3bad0179b1
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-aarch64-apple-darwin.tar.gz
-      sha256: ce552c579ba5f5f3c4a1b770196c821dec0538e7b9014988c17f30736a1949a7
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-aarch64-pc-windows-msvc.zip
-      sha256: cda7e46a70890bb675c351dcad84e85255a8e1798575a17807870ce66e7a4fe8
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-x86_64-linux-musl-full.tar.gz
-      sha256: 6d28a3ce8ad569d1a526150c7367992e2c46bb243e1d675dec2cc8034d6d2535
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-x86_64-apple-darwin.tar.gz
-      sha256: c74af7f28e9ee2fb67f7e03f0873295c7fae5587023c22ea851894f10b772f78
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-x86_64-pc-windows-msvc.zip
-      sha256: 7ebe2bf770de01c8a957b5c431ca62e6ccef3a2b33227b0ea30bfa6800db89ec
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-aarch64-linux-gnu-full.tar.gz
+        sha256: 935eac97dfc81220604b80a5049a3c2f2cc88e9aba5b33401066ec3bad0179b1
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-aarch64-apple-darwin.tar.gz
+        sha256: ce552c579ba5f5f3c4a1b770196c821dec0538e7b9014988c17f30736a1949a7
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-aarch64-pc-windows-msvc.zip
+        sha256: cda7e46a70890bb675c351dcad84e85255a8e1798575a17807870ce66e7a4fe8
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-x86_64-linux-musl-full.tar.gz
+        sha256: 6d28a3ce8ad569d1a526150c7367992e2c46bb243e1d675dec2cc8034d6d2535
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-x86_64-apple-darwin.tar.gz
+        sha256: c74af7f28e9ee2fb67f7e03f0873295c7fae5587023c22ea851894f10b772f78
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.92.2/nu-0.92.2-x86_64-pc-windows-msvc.zip
+        sha256: 7ebe2bf770de01c8a957b5c431ca62e6ccef3a2b33227b0ea30bfa6800db89ec
   0.93.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-aarch64-linux-gnu-full.tar.gz
-      sha256: a9c3503c84dd779ee83f5471d84da3e3a5220b417068d1b900294ff5386c16ef
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-aarch64-apple-darwin.tar.gz
-      sha256: cdb815e0dd18cca4b95517b0d05f4f024aa95d0152393977a305846c7e17fb2f
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-aarch64-pc-windows-msvc.zip
-      sha256: 225aa46a0c460ba257b3c3e39a630bf3d325b3690f988613543721ac753442d0
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-x86_64-linux-musl-full.tar.gz
-      sha256: f6cf38948d66ef42ced2c6919f6d4d9d90b09cc1af69efab65148b350afaf0dd
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-x86_64-apple-darwin.tar.gz
-      sha256: 0b7f56274c646e98ed19c13b86fece8cca725c1645ba5de5ef68877231b13484
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-x86_64-pc-windows-msvc.zip
-      sha256: a3db6dc18e516fcac88c02df3ccb79131c13c79b81a84508907b5758886cfa24
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-aarch64-linux-gnu-full.tar.gz
+        sha256: a9c3503c84dd779ee83f5471d84da3e3a5220b417068d1b900294ff5386c16ef
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-aarch64-apple-darwin.tar.gz
+        sha256: cdb815e0dd18cca4b95517b0d05f4f024aa95d0152393977a305846c7e17fb2f
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-aarch64-pc-windows-msvc.zip
+        sha256: 225aa46a0c460ba257b3c3e39a630bf3d325b3690f988613543721ac753442d0
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-x86_64-linux-musl-full.tar.gz
+        sha256: f6cf38948d66ef42ced2c6919f6d4d9d90b09cc1af69efab65148b350afaf0dd
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-x86_64-apple-darwin.tar.gz
+        sha256: 0b7f56274c646e98ed19c13b86fece8cca725c1645ba5de5ef68877231b13484
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-x86_64-pc-windows-msvc.zip
+        sha256: a3db6dc18e516fcac88c02df3ccb79131c13c79b81a84508907b5758886cfa24
   0.94.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 82e6de033dac0718623f609f973b034af880b9261f2a4fed72b553492109f135
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-aarch64-apple-darwin.tar.gz
-      sha256: 5f887f4c581489c2da27b5b2a8f10625f8890d578896393431c76b2aea69bd73
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-aarch64-pc-windows-msvc.zip
-      sha256: b060e4645f78fb274a4a47cbd0e54d97ff00afffe952cce10f4309175cb6a06d
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 42d873cd7a8944d615017e5ca3e7e91b59a5b8de0fab7cd2a712b5ad087730a7
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-x86_64-apple-darwin.tar.gz
-      sha256: 69c0ba24006e9c28c813fc5997bb3139157e82355341d0926886ac4a29f26063
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-x86_64-pc-windows-msvc.zip
-      sha256: e4ee01d2b7620bf4f05f4ce4c788b19552346d395888f569f35b08ae34ab25c5
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 82e6de033dac0718623f609f973b034af880b9261f2a4fed72b553492109f135
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-aarch64-apple-darwin.tar.gz
+        sha256: 5f887f4c581489c2da27b5b2a8f10625f8890d578896393431c76b2aea69bd73
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-aarch64-pc-windows-msvc.zip
+        sha256: b060e4645f78fb274a4a47cbd0e54d97ff00afffe952cce10f4309175cb6a06d
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 42d873cd7a8944d615017e5ca3e7e91b59a5b8de0fab7cd2a712b5ad087730a7
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-x86_64-apple-darwin.tar.gz
+        sha256: 69c0ba24006e9c28c813fc5997bb3139157e82355341d0926886ac4a29f26063
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.94.0/nu-0.94.0-x86_64-pc-windows-msvc.zip
+        sha256: e4ee01d2b7620bf4f05f4ce4c788b19552346d395888f569f35b08ae34ab25c5
   0.94.1:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 4f9eb7e3c234f9479aef2da42aca13d000e6543dde91240901e024eb4227bb79
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-aarch64-apple-darwin.tar.gz
-      sha256: c1da9923d3a67b6176261872c4e562ce1a79ad97b56228f087c6102da7ed8d23
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-aarch64-pc-windows-msvc.zip
-      sha256: cf0882141244ec4da2fa83820706e20cfd35290be3966a02614d05c2f3ebae1b
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-x86_64-unknown-linux-musl.tar.gz
-      sha256: 15b37c76a3cc47e50f2ab3b7249f11eb5c1032fc05bf2eb7c34a0254e573152d
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-x86_64-apple-darwin.tar.gz
-      sha256: 6e87c08e2a5738db5ebd13309ea5d5477a761a17c378ecea3f701cd7dc94acc6
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-x86_64-pc-windows-msvc.zip
-      sha256: 3009522f88a29bcb97804e5de52baa294fba4ca7db79594d12dc809dc51fbb1d
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 4f9eb7e3c234f9479aef2da42aca13d000e6543dde91240901e024eb4227bb79
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-aarch64-apple-darwin.tar.gz
+        sha256: c1da9923d3a67b6176261872c4e562ce1a79ad97b56228f087c6102da7ed8d23
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-aarch64-pc-windows-msvc.zip
+        sha256: cf0882141244ec4da2fa83820706e20cfd35290be3966a02614d05c2f3ebae1b
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: 15b37c76a3cc47e50f2ab3b7249f11eb5c1032fc05bf2eb7c34a0254e573152d
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-x86_64-apple-darwin.tar.gz
+        sha256: 6e87c08e2a5738db5ebd13309ea5d5477a761a17c378ecea3f701cd7dc94acc6
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.94.1/nu-0.94.1-x86_64-pc-windows-msvc.zip
+        sha256: 3009522f88a29bcb97804e5de52baa294fba4ca7db79594d12dc809dc51fbb1d
   0.94.2:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 85de6fe29ba70f162979cd4108c1935042cb833bbb30cdde4b332cd0d5c752cb
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-aarch64-apple-darwin.tar.gz
-      sha256: e93f0b7b5766dd53d9366290ab631ce38d8d07ac8a28b5be4009d01139a2935e
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-aarch64-pc-windows-msvc.zip
-      sha256: 15e50972bb8bdf5e47c30db0ae225c30cace3dd217e445c5c0ab2fc5074934d1
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-x86_64-unknown-linux-musl.tar.gz
-      sha256: d3f7eecdd4f849b9d974585f8179ab047fd000e68e5b860cc07cd97afa82faa6
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-x86_64-apple-darwin.tar.gz
-      sha256: a276a6222142be95f67dde802a21e58f5bc2122cca8c663b85c535fa0054acb1
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-x86_64-pc-windows-msvc.zip
-      sha256: 98bf7225642da8da677f72e6111afd43e9a9991fd784a529d242dc1422d502f8
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 85de6fe29ba70f162979cd4108c1935042cb833bbb30cdde4b332cd0d5c752cb
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-aarch64-apple-darwin.tar.gz
+        sha256: e93f0b7b5766dd53d9366290ab631ce38d8d07ac8a28b5be4009d01139a2935e
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-aarch64-pc-windows-msvc.zip
+        sha256: 15e50972bb8bdf5e47c30db0ae225c30cace3dd217e445c5c0ab2fc5074934d1
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-x86_64-unknown-linux-musl.tar.gz
+        sha256: d3f7eecdd4f849b9d974585f8179ab047fd000e68e5b860cc07cd97afa82faa6
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-x86_64-apple-darwin.tar.gz
+        sha256: a276a6222142be95f67dde802a21e58f5bc2122cca8c663b85c535fa0054acb1
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-x86_64-pc-windows-msvc.zip
+        sha256: 98bf7225642da8da677f72e6111afd43e9a9991fd784a529d242dc1422d502f8
   0.95.0:
-    aarch64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-aarch64-unknown-linux-gnu.tar.gz
-      sha256: 4d7cd7e10735bfd494049bbe2415423098eb5218553049b5574ef6cf671d34a9
-    aarch64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-aarch64-apple-darwin.tar.gz
-      sha256: 0ce641f94f3839df4acbb420ea780776552b9c517521ffd7d0fd72eda126777c
-    aarch64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-aarch64-pc-windows-msvc.zip
-      sha256: 1b4f752f5df874f4bbc794d77a22170e4c98141201c61489edbba0edb084fb81
-    x86_64-linux:
-      url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-x86_64-unknown-linux-musl.tar.gz
-      sha256: 47f9b04e0219dc6f21652d490802e82c076088f3c4f069f571c4ca37e785f947
-    x86_64-macos:
-      url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-x86_64-apple-darwin.tar.gz
-      sha256: da718540ec9e22adb251433f6736525a52ceaa260d5482eccb85247e0f145009
-    x86_64-windows:
-      url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-x86_64-pc-windows-msvc.zip
-      sha256: 85c66c340e4b0d7239f346887513555c56c4c332c7d03a2d445283f330e38f28
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 4d7cd7e10735bfd494049bbe2415423098eb5218553049b5574ef6cf671d34a9
+      aarch64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-aarch64-apple-darwin.tar.gz
+        sha256: 0ce641f94f3839df4acbb420ea780776552b9c517521ffd7d0fd72eda126777c
+      aarch64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-aarch64-pc-windows-msvc.zip
+        sha256: 1b4f752f5df874f4bbc794d77a22170e4c98141201c61489edbba0edb084fb81
+      x86_64-linux:
+        url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 47f9b04e0219dc6f21652d490802e82c076088f3c4f069f571c4ca37e785f947
+      x86_64-macos:
+        url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-x86_64-apple-darwin.tar.gz
+        sha256: da718540ec9e22adb251433f6736525a52ceaa260d5482eccb85247e0f145009
+      x86_64-windows:
+        url: https://github.com/nushell/nushell/releases/download/0.95.0/nu-0.95.0-x86_64-pc-windows-msvc.zip
+        sha256: 85c66c340e4b0d7239f346887513555c56c4c332c7d03a2d445283f330e38f28
 installs:
   0.64.0:
     any-any:
