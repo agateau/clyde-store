@@ -30,12 +30,39 @@ releases:
       x86_64-windows:
         url: https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_windows_x86_64.zip
         sha256: 6024f3094904caaf9b9672b801cba31a65ad36729a0d2c5a03c432f739c0678b
+  0.62.0:
+    added_at: 2026-05-27T10:54:23.812789548Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.0/lazygit_0.62.0_linux_arm64.tar.gz
+        sha256: 5f97dd0201194ee17a8b5a9655bf6c6d3f596af4399674746bc77056544fed70
+      aarch64-macos:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.0/lazygit_0.62.0_darwin_arm64.tar.gz
+        sha256: 01aa2231718ae63d5c445de97ce492af55f7bdd9cbeaa200b4c94a782dd15ccf
+      aarch64-windows:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.0/lazygit_0.62.0_windows_arm64.zip
+        sha256: 6766e044615237318fb0c655a85ea8b69ef09129406adf0985ee1afb183205e9
+      x86-linux:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.0/lazygit_0.62.0_linux_32-bit.tar.gz
+        sha256: 055fcc4deddbe0bb58a089bfe4fadf5b97d177f99df69f881205bb65f938e58c
+      x86-windows:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.0/lazygit_0.62.0_windows_32-bit.zip
+        sha256: 125c6297ccc96475d319d23dc7c0a302416b824af1eda32302a83a33d574ba97
+      x86_64-linux:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.0/lazygit_0.62.0_linux_x86_64.tar.gz
+        sha256: c57dd766436a42c2da52c3138034f55ca6d8bb935983ee8ae272f0d0386aca6a
+      x86_64-macos:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.0/lazygit_0.62.0_darwin_x86_64.tar.gz
+        sha256: 5d067eeba1d46e6420be3fde6319595f82d1e23fae32c346962793059d6a3937
+      x86_64-windows:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.0/lazygit_0.62.0_windows_x86_64.zip
+        sha256: 132247de071b238cbcd40b0559de6ac248af7cbb97c1c93ae465537333286f04
 installs:
   0.61.1:
     any-any:
       files:
-        lazygit${exe_ext}: bin/
-        README.md: ${doc_dir}
         LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        lazygit${exe_ext}: bin/
       tests:
-        - lazygit${exe_ext} --version
+      - lazygit${exe_ext} --version
