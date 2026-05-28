@@ -3,6 +3,30 @@ description: A GitLab CLI tool bringing GitLab to your command line
 homepage: https://glab.readthedocs.io/
 repository: https://gitlab.com/gitlab-org/cli
 releases:
+  1.100.0:
+    added_at: 2026-05-28T10:54:37.381845298Z
+    assets:
+      aarch64-linux:
+        url: https://gitlab.com/gitlab-org/cli/-/releases/v1.100.0/downloads/glab_1.100.0_linux_arm64.tar.gz
+        sha256: 118eee84f15c3186d59f90abd3e5b130f7b185f838ef1619fb99e5b8bfeaeee8
+      aarch64-macos:
+        url: https://gitlab.com/gitlab-org/cli/-/releases/v1.100.0/downloads/glab_1.100.0_darwin_arm64.tar.gz
+        sha256: 214c33b3f32850c7a9fb4a46575ba18538b8e7e64ed65dc29b0797dbc8702b0e
+      x86-linux:
+        url: https://gitlab.com/gitlab-org/cli/-/releases/v1.100.0/downloads/glab_1.100.0_linux_386.tar.gz
+        sha256: 1fcf4a4f4d3d1b313c2d62e608d669b22ee2bbb1fa2c482cd3b201a8727b4c24
+      x86-windows:
+        url: https://gitlab.com/gitlab-org/cli/-/releases/v1.100.0/downloads/glab_1.100.0_windows_386.zip
+        sha256: 3fdef1e3ebd17418643b34f6c6be72ce8bbe940480536d92012d97f371acbffc
+      x86_64-linux:
+        url: https://gitlab.com/gitlab-org/cli/-/releases/v1.100.0/downloads/glab_1.100.0_linux_amd64.tar.gz
+        sha256: d2a8ccffe924d3ad22feb2d1338840e9a610041c6ea6fd76e9aeda3744f210c2
+      x86_64-macos:
+        url: https://gitlab.com/gitlab-org/cli/-/releases/v1.100.0/downloads/glab_1.100.0_darwin_amd64.tar.gz
+        sha256: 0b7ab7423aaca0024a3e25585f3e3981f21641e7cc286d20cba6038ada6b4741
+      x86_64-windows:
+        url: https://gitlab.com/gitlab-org/cli/-/releases/v1.100.0/downloads/glab_1.100.0_windows_amd64.zip
+        sha256: f0a0abeb3c04236667151b97ca8c7a184d37038fe6fe969223d7cf5eb2df1e5a
   1.21.0:
     added_at: null
     assets:
