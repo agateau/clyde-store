@@ -57,6 +57,33 @@ releases:
       x86_64-windows:
         url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.0/lazygit_0.62.0_windows_x86_64.zip
         sha256: 132247de071b238cbcd40b0559de6ac248af7cbb97c1c93ae465537333286f04
+  0.62.1:
+    added_at: 2026-05-29T10:44:59.619976277Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.1/lazygit_0.62.1_linux_arm64.tar.gz
+        sha256: 22a19e4790323dfe0363a876d1f76738ee9722a3086ef27c9e4503c3c1d962ac
+      aarch64-macos:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.1/lazygit_0.62.1_darwin_arm64.tar.gz
+        sha256: 878697eb72157915f5bff4d4a40f7ea896f096b308190a1a1b20fe17576cfd0d
+      aarch64-windows:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.1/lazygit_0.62.1_windows_arm64.zip
+        sha256: 557d5dca65d19915b00c09e543a691612b5ba551a257673e6f1331a0ded1ef9b
+      x86-linux:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.1/lazygit_0.62.1_linux_32-bit.tar.gz
+        sha256: 5f895cfcee1e8589d8d295bf40580cd3c72a893413015f516d121935a1a0ad99
+      x86-windows:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.1/lazygit_0.62.1_windows_32-bit.zip
+        sha256: 05a68a040a3e973bf4afa6d8d2df47e2ad70d4c67b50dd1f63c391329e2a5a54
+      x86_64-linux:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.1/lazygit_0.62.1_linux_x86_64.tar.gz
+        sha256: 99d78cce8883b24150c2f4ba151f6a0443644f63f63794f18d6643e99f75be09
+      x86_64-macos:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.1/lazygit_0.62.1_darwin_x86_64.tar.gz
+        sha256: 33963e544085e0a820b71837fa4c8db82d6ab409ffd03a5677898b766541c537
+      x86_64-windows:
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.62.1/lazygit_0.62.1_windows_x86_64.zip
+        sha256: 57c4c53d905c7083b689940573fefe6530dd66476a51b2b97737c697bf57dd22
 installs:
   0.61.1:
     any-any:
