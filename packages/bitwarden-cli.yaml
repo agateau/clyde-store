@@ -4,31 +4,53 @@ homepage: https://bitwarden.com
 repository: https://github.com/bitwarden/clients
 releases:
   2023.4.0:
-    x86_64-linux:
-      url: https://github.com/bitwarden/clients/releases/download/cli-v2023.4.0/bw-linux-2023.4.0.zip
-      sha256: 7333bf62c228f3347bda1d7c00fb34749df6095b923554726b7c7ff97aa096b7
-    x86_64-macos:
-      url: https://github.com/bitwarden/clients/releases/download/cli-v2023.4.0/bw-macos-2023.4.0.zip
-      sha256: 2e973a95cfd5e5c7dcfb53622ace3bfb39b61086a8ba68fa98736f70f457b6f8
-    x86_64-windows:
-      url: https://github.com/bitwarden/clients/releases/download/cli-v2023.4.0/bw-windows-2023.4.0.zip
-      sha256: abc4a585d9fae51e223bc853fa4603dedc1d1ffe4adccf2a91f0e2e9b2464e21
+    added_at: null
+    assets:
+      x86_64-linux:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2023.4.0/bw-linux-2023.4.0.zip
+        sha256: 7333bf62c228f3347bda1d7c00fb34749df6095b923554726b7c7ff97aa096b7
+      x86_64-macos:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2023.4.0/bw-macos-2023.4.0.zip
+        sha256: 2e973a95cfd5e5c7dcfb53622ace3bfb39b61086a8ba68fa98736f70f457b6f8
+      x86_64-windows:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2023.4.0/bw-windows-2023.4.0.zip
+        sha256: abc4a585d9fae51e223bc853fa4603dedc1d1ffe4adccf2a91f0e2e9b2464e21
   2026.4.1:
-    aarch64-linux:
-      url: https://github.com/bitwarden/clients/releases/download/cli-v2026.4.1/bw-oss-linux-arm64-2026.4.1.zip
-      sha256: a63e8433b87c1ed3fd7c13e1ad929a5d10e78b25052d7922d6f85746fbdc5470
-    aarch64-macos:
-      url: https://github.com/bitwarden/clients/releases/download/cli-v2026.4.1/bw-oss-macos-arm64-2026.4.1.zip
-      sha256: 4f7d6dc290bb3ba62aea38b1ab31086a83c34481f1540f2a2e33f259a49c1e2e
-    x86_64-linux:
-      url: https://github.com/bitwarden/clients/releases/download/cli-v2026.4.1/bw-oss-linux-2026.4.1.zip
-      sha256: eb450c053216d4f83861f2a8dc1221dee3a0dd7becf460839e974efc8aedba99
-    x86_64-macos:
-      url: https://github.com/bitwarden/clients/releases/download/cli-v2026.4.1/bw-oss-macos-2026.4.1.zip
-      sha256: 314b2010459acf7e23c65c46ec6ded47245cdf3fd4062608f0c6aef4d2105720
-    x86_64-windows:
-      url: https://github.com/bitwarden/clients/releases/download/cli-v2026.4.1/bw-oss-windows-2026.4.1.zip
-      sha256: 4e7d978ace254689ddaeec8df60d2f3e043232a80e65f17800f8d3c19ffe4115
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2026.4.1/bw-oss-linux-arm64-2026.4.1.zip
+        sha256: a63e8433b87c1ed3fd7c13e1ad929a5d10e78b25052d7922d6f85746fbdc5470
+      aarch64-macos:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2026.4.1/bw-oss-macos-arm64-2026.4.1.zip
+        sha256: 4f7d6dc290bb3ba62aea38b1ab31086a83c34481f1540f2a2e33f259a49c1e2e
+      x86_64-linux:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2026.4.1/bw-oss-linux-2026.4.1.zip
+        sha256: eb450c053216d4f83861f2a8dc1221dee3a0dd7becf460839e974efc8aedba99
+      x86_64-macos:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2026.4.1/bw-oss-macos-2026.4.1.zip
+        sha256: 314b2010459acf7e23c65c46ec6ded47245cdf3fd4062608f0c6aef4d2105720
+      x86_64-windows:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2026.4.1/bw-oss-windows-2026.4.1.zip
+        sha256: 4e7d978ace254689ddaeec8df60d2f3e043232a80e65f17800f8d3c19ffe4115
+  2026.5.0:
+    added_at: 2026-05-30T09:14:47.162143856Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2026.5.0/bw-oss-linux-arm64-2026.5.0.zip
+        sha256: 3f8d5d2aefb6c477bebd99617e40c0c8fca7ca214d42c115383b50d4b74d4ef3
+      aarch64-macos:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2026.5.0/bw-oss-macos-arm64-2026.5.0.zip
+        sha256: 30252dc6e9f6626534213068264c179e111675856b3ba43c36d2e055f181e319
+      x86_64-linux:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2026.5.0/bw-oss-linux-2026.5.0.zip
+        sha256: f233e8fe83a49b73cd4b8de620190e5e76544793a32871e151b2238a59b7ec4e
+      x86_64-macos:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2026.5.0/bw-oss-macos-2026.5.0.zip
+        sha256: 77825998dec85aed7d587a62afe7ca6aa5c58cec6ae1fd20f7c5244c3bbfa7ce
+      x86_64-windows:
+        url: https://github.com/bitwarden/clients/releases/download/cli-v2026.5.0/bw-oss-windows-2026.5.0.zip
+        sha256: 5d473f1733fe8df88d15e4d20b8f4af4f0aed047f83b0f7a5bd5ef3d8d61a014
 installs:
   2023.4.0:
     any-any:
