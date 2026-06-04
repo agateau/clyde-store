@@ -276,6 +276,27 @@ releases:
       x86_64-windows:
         url: https://github.com/denoland/deno/releases/download/v2.8.1/deno-x86_64-pc-windows-msvc.zip
         sha256: 5fb5bac71f609fb91ec8960fb290885aadc27eeb22f07a8eca0c3db6be38b11a
+  2.8.2:
+    added_at: 2026-06-04T10:38:13.222813183Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/denoland/deno/releases/download/v2.8.2/deno-aarch64-unknown-linux-gnu.zip
+        sha256: 48647189aee6454ed9b9852fa700a77f92b39465c04c625901d165bc8e937afc
+      aarch64-macos:
+        url: https://github.com/denoland/deno/releases/download/v2.8.2/deno-aarch64-apple-darwin.zip
+        sha256: 02e5eb795c9f763772dfd081429cead9029e0a4a6aaff6d4e5f3ed6d2e94d361
+      aarch64-windows:
+        url: https://github.com/denoland/deno/releases/download/v2.8.2/deno-aarch64-pc-windows-msvc.zip
+        sha256: 37c68c1c78042a0775ed6770da09815572f28f0ee59ab018d409908165cae27d
+      x86_64-linux:
+        url: https://github.com/denoland/deno/releases/download/v2.8.2/deno-x86_64-unknown-linux-gnu.zip
+        sha256: 184da7a5267ab649bc08821b3bc3ce6805d8e6985fb82707cb8d5e9fd6535362
+      x86_64-macos:
+        url: https://github.com/denoland/deno/releases/download/v2.8.2/deno-x86_64-apple-darwin.zip
+        sha256: 77cf27f835f1921e49434449675c57432c6314d54edc725e2474cc825546e206
+      x86_64-windows:
+        url: https://github.com/denoland/deno/releases/download/v2.8.2/deno-x86_64-pc-windows-msvc.zip
+        sha256: 6fe073b11cabeba2f2726d8a3d1592b198aec5f23dab3473d0dc8d5ec7aee1c9
 installs:
   2.7.4:
     any-any:
