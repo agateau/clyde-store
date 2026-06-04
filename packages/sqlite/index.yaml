@@ -44,6 +44,24 @@ releases:
       x86_64-windows:
         url: https://sqlite.org/2026/sqlite-tools-win-x64-3530100.zip
         sha256: bcc88a2f9ebcf3d90b7a95337cc96bd492b1633f741bbdbff0525d1806098fc2
+  3.53.2:
+    added_at: 2026-06-04T10:38:40.868518815Z
+    assets:
+      aarch64-macos:
+        url: https://sqlite.org/2026/sqlite-tools-osx-arm64-3530200.zip
+        sha256: 43ec32933b8f9ba66cd73da1e1f32bca8407365a930b587935f834df2c1effbb
+      aarch64-windows:
+        url: https://sqlite.org/2026/sqlite-tools-win-arm64-3530200.zip
+        sha256: 6ad11984e0d6403b113764179d4d466cd1ea8796170e4428e2e6fa8a0d7a947a
+      x86_64-linux:
+        url: https://sqlite.org/2026/sqlite-tools-linux-x64-3530200.zip
+        sha256: 2f62c60114200212cd2e68520f012f292dce405eb3b5568b3c37d66f759f2b21
+      x86_64-macos:
+        url: https://sqlite.org/2026/sqlite-tools-osx-x64-3530200.zip
+        sha256: be4de0e632e0243c5d193c28057677603ea9391a75db9d10fa4a679725c58437
+      x86_64-windows:
+        url: https://sqlite.org/2026/sqlite-tools-win-x64-3530200.zip
+        sha256: 2eb7602bbe05895f4f530d8f3c4af244dcd8697d14b858778ccd4abe297a836d
 installs:
   3.37.0:
     any-any:
