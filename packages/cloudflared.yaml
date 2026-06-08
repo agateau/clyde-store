@@ -1,0 +1,42 @@
+name: cloudflared
+description: Cloudflare Tunnel client
+homepage: https://github.com/cloudflare/cloudflared
+repository: https://github.com/cloudflare/cloudflared
+releases:
+  2026.5.2:
+    added_at: 2026-06-08T13:44:20.562572114Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.5.2/cloudflared-linux-arm64
+        sha256: 5a4e8ce2701105271412059f44b6a0bf1ae4542b4d98ff3180c0c019443a5815
+      aarch64-macos:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.5.2/cloudflared-darwin-arm64.tgz
+        sha256: ba94054c9fd4297645093d59d51442e5e546d07bb0516120e694a13d5b216d38
+      x86_64-linux:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.5.2/cloudflared-linux-amd64
+        sha256: 5286698547f03df745adb2355f04c12dde52ef425491e81f433642d695521886
+      x86_64-macos:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.5.2/cloudflared-darwin-amd64.tgz
+        sha256: 7240f709506bc2c1eb9da4d89cf2555499c60280ecb854b7d80e8f17d4b7903d
+      x86_64-windows:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.5.2/cloudflared-windows-amd64.exe
+        sha256: 20b9638f685333d623798e733effbad2487093f15ba592f6c7752360ff3b7ab7
+installs:
+  2026.5.2:
+    any-linux:
+      files:
+        ${asset_name}: bin/cloudflared
+      tests:
+        - cloudflared --version
+    any-windows:
+      files:
+        ${asset_name}: bin/cloudflared.exe
+      tests:
+        - cloudflared.exe --version
+    any-macos:
+      files:
+        cloudflared: bin/
+      tests:
+        - cloudflared --version
+fetcher: !GitHub
+  include: cloudflared-(darwin-amd64\.tgz|darwin-arm64\.tgz|linux-amd64|linux-arm64|windows-amd64\.exe)$
