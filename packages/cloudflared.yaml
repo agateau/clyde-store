@@ -21,22 +21,40 @@ releases:
       x86_64-windows:
         url: https://github.com/cloudflare/cloudflared/releases/download/2026.5.2/cloudflared-windows-amd64.exe
         sha256: 20b9638f685333d623798e733effbad2487093f15ba592f6c7752360ff3b7ab7
+  2026.6.0:
+    added_at: 2026-06-09T10:34:01.624922988Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.6.0/cloudflared-linux-arm64
+        sha256: 8482ebf1e74a2a4a1a9f1e090e17e3de08423f94100ece6789287cb26fb9480f
+      aarch64-macos:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.6.0/cloudflared-darwin-arm64.tgz
+        sha256: 88e17987423d3fd49167305f8bda14d83a80ab9f2097ff9c82b317a39e342119
+      x86_64-linux:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.6.0/cloudflared-linux-amd64
+        sha256: 08d27c4c5d3ed73ee3e98ef2ddceb4ad09fd4cfc28e243565a189538e8ccd706
+      x86_64-macos:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.6.0/cloudflared-darwin-amd64.tgz
+        sha256: f6eaa91260ee327994331ac5ac2f7cec7925c4b6e15296b63fe0916992a06bdc
+      x86_64-windows:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.6.0/cloudflared-windows-amd64.exe
+        sha256: 03e322598e84d77406fa55b93f59e8e54636c5d8501d9dce36697fcf080ed8cc
 installs:
   2026.5.2:
     any-linux:
       files:
         ${asset_name}: bin/cloudflared
       tests:
-        - cloudflared --version
-    any-windows:
-      files:
-        ${asset_name}: bin/cloudflared.exe
-      tests:
-        - cloudflared.exe --version
+      - cloudflared --version
     any-macos:
       files:
         cloudflared: bin/
       tests:
-        - cloudflared --version
+      - cloudflared --version
+    any-windows:
+      files:
+        ${asset_name}: bin/cloudflared.exe
+      tests:
+      - cloudflared.exe --version
 fetcher: !GitHub
   include: cloudflared-(darwin-amd64\.tgz|darwin-arm64\.tgz|linux-amd64|linux-arm64|windows-amd64\.exe)$
