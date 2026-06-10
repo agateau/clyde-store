@@ -1,31 +1,54 @@
 name: superhtml
-description: "HTML Validator, Formatter, LSP, and Templating Language Library"
+description: HTML Validator, Formatter, LSP, and Templating Language Library
 homepage: https://github.com/kristoff-it/superhtml
 repository: https://github.com/kristoff-it/superhtml
 releases:
   0.6.2:
-    aarch64-linux:
-      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/aarch64-linux.tar.xz
-      sha256: 2d21672c0a9290f4e4e2003a41c1b5ec16fae0419a62810abe4ac65546a62896
-    aarch64-macos:
-      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/aarch64-macos.zip
-      sha256: 817b97fd8a7bc2a7b664adce45a3b6e54f2d9a8f6d5628b184f988ece3f2b55d
-    aarch64-windows:
-      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/aarch64-windows.zip
-      sha256: 224c3b66ca9e12421fd3fe927a0bb0c3f21b289e825363fba73aef65d0924eb2
-    x86_64-linux:
-      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/x86_64-linux-musl.tar.xz
-      sha256: e6dd0bd6223d6fb925843800086ece2fb11d8973e08a2d9ccc7a76ce7d0a36e3
-    x86_64-macos:
-      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/x86_64-macos.zip
-      sha256: a64c2aca5090a9c299765cda842e1878ae1a756e759727cbd7a21c634dd9c762
-    x86_64-windows:
-      url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/x86_64-windows.zip
-      sha256: d5566c96355389bb86d0e98cdf5b3603ff816fc49db5bd42a0a88d4ee72586c6
+    added_at: null
+    assets:
+      aarch64-linux:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/aarch64-linux.tar.xz
+        sha256: 2d21672c0a9290f4e4e2003a41c1b5ec16fae0419a62810abe4ac65546a62896
+      aarch64-macos:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/aarch64-macos.zip
+        sha256: 817b97fd8a7bc2a7b664adce45a3b6e54f2d9a8f6d5628b184f988ece3f2b55d
+      aarch64-windows:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/aarch64-windows.zip
+        sha256: 224c3b66ca9e12421fd3fe927a0bb0c3f21b289e825363fba73aef65d0924eb2
+      x86_64-linux:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/x86_64-linux-musl.tar.xz
+        sha256: e6dd0bd6223d6fb925843800086ece2fb11d8973e08a2d9ccc7a76ce7d0a36e3
+      x86_64-macos:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/x86_64-macos.zip
+        sha256: a64c2aca5090a9c299765cda842e1878ae1a756e759727cbd7a21c634dd9c762
+      x86_64-windows:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.6.2/x86_64-windows.zip
+        sha256: d5566c96355389bb86d0e98cdf5b3603ff816fc49db5bd42a0a88d4ee72586c6
+  0.7.0:
+    added_at: 2026-06-10T10:55:30.403744967Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.7.0/aarch64-linux.tar.xz
+        sha256: 9fa2ed1ec830464c38929531693e7129ae6df3ccb1bb3f01fec3322ed5759fc5
+      aarch64-macos:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.7.0/aarch64-macos.zip
+        sha256: 3846e475290f917dbf5cde8f35faff85c4402279f6ad8a8f95a861bc6523a154
+      aarch64-windows:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.7.0/aarch64-windows.zip
+        sha256: 359223875d104386f7fed2ace844bf70540073ce1d5c24a6fff232a2cdcb563f
+      x86_64-linux:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.7.0/x86_64-linux-musl.tar.xz
+        sha256: b75c6eeef539416096eac38729ee54e5f3b248f039cab4f57660f29a88742f68
+      x86_64-macos:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.7.0/x86_64-macos.zip
+        sha256: f7f502ce26f8163ec5257d2428192e3224eb21866129a4c05421bd5b2ea709f1
+      x86_64-windows:
+        url: https://github.com/kristoff-it/superhtml/releases/download/v0.7.0/x86_64-windows.zip
+        sha256: 1ecb8d701ee01a837c6664707e49328821b660c28a5da82edbbb4e3639afccdc
 installs:
   0.6.2:
     any-any:
       files:
         superhtml${exe_ext}: bin/
       tests:
-        - superhtml${exe_ext} version
+      - superhtml${exe_ext} version
