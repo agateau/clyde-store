@@ -1,0 +1,35 @@
+name: cargo-nextest
+description: A next-generation test runner for Rust
+homepage: https://nexte.st
+repository: https://github.com/nextest-rs/nextest
+releases:
+  0.9.137:
+    added_at: 2026-06-11T16:03:20.783766650Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.137/cargo-nextest-0.9.137-aarch64-unknown-linux-musl.tar.gz
+        sha256: cc8a61beed918e1e76f047243f8bb9fc90bad0e6b74b91b2f58b7397f912495a
+      aarch64-windows:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.137/cargo-nextest-0.9.137-aarch64-pc-windows-msvc.tar.gz
+        sha256: 27f1c452ee96ba852ba94569dc63ba720c1f209e0150967d3503ec7ced17f431
+      any-macos:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.137/cargo-nextest-0.9.137-universal-apple-darwin.tar.gz
+        sha256: 94e89c20b233c29c042683e885131d76abf95e795c355a4fe7d64d4b128b90be
+      x86-windows:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.137/cargo-nextest-0.9.137-i686-pc-windows-msvc.tar.gz
+        sha256: c34f7e840d5393bf614aa911998b8132f135ed0d3631c862923bf5c532e129e1
+      x86_64-linux:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.137/cargo-nextest-0.9.137-x86_64-unknown-linux-musl.tar.gz
+        sha256: d5a7d2e76a19b65006939e296eb19d776f820cfaa19514c01cf70a5185a885b8
+      x86_64-windows:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.137/cargo-nextest-0.9.137-x86_64-pc-windows-msvc.tar.gz
+        sha256: f32114ae7c9a1718fc95a6e18afb720c3aadc8510d1e838c2a2b60978c8ba464
+installs:
+  0.9.137:
+    any-any:
+      files:
+        cargo-nextest${exe_ext}: bin/
+      tests:
+      - cargo-nextest${exe_ext} --version
+fetcher: !GitHub
+  include: (musl|apple-darwin|pc-windows-msvc)\.tar\.gz$
