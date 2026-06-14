@@ -417,6 +417,24 @@ releases:
       x86_64-windows:
         url: https://github.com/max-sixty/worktrunk/releases/download/v0.57.0/worktrunk-x86_64-pc-windows-msvc.zip
         sha256: 4352650cb3defe6e9e4da613089da32e76bc3f947462b2950aec8bce5fc5940d
+  0.58.0:
+    added_at: 2026-06-14T10:24:03.253343224Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/max-sixty/worktrunk/releases/download/v0.58.0/worktrunk-aarch64-unknown-linux-musl.tar.xz
+        sha256: cc218c530af8fdb22a14e7b5a748a34d77493222822c8603528749a7f4e93667
+      aarch64-macos:
+        url: https://github.com/max-sixty/worktrunk/releases/download/v0.58.0/worktrunk-aarch64-apple-darwin.tar.xz
+        sha256: fe9cb0714bd0e4cabc34564d5a39bad3040e8d2a55140d08e02564f14aea2962
+      x86_64-linux:
+        url: https://github.com/max-sixty/worktrunk/releases/download/v0.58.0/worktrunk-x86_64-unknown-linux-musl.tar.xz
+        sha256: d1feb2c231e10030c5301ffdd539a48f37ebfec50dea6ef1e1078c87e95beeec
+      x86_64-macos:
+        url: https://github.com/max-sixty/worktrunk/releases/download/v0.58.0/worktrunk-x86_64-apple-darwin.tar.xz
+        sha256: 251951732ab19f36e665ba8825863e867008f7d1970aa644892683f047ef7147
+      x86_64-windows:
+        url: https://github.com/max-sixty/worktrunk/releases/download/v0.58.0/worktrunk-x86_64-pc-windows-msvc.zip
+        sha256: 6ffb85a51c43e6fd6fd5b687d7e02caab85e1d2b716bea8b068a845a14dbcbe1
 installs:
   0.36.0:
     any-any:
