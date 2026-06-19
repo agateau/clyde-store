@@ -39,6 +39,24 @@ releases:
       x86_64-windows:
         url: https://github.com/cloudflare/cloudflared/releases/download/2026.6.0/cloudflared-windows-amd64.exe
         sha256: 03e322598e84d77406fa55b93f59e8e54636c5d8501d9dce36697fcf080ed8cc
+  2026.6.1:
+    added_at: 2026-06-19T11:22:02.222216422Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-linux-arm64
+        sha256: 59816ce9b16db71f5bc2a86d59b3632a96c8c3ee934bde2bc8641ee83a6070eb
+      aarch64-macos:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-darwin-arm64.tgz
+        sha256: f6d4c439c6c782b83264951d327989ce5e23373acc5942b872411601fedb020d
+      x86_64-linux:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-linux-amd64
+        sha256: 5861a10a438fe8ddcfebb3b830f83966cbf193edafce0fe2eeb198fbae1f7a22
+      x86_64-macos:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-darwin-amd64.tgz
+        sha256: d7a66b525fe76820da6e5406611b61e48b40de682368ac00454d9158f085be4b
+      x86_64-windows:
+        url: https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-windows-amd64.exe
+        sha256: 5253e66f1f493c4e13539749f1aa86fd0c61e3072900fec29a44ba046a6d97e2
 installs:
   2026.5.2:
     any-linux:
