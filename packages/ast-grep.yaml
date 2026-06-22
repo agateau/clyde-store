@@ -867,6 +867,30 @@ releases:
       x86_64-windows:
         url: https://github.com/ast-grep/ast-grep/releases/download/0.43.0/app-x86_64-pc-windows-msvc.zip
         sha256: a4febbc8c48671e5729d85e29e4ebe5a051b7250d19545bca18e725ccf40ef61
+  0.44.0:
+    added_at: 2026-06-22T12:48:54.916263743Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-aarch64-unknown-linux-gnu.zip
+        sha256: 86f4d5924b59fca4bbcb3fb2fb9a73b38a4f666c402886395c8bf18b6afc61f0
+      aarch64-macos:
+        url: https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-aarch64-apple-darwin.zip
+        sha256: 80ad83ae28c56cbbaa2beaa391f564b073a99c2a0a20d49fd9ddc10aaafd6979
+      aarch64-windows:
+        url: https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-aarch64-pc-windows-msvc.zip
+        sha256: 96f0a5ce290a52329bfd7c8088d542d23c18b8fe8172fb120f73e782c9301b23
+      x86-windows:
+        url: https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-i686-pc-windows-msvc.zip
+        sha256: 09c03cc4ff05cda93a6f4cc541b4e40561ab426e2678e68fe0220eeaf6cbbcc7
+      x86_64-linux:
+        url: https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-unknown-linux-gnu.zip
+        sha256: a074982c59a749371d225e6129faf5815f731f460aa080c004af9b7e79c55632
+      x86_64-macos:
+        url: https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-apple-darwin.zip
+        sha256: 0df15196bd07a598dbc600feb95b5e707c062542be282d3f6ebd92436ef7777e
+      x86_64-windows:
+        url: https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-pc-windows-msvc.zip
+        sha256: 90b80c3126f2db07767ba8fecf23b8878b5ef68db08ff445ba4bab827dd4eb6f
 installs:
   0.33.0:
     any-any:
