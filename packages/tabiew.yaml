@@ -66,6 +66,27 @@ releases:
       x86_64-windows:
         url: https://github.com/shshemi/tabiew/releases/download/v0.13.1/tw-x86_64-pc-windows-msvc.exe
         sha256: d52c1ec759835a46b3d9987e86669c3a92a429f0a2bdc754de28ccd930e32624
+  0.14.0:
+    added_at: 2026-06-25T10:14:49.394733405Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/shshemi/tabiew/releases/download/v0.14.0/tw-aarch64-unknown-linux-musl
+        sha256: 80fa78693d67569555c4424f8164e502df892ce2374df659743ee6eb7648d10f
+      aarch64-macos:
+        url: https://github.com/shshemi/tabiew/releases/download/v0.14.0/tw-aarch64-apple-darwin
+        sha256: 992cf5f57e473f2fc50a60f8a998b0203aed45ba841229d01a54f0f5b9362cec
+      aarch64-windows:
+        url: https://github.com/shshemi/tabiew/releases/download/v0.14.0/tw-aarch64-pc-windows-msvc.exe
+        sha256: 2357d300442c15473e040090842fb03e07b0dfc52aa50adc745f8b538607e31a
+      x86_64-linux:
+        url: https://github.com/shshemi/tabiew/releases/download/v0.14.0/tw-x86_64-unknown-linux-musl
+        sha256: f265c6b4b306ef35d4405ffc1f3b98a0e3acfa92a3d829e1b1db2c6b7d439c69
+      x86_64-macos:
+        url: https://github.com/shshemi/tabiew/releases/download/v0.14.0/tw-x86_64-apple-darwin
+        sha256: 8c764ad530e30db011e538d46fe3531f805dbae0fb784b17ee06e8e3e99d5685
+      x86_64-windows:
+        url: https://github.com/shshemi/tabiew/releases/download/v0.14.0/tw-x86_64-pc-windows-msvc.exe
+        sha256: f295276d208c783bbe4de6869840951e9e5d52d21f814581756df0e22b80f2ca
 installs:
   0.12.0:
     any-any:
