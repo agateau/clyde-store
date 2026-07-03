@@ -1,0 +1,39 @@
+name: railway
+description: Railway CLI
+homepage: https://railway.com
+repository: https://github.com/railwayapp/cli
+releases:
+  5.23.3:
+    added_at: 2026-07-03T14:20:37.662575681Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/railwayapp/cli/releases/download/v5.23.3/railway-v5.23.3-aarch64-unknown-linux-musl.tar.gz
+        sha256: 06f9570e3e4a76183a016aa0c02dac9f24459a1bb2343ea57f068eae205dbf91
+      aarch64-macos:
+        url: https://github.com/railwayapp/cli/releases/download/v5.23.3/railway-v5.23.3-aarch64-apple-darwin.tar.gz
+        sha256: 73a35290de29e839000bea5fbe968582db0b91f9e43e04d4cd01281de24c300c
+      aarch64-windows:
+        url: https://github.com/railwayapp/cli/releases/download/v5.23.3/railway-v5.23.3-aarch64-pc-windows-msvc.tar.gz
+        sha256: ac8883d248ed18ab7f65a898eb782668c03229a34b9e9ba1ef40b446eaae4cdf
+      x86-linux:
+        url: https://github.com/railwayapp/cli/releases/download/v5.23.3/railway-v5.23.3-i686-unknown-linux-musl.tar.gz
+        sha256: 2d786c84a303565d4b293da49f4e6cf455f9b33a70b58e47f4e6628205948790
+      x86-windows:
+        url: https://github.com/railwayapp/cli/releases/download/v5.23.3/railway-v5.23.3-i686-pc-windows-msvc.tar.gz
+        sha256: 18fa57c25c0bba21aed90229893ccd659c7595e88829023ad1c7d05dfd991889
+      x86_64-linux:
+        url: https://github.com/railwayapp/cli/releases/download/v5.23.3/railway-v5.23.3-x86_64-unknown-linux-musl.tar.gz
+        sha256: 9b463df25c11b521c749332bfc57cd94c65fbedaa2e8bf6d330b904d2a966d05
+      x86_64-macos:
+        url: https://github.com/railwayapp/cli/releases/download/v5.23.3/railway-v5.23.3-x86_64-apple-darwin.tar.gz
+        sha256: b25823bddd529fb83702e2a432dfd1d9bbe907f1b1d98edf2c4766393beb7c90
+      x86_64-windows:
+        url: https://github.com/railwayapp/cli/releases/download/v5.23.3/railway-v5.23.3-x86_64-pc-windows-msvc.tar.gz
+        sha256: 81cf0d1c6b4a03939edec43c1209f49e040b19c7086554fb5ef1c3186004881c
+installs:
+  5.23.3:
+    any-any:
+      files:
+        railway${exe_ext}: bin/
+      tests:
+      - railway${exe_ext} --version
