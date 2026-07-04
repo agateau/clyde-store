@@ -1,0 +1,35 @@
+name: k9s
+description: Kubernetes CLI to manage your clusters in style
+homepage: https://k9scli.io
+repository: https://github.com/derailed/k9s
+releases:
+  0.51.0:
+    added_at: 2026-06-11T14:38:14.184374241Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/derailed/k9s/releases/download/v0.51.0/k9s_Linux_arm64.tar.gz
+        sha256: 3ee05c82e5f9198928a4e86133608ba6a2c10a2244d6a7789e820f78319d640c
+      aarch64-macos:
+        url: https://github.com/derailed/k9s/releases/download/v0.51.0/k9s_Darwin_arm64.tar.gz
+        sha256: 9b8c0e8f461e5d33aeee43a67f5ef4aff646a008a786887b8266cbb153c610cc
+      aarch64-windows:
+        url: https://github.com/derailed/k9s/releases/download/v0.51.0/k9s_Windows_arm64.zip
+        sha256: a61c11ac1e9c64e02ce852dd43b630abafda8f0a2c5fd46c752a39f0670a0244
+      x86_64-linux:
+        url: https://github.com/derailed/k9s/releases/download/v0.51.0/k9s_Linux_amd64.tar.gz
+        sha256: c3752ad51a5a4015a113819c4eeb6e55a4d0e4b8e652494797532f6fc8161dd7
+      x86_64-macos:
+        url: https://github.com/derailed/k9s/releases/download/v0.51.0/k9s_Darwin_amd64.tar.gz
+        sha256: 7e8802c57c45a0cd389e8fc38472243fe4cf48d8ad5957e189ce370e19e5eda0
+      x86_64-windows:
+        url: https://github.com/derailed/k9s/releases/download/v0.51.0/k9s_Windows_amd64.zip
+        sha256: bba299f1877913979831543a008f2e104995d2ea4ac8f23d7f49c0444857d973
+installs:
+  0.51.0:
+    any-any:
+      files:
+        k9s${exe_ext}: bin/
+        README.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+      tests:
+      - k9s${exe_ext} version
