@@ -1,0 +1,32 @@
+name: python3.13
+description: Python 3.13, compiled by Gregory Szorc.
+homepage: https://github.com/indygreg/python-build-standalone
+repository: https://github.com/indygreg/python-build-standalone
+releases:
+  20260718.0.0:
+    added_at: 2026-07-20T07:39:37.582458020Z
+    assets:
+      aarch64-macos:
+        url: https://github.com/astral-sh/python-build-standalone/releases/download/20260718/cpython-3.13.14%2B20260718-aarch64-apple-darwin-install_only.tar.gz
+        sha256: dca7c3bac21f023cf294705b27f4f3e9c70399c40790ebb81e8d0eff15b00770
+      x86_64-linux:
+        url: https://github.com/astral-sh/python-build-standalone/releases/download/20260718/cpython-3.13.14%2B20260718-x86_64_v3-unknown-linux-gnu-install_only.tar.gz
+        sha256: 4d6c0afe079aaeb90595ec786ceba046734f9aa62541b679c8012fa20bd963b2
+      x86_64-macos:
+        url: https://github.com/astral-sh/python-build-standalone/releases/download/20260718/cpython-3.13.14%2B20260718-x86_64-apple-darwin-install_only.tar.gz
+        sha256: 2c7daabe0e94de636064d42f1afa46ea26a303bb23e14f4a64961d36eaecdb73
+installs:
+  20260718.0.0:
+    any-any:
+      files:
+        python: opt/python3.13
+      extra_files:
+        pip3.13: bin/
+        pip3.13.bat: bin/
+        python3.13: bin/
+        python3.13.bat: bin/
+      tests:
+      - python3.13 -c 'import sys ; print(sys.version)'
+      - pip3.13 --version
+fetcher: !GitHub
+  include: ^cpython-3\.13\..*(v3-unknown-linux-gnu|windows-msvc-shared|apple-darwin)-install_only.tar.gz
