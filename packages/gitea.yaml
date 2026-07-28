@@ -1551,6 +1551,33 @@ releases:
       x86_64-windows:
         url: https://github.com/go-gitea/gitea/releases/download/v1.26.4/gitea-1.26.4-gogit-windows-4.0-amd64.exe.xz
         sha256: e57cbde969d975c967bbc3fb04e20c59a871bc114049e57b69c6bb1c5039b235
+  1.27.1:
+    added_at: 2026-07-28T13:15:11.872551806Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/go-gitea/gitea/releases/download/v1.27.1/gitea-1.27.1-linux-arm64.xz
+        sha256: f0679b4c25b1a87022f715f73f477bdb406d5e12a641d0bc4fa481687470724d
+      aarch64-macos:
+        url: https://github.com/go-gitea/gitea/releases/download/v1.27.1/gitea-1.27.1-darwin-10.12-arm64.xz
+        sha256: 9a681deeb244a8fc474742723c79ad8ccf8ea468046fa4aa11ed0384cdc3c275
+      aarch64-windows:
+        url: https://github.com/go-gitea/gitea/releases/download/v1.27.1/gitea-1.27.1-gogit-windows-4.0-arm64.exe.xz
+        sha256: 9cb4da02bd173d55ff832be19f4b8384d8744abd2a61f232f065052e29bb1770
+      x86-linux:
+        url: https://github.com/go-gitea/gitea/releases/download/v1.27.1/gitea-1.27.1-linux-386.xz
+        sha256: a8154daba339a85534589e5e7f85fe61fa67cc1524f74ead2ef643188d27f982
+      x86-windows:
+        url: https://github.com/go-gitea/gitea/releases/download/v1.27.1/gitea-1.27.1-gogit-windows-4.0-386.exe.xz
+        sha256: 66edf7dd384445903a818b58f371886420eceb28a62619b0404b9ee275dbb5b0
+      x86_64-linux:
+        url: https://github.com/go-gitea/gitea/releases/download/v1.27.1/gitea-1.27.1-linux-amd64.xz
+        sha256: 1754bfaf42c50c0f9c933101584edf5a5631fcf42b5ff8c92d12b3a609f1a41c
+      x86_64-macos:
+        url: https://github.com/go-gitea/gitea/releases/download/v1.27.1/gitea-1.27.1-darwin-10.12-amd64.xz
+        sha256: eab82492a2b6e4a52bbda2f7f1499730bbfc0b2bef2ed275859eed59f9b25317
+      x86_64-windows:
+        url: https://github.com/go-gitea/gitea/releases/download/v1.27.1/gitea-1.27.1-gogit-windows-4.0-amd64.exe.xz
+        sha256: cc9e2c5cbb1e54fb854e45aea6051a8d5cb6f6ab7b4fc7a448f92e3b87c62014
 installs:
   1.17.0:
     any-any:
