@@ -3819,6 +3819,27 @@ releases:
       x86_64-windows:
         url: https://github.com/jdx/mise/releases/download/v2026.7.15/mise-v2026.7.15-windows-x64.zip
         sha256: f29509f4ddbdb1bce8374fee96433c01fb79b90309f559e3fa227d50e14c39d4
+  2026.7.16:
+    added_at: 2026-07-29T09:36:03.925465690Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/jdx/mise/releases/download/v2026.7.16/mise-v2026.7.16-linux-arm64-musl.tar.xz
+        sha256: c0dd460b762b328281a648ff4d698325fb9ff1ca9b9f9bd0b1d6520b7f9cdf53
+      aarch64-macos:
+        url: https://github.com/jdx/mise/releases/download/v2026.7.16/mise-v2026.7.16-macos-arm64.tar.xz
+        sha256: 347e22a2927b1794b75202a07b1a3fa2d3461fb53765bd91f913bf2190884c1d
+      aarch64-windows:
+        url: https://github.com/jdx/mise/releases/download/v2026.7.16/mise-v2026.7.16-windows-arm64.zip
+        sha256: c77c30b35a27c25db8f772930caad9d9b72de1f89592a359110c2d228cffaeae
+      x86_64-linux:
+        url: https://github.com/jdx/mise/releases/download/v2026.7.16/mise-v2026.7.16-linux-x64-musl.tar.xz
+        sha256: c8fca36482e41209fbb2dd858a3d6e0288e26298661fa6010dd0e81e37e414d3
+      x86_64-macos:
+        url: https://github.com/jdx/mise/releases/download/v2026.7.16/mise-v2026.7.16-macos-x64.tar.xz
+        sha256: dbc7cf1b9480e7db1616982c6a050ca2dcf11364f28d074d51831419b7f2b1b1
+      x86_64-windows:
+        url: https://github.com/jdx/mise/releases/download/v2026.7.16/mise-v2026.7.16-windows-x64.zip
+        sha256: 8a3c0767b302b6b1f54d764dd9e3fb5679fec0a2c8db148a6bb32df43db45a37
 installs:
   2025.3.2:
     any-any:
