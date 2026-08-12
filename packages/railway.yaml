@@ -192,6 +192,33 @@ releases:
       x86_64-windows:
         url: https://github.com/railwayapp/cli/releases/download/v5.37.0/railway-v5.37.0-x86_64-pc-windows-msvc.tar.gz
         sha256: 54876d74a1e77ba0752be526246d24b323a182fcc26d6716fb5dcb13a1574140
+  5.37.7:
+    added_at: 2026-08-12T08:15:45.815395311Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/railwayapp/cli/releases/download/v5.37.7/railway-v5.37.7-aarch64-unknown-linux-musl.tar.gz
+        sha256: 6e3762005dbdd07864bc3c3e72103bd57e13d9f154c2c0bc8bf5ae34a07be59c
+      aarch64-macos:
+        url: https://github.com/railwayapp/cli/releases/download/v5.37.7/railway-v5.37.7-aarch64-apple-darwin.tar.gz
+        sha256: c45c1d0a523131d34cba4d37406ae7061e23494255e293e288460457ba594871
+      aarch64-windows:
+        url: https://github.com/railwayapp/cli/releases/download/v5.37.7/railway-v5.37.7-aarch64-pc-windows-msvc.tar.gz
+        sha256: aa4e87143deacee5ffac90a68c8011818acf15af9dfa034361920c3d4b03b44e
+      x86-linux:
+        url: https://github.com/railwayapp/cli/releases/download/v5.37.7/railway-v5.37.7-i686-unknown-linux-musl.tar.gz
+        sha256: 77fc4997dbc7be8b919848ef75651c54e1e5b2665b6b43bd9ea2a37bd18d2848
+      x86-windows:
+        url: https://github.com/railwayapp/cli/releases/download/v5.37.7/railway-v5.37.7-i686-pc-windows-msvc.tar.gz
+        sha256: b9f541a13d6dbfaa7d5181218d3165fc1be7b9526bf36256ca066eacd8fcc668
+      x86_64-linux:
+        url: https://github.com/railwayapp/cli/releases/download/v5.37.7/railway-v5.37.7-x86_64-unknown-linux-musl.tar.gz
+        sha256: 9aebfd69103b085a43a3e8755bbbfff9138428602b784b21f95ea5b291cb5ca3
+      x86_64-macos:
+        url: https://github.com/railwayapp/cli/releases/download/v5.37.7/railway-v5.37.7-x86_64-apple-darwin.tar.gz
+        sha256: 217745359223b959a6f08305c0907e315d1c2f7fa3d2017ce7fe131eb0a41e7b
+      x86_64-windows:
+        url: https://github.com/railwayapp/cli/releases/download/v5.37.7/railway-v5.37.7-x86_64-pc-windows-msvc.tar.gz
+        sha256: e8a6857e52cf39a4076698f5983aea4ec123608f01a84e12eff7c569924c9c52
 installs:
   5.23.3:
     any-any:
