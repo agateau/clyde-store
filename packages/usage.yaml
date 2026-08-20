@@ -183,6 +183,24 @@ releases:
       x86_64-windows:
         url: https://github.com/jdx/usage/releases/download/v3.5.3/usage-x86_64-pc-windows-msvc.zip
         sha256: 3cd7995171854518873f84bf60be17c8e331cad1ca180e03911fac414a7a6372
+  5.1.0:
+    added_at: 2026-08-20T07:41:31.924321996Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/jdx/usage/releases/download/v5.1.0/usage-aarch64-unknown-linux-musl.tar.gz
+        sha256: e2056b06c8d13f109389d53e758b4e79208f01360dec996751bc48ce658eb200
+      aarch64-windows:
+        url: https://github.com/jdx/usage/releases/download/v5.1.0/usage-aarch64-pc-windows-msvc.zip
+        sha256: 66a1c0dcc8b320377ff0d8238eb89628c8e77ab2c577739edeed69976f538837
+      any-macos:
+        url: https://github.com/jdx/usage/releases/download/v5.1.0/usage-universal-apple-darwin.tar.gz
+        sha256: ca35e60afd2895ec0b5be9162dbef155a76384ce43573b1ab8a04fbb46e70cd9
+      x86_64-linux:
+        url: https://github.com/jdx/usage/releases/download/v5.1.0/usage-x86_64-unknown-linux-musl.tar.gz
+        sha256: a702c639f8e25d1e10f42ab37e09b8f73634c09b23c7abe2ebd6ab6f9665e99c
+      x86_64-windows:
+        url: https://github.com/jdx/usage/releases/download/v5.1.0/usage-x86_64-pc-windows-msvc.zip
+        sha256: c0ef8c1c04917b4f2727134a10a3ab1afed9f251f677ab621c25b9cc85cad66b
 installs:
   2.18.2:
     any-any:
