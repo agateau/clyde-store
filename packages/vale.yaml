@@ -606,6 +606,27 @@ releases:
       x86_64-windows:
         url: https://github.com/vale-cli/vale/releases/download/v3.15.1/vale_3.15.1_Windows_64-bit.zip
         sha256: 3395fca0ddfb10a9b6caa28e091d5df709b1d6b6579afb7dece852cad89b94f3
+  3.18.0:
+    added_at: 2026-08-22T07:31:24.549299512Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/vale-cli/vale/releases/download/v3.18.0/vale_3.18.0_Linux_arm64.tar.gz
+        sha256: 228325a79f3e6d8b4798d82901f8ed36f6d12b7ff0bad2cc83512dde0c84fbcc
+      aarch64-macos:
+        url: https://github.com/vale-cli/vale/releases/download/v3.18.0/vale_3.18.0_macOS_arm64.tar.gz
+        sha256: 4d7de9bda8379da14cd45048500199c549413187526d0913383ad822866ad43d
+      aarch64-windows:
+        url: https://github.com/vale-cli/vale/releases/download/v3.18.0/vale_3.18.0_Windows_arm64.zip
+        sha256: 24a70591e45a5afbb94d44e5bd600ffcd15b6dabc6cf9ffffd5c3ece4a6c4732
+      x86_64-linux:
+        url: https://github.com/vale-cli/vale/releases/download/v3.18.0/vale_3.18.0_Linux_64-bit.tar.gz
+        sha256: a6f71a75a12fe689345b754f2412b90367fe33648abb7d200fa19eaadc2dbf6d
+      x86_64-macos:
+        url: https://github.com/vale-cli/vale/releases/download/v3.18.0/vale_3.18.0_macOS_64-bit.tar.gz
+        sha256: 7ec47dad588bf1421e12f72f15219dcc96e3adf7204918ee86ea81fe8cddab8d
+      x86_64-windows:
+        url: https://github.com/vale-cli/vale/releases/download/v3.18.0/vale_3.18.0_Windows_64-bit.zip
+        sha256: 621cee4b7f8c8687fbcbdcbfc2e904aaa174b9d07bcb9018bd96b943b89c539d
   3.2.0:
     added_at: null
     assets:
