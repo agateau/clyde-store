@@ -147,6 +147,24 @@ releases:
       x86_64-windows:
         url: https://github.com/zizmorcore/zizmor/releases/download/v1.26.1/zizmor-x86_64-pc-windows-msvc.zip
         sha256: c6cea156935e3b9d36faeca4fd8f622d23f7a7578da26adb34e6456abd9beb9a
+  1.29.0:
+    added_at: 2026-08-22T07:30:12.208064584Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/zizmorcore/zizmor/releases/download/v1.29.0/zizmor-aarch64-unknown-linux-gnu.tar.gz
+        sha256: 415eaa7c0a06479a701b8e44a3e812c1047decc848ec4bede7bd6bbf49f22d20
+      aarch64-macos:
+        url: https://github.com/zizmorcore/zizmor/releases/download/v1.29.0/zizmor-aarch64-apple-darwin.tar.gz
+        sha256: 720322fade9e83a9c7953944c438f2ba942636b86b96a8f0e6b15ce94c8a6b6f
+      x86_64-linux:
+        url: https://github.com/zizmorcore/zizmor/releases/download/v1.29.0/zizmor-x86_64-unknown-linux-gnu.tar.gz
+        sha256: dd96df044a6e8538d5f423790f453bdd03d49e5b2bcc38214acc41a2f1297839
+      x86_64-macos:
+        url: https://github.com/zizmorcore/zizmor/releases/download/v1.29.0/zizmor-x86_64-apple-darwin.tar.gz
+        sha256: 648b72ab9941a7f2a8d65d7b68a8e76cef789538c8df3a3950384d38423375b0
+      x86_64-windows:
+        url: https://github.com/zizmorcore/zizmor/releases/download/v1.29.0/zizmor-x86_64-pc-windows-msvc.zip
+        sha256: 68a6bc6888f10bf0d53658c75885e7c1b7a0588d4c1fbc3f0ca280ad7324bf06
 installs:
   1.22.0:
     any-any:
