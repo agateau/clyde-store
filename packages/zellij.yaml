@@ -228,6 +228,24 @@ releases:
       x86_64-windows:
         url: https://github.com/zellij-org/zellij/releases/download/v0.45.0/zellij-no-web-x86_64-pc-windows-msvc.zip
         sha256: 2c76164fd082ffa1ca815b5f4515b7a2eb45600b2e1d562650a31e9b69bd61f6
+  0.45.1:
+    added_at: 2026-08-28T19:15:57.354214288Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/zellij-org/zellij/releases/download/v0.45.1/zellij-aarch64-unknown-linux-musl.tar.gz
+        sha256: 05f0802afadd53f8db9514e7cae53c9ae8432fed1b35b8294aa816ee3044a16b
+      aarch64-macos:
+        url: https://github.com/zellij-org/zellij/releases/download/v0.45.1/zellij-aarch64-apple-darwin.tar.gz
+        sha256: c029ba4fe1927b79ad9f0cdd59155c4dff80777863c85857d4d09b88b56f9891
+      x86_64-linux:
+        url: https://github.com/zellij-org/zellij/releases/download/v0.45.1/zellij-no-web-x86_64-unknown-linux-musl.tar.gz
+        sha256: d7bda1e18c30a688833ae7627f1d6a253bbba5349a4bc48e4f0ec008aaf75ed1
+      x86_64-macos:
+        url: https://github.com/zellij-org/zellij/releases/download/v0.45.1/zellij-no-web-x86_64-apple-darwin.tar.gz
+        sha256: 37a1b29f222722f9e7cca2bf506b6d9a816858b5ff80facdb03fd577a8cf08e3
+      x86_64-windows:
+        url: https://github.com/zellij-org/zellij/releases/download/v0.45.1/zellij-no-web-x86_64-pc-windows-msvc.zip
+        sha256: e4684687ebabdaf5fba416df3db818f359c05b7121e949b62f9bf04984798919
 installs:
   0.0.0:
     any-any:
