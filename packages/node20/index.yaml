@@ -1,0 +1,55 @@
+name: node20
+description: Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+homepage: https://nodejs.org/
+repository: ''
+releases:
+  20.11.0:
+    aarch64-linux:
+      url: https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-arm64.tar.xz
+      sha256: f6df68c6793244071f69023a9b43a0cf0b13d65cbe86d55925c28e4134d9aafb
+    aarch64-macos:
+      url: https://nodejs.org/dist/v20.11.0/node-v20.11.0-darwin-arm64.tar.xz
+      sha256: f18a7438723d48417f5e9be211a2f3c0520ffbf8e02703469e5153137ca0f328
+    x86_64-linux:
+      url: https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-x64.tar.xz
+      sha256: 822780369d0ea309e7d218e41debbd1a03f8cdf354ebf8a4420e89f39cc2e612
+    x86_64-macos:
+      url: https://nodejs.org/dist/v20.11.0/node-v20.11.0-darwin-x64.tar.xz
+      sha256: d4b4ab81ebf1f7aab09714f834992f27270ad0079600da00c8110f8950ca6c5a
+    x86_64-windows:
+      url: https://nodejs.org/dist/v20.11.0/node-v20.11.0-win-x64.zip
+      sha256: 893115cd92ad27bf178802f15247115e93c0ef0c753b93dca96439240d64feb5
+  20.15.0:
+    aarch64-linux:
+      url: https://nodejs.org/dist/v20.15.0/node-v20.15.0-linux-arm64.tar.xz
+      sha256: ecdd2645630a35abd98ebcf2d989f38cec8cca6f198712d8ce72eaee77131307
+    aarch64-macos:
+      url: https://nodejs.org/dist/v20.15.0/node-v20.15.0-darwin-arm64.tar.xz
+      sha256: d9d4f8ca80eb4eeedcb2797844890c94bf3be24031af4d04cb2ffb9a542aeea5
+    x86_64-linux:
+      url: https://nodejs.org/dist/v20.15.0/node-v20.15.0-linux-x64.tar.xz
+      sha256: 4f57f7828e6adb9f6bc77932f10e316cca68b0f160c82b21d9a2c7647c7f10bf
+    x86_64-macos:
+      url: https://nodejs.org/dist/v20.15.0/node-v20.15.0-darwin-x64.tar.xz
+      sha256: 0f5318eea20055f12bffdee53380645d86335a15a6f1281bbc597f80c4d8fa6a
+    x86_64-windows:
+      url: https://nodejs.org/dist/v20.15.0/node-v20.15.0-win-x64.zip
+      sha256: 37b1b83b6efecd53fc5dd16e0674e0ec674dd80a5924e5f3a8d9613c02437bec
+installs:
+  20.0.0:
+    any-any:
+      strip: 1
+      files:
+        CHANGELOG.md: ${doc_dir}
+        LICENSE: ${doc_dir}
+        README.md: ${doc_dir}
+        bin: ''
+        include: ''
+        lib: ''
+        share: ''
+      tests:
+      - corepack${exe_ext} --version
+      - node${exe_ext} --version
+      - npm${exe_ext} --version
+      - npx${exe_ext} --version
+fetcher: Script
