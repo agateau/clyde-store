@@ -315,6 +315,27 @@ releases:
       x86_64-windows:
         url: https://github.com/jj-vcs/jj/releases/download/v0.44.0/jj-v0.44.0-x86_64-pc-windows-msvc.zip
         sha256: a33732415db40e84f43c911b04751cf88aa2c7a5d12ea86bec3ac18f23f463fd
+  0.45.1:
+    added_at: 2026-09-04T11:58:50.929422103Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/jj-vcs/jj/releases/download/v0.45.1/jj-v0.45.1-aarch64-unknown-linux-musl.tar.gz
+        sha256: 7349a43dd5a20dbc998b10114daa0ee63d2ab863fb822c7eb6b0ebca5903cc69
+      aarch64-macos:
+        url: https://github.com/jj-vcs/jj/releases/download/v0.45.1/jj-v0.45.1-aarch64-apple-darwin.tar.gz
+        sha256: 51ba42e3d0682616f6eb015045bfe45289b396f03511f9897f645ce8e9272743
+      aarch64-windows:
+        url: https://github.com/jj-vcs/jj/releases/download/v0.45.1/jj-v0.45.1-aarch64-pc-windows-msvc.zip
+        sha256: 0f869d108316149f211d2ba50a626b4fe8ef99232db52f13300bde106821be9e
+      x86_64-linux:
+        url: https://github.com/jj-vcs/jj/releases/download/v0.45.1/jj-v0.45.1-x86_64-unknown-linux-musl.tar.gz
+        sha256: f35438350b5d61963aac5dd74ede510b31d6b9690769d1a6268cf058cc825f72
+      x86_64-macos:
+        url: https://github.com/jj-vcs/jj/releases/download/v0.45.1/jj-v0.45.1-x86_64-apple-darwin.tar.gz
+        sha256: 6171582d0b5a98a1005cd9643faebff7936812ec264d7968a39d9cef3654a99b
+      x86_64-windows:
+        url: https://github.com/jj-vcs/jj/releases/download/v0.45.1/jj-v0.45.1-x86_64-pc-windows-msvc.zip
+        sha256: 5dbf2619272c897394d34190a94b21a6ab8d1e8e59fcf7dfc173d8fa8aa90bf0
 installs:
   0.30.0:
     any-any:
