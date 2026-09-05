@@ -3,6 +3,27 @@ description: Go library and CLI for working with git forges
 homepage: https://github.com/git-pkgs/forge
 repository: https://github.com/git-pkgs/forge
 releases:
+  0.10.0:
+    added_at: 2026-09-05T11:08:29.177570643Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/git-pkgs/forge/releases/download/v0.10.0/forge_0.10.0_linux_arm64.tar.gz
+        sha256: 058463db206e54a2bc3e30836fee3466b3511a85270cdbfff29a74fddd29b3f0
+      aarch64-macos:
+        url: https://github.com/git-pkgs/forge/releases/download/v0.10.0/forge_0.10.0_darwin_arm64.tar.gz
+        sha256: 4505c4cf19cc9de47cf59e2f5533386fab9b6ffdacecb7bb1191543fa0cfe980
+      aarch64-windows:
+        url: https://github.com/git-pkgs/forge/releases/download/v0.10.0/forge_0.10.0_windows_arm64.tar.gz
+        sha256: e4b00ace244f8b35c9acb1b109f21f03392f2240b1930028ba63fb0fda8585ff
+      x86_64-linux:
+        url: https://github.com/git-pkgs/forge/releases/download/v0.10.0/forge_0.10.0_linux_amd64.tar.gz
+        sha256: e22ffe309acedfc039d5555ed78d7ba69b58dea185eec5807751774f5b54e7db
+      x86_64-macos:
+        url: https://github.com/git-pkgs/forge/releases/download/v0.10.0/forge_0.10.0_darwin_amd64.tar.gz
+        sha256: 0bb5a7236162f5e36711fa260563eadd3081666ed2f6610cdb08eec3195772ca
+      x86_64-windows:
+        url: https://github.com/git-pkgs/forge/releases/download/v0.10.0/forge_0.10.0_windows_amd64.tar.gz
+        sha256: f98f211b90cc8a0fc9c6deaa687b68eeed56d14b7a16452c432459187d3c9cb8
   0.4.0:
     added_at: null
     assets:
