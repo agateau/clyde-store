@@ -651,6 +651,33 @@ releases:
       x86_64-windows:
         url: https://github.com/railwayapp/cli/releases/download/v5.49.6/railway-v5.49.6-x86_64-pc-windows-msvc.tar.gz
         sha256: 13bf03231f17c097fafef1c7efa25c777eaa1add1958d31767dcd874130a34f5
+  5.57.11:
+    added_at: 2026-09-19T11:48:20.567089902Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/railwayapp/cli/releases/download/v5.57.11/railway-v5.57.11-aarch64-unknown-linux-musl.tar.gz
+        sha256: 5d9c3c3f612c7525b8bac538dde7be375d55e36198454df9caa3a59e1e0f1884
+      aarch64-macos:
+        url: https://github.com/railwayapp/cli/releases/download/v5.57.11/railway-v5.57.11-aarch64-apple-darwin.tar.gz
+        sha256: bb0949e5030308aaace2c6729b66a6e91f378378048140846328d1e02d203e67
+      aarch64-windows:
+        url: https://github.com/railwayapp/cli/releases/download/v5.57.11/railway-v5.57.11-aarch64-pc-windows-msvc.tar.gz
+        sha256: 5c479c6980d67b1eab4a02992dbc546157928bd0cc3fb99b3ea59ff49d329d06
+      x86-linux:
+        url: https://github.com/railwayapp/cli/releases/download/v5.57.11/railway-v5.57.11-i686-unknown-linux-musl.tar.gz
+        sha256: 566886d6b4673f072108a75fe1d9a9d66a8a4f3dd9f59c47716af16edd158283
+      x86-windows:
+        url: https://github.com/railwayapp/cli/releases/download/v5.57.11/railway-v5.57.11-i686-pc-windows-msvc.tar.gz
+        sha256: c0538f1a19b35b07b80c3ef2ac72876166671ba6e104ac1b93953dd210f5a3d3
+      x86_64-linux:
+        url: https://github.com/railwayapp/cli/releases/download/v5.57.11/railway-v5.57.11-x86_64-unknown-linux-musl.tar.gz
+        sha256: 0d40e1d7e4f6e204b2a49ebaf21c77f3cb6da5deec632024fc6338b32e14bb30
+      x86_64-macos:
+        url: https://github.com/railwayapp/cli/releases/download/v5.57.11/railway-v5.57.11-x86_64-apple-darwin.tar.gz
+        sha256: 432484ab76dd7e6afb1f79d8422f692e9c20faa30db97c844043e6dab589a17f
+      x86_64-windows:
+        url: https://github.com/railwayapp/cli/releases/download/v5.57.11/railway-v5.57.11-x86_64-pc-windows-msvc.tar.gz
+        sha256: 427340dbbb0a4ad17a8564b9ab494be104ed5691a10f8028147c5b76556b5067
 installs:
   5.23.3:
     any-any:
