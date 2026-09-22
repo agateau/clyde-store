@@ -108,6 +108,27 @@ releases:
       x86_64-windows:
         url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.145/cargo-nextest-0.9.145-x86_64-pc-windows-msvc.tar.gz
         sha256: bfecd545af057adb83be7ddfe135fd067fb9c990544da1ea111e675f45d628a9
+  0.9.146:
+    added_at: 2026-09-22T12:24:10.772171563Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.146/cargo-nextest-0.9.146-aarch64-unknown-linux-musl.tar.gz
+        sha256: 62ae8b4ad034704f67417f8ed8b897566d82359ab44952729b925fb37eeb7622
+      aarch64-windows:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.146/cargo-nextest-0.9.146-aarch64-pc-windows-msvc.tar.gz
+        sha256: c94029615d05072af35429d9d66e0f83ba59886bb4e13163a191134e5f0ad47c
+      any-macos:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.146/cargo-nextest-0.9.146-universal-apple-darwin.tar.gz
+        sha256: 39785160b3c2f6ed9a765049cf4fa79f3b39aa02eb7598a5a0e2a1a0b9ffb9a8
+      x86-windows:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.146/cargo-nextest-0.9.146-i686-pc-windows-msvc.tar.gz
+        sha256: 6362f7bd0d86ce5ea1d92537a23cbcaffa8dfac5628bf5579e6cf21aac15452c
+      x86_64-linux:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.146/cargo-nextest-0.9.146-x86_64-unknown-linux-musl.tar.gz
+        sha256: b64617e8640624e8f9ba99819e37d7971154e97836d7ae4774fed4715501a6aa
+      x86_64-windows:
+        url: https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.146/cargo-nextest-0.9.146-x86_64-pc-windows-msvc.tar.gz
+        sha256: 809b01f2c94d031ab6cf5f4d4a4f477c8f51b69c96ab3cb2fe4db7ecb222d0d3
 installs:
   0.9.137:
     any-any:
