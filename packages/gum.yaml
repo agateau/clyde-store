@@ -627,6 +627,30 @@ releases:
       x86_64-windows:
         url: https://github.com/charmbracelet/gum/releases/download/v2.0.1/gum_2.0.1_Windows_x86_64.zip
         sha256: 1d5e49d02339c185849992f4d1c49af337ac84933360341e3588100d34664f38
+  2.0.2:
+    added_at: 2026-09-24T12:33:29.967622598Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/charmbracelet/gum/releases/download/v2.0.2/gum_2.0.2_Linux_arm64.tar.gz
+        sha256: 8ebf8b54ec1e8c81f2bb58b59ff9b70998186a4d11375f0cf357b80e0ccfa1d5
+      aarch64-macos:
+        url: https://github.com/charmbracelet/gum/releases/download/v2.0.2/gum_2.0.2_Darwin_arm64.tar.gz
+        sha256: 4777a69b1170b8db23c95d5889fb32186cfda1a3ac950d339aa17e3513633890
+      x86-linux:
+        url: https://github.com/charmbracelet/gum/releases/download/v2.0.2/gum_2.0.2_Linux_i386.tar.gz
+        sha256: 43332d42cf809434c884a51ff7f0c624e2c8c5fc2585f5153845ff691b8f45a4
+      x86-windows:
+        url: https://github.com/charmbracelet/gum/releases/download/v2.0.2/gum_2.0.2_Windows_i386.zip
+        sha256: 0c2c172568c9ae6d059ca7fe3ef08fc9f5b2842cbbf813c33dfd1985aba01037
+      x86_64-linux:
+        url: https://github.com/charmbracelet/gum/releases/download/v2.0.2/gum_2.0.2_Linux_x86_64.tar.gz
+        sha256: d842e06d93dbed90af48cb8dd10698db6f22e331fc40346bb37bbc753109edc2
+      x86_64-macos:
+        url: https://github.com/charmbracelet/gum/releases/download/v2.0.2/gum_2.0.2_Darwin_x86_64.tar.gz
+        sha256: 5374966c7c7199ea879fcaa525ddc6d447a098d3d35496e430a9a1ef38d30485
+      x86_64-windows:
+        url: https://github.com/charmbracelet/gum/releases/download/v2.0.2/gum_2.0.2_Windows_x86_64.zip
+        sha256: 0397091dec9b4e8f00e02b90fd3eb07bf45acabbdb61d67437950f18e03a8b79
 installs:
   0.1.0:
     any-any:
