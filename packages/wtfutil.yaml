@@ -213,6 +213,21 @@ releases:
       x86_64-macos:
         url: https://github.com/wtfutil/wtf/releases/download/v0.50.0/wtf_0.50.0_darwin_amd64.tar.gz
         sha256: 880fd191aee3c8dfeb9dbb297d4b384da754dd56dd59e6f49de52ab614551a08
+  0.51.0:
+    added_at: 2026-10-03T12:22:52.669808261Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/wtfutil/wtf/releases/download/v0.51.0/tessera--v0.51.0--linux-arm64.tar.gz
+        sha256: a804880eee2494b57dbc57e67056cd5d593a6ed8fad8801122801cc5d68cfe46
+      aarch64-macos:
+        url: https://github.com/wtfutil/wtf/releases/download/v0.51.0/tessera--v0.51.0--darwin-arm64.tar.gz
+        sha256: 7f08a8e57e571d260b95aecc7e9198d6b54d7368d062fe4cfe4585c240bd72a0
+      x86_64-linux:
+        url: https://github.com/wtfutil/wtf/releases/download/v0.51.0/tessera--v0.51.0--linux-amd64.tar.gz
+        sha256: a2fa4407711a6d2b0103663a9ef47b0f0a7a6031a3ec1b9f7eb8aa55e86a1133
+      x86_64-macos:
+        url: https://github.com/wtfutil/wtf/releases/download/v0.51.0/tessera--v0.51.0--darwin-amd64.tar.gz
+        sha256: b78ae41969caec7c0c0a869b2b79b61c2c24850b36e5df44b8778a26f3845960
 installs:
   0.41.0:
     any-any:
