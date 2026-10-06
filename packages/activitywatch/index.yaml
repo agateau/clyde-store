@@ -4,11 +4,20 @@ homepage: https://activitywatch.net
 repository: https://github.com/ActivityWatch/activitywatch/
 releases:
   0.13.2:
-    x86_64-linux:
-      url: https://github.com/ActivityWatch/activitywatch/releases/download/v0.13.2/activitywatch-v0.13.2-linux-x86_64.zip
-      sha256: 8f62b10babf8a8f108cbdf7267c02fbc1ce2a970fa9535f230b3416b803e3360
-fetcher: !GitHub
-  include: '.*-linux-.*'
+    added_at: null
+    assets:
+      x86_64-linux:
+        url: https://github.com/ActivityWatch/activitywatch/releases/download/v0.13.2/activitywatch-v0.13.2-linux-x86_64.zip
+        sha256: 8f62b10babf8a8f108cbdf7267c02fbc1ce2a970fa9535f230b3416b803e3360
+  0.14.0:
+    added_at: 2026-10-06T14:00:15.303794397Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/ActivityWatch/activitywatch/releases/download/v0.14.0/activitywatch-tauri-v0.14.0-linux-aarch64.zip
+        sha256: 2229ad304f0b72d141310322715fb5184b0cd074f0ac6741d64750ae37fde9d7
+      x86_64-linux:
+        url: https://github.com/ActivityWatch/activitywatch/releases/download/v0.14.0/activitywatch-tauri-v0.14.0-linux-x86_64.zip
+        sha256: 335eb47a3b44351e6553f685646d2727cff577e67e72829ab9a274a963aed175
 installs:
   0.13.2:
     any-linux:
@@ -17,3 +26,5 @@ installs:
       extra_files:
         aw-qt: bin/
         aw-qt.desktop: share/applications/
+fetcher: !GitHub
+  include: .*-linux-.*
