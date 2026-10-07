@@ -1653,6 +1653,27 @@ releases:
       x86_64-windows:
         url: https://github.com/go-gitea/gitea/releases/download/v28.0.0/gitea-28.0.0-windows-amd64.exe.xz
         sha256: 12c65e76a068f06c290c9bce949dc4866d4baa14a92517d17022cb21b65e3328
+  28.1.0:
+    added_at: 2026-10-07T14:14:05.884284164Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/go-gitea/gitea/releases/download/v28.1.0/gitea-28.1.0-linux-arm64.xz
+        sha256: 2ba37cff0ffcceee6505e690426564210e5788d745b8201a80c6b950ca012f3a
+      aarch64-macos:
+        url: https://github.com/go-gitea/gitea/releases/download/v28.1.0/gitea-28.1.0-darwin-arm64.xz
+        sha256: 75a9964a979456ac97e46f3392f12d67380ac023f721d2db58ac9c14c03add72
+      aarch64-windows:
+        url: https://github.com/go-gitea/gitea/releases/download/v28.1.0/gitea-28.1.0-windows-arm64.exe.xz
+        sha256: f788b3778a10d4918c6108917d9787aa0b3e5012f7041c907b5471c3d05f9ac0
+      x86_64-linux:
+        url: https://github.com/go-gitea/gitea/releases/download/v28.1.0/gitea-28.1.0-linux-amd64.xz
+        sha256: d998643be28c10bbc94a3ab5a5705230fcb54e92f04b9aef3f694dd6d20cb97d
+      x86_64-macos:
+        url: https://github.com/go-gitea/gitea/releases/download/v28.1.0/gitea-28.1.0-darwin-amd64.xz
+        sha256: ece3b142291ac91106b967368eb601a0c12656a151510c9c23fe9a21d83b748c
+      x86_64-windows:
+        url: https://github.com/go-gitea/gitea/releases/download/v28.1.0/gitea-28.1.0-windows-amd64.exe.xz
+        sha256: 373c0e216780dd983723af4eb542151e5f621389edc29e3b14a95f9e4977691f
 installs:
   1.17.0:
     any-any:
