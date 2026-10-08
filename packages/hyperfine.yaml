@@ -246,6 +246,33 @@ releases:
       x86_64-windows:
         url: https://github.com/sharkdp/hyperfine/releases/download/v1.21.0/hyperfine-v1.21.0-x86_64-pc-windows-msvc.zip
         sha256: c6b6d228a86250d355eba41d254585cbbe6ba5c1887e0a8df9ccda2e66836a3d
+  2.0.0:
+    added_at: 2026-10-08T14:22:51.374216308Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/sharkdp/hyperfine/releases/download/v2.0.0/hyperfine-v2.0.0-aarch64-unknown-linux-musl.tar.gz
+        sha256: f0591c2cb8f66f2d2624d23979cf96dc99a67cb935f9925c82b9a4e3ffe5b2e1
+      aarch64-macos:
+        url: https://github.com/sharkdp/hyperfine/releases/download/v2.0.0/hyperfine-v2.0.0-aarch64-apple-darwin.tar.gz
+        sha256: 590b839cfea386b384ce0b42d16daf2910277cf30950656194bb3a5f20dea81e
+      aarch64-windows:
+        url: https://github.com/sharkdp/hyperfine/releases/download/v2.0.0/hyperfine-v2.0.0-aarch64-pc-windows-msvc.zip
+        sha256: c2d2568368d32d0f2a000e604e10cd9fa8d98e2d04cb78f2aa7ab1a8c11b8118
+      x86-linux:
+        url: https://github.com/sharkdp/hyperfine/releases/download/v2.0.0/hyperfine-v2.0.0-i686-unknown-linux-musl.tar.gz
+        sha256: 9c5dbdf6385aea4cceb542f61cc6ce5006f81ea71f4e9757cdf91caa821654bf
+      x86-windows:
+        url: https://github.com/sharkdp/hyperfine/releases/download/v2.0.0/hyperfine-v2.0.0-i686-pc-windows-msvc.zip
+        sha256: f52881b288244e40b11a92c9e7e0d88f7aa156c2c9b2032aa25c32debefb0463
+      x86_64-linux:
+        url: https://github.com/sharkdp/hyperfine/releases/download/v2.0.0/hyperfine-v2.0.0-x86_64-unknown-linux-musl.tar.gz
+        sha256: 38e59087bd65520930a13cf513d8a493b7043741e8ad62349a8a9929eb61bc5c
+      x86_64-macos:
+        url: https://github.com/sharkdp/hyperfine/releases/download/v2.0.0/hyperfine-v2.0.0-x86_64-apple-darwin.tar.gz
+        sha256: 8afe204926afefa406ad320cef0672b739e5f676c623fbd6d43d779bacd684e3
+      x86_64-windows:
+        url: https://github.com/sharkdp/hyperfine/releases/download/v2.0.0/hyperfine-v2.0.0-x86_64-pc-windows-msvc.zip
+        sha256: 3dec51acee1060908e67948838d6bc0a7aacde0774acebfa4afb220dcf0bc078
 installs:
   1.10.0:
     any-any:
