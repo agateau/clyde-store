@@ -1,0 +1,36 @@
+name: sops
+description: Simple and flexible tool for managing secrets
+homepage: https://getsops.io
+repository: https://github.com/getsops/sops
+releases:
+  3.13.3:
+    added_at: 2026-10-19T08:42:58.334140307Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.arm64
+        sha256: 53b0abacd38ef1b12a66d6c100956691b9cefce018d91f81e73ddf7438b94d77
+      aarch64-macos:
+        url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.arm64
+        sha256: b97c0d434aab577dc40310e8d22ff9e45eef4c80638ab978daae9b4681c59286
+      aarch64-windows:
+        url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.arm64.exe
+        sha256: 7f936a0d08edbeba3eb8f50bad1fe71eba83a140a80dfd17051f3bdb4facb08a
+      x86_64-linux:
+        url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.linux.amd64
+        sha256: e5bec3346a873ae91d871550f3e698c1aad962aff462a080e40f25fde17fef6b
+      x86_64-macos:
+        url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.amd64
+        sha256: 42162d5cef10b74fcf80a045a70e658d7ce6e63d6ea1be6f347e44015714468d
+      x86_64-windows:
+        url: https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.amd64.exe
+        sha256: a4a9a398858fe8b2ef72d9686d930bf7c5cece9be74ad83ac3b53cfdd70e6b1c
+installs:
+  3.13.3:
+    any-any:
+      files:
+        ${asset_name}: bin/sops${exe_ext}
+      tests:
+      - sops${exe_ext} --version
+fetcher: !GitHub
+  os: windows
+  include: sops-v[0-9.]+\.(linux|darwin)\.(amd64|arm64)$|sops-v[0-9.]+\.(amd64|arm64)\.exe$
