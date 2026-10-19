@@ -591,6 +591,27 @@ releases:
       x86_64-windows:
         url: https://github.com/jdx/fnox/releases/download/v1.40.0/fnox-x86_64-pc-windows-msvc.zip
         sha256: f1248a630b363f774902bcf20bfec92b97e52564d5a9f04ad73635c1fd9bfa04
+  1.41.0:
+    added_at: 2026-10-19T14:24:13.485124385Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/jdx/fnox/releases/download/v1.41.0/fnox-aarch64-unknown-linux-musl.tar.gz
+        sha256: c63cb6ac2ea2d4a0f9948ad57aff4ef22d4defcdb11d55451655bd0f65a363e4
+      aarch64-macos:
+        url: https://github.com/jdx/fnox/releases/download/v1.41.0/fnox-aarch64-apple-darwin.tar.gz
+        sha256: fb647bd423858750ae49d93a5a5b4fe797f3e870091c9632728d46ec3835082a
+      aarch64-windows:
+        url: https://github.com/jdx/fnox/releases/download/v1.41.0/fnox-aarch64-pc-windows-msvc.zip
+        sha256: a8105c0de8a3d607df450257ab1e637c31c89fa49c257c66861856d8aaf202da
+      x86_64-linux:
+        url: https://github.com/jdx/fnox/releases/download/v1.41.0/fnox-x86_64-unknown-linux-musl.tar.gz
+        sha256: 326d77bb95782ea3f6ccd5cc7b67b940296ea327b8ba3950c975bf9d3bb548cb
+      x86_64-macos:
+        url: https://github.com/jdx/fnox/releases/download/v1.41.0/fnox-x86_64-apple-darwin.tar.gz
+        sha256: 1a383f204ff64ac8ed1648eba32c25aab1674aac8b426aa5fdc963a441a27630
+      x86_64-windows:
+        url: https://github.com/jdx/fnox/releases/download/v1.41.0/fnox-x86_64-pc-windows-msvc.zip
+        sha256: a192a8858b5cc968b21bddea1901585c9b5cc131991442cac15e52e873cda3ab
 installs:
   1.17.0:
     any-any:
