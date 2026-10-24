@@ -3,6 +3,33 @@ description: GitHub command-line client
 homepage: https://cli.github.com
 repository: https://github.com/cli/cli
 releases:
+  2.103.2:
+    added_at: 2026-10-24T11:52:57.428885479Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/cli/cli/releases/download/v2.103.2/gh_2.103.2_linux_arm64.tar.gz
+        sha256: 4c3e99a50bd8b181a3fe9d69b25dd978bac768148d88f01507c6b4d1ef61a443
+      aarch64-macos:
+        url: https://github.com/cli/cli/releases/download/v2.103.2/gh_2.103.2_macOS_arm64.zip
+        sha256: 5416000f5d17580a187339e0c4068a01ca5c87f7d4fe6ca64933696f967bc418
+      aarch64-windows:
+        url: https://github.com/cli/cli/releases/download/v2.103.2/gh_2.103.2_windows_arm64.zip
+        sha256: cefaaa3efcd110ef7bf71071a2242b85fd3d2ac26d7d62e1082de6a1e60a81d6
+      x86-linux:
+        url: https://github.com/cli/cli/releases/download/v2.103.2/gh_2.103.2_linux_386.tar.gz
+        sha256: 6a2a57e9c08d722f286439a1196da7622011b4afbc18bb64483a9733def98403
+      x86-windows:
+        url: https://github.com/cli/cli/releases/download/v2.103.2/gh_2.103.2_windows_386.zip
+        sha256: 45ca557df83cbe9dbf89aebbcbb16679e24a31a14cc40c50516470a760e0a251
+      x86_64-linux:
+        url: https://github.com/cli/cli/releases/download/v2.103.2/gh_2.103.2_linux_amd64.tar.gz
+        sha256: 62ccf747115ddc61237efffdde66a3c8f70ba249433dc64f70801089b59c59c8
+      x86_64-macos:
+        url: https://github.com/cli/cli/releases/download/v2.103.2/gh_2.103.2_macOS_amd64.zip
+        sha256: 2dc7f1fc4761f96732995f6e4f4c6b4d705f2635da4126620c8b30eaa67b9c98
+      x86_64-windows:
+        url: https://github.com/cli/cli/releases/download/v2.103.2/gh_2.103.2_windows_amd64.zip
+        sha256: fef9fcdd8fdabd0501ab8b3d99eac976f504ab55d01bef9e8ef428a5d900ddda
   2.11.3:
     added_at: null
     assets:
