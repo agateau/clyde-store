@@ -1,0 +1,30 @@
+name: servo
+description: A lightweight, high-performance alternative for embedding web technologies in applications
+homepage: https://servo.org
+repository: https://github.com/servo/servo
+comment: macOS is not supported because upstream only ships a .dmg. Android (.apk/.aar) and OpenHarmony (.hap/.so) assets are excluded as well.
+releases:
+  0.7.0:
+    added_at: 2026-11-06T11:12:09.030692607Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/servo/servo/releases/download/v0.7.0/servo-aarch64-linux-gnu.tar.gz
+        sha256: 034f66ec113fcf7ced0534cba2899b6bc578402309ad4bddb69e5803587f5513
+      x86_64-linux:
+        url: https://github.com/servo/servo/releases/download/v0.7.0/servo-x86_64-linux-gnu.tar.gz
+        sha256: 728eba1be1cc1851e05dfaa90e18f98ab8644dd2355bedb0b8a5e89795ebe333
+      x86_64-windows:
+        url: https://github.com/servo/servo/releases/download/v0.7.0/servo-x86_64-windows-msvc.zip
+        sha256: 49d4b2c2d3576f93fad70812ee9e42820f5b84da9103f2a633838109a2fcde53
+installs:
+  0.7.0:
+    any-any:
+      files:
+        servo: opt/servo/
+      extra_files:
+        servo: bin/
+        servo.bat: bin/
+      tests:
+      - servo --version
+fetcher: !GitHub
+  include: ^servo-(x86_64|aarch64)-(linux-gnu\.tar\.gz|windows-msvc\.zip)$
