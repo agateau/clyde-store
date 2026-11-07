@@ -180,6 +180,33 @@ releases:
       x86_64-windows:
         url: https://github.com/sharkdp/fd/releases/download/v10.5.1/fd-v10.5.1-x86_64-pc-windows-msvc.zip
         sha256: e52306a600e60b7ba92019c81dc753e6ea6665379d005867d38215ffd14cf5c2
+  10.5.2:
+    added_at: 2026-11-07T13:47:27.645442580Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-aarch64-unknown-linux-musl.tar.gz
+        sha256: 63ea52cb31586e6d98efa2f06d73d542f16c7d0c4af0f07b579aaf9714cf907a
+      aarch64-macos:
+        url: https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-aarch64-apple-darwin.tar.gz
+        sha256: 81bf98a16d3d7230e4a9123fcede243d71ea31a577113476ed43f1cdf4773162
+      aarch64-windows:
+        url: https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-aarch64-pc-windows-msvc.zip
+        sha256: 0ee570ad513e6e1909642dbd79bf7177cf3457652e912c27726582c0f49df86e
+      x86-linux:
+        url: https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-i686-unknown-linux-musl.tar.gz
+        sha256: 98e61a903fd3e58f92bc268e37b2cd0668195b9383d696693a1fca0b39d5a1f0
+      x86-windows:
+        url: https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-i686-pc-windows-msvc.zip
+        sha256: 71f6a859426fa23807d3c962114ceef3e57a20db0b85669c3c5c1a514cd67651
+      x86_64-linux:
+        url: https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-x86_64-unknown-linux-musl.tar.gz
+        sha256: 7e2d07fa2b8807642aaec67b7e2972a9fbe4db26fcb340a7372392db42b26694
+      x86_64-macos:
+        url: https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-x86_64-apple-darwin.tar.gz
+        sha256: 0f02e6000a8c896cd254cf4dccc7da1e604e77a32c6783609eed5e4cb07785e3
+      x86_64-windows:
+        url: https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-x86_64-pc-windows-msvc.zip
+        sha256: 7edac75ef96b7e9a01ebb251a21ee86ea365a09adcfb865f1ec3346a906153b6
   8.4.0:
     added_at: null
     assets:
