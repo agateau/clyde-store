@@ -1788,6 +1788,27 @@ releases:
       x86_64-windows:
         url: https://github.com/docker/compose/releases/download/v5.7.0/docker-compose-windows-x86_64.exe
         sha256: f5dc759702aec5c0602e247aa861d14853216e3f481c4eaaf83621a035ecf92f
+  5.8.0:
+    added_at: 2026-11-18T16:13:30.300252380Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/docker/compose/releases/download/v5.8.0/docker-compose-linux-aarch64
+        sha256: 1a9c918b2fb49b9c87f0018c64b5abd0d30715155e98dc939779fbaee6c414d3
+      aarch64-macos:
+        url: https://github.com/docker/compose/releases/download/v5.8.0/docker-compose-darwin-aarch64
+        sha256: 008b8fcf6c6d60340f5796626a0f0d51c042085793a9b1653343011727140b71
+      aarch64-windows:
+        url: https://github.com/docker/compose/releases/download/v5.8.0/docker-compose-windows-aarch64.exe
+        sha256: ec7a100a77d9aedbaa6e2b13a10140729860b58b8d2b6855d8191c52e7dd50fc
+      x86_64-linux:
+        url: https://github.com/docker/compose/releases/download/v5.8.0/docker-compose-linux-x86_64
+        sha256: b8840f5008c447f41fce0a57ae3adeab42c89b1eb6e6012524bcabbfb4ffbaf6
+      x86_64-macos:
+        url: https://github.com/docker/compose/releases/download/v5.8.0/docker-compose-darwin-x86_64
+        sha256: 5c41cd573c549dc66abb03c5b29d6d4dfaae206b2e79848d1c32482bb2a3b416
+      x86_64-windows:
+        url: https://github.com/docker/compose/releases/download/v5.8.0/docker-compose-windows-x86_64.exe
+        sha256: 0c2d9245a5f61e8e3cc85009b8b4888fa82fded08239d28bd6da5ca818eda2b2
 installs:
   2.16.0:
     any-any:
