@@ -13,15 +13,19 @@ on:
 
 jobs:
   check-packages:
+    name: check-packages (${{ matrix.name }})
     strategy:
       fail-fast: false
       matrix:
-        os:
-          - ubuntu-latest
-          - macos-15-intel
-          # ARM based
-          - macos-15
-          - windows-2022
+        include:
+          - name: linux-x86_64
+            os: ubuntu-latest
+          - name: macos-x86_64
+            os: macos-15-intel
+          - name: macos-arm64
+            os: macos-15
+          - name: windows-x86_64
+            os: windows-2022
 
     runs-on: ${{ matrix.os }}
 
