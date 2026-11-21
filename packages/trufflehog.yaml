@@ -3,6 +3,27 @@ description: Find and verify credentials
 homepage: https://trufflesecurity.com/
 repository: https://github.com/trufflesecurity/trufflehog
 releases:
+  3.100.0:
+    added_at: 2026-11-21T15:06:16.106512325Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.100.0/trufflehog_3.100.0_linux_arm64.tar.gz
+        sha256: aa61657049229ae523e8455fcbba87dff57b0a2ba6bdb391a38cf75e6d4016dd
+      aarch64-macos:
+        url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.100.0/trufflehog_3.100.0_darwin_arm64.tar.gz
+        sha256: fb326527959216a858636640adcfb93720bb09a7d7e727237c1244cdb3af4ac3
+      aarch64-windows:
+        url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.100.0/trufflehog_3.100.0_windows_arm64.tar.gz
+        sha256: 89553c4dbe94eb712226083ddcc0acd72ce2a280f2d542ba8458e483eee3945f
+      x86_64-linux:
+        url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.100.0/trufflehog_3.100.0_linux_amd64.tar.gz
+        sha256: b2d85eba59865e98f45c9fc9f77d2c6d62df529fdd5755af121304ea5a7cecbb
+      x86_64-macos:
+        url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.100.0/trufflehog_3.100.0_darwin_amd64.tar.gz
+        sha256: e69972286bf313d551ad976b75da5395dc660ff316e2db9660e841e328c96210
+      x86_64-windows:
+        url: https://github.com/trufflesecurity/trufflehog/releases/download/v3.100.0/trufflehog_3.100.0_windows_amd64.tar.gz
+        sha256: e3e854ded5b19ce1312fd103f3ca898f367e99f24f27c1170a711e0e9288f86d
   3.69.0:
     added_at: null
     assets:
