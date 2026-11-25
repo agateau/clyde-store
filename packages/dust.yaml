@@ -300,6 +300,33 @@ releases:
       x86_64-windows:
         url: https://github.com/bootandy/dust/releases/download/v1.2.7/dust-v1.2.7-x86_64-pc-windows-msvc.zip
         sha256: d07a41521958895e701ad55f342302b7362799d6a328c843e8e2208ba0564c30
+  1.2.8:
+    added_at: 2026-11-25T17:49:47.596585196Z
+    assets:
+      aarch64-linux:
+        url: https://github.com/bootandy/dust/releases/download/v1.2.8/dust-v1.2.8-aarch64-unknown-linux-musl.tar.gz
+        sha256: 02140655d64a490e1b1486ae4b55ff797c2e69666e1993cc3c42a2885e169d3c
+      aarch64-macos:
+        url: https://github.com/bootandy/dust/releases/download/v1.2.8/dust-v1.2.8-aarch64-apple-darwin.tar.gz
+        sha256: 829b1223d968ec84b7e0f2374971f77a9b7443d99a7dfbbaa68bc374a0fe8a93
+      aarch64-windows:
+        url: https://github.com/bootandy/dust/releases/download/v1.2.8/dust-v1.2.8-aarch64-pc-windows-msvc.zip
+        sha256: 7b4c75459fe736d7c08a56d6e4e0824388ca604aefdc01372723962e16e44558
+      x86-linux:
+        url: https://github.com/bootandy/dust/releases/download/v1.2.8/dust-v1.2.8-i686-unknown-linux-musl.tar.gz
+        sha256: e5f6c0223528ade547c8987abaee895a5f95924b7ec6bb1970b7611d00432a53
+      x86-windows:
+        url: https://github.com/bootandy/dust/releases/download/v1.2.8/dust-v1.2.8-i686-pc-windows-msvc.zip
+        sha256: f39dd3e36e73ba86c6e1b3f2d098f806e2c5afbdadba6e56fe185b1d28043316
+      x86_64-linux:
+        url: https://github.com/bootandy/dust/releases/download/v1.2.8/dust-v1.2.8-x86_64-unknown-linux-musl.tar.gz
+        sha256: 4480bb9a3936f23cd9a1d5681618821f7f431ae47af0794be99f2baa5a88a60f
+      x86_64-macos:
+        url: https://github.com/bootandy/dust/releases/download/v1.2.8/dust-v1.2.8-x86_64-apple-darwin.tar.gz
+        sha256: e875ace7b7b5aa06467375c5d297110005c48a9f16c8a38c43981f14d325372f
+      x86_64-windows:
+        url: https://github.com/bootandy/dust/releases/download/v1.2.8/dust-v1.2.8-x86_64-pc-windows-msvc.zip
+        sha256: adfbdab0765c72e5e3a8c43ae9e92f4076cdb30c6364b68817301fb85fe44ecd
 installs:
   0.0.0:
     any-any:
